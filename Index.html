@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>The Keelan</title>
-    <style>
-      body {
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-      }
-      img {
-        max-width: 90%;
-        max-height: 90%;
-      }
-    </style>
-  </head>
-  <body>
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXg1MnJuMnc1ZTRidXduMzRqdWJrMjY3OHoxczRrdmhpNHgwYXo1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/niQ2FpCcDXTpDO1Nxn/giphy.gif" alt="funny gif">
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>thekeelan.co.uk</title>
+  <style>
+    html,body{height:100%;margin:0}
+    body{display:flex;align-items:center;justify-content:center;background:#000}
+    img{max-width:90vw;max-height:90vh}
+  </style>
+</head>
+<body>
+  <img id="gif" alt="keelan chaos" />
+  <script>
+    const gifs = [
+      "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXg1MnJuMnc1ZTRidXduMzRqdWJrMjY3OHoxczRrdmhpNHgwYXo1cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/niQ2FpCcDXTpDO1Nxn/giphy.gif",
+      "https://tenor.com/jiOUUelp4Lu.gif",
+      "https://tenor.com/b0v1t.gif",
+      "https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif"
+    ];
+    document.getElementById("gif").src = gifs[Math.floor(Math.random()*gifs.length)];
+  </script>
+</body>
 </html>
