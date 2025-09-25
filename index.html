@@ -6,50 +6,20 @@
   <title>thekeelan.co.uk</title>
   <style>
     html,body{
-      height:100%;margin:0;background:#000;
-      display:flex;align-items:center;justify-content:center;flex-direction:column;color:#8f8f8f;
-      font-family:system-ui, Segoe UI, Roboto, Arial, sans-serif
+      height:100%;
+      margin:0;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
     }
-    img{max-width:90vw;max-height:85vh;display:none}
-    .hint{margin-top:10px;font-size:12px;opacity:.7}
+    img{
+      max-width:90vw;
+      max-height:90vh;
+    }
   </style>
 </head>
 <body>
-  <img id="gif" alt="random gif">
-  <div id="hint" class="hint">Loading…</div>
-
-  <script>
-    // Use only direct media URLs (not tenor.com/… pages)
-    const candidates = [
-      "https://media.tenor.com/_Ncm7OPNUUoAAAAd/peter-kay-baldy.gif",
-      "https://media.tenor.com/IcKk2h1i0Z8AAAAd/more-cowbell-dance.gif",
-    ];
-
-    // Shuffle so it’s random which one we try first
-    for (let i = candidates.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
-    }
-
-    const img = document.getElementById('gif');
-    const hint = document.getElementById('hint');
-    let idx = 0;
-
-    function tryNext() {
-      if (idx >= candidates.length) {
-        hint.textContent = "All GIFs failed to load 😭";
-        return;
-      }
-      const url = candidates[idx++];
-      hint.textContent = "Loading…";
-      img.onload = () => { img.style.display = "block"; hint.textContent = ""; };
-      img.onerror = () => { hint.textContent = "That one failed—trying another…"; tryNext(); };
-      img.src = url;
-    }
-
-    tryNext();
-  </script>
+  <img src="https://media.giphy.com/media/Ju7l5y9osyymQ/giphy.gif" alt="funny gif" />
 </body>
 </html>
-`
-
