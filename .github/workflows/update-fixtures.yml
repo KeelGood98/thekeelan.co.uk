@@ -1,330 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>thekeelan.co.uk</title>
-  <style>
-    :root{
-      --bg:#0c0c0f;
-      --panel:#121216;
-      --muted:#8a8fa3;
-      --text:#e8e9ef;
-      --green:#2ecc71;
-      --amber:#f1c40f;
-      --red:#ff6b6b;
-      --outline:#1e2130;
-      --pill:#171a22;
-    }
-    *{box-sizing:border-box}
-    html,body{
-      height:100%;
-      margin:0;
-      background:var(--bg);
-      color:var(--text);
-      font:14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
-    }
+name: Update site data (ESPN fixtures + FD table)
 
-    /* --- layout --- */
-    .wrap{
-      display:grid;
-      grid-template-columns: 220px 1fr 420px;
-      gap:24px;
-      padding:18px 18px 28px;
-      min-height:100%;
-    }
-    .card{
-      background:var(--panel);
-      border:1px solid var(--outline);
-      border-radius:16px;
-      box-shadow:0 10px 25px rgba(0,0,0,.25);
-    }
-    .section{
-      padding:16px;
-    }
-    h3{
-      margin:0 0 10px;
-      font-size:15px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
-    .live-dot{
-      width:8px;height:8px;border-radius:50%;
-      background:#e74c3c;
-      box-shadow:0 0 0 3px #e74c3c22;
-      display:inline-block;
-    }
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "23 5 * * *"   # daily 05:23 UTC
 
-    /* --- gif --- */
-    .gif-box{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:12px;
-    }
-    .gif-box img{
-      width:100%;
-      height:auto;
-      border-radius:12px;
-      display:block;
-      max-width:190px;
-      object-fit:cover;
-    }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
-    /* --- table --- */
-    .table-card{ padding:14px; }
-    .table-head{
-      display:flex; align-items:center; justify-content:space-between;
-      padding:2px 2px 10px 2px;
-    }
-    .tbl{
-      width:100%;
-      border-collapse:collapse;
-      border-spacing:0;
-      overflow:hidden;
-      border-radius:12px;
-      border:1px solid var(--outline);
-      background:var(--pill);
-    }
-    .tbl thead th{
-      position:sticky; top:0;
-      background:#141722;
-      font-weight:600; color:#cfd6ea;
-      text-align:center;
-      padding:10px 8px;
-      font-size:12px;
-      border-bottom:1px solid var(--outline);
-    }
-    .tbl tbody td{
-      padding:10px 10px;
-      border-bottom:1px solid #141624;
-      vertical-align:middle;
-      font-size:14px;
-    }
-    .tbl tbody tr:last-child td{ border-bottom:none; }
-    .tbl .center{ text-align:center }
-    .team{
-      display:flex; align-items:center; gap:10px;
-    }
-    .crest{
-      width:20px; height:20px; border-radius:50%;
-      background:#202638; flex:0 0 20px;
-      object-fit:contain;
-    }
-    .scroll{
-      max-height:520px; overflow:auto;
-      scrollbar-width:thin; scrollbar-color:#3a4060 transparent;
-    }
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    /* --- fixtures --- */
-    .right-col{ display:flex; flex-direction:column; gap:18px; }
-    .fixture-panel{ padding:14px; }
-    .fx-list{ display:flex; flex-direction:column; gap:10px; }
-    .fx{
-      border:1px solid var(--outline);
-      background:var(--pill);
-      border-radius:12px;
-      padding:10px 12px;
-      display:grid;
-      grid-template-columns: 54px 1fr auto;
-      gap:10px; align-items:center;
-    }
-    .fx .left{
-      display:flex; flex-direction:column; gap:3px; color:var(--muted);
-      font-size:12px; text-align:center;
-    }
-    .teams{ display:flex; align-items:center; gap:10px; }
-    .club{ display:flex; align-items:center; gap:8px; min-width:0; }
-    .club span{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-    .badge{ width:18px; height:18px; object-fit:contain; }
-    .score{
-      font-weight:700; letter-spacing:.3px; min-width:36px; text-align:right;
-    }
-    .pill{
-      display:inline-block; padding:2px 8px; border-radius:999px;
-      font-size:11px; border:1px solid var(--outline); background:#141824; color:#d0d6ec;
-    }
-    .win { color:var(--green) }
-    .draw{ color:var(--amber) }
-    .lose{ color:var(--red) }
-    .muted{ color:var(--muted) }
-  </style>
-</head>
-<body>
-  <div class="wrap">
-    <!-- left: GIF -->
-    <div class="card gif-box">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="gif" />
-    </div>
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
-    <!-- middle: table -->
-    <div class="card table-card">
-      <div class="table-head">
-        <h3><span class="live-dot"></span> Premier League Table</h3>
-        <div class="muted" id="season"></div>
-      </div>
-      <div class="scroll">
-        <table class="tbl" id="pl-table">
-          <thead>
-            <tr>
-              <th class="center" style="width:48px">#</th>
-              <th style="text-align:left">Club</th>
-              <th class="center" style="width:60px">P</th>
-              <th class="center" style="width:60px">W</th>
-              <th class="center" style="width:60px">D</th>
-              <th class="center" style="width:60px">L</th>
-              <th class="center" style="width:70px">GD</th>
-              <th class="center" style="width:70px">Pts</th>
-            </tr>
-          </thead>
-          <tbody id="pl-body">
-            <tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+      - name: Build assets
+        env:
+          FD_TOKEN: ${{ secrets.FOOTBALL_DATA_API_KEY }}  # optional but recommended
+        run: |
+          python - <<'PY'
+          import json, os, sys, ssl, urllib.request, datetime
+          ssl._create_default_https_context = ssl._create_unverified_context
 
-    <!-- right: fixtures & results -->
-    <div class="right-col">
-      <div class="card fixture-panel">
-        <div class="table-head">
-          <h3><span class="live-dot"></span> Man United — Fixtures & Results</h3>
-          <a href="https://www.espn.co.uk/football/team/fixtures/_/id/360" target="_blank" class="muted" style="text-decoration:none">Open full list ↗</a>
-        </div>
-        <h4 class="muted" style="margin:0 0 8px">Upcoming</h4>
-        <div id="upcoming" class="fx-list"></div>
-        <h4 class="muted" style="margin:12px 0 8px">Recent Results</h4>
-        <div id="results" class="fx-list"></div>
-      </div>
+          UA = {"User-Agent": "Mozilla/5.0"}
 
-      <!-- R6 tracker block kept as-is if you had it below -->
-      <!-- <div class="card section">…</div> -->
-    </div>
-  </div>
+          def jget(url, headers=None):
+            req = urllib.request.Request(url, headers=headers or UA)
+            with urllib.request.urlopen(req, timeout=60) as r:
+              return json.loads(r.read().decode("utf-8"))
 
-  <script>
-  // utils
-  const todayISO = new Date().toISOString().slice(0,10);
-  const fmtDay = (iso) => {
-    try{
-      const d = new Date(iso+"T00:00:00");
-      return d.toLocaleDateString("en-GB", { weekday:"short", day:"2-digit", month:"short" });
-    }catch{return ""}
-  };
+          def iso_date_time(s):
+            try:
+              dt = datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
+              return dt.date().isoformat(), dt.strftime("%H:%M")
+            except Exception:
+              return "", "TBC"
 
-  const scoreClass = (fx) => {
-    if (fx.status !== "FT" || !fx.score) return "";
-    const [h,a] = fx.score.split(/[–-]/).map(x=>parseInt(x.trim(),10));
-    // pick perspective of Manchester United
-    const homeIsUtd = (fx.home || "").toLowerCase().startsWith("manchester");
-    const ours = homeIsUtd ? h : a;
-    const opp  = homeIsUtd ? a : h;
-    if (ours > opp) return "win";
-    if (ours < opp) return "lose";
-    return "draw";
-  };
+          def pick_name(x):
+            if isinstance(x, str): return x
+            if isinstance(x, dict): return x.get("name") or x.get("shortName") or ""
+            return ""
 
-  const el = (html) => {
-    const t = document.createElement("template");
-    t.innerHTML = html.trim();
-    return t.content.firstChild;
-  };
+          def is_pl(comp_name, league_obj):
+            name = (comp_name or "").lower()
+            if "premier league" in name: return True
+            if isinstance(league_obj, dict):
+              nm = (league_obj.get("name") or "").lower()
+              ab = (league_obj.get("abbreviation") or "").lower()
+              if "premier league" in nm: return True
+              if ab in {"pl", "epl"}: return True
+            return False
 
-  // render fixtures lists
-  function renderFixtures(list, host){
-    host.innerHTML = "";
-    if (!list.length){
-      host.innerHTML = '<div class="muted" style="padding:10px 2px">No items.</div>';
-      return;
-    }
-    list.forEach(fx=>{
-      const scoreHTML = fx.status === "FT" && fx.score
-        ? `<div class="score ${scoreClass(fx)}">${fx.score}</div>`
-        : `<span class="pill">UPCOMING</span>`;
-      const row = el(`
-        <div class="fx">
-          <div class="left">
-            <div>${fmtDay(fx.date)}</div>
-            <div>${fx.time || "TBC"}</div>
-          </div>
-          <div class="teams">
-            <div class="club"><img class="badge" src="${fx.homeBadge || ""}" onerror="this.style.display='none'"/><span>${fx.home}</span></div>
-            <div class="muted">vs</div>
-            <div class="club"><img class="badge" src="${fx.awayBadge || ""}" onerror="this.style.display='none'"/><span>${fx.away}</span></div>
-          </div>
-          ${scoreHTML}
-        </div>
-      `);
-      host.appendChild(row);
-    });
-  }
+          os.makedirs("assets", exist_ok=True)
 
-  // render table
-  function renderTable(rows){
-    const body = document.getElementById("pl-body");
-    body.innerHTML = "";
-    if (!rows || !rows.length){
-      body.innerHTML = '<tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr>';
-      return;
-    }
-    rows.forEach(r=>{
-      body.appendChild(el(`
-        <tr>
-          <td class="center">${r.rank ?? ""}</td>
-          <td>
-            <div class="team">
-              <img class="crest" src="${r.badge || ""}" onerror="this.style.display='none'"/>
-              <span>${r.team || ""}</span>
-            </div>
-          </td>
-          <td class="center">${r.played ?? ""}</td>
-          <td class="center">${r.win ?? ""}</td>
-          <td class="center">${r.draw ?? ""}</td>
-          <td class="center">${r.loss ?? ""}</td>
-          <td class="center">${r.gd ?? ( (r.gf??0) - (r.ga??0) )}</td>
-          <td class="center" style="font-weight:700">${r.points ?? ""}</td>
-        </tr>
-      `));
-    });
-  }
+          # ---------------- Fixtures from ESPN (MUFC)
+          ESPN_SCHEDULE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/360/schedule"
 
-  // boot
-  (async ()=>{
-    // Table
-    try{
-      const t = await fetch("assets/table.json?cachebust="+Date.now());
-      if (t.ok){
-        const rows = await t.json();
-        renderTable(rows);
-      } else {
-        renderTable([]);
-      }
-    }catch{ renderTable([]); }
+          try:
+            sched = jget(ESPN_SCHEDULE)
+          except Exception as e:
+            print("ESPN schedule fetch failed:", e, file=sys.stderr)
+            sched = {}
 
-    // Fixtures
-    try{
-      const f = await fetch("assets/fixtures.json?cachebust="+Date.now());
-      if (f.ok){
-        const arr = await f.json();
-        // normalise a bit
-        const up = arr.filter(x=> (x.status||"").toUpperCase()==="UPCOMING")
-                      .sort((a,b)=> (a.date||"").localeCompare(b.date) || (a.time||"").localeCompare(b.time))
-                      .slice(0,6);
-        const res = arr.filter(x=> (x.status||"").toUpperCase()==="FT")
-                       .sort((a,b)=> (b.date||"").localeCompare(a.date) || (b.time||"").localeCompare(a.time))
-                       .slice(0,6);
-        renderFixtures(up, document.getElementById("upcoming"));
-        renderFixtures(res, document.getElementById("results"));
-      }else{
-        renderFixtures([], document.getElementById("upcoming"));
-        renderFixtures([], document.getElementById("results"));
-      }
-    }catch{
-      renderFixtures([], document.getElementById("upcoming"));
-      renderFixtures([], document.getElementById("results"));
-    }
-  })();
-  </script>
-</body>
-</html>
+          events = (sched.get("events") or []) + (sched.get("nextEvents") or [])
+          fixtures = []
+
+          for ev in events:
+            comps = (ev.get("competitions") or [{}])[0]
+            comp_name = pick_name(comps.get("name")) or pick_name(ev.get("league"))
+            if not is_pl(comp_name, ev.get("league") if isinstance(ev.get("league"), dict) else {}):
+              continue  # EPL only
+
+            date, time = iso_date_time(ev.get("date",""))
+
+            teams = comps.get("competitors") or []
+            home = next((t for t in teams if t.get("homeAway")=="home"), None)
+            away = next((t for t in teams if t.get("homeAway")=="away"), None)
+            if not home or not away: 
+              continue
+
+            th, ta = home.get("team") or {}, away.get("team") or {}
+            hname = th.get("displayName") or th.get("name") or ""
+            aname = ta.get("displayName") or ta.get("name") or ""
+            hbadge = th.get("logo") or (th.get("logos") or [{}])[0].get("href")
+            abadge = ta.get("logo") or (ta.get("logos") or [{}])[0].get("href")
+
+            # Status – ESPN has event.status and competitions[].status; use competitions status if present
+            cstat = (comps.get("status") or {}).get("type") or {}
+            estat = (ev.get("status") or {}).get("type") or {}
+            completed = bool(cstat.get("completed") or estat.get("completed"))
+            state = (cstat.get("state") or estat.get("state") or "").lower()
+
+            if completed:
+              try:
+                hs = int(home.get("score") or 0); as_ = int(away.get("score") or 0)
+              except Exception:
+                hs = as_ = 0
+              status = "FT"; score = f"{hs}–{as_}"
+            elif state in {"pre","scheduled"}:
+              status = "UPCOMING"; score = None
+            else:
+              status = "upcoming"; score = None
+
+            venue = (comps.get("venue") or {}).get("fullName") or ""
+
+            fixtures.append({
+              "date": date, "time": time or "TBC", "comp": comp_name,
+              "home": hname, "away": aname, "status": status, "score": score,
+              "venue": venue, "tv": [],
+              "homeBadge": hbadge, "awayBadge": abadge,
+            })
+
+          # de-dup + sort
+          seen, clean = set(), []
+          for f in fixtures:
+            k = (f["date"], f["home"], f["away"])
+            if f["date"] and k not in seen:
+              seen.add(k); clean.append(f)
+          clean.sort(key=lambda x: (x["date"], x["time"], x["home"], x["away"]))
+
+          with open("assets/fixtures.json","w",encoding="utf-8") as out:
+            json.dump(clean, out, ensure_ascii=False, indent=2)
+          print("fixtures written:", len(clean))
+
+          # ---------------- Table from football-data.org (fallback ESPN)
+          rows = []
+          token = (os.environ.get("FD_TOKEN") or "").strip()
+          season_year = datetime.date.today().year
+          if datetime.date.today().month < 8:
+            season_year -= 1  # FD season param is the starting year
+
+          if token:
+            try:
+              url = f"https://api.football-data.org/v4/competitions/PL/standings?season={season_year}"
+              data = jget(url, headers={"X-Auth-Token": token, **UA})
+              standings = (data.get("standings") or [])[0].get("table") or []
+              for it in standings:
+                team = it.get("team") or {}
+                rows.append({
+                  "rank": int(it.get("position") or 0),
+                  "team": team.get("name") or "",
+                  "played": int(it.get("playedGames") or 0),
+                  "win": int(it.get("won") or 0),
+                  "draw": int(it.get("draw") or 0),
+                  "loss": int(it.get("lost") or 0),
+                  "gf": int(it.get("goalsFor") or 0),
+                  "ga": int(it.get("goalsAgainst") or 0),
+                  "gd": int(it.get("goalDifference") or 0),
+                  "points": int(it.get("points") or 0),
+                  "badge": team.get("crest"),
+                })
+              rows = [r for r in rows if r["team"]]
+              rows.sort(key=lambda r: r["rank"] or 999)
+              print("table source: football-data.org, rows:", len(rows))
+            except Exception as e:
+              print("football-data standings failed:", e, file=sys.stderr)
+
+          if not rows:
+            # ESPN fallback (shape varies, so recurse until we find entries)
+            def find_entries(x):
+              if isinstance(x, dict):
+                st = x.get("standings")
+                if isinstance(st, dict) and "entries" in st:
+                  return st["entries"]
+                for v in x.values():
+                  r = find_entries(v)
+                  if r: return r
+              if isinstance(x, list):
+                for it in x:
+                  r = find_entries(it)
+                  if r: return r
+              return None
+
+            try:
+              tdata = jget("https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings")
+              entries = find_entries(tdata) or []
+              rank = 1
+              for e in entries:
+                team = e.get("team") or {}
+                name = team.get("displayName") or team.get("name") or ""
+                crest = team.get("logo") or (team.get("logos") or [{}])[0].get("href")
+                stats = e.get("stats") or []
+                def get(n, d=0):
+                  for s in stats:
+                    if s.get("name")==n:
+                      try: return int(s.get("value"))
+                      except: return d
+                  return d
+                played = get("gamesPlayed"); win = get("wins"); draw = get("ties")
+                loss = get("losses")
+                gf = get("goalsFor") or get("pointsFor")
+                ga = get("goalsAgainst") or get("pointsAgainst")
+                gd = (gf or 0) - (ga or 0)
+                points = get("points")
+                rows.append({
+                  "rank": rank, "team": name, "played": played,
+                  "win": win, "draw": draw, "loss": loss,
+                  "gf": gf, "ga": ga, "gd": gd, "points": points, "badge": crest
+                })
+                rank += 1
+              print("table source: ESPN fallback, rows:", len(rows))
+            except Exception as e:
+              print("ESPN standings failed as well:", e, file=sys.stderr)
+
+          with open("assets/table.json","w",encoding="utf-8") as out:
+            json.dump(rows, out, ensure_ascii=False, indent=2)
+          print("table rows written:", len(rows))
+
+          # Always bump a stamp to force Pages redeploy
+          from datetime import timezone
+          with open("assets/update_stamp.txt","w",encoding="utf-8") as f:
+            f.write(datetime.datetime.now(timezone.utc).isoformat())
+          PY
+
+      - name: Commit & push (always)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*
+          if git diff --cached --quiet; then
+            git commit --allow-empty -m "chore: force pages rebuild [skip ci]"
+          else
+            git commit -m "chore: update fixtures & table (ESPN+FD) [skip ci]"
+          fi
+          git push
