@@ -7,19 +7,24 @@
   <style>
     :root{
       --text:#e9eef5; --muted:#96a0ad; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
-      --pitch-dark:#0b1f0d; --pitch-light:#0f2a14; --line:#dfeadf0b;
+      --pitchA:#0e3519; --pitchB:#0d2d16; --line:#e5ffe580;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
+    /* Football pitch: alternating stripes + halfway line + center circle */
     body{
       margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-      /* Football pitch background: stripes + touchlines + center circle */
       background:
-        /* faint touchlines border */
-        radial-gradient(circle at 50% 50%, transparent 0 36%, rgba(255,255,255,0.06) 36.3% 36.6%, transparent 36.9% 100%),
-        radial-gradient(circle at 50% 50%, transparent 0 2%, rgba(255,255,255,0.04) 2.1% 2.3%, transparent 2.4% 100%),
-        repeating-linear-gradient(0deg, var(--pitch-dark) 0 64px, var(--pitch-light) 64px 128px);
-      background-color: var(--pitch-dark);
+        /* touchlines (top/bottom) */
+        linear-gradient(#ffffff12, #ffffff12) top/100% 2px no-repeat,
+        linear-gradient(#ffffff12, #ffffff12) bottom/100% 2px no-repeat,
+        /* halfway line */
+        linear-gradient(#ffffff14, #ffffff14) 50% 50%/100% 2px no-repeat,
+        /* center circle ring */
+        radial-gradient(circle at 50% 50%, transparent 0 110px, #ffffff10 110px 112px, transparent 112px),
+        /* mowing stripes */
+        repeating-linear-gradient(0deg, var(--pitchA) 0 72px, var(--pitchB) 72px 144px);
+      background-color: var(--pitchA);
     }
     header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
     .brand{display:flex;gap:10px;align-items:center}
@@ -31,7 +36,8 @@
     .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
-    .table-wrap{border:1px solid var(--border);border-radius:10px;overflow:auto;max-height:70vh}
+    .table-wrap{border:1px solid var(--border);border-radius:10px;overflow:auto;max-height:none}
+    @media (max-width: 980px){ .table-wrap{max-height:70vh} }
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
@@ -92,21 +98,17 @@
   <script>
   (async () => {
     const bust = `?t=${Date.now()}`;
-    const log = (...a) => console.log("[keelan]", ...a);
-    const err = (...a) => console.error("[keelan]", ...a);
 
-    // Try multiple path variants for safety
     async function getJSONMulti(relPath) {
       const candidates = [`/assets/${relPath}`, `assets/${relPath}`, `./assets/${relPath}`];
       for (const url of candidates) {
         try {
           const r = await fetch(url + bust, { cache: "no-store" });
-          log("GET", url, r.status);
           if (!r.ok) continue;
           const data = await r.json();
           const size = Array.isArray(data) ? data.length : (data ? Object.keys(data).length : 0);
           if (size > 0) return data;
-        } catch (e) { err("Fetch failed", url, e); }
+        } catch {}
       }
       return null;
     }
@@ -142,11 +144,16 @@
       const now = Date.now();
       const t = s => new Date(s).getTime() || 0;
 
-      // FINISHED if score present; otherwise future/past by date
-      const isFinished = m => (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") || t(m.date) < now;
-      const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
+      // Prefer status → 'FINISHED' beats date; otherwise fall back to score/date
+      const isFinished = m => {
+        const st = (m.status || "").toUpperCase();
+        if (st === "FINISHED") return true;
+        if (st === "SCHEDULED") return false;
+        if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
+        return t(m.date) < now;
+      };
 
-      // Sort once, then slice for each section
+      const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
       const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
       const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
       const recent = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
@@ -154,12 +161,12 @@
       const fmt = d => new Date(d).toLocaleString([], { dateStyle:"medium", timeStyle:"short" });
 
       const upHTML = upcoming.length ? `
-        <h3 style="margin:8px 0;">No upcoming fixtures.</h3>
+        <h3 style="margin:8px 0;">Upcoming</h3>
         <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>
         <tbody>
           ${upcoming.map(m => `<tr><td>${fmt(m.date)}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join("")}
         </tbody></table>
-      `.replace("No upcoming fixtures.","Upcoming") : '<div class="muted">No upcoming fixtures.</div>';
+      ` : '<div class="muted">No upcoming fixtures.</div>';
 
       const recHTML = recent.length ? `
         <h3 style="margin:12px 0 6px;">Recent Results</h3>
