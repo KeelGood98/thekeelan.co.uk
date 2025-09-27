@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Mum</title>
 
-  <!-- Favicon/logo: put a file at /assets/favicon.svg (or .png) and uncomment one of these -->
+  <!-- Favicon / tab icon -->
+  <!-- Add your icon files to /assets and set the hrefs below -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"> -->
-  <!-- Optional PWA-ish niceties -->
   <link rel="apple-touch-icon" href="/assets/favicon-192.png">
   <meta name="theme-color" content="#0b0f14" />
 
@@ -29,24 +29,22 @@
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
 
-    /* Grid: DO NOT stretch rows; centre card will be content-height */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
       padding:0 18px 24px;
-      align-items:start;
+      align-items:stretch; /* all columns fill viewport height */
+      min-height:calc(100vh - 68px); /* roughly header height */
     }
     @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
 
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35);display:flex;flex-direction:column;min-height:0}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
 
-    /* Left & Right stretch; centre doesn't */
-    .stretch{display:flex;flex-direction:column;min-height:calc(100vh - 90px);}
-    .flex-fill{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1}
+    .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
 
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
@@ -72,8 +70,8 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT: GIF + R6 fill the column -->
-    <section class="card stretch">
+    <!-- LEFT -->
+    <section class="card">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
         <img
@@ -81,16 +79,16 @@
           alt="gif" style="display:block;width:100%;height:auto;"
         />
       </div>
-      <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;flex:1;">
+      <div class="card" style="margin-top:12px;">
         <h2>R6 Tracker</h2>
-        <iframe id="r6Frame" title="R6 Tracker" class="flex-fill" style="min-height:420px;"></iframe>
+        <iframe id="r6Frame" title="R6 Tracker" class="panel" style="min-height:300px;"></iframe>
       </div>
     </section>
 
-    <!-- CENTRE: content height only (no empty tail) -->
-    <section class="card" style="align-self:start;height:max-content;">
+    <!-- CENTRE (fills height; table scrolls inside) -->
+    <section class="card">
       <h2>Premier League Table</h2>
-      <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
+      <div class="panel">
         <table>
           <thead>
             <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
@@ -102,10 +100,10 @@
       </div>
     </section>
 
-    <!-- RIGHT: fixtures stretch -->
-    <section class="card stretch">
+    <!-- RIGHT (fills height; fixtures scroll inside) -->
+    <section class="card">
       <h2>Man United – Fixtures & Results</h2>
-      <div id="fixturesWrap" class="flex-fill" style="padding:8px;">
+      <div id="fixturesWrap" class="panel" style="padding:8px;">
         <div class="muted">Waiting for data…</div>
       </div>
     </section>
@@ -114,28 +112,28 @@
   <script>
   (async () => {
     const bust = `?t=${Date.now()}`;
+    const getLocal = async (p) => {
+      for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
+        try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
+      } return null;
+    };
 
-    async function getJSONMulti(relPath) {
-      const candidates = [`/assets/${relPath}`, `assets/${relPath}`, `./assets/${relPath}`];
-      for (const url of candidates) {
-        try {
-          const r = await fetch(url + bust, { cache: "no-store" });
-          if (!r.ok) continue;
-          const data = await r.json();
-          const size = Array.isArray(data) ? data.length : (data ? Object.keys(data).length : 0);
-          if (size > 0) return data;
-        } catch {}
-      }
-      return null;
+    // ===== TABLE + BADGES (local) =====
+    const [table, badgesFile] = await Promise.all([
+      getLocal('table.json'),
+      getLocal('badges.json')
+    ]);
+
+    const badgeMap = {};
+    if (badgesFile && badgesFile.badges) {
+      Object.entries(badgesFile.badges).forEach(([k,v]) => { badgeMap[k.toLowerCase()] = v || null; });
     }
-
-    // --------- TABLE ---------
-    const table = await getJSONMulti("table.json");
     const tbody = document.getElementById("tableBody");
+    const lu = document.getElementById("lastUpdated");
 
-    function trRow(r, badgeUrl) {
-      const badge = badgeUrl ? `<img class="badge img" src="${badgeUrl}" alt="">`
-                             : `<span class="badge" data-team="${r.team}"></span>`;
+    function rowHTML(r){
+      const b = r.badge || badgeMap[(r.team||'').toLowerCase()] || null;
+      const badge = b ? `<img class="badge img" src="${b}" alt="">` : `<span class="badge"></span>`;
       return `
         <tr>
           <td>${r.pos ?? ""}</td>
@@ -148,44 +146,17 @@
     if (!table || !Array.isArray(table.standings) || table.standings.length === 0) {
       tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
-      // Render with whatever badge we already have
-      tbody.innerHTML = table.standings.map(r => trRow(r, r.badge)).join("");
-      const lu = document.getElementById("lastUpdated");
+      tbody.innerHTML = table.standings.map(rowHTML).join("");
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
-
-      // Client-side badge patch (one call, robust name matching)
-      try {
-        const resp = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
-        if (resp.ok) {
-          const js = await resp.json();
-          const teams = js?.teams || [];
-          const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
-          const badgeMap = {};
-          teams.forEach(t => { badgeMap[norm(t.strTeam)] = t.strTeamBadge || null; });
-
-          document.querySelectorAll('[data-team]').forEach(el => {
-            const name = el.getAttribute('data-team') || '';
-            const b = badgeMap[norm(name)];
-            if (b) {
-              const img = document.createElement('img');
-              img.className = 'badge img';
-              img.alt = '';
-              img.src = b;
-              el.replaceWith(img);
-            }
-          });
-        }
-      } catch {}
     }
 
-    // --------- FIXTURES ---------
-    const fixtures = await getJSONMulti("fixtures.json");
+    // ===== FIXTURES =====
+    const fixtures = await getLocal('fixtures.json');
     const wrap = document.getElementById("fixturesWrap");
     if (!fixtures || !Array.isArray(fixtures.matches)) {
       wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
     } else {
       const t = s => new Date(s).getTime() || 0;
-
       const isFinished = m => {
         const st = (m.status || "").toUpperCase();
         if (st === "FINISHED") return true;
@@ -194,11 +165,9 @@
         return t(m.date) < Date.now();
       };
       const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
-
       const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
       const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
       const recent   = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
-
       const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
       const fmtT = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
 
