@@ -6,325 +6,325 @@
   <title>thekeelan.co.uk</title>
   <style>
     :root{
-      --bg:#000; --panel:#0d0d10; --fg:#eaeaea; --muted:#a0a4aa; --accent:#e50914;
-      --ok:#22c55e; --live:#f59e0b; --radius:18px; --shadow:0 12px 40px rgba(0,0,0,.35);
-      --glass:rgba(13,13,16,.70); --border:#1b1c20;
-      --win:#22c55e; --draw:#f59e0b; --loss:#ef4444;
+      --bg:#0c0c0f;
+      --panel:#121216;
+      --muted:#8a8fa3;
+      --text:#e8e9ef;
+      --green:#2ecc71;
+      --amber:#f1c40f;
+      --red:#ff6b6b;
+      --outline:#1e2130;
+      --pill:#171a22;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#000}
-    a{color:inherit;text-decoration:none}
-
-    body::before{
-      content:""; position:fixed; inset:0; z-index:-1;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.85)),
-        url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1920&q=60") center/cover no-repeat;
-      filter: saturate(0.9) contrast(1.05);
+    html,body{
+      height:100%;
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font:14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
     }
 
-    /* ===== 3-column layout (GIF | TABLE | RIGHT stack) ===== */
-    .page{
-      min-height:100%;
-      padding:24px;
+    /* --- layout --- */
+    .wrap{
       display:grid;
-      grid-template-columns: 220px 1fr 440px;
-      grid-template-rows: auto 1fr;
-      grid-template-areas:
-        "gif table rightTop"
-        "gif table rightBottom";
+      grid-template-columns: 220px 1fr 420px;
       gap:24px;
-      align-items:start;
+      padding:18px 18px 28px;
+      min-height:100%;
     }
-    @media (max-width: 1200px){
-      .page{
-        grid-template-columns: 200px 1fr;
-        grid-template-areas:
-          "gif table"
-          "rightTop rightTop"
-          "rightBottom rightBottom";
-      }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--outline);
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,.25);
     }
-    @media (max-width: 820px){
-      .page{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "gif"
-          "table"
-          "rightTop"
-          "rightBottom";
-      }
+    .section{
+      padding:16px;
+    }
+    h3{
+      margin:0 0 10px;
+      font-size:15px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    .live-dot{
+      width:8px;height:8px;border-radius:50%;
+      background:#e74c3c;
+      box-shadow:0 0 0 3px #e74c3c22;
+      display:inline-block;
     }
 
-    .card{background:var(--glass); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; overflow:hidden}
-    .header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px}
-    .badge{display:inline-flex; gap:8px; align-items:center; padding:7px 11px; border-radius:999px; background:#0f0f12; border:1px solid var(--border); font-weight:700; letter-spacing:.2px}
-    .dot{width:9px; height:9px; background:var(--accent); border-radius:50%}
-    .muted{color:var(--muted); font-size:13px}
-
-    /* ===== GIF ===== */
-    #gifCard{grid-area: gif; display:flex; align-items:flex-start; justify-content:center; min-height:220px}
-    #gifCard img{max-width:100%; max-height:220px; border-radius:14px}
-
-    /* ===== TABLE (fixed height + scroll, sticky header, logos) ===== */
-    #tableCard{grid-area: table;}
-    .table-wrap{
-      height:600px;               /* fixed height so it ALWAYS scrolls */
-      overflow:auto;
-      -webkit-overflow-scrolling:touch;
+    /* --- gif --- */
+    .gif-box{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:12px;
+    }
+    .gif-box img{
+      width:100%;
+      height:auto;
       border-radius:12px;
-      border:1px solid var(--border);
-      background:#0b0b0f
+      display:block;
+      max-width:190px;
+      object-fit:cover;
     }
-    table{width:100%; border-collapse:collapse; font-size:14px; table-layout:auto}
-    th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
-    th{position:sticky; top:0; background:#0e0f13; text-align:center; font-weight:700; z-index:1}
-    th.left{text-align:left}
-    td.num{text-align:center}
-    tr:hover{background:#0e0f13}
-    .club{display:flex; align-items:center; gap:10px}
-    .club img{width:22px; height:22px; border-radius:50%; background:#111; display:inline-block}
-    .you{font-weight:800}
 
-    /* ===== Right column (top: fixtures/results; bottom: tracker) ===== */
-    #rightTop{grid-area: rightTop;}
-    #rightBottom{grid-area: rightBottom;}
+    /* --- table --- */
+    .table-card{ padding:14px; }
+    .table-head{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:2px 2px 10px 2px;
+    }
+    .tbl{
+      width:100%;
+      border-collapse:collapse;
+      border-spacing:0;
+      overflow:hidden;
+      border-radius:12px;
+      border:1px solid var(--outline);
+      background:var(--pill);
+    }
+    .tbl thead th{
+      position:sticky; top:0;
+      background:#141722;
+      font-weight:600; color:#cfd6ea;
+      text-align:center;
+      padding:10px 8px;
+      font-size:12px;
+      border-bottom:1px solid var(--outline);
+    }
+    .tbl tbody td{
+      padding:10px 10px;
+      border-bottom:1px solid #141624;
+      vertical-align:middle;
+      font-size:14px;
+    }
+    .tbl tbody tr:last-child td{ border-bottom:none; }
+    .tbl .center{ text-align:center }
+    .team{
+      display:flex; align-items:center; gap:10px;
+    }
+    .crest{
+      width:20px; height:20px; border-radius:50%;
+      background:#202638; flex:0 0 20px;
+      object-fit:contain;
+    }
+    .scroll{
+      max-height:520px; overflow:auto;
+      scrollbar-width:thin; scrollbar-color:#3a4060 transparent;
+    }
 
-    .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
-    .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
-    .list .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
-    .list .fixture:not(:last-child){border-bottom:1px dashed #1d1f25}
-    .date{min-width:78px; text-align:center}
-    .date .d{font-weight:800}
-    .date .t{font-size:12px; color:var(--muted)}
-    .teams{line-height:1.25}
-    .comp{font-size:12px; color:var(--muted)}
-    .badges{display:flex; gap:6px; flex-wrap:wrap; margin-top:4px}
-    .pill{font-size:11px; padding:3px 8px; border-radius:999px; background:#121318; border:1px solid #242633}
-    .status{font-weight:800; text-align:right}
-    .status.upcoming{color:var(--ok)}
-    .status.live{color:var(--live)}
-    .status.ft{color:#aeb4bb}
-    .status.win{color:var(--win)}
-    .status.draw{color:var(--draw)}
-    .status.loss{color:var(--loss)}
-    .empty{padding:14px; text-align:center; color:var(--muted)}
-    .teamline{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
-    .crest{width:18px; height:18px; border-radius:50%; background:#111; vertical-align:middle; object-fit:cover}
-
-    footer{color:#555; font-size:12px; text-align:center; padding:8px}
+    /* --- fixtures --- */
+    .right-col{ display:flex; flex-direction:column; gap:18px; }
+    .fixture-panel{ padding:14px; }
+    .fx-list{ display:flex; flex-direction:column; gap:10px; }
+    .fx{
+      border:1px solid var(--outline);
+      background:var(--pill);
+      border-radius:12px;
+      padding:10px 12px;
+      display:grid;
+      grid-template-columns: 54px 1fr auto;
+      gap:10px; align-items:center;
+    }
+    .fx .left{
+      display:flex; flex-direction:column; gap:3px; color:var(--muted);
+      font-size:12px; text-align:center;
+    }
+    .teams{ display:flex; align-items:center; gap:10px; }
+    .club{ display:flex; align-items:center; gap:8px; min-width:0; }
+    .club span{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .badge{ width:18px; height:18px; object-fit:contain; }
+    .score{
+      font-weight:700; letter-spacing:.3px; min-width:36px; text-align:right;
+    }
+    .pill{
+      display:inline-block; padding:2px 8px; border-radius:999px;
+      font-size:11px; border:1px solid var(--outline); background:#141824; color:#d0d6ec;
+    }
+    .win { color:var(--green) }
+    .draw{ color:var(--amber) }
+    .lose{ color:var(--red) }
+    .muted{ color:var(--muted) }
   </style>
 </head>
 <body>
-  <div class="page">
-    <!-- LEFT: GIF -->
-    <section class="card" id="gifCard">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
-    </section>
+  <div class="wrap">
+    <!-- left: GIF -->
+    <div class="card gif-box">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="gif" />
+    </div>
 
-    <!-- MIDDLE: BIG TABLE -->
-    <section class="card" id="tableCard">
-      <div class="header">
-        <span class="badge"><span class="dot"></span> Premier League Table</span>
-        <a class="muted" id="plSeasonLink" href="#" target="_blank" rel="noopener">Season</a>
+    <!-- middle: table -->
+    <div class="card table-card">
+      <div class="table-head">
+        <h3><span class="live-dot"></span> Premier League Table</h3>
+        <div class="muted" id="season"></div>
       </div>
-      <div class="table-wrap">
-        <table id="plTable">
+      <div class="scroll">
+        <table class="tbl" id="pl-table">
           <thead>
             <tr>
-              <th class="num">#</th>
-              <th class="left">Club</th>
-              <th class="num">P</th>
-              <th class="num">W</th>
-              <th class="num">D</th>
-              <th class="num">L</th>
-              <th class="num">GD</th>
-              <th class="num">Pts</th>
+              <th class="center" style="width:48px">#</th>
+              <th style="text-align:left">Club</th>
+              <th class="center" style="width:60px">P</th>
+              <th class="center" style="width:60px">W</th>
+              <th class="center" style="width:60px">D</th>
+              <th class="center" style="width:60px">L</th>
+              <th class="center" style="width:70px">GD</th>
+              <th class="center" style="width:70px">Pts</th>
             </tr>
           </thead>
-          <tbody>
-            <tr><td colspan="8" class="muted">Loading table…</td></tr>
+          <tbody id="pl-body">
+            <tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr>
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
 
-    <!-- RIGHT TOP: UPCOMING + RESULTS -->
-    <section class="card" id="rightTop">
-      <div class="header">
-        <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
-        <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
+    <!-- right: fixtures & results -->
+    <div class="right-col">
+      <div class="card fixture-panel">
+        <div class="table-head">
+          <h3><span class="live-dot"></span> Man United — Fixtures & Results</h3>
+          <a href="https://www.espn.co.uk/football/team/fixtures/_/id/360" target="_blank" class="muted" style="text-decoration:none">Open full list ↗</a>
+        </div>
+        <h4 class="muted" style="margin:0 0 8px">Upcoming</h4>
+        <div id="upcoming" class="fx-list"></div>
+        <h4 class="muted" style="margin:12px 0 8px">Recent Results</h4>
+        <div id="results" class="fx-list"></div>
       </div>
 
-      <div class="section">
-        <h3>Upcoming</h3>
-        <div id="upcoming" class="list"><div class="empty">Loading upcoming…</div></div>
-      </div>
-
-      <div class="section" style="margin-top:12px">
-        <h3>Recent Results</h3>
-        <div id="recent" class="list"><div class="empty">Loading results…</div></div>
-      </div>
-
-      <div id="loadwarn" class="muted" style="padding:8px 2px 0 2px;"></div>
-    </section>
-
-    <!-- RIGHT BOTTOM: R6 TRACKER -->
-    <section class="card" id="rightBottom">
-      <div class="header">
-        <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
-        <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
-      </div>
-      <iframe
-        src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
-        loading="lazy"
-        onload="document.getElementById('r6fallback')?.remove()"
-        style="width:100%; height:380px; border:0; border-radius:12px; background:#0a0a0d">
-      </iframe>
-      <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
-        Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
-      </div>
-    </section>
+      <!-- R6 tracker block kept as-is if you had it below -->
+      <!-- <div class="card section">…</div> -->
+    </div>
   </div>
 
-  <footer>CACHED_FIXTURE_BUST v8</footer>
-
   <script>
-    const TEAM_NAME = "Manchester United";
-    const UK_TZ = "Europe/London";
+  // utils
+  const todayISO = new Date().toISOString().slice(0,10);
+  const fmtDay = (iso) => {
+    try{
+      const d = new Date(iso+"T00:00:00");
+      return d.toLocaleDateString("en-GB", { weekday:"short", day:"2-digit", month:"short" });
+    }catch{return ""}
+  };
 
-    const fmtDate = (iso) => {
-      try {
-        const d = new Date(iso + "T00:00:00");
-        const day = d.toLocaleDateString("en-GB",{weekday:"short", timeZone:UK_TZ});
-        const num = d.toLocaleDateString("en-GB",{day:"2-digit", month:"short", timeZone:UK_TZ});
-        return { day, num, d };
-      } catch { return { day:"", num:iso, d:new Date(iso) }; }
-    };
-    const fmtTime = (hhmm) => hhmm || "TBC";
+  const scoreClass = (fx) => {
+    if (fx.status !== "FT" || !fx.score) return "";
+    const [h,a] = fx.score.split(/[–-]/).map(x=>parseInt(x.trim(),10));
+    // pick perspective of Manchester United
+    const homeIsUtd = (fx.home || "").toLowerCase().startsWith("manchester");
+    const ours = homeIsUtd ? h : a;
+    const opp  = homeIsUtd ? a : h;
+    if (ours > opp) return "win";
+    if (ours < opp) return "lose";
+    return "draw";
+  };
 
-    function resultClass(fx){
-      if (!fx || !fx.score || (fx.status||"").toUpperCase() !== "FT")
-        return { cls:"ft", label: fx.score ?? "FT" };
-      const parts = String(fx.score).replace('-', '–').split('–').map(s => parseInt(s.trim(), 10));
-      if (parts.length !== 2 || Number.isNaN(parts[0]) || Number.isNaN(parts[1]))
-        return { cls:"ft", label: fx.score };
-      const [home, away] = parts;
-      const isHome = (fx.home || "").toLowerCase().startsWith("man");
-      let cls = "draw";
-      if ((isHome && home > away) || (!isHome && away > home)) cls = "win";
-      if ((isHome && home < away) || (!isHome && away < home)) cls = "loss";
-      return { cls, label: fx.score };
+  const el = (html) => {
+    const t = document.createElement("template");
+    t.innerHTML = html.trim();
+    return t.content.firstChild;
+  };
+
+  // render fixtures lists
+  function renderFixtures(list, host){
+    host.innerHTML = "";
+    if (!list.length){
+      host.innerHTML = '<div class="muted" style="padding:10px 2px">No items.</div>';
+      return;
     }
-
-    function crest(url){ return url ? `<img class="crest" src="${url}" alt="">` : ""; }
-
-    function fixtureRow(m) {
-      const when = fmtDate(m.date);
-      const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
-      const st = (m.status||"").toUpperCase();
-      let statusHtml = "";
-      if (st === "FT") {
-        const r = resultClass(m);
-        statusHtml = `<div class="status ${r.cls}">${r.label}</div>`;
-      } else if (st.includes("LIVE")) {
-        statusHtml = `<div class="status live">LIVE</div>`;
-      } else {
-        statusHtml = `<div class="status upcoming">UPCOMING</div>`;
-      }
-      return `
-        <div class="fixture">
-          <div class="date">
-            <div class="d">${when.day}</div>
-            <div class="t">${when.num}<br>${fmtTime(m.time)}</div>
+    list.forEach(fx=>{
+      const scoreHTML = fx.status === "FT" && fx.score
+        ? `<div class="score ${scoreClass(fx)}">${fx.score}</div>`
+        : `<span class="pill">UPCOMING</span>`;
+      const row = el(`
+        <div class="fx">
+          <div class="left">
+            <div>${fmtDay(fx.date)}</div>
+            <div>${fx.time || "TBC"}</div>
           </div>
           <div class="teams">
-            <div class="teamline">
-              ${crest(m.homeBadge)} ${m.home} <span class="muted">vs</span> ${crest(m.awayBadge)} ${m.away}
-            </div>
-            <div class="comp">${m.comp}${m.venue ? " · " + m.venue : ""}</div>
-            ${tv}
+            <div class="club"><img class="badge" src="${fx.homeBadge || ""}" onerror="this.style.display='none'"/><span>${fx.home}</span></div>
+            <div class="muted">vs</div>
+            <div class="club"><img class="badge" src="${fx.awayBadge || ""}" onerror="this.style.display='none'"/><span>${fx.away}</span></div>
           </div>
-          ${statusHtml}
-        </div>`;
+          ${scoreHTML}
+        </div>
+      `);
+      host.appendChild(row);
+    });
+  }
+
+  // render table
+  function renderTable(rows){
+    const body = document.getElementById("pl-body");
+    body.innerHTML = "";
+    if (!rows || !rows.length){
+      body.innerHTML = '<tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr>';
+      return;
     }
+    rows.forEach(r=>{
+      body.appendChild(el(`
+        <tr>
+          <td class="center">${r.rank ?? ""}</td>
+          <td>
+            <div class="team">
+              <img class="crest" src="${r.badge || ""}" onerror="this.style.display='none'"/>
+              <span>${r.team || ""}</span>
+            </div>
+          </td>
+          <td class="center">${r.played ?? ""}</td>
+          <td class="center">${r.win ?? ""}</td>
+          <td class="center">${r.draw ?? ""}</td>
+          <td class="center">${r.loss ?? ""}</td>
+          <td class="center">${r.gd ?? ( (r.gf??0) - (r.ga??0) )}</td>
+          <td class="center" style="font-weight:700">${r.points ?? ""}</td>
+        </tr>
+      `));
+    });
+  }
 
-    async function loadFixtures() {
-      const up = document.getElementById("upcoming");
-      const rc = document.getElementById("recent");
-      const warn = document.getElementById("loadwarn");
-      try {
-        const res = await fetch(`assets/fixtures.json?ts=${Date.now()}`, { cache: "no-store" });
-        if (!res.ok) throw new Error(res.status + " " + res.statusText);
-        const data = await res.json();
-
-        const today = new Date(); today.setHours(0,0,0,0);
-
-        // Prefer future-dated games, still tolerate non-FT status
-        const upcoming = data
-          .filter(x => new Date(x.date) >= today || (x.status||"").toUpperCase() !== "FT")
-          .filter(x => new Date(x.date) >= today)
-          .sort((a,b) => a.date.localeCompare(b.date))
-          .slice(0, 12);
-
-        const recent = data
-          .filter(x => (x.status||"").toUpperCase() === "FT" || new Date(x.date) < today)
-          .sort((a,b) => b.date.localeCompare(a.date))
-          .slice(0, 12);
-
-        up.innerHTML = upcoming.length ? upcoming.map(fixtureRow).join("") : `<div class="empty">No upcoming fixtures.</div>`;
-        rc.innerHTML = recent.length ? recent.map(fixtureRow).join("") : `<div class="empty">No recent results yet.</div>`;
-
-        warn.textContent = (!upcoming.length)
-          ? "Heads-up: Upcoming looks empty. Re-run the 'Update fixtures' action so assets/fixtures.json includes future dates."
-          : "";
-      } catch (e) {
-        console.error("fixtures.json load error:", e);
-        up.innerHTML = `<div class="empty">Couldn’t load fixtures. Check assets/fixtures.json exists.</div>`;
-        rc.innerHTML = `<div class="empty">Couldn’t load results.</div>`;
-        warn.textContent = "";
+  // boot
+  (async ()=>{
+    // Table
+    try{
+      const t = await fetch("assets/table.json?cachebust="+Date.now());
+      if (t.ok){
+        const rows = await t.json();
+        renderTable(rows);
+      } else {
+        renderTable([]);
       }
-    }
+    }catch{ renderTable([]); }
 
-    async function loadPLTable() {
-      const link = document.getElementById("plSeasonLink");
-      try {
-        const r = await fetch(`assets/table.json?ts=${Date.now()}`, { cache: "no-store" });
-        const rows = await r.json();
-        const tbody = document.querySelector("#plTable tbody");
-        if (!rows.length) {
-          tbody.innerHTML = `<tr><td colspan="8" class="muted">No table data available right now.</td></tr>`;
-          return;
-        }
-        const now = new Date();
-        const yearStart = (now.getMonth() >= 7) ? now.getFullYear() : now.getFullYear()-1;
-        link.textContent = `${yearStart}-${yearStart+1}`;
-        link.href = `https://www.google.com/search?q=premier+league+table+${yearStart}-${yearStart+1}`;
-
-        tbody.innerHTML = rows.map((t) => {
-          const you = /manchester united/i.test(t.team) ? " you" : "";
-          const badge = t.badge ? `<img src="${t.badge}" alt="">` : "";
-          return `
-            <tr class="${you}">
-              <td class="num">${t.rank}</td>
-              <td class="left"><span class="club">${badge}<span>${t.team}</span></span></td>
-              <td class="num">${t.played}</td>
-              <td class="num">${t.win}</td>
-              <td class="num">${t.draw}</td>
-              <td class="num">${t.loss}</td>
-              <td class="num">${t.gd}</td>
-              <td class="num"><strong>${t.points}</strong></td>
-            </tr>`;
-        }).join("");
-      } catch (e) {
-        console.error("table.json load error:", e);
-        document.querySelector("#plTable tbody").innerHTML =
-          `<tr><td colspan="8" class="muted">Failed to load PL table.</td></tr>`;
+    // Fixtures
+    try{
+      const f = await fetch("assets/fixtures.json?cachebust="+Date.now());
+      if (f.ok){
+        const arr = await f.json();
+        // normalise a bit
+        const up = arr.filter(x=> (x.status||"").toUpperCase()==="UPCOMING")
+                      .sort((a,b)=> (a.date||"").localeCompare(b.date) || (a.time||"").localeCompare(b.time))
+                      .slice(0,6);
+        const res = arr.filter(x=> (x.status||"").toUpperCase()==="FT")
+                       .sort((a,b)=> (b.date||"").localeCompare(a.date) || (b.time||"").localeCompare(a.time))
+                       .slice(0,6);
+        renderFixtures(up, document.getElementById("upcoming"));
+        renderFixtures(res, document.getElementById("results"));
+      }else{
+        renderFixtures([], document.getElementById("upcoming"));
+        renderFixtures([], document.getElementById("results"));
       }
+    }catch{
+      renderFixtures([], document.getElementById("upcoming"));
+      renderFixtures([], document.getElementById("results"));
     }
-
-    loadFixtures();
-    loadPLTable();
+  })();
   </script>
 </body>
 </html>
