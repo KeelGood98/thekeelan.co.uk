@@ -1,1 +1,71 @@
-[]
+{
+  "season": "2024-2025",
+  "updated": "2025-09-27T20:15:07.564351Z",
+  "standings": [
+    {
+      "pos": 1,
+      "team": "Liverpool",
+      "played": 38,
+      "won": 25,
+      "drawn": 9,
+      "lost": 4,
+      "gf": 86,
+      "ga": 41,
+      "gd": 45,
+      "pts": 84,
+      "badge": null
+    },
+    {
+      "pos": 2,
+      "team": "Arsenal",
+      "played": 38,
+      "won": 20,
+      "drawn": 14,
+      "lost": 4,
+      "gf": 69,
+      "ga": 34,
+      "gd": 35,
+      "pts": 74,
+      "badge": null
+    },
+    {
+      "pos": 3,
+      "team": "Manchester City",
+      "played": 38,
+      "won": 21,
+      "drawn": 8,
+      "lost": 9,
+      "gf": 72,
+      "ga": 44,
+      "gd": 28,
+      "pts": 71,
+      "badge": null
+    },
+    {
+      "pos": 4,
+      "team": "Chelsea",
+      "played": 38,
+      "won": 20,
+      "drawn": 9,
+      "lost": 9,
+      "gf": 64,
+      "ga": 43,
+      "gd": 21,
+      "pts": 69,
+      "badge": null
+    },
+    {
+      "pos": 5,
+      "team": "Newcastle United",
+      "played": 38,
+      "won": 20,
+      "drawn": 6,
+      "lost": 12,
+      "gf": 68,
+      "ga": 47,
+      "gd": 21,
+      "pts": 66,
+      "badge": null
+    }
+  ]
+}

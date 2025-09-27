@@ -1,80 +1,110 @@
-[
-  {
-    "date": "2025-08-17",
-    "time": "15:30",
-    "comp": "English Premier League",
-    "home": "Manchester United",
-    "away": "Arsenal",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Old Trafford",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png"
-  },
-  {
-    "date": "2025-08-24",
-    "time": "15:30",
-    "comp": "English Premier League",
-    "home": "Fulham",
-    "away": "Manchester United",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Craven Cottage",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
-  },
-  {
-    "date": "2025-08-30",
-    "time": "14:00",
-    "comp": "English Premier League",
-    "home": "Manchester United",
-    "away": "Burnley",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Old Trafford",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
-  },
-  {
-    "date": "2025-09-14",
-    "time": "15:30",
-    "comp": "English Premier League",
-    "home": "Manchester City",
-    "away": "Manchester United",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Etihad Stadium",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
-  },
-  {
-    "date": "2025-09-20",
-    "time": "16:30",
-    "comp": "English Premier League",
-    "home": "Manchester United",
-    "away": "Chelsea",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Old Trafford",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
-  },
-  {
-    "date": "2025-09-27",
-    "time": "11:30",
-    "comp": "English Premier League",
-    "home": "Brentford",
-    "away": "Manchester United",
-    "status": "FT",
-    "score": "0–0",
-    "venue": "Gtech Community Stadium",
-    "tv": [],
-    "homeBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
-    "awayBadge": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
-  }
-]
+{
+  "team": "Manchester United",
+  "updated": "2025-09-27T20:15:07.984070Z",
+  "matches": [
+    {
+      "date": "2025-09-20T16:30:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Chelsea",
+      "status": "FINISHED",
+      "score": {
+        "home": 2,
+        "away": 1,
+        "outcome": "W"
+      }
+    },
+    {
+      "date": "2025-08-30T14:00:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Burnley",
+      "status": "FINISHED",
+      "score": {
+        "home": 3,
+        "away": 2,
+        "outcome": "W"
+      }
+    },
+    {
+      "date": "2025-08-17T15:30:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Arsenal",
+      "status": "FINISHED",
+      "score": {
+        "home": 0,
+        "away": 1,
+        "outcome": "L"
+      }
+    },
+    {
+      "date": "2025-08-09T11:45:00Z",
+      "comp": "Club Friendlies",
+      "home": "Manchester United",
+      "away": "Fiorentina",
+      "status": "FINISHED",
+      "score": {
+        "home": 1,
+        "away": 1,
+        "outcome": "D"
+      }
+    },
+    {
+      "date": "2025-08-03T21:00:00Z",
+      "comp": "English Premier League Summer Series",
+      "home": "Manchester United",
+      "away": "Everton",
+      "status": "FINISHED",
+      "score": {
+        "home": 2,
+        "away": 2,
+        "outcome": "D"
+      }
+    },
+    {
+      "date": "2025-09-27T14:00:00Z",
+      "comp": "English League 1",
+      "home": "Northampton Town",
+      "away": "Bolton Wanderers",
+      "status": "FINISHED",
+      "score": {
+        "home": 2,
+        "away": 0,
+        "outcome": "L"
+      }
+    },
+    {
+      "date": "2025-10-04T14:00:00Z",
+      "comp": "English League 1",
+      "home": "Bolton Wanderers",
+      "away": "Peterborough United",
+      "status": "SCHEDULED",
+      "score": null
+    },
+    {
+      "date": "2025-10-11T14:00:00Z",
+      "comp": "English League 1",
+      "home": "Burton Albion",
+      "away": "Bolton Wanderers",
+      "status": "SCHEDULED",
+      "score": null
+    },
+    {
+      "date": "2025-10-16T19:00:00Z",
+      "comp": "English League 1",
+      "home": "Huddersfield Town",
+      "away": "Bolton Wanderers",
+      "status": "SCHEDULED",
+      "score": null
+    },
+    {
+      "date": "2025-10-25T11:30:00Z",
+      "comp": "English League 1",
+      "home": "Bolton Wanderers",
+      "away": "Cardiff City",
+      "status": "SCHEDULED",
+      "score": null
+    }
+  ]
+}
