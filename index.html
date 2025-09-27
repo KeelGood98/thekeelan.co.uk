@@ -24,7 +24,15 @@
       filter: saturate(0.9) contrast(1.05);
     }
 
-    .wrap{min-height:100%;padding:24px;display:grid;gap:24px;grid-template-columns:1.1fr .9fr;align-items:start}
+    /* Layout: fixtures (wide) | right column (gif + table + r6) */
+    .wrap{
+      min-height:100%;
+      padding:24px;
+      display:grid;
+      gap:24px;
+      grid-template-columns: minmax(0,2fr) minmax(0,1.2fr);
+      align-items:start;
+    }
     @media (max-width: 1100px){ .wrap{grid-template-columns:1fr} }
 
     .card{background:var(--glass); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; overflow:hidden}
@@ -33,13 +41,9 @@
     .dot{width:9px; height:9px; background:var(--accent); border-radius:50%}
     .muted{color:var(--muted); font-size:13px}
 
-    .gifbox{display:flex; align-items:center; justify-content:center; min-height:60vh}
-    .gifbox img{max-width:100%; max-height:75vh; border-radius:14px}
-
-    .stack{display:grid; gap:18px}
+    /* Fixtures */
     .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
     .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
-
     .list .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
     .list .fixture:not(:last-child){border-bottom:1px dashed #1d1f25}
     .date{min-width:78px; text-align:center}
@@ -58,47 +62,58 @@
     .status.loss{color:var(--loss)}
     .empty{padding:14px; text-align:center; color:var(--muted)}
 
-    .table-wrap{overflow:auto; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
-    table{width:100%; border-collapse:collapse; font-size:14px}
+    /* RIGHT column stack */
+    .right-col{display:grid; gap:18px}
+
+    /* Smaller GIF card */
+    .gifbox{display:flex; align-items:center; justify-content:center; min-height:220px}
+    .gifbox img{max-width:100%; max-height:220px; border-radius:14px}
+
+    /* Table styles (scrollable, numbers centered, logos) */
+    .table-wrap{overflow:auto; max-height:520px; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
+    table{width:100%; border-collapse:collapse; font-size:14px; table-layout:auto}
     th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
-    th{position:sticky; top:0; background:#0e0f13; text-align:left; font-weight:700}
-    td.num{text-align:right}
+    th{position:sticky; top:0; background:#0e0f13; text-align:center; font-weight:700}
+    th.left{ text-align:left }
+    td.num{text-align:center}
     tr:hover{background:#0e0f13}
     .club{display:flex; align-items:center; gap:8px}
-    .club img{width:20px; height:20px; border-radius:50%}
+    .club img{width:20px; height:20px; border-radius:50%; background:#111}
     .you{font-weight:800}
   </style>
 </head>
 <body>
   <div class="wrap">
 
-    <!-- LEFT: GIF -->
-    <section class="card gifbox">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
+    <!-- LEFT: Fixtures / Results -->
+    <section class="card" id="fxCard">
+      <div class="header">
+        <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
+        <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
+      </div>
+
+      <div class="section">
+        <h3>Upcoming</h3>
+        <div id="upcoming" class="list">
+          <div class="empty">Loading upcoming…</div>
+        </div>
+      </div>
+      <div class="section" style="margin-top:12px">
+        <h3>Recent Results</h3>
+        <div id="recent" class="list">
+          <div class="empty">Loading results…</div>
+        </div>
+      </div>
+
+      <div id="loadwarn" class="muted" style="padding:8px 2px 0 2px;"></div>
     </section>
 
-    <!-- RIGHT: Stack -->
-    <div class="stack">
+    <!-- RIGHT: GIF + Table + R6 -->
+    <div class="right-col">
 
-      <!-- Fixtures / Results -->
-      <section class="card" id="fxCard">
-        <div class="header">
-          <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
-          <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
-        </div>
-
-        <div class="section">
-          <h3>Upcoming</h3>
-          <div id="upcoming" class="list">
-            <div class="empty">Loading upcoming…</div>
-          </div>
-        </div>
-        <div class="section" style="margin-top:12px">
-          <h3>Recent Results</h3>
-          <div id="recent" class="list">
-            <div class="empty">Loading results…</div>
-          </div>
-        </div>
+      <!-- GIF -->
+      <section class="card gifbox">
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
       </section>
 
       <!-- Premier League Table -->
@@ -111,8 +126,8 @@
           <table id="plTable">
             <thead>
               <tr>
-                <th>#</th>
-                <th>Club</th>
+                <th class="num">#</th>
+                <th class="left">Club</th>
                 <th class="num">P</th>
                 <th class="num">W</th>
                 <th class="num">D</th>
@@ -138,7 +153,7 @@
           src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
           loading="lazy"
           onload="document.getElementById('r6fallback')?.remove()"
-          style="width:100%; height:420px; border:0; border-radius:12px; background:#0a0a0d">
+          style="width:100%; height:380px; border:0; border-radius:12px; background:#0a0a0d">
         </iframe>
         <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
           Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
@@ -179,8 +194,8 @@
     function fixtureRow(m) {
       const when = fmtDate(m.date);
       const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
-      let statusHtml = "";
       const st = (m.status||"").toUpperCase();
+      let statusHtml = "";
       if (st === "FT") {
         const r = resultClass(m);
         statusHtml = `<div class="status ${r.cls}">${r.label}</div>`;
@@ -207,6 +222,7 @@
     async function loadFixtures() {
       const up = document.getElementById("upcoming");
       const rc = document.getElementById("recent");
+      const warn = document.getElementById("loadwarn");
       try {
         const res = await fetch("assets/fixtures.json", { cache: "no-store" });
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
@@ -226,13 +242,19 @@
 
         up.innerHTML = upcoming.length ? upcoming.map(fixtureRow).join("") : `<div class="empty">No upcoming fixtures.</div>`;
         rc.innerHTML = recent.length ? recent.map(fixtureRow).join("") : `<div class="empty">No recent results yet.</div>`;
+
+        warn.textContent = (!upcoming.length)
+          ? "Heads-up: Upcoming looks empty. Make sure the GitHub Action updated assets/fixtures.json today."
+          : "";
       } catch (e) {
         console.error("fixtures.json load error:", e);
         up.innerHTML = `<div class="empty">Couldn’t load fixtures. Check assets/fixtures.json exists.</div>`;
         rc.innerHTML = `<div class="empty">Couldn’t load results.</div>`;
+        warn.textContent = "";
       }
     }
 
+    // Premier League table (TheSportsDB)
     async function loadPLTable() {
       const now = new Date();
       const season = (now.getMonth() >= 7)
@@ -250,7 +272,7 @@
         const rows = j.table || [];
         const tbody = document.querySelector("#plTable tbody");
         if (!rows.length) {
-          tbody.innerHTML = `<tr><td colspan="8" class="muted">No table data right now.</td></tr>`;
+          tbody.innerHTML = `<tr><td colspan="8" class="muted">No table data available right now.</td></tr>`;
           return;
         }
         tbody.innerHTML = rows.map((t) => {
@@ -260,8 +282,8 @@
           const you = /manchester united/i.test(name) ? " you" : "";
           return `
             <tr class="${you}">
-              <td>${t.intRank}</td>
-              <td><span class="club">${crest?`<img src="${crest}" alt="">`:''}<span>${name}</span></span></td>
+              <td class="num">${t.intRank}</td>
+              <td class="left"><span class="club">${crest?`<img src="${crest}" alt="">`:''}<span>${name}</span></span></td>
               <td class="num">${t.intPlayed || 0}</td>
               <td class="num">${t.intWin || 0}</td>
               <td class="num">${t.intDraw || 0}</td>
@@ -277,7 +299,6 @@
       }
     }
 
-    // Kick it off
     loadFixtures();
     loadPLTable();
   </script>
