@@ -21,25 +21,28 @@ jobs:
           python-version: "3.x"
 
       - name: Build assets (fixtures & table)
+        env:
+          FD_TOKEN: ${{ secrets.FOOTBALL_DATA_API_KEY }}  # optional; enables full 20-team PL table
         run: |
           python - <<'PY'
-          import json, os, urllib.request, urllib.parse, datetime, sys
+          import json, os, urllib.request, urllib.parse, datetime, sys, ssl
+          ssl._create_default_https_context = ssl._create_unverified_context
 
-          TEAM_ID   = "133612"                 # Manchester United
+          # --- CONFIG ---
+          TEAM_ID   = "133612"                      # Manchester United (TheSportsDB)
           TEAM_NAME = "Manchester United"
-          LEAGUE_ID = "4328"                   # Premier League ID
+          LEAGUE_ID = "4328"                        # Premier League (TheSportsDB)
           LEAGUE    = "English Premier League"
 
-          def fetch(url: str):
-            with urllib.request.urlopen(url, timeout=60) as r:
+          def fetch(url: str, headers=None):
+            req = urllib.request.Request(url, headers=headers or {})
+            with urllib.request.urlopen(req, timeout=60) as r:
               return json.loads(r.read().decode("utf-8"))
 
           def current_season() -> str:
             today = datetime.date.today()
-            # PL season rolls in Aug
-            if today.month >= 8:
-              return f"{today.year}-{today.year+1}"
-            return f"{today.year-1}-{today.year}"
+            # PL season rolls in August
+            return f"{today.year}-{today.year+1}" if today.month >= 8 else f"{today.year-1}-{today.year}"
 
           def map_event(e: dict) -> dict:
             date = (e.get("dateEvent") or e.get("dateEventLocal") or "")[:10]
@@ -70,6 +73,14 @@ jobs:
               print("Badge map fetch failed:", ex, file=sys.stderr)
               return {}
 
+          # --- sanity check the team id really is Man United ---
+          try:
+            team_info = fetch(f"https://www.thesportsdb.com/api/v1/json/3/lookupteam.php?id={TEAM_ID}")
+            looked = (team_info.get("teams") or [{}])[0].get("strTeam") or ""
+            print("TheSportsDB: lookupteam =", looked)
+          except Exception as ex:
+            print("lookupteam failed:", ex, file=sys.stderr)
+
           season = current_season()
           today  = datetime.date.today()
           print("Season:", season)
@@ -93,14 +104,20 @@ jobs:
             except Exception as ex:
               print(f"Fetch {name} failed:", ex, file=sys.stderr)
 
-          # Fallback: if nothing future came back, derive from season
           mapped = [map_event(e) for e in all_events]
+
+          # HARD FILTER: keep only fixtures that involve Manchester United (protects against wrong/mixed data)
+          def involves_us(m): 
+            return (m.get("home","").lower() == TEAM_NAME.lower()) or (m.get("away","").lower() == TEAM_NAME.lower())
+          mapped = [m for m in mapped if involves_us(m)]
+
+          # Fallback if we somehow got nothing
           has_future = any((datetime.date.fromisoformat(m["date"]) >= today) for m in mapped if m["date"])
           if not has_future:
             try:
-              data = fetch(url_season)
-              season_events = data.get("events") or []
-              mapped = [map_event(e) for e in season_events]
+              season_only = fetch(url_season).get("events") or []
+              mapped = [map_event(e) for e in season_only]
+              mapped = [m for m in mapped if involves_us(m)]
               print("Fallback used: season-only fixtures:", len(mapped))
             except Exception as ex:
               print("Fallback season fetch failed:", ex, file=sys.stderr)
@@ -128,7 +145,8 @@ jobs:
             tv_overrides = {}
 
           for fx in fixtures:
-            opponent = fx["away"] if (fx["home"] or "").lower().startswith("man") else fx["home"]
+            # key like "2025-10-04 Liverpool"
+            opponent = fx["away"] if fx["home"].lower() == TEAM_NAME.lower() else fx["home"]
             key = f'{fx["date"]} {opponent}'
             if key in tv_overrides:
               fx["tv"] = tv_overrides[key]
@@ -138,40 +156,71 @@ jobs:
             json.dump(fixtures, out, ensure_ascii=False, indent=2)
           print("Wrote fixtures:", len(fixtures))
 
-          # ---- TABLE: full table + badges ----
-          table_url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={season}"
+          # ---- TABLE: full table with badges ----
+          def write_table(rows, source):
+            with open("assets/table.json","w",encoding="utf-8") as out:
+              json.dump(rows, out, ensure_ascii=False, indent=2)
+            print(f"Wrote table rows: {len(rows)} (source: {source})")
+
+          # Try TheSportsDB first
           try:
-            tab = fetch(table_url).get("table") or []
-            print("Raw table rows:", len(tab))
+            tab = fetch(f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={season}").get("table") or []
+            trows = []
+            for t in tab:
+              name = t.get("strTeam") or ""
+              badge = t.get("strTeamBadge") or badge_map.get(name.lower())
+              trows.append({
+                "rank": int(t.get("intRank") or 0),
+                "team": name,
+                "played": int(t.get("intPlayed") or 0),
+                "win": int(t.get("intWin") or 0),
+                "draw": int(t.get("intDraw") or 0),
+                "loss": int(t.get("intLoss") or 0),
+                "gf": int(t.get("intGoalsFor") or 0),
+                "ga": int(t.get("intGoalsAgainst") or 0),
+                "gd": int(t.get("intGoalsFor") or 0) - int(t.get("intGoalsAgainst") or 0),
+                "points": int(t.get("intPoints") or 0),
+                "badge": badge,
+              })
+            trows = [r for r in trows if r["team"]]
+            trows.sort(key=lambda r: r["rank"] if r["rank"] else 999)
           except Exception as ex:
             print("Table fetch failed:", ex, file=sys.stderr)
-            tab = []
+            trows = []
 
-          table_rows = []
-          for t in tab:
-            name = t.get("strTeam") or ""
-            badge = t.get("strTeamBadge") or badge_map.get(name.lower())
-            table_rows.append({
-              "rank": int(t.get("intRank") or 0),
-              "team": name,
-              "played": int(t.get("intPlayed") or 0),
-              "win": int(t.get("intWin") or 0),
-              "draw": int(t.get("intDraw") or 0),
-              "loss": int(t.get("intLoss") or 0),
-              "gf": int(t.get("intGoalsFor") or 0),
-              "ga": int(t.get("intGoalsAgainst") or 0),
-              "gd": int(t.get("intGoalsFor") or 0) - int(t.get("intGoalsAgainst") or 0),
-              "points": int(t.get("intPoints") or 0),
-              "badge": badge,
-            })
-
-          # ensure full table & correct order
-          table_rows = [r for r in table_rows if r["team"]]
-          table_rows.sort(key=lambda r: r["rank"] if r["rank"] else 999)
-
-          with open("assets/table.json","w",encoding="utf-8") as out:
-            json.dump(table_rows, out, ensure_ascii=False, indent=2)
-          print("Wrote table rows:", len(table_rows))
+          # If fewer than 10 teams, try football-data.org (needs token)
+          token = os.environ.get("FD_TOKEN","").strip()
+          if len(trows) < 10 and token:
+            try:
+              year = int(season.split("-")[0])
+              url = f"https://api.football-data.org/v4/competitions/PL/standings?season={year}"
+              data = fetch(url, headers={"X-Auth-Token": token})
+              standings = (data.get("standings") or [])[0].get("table") or []
+              trows = []
+              for it in standings:
+                team = it.get("team") or {}
+                trows.append({
+                  "rank": int(it.get("position") or 0),
+                  "team": team.get("name") or "",
+                  "played": int(it.get("playedGames") or 0),
+                  "win": int(it.get("won") or 0),
+                  "draw": int(it.get("draw") or 0),
+                  "loss": int(it.get("lost") or 0),
+                  "gf": int((it.get("goalsFor") or 0)),
+                  "ga": int((it.get("goalsAgainst") or 0)),
+                  "gd": int((it.get("goalDifference") or 0)),
+                  "points": int(it.get("points") or 0),
+                  "badge": team.get("crest") or badge_map.get((team.get("name") or "").lower()),
+                })
+              trows = [r for r in trows if r["team"]]
+              trows.sort(key=lambda r: r["rank"] if r["rank"] else 999)
+              write_table(trows, "football-data.org")
+            except Exception as ex:
+              print("football-data table fallback failed:", ex, file=sys.stderr)
+              write_table(trows, "thesportsdb (partial)")
+          else:
+            source = "thesportsdb" if len(trows) >= 10 else "thesportsdb (partial)"
+            write_table(trows, source)
           PY
 
       - name: Commit & push if changed
@@ -180,7 +229,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add assets/fixtures.json assets/table.json
-            git commit -m "chore: update fixtures & table (full + badges + future fallback) [skip ci]"
+            git commit -m "chore: update fixtures & table (MUFC-only, full table, badges) [skip ci]"
             git push
           else
             echo "No changes."
