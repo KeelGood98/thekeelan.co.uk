@@ -5,22 +5,149 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>thekeelan.co.uk</title>
   <style>
-    html,body{
+    :root {
+      --bg: #000;
+      --panel: #0d0d0f;
+      --fg: #eaeaea;
+      --muted: #9aa0a6;
+      --accent: #e50914;
+      --radius: 16px;
+      --shadow: 0 8px 30px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box }
+    html, body {
       height:100%;
       margin:0;
-      background:#000;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
-    img{
-      max-width:90vw;
-      max-height:90vh;
+    a { color: var(--fg) }
+
+    .wrap {
+      min-height: 100%;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    @media (max-width: 900px) {
+      .wrap { grid-template-columns: 1fr; }
+    }
+
+    .card {
+      background: var(--panel);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .gifbox img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 12px;
+    }
+
+    .header {
+      position: absolute;
+      top: 8px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+    .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #111;
+      border: 1px solid #222;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .frame {
+      width: 100%;
+      border: 0;
+      border-radius: 12px;
+      background: #0a0a0a;
+    }
+
+    .fallback {
+      position: absolute;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 32px;
+      background: linear-gradient(180deg, #0d0d0f 0, #0a0a0a 100%);
+    }
+    .fallback.show {
+      display: flex;
+    }
+    .muted { color: var(--muted); font-size: 14px; margin-top: 6px; }
+    .btn {
+      display:inline-block;
+      margin-top:14px;
+      padding:10px 14px;
+      border-radius:10px;
+      background: var(--accent);
+      color: white;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow: 0 6px 18px rgba(229,9,20,.35);
     }
   </style>
 </head>
 <body>
-  <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
+  <div class="wrap">
+
+    <section class="card gifbox">
+      <img
+        src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif"
+        alt="funny gif" />
+    </section>
+
+    <section class="card">
+      <div class="header">
+        <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
+        <a class="muted" href="https://www.sofascore.com/team/football/manchester-united/35" target="_blank" rel="noopener">Sofascore page ↗</a>
+      </div>
+
+      <iframe
+        id="fixtures"
+        class="frame"
+        src="https://widgets.sofascore.com/football/team?id=35&theme=dark&lang=en"
+        loading="lazy"
+        referrerpolicy="no-referrer"
+        onload="document.getElementById('fallback').classList.remove('show')"
+      ></iframe>
+
+      <div id="fallback" class="fallback show">
+        <div>
+          <div style="font-size:18px; font-weight:700; margin-bottom:6px;">Couldn’t load widget</div>
+          <div class="muted">Provider likely blocks embedding.</div>
+          <a class="btn" href="https://www.sofascore.com/team/football/manchester-united/35" target="_blank" rel="noopener">Go to Sofascore</a>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
 </body>
 </html>
-
