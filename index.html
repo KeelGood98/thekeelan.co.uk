@@ -6,156 +6,158 @@
 <title>thekeelan.co.uk</title>
 <style>
   :root{
-    --bg:#0f0f12;
-    --panel:#17181d;
+    --bg:#0f1014;
+    --panel:#171922;
+    --panel2:#1b1e28;
+    --row:#1a1c25;
+    --row2:#171922;
+    --line:#262a38;
     --text:#e7e8ec;
     --muted:#9aa0a6;
-    --accent:#c22d2d;   /* red dot */
+    --sub:#cfd2da;
     --pill:#2b2f3a;
+    --accent:#c22d2d;
     --win:#2bbf6a;
     --draw:#e3b341;
     --loss:#ff5d5d;
-    --row:#1b1c22;
-    --row2:#17181d;
-    --line:#262833;
   }
   *{box-sizing:border-box}
   html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";}
   a{color:inherit;text-decoration:none}
   .wrap{
-    max-width:1400px;
-    margin:24px auto;
-    padding:0 16px;
-    display:grid;
-    grid-template-columns: 220px 1fr 420px;
-    grid-gap:18px;
+    max-width:1400px;margin:24px auto;padding:0 16px;
+    display:grid;grid-template-columns: 220px 1fr 440px;grid-gap:18px;
   }
-  .card{
-    background:var(--panel);
-    border-radius:14px;
-    box-shadow:0 8px 20px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
-    overflow:hidden;
-  }
+  .card{background:var(--panel);border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);overflow:hidden}
   .pad{padding:14px 16px}
-  .title{
-    display:flex;align-items:center;gap:8px;
-    font-weight:700;
-    letter-spacing:.2px;
-  }
+  .title{display:flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.2px}
   .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
-  /* left column gif */
-  .gifbox{display:flex;flex-direction:column;gap:16px}
+
+  /* left */
   .gifbox img{width:100%;display:block;border-radius:12px}
-  /* table card */
-  .table{
-    display:grid;
-    grid-template-rows: auto 1fr;
-    min-height:420px;
-  }
-  .tbl-head, .tbl-row{
-    display:grid;
-    grid-template-columns: 40px 1fr repeat(6,56px);
-    column-gap:12px;
-    align-items:center;
-    padding:10px 14px;
-  }
-  .tbl-head{
-    position:sticky;top:0;background:linear-gradient(var(--panel),var(--panel));
-    border-bottom:1px solid var(--line);
-    font-weight:600;color:#cfd2da;
-  }
+
+  /* table */
+  .table{display:grid;grid-template-rows:auto 1fr;min-height:420px}
+  .tbl-head,.tbl-row{display:grid;grid-template-columns:40px 1fr repeat(6,56px);column-gap:12px;align-items:center;padding:10px 14px}
+  .tbl-head{position:sticky;top:0;background:linear-gradient(var(--panel),var(--panel));border-bottom:1px solid var(--line);font-weight:600;color:var(--sub)}
   .tbl-body{max-height:520px;overflow:auto}
-  .tbl-row{border-bottom:1px solid rgba(255,255,255,.03);background:var(--row)}
+  .tbl-row{border-bottom:1px solid rgba(255,255,255,.04);background:var(--row)}
   .tbl-row:nth-child(even){background:var(--row2)}
-  .num{ text-align:center; font-variant-numeric:tabular-nums; }
+  .num{text-align:center;font-variant-numeric:tabular-nums}
   .club{display:flex;align-items:center;gap:10px}
   .club img{width:18px;height:18px;object-fit:contain;filter:drop-shadow(0 1px 1px #0008)}
-  /* fixtures */
-  .section h3{margin:0 0 6px 0;font-size:15px;color:#cfd2da}
+
+  /* fixtures/results */
+  .section h3{margin:0 0 6px 0;font-size:15px;color:var(--sub)}
   .fx-list{display:flex;flex-direction:column;gap:10px}
-  .fx{
-    display:grid;
-    grid-template-columns: 44px 1fr auto;
-    gap:10px; align-items:center;
-    padding:10px 12px; border-radius:10px;
-    background:var(--row);
-    border:1px solid rgba(255,255,255,.04);
-  }
+  .fx{display:grid;grid-template-columns:52px 1fr auto;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:var(--panel2);border:1px solid rgba(255,255,255,.04)}
   .date{color:var(--muted);text-align:center;line-height:1.25}
-  .date .dow{font-weight:600;color:#cfd2da}
+  .date .dow{font-weight:700;color:var(--sub)}
   .match{display:flex;align-items:center;gap:10px}
-  .match .side{display:flex;align-items:center;gap:8px;min-width:120px}
-  .match img{width:18px;height:18px;object-fit:contain}
-  .pill{
-    padding:4px 8px;border-radius:999px;
-    font-size:12px;letter-spacing:.3px;
-    background:var(--pill);color:#cfd2da;
-    text-transform:uppercase;font-weight:700
-  }
+  .side{display:flex;align-items:center;gap:8px;min-width:120px}
+  .side img{width:18px;height:18px;object-fit:contain}
+  .pill{padding:4px 8px;border-radius:999px;font-size:12px;letter-spacing:.3px;background:var(--pill);color:#cfd2da;text-transform:uppercase;font-weight:700}
   .score{font-weight:800}
   .win{color:var(--win)} .draw{color:var(--draw)} .loss{color:var(--loss)}
-  .muted{color:var(--muted)}
-  .sp{opacity:.6}
-  /* right column sections */
+  .muted{color:var(--muted)} .sp{opacity:.6}
+
+  /* right col stack */
   .rightcol{display:flex;flex-direction:column;gap:18px}
+
+  /* R6 iframe */
+  .r6frame{width:100%;height:420px;border:0;border-radius:12px;background:#0a0b0e}
+
   @media (max-width:1100px){
     .wrap{grid-template-columns: 1fr}
-    .gifbox{order:3}
   }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- LEFT: gif -->
-  <div class="gifbox">
-    <div class="card pad">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif">
-    </div>
+  <!-- LEFT -->
+  <div class="card pad">
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="gif">
   </div>
 
-  <!-- MIDDLE: table -->
+  <!-- MIDDLE: Table -->
   <div class="card table">
     <div class="pad title"><span class="dot"></span> Premier League Table</div>
     <div class="tbl-head">
       <div class="num">#</div><div>Club</div>
       <div class="num">P</div><div class="num">W</div><div class="num">D</div><div class="num">L</div><div class="num">GD</div><div class="num">Pts</div>
     </div>
-    <div id="tableBody" class="tbl-body"></div>
+    <div id="tableBody" class="tbl-body">
+      <div class="pad muted">Loading table…</div>
+    </div>
   </div>
 
-  <!-- RIGHT: fixtures -->
+  <!-- RIGHT: Fixtures + R6 -->
   <div class="rightcol">
     <div class="card pad section">
       <div class="title"><span class="dot"></span> Man United — Fixtures & Results</div>
       <h3>Upcoming</h3>
-      <div id="upcoming" class="fx-list"></div>
+      <div id="upcoming" class="fx-list"><div class="muted">Loading…</div></div>
       <h3 style="margin-top:10px">Recent Results</h3>
-      <div id="recent" class="fx-list"></div>
+      <div id="recent" class="fx-list"><div class="muted">Loading…</div></div>
+    </div>
+
+    <div class="card pad">
+      <div class="title"><span class="dot"></span> R6 Tracker — BambyOnSpice</div>
+      <iframe class="r6frame"
+        src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
+        loading="lazy"></iframe>
+      <div class="muted" id="r6fallback" style="padding:10px 4px;display:none">
+        Couldn’t embed R6 stats. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
+      </div>
+      <script>
+        // simple embed sanity check
+        setTimeout(()=>{ try{
+          const f=document.querySelector('.r6frame');
+          if(!f || f.contentDocument==null){ document.getElementById('r6fallback').style.display='block'; }
+        }catch(_){ document.getElementById('r6fallback').style.display='block'; }}, 2500);
+      </script>
     </div>
   </div>
 
 </div>
 
 <script>
-const TEAM_ID = 360; // Man United on ESPN
-const SCHED_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/" + TEAM_ID + "/schedule";
-const TABLE_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings";
+/* -------------------- helpers -------------------- */
+const TEAM_ID = 360; // Man United
+const ESPN_SCHEDULE = `https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/${TEAM_ID}/schedule`;
+const ESPN_TABLE    = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings";
+// TheSportsDB fallback (free key "3"). Season string like 2024-2025:
+const now = new Date();
+const seasonStart = now.getMonth()<7 ? now.getFullYear()-1 : now.getFullYear();
+const TSDB_TABLE   = `https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s=${seasonStart}-${seasonStart+1}`;
 
-const q = sel => document.querySelector(sel);
-const fmtDay  = (iso)=> new Date(iso).toLocaleDateString("en-GB",{weekday:"short"});
-const fmtDate = (iso)=> new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short"});
-const fmtTime = (iso)=> new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
+const el = sel => document.querySelector(sel);
+const safeNum = v => {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+};
+const fmtDay  = iso => new Date(iso).toLocaleDateString("en-GB",{weekday:"short"});
+const fmtDate = iso => new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short"});
+const fmtTime = iso => new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
 
 function side(team){
   const name = team?.displayName || team?.name || "";
-  const logo = (team?.logo) || (team?.logos?.[0]?.href) || "";
+  const logo = team?.logo || team?.logos?.[0]?.href || "";
   return {name,logo};
 }
 
+function classifyResult(isHome, hs, as){
+  if(hs==null || as==null) return ""; // unknown
+  const we = isHome ? hs : as, they = isHome ? as : hs;
+  if(we>they) return "win";
+  if(we<they) return "loss";
+  return "draw";
+}
+
+/* -------------------- fixtures -------------------- */
 function buildFixture(ev){
   const comp = ev?.competitions?.[0] || {};
-  // filter EPL only – comp.name or league.name contains 'Premier League'
   const leagueName = (comp?.name || ev?.league?.name || "").toLowerCase();
   if(!leagueName.includes("premier league")) return null;
 
@@ -164,103 +166,132 @@ function buildFixture(ev){
   const away = (comp?.competitors||[]).find(t=>t.homeAway==="away");
   if(!home || !away) return null;
 
-  const hs = Number(home?.score||0), as = Number(away?.score||0);
-  const st = (comp?.status?.type?.state || ev?.status?.type?.state || "pre").toLowerCase();
-  const completed = !!(comp?.status?.type?.completed || ev?.status?.type?.completed);
+  // Scores can be missing or non-numeric; coerce carefully.
+  let hs = safeNum(home?.score);
+  let as = safeNum(away?.score);
+
+  const stObj = comp?.status?.type || ev?.status?.type || {};
+  const completed = !!stObj.completed;
+  const state = (stObj.state || "pre").toLowerCase();
+
+  // If completed but scores still not there, try common fallbacks
+  if(completed && (hs==null || as==null)){
+    const hRec = (home?.records?.[0]?.summary||"").split("-");
+    const aRec = (away?.records?.[0]?.summary||"").split("-");
+    // No reliable source in schedule payload for past KOs; keep "—"
+  }
 
   const h = side(home.team), a = side(away.team);
+  const isHomeMUFC = (h.name||"").toLowerCase().startsWith("manchester united");
 
-  let badgeClass = "", scoreTxt = "", pill = "";
+  let center = "";
   if(completed){
-    scoreTxt = `${hs}–${as}`;
-    const isHome = (h.name||"").toLowerCase().startsWith("man");
-    const we = isHome ? hs : as, they = isHome ? as : hs;
-    badgeClass = (we>they) ? "win" : (we<they) ? "loss" : "draw";
+    const label = (hs!=null && as!=null) ? `${hs}–${as}` : "—";
+    const cls = classifyResult(isHomeMUFC, hs, as);
+    center = `<span class="score ${cls}">${label}</span>`;
+  }else if(state==="pre"||state==="scheduled"||state==="in"){
+    center = `<span class="pill">UPCOMING</span>`;
   }else{
-    pill = `<span class="pill">UPCOMING</span>`;
+    center = `<span class="pill">UPCOMING</span>`;
   }
 
   return {
+    dateKey: new Date(when).getTime(),
     dateText: `${fmtDay(when)}<br><span class="muted">${fmtDate(when)} ${fmtTime(when)}</span>`,
-    left: `<div class="side"><img src="${h.logo}" alt=""><span>${h.name}</span></div>`,
+    left:`<div class="side"><img src="${h.logo}" alt=""><span>${h.name}</span></div>`,
     right:`<div class="side"><img src="${a.logo}" alt=""><span>${a.name}</span></div>`,
-    center: pill || `<span class="score ${badgeClass}">${scoreTxt}</span>`,
-    isUpcoming: !completed,
-    sortKey: new Date(when).getTime()
+    center,
+    isUpcoming: !completed
   };
 }
 
-function renderFixtures(list, into){
-  into.innerHTML = list.map(f => `
+function renderFixtures(arr, into){
+  into.innerHTML = arr.map(f=>`
     <div class="fx">
       <div class="date"><div class="dow">${f.dateText}</div></div>
       <div class="match">${f.left}<span class="sp">vs</span>${f.right}</div>
       <div>${f.center}</div>
-    </div>`).join("") || `<div class="muted">No items.</div>`;
+    </div>
+  `).join("") || `<div class="muted">No items.</div>`;
 }
 
 async function loadFixtures(){
-  const r = await fetch(SCHED_URL, {cache:"no-store"});
-  const data = await r.json();
+  try{
+    const r = await fetch(ESPN_SCHEDULE,{cache:"no-store"});
+    const data = await r.json();
+    const events = [...(data.events||[]), ...(data.nextEvents||[])];
 
-  const events = [...(data.events||[]), ...(data.nextEvents||[])];
-  const items = [];
-  for(const ev of events){
-    const f = buildFixture(ev);
-    if(f) items.push(f);
+    const items = [];
+    for(const ev of events){
+      const f = buildFixture(ev);
+      if(f) items.push(f);
+    }
+    items.sort((a,b)=>a.dateKey-b.dateKey);
+
+    const now = Date.now();
+    const upcoming = items.filter(x=>x.isUpcoming && x.dateKey>=now).slice(0,8);
+    const recent   = items.filter(x=>!x.isUpcoming || x.dateKey<now).slice(-8).reverse();
+
+    renderFixtures(upcoming, el("#upcoming"));
+    renderFixtures(recent,   el("#recent"));
+  }catch(e){
+    console.error("fixtures error", e);
+    el("#upcoming").innerHTML = `<div class="muted">Couldn’t load fixtures.</div>`;
+    el("#recent").innerHTML   = `<div class="muted">Couldn’t load results.</div>`;
   }
-  items.sort((a,b)=>a.sortKey-b.sortKey);
-
-  const now = Date.now();
-  const upcoming = items.filter(x=>x.isUpcoming && x.sortKey>=now).slice(0,8);
-  const recent   = items.filter(x=>!x.isUpcoming || x.sortKey<now).slice(-8).reverse();
-
-  renderFixtures(upcoming, q("#upcoming"));
-  renderFixtures(recent,   q("#recent"));
 }
 
-function getStat(stats, name, def=0){
-  const s = stats.find(x=>x.name===name);
-  const v = (s && (s.value ?? s.displayValue)) ?? def;
-  const n = Number(v);
-  return Number.isFinite(n) ? n : def;
-}
-
-async function loadTable(){
-  const r = await fetch(TABLE_URL, {cache:"no-store"});
-  const data = await r.json();
-
-  // ESPN’s blob is nested; find `standings.entries`
-  let entries = null;
-  (function find(x){
+/* -------------------- table -------------------- */
+function ESPNtoRows(data){
+  // Try to discover `standings.entries` anywhere
+  let entries=null;
+  (function dive(x){
     if(entries) return;
-    if(Array.isArray(x)) x.forEach(find);
-    else if(x && typeof x==="object"){
-      if(x.standings && Array.isArray(x.standings?.entries)){
-        entries = x.standings.entries;
-      }
-      Object.values(x).forEach(find);
+    if(Array.isArray(x)){ x.forEach(dive); return; }
+    if(x && typeof x==="object"){
+      if(x.standings && Array.isArray(x.standings.entries)){ entries = x.standings.entries; return; }
+      Object.values(x).forEach(dive);
     }
   })(data);
 
-  const rows = (entries||[]).map((e,i)=>{
-    const t = e.team || {};
-    const logo = t.logo || t.logos?.[0]?.href || "";
-    const name = t.displayName || t.name || "";
-    const s = e.stats || [];
-    const played = getStat(s,"gamesPlayed");
-    const win    = getStat(s,"wins");
-    const draw   = getStat(s,"ties");
-    const loss   = getStat(s,"losses");
-    const gf     = getStat(s,"goalsFor") || getStat(s,"pointsFor");
-    const ga     = getStat(s,"goalsAgainst") || getStat(s,"pointsAgainst");
-    const gd     = gf - ga;
-    const pts    = getStat(s,"points");
-    return {rank:i+1, logo, name, played, win, draw, loss, gd, pts};
-  }).filter(r=>r.name).slice(0,20);
+  if(!entries) return [];
 
-  const tbody = q("#tableBody");
-  tbody.innerHTML = rows.map(r => `
+  return entries.map((e,i)=>{
+    const t=e.team||{};
+    const name=t.displayName||t.name||"";
+    const logo=t.logo||t.logos?.[0]?.href||"";
+    const s=e.stats||[];
+    const val=n=>{const it=s.find(z=>z.name===n); const v=it?.value ?? it?.displayValue; const n2=Number(v); return Number.isFinite(n2)?n2:null;};
+    const played=val("gamesPlayed")??0, win=val("wins")??0, draw=val("ties")??0, loss=val("losses")??0;
+    const gf=(val("goalsFor")??val("pointsFor")??0), ga=(val("goalsAgainst")??val("pointsAgainst")??0);
+    const gd=(gf||0)-(ga||0), pts=val("points")??0;
+    return {rank:i+1,name,logo,played,win,draw,loss,gd,pts};
+  }).filter(r=>r.name).slice(0,20);
+}
+
+function TSDBtoRows(data){
+  const arr = data?.table || [];
+  // TSDB keys: intRank, strTeamBadge, name, intPlayed, intWin, intDraw, intLoss, intGoalDifference, intPoints
+  return arr.map(x=>({
+    rank:Number(x.intRank),
+    name:x.strTeam || x.name || "",
+    logo:x.strTeamBadge || "",
+    played:Number(x.intPlayed||0),
+    win:Number(x.intWin||0),
+    draw:Number(x.intDraw||0),
+    loss:Number(x.intLoss||0),
+    gd:Number(x.intGoalDifference||0),
+    pts:Number(x.intPoints||0)
+  })).filter(r=>r.name).sort((a,b)=>a.rank-b.rank);
+}
+
+function renderTable(rows){
+  const body = el("#tableBody");
+  if(!rows.length){
+    body.innerHTML = `<div class="pad muted">No table data available right now.</div>`;
+    return;
+  }
+  body.innerHTML = rows.map(r=>`
     <div class="tbl-row">
       <div class="num">${r.rank}</div>
       <div class="club"><img src="${r.logo}" alt=""><span>${r.name}</span></div>
@@ -271,12 +302,30 @@ async function loadTable(){
       <div class="num">${r.gd}</div>
       <div class="num">${r.pts}</div>
     </div>
-  `).join("") || `<div class="pad muted">No table data available right now.</div>`;
+  `).join("");
 }
 
-(async function init(){
-  try{ await loadFixtures(); }catch(e){ console.error(e); q("#upcoming").innerHTML='<div class="muted">Couldn’t load fixtures.</div>'; }
-  try{ await loadTable();    }catch(e){ console.error(e); q("#tableBody").innerHTML='<div class="pad muted">No table data available right now.</div>'; }
+async function loadTable(){
+  try{
+    const r = await fetch(ESPN_TABLE,{cache:"no-store"});
+    const data = await r.json();
+    let rows = ESPNtoRows(data);
+    if(!rows.length){
+      // Fallback: TheSportsDB (CORS-friendly)
+      const rr = await fetch(TSDB_TABLE,{cache:"no-store"});
+      const td = await rr.json();
+      rows = TSDBtoRows(td);
+    }
+    renderTable(rows);
+  }catch(e){
+    console.error("table error", e);
+    el("#tableBody").innerHTML = `<div class="pad muted">No table data available right now.</div>`;
+  }
+}
+
+/* -------------------- init -------------------- */
+(async function(){
+  await Promise.all([loadFixtures(), loadTable()]);
 })();
 </script>
 </body>
