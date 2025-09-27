@@ -22,12 +22,13 @@ jobs:
 
       - name: Build assets
         env:
-          # Optional: set REPO VAR 'SEASON' to force a season (e.g. 2026-2027)
+          # Optional: repo variable to force a specific season (e.g. 2026-2027)
           SEASON: ${{ vars.SEASON }}
         run: |
           python - <<'PY'
-          import json, os, pathlib, time, urllib.request, datetime, sys
+          import json, os, pathlib, time, urllib.request, datetime, sys, itertools
 
+          # ----------------- helpers -----------------
           def get(url, tries=4, sleep=1.2):
             for i in range(tries):
               try:
@@ -40,20 +41,27 @@ jobs:
                   raise
                 time.sleep(sleep)
 
-          # ---- Auto-detect PL season (Aug -> next Jul). Allow override via repo VAR SEASON. ----
+          def iso_timestamp(e):
+            ts = (e.get("strTimestamp") or "").strip()
+            if not ts:
+              de = (e.get("dateEvent") or "").strip()
+              tm = (e.get("strTime") or "00:00:00").strip()
+              ts = (de + "T" + tm).strip() if de else tm
+            if ts and not ts.endswith("Z"):
+              ts += "Z"
+            return ts
+
+          # ----------------- season -----------------
           forced = (os.environ.get("SEASON") or "").strip()
           if forced:
             SEASON = forced
           else:
             today = datetime.date.today()
-            # Season ticks over in AUG
-            if today.month >= 8:
-              SEASON = f"{today.year}-{today.year+1}"
-            else:
-              SEASON = f"{today.year-1}-{today.year}"
+            SEASON = f"{today.year}-{today.year+1}" if today.month >= 8 else f"{today.year-1}-{today.year}"
           print(f"[INFO] Using season: {SEASON}")
 
-          # ---- PREMIER LEAGUE TABLE (TSDB) ----
+          # ----------------- PL table (TSDB) -----------------
+          # TSDB PL league id: 4328
           table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={SEASON}"
           t = get(table_api) or {}
           rows = t.get("table") or []
@@ -81,26 +89,48 @@ jobs:
             "standings": standings
           }
 
-          # ---- MANCHESTER UNITED FIXTURES/RESULTS (TSDB) ----
-          team = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
-          try:
-            team_id = team["teams"][0]["idTeam"]
-          except Exception:
-            print("[ERR] Could not resolve Man United team id from TSDB.", file=sys.stderr)
+          # ----------------- MUFC fixtures/results (TSDB) -----------------
+          # 1) Resolve exact team row
+          team_search = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
+          teams = team_search.get("teams") or []
+          if not teams:
+            print("[ERR] No teams returned for Manchester United.", file=sys.stderr)
             sys.exit(1)
 
+          mu_names = {"manchester united", "man utd", "manchester u."}
+          mu_row = None
+          for trow in teams:
+            name = (trow.get("strTeam") or "").strip().lower()
+            if name in mu_names:
+              mu_row = trow
+              break
+          if not mu_row:
+            mu_row = teams[0]
+
+          team_id = mu_row["idTeam"]
+          team_canonical = mu_row.get("strTeam") or "Manchester United"
+          print(f"[INFO] Using TSDB team id {team_id} for {team_canonical}")
+
+          # 2) Fetch last + next
           last = get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={team_id}") or {}
           nxt  = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={team_id}") or {}
 
-          def map_event(e):
-            ts = (e.get("strTimestamp") or "").strip()
-            if not ts:
-              de = (e.get("dateEvent") or "").strip()
-              tm = (e.get("strTime") or "00:00:00").strip()
-              ts = (de + "T" + tm).strip() if de else tm
-            if ts and not ts.endswith("Z"):
-              ts += "Z"
+          # 3) Strict filter: keep only events where MUFC is home or away
+          def only_mu(items):
+            out = []
+            for e in items or []:
+              h = (e.get("strHomeTeam") or "").strip().lower()
+              a = (e.get("strAwayTeam") or "").strip().lower()
+              if h in mu_names or a in mu_names:
+                out.append(e)
+            return out
 
+          last_clean = only_mu(last.get("results"))
+          next_clean = only_mu(nxt.get("events"))
+
+          # 4) Map to our schema
+          def map_event(e):
+            ts = iso_timestamp(e)
             home = e.get("strHomeTeam") or ""
             away = e.get("strAwayTeam") or ""
             comp = e.get("strLeague") or (e.get("strLeagueShort") or "")
@@ -112,7 +142,7 @@ jobs:
             score = None
             if finished:
               hs, as_ = int(hs), int(as_)
-              is_mu_home = home.lower() in {"manchester united","man utd","manchester u."}
+              is_mu_home = home.strip().lower() in mu_names
               mu = hs if is_mu_home else as_
               opp = as_ if is_mu_home else hs
               outcome = "D" if mu == opp else ("W" if mu > opp else "L")
@@ -127,20 +157,30 @@ jobs:
               "score": score
             }
 
-          matches = []
-          for e in (last.get("results") or []):
-            matches.append(map_event(e))
-          for e in (nxt.get("events") or []):
-            matches.append(map_event(e))
+          mapped = [map_event(e) for e in (last_clean or [])] + [map_event(e) for e in (next_clean or [])]
+
+          # 5) De-duplicate by date+teams and sort descending by date for finished, ascending for upcoming
+          def key(m): return (m["date"], m["home"], m["away"])
+          seen = set()
+          dedup = []
+          for m in mapped:
+            k = key(m)
+            if k not in seen:
+              seen.add(k)
+              dedup.append(m)
+
+          # Sort all by date then split if you want; the front-end handles slicing & grouping
+          dedup.sort(key=lambda m: m["date"])
 
           fixtures = {
             "team": "Manchester United",
             "updated": datetime.datetime.utcnow().isoformat()+"Z",
-            "matches": matches
+            "matches": dedup
           }
 
-          # ---- WRITE ----
-          assets = pathlib.Path("assets"); assets.mkdir(exist_ok=True)
+          # ----------------- write -----------------
+          assets = pathlib.Path("assets")  # ensure single-level /assets in repo root
+          assets.mkdir(exist_ok=True)
           (assets/"table.json").write_text(json.dumps(table, ensure_ascii=False, indent=2), encoding="utf-8")
           (assets/"fixtures.json").write_text(json.dumps(fixtures, ensure_ascii=False, indent=2), encoding="utf-8")
           (assets/"update_stamp.txt").write_text(datetime.datetime.utcnow().isoformat()+"Z", encoding="utf-8")
