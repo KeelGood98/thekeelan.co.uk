@@ -34,9 +34,9 @@
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
 
-    /* Stretch all main cards to the viewport height and scroll their inner content */
+    /* Left & Right columns fill height; Center auto (kills the blank area below table) */
     .stretch{display:flex;flex-direction:column;min-height:calc(100vh - 90px);} /* header ≈ 90px incl. paddings */
-    .table-wrap, .flex-fill{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1}
+    .flex-fill{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1}
 
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
@@ -44,7 +44,8 @@
     tr:hover td{background:#0f141a}
 
     .team-cell{display:flex;align-items:center;justify-content:center;gap:8px}
-    .badge{width:20px;height:20px;border-radius:50%}
+    .badge{width:20px;height:20px;border-radius:50%;background:#0f141a;display:inline-block}
+    .badge.img{background:none}
 
     .W{background:#10361f} .D{background:#2b2b17} .L{background:#3a1a1a}
     iframe{width:100%;border:0;border-radius:10px}
@@ -61,7 +62,7 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT: GIF + R6 in the same stretched card (fills the column, no blank space) -->
+    <!-- LEFT: GIF + R6 fill the column -->
     <section class="card stretch">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
@@ -76,10 +77,10 @@
       </div>
     </section>
 
-    <!-- CENTER: PL table (stretched) -->
-    <section class="card stretch">
+    <!-- CENTER: PL table (auto height → no extra blank space) -->
+    <section class="card">
       <h2>Premier League Table</h2>
-      <div class="table-wrap">
+      <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
         <table>
           <thead>
             <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
@@ -118,15 +119,16 @@
       return null;
     }
 
-    function renderTableRows(rows) {
-      return rows.map(r => `
+    function trRow(r) {
+      const badge = r.badge ? `<img class="badge img" src="${r.badge}" alt="">`
+                            : `<span class="badge" data-missing-badge="${r.team}"></span>`;
+      return `
         <tr>
           <td>${r.pos ?? ""}</td>
-          <td><span class="team-cell">${r.badge ? `<img class="badge" src="${r.badge}" alt="">` : ""}${r.team ?? ""}</span></td>
+          <td><span class="team-cell">${badge}${r.team ?? ""}</span></td>
           <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
           <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td><strong>${r.pts ?? ""}</strong></td>
-        </tr>
-      `).join("");
+        </tr>`;
     }
 
     // ===== TABLE =====
@@ -135,9 +137,30 @@
       document.getElementById("tableBody").innerHTML =
         '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
-      document.getElementById("tableBody").innerHTML = renderTableRows(table.standings);
+      document.getElementById("tableBody").innerHTML = table.standings.map(trRow).join("");
       const lu = document.getElementById("lastUpdated");
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
+
+      // Client-side badge fallback: fill any missing badges from TSDB
+      const missing = Array.from(document.querySelectorAll('[data-missing-badge]'));
+      for (const el of missing) {
+        const team = el.getAttribute('data-missing-badge');
+        try {
+          const url = `https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=${encodeURIComponent(team)}`;
+          const r = await fetch(url, {cache:'no-store'});
+          if (!r.ok) continue;
+          const j = await r.json();
+          const badge = j?.teams?.[0]?.strTeamBadge;
+          if (badge) {
+            const img = new Image();
+            img.className = 'badge img';
+            img.alt = '';
+            img.onload = () => el.replaceWith(img);
+            img.onerror = () => {};
+            img.src = badge;
+          }
+        } catch {}
+      }
     }
 
     // ===== FIXTURES =====
@@ -226,7 +249,7 @@
       wrap.innerHTML = upHTML + recHTML;
     }
 
-    // R6 (now in the left card)
+    // R6
     const f = document.getElementById("r6Frame");
     if (f && !f.src) f.src = "https://r6.tracker.network/profile/pc/BambyOnSpice?embed=1";
   })();
