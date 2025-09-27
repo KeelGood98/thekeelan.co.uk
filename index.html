@@ -6,25 +6,19 @@
   <title>thekeelan.co.uk</title>
   <style>
     :root{
-      --text:#e9eef5; --muted:#96a0ad; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
-      --pitchA:#0e3519; --pitchB:#0d2d16; --line:#e5ffe580;
+      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
+      --bgA:#0b0f14; --bgB:#0a1320;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    /* Football pitch: alternating stripes + halfway line + center circle */
+    /* Stadium floodlights background (no images) */
     body{
       margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
       background:
-        /* touchlines (top/bottom) */
-        linear-gradient(#ffffff12, #ffffff12) top/100% 2px no-repeat,
-        linear-gradient(#ffffff12, #ffffff12) bottom/100% 2px no-repeat,
-        /* halfway line */
-        linear-gradient(#ffffff14, #ffffff14) 50% 50%/100% 2px no-repeat,
-        /* center circle ring */
-        radial-gradient(circle at 50% 50%, transparent 0 110px, #ffffff10 110px 112px, transparent 112px),
-        /* mowing stripes */
-        repeating-linear-gradient(0deg, var(--pitchA) 0 72px, var(--pitchB) 72px 144px);
-      background-color: var(--pitchA);
+        radial-gradient(1200px 600px at -10% -20%, rgba(255,255,255,0.08), transparent 60%),
+        radial-gradient(1000px 500px at 110% -25%, rgba(255,255,255,0.08), transparent 60%),
+        linear-gradient(180deg, var(--bgB), var(--bgA));
+      background-color: var(--bgA);
     }
     header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
     .brand{display:flex;gap:10px;align-items:center}
@@ -46,6 +40,7 @@
     .badge{width:20px;height:20px;border-radius:50%}
     .W{background:#10361f} .D{background:#2b2b17} .L{background:#3a1a1a}
     iframe{width:100%;min-height:520px;border:0;border-radius:10px}
+    a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px}
   </style>
 </head>
 <body>
@@ -144,7 +139,6 @@
       const now = Date.now();
       const t = s => new Date(s).getTime() || 0;
 
-      // Prefer status → 'FINISHED' beats date; otherwise fall back to score/date
       const isFinished = m => {
         const st = (m.status || "").toUpperCase();
         if (st === "FINISHED") return true;
@@ -152,9 +146,9 @@
         if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
         return t(m.date) < now;
       };
-
       const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
       const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
+
       const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
       const recent = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
 
@@ -162,22 +156,35 @@
 
       const upHTML = upcoming.length ? `
         <h3 style="margin:8px 0;">Upcoming</h3>
-        <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>
-        <tbody>
-          ${upcoming.map(m => `<tr><td>${fmt(m.date)}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join("")}
-        </tbody></table>
+        <table>
+          <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>
+          <tbody>
+            ${upcoming.map(m => `<tr><td>${fmt(m.date)}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join("")}
+          </tbody>
+        </table>
       ` : '<div class="muted">No upcoming fixtures.</div>';
 
       const recHTML = recent.length ? `
         <h3 style="margin:12px 0 6px;">Recent Results</h3>
-        <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th></tr></thead>
-        <tbody>
-          ${recent.map(m=>{
-            const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
-            const oc = m.score?.outcome || "";
-            return `<tr class="${cls(oc)}"><td>${new Date(m.date).toLocaleDateString()}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td><td><strong>${sc}</strong>${oc?` (${oc})`:""}</td></tr>`;
-          }).join("")}
-        </tbody></table>
+        <table>
+          <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
+          <tbody>
+            ${recent.map(m=>{
+              const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
+              const oc = m.score?.outcome || "";
+              const year = new Date(m.date).getFullYear();
+              const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
+              const sky = `https://www.skysports.com/search?q=${q}`;
+              return `<tr class="${cls(oc)}">
+                <td>${new Date(m.date).toLocaleDateString()}</td>
+                <td>${m.comp||""}</td>
+                <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+                <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
+                <td><a class="btn" href="${sky}" target="_blank" rel="noopener">Sky</a></td>
+              </tr>`;
+            }).join("")}
+          </tbody>
+        </table>
       ` : "";
 
       wrap.innerHTML = upHTML + recHTML;
