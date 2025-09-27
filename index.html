@@ -6,269 +6,277 @@
 <title>thekeelan.co.uk</title>
 <style>
   :root{
-    --bg:#0c0c0f; --panel:#121216; --pill:#171a22; --line:#1b1f2c;
-    --text:#e8e9ef; --muted:#8a8fa3; --green:#2ecc71; --amber:#f1c40f; --red:#ff6b6b;
+    --bg:#0f0f12;
+    --panel:#17181d;
+    --text:#e7e8ec;
+    --muted:#9aa0a6;
+    --accent:#c22d2d;   /* red dot */
+    --pill:#2b2f3a;
+    --win:#2bbf6a;
+    --draw:#e3b341;
+    --loss:#ff5d5d;
+    --row:#1b1c22;
+    --row2:#17181d;
+    --line:#262833;
   }
   *{box-sizing:border-box}
-  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
-    font:14px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
-  .wrap{display:grid;grid-template-columns:220px 1fr 420px;gap:24px;min-height:100%;padding:18px}
-  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.25)}
-  .section{padding:14px}
-  h3{margin:0 0 8px;display:flex;gap:8px;align-items:center;font-size:15px}
-  .dot{width:8px;height:8px;border-radius:50%;background:#e74c3c;box-shadow:0 0 0 3px #e74c3c22}
-  /* gif */
-  .gif{display:flex;justify-content:center;align-items:center;padding:12px}
-  .gif img{max-width:190px;width:100%;border-radius:12px;display:block}
-  /* table */
-  .tbl-wrap{max-height:560px;overflow:auto}
-  table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--pill)}
-  thead th{position:sticky;top:0;background:#141722;color:#cfd6ea;font-size:12px;font-weight:600;border-bottom:1px solid var(--line);padding:10px 8px}
-  tbody td{border-bottom:1px solid #141624;padding:10px}
-  .center{text-align:center}
-  .crest{width:20px;height:20px;object-fit:contain;border-radius:50%;background:#202638;margin-right:10px;vertical-align:middle}
-  .team{display:flex;align-items:center}
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji";}
+  a{color:inherit;text-decoration:none}
+  .wrap{
+    max-width:1400px;
+    margin:24px auto;
+    padding:0 16px;
+    display:grid;
+    grid-template-columns: 220px 1fr 420px;
+    grid-gap:18px;
+  }
+  .card{
+    background:var(--panel);
+    border-radius:14px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
+    overflow:hidden;
+  }
+  .pad{padding:14px 16px}
+  .title{
+    display:flex;align-items:center;gap:8px;
+    font-weight:700;
+    letter-spacing:.2px;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);display:inline-block}
+  /* left column gif */
+  .gifbox{display:flex;flex-direction:column;gap:16px}
+  .gifbox img{width:100%;display:block;border-radius:12px}
+  /* table card */
+  .table{
+    display:grid;
+    grid-template-rows: auto 1fr;
+    min-height:420px;
+  }
+  .tbl-head, .tbl-row{
+    display:grid;
+    grid-template-columns: 40px 1fr repeat(6,56px);
+    column-gap:12px;
+    align-items:center;
+    padding:10px 14px;
+  }
+  .tbl-head{
+    position:sticky;top:0;background:linear-gradient(var(--panel),var(--panel));
+    border-bottom:1px solid var(--line);
+    font-weight:600;color:#cfd2da;
+  }
+  .tbl-body{max-height:520px;overflow:auto}
+  .tbl-row{border-bottom:1px solid rgba(255,255,255,.03);background:var(--row)}
+  .tbl-row:nth-child(even){background:var(--row2)}
+  .num{ text-align:center; font-variant-numeric:tabular-nums; }
+  .club{display:flex;align-items:center;gap:10px}
+  .club img{width:18px;height:18px;object-fit:contain;filter:drop-shadow(0 1px 1px #0008)}
   /* fixtures */
-  .right{display:flex;flex-direction:column;gap:18px}
+  .section h3{margin:0 0 6px 0;font-size:15px;color:#cfd2da}
   .fx-list{display:flex;flex-direction:column;gap:10px}
-  .fx{display:grid;grid-template-columns:60px 1fr auto;gap:10px;align-items:center;
-      border:1px solid var(--line);background:var(--pill);border-radius:12px;padding:10px 12px}
-  .lcol{font-size:12px;color:var(--muted);text-align:center}
-  .clubs{display:flex;align-items:center;gap:10px}
-  .club{display:flex;align-items:center;gap:8px;min-width:0}
-  .club span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .badge{width:18px;height:18px;object-fit:contain}
-  .score{min-width:36px;text-align:right;font-weight:700}
-  .win{color:var(--green)} .draw{color:var(--amber)} .lose{color:var(--red)}
-  .pill{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;border:1px solid var(--line);background:#141824;color:#d0d6ec}
+  .fx{
+    display:grid;
+    grid-template-columns: 44px 1fr auto;
+    gap:10px; align-items:center;
+    padding:10px 12px; border-radius:10px;
+    background:var(--row);
+    border:1px solid rgba(255,255,255,.04);
+  }
+  .date{color:var(--muted);text-align:center;line-height:1.25}
+  .date .dow{font-weight:600;color:#cfd2da}
+  .match{display:flex;align-items:center;gap:10px}
+  .match .side{display:flex;align-items:center;gap:8px;min-width:120px}
+  .match img{width:18px;height:18px;object-fit:contain}
+  .pill{
+    padding:4px 8px;border-radius:999px;
+    font-size:12px;letter-spacing:.3px;
+    background:var(--pill);color:#cfd2da;
+    text-transform:uppercase;font-weight:700
+  }
+  .score{font-weight:800}
+  .win{color:var(--win)} .draw{color:var(--draw)} .loss{color:var(--loss)}
   .muted{color:var(--muted)}
+  .sp{opacity:.6}
+  /* right column sections */
+  .rightcol{display:flex;flex-direction:column;gap:18px}
+  @media (max-width:1100px){
+    .wrap{grid-template-columns: 1fr}
+    .gifbox{order:3}
+  }
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <!-- left: gif -->
-    <div class="card gif"><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="gif"></div>
+<div class="wrap">
 
-    <!-- middle: table -->
-    <div class="card section">
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-        <h3><span class="dot"></span> Premier League Table</h3>
-        <div id="season" class="muted"></div>
-      </div>
-      <div class="tbl-wrap">
-        <table>
-          <thead><tr>
-            <th class="center" style="width:56px">#</th>
-            <th style="text-align:left">Club</th>
-            <th class="center" style="width:60px">P</th>
-            <th class="center" style="width:60px">W</th>
-            <th class="center" style="width:60px">D</th>
-            <th class="center" style="width:60px">L</th>
-            <th class="center" style="width:70px">GD</th>
-            <th class="center" style="width:70px">Pts</th>
-          </tr></thead>
-          <tbody id="pl-body"><tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr></tbody>
-        </table>
-      </div>
-    </div>
-
-    <!-- right: fixtures -->
-    <div class="right">
-      <div class="card section">
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
-          <h3><span class="dot"></span> Man United — Fixtures & Results</h3>
-          <a class="muted" style="text-decoration:none" target="_blank" href="https://www.espn.co.uk/football/team/fixtures/_/id/360">Open full list ↗</a>
-        </div>
-        <h4 class="muted" style="margin:0 0 8px">Upcoming</h4>
-        <div id="upcoming" class="fx-list"></div>
-        <h4 class="muted" style="margin:14px 0 8px">Recent Results</h4>
-        <div id="results" class="fx-list"></div>
-      </div>
+  <!-- LEFT: gif -->
+  <div class="gifbox">
+    <div class="card pad">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif">
     </div>
   </div>
 
+  <!-- MIDDLE: table -->
+  <div class="card table">
+    <div class="pad title"><span class="dot"></span> Premier League Table</div>
+    <div class="tbl-head">
+      <div class="num">#</div><div>Club</div>
+      <div class="num">P</div><div class="num">W</div><div class="num">D</div><div class="num">L</div><div class="num">GD</div><div class="num">Pts</div>
+    </div>
+    <div id="tableBody" class="tbl-body"></div>
+  </div>
+
+  <!-- RIGHT: fixtures -->
+  <div class="rightcol">
+    <div class="card pad section">
+      <div class="title"><span class="dot"></span> Man United — Fixtures & Results</div>
+      <h3>Upcoming</h3>
+      <div id="upcoming" class="fx-list"></div>
+      <h3 style="margin-top:10px">Recent Results</h3>
+      <div id="recent" class="fx-list"></div>
+    </div>
+  </div>
+
+</div>
+
 <script>
-/* ---------------- helpers ---------------- */
-const fmtDay = (iso) => {
-  try { const d = new Date(iso+"T00:00:00Z"); return d.toLocaleDateString("en-GB",{weekday:"short", day:"2-digit", month:"short"}); }
-  catch { return ""; }
-};
-const scoreClass = (fx) => {
-  if (fx.status !== "FT" || !fx.score) return "";
-  const [h,a] = fx.score.split(/[–-]/).map(x=>parseInt(x,10));
-  const homeUtd = (fx.home||"").toLowerCase().startsWith("manchester");
-  const ours = homeUtd ? h : a, opp = homeUtd ? a : h;
-  if (ours>opp) return "win"; if (ours<opp) return "lose"; return "draw";
-};
-const row = (html) => { const t=document.createElement("template"); t.innerHTML=html.trim(); return t.content.firstChild; };
+const TEAM_ID = 360; // Man United on ESPN
+const SCHED_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/" + TEAM_ID + "/schedule";
+const TABLE_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings";
 
-/* ---------------- rendering ---------------- */
-function renderTable(rows){
-  const body = document.getElementById("pl-body");
-  body.innerHTML = "";
-  if (!rows || !rows.length) {
-    body.innerHTML = '<tr><td colspan="8" class="center muted" style="padding:16px">No table data available right now.</td></tr>';
-    return;
+const q = sel => document.querySelector(sel);
+const fmtDay  = (iso)=> new Date(iso).toLocaleDateString("en-GB",{weekday:"short"});
+const fmtDate = (iso)=> new Date(iso).toLocaleDateString("en-GB",{day:"2-digit",month:"short"});
+const fmtTime = (iso)=> new Date(iso).toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
+
+function side(team){
+  const name = team?.displayName || team?.name || "";
+  const logo = (team?.logo) || (team?.logos?.[0]?.href) || "";
+  return {name,logo};
+}
+
+function buildFixture(ev){
+  const comp = ev?.competitions?.[0] || {};
+  // filter EPL only – comp.name or league.name contains 'Premier League'
+  const leagueName = (comp?.name || ev?.league?.name || "").toLowerCase();
+  if(!leagueName.includes("premier league")) return null;
+
+  const when = ev?.date || comp?.date;
+  const home = (comp?.competitors||[]).find(t=>t.homeAway==="home");
+  const away = (comp?.competitors||[]).find(t=>t.homeAway==="away");
+  if(!home || !away) return null;
+
+  const hs = Number(home?.score||0), as = Number(away?.score||0);
+  const st = (comp?.status?.type?.state || ev?.status?.type?.state || "pre").toLowerCase();
+  const completed = !!(comp?.status?.type?.completed || ev?.status?.type?.completed);
+
+  const h = side(home.team), a = side(away.team);
+
+  let badgeClass = "", scoreTxt = "", pill = "";
+  if(completed){
+    scoreTxt = `${hs}–${as}`;
+    const isHome = (h.name||"").toLowerCase().startsWith("man");
+    const we = isHome ? hs : as, they = isHome ? as : hs;
+    badgeClass = (we>they) ? "win" : (we<they) ? "loss" : "draw";
+  }else{
+    pill = `<span class="pill">UPCOMING</span>`;
   }
-  rows.forEach(r=>{
-    body.appendChild(row(`
-      <tr>
-        <td class="center">${r.rank ?? ""}</td>
-        <td><span class="team"><img class="crest" src="${r.badge||""}" onerror="this.style.display='none'"/>&nbsp;${r.team||""}</span></td>
-        <td class="center">${r.played ?? ""}</td>
-        <td class="center">${r.win ?? ""}</td>
-        <td class="center">${r.draw ?? ""}</td>
-        <td class="center">${r.loss ?? ""}</td>
-        <td class="center">${r.gd ?? ((r.gf||0)-(r.ga||0))}</td>
-        <td class="center" style="font-weight:700">${r.points ?? ""}</td>
-      </tr>
-    `));
-  });
+
+  return {
+    dateText: `${fmtDay(when)}<br><span class="muted">${fmtDate(when)} ${fmtTime(when)}</span>`,
+    left: `<div class="side"><img src="${h.logo}" alt=""><span>${h.name}</span></div>`,
+    right:`<div class="side"><img src="${a.logo}" alt=""><span>${a.name}</span></div>`,
+    center: pill || `<span class="score ${badgeClass}">${scoreTxt}</span>`,
+    isUpcoming: !completed,
+    sortKey: new Date(when).getTime()
+  };
 }
 
-function renderFixtures(list, host){
-  host.innerHTML = "";
-  if (!list || !list.length){ host.innerHTML = '<div class="muted" style="padding:8px 2px">No items.</div>'; return; }
-  list.forEach(fx=>{
-    const right = (fx.status==="FT" && fx.score)
-      ? `<div class="score ${scoreClass(fx)}">${fx.score}</div>` : `<span class="pill">UPCOMING</span>`;
-    host.appendChild(row(`
-      <div class="fx">
-        <div class="lcol">
-          <div>${fmtDay(fx.date)}</div>
-          <div>${fx.time||"TBC"}</div>
-        </div>
-        <div class="clubs">
-          <div class="club"><img class="badge" src="${fx.homeBadge||""}" onerror="this.style.display='none'"/><span>${fx.home}</span></div>
-          <div class="muted">vs</div>
-          <div class="club"><img class="badge" src="${fx.awayBadge||""}" onerror="this.style.display='none'"/><span>${fx.away}</span></div>
-        </div>
-        ${right}
-      </div>
-    `));
-  });
+function renderFixtures(list, into){
+  into.innerHTML = list.map(f => `
+    <div class="fx">
+      <div class="date"><div class="dow">${f.dateText}</div></div>
+      <div class="match">${f.left}<span class="sp">vs</span>${f.right}</div>
+      <div>${f.center}</div>
+    </div>`).join("") || `<div class="muted">No items.</div>`;
 }
 
-/* ---------------- data fetchers ---------------- */
-async function fetchJSON(url, headers) {
-  const res = await fetch(url, { headers });
-  if (!res.ok) throw new Error(`${url} -> ${res.status}`);
-  return res.json();
-}
+async function loadFixtures(){
+  const r = await fetch(SCHED_URL, {cache:"no-store"});
+  const data = await r.json();
 
-function mapEspnFixtures(json){
-  const events = [...(json.events||[]), ...(json.nextEvents||[])];
-  const out = [];
-  for (const ev of events){
-    const comp = (ev.competitions||[{}])[0];
-    const league = ev.league||{};
-    const compName = typeof comp.name === "string" ? comp.name :
-                     (league && (league.name||league.shortName)) || "";
-    const lname = (compName||"").toLowerCase();
-    if (!lname.includes("premier league")) continue;
-
-    const teams = comp.competitors||[];
-    const home = teams.find(t=>t.homeAway==="home")||{};
-    const away = teams.find(t=>t.homeAway==="away")||{};
-    const th = home.team||{}, ta = away.team||{};
-
-    const stat = (comp.status&&comp.status.type) || (ev.status&&ev.status.type) || {};
-    const completed = !!stat.completed;
-    const state = (stat.state||"").toLowerCase();
-
-    let status="UPCOMING", score=null;
-    if (completed){
-      const hs = parseInt(home.score||0,10), as = parseInt(away.score||0,10);
-      score = `${hs}–${as}`; status="FT";
-    } else if (state==="pre"||state==="scheduled"){ status="UPCOMING"; }
-
-    // date/time
-    let date="", time="TBC";
-    try{ const d=new Date(ev.date); date=d.toISOString().slice(0,10); time=d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}); }catch{}
-
-    out.push({
-      date,time, comp:compName,
-      home: th.displayName||th.name||"", away: ta.displayName||ta.name||"",
-      status, score,
-      homeBadge: th.logo || (th.logos||[])[0]?.href || "",
-      awayBadge: ta.logo || (ta.logos||[])[0]?.href || "",
-    });
+  const events = [...(data.events||[]), ...(data.nextEvents||[])];
+  const items = [];
+  for(const ev of events){
+    const f = buildFixture(ev);
+    if(f) items.push(f);
   }
-  // de-dup + sort
-  const seen=new Set(), clean=[];
-  for (const f of out){ const k=`${f.date}|${f.home}|${f.away}`; if(f.date && !seen.has(k)){ seen.add(k); clean.push(f); } }
-  clean.sort((a,b)=> (a.date.localeCompare(b.date)) || (a.time||"").localeCompare(b.time||""));
-  return clean;
+  items.sort((a,b)=>a.sortKey-b.sortKey);
+
+  const now = Date.now();
+  const upcoming = items.filter(x=>x.isUpcoming && x.sortKey>=now).slice(0,8);
+  const recent   = items.filter(x=>!x.isUpcoming || x.sortKey<now).slice(-8).reverse();
+
+  renderFixtures(upcoming, q("#upcoming"));
+  renderFixtures(recent,   q("#recent"));
 }
 
-function mapEspnTable(json){
-  // find standings.entries anywhere
-  function findEntries(x){
-    if (Array.isArray(x)){ for (const it of x){ const r=findEntries(it); if(r) return r; } }
-    else if (x && typeof x==="object"){
-      if (x.standings && x.standings.entries) return x.standings.entries;
-      for (const k of Object.keys(x)){ const r=findEntries(x[k]); if(r) return r; }
+function getStat(stats, name, def=0){
+  const s = stats.find(x=>x.name===name);
+  const v = (s && (s.value ?? s.displayValue)) ?? def;
+  const n = Number(v);
+  return Number.isFinite(n) ? n : def;
+}
+
+async function loadTable(){
+  const r = await fetch(TABLE_URL, {cache:"no-store"});
+  const data = await r.json();
+
+  // ESPN’s blob is nested; find `standings.entries`
+  let entries = null;
+  (function find(x){
+    if(entries) return;
+    if(Array.isArray(x)) x.forEach(find);
+    else if(x && typeof x==="object"){
+      if(x.standings && Array.isArray(x.standings?.entries)){
+        entries = x.standings.entries;
+      }
+      Object.values(x).forEach(find);
     }
-    return null;
-  }
-  const entries = findEntries(json) || [];
-  let rank=1, rows=[];
-  for (const e of entries){
-    const team = e.team||{};
-    const stats = e.stats||[];
-    const val = (n,d=0)=>{ const s=stats.find(s=>s.name===n); const v=s?.value; return typeof v==="number"?v:parseInt(v||d,10)||d; };
-    const gf = val("goalsFor") || val("pointsFor");
-    const ga = val("goalsAgainst") || val("pointsAgainst");
-    rows.push({
-      rank: rank++,
-      team: team.displayName||team.name||"",
-      played: val("gamesPlayed"),
-      win: val("wins"),
-      draw: val("ties"),
-      loss: val("losses"),
-      gf, ga, gd: (gf||0)-(ga||0),
-      points: val("points"),
-      badge: team.logo || (team.logos||[])[0]?.href || ""
-    });
-  }
-  return rows;
+  })(data);
+
+  const rows = (entries||[]).map((e,i)=>{
+    const t = e.team || {};
+    const logo = t.logo || t.logos?.[0]?.href || "";
+    const name = t.displayName || t.name || "";
+    const s = e.stats || [];
+    const played = getStat(s,"gamesPlayed");
+    const win    = getStat(s,"wins");
+    const draw   = getStat(s,"ties");
+    const loss   = getStat(s,"losses");
+    const gf     = getStat(s,"goalsFor") || getStat(s,"pointsFor");
+    const ga     = getStat(s,"goalsAgainst") || getStat(s,"pointsAgainst");
+    const gd     = gf - ga;
+    const pts    = getStat(s,"points");
+    return {rank:i+1, logo, name, played, win, draw, loss, gd, pts};
+  }).filter(r=>r.name).slice(0,20);
+
+  const tbody = q("#tableBody");
+  tbody.innerHTML = rows.map(r => `
+    <div class="tbl-row">
+      <div class="num">${r.rank}</div>
+      <div class="club"><img src="${r.logo}" alt=""><span>${r.name}</span></div>
+      <div class="num">${r.played}</div>
+      <div class="num">${r.win}</div>
+      <div class="num">${r.draw}</div>
+      <div class="num">${r.loss}</div>
+      <div class="num">${r.gd}</div>
+      <div class="num">${r.pts}</div>
+    </div>
+  `).join("") || `<div class="pad muted">No table data available right now.</div>`;
 }
 
-/* ---------------- boot ---------------- */
-(async ()=>{
-  // TABLE: try assets → ESPN fallback
-  try{
-    let rows=[];
-    try{
-      const a = await fetchJSON("assets/table.json?cb="+Date.now());
-      if (Array.isArray(a) && a.length) rows = a;
-    }catch{}
-    if (!rows.length){
-      const espn = await fetchJSON("https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings");
-      rows = mapEspnTable(espn);
-    }
-    renderTable(rows);
-  }catch{ renderTable([]); }
-
-  // FIXTURES: try assets → ESPN fallback
-  try{
-    let fx=[];
-    try{
-      const a = await fetchJSON("assets/fixtures.json?cb="+Date.now());
-      if (Array.isArray(a) && a.length) fx = a;
-    }catch{}
-    if (!fx.length){
-      const espn = await fetchJSON("https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/360/schedule");
-      fx = mapEspnFixtures(espn);
-    }
-    const upcoming = fx.filter(x=> (x.status||"").toUpperCase()==="UPCOMING").slice(0,6);
-    const results  = fx.filter(x=> (x.status||"").toUpperCase()==="FT").sort((a,b)=> (b.date||"").localeCompare(a.date||"")).slice(0,6);
-    renderFixtures(upcoming, document.getElementById("upcoming"));
-    renderFixtures(results,   document.getElementById("results"));
-  }catch{
-    renderFixtures([], document.getElementById("upcoming"));
-    renderFixtures([], document.getElementById("results"));
-  }
+(async function init(){
+  try{ await loadFixtures(); }catch(e){ console.error(e); q("#upcoming").innerHTML='<div class="muted">Couldn’t load fixtures.</div>'; }
+  try{ await loadTable();    }catch(e){ console.error(e); q("#tableBody").innerHTML='<div class="pad muted">No table data available right now.</div>'; }
 })();
 </script>
 </body>
