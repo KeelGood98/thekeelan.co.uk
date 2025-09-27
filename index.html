@@ -23,16 +23,38 @@
       filter: saturate(0.9) contrast(1.05);
     }
 
-    /* Layout: fixtures wide | right column compact */
-    .wrap{
+    /* ===== LAYOUT — 3 columns as per your sketch ===== */
+    .page{
       min-height:100%;
       padding:24px;
       display:grid;
+      grid-template-columns: 220px 1fr 440px;
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        "gif table rightTop"
+        "gif table rightBottom";
       gap:24px;
-      grid-template-columns: minmax(0,2fr) minmax(0,1.15fr);
       align-items:start;
     }
-    @media (max-width: 1100px){ .wrap{grid-template-columns:1fr} }
+    @media (max-width: 1200px){
+      .page{
+        grid-template-columns: 200px 1fr;
+        grid-template-areas:
+          "gif table"
+          "rightTop rightTop"
+          "rightBottom rightBottom";
+      }
+    }
+    @media (max-width: 820px){
+      .page{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "gif"
+          "table"
+          "rightTop"
+          "rightBottom";
+      }
+    }
 
     .card{background:var(--glass); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; overflow:hidden}
     .header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px}
@@ -40,7 +62,27 @@
     .dot{width:9px; height:9px; background:var(--accent); border-radius:50%}
     .muted{color:var(--muted); font-size:13px}
 
-    /* Fixtures */
+    /* ===== GIF (left column) ===== */
+    #gifCard{grid-area: gif; display:flex; align-items:flex-start; justify-content:center; min-height:220px}
+    #gifCard img{max-width:100%; max-height:220px; border-radius:14px}
+
+    /* ===== TABLE (middle column) ===== */
+    #tableCard{grid-area: table;}
+    .table-wrap{overflow:auto; max-height:70vh; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
+    table{width:100%; border-collapse:collapse; font-size:14px; table-layout:auto}
+    th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
+    th{position:sticky; top:0; background:#0e0f13; text-align:center; font-weight:700}
+    th.left{text-align:left}
+    td.num{text-align:center}
+    tr:hover{background:#0e0f13}
+    .club{display:flex; align-items:center; gap:8px}
+    .club img{width:20px; height:20px; border-radius:50%; background:#111}
+    .you{font-weight:800}
+
+    /* ===== Right column (top: fixtures/results; bottom: tracker) ===== */
+    #rightTop{grid-area: rightTop;}
+    #rightBottom{grid-area: rightBottom;}
+
     .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
     .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
     .list .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
@@ -63,33 +105,45 @@
     .teamline{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
     .crest{width:18px; height:18px; border-radius:50%; background:#111; vertical-align:middle; object-fit:cover}
 
-    /* Right column stack */
-    .right-col{display:grid; gap:18px}
-
-    /* Small GIF */
-    .gifbox{display:flex; align-items:center; justify-content:center; min-height:220px}
-    .gifbox img{max-width:100%; max-height:220px; border-radius:14px}
-
-    /* Table (scrollable, centered numbers, logos) */
-    .table-wrap{overflow:auto; max-height:520px; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
-    table{width:100%; border-collapse:collapse; font-size:14px; table-layout:auto}
-    th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
-    th{position:sticky; top:0; background:#0e0f13; text-align:center; font-weight:700}
-    th.left{text-align:left}
-    td.num{text-align:center}
-    tr:hover{background:#0e0f13}
-    .club{display:flex; align-items:center; gap:8px}
-    .club img{width:20px; height:20px; border-radius:50%; background:#111}
-    .you{font-weight:800}
-
     footer{color:#555; font-size:12px; text-align:center; padding:8px}
   </style>
 </head>
 <body>
-  <div class="wrap">
+  <div class="page">
+    <!-- LEFT: GIF -->
+    <section class="card" id="gifCard">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
+    </section>
 
-    <!-- LEFT: Fixtures / Results -->
-    <section class="card" id="fxCard">
+    <!-- MIDDLE: BIG TABLE -->
+    <section class="card" id="tableCard">
+      <div class="header">
+        <span class="badge"><span class="dot"></span> Premier League Table</span>
+        <a class="muted" id="plSeasonLink" href="#" target="_blank" rel="noopener">Season</a>
+      </div>
+      <div class="table-wrap">
+        <table id="plTable">
+          <thead>
+            <tr>
+              <th class="num">#</th>
+              <th class="left">Club</th>
+              <th class="num">P</th>
+              <th class="num">W</th>
+              <th class="num">D</th>
+              <th class="num">L</th>
+              <th class="num">GD</th>
+              <th class="num">Pts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="8" class="muted">Loading table…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- RIGHT TOP: UPCOMING + RESULTS -->
+    <section class="card" id="rightTop">
       <div class="header">
         <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
         <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
@@ -108,59 +162,25 @@
       <div id="loadwarn" class="muted" style="padding:8px 2px 0 2px;"></div>
     </section>
 
-    <!-- RIGHT: GIF + Table + R6 -->
-    <div class="right-col">
-
-      <section class="card gifbox">
-        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
-      </section>
-
-      <section class="card">
-        <div class="header">
-          <span class="badge"><span class="dot"></span> Premier League Table</span>
-          <a class="muted" id="plSeasonLink" href="#" target="_blank" rel="noopener">Season</a>
-        </div>
-        <div class="table-wrap">
-          <table id="plTable">
-            <thead>
-              <tr>
-                <th class="num">#</th>
-                <th class="left">Club</th>
-                <th class="num">P</th>
-                <th class="num">W</th>
-                <th class="num">D</th>
-                <th class="num">L</th>
-                <th class="num">GD</th>
-                <th class="num">Pts</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td colspan="8" class="muted">Loading table…</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="header">
-          <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
-          <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
-        </div>
-        <iframe class="r6frame"
-          src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
-          loading="lazy"
-          onload="document.getElementById('r6fallback')?.remove()"
-          style="width:100%; height:380px; border:0; border-radius:12px; background:#0a0a0d">
-        </iframe>
-        <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
-          Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
-        </div>
-      </section>
-
-    </div>
+    <!-- RIGHT BOTTOM: R6 TRACKER -->
+    <section class="card" id="rightBottom">
+      <div class="header">
+        <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
+        <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
+      </div>
+      <iframe
+        src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
+        loading="lazy"
+        onload="document.getElementById('r6fallback')?.remove()"
+        style="width:100%; height:380px; border:0; border-radius:12px; background:#0a0a0d">
+      </iframe>
+      <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
+        Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
+      </div>
+    </section>
   </div>
 
-  <footer>CACHED_FIXTURE_BUST v6</footer>
+  <footer>CACHED_FIXTURE_BUST v7</footer>
 
   <script>
     const TEAM_NAME = "Manchester United";
@@ -233,6 +253,7 @@
 
         const today = new Date(); today.setHours(0,0,0,0);
 
+        // Prefer future-dated games, still tolerate non-FT status
         const upcoming = data
           .filter(x => ((x.status||"").toUpperCase() !== "FT") || new Date(x.date) >= today)
           .filter(x => new Date(x.date) >= today)
@@ -268,10 +289,10 @@
           tbody.innerHTML = `<tr><td colspan="8" class="muted">No table data available right now.</td></tr>`;
           return;
         }
-        // crude season text guess for link
-        const yr = new Date().getMonth() >= 7 ? new Date().getFullYear() : new Date().getFullYear()-1;
-        link.textContent = `${yr}-${yr+1}`;
-        link.href = `https://www.google.com/search?q=premier+league+table+${yr}-${yr+1}`;
+        const now = new Date();
+        const yearStart = (now.getMonth() >= 7) ? now.getFullYear() : now.getFullYear()-1;
+        link.textContent = `${yearStart}-${yearStart+1}`;
+        link.href = `https://www.google.com/search?q=premier+league+table+${yearStart}-${yearStart+1}`;
 
         tbody.innerHTML = rows.map((t) => {
           const you = /manchester united/i.test(t.team) ? " you" : "";
