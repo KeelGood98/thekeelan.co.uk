@@ -2,37 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>thekeelan.co.uk</title>
   <style>
     :root{
-      --bg:#0b0f0b; --card:#12161b; --muted:#96a0ad; --text:#e9eef5; --accent:#6ee7ff; --border:#1e242c;
-      --line:#0f2b12; --pitch:#0d2010;
+      --text:#e9eef5; --muted:#96a0ad; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
+      --pitch-dark:#0b1f0d; --pitch-light:#0f2a14; --line:#dfeadf0b;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    /* Football pitch background (subtle) */
     body{
-      margin:0; color:var(--text);
+      margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      /* Football pitch background: stripes + touchlines + center circle */
       background:
-        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.35)),
-        repeating-linear-gradient(0deg, var(--pitch) 0 48px, #0b1a0d 48px 96px),
-        repeating-linear-gradient(90deg, transparent 0 96px, rgba(255,255,255,0.03) 96px 97px);
-      background-color:#0b120d;
-      font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+        /* faint touchlines border */
+        radial-gradient(circle at 50% 50%, transparent 0 36%, rgba(255,255,255,0.06) 36.3% 36.6%, transparent 36.9% 100%),
+        radial-gradient(circle at 50% 50%, transparent 0 2%, rgba(255,255,255,0.04) 2.1% 2.3%, transparent 2.4% 100%),
+        repeating-linear-gradient(0deg, var(--pitch-dark) 0 64px, var(--pitch-light) 64px 128px);
+      background-color: var(--pitch-dark);
     }
-    a{color:var(--accent);text-decoration:none}
-    header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
     .brand{display:flex;gap:10px;align-items:center}
     .brand-logo{width:28px;height:28px;border-radius:6px;background:
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
-    .grid{display:grid;grid-template-columns:1fr 1.4fr 1.4fr;gap:18px;align-items:start;padding:0 18px 24px}
+    .grid{display:grid;grid-template-columns:1fr 1.3fr 1.3fr;gap:18px;padding:0 18px 24px}
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
     .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.25)}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
-    .table-wrap{border-radius:10px;border:1px solid var(--border);overflow:auto;max-height:none}
-    @media (max-width: 980px){ .grid{grid-template-columns:1fr} .table-wrap{max-height:70vh} }
+    .table-wrap{border:1px solid var(--border);border-radius:10px;overflow:auto;max-height:70vh}
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
@@ -53,14 +52,16 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT -->
+    <!-- Left -->
     <section class="card">
       <h2>Left Panel</h2>
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
-           alt="gif" style="max-width:100%; border-radius:8px;" />
+      <img
+        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
+        alt="gif" style="max-width:100%; border-radius:8px;"
+      />
     </section>
 
-    <!-- CENTER: Table -->
+    <!-- Center: PL table -->
     <section class="card">
       <h2>Premier League Table</h2>
       <div class="table-wrap">
@@ -75,7 +76,7 @@
       </div>
     </section>
 
-    <!-- RIGHT: MUFC + R6 -->
+    <!-- Right: MUFC + R6 -->
     <section class="card">
       <h2>Man United – Fixtures & Results</h2>
       <div id="fixturesWrap" class="table-wrap" style="padding:8px;">
@@ -91,24 +92,16 @@
   <script>
   (async () => {
     const bust = `?t=${Date.now()}`;
-
     const log = (...a) => console.log("[keelan]", ...a);
     const err = (...a) => console.error("[keelan]", ...a);
-
-    function showError(where, msg) {
-      const el = document.getElementById(where);
-      if (!el) return;
-      el.innerHTML = `<tr><td colspan="10"><div class="muted">⚠️ ${msg}</div></td></tr>`;
-    }
 
     // Try multiple path variants for safety
     async function getJSONMulti(relPath) {
       const candidates = [`/assets/${relPath}`, `assets/${relPath}`, `./assets/${relPath}`];
       for (const url of candidates) {
         try {
-          log("Fetching", url + bust);
           const r = await fetch(url + bust, { cache: "no-store" });
-          log("Response", url, r.status);
+          log("GET", url, r.status);
           if (!r.ok) continue;
           const data = await r.json();
           const size = Array.isArray(data) ? data.length : (data ? Object.keys(data).length : 0);
@@ -122,9 +115,7 @@
       return rows.map(r => `
         <tr>
           <td>${r.pos ?? ""}</td>
-          <td><span class="team-cell">
-            ${r.badge ? `<img class="badge" src="${r.badge}" alt="">` : ""}${r.team ?? ""}
-          </span></td>
+          <td><span class="team-cell">${r.badge ? `<img class="badge" src="${r.badge}" alt="">` : ""}${r.team ?? ""}</span></td>
           <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
           <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td><strong>${r.pts ?? ""}</strong></td>
         </tr>
@@ -134,7 +125,8 @@
     // ===== TABLE =====
     const table = await getJSONMulti("table.json");
     if (!table || !Array.isArray(table.standings) || table.standings.length === 0) {
-      showError("tableBody", "No table data (check /assets/table.json).");
+      document.getElementById("tableBody").innerHTML =
+        '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
       document.getElementById("tableBody").innerHTML = renderTableRows(table.standings);
       const lu = document.getElementById("lastUpdated");
@@ -148,44 +140,35 @@
       wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
     } else {
       const now = Date.now();
-      const parse = d => new Date(d).getTime() || 0;
+      const t = s => new Date(s).getTime() || 0;
 
-      // Guard against any bad statuses: compute finished by score if present, else by date < now
-      const isFinished = m => {
-        if (m.score && (typeof m.score.home === "number") && (typeof m.score.away === "number")) return true;
-        return parse(m.date) < now;
-      };
-      const outcomeClass = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
+      // FINISHED if score present; otherwise future/past by date
+      const isFinished = m => (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") || t(m.date) < now;
+      const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
 
-      const all = fixtures.matches.slice().sort((a,b)=> parse(a.date) - parse(b.date));
+      // Sort once, then slice for each section
+      const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
       const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
-      const recent = all.filter(isFinished).sort((a,b)=> parse(b.date) - parse(a.date)).slice(0, 8);
+      const recent = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
 
-      const fmtDT = d => new Date(d).toLocaleString([], { dateStyle:"medium", timeStyle:"short" });
+      const fmt = d => new Date(d).toLocaleString([], { dateStyle:"medium", timeStyle:"short" });
 
       const upHTML = upcoming.length ? `
-        <h3 style="margin:8px 0;">Upcoming</h3>
+        <h3 style="margin:8px 0;">No upcoming fixtures.</h3>
         <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>
         <tbody>
-          ${upcoming.map(m =>
-            `<tr><td>${fmtDT(m.date)}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`
-          ).join("")}
+          ${upcoming.map(m => `<tr><td>${fmt(m.date)}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join("")}
         </tbody></table>
-      ` : '<div class="muted">No upcoming fixtures.</div>';
+      `.replace("No upcoming fixtures.","Upcoming") : '<div class="muted">No upcoming fixtures.</div>';
 
       const recHTML = recent.length ? `
         <h3 style="margin:12px 0 6px;">Recent Results</h3>
         <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th></tr></thead>
         <tbody>
-          ${recent.map(m => {
+          ${recent.map(m=>{
             const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
             const oc = m.score?.outcome || "";
-            return `<tr class="${outcomeClass(oc)}">
-              <td>${new Date(m.date).toLocaleDateString()}</td>
-              <td>${m.comp||""}</td>
-              <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-              <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
-            </tr>`;
+            return `<tr class="${cls(oc)}"><td>${new Date(m.date).toLocaleDateString()}</td><td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td><td><strong>${sc}</strong>${oc?` (${oc})`:""}</td></tr>`;
           }).join("")}
         </tbody></table>
       ` : "";
