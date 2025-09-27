@@ -1,7 +1,31 @@
 {
   "team": "Manchester United",
-  "updated": "2025-09-27T21:04:45.018738Z",
+  "updated": "2025-09-27T21:11:17.559872Z",
   "matches": [
+    {
+      "date": "2025-08-03T21:00:00Z",
+      "comp": "English Premier League Summer Series",
+      "home": "Manchester United",
+      "away": "Everton",
+      "status": "FINISHED",
+      "score": {
+        "home": 2,
+        "away": 2,
+        "outcome": "D"
+      }
+    },
+    {
+      "date": "2025-08-09T11:45:00Z",
+      "comp": "Club Friendlies",
+      "home": "Manchester United",
+      "away": "Fiorentina",
+      "status": "FINISHED",
+      "score": {
+        "home": 1,
+        "away": 1,
+        "outcome": "D"
+      }
+    },
     {
       "date": "2025-08-17T15:30:00Z",
       "comp": "English Premier League",
