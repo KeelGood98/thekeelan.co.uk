@@ -1,7 +1,7 @@
 [
-  { "date": "2025-10-05", "time": "16:30", "comp": "Premier League", "home": "Man Utd", "away": "Arsenal", "status": "upcoming", "score": null, "venue": "Old Trafford" },
-  { "date": "2025-10-01", "time": "20:00", "comp": "UCL Group A",     "home": "Man Utd", "away": "PSG",     "status": "upcoming", "score": null, "venue": "Old Trafford" },
+  { "date": "2025-10-01", "time": "20:00", "comp": "UCL Group A",     "home": "Man Utd", "away": "PSG",     "status": "upcoming", "score": null, "venue": "Old Trafford", "tv": ["TNT Sports 1", "discovery+"] },
+  { "date": "2025-10-05", "time": "16:30", "comp": "Premier League", "home": "Man Utd", "away": "Arsenal", "status": "upcoming", "score": null, "venue": "Old Trafford", "tv": ["Sky Sports Main Event", "Sky Sports Premier League"] },
 
-  { "date": "2025-09-28", "time": "15:00", "comp": "Premier League", "home": "Man Utd", "away": "Spurs",  "status": "FT", "score": "2–1", "venue": "Old Trafford" },
-  { "date": "2025-09-21", "time": "20:00", "comp": "UCL Group A",     "home": "Inter",   "away": "Man Utd","status": "FT", "score": "1–1", "venue": "San Siro" }
+  { "date": "2025-09-28", "time": "15:00", "comp": "Premier League", "home": "Man Utd", "away": "Spurs",   "status": "FT", "score": "2–1", "venue": "Old Trafford", "tv": ["Sky Sports"] },
+  { "date": "2025-09-21", "time": "20:00", "comp": "UCL Group A",     "home": "Inter",   "away": "Man Utd", "status": "FT", "score": "1–1", "venue": "San Siro", "tv": ["TNT Sports 2"] }
 ]
