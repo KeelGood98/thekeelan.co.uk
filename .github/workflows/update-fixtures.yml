@@ -1,16 +1,16 @@
-name: Update site data (ESPN fixtures + FD table)
+name: Update site data (FD table + TSDB MUFC)
 
 on:
   workflow_dispatch: {}
   schedule:
     - cron: "23 5 * * *"   # daily 05:23 UTC
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,211 +22,126 @@ jobs:
 
       - name: Build assets
         env:
-          FD_TOKEN: ${{ secrets.FOOTBALL_DATA_API_KEY }}  # optional but recommended
+          FD_TOKEN: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: |
           python - <<'PY'
-          import json, os, sys, ssl, urllib.request, datetime
-          ssl._create_default_https_context = ssl._create_unverified_context
+          import json, os, pathlib, time, urllib.request, urllib.error, datetime
 
-          UA = {"User-Agent": "Mozilla/5.0"}
-
-          def jget(url, headers=None):
-            req = urllib.request.Request(url, headers=headers or UA)
-            with urllib.request.urlopen(req, timeout=60) as r:
-              return json.loads(r.read().decode("utf-8"))
-
-          def iso_date_time(s):
-            try:
-              dt = datetime.datetime.fromisoformat(s.replace("Z", "+00:00"))
-              return dt.date().isoformat(), dt.strftime("%H:%M")
-            except Exception:
-              return "", "TBC"
-
-          def pick_name(x):
-            if isinstance(x, str): return x
-            if isinstance(x, dict): return x.get("name") or x.get("shortName") or ""
-            return ""
-
-          def is_pl(comp_name, league_obj):
-            name = (comp_name or "").lower()
-            if "premier league" in name: return True
-            if isinstance(league_obj, dict):
-              nm = (league_obj.get("name") or "").lower()
-              ab = (league_obj.get("abbreviation") or "").lower()
-              if "premier league" in nm: return True
-              if ab in {"pl", "epl"}: return True
-            return False
-
-          os.makedirs("assets", exist_ok=True)
-
-          # ---------------- Fixtures from ESPN (MUFC)
-          ESPN_SCHEDULE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/360/schedule"
-
-          try:
-            sched = jget(ESPN_SCHEDULE)
-          except Exception as e:
-            print("ESPN schedule fetch failed:", e, file=sys.stderr)
-            sched = {}
-
-          events = (sched.get("events") or []) + (sched.get("nextEvents") or [])
-          fixtures = []
-
-          for ev in events:
-            comps = (ev.get("competitions") or [{}])[0]
-            comp_name = pick_name(comps.get("name")) or pick_name(ev.get("league"))
-            if not is_pl(comp_name, ev.get("league") if isinstance(ev.get("league"), dict) else {}):
-              continue  # EPL only
-
-            date, time = iso_date_time(ev.get("date",""))
-
-            teams = comps.get("competitors") or []
-            home = next((t for t in teams if t.get("homeAway")=="home"), None)
-            away = next((t for t in teams if t.get("homeAway")=="away"), None)
-            if not home or not away: 
-              continue
-
-            th, ta = home.get("team") or {}, away.get("team") or {}
-            hname = th.get("displayName") or th.get("name") or ""
-            aname = ta.get("displayName") or ta.get("name") or ""
-            hbadge = th.get("logo") or (th.get("logos") or [{}])[0].get("href")
-            abadge = ta.get("logo") or (ta.get("logos") or [{}])[0].get("href")
-
-            # Status – ESPN has event.status and competitions[].status; use competitions status if present
-            cstat = (comps.get("status") or {}).get("type") or {}
-            estat = (ev.get("status") or {}).get("type") or {}
-            completed = bool(cstat.get("completed") or estat.get("completed"))
-            state = (cstat.get("state") or estat.get("state") or "").lower()
-
-            if completed:
+          def get(url, headers=None, tries=3, sleep=1.2):
+            req = urllib.request.Request(url, headers=headers or {})
+            for i in range(tries):
               try:
-                hs = int(home.get("score") or 0); as_ = int(away.get("score") or 0)
-              except Exception:
-                hs = as_ = 0
-              status = "FT"; score = f"{hs}–{as_}"
-            elif state in {"pre","scheduled"}:
-              status = "UPCOMING"; score = None
-            else:
-              status = "upcoming"; score = None
+                with urllib.request.urlopen(req, timeout=20) as r:
+                  return json.loads(r.read().decode('utf-8'))
+              except Exception as e:
+                if i == tries-1: raise
+                time.sleep(sleep)
+            return None
 
-            venue = (comps.get("venue") or {}).get("fullName") or ""
+          # --- Premier League table from football-data.org (requires token) ---
+          fd_token = os.environ.get("FD_TOKEN","").strip()
+          if not fd_token:
+            raise SystemExit("Missing FOOTBALL_DATA_API_KEY secret.")
 
-            fixtures.append({
-              "date": date, "time": time or "TBC", "comp": comp_name,
-              "home": hname, "away": aname, "status": status, "score": score,
-              "venue": venue, "tv": [],
-              "homeBadge": hbadge, "awayBadge": abadge,
-            })
+          # PL competition code: PL
+          fd_headers = {"X-Auth-Token": fd_token, "User-Agent":"thekeelan-bot/1.0"}
+          fd = get("https://api.football-data.org/v4/competitions/PL/standings", headers=fd_headers)
 
-          # de-dup + sort
-          seen, clean = set(), []
-          for f in fixtures:
-            k = (f["date"], f["home"], f["away"])
-            if f["date"] and k not in seen:
-              seen.add(k); clean.append(f)
-          clean.sort(key=lambda x: (x["date"], x["time"], x["home"], x["away"]))
+          # Map to our table format
+          standings = []
+          # choose the 'TOTAL' table from the first standings entry
+          for row in (fd.get("standings", [{}])[0].get("table", []) if fd else []):
+            team = row["team"]
+            stats = {
+              "pos": row["position"],
+              "team": team["shortName"] or team["name"],
+              "played": row["playedGames"],
+              "won": row["won"],
+              "drawn": row["draw"],
+              "lost": row["lost"],
+              "gf": row["goalsFor"],
+              "ga": row["goalsAgainst"],
+              "gd": row["goalDifference"],
+              "pts": row["points"],
+              # football-data doesn’t host badges reliably, but many teams have crest URLs:
+              "badge": team.get("crest")
+            }
+            standings.append(stats)
 
-          with open("assets/fixtures.json","w",encoding="utf-8") as out:
-            json.dump(clean, out, ensure_ascii=False, indent=2)
-          print("fixtures written:", len(clean))
+          table = {
+            "season": fd.get("season", {}).get("startDate","")[:4] + "/" + fd.get("season", {}).get("endDate","")[2:4] if fd else "",
+            "updated": datetime.datetime.utcnow().isoformat()+"Z",
+            "standings": standings
+          }
 
-          # ---------------- Table from football-data.org (fallback ESPN)
-          rows = []
-          token = (os.environ.get("FD_TOKEN") or "").strip()
-          season_year = datetime.date.today().year
-          if datetime.date.today().month < 8:
-            season_year -= 1  # FD season param is the starting year
+          # --- Manchester United fixtures/results from TheSportsDB ---
+          # 1) Find team ID
+          team = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United")
+          team_id = None
+          try:
+            team_id = team["teams"][0]["idTeam"]
+          except Exception:
+            raise SystemExit("Could not resolve Manchester United team id from TheSportsDB.")
 
-          if token:
-            try:
-              url = f"https://api.football-data.org/v4/competitions/PL/standings?season={season_year}"
-              data = jget(url, headers={"X-Auth-Token": token, **UA})
-              standings = (data.get("standings") or [])[0].get("table") or []
-              for it in standings:
-                team = it.get("team") or {}
-                rows.append({
-                  "rank": int(it.get("position") or 0),
-                  "team": team.get("name") or "",
-                  "played": int(it.get("playedGames") or 0),
-                  "win": int(it.get("won") or 0),
-                  "draw": int(it.get("draw") or 0),
-                  "loss": int(it.get("lost") or 0),
-                  "gf": int(it.get("goalsFor") or 0),
-                  "ga": int(it.get("goalsAgainst") or 0),
-                  "gd": int(it.get("goalDifference") or 0),
-                  "points": int(it.get("points") or 0),
-                  "badge": team.get("crest"),
-                })
-              rows = [r for r in rows if r["team"]]
-              rows.sort(key=lambda r: r["rank"] or 999)
-              print("table source: football-data.org, rows:", len(rows))
-            except Exception as e:
-              print("football-data standings failed:", e, file=sys.stderr)
+          # 2) last 15 results + next 15 fixtures
+          last = get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={team_id}") or {}
+          nxt  = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={team_id}") or {}
 
-          if not rows:
-            # ESPN fallback (shape varies, so recurse until we find entries)
-            def find_entries(x):
-              if isinstance(x, dict):
-                st = x.get("standings")
-                if isinstance(st, dict) and "entries" in st:
-                  return st["entries"]
-                for v in x.values():
-                  r = find_entries(v)
-                  if r: return r
-              if isinstance(x, list):
-                for it in x:
-                  r = find_entries(it)
-                  if r: return r
-              return None
+          def map_event(e):
+            # Handles both played and scheduled
+            date = (e.get("dateEvent") or e.get("strTimestamp") or "") + "T" + (e.get("strTime") or "00:00:00")
+            # Some TSDB timestamps already include time zone; keep simple UTC-like string
+            home = e.get("strHomeTeam") or ""
+            away = e.get("strAwayTeam") or ""
+            comp = e.get("strLeague") or (e.get("strLeagueShort") or "")
+            status = "FINISHED" if (e.get("intHomeScore") is not None and e.get("intAwayScore") is not None) else "SCHEDULED"
+            score = None
+            if status == "FINISHED":
+              hs, as_ = int(e.get("intHomeScore") or 0), int(e.get("intAwayScore") or 0)
+              # Work out W/D/L from Man United perspective
+              is_mu_home = (home.lower().strip() in ("manchester united","man utd","manchester u."))
+              outcome = "D"
+              if hs != as_:
+                if (is_mu_home and hs>as_) or ((not is_mu_home) and as_<hs):
+                  outcome = "W"
+                else:
+                  outcome = "L"
+              score = {"home": hs, "away": as_, "outcome": outcome}
+            return {
+              "date": date.replace("T ", "T").strip()+"Z",
+              "comp": comp,
+              "home": home,
+              "away": away,
+              "status": status,
+              "score": score
+            }
 
-            try:
-              tdata = jget("https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings")
-              entries = find_entries(tdata) or []
-              rank = 1
-              for e in entries:
-                team = e.get("team") or {}
-                name = team.get("displayName") or team.get("name") or ""
-                crest = team.get("logo") or (team.get("logos") or [{}])[0].get("href")
-                stats = e.get("stats") or []
-                def get(n, d=0):
-                  for s in stats:
-                    if s.get("name")==n:
-                      try: return int(s.get("value"))
-                      except: return d
-                  return d
-                played = get("gamesPlayed"); win = get("wins"); draw = get("ties")
-                loss = get("losses")
-                gf = get("goalsFor") or get("pointsFor")
-                ga = get("goalsAgainst") or get("pointsAgainst")
-                gd = (gf or 0) - (ga or 0)
-                points = get("points")
-                rows.append({
-                  "rank": rank, "team": name, "played": played,
-                  "win": win, "draw": draw, "loss": loss,
-                  "gf": gf, "ga": ga, "gd": gd, "points": points, "badge": crest
-                })
-                rank += 1
-              print("table source: ESPN fallback, rows:", len(rows))
-            except Exception as e:
-              print("ESPN standings failed as well:", e, file=sys.stderr)
+          matches = []
+          for e in (last.get("results") or []):
+            matches.append(map_event(e))
+          for e in (nxt.get("events") or []):
+            matches.append(map_event(e))
 
-          with open("assets/table.json","w",encoding="utf-8") as out:
-            json.dump(rows, out, ensure_ascii=False, indent=2)
-          print("table rows written:", len(rows))
+          fixtures = {
+            "team": "Manchester United",
+            "updated": datetime.datetime.utcnow().isoformat()+"Z",
+            "matches": matches
+          }
 
-          # Always bump a stamp to force Pages redeploy
-          from datetime import timezone
-          with open("assets/update_stamp.txt","w",encoding="utf-8") as f:
-            f.write(datetime.datetime.now(timezone.utc).isoformat())
+          assets = pathlib.Path("assets"); assets.mkdir(exist_ok=True)
+          (assets/"table.json").write_text(json.dumps(table, ensure_ascii=False, indent=2), encoding="utf-8")
+          (assets/"fixtures.json").write_text(json.dumps(fixtures, ensure_ascii=False, indent=2), encoding="utf-8")
+          (assets/"update_stamp.txt").write_text(datetime.datetime.utcnow().isoformat()+"Z", encoding="utf-8")
           PY
 
-      - name: Commit & push (always)
+      - name: Commit assets
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/*
-          if git diff --cached --quiet; then
-            git commit --allow-empty -m "chore: force pages rebuild [skip ci]"
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/*
+            git commit -m "chore: refresh assets ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+            git push
           else
-            git commit -m "chore: update fixtures & table (ESPN+FD) [skip ci]"
+            echo "No changes."
           fi
-          git push
