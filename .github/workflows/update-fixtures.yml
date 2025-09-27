@@ -1,4 +1,4 @@
-name: Update site data (TSDB table + MUFC fixtures)
+name: Update site data (TSDB season → table + MUFC fixtures)
 
 on:
   workflow_dispatch: {}
@@ -22,18 +22,20 @@ jobs:
 
       - name: Build assets
         env:
-          # Optional: override the season via repo VARS → SEASON: "2025-2026"
+          # Optional repo VAR to force a season string (e.g. "2025-2026")
           SEASON: ${{ vars.SEASON }}
         run: |
           python - <<'PY'
           import json, os, pathlib, time, urllib.request, datetime, sys
+          from collections import defaultdict
 
-          # ---------- helpers ----------
+          LEAGUE_ID = "4328"  # Premier League (TSDB)
+
           def get(url, tries=4, sleep=1.2):
             for i in range(tries):
               try:
-                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/1.1"})
-                with urllib.request.urlopen(req, timeout=30) as r:
+                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/2.0"})
+                with urllib.request.urlopen(req, timeout=35) as r:
                   return json.loads(r.read().decode("utf-8"))
               except Exception as e:
                 if i == tries-1:
@@ -41,131 +43,133 @@ jobs:
                   raise
                 time.sleep(sleep)
 
-          def norm_ts(strTimestamp, dateEvent, strTime):
-            """
-            Build a sane ISO-ish timestamp. DO NOT append 'Z' if timestamp already has
-            a timezone (contains '+' or endswith 'Z').
-            """
-            ts = (strTimestamp or "").strip()
-            if not ts:
-              d = (dateEvent or "").strip()
-              t = (strTime or "00:00:00").strip()
-              ts = f"{d}T{t}".strip() if d else t
-            # Only append Z if there's no timezone info already
-            if ts and 'Z' not in ts and '+' not in ts:
-              ts += 'Z'
-            return ts
-
-          # ---------- season ----------
+          # ---------- season autodetect (Aug→Jul), allow override ----------
           forced = (os.environ.get("SEASON") or "").strip()
           if forced:
             SEASON = forced
           else:
             today = datetime.date.today()
             SEASON = f"{today.year}-{today.year+1}" if today.month >= 8 else f"{today.year-1}-{today.year}"
-          print(f"[INFO] Season: {SEASON}")
+          print(f"[INFO] Using season: {SEASON}")
 
-          # ---------- PL table ----------
-          # TSDB PL league id: 4328
-          table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={SEASON}"
-          t = get(table_api) or {}
-          rows = t.get("table") or []
-          if not rows:
-            print("[WARN] TSDB returned no table rows. Check the season string.")
+          # ---------- fetch full league season events + team list ----------
+          season_events = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={LEAGUE_ID}&s={SEASON}") or {}
+          events = season_events.get("events") or []
+          if not events:
+            print("[WARN] TSDB returned 0 season events. Table may be empty.", file=sys.stderr)
 
-          standings = [{
-              "pos": int(r.get("intRank") or 0),
-              "team": r.get("strTeam") or "",
-              "played": int(r.get("intPlayed") or 0),
-              "won": int(r.get("intWin") or 0),
-              "drawn": int(r.get("intDraw") or 0),
-              "lost": int(r.get("intLoss") or 0),
-              "gf": int(r.get("intGoalsFor") or 0),
-              "ga": int(r.get("intGoalsAgainst") or 0),
-              "gd": int(r.get("intGoalDifference") or 0),
-              "pts": int(r.get("intPoints") or 0),
-              "badge": r.get("strTeamBadge") or None
-          } for r in rows]
-          standings.sort(key=lambda x: x["pos"] or 999)
+          team_list = get(f"https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id={LEAGUE_ID}") or {}
+          teams = team_list.get("teams") or []
+          team_badge = {}       # name → badge URL
+          team_seen = set()
+          for t in teams:
+            nm = (t.get("strTeam") or "").strip()
+            if nm:
+              team_badge[nm] = t.get("strTeamBadge") or None
+              team_seen.add(nm)
+
+          # ensure we track all 20 clubs even if they have 0 completed matches yet
+          standings_map = {
+            nm: {"team": nm, "played":0,"won":0,"drawn":0,"lost":0,"gf":0,"ga":0,"gd":0,"pts":0,"badge":team_badge.get(nm)}
+            for nm in team_seen
+          }
+
+          # tally from completed matches only
+          def to_int(x):
+            try: return int(x)
+            except: return None
+
+          for e in events:
+            home = (e.get("strHomeTeam") or "").strip()
+            away = (e.get("strAwayTeam") or "").strip()
+            hs = to_int(e.get("intHomeScore"))
+            as_ = to_int(e.get("intAwayScore"))
+            if not home or not away: 
+              continue
+            # if teams not in the team list (rare), create rows on the fly
+            for nm in (home, away):
+              if nm not in standings_map:
+                standings_map[nm] = {"team": nm, "played":0,"won":0,"drawn":0,"lost":0,"gf":0,"ga":0,"gd":0,"pts":0,"badge": team_badge.get(nm)}
+
+            # only count finished matches (both scores present)
+            if hs is None or as_ is None:
+              continue
+
+            H = standings_map[home]; A = standings_map[away]
+            H["played"] += 1; A["played"] += 1
+            H["gf"] += hs; H["ga"] += as_; H["gd"] = H["gf"] - H["ga"]
+            A["gf"] += as_; A["ga"] += hs; A["gd"] = A["gf"] - A["ga"]
+
+            if hs == as_:
+              H["drawn"] += 1; A["drawn"] += 1
+              H["pts"] += 1;  A["pts"] += 1
+            elif hs > as_:
+              H["won"] += 1; A["lost"] += 1
+              H["pts"] += 3
+            else:
+              A["won"] += 1; H["lost"] += 1
+              A["pts"] += 3
+
+          # sort: points desc, GD desc, GF desc, team asc
+          rows = list(standings_map.values())
+          rows.sort(key=lambda r: (-r["pts"], -r["gd"], -r["gf"], r["team"]))
+          for i, r in enumerate(rows, start=1):
+            r["pos"] = i
 
           table = {
             "season": SEASON,
             "updated": datetime.datetime.utcnow().isoformat()+"Z",
-            "standings": standings
+            "standings": rows
           }
 
-          # ---------- MUFC fixtures/results ----------
-          # Resolve exact team id
-          search = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
-          teams = search.get("teams") or []
-          if not teams:
-            print("[ERR] No MUFC team rows found.", file=sys.stderr); sys.exit(1)
+          # ---------- MUFC fixtures (from same season events — consistent + complete) ----------
+          mu_names = {"manchester united","man utd","manchester u."}
+          def norm_ts(strTimestamp, dateEvent, strTime):
+            ts = (strTimestamp or "").strip()
+            if not ts:
+              d = (dateEvent or "").strip()
+              t = (strTime or "00:00:00").strip()
+              ts = f"{d}T{t}".strip() if d else t
+            if ts and 'Z' not in ts and '+' not in ts:
+              ts += 'Z'
+            return ts
 
-          mu_names = {"manchester united", "man utd", "manchester u."}
-          mu = None
-          for tr in teams:
-            if (tr.get("strTeam") or "").strip().lower() in mu_names:
-              mu = tr; break
-          mu = mu or teams[0]
-          mu_id = mu["idTeam"]
-          print(f"[INFO] MUFC team id: {mu_id}")
-
-          # Use all three feeds for belt-and-braces (season + last + next), then filter to MUFC only.
-          feeds = []
-          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={mu_id}&s={SEASON}") or {})
-          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={mu_id}") or {})
-          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={mu_id}") or {})
-
-          raw_events = []
-          for f in feeds:
-            raw_events.extend(f.get("events") or [])
-            raw_events.extend(f.get("results") or [])
-
-          # Strict keep: only games where MUFC is home or away
-          def keep_mu(e):
+          mu_events = []
+          for e in events:
             h = (e.get("strHomeTeam") or "").strip().lower()
             a = (e.get("strAwayTeam") or "").strip().lower()
-            return h in mu_names or a in mu_names
+            if h in mu_names or a in mu_names:
+              # derive FINISHED vs SCHEDULED
+              hs = to_int(e.get("intHomeScore"))
+              as_ = to_int(e.get("intAwayScore"))
+              finished = (hs is not None and as_ is not None)
+              status = "FINISHED" if finished else "SCHEDULED"
 
-          kept = [e for e in raw_events if keep_mu(e)]
+              # outcome from MUFC perspective if finished
+              score = None
+              if finished:
+                is_mu_home = h in mu_names
+                mu_sc = hs if is_mu_home else as_
+                op_sc = as_ if is_mu_home else hs
+                outcome = "D" if mu_sc == op_sc else ("W" if mu_sc > op_sc else "L")
+                score = {"home": hs, "away": as_, "outcome": outcome}
 
-          # Map → our schema
-          def map_event(e):
-            ts = norm_ts(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime"))
-            home = e.get("strHomeTeam") or ""
-            away = e.get("strAwayTeam") or ""
-            comp = e.get("strLeague") or (e.get("strLeagueShort") or "")
+              mu_events.append({
+                "date": norm_ts(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime")),
+                "comp": e.get("strLeague") or (e.get("strLeagueShort") or ""),
+                "home": e.get("strHomeTeam") or "",
+                "away": e.get("strAwayTeam") or "",
+                "status": status,
+                "score": score
+              })
 
-            hs, as_ = e.get("intHomeScore"), e.get("intAwayScore")
-            finished = (hs is not None and as_ is not None)
-            status = "FINISHED" if finished else "SCHEDULED"
-
-            score = None
-            if finished:
-              try:
-                hs, as_ = int(hs), int(as_)
-              except Exception:
-                hs = int(str(hs or "0").strip() or 0)
-                as_ = int(str(as_ or "0").strip() or 0)
-              is_mu_home = home.strip().lower() in mu_names
-              mu_score = hs if is_mu_home else as_
-              opp_score = as_ if is_mu_home else hs
-              outcome = "D" if mu_score == opp_score else ("W" if mu_score > opp_score else "L")
-              score = {"home": hs, "away": as_, "outcome": outcome}
-
-            return {"date": ts, "comp": comp, "home": home, "away": away, "status": status, "score": score}
-
-          mapped = [map_event(e) for e in kept]
-
-          # De-duplicate using (date, home, away)
+          # de-dupe & sort by date
           seen, dedup = set(), []
-          for m in mapped:
+          for m in mu_events:
             k = (m["date"], m["home"], m["away"])
             if k not in seen:
               seen.add(k)
               dedup.append(m)
-
-          # Sort ascending by date; frontend will split upcoming/recent
           dedup.sort(key=lambda m: m["date"])
 
           fixtures = {
