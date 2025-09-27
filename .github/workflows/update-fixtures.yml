@@ -3,7 +3,7 @@ name: Update site data (TSDB table + MUFC fixtures)
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "23 5 * * *"
+    - cron: "23 5 * * *"   # daily 05:23 UTC
 
 permissions:
   contents: write
@@ -21,6 +21,9 @@ jobs:
           python-version: "3.x"
 
       - name: Build assets
+        env:
+          # Optional: set REPO VAR 'SEASON' to force a season (e.g. 2026-2027)
+          SEASON: ${{ vars.SEASON }}
         run: |
           python - <<'PY'
           import json, os, pathlib, time, urllib.request, datetime, sys
@@ -37,9 +40,18 @@ jobs:
                   raise
                 time.sleep(sleep)
 
-          # ---- CONFIG ----
-          # Update this when the PL season rolls over (or make it a repo var):
-          SEASON = os.environ.get("SEASON", "2024-2025")
+          # ---- Auto-detect PL season (Aug -> next Jul). Allow override via repo VAR SEASON. ----
+          forced = (os.environ.get("SEASON") or "").strip()
+          if forced:
+            SEASON = forced
+          else:
+            today = datetime.date.today()
+            # Season ticks over in AUG
+            if today.month >= 8:
+              SEASON = f"{today.year}-{today.year+1}"
+            else:
+              SEASON = f"{today.year-1}-{today.year}"
+          print(f"[INFO] Using season: {SEASON}")
 
           # ---- PREMIER LEAGUE TABLE (TSDB) ----
           table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={SEASON}"
@@ -81,7 +93,6 @@ jobs:
           nxt  = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={team_id}") or {}
 
           def map_event(e):
-            # Prefer TSDB's ISO-like timestamp when present
             ts = (e.get("strTimestamp") or "").strip()
             if not ts:
               de = (e.get("dateEvent") or "").strip()
