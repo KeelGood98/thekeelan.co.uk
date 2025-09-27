@@ -23,14 +23,12 @@ jobs:
       - name: Build assets
         run: |
           python - <<'PY'
-          import json, os, pathlib, time, urllib.request, urllib.error, datetime, sys
+          import json, os, pathlib, time, urllib.request, datetime, sys
 
           def get(url, tries=4, sleep=1.2):
             for i in range(tries):
               try:
-                req = urllib.request.Request(url, headers={
-                  "User-Agent":"thekeelan-updater/1.0"
-                })
+                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/1.0"})
                 with urllib.request.urlopen(req, timeout=25) as r:
                   return json.loads(r.read().decode("utf-8"))
               except Exception as e:
@@ -39,19 +37,17 @@ jobs:
                   raise
                 time.sleep(sleep)
 
-          # --- TheSportsDB league + season IDs ---
-          # Premier League (TSDB league id 4328). Season string must match TSDB format.
-          # Adjust if needed when the season rolls: "2024-2025", "2025-2026", etc.
+          # ---- CONFIG ----
+          # Update this when the PL season rolls over (or make it a repo var):
           SEASON = os.environ.get("SEASON", "2024-2025")
 
-          # 1) Premier League table
+          # ---- PREMIER LEAGUE TABLE (TSDB) ----
           table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={SEASON}"
           t = get(table_api) or {}
           rows = t.get("table") or []
 
           standings = []
           for r in rows:
-            # Map TSDB fields to our schema
             standings.append({
               "pos": int(r.get("intRank") or 0),
               "team": r.get("strTeam") or "",
@@ -73,7 +69,7 @@ jobs:
             "standings": standings
           }
 
-          # 2) Manchester United fixtures/results
+          # ---- MANCHESTER UNITED FIXTURES/RESULTS (TSDB) ----
           team = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
           try:
             team_id = team["teams"][0]["idTeam"]
@@ -85,5 +81,69 @@ jobs:
           nxt  = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={team_id}") or {}
 
           def map_event(e):
-            # best-effort ISO-ish timestamp
-            date = (e.get("strTimestamp") or (e.get("dateEvent") or "") + "T" + (e.get("strTime") or "00:00:00")).strip(
+            # Prefer TSDB's ISO-like timestamp when present
+            ts = (e.get("strTimestamp") or "").strip()
+            if not ts:
+              de = (e.get("dateEvent") or "").strip()
+              tm = (e.get("strTime") or "00:00:00").strip()
+              ts = (de + "T" + tm).strip() if de else tm
+            if ts and not ts.endswith("Z"):
+              ts += "Z"
+
+            home = e.get("strHomeTeam") or ""
+            away = e.get("strAwayTeam") or ""
+            comp = e.get("strLeague") or (e.get("strLeagueShort") or "")
+
+            hs, as_ = e.get("intHomeScore"), e.get("intAwayScore")
+            finished = (hs is not None and as_ is not None)
+            status = "FINISHED" if finished else "SCHEDULED"
+
+            score = None
+            if finished:
+              hs, as_ = int(hs), int(as_)
+              is_mu_home = home.lower() in {"manchester united","man utd","manchester u."}
+              mu = hs if is_mu_home else as_
+              opp = as_ if is_mu_home else hs
+              outcome = "D" if mu == opp else ("W" if mu > opp else "L")
+              score = {"home": hs, "away": as_, "outcome": outcome}
+
+            return {
+              "date": ts,
+              "comp": comp,
+              "home": home,
+              "away": away,
+              "status": status,
+              "score": score
+            }
+
+          matches = []
+          for e in (last.get("results") or []):
+            matches.append(map_event(e))
+          for e in (nxt.get("events") or []):
+            matches.append(map_event(e))
+
+          fixtures = {
+            "team": "Manchester United",
+            "updated": datetime.datetime.utcnow().isoformat()+"Z",
+            "matches": matches
+          }
+
+          # ---- WRITE ----
+          assets = pathlib.Path("assets"); assets.mkdir(exist_ok=True)
+          (assets/"table.json").write_text(json.dumps(table, ensure_ascii=False, indent=2), encoding="utf-8")
+          (assets/"fixtures.json").write_text(json.dumps(fixtures, ensure_ascii=False, indent=2), encoding="utf-8")
+          (assets/"update_stamp.txt").write_text(datetime.datetime.utcnow().isoformat()+"Z", encoding="utf-8")
+          print("Wrote assets/table.json and assets/fixtures.json")
+          PY
+
+      - name: Commit assets
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/*
+            git commit -m "chore: refresh assets ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))"
+            git push
+          else
+            echo "No changes."
+          fi
