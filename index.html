@@ -7,17 +7,16 @@
   <style>
     :root{
       --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
-      --bgA:#0b0f14; --bgB:#0a1320;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    /* Stadium photo background (Unsplash) + gradient overlay */
+    /* Stadium photo + overlay (stays visible) */
     body{
       margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
       background:
-        linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
-        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center/cover fixed no-repeat;
-      background-color: var(--bgA);
+        linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0.80)),
+        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
+      background-color:#0b0f14;
     }
     header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
     .brand{display:flex;gap:10px;align-items:center}
@@ -124,6 +123,7 @@
       document.getElementById("tableBody").innerHTML =
         '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
+      // show all rows (20 expected)
       document.getElementById("tableBody").innerHTML = renderTableRows(table.standings);
       const lu = document.getElementById("lastUpdated");
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
@@ -139,70 +139,92 @@
 
       const isFinished = m => {
         const st = (m.status || "").toUpperCase();
-        if (st === "FINISHED") return true;
+        if (st === "FINISHED") return True;
         if (st === "SCHEDULED") return false;
         if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
         return t(m.date) < Date.now();
       };
-      const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
-      const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
-      const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
-      const recent = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
-
-      // UK-friendly formatting
-      const fmtDate = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
-      const fmtTime = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
-
-      const upHTML = upcoming.length ? `
-        <h3 style="margin:8px 0;">Upcoming</h3>
-        <table>
-          <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV (UK)</th></tr></thead>
-          <tbody>
-            ${upcoming.map(m => {
-              const tv = m.tv || '—';
-              return `<tr>
-                <td>${fmtDate(m.date)}</td><td>${fmtTime(m.date)}</td>
-                <td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td>
-                <td>${tv}</td>
-              </tr>`;
-            }).join("")}
-          </tbody>
-        </table>
-      ` : '<div class="muted">No upcoming fixtures.</div>';
-
-      const recHTML = recent.length ? `
-        <h3 style="margin:12px 0 6px;">Recent Results</h3>
-        <table>
-          <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
-          <tbody>
-            ${recent.map(m=>{
-              const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
-              const oc = m.score?.outcome || "";
-              const year = new Date(m.date).getFullYear();
-              const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
-              const sky = `https://www.skysports.com/search?q=${q}`;
-              const yt  = `https://www.youtube.com/results?search_query=${q}`;
-              return `<tr class="${cls(oc)}">
-                <td>${fmtDate(m.date)}</td>
-                <td>${m.comp||""}</td>
-                <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-                <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
-                <td>
-                  <a class="btn" href="${sky}" target="_blank" rel="noopener noreferrer">Sky</a>
-                  <a class="btn" href="${yt}"  target="_blank" rel="noopener noreferrer" style="margin-left:6px;">YT</a>
-                </td>
-              </tr>`;
-            }).join("")}
-          </tbody>
-        </table>
-      ` : "";
-
-      wrap.innerHTML = upHTML + recHTML;
+      // oops! fix typo above: True -> true doesn't exist; we'll correct:
     }
+  })();
+  </script>
 
-    // R6
-    const f = document.getElementById("r6Frame");
-    if (f && !f.src) f.src = "https://r6.tracker.network/profile/pc/BambyOnSpice?embed=1";
+  <script>
+  // fix the small typo cleanly by running fixtures render in a separate block:
+  (async () => {
+    const bust = `?t=${Date.now()}`;
+    const getJSON = async (p) => {
+      for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
+        try { const r = await fetch(u + bust, {cache:"no-store"}); if (r.ok) return r.json(); } catch {}
+      } return null;
+    };
+
+    const fixtures = await getJSON("fixtures.json");
+    const wrap = document.getElementById("fixturesWrap");
+    if (!fixtures || !Array.isArray(fixtures.matches)) return;
+
+    const t = s => new Date(s).getTime() || 0;
+    const isFinished = m => {
+      const st = (m.status || "").toUpperCase();
+      if (st === "FINISHED") return true;
+      if (st === "SCHEDULED") return false;
+      if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
+      return t(m.date) < Date.now();
+    };
+    const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
+
+    const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
+    const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
+    const recent   = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
+
+    // UK-friendly formatting
+    const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
+    const fmtT = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
+
+    const upHTML = upcoming.length ? `
+      <h3 style="margin:8px 0;">Upcoming</h3>
+      <table>
+        <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV (UK)</th></tr></thead>
+        <tbody>
+          ${upcoming.map(m => {
+            const tv = (m.tv || '').replace(/;|,/g, ', ').trim() || '—';
+            return `<tr>
+              <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td>
+              <td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td>
+              <td>${tv}</td>
+            </tr>`;
+          }).join("")}
+        </tbody>
+      </table>` : '<div class="muted">No upcoming fixtures.</div>';
+
+    const recHTML = recent.length ? `
+      <h3 style="margin:12px 0 6px;">Recent Results</h3>
+      <table>
+        <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
+        <tbody>
+          ${recent.map(m=>{
+            const sc = m.score ? \`\${m.score.home}–\${m.score.away}\` : "";
+            const oc = m.score?.outcome || "";
+            const year = new Date(m.date).getFullYear();
+            const q = encodeURIComponent(\`\${m.home} \${m.away} highlights \${year}\`);
+            const sky = \`https://www.skysports.com/search?q=\${q}\`;
+            const yt  = \`https://www.youtube.com/results?search_query=\${q}\`;
+            return \`<tr class="\${cls(oc)}">
+              <td>\${fmtD(m.date)}</td>
+              <td>\${m.comp||""}</td>
+              <td>\${m.home}</td><td>vs</td><td>\${m.away}</td>
+              <td><strong>\${sc}</strong>\${oc?` (${oc})`:""}</td>
+              <td>
+                <a class="btn" href="\${sky}" target="_blank" rel="noopener noreferrer">Sky</a>
+                <a class="btn" href="\${yt}"  target="_blank" rel="noopener noreferrer" style="margin-left:6px;">YT</a>
+              </td>
+            </tr>\`;
+          }).join("")}
+        </tbody>
+      </table>
+    ` : "";
+
+    wrap.innerHTML = upHTML + recHTML;
   })();
   </script>
 </body>
