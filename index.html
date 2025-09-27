@@ -9,12 +9,13 @@
       --bg:#000; --panel:#0d0d10; --fg:#eaeaea; --muted:#a0a4aa; --accent:#e50914;
       --ok:#22c55e; --live:#f59e0b; --radius:18px; --shadow:0 12px 40px rgba(0,0,0,.35);
       --glass:rgba(13,13,16,.65); --border:#1b1c20;
+      --win:#22c55e; --draw:#f59e0b; --loss:#ef4444;
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
     a{color:inherit}
 
-    /* Background image + soft overlay */
+    /* Background image */
     body::before{
       content:""; position:fixed; inset:0;
       background:
@@ -42,7 +43,6 @@
     .muted{color:var(--muted); font-size:13px}
 
     .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
-
     .cols{display:grid; grid-template-columns:1fr; gap:14px}
     .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
 
@@ -59,11 +59,10 @@
     .status.upcoming{color:var(--ok)}
     .status.live{color:var(--live)}
     .status.ft{color:#aeb4bb}
+    .status.win{color:var(--win)}
+    .status.draw{color:var(--draw)}
+    .status.loss{color:var(--loss)}
     .empty{padding:14px; text-align:center; color:var(--muted)}
-
-    .r6frame{width:100%; height:420px; border:0; border-radius:12px; background:#0a0a0d}
-    .fallback{padding:12px; text-align:center}
-    .btn{display:inline-block; margin-top:10px; padding:10px 14px; border-radius:10px; background:var(--accent); color:white; text-decoration:none; font-weight:700; box-shadow:0 6px 18px rgba(229,9,20,.35)}
   </style>
 </head>
 <body>
@@ -74,10 +73,8 @@
       <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
     </section>
 
-    <!-- RIGHT: Stack => Fixtures + R6 Tracker -->
+    <!-- RIGHT: Fixtures + Results -->
     <div class="stack">
-
-      <!-- Fixtures -->
       <section class="card">
         <div class="header">
           <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
@@ -102,48 +99,63 @@
           <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
           <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
         </div>
-
-        <!-- Many sites block iframes; try this, otherwise fallback shows -->
         <iframe class="r6frame"
           src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
           loading="lazy"
-          onload="document.getElementById('r6fallback').style.display='none'">
+          onload="document.getElementById('r6fallback')?.remove()"
+          style="width:100%; height:420px; border:0; border-radius:12px; background:#0a0a0d">
         </iframe>
-
-        <div id="r6fallback" class="fallback">
-          Couldn’t embed R6 stats here (blocked by site).<br/>
-          <a class="btn" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open on tracker.gg</a>
+        <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
+          Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
         </div>
       </section>
-
     </div>
   </div>
 
   <script>
-    const UK_TZ = "Europe/London";
+    const TEAM_NAME = "Manchester United";
 
+    // Format helpers (UK)
+    const UK_TZ = "Europe/London";
     const fmtDate = (iso) => {
       try {
-        const d = new Date(iso + "T00:00:00Z"); // interpret as UTC date
+        // Treat as local UK midnight so ordering is sane
+        const d = new Date(iso + "T00:00:00");
         const day = d.toLocaleDateString("en-GB",{weekday:"short", timeZone:UK_TZ});
         const num = d.toLocaleDateString("en-GB",{day:"2-digit", month:"short", timeZone:UK_TZ});
-        return { day, num };
-      } catch { return { day:"", num:iso }; }
+        return { day, num, d };
+      } catch { return { day:"", num:iso, d:new Date(iso) }; }
     };
     const fmtTime = (hhmm) => hhmm || "TBC";
 
-    const statusClass = (s="")=>{
-      s = s.toLowerCase();
-      if (s.includes("live")) return "live";
-      if (s.includes("ft") || s.includes("full")) return "ft";
-      return "upcoming";
-    };
+    // Work out win/draw/loss from a "x–y" score string
+    function resultClass(fx){
+      if (!fx || !fx.score || fx.status !== "FT") return { cls:"ft", label: fx.score ?? "FT" };
+      const parts = String(fx.score).replace('-', '–').split('–').map(s => parseInt(s.trim(), 10));
+      if (parts.length !== 2 || Number.isNaN(parts[0]) || Number.isNaN(parts[1])) return { cls:"ft", label: fx.score };
+      const [home, away] = parts;
+      const isHome = (fx.home || "").toLowerCase().startsWith("man");
+      let cls = "draw";
+      if (isHome && home > away || !isHome && away > home) cls = "win";
+      if (isHome && home < away || !isHome && away < home) cls = "loss";
+      return { cls, label: fx.score };
+    }
 
-    const fixtureRow = (m) => {
+    function fixtureRow(m) {
       const when = fmtDate(m.date);
-      const stc = statusClass(m.status);
-      const statusText = m.status === "upcoming" ? "UPCOMING" : (m.score || m.status || "");
       const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
+
+      // Decide the right status block
+      let statusHtml = "";
+      if ((m.status || "").toUpperCase() === "FT") {
+        const r = resultClass(m);
+        statusHtml = `<div class="status ${r.cls}">${r.label}</div>`;
+      } else if ((m.status || "").toUpperCase().includes("LIVE")) {
+        statusHtml = `<div class="status live">LIVE</div>`;
+      } else {
+        statusHtml = `<div class="status upcoming">UPCOMING</div>`;
+      }
+
       return `
         <div class="fixture">
           <div class="date">
@@ -155,29 +167,30 @@
             <div class="comp">${m.comp}${m.venue ? " · " + m.venue : ""}</div>
             ${tv}
           </div>
-          <div class="status ${stc}">${statusText}</div>
+          ${statusHtml}
         </div>`;
-    };
+    }
 
     async function loadFixtures() {
       const loadMsg = document.getElementById("loadmsg");
       try {
-        // fixtures generated/maintained by the Action below, plus your manual overrides for TV
         const res = await fetch("assets/fixtures.json", { cache: "no-store" });
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
         const data = await res.json();
 
+        // Stronger split: treat anything in future as upcoming,
+        // anything FT or past-dated as recent.
         const today = new Date(); today.setHours(0,0,0,0);
 
         const upcoming = data
-          .filter(x => (x.status || "upcoming").toLowerCase() === "upcoming" || new Date(x.date) >= today)
+          .filter(x => (x.status || "").toUpperCase() !== "FT" && new Date(x.date) >= today)
           .sort((a,b) => a.date.localeCompare(b.date))
-          .slice(0, 8);
+          .slice(0, 10);
 
         const recent = data
-          .filter(x => (x.status || "").toLowerCase() !== "upcoming" && new Date(x.date) <= today)
+          .filter(x => (x.status || "").toUpperCase() === "FT" || new Date(x.date) < today)
           .sort((a,b) => b.date.localeCompare(a.date))
-          .slice(0, 8);
+          .slice(0, 10);
 
         document.getElementById("upcoming").innerHTML = upcoming.length
           ? upcoming.map(fixtureRow).join("")
@@ -185,7 +198,7 @@
 
         document.getElementById("recent").innerHTML = recent.length
           ? recent.map(fixtureRow).join("")
-          : `<div class="empty">No recent results.</div>`;
+          : `<div class="empty">No recent results yet.</div>`;
 
         loadMsg.textContent = "";
       } catch (e) {
