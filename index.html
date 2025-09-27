@@ -60,7 +60,6 @@
     .status.draw{color:var(--draw)}
     .status.loss{color:var(--loss)}
     .empty{padding:14px; text-align:center; color:var(--muted)}
-
     .teamline{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
     .crest{width:18px; height:18px; border-radius:50%; background:#111; vertical-align:middle; object-fit:cover}
 
@@ -82,6 +81,8 @@
     .club{display:flex; align-items:center; gap:8px}
     .club img{width:20px; height:20px; border-radius:50%; background:#111}
     .you{font-weight:800}
+
+    footer{color:#555; font-size:12px; text-align:center; padding:8px}
   </style>
 </head>
 <body>
@@ -159,6 +160,8 @@
     </div>
   </div>
 
+  <footer>CACHED_FIXTURE_BUST v5</footer>
+
   <script>
     const TEAM_NAME = "Manchester United";
     const UK_TZ = "Europe/London";
@@ -187,9 +190,7 @@
       return { cls, label: fx.score };
     }
 
-    function crest(imgUrl){
-      return imgUrl ? `<img class="crest" src="${imgUrl}" alt="">` : "";
-    }
+    function crest(imgUrl){ return imgUrl ? `<img class="crest" src="${imgUrl}" alt="">` : ""; }
 
     function fixtureRow(m) {
       const when = fmtDate(m.date);
@@ -204,7 +205,6 @@
       } else {
         statusHtml = `<div class="status upcoming">UPCOMING</div>`;
       }
-
       return `
         <div class="fixture">
           <div class="date">
@@ -227,14 +227,17 @@
       const rc = document.getElementById("recent");
       const warn = document.getElementById("loadwarn");
       try {
-        const res = await fetch("assets/fixtures.json", { cache: "no-store" });
+        // Absolute cache-bust so GitHub Pages/CDN cannot serve stale JSON
+        const res = await fetch(`assets/fixtures.json?ts=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
         const data = await res.json();
 
         const today = new Date(); today.setHours(0,0,0,0);
 
+        // More forgiving upcoming rule: anything not FT OR in the future
         const upcoming = data
-          .filter(x => (x.status||"").toUpperCase() !== "FT" && new Date(x.date) >= today)
+          .filter(x => (x.status||"").toUpperCase() !== "FT" || new Date(x.date) >= today)
+          .filter(x => new Date(x.date) >= today)                  // prefer future dates
           .sort((a,b) => a.date.localeCompare(b.date))
           .slice(0, 12);
 
@@ -247,8 +250,9 @@
         rc.innerHTML = recent.length ? recent.map(fixtureRow).join("") : `<div class="empty">No recent results yet.</div>`;
 
         warn.textContent = (!upcoming.length)
-          ? "Heads-up: Upcoming looks empty. Run the 'Update fixtures' action to refresh season data."
+          ? "Heads-up: Upcoming looks empty. Re-run the 'Update fixtures' action to refresh season data."
           : "";
+        console.log("Fixtures loaded:", data.length, "Upcoming:", upcoming.length, "Recent:", recent.length);
       } catch (e) {
         console.error("fixtures.json load error:", e);
         up.innerHTML = `<div class="empty">Couldn’t load fixtures. Check assets/fixtures.json exists.</div>`;
