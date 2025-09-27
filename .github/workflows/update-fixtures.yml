@@ -22,19 +22,17 @@ jobs:
 
       - name: Build assets
         env:
-          # Optional repo VAR to force a season string (e.g. "2025-2026")
-          SEASON: ${{ vars.SEASON }}
+          SEASON: ${{ vars.SEASON }}   # optional override e.g. 2025-2026
         run: |
           python - <<'PY'
           import json, os, pathlib, time, urllib.request, datetime, sys
-          from collections import defaultdict
 
           LEAGUE_ID = "4328"  # Premier League (TSDB)
 
           def get(url, tries=4, sleep=1.2):
             for i in range(tries):
               try:
-                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/2.2"})
+                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/2.3"})
                 with urllib.request.urlopen(req, timeout=35) as r:
                   return json.loads(r.read().decode("utf-8"))
               except Exception as e:
@@ -66,32 +64,45 @@ jobs:
             SEASON = f"{today.year}-{today.year+1}" if today.month >= 8 else f"{today.year-1}-{today.year}"
           print(f"[INFO] Using season: {SEASON}")
 
-          # ---------- pull official PL participants (20 clubs) ----------
-          table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={SEASON}"
-          t = get(table_api) or {}
-          table_rows = t.get("table") or []
-          participants = [ (r.get("strTeam") or "").strip() for r in table_rows if (r.get("strTeam") or "").strip() ]
-          participants = [p for p in participants if p]  # 20 expected
-          if not participants:
-            print("[WARN] No participants from table endpoint; falling back to events-derived set.")
-
-          # ---------- fetch full league season events ----------
+          # ---------- fetch data ----------
           season_events = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={LEAGUE_ID}&s={SEASON}") or {}
           events = season_events.get("events") or []
-          if not events:
-            print("[WARN] TSDB returned 0 league season events. Table may be empty.", file=sys.stderr)
 
-          # ensure participants present even if table endpoint failed
-          if not participants:
-            teams_in_events = set()
-            for e in events:
-              h = (e.get("strHomeTeam") or "").strip()
-              a = (e.get("strAwayTeam") or "").strip()
-              if h: teams_in_events.add(h)
-              if a: teams_in_events.add(a)
-            participants = sorted(teams_in_events)
+          # Potential sources of club names
+          event_teams = []
+          for e in events:
+            h = (e.get("strHomeTeam") or "").strip()
+            a = (e.get("strAwayTeam") or "").strip()
+            if h: event_teams.append(h)
+            if a: event_teams.append(a)
 
-          # badges (best-effort; keep only for participants)
+          table_rows = (get(f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={SEASON}") or {}).get("table") or []
+          table_teams = [(r.get("strTeam") or "").strip() for r in table_rows if (r.get("strTeam") or "").strip()]
+
+          search_rows = (get("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League") or {}).get("teams") or []
+          search_teams = [(t.get("strTeam") or "").strip() for t in search_rows if (t.get("strTeam") or "").strip()]
+
+          # Build participants: prefer teams actually present in this season's events,
+          # then fill from lookuptable, then from league search, until 20.
+          participants = []
+          seen = set()
+
+          def add_list(lst):
+            nonlocal participants, seen
+            for nm in lst:
+              if nm and nm not in seen:
+                participants.append(nm); seen.add(nm)
+                if len(participants) >= 20: return
+
+          add_list(sorted(set(event_teams)))
+          if len(participants) < 20: add_list(table_teams)
+          if len(participants) < 20: add_list(search_teams)
+
+          # Hard cap to 20 (TSDB league search can include historic clubs)
+          participants = participants[:20]
+          print(f"[INFO] Participants ({len(participants)}): {participants}")
+
+          # Badges (best effort)
           try:
             team_list = get(f"https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id={LEAGUE_ID}") or {}
             all_badges = { (t.get("strTeam") or "").strip(): t.get("strTeamBadge") or None
@@ -100,26 +111,22 @@ jobs:
             all_badges = {}
           badges = {nm: all_badges.get(nm) for nm in participants}
 
-          # initialise standings for the 20 clubs
+          # ---------- compute table from finished matches ----------
           standings_map = {
             nm: {"team": nm, "played":0,"won":0,"drawn":0,"lost":0,"gf":0,"ga":0,"gd":0,"pts":0,"badge": badges.get(nm)}
             for nm in participants
           }
 
-          # tally FINISHED matches only
           for e in events:
             home = (e.get("strHomeTeam") or "").strip()
             away = (e.get("strAwayTeam") or "").strip()
-            if not home or not away: 
-              continue
             if home not in standings_map or away not in standings_map:
-              # ignore matches that aren't between current PL participants (guards weird data)
-              continue
+              continue  # ignore non-PL or historic teams
 
             hs = to_int(e.get("intHomeScore"))
             as_ = to_int(e.get("intAwayScore"))
             if hs is None or as_ is None:
-              continue
+              continue  # only tally finished matches
 
             H = standings_map[home]; A = standings_map[away]
             H["played"] += 1; A["played"] += 1
@@ -147,10 +154,9 @@ jobs:
             "standings": rows
           }
 
-          # ---------- MUFC fixtures (merge season + last + next, strict filter) ----------
+          # ---------- MUFC fixtures (league season + team last/next; strict filter) ----------
           mu_names = {"manchester united","man utd","manchester u."}
 
-          # exact MU team id
           search = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
           teams = search.get("teams") or []
           if not teams:
@@ -163,7 +169,6 @@ jobs:
           mu_id = mu["idTeam"]
           print(f"[INFO] MUFC team id: {mu_id}")
 
-          # MU last/next for belt-and-braces
           last = get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={mu_id}") or {}
           nxt  = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={mu_id}") or {}
 
@@ -197,11 +202,11 @@ jobs:
           mapped = [map_event(e) for e in raw if is_mu(e)]
 
           # de-dupe (date+teams) and sort
-          seen, dedup = set(), []
+          seen2, dedup = set(), []
           for m in mapped:
             k = (m["date"], m["home"], m["away"])
-            if k not in seen:
-              seen.add(k)
+            if k not in seen2:
+              seen2.add(k)
               dedup.append(m)
           dedup.sort(key=lambda m: m["date"])
 
