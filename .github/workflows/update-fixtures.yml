@@ -26,11 +26,9 @@ jobs:
           import json, os, urllib.request, datetime, sys, ssl
           ssl._create_default_https_context = ssl._create_unverified_context
 
-          # --- ESPN constants ---
-          # PL comp: eng.1
-          # Man United team id on ESPN: 360
-          ESPN_SCHEDULE = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/teams/360/schedule"
-          ESPN_TABLE    = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
+          # ---- ESPN endpoints (correct) ----
+          ESPN_SCHEDULE = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/360/schedule"  # Man United id=360
+          ESPN_TABLE    = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/standings"
 
           UA = {"User-Agent":"Mozilla/5.0"}
 
@@ -40,13 +38,9 @@ jobs:
               return json.loads(r.read().decode("utf-8"))
 
           def to_date_time(iso):
-            # ESPN dates are ISO strings; we only need local date+time-ish
             try:
-              # iso like "2025-09-27T11:30Z"
               d = datetime.datetime.fromisoformat(iso.replace("Z","+00:00"))
-              date = d.date().isoformat()
-              time = d.strftime("%H:%M")
-              return date, time
+              return d.date().isoformat(), d.strftime("%H:%M")
             except Exception:
               return "", "TBC"
 
@@ -57,66 +51,49 @@ jobs:
           fixtures = []
           for ev in events:
             date, time = to_date_time(ev.get("date",""))
-            comp = ((ev.get("competitions") or [{}])[0].get("name")) or (ev.get("league","") or "")
-            comp = comp or ((ev.get("competitions") or [{}])[0].get("venue",{}).get("fullName","") and "English Premier League") or "English Premier League"
-
-            # teams
             comps = (ev.get("competitions") or [{}])[0]
+            comp_name = comps.get("name") or (ev.get("league") or "")
+            comp_name = comp_name or "English Premier League"
+
             teams = comps.get("competitors") or []
             home, away = None, None
             for t in teams:
               if t.get("homeAway") == "home":
                 home = t
-              else:
+              elif t.get("homeAway") == "away":
                 away = t
-            if not home or not away:
+            if not home or not away: 
               continue
 
-            home_team = (home.get("team") or {})
-            away_team = (away.get("team") or {})
-            hname = home_team.get("displayName") or home_team.get("name") or ""
-            aname = away_team.get("displayName") or away_team.get("name") or ""
-            hbadge = (home_team.get("logo") or home_team.get("logos",[{}])[0].get("href"))
-            abadge = (away_team.get("logo") or away_team.get("logos",[{}])[0].get("href"))
+            th, ta = home.get("team") or {}, away.get("team") or {}
+            hname = th.get("displayName") or th.get("name") or ""
+            aname = ta.get("displayName") or ta.get("name") or ""
+            hbadge = th.get("logo") or (th.get("logos") or [{}])[0].get("href")
+            abadge = ta.get("logo") or (ta.get("logos") or [{}])[0].get("href")
 
-            status = (ev.get("status") or {}).get("type",{}).get("name","")
-            # ESPN types: STATUS_SCHEDULED, STATUS_IN_PROGRESS, STATUS_FINAL
-            if status == "STATUS_FINAL":
-              hs = int(home.get("score") or 0)
-              as_ = int(away.get("score") or 0)
-              score = f"{hs}–{as_}"
-              st = "FT"
-            elif status == "STATUS_SCHEDULED":
-              score = None
-              st = "UPCOMING"
+            status_name = (ev.get("status") or {}).get("type",{}).get("name","")
+            if status_name == "STATUS_FINAL":
+              hs = int(home.get("score") or 0); as_ = int(away.get("score") or 0)
+              score, st = f"{hs}–{as_}", "FT"
+            elif status_name == "STATUS_SCHEDULED":
+              score, st = None, "UPCOMING"
             else:
-              # live / postponed etc.
-              score = None
-              st = "upcoming"
+              score, st = None, "upcoming"
 
             fixtures.append({
-              "date": date,
-              "time": time or "TBC",
-              "comp": comp,
-              "home": hname,
-              "away": aname,
-              "status": st,
-              "score": score,
-              "venue": ((comps.get("venue") or {}).get("fullName") or ""),
-              "tv": [],
-              "homeBadge": hbadge,
-              "awayBadge": abadge,
+              "date": date, "time": time or "TBC", "comp": comp_name,
+              "home": hname, "away": aname, "status": st, "score": score,
+              "venue": (comps.get("venue") or {}).get("fullName") or "",
+              "tv": [], "homeBadge": hbadge, "awayBadge": abadge,
             })
 
           # dedup + sort
-          seen = set()
-          clean = []
+          seen, clean = set(), []
           for f in fixtures:
             k = (f["date"], f["home"], f["away"])
             if f["date"] and k not in seen:
               seen.add(k); clean.append(f)
           clean.sort(key=lambda x: (x["date"], x["time"], x["home"], x["away"]))
-
           os.makedirs("assets", exist_ok=True)
           with open("assets/fixtures.json","w",encoding="utf-8") as out:
             json.dump(clean, out, ensure_ascii=False, indent=2)
@@ -124,45 +101,33 @@ jobs:
 
           # ---------- Standings (full table) ----------
           tdata = fetch(ESPN_TABLE)
-          rows = []
-          # ESPN returns groups/children; drill down to "children" → "standings" → "entries"
-          # There can be multiple groups, but PL is single-table; take the first group with entries.
-          groups = (tdata.get("children") or tdata.get("standings") or [])
-          # normalize into a list of entries
-          entries = None
-          for g in groups:
-            # sometimes under g["standings"]["entries"]
-            st = g.get("standings") or {}
-            ent = st.get("entries")
-            if ent:
-              entries = ent
-              break
-          if entries is None:
-            # fallback: sometimes it's directly in tdata["standings"]["entries"]
-            entries = ((tdata.get("standings") or {}).get("entries") or [])
 
-          def metric(obj, name, default=0):
-            try:
-              for m in (obj.get("stats") or []):
-                if m.get("name") == name:
-                  return int(m.get("value") or 0)
-              return default
-            except Exception:
-              return default
+          # Drill into children/standings/entries; formats vary a bit
+          def first_entries(obj):
+            # try children -> standings -> entries
+            for g in obj.get("children", []):
+              st = g.get("standings") or {}
+              ent = st.get("entries")
+              if ent:
+                return ent
+            # fallback: standings -> entries at root
+            st = obj.get("standings") or {}
+            return st.get("entries") or []
 
-          rank = 1
-          table = []
+          entries = first_entries(tdata)
+          table, rank = [], 1
           for e in entries:
             team = e.get("team") or {}
             name = team.get("displayName") or team.get("name") or ""
-            crest = (team.get("logo") or team.get("logos",[{}])[0].get("href"))
+            crest = team.get("logo") or (team.get("logos") or [{}])[0].get("href")
             stats = e.get("stats") or []
 
-            def get(name):
+            def get(n, default=0):
               for s in stats:
-                if s.get("name")==name:
-                  return int(s.get("value") or 0)
-              return 0
+                if s.get("name")==n:
+                  try: return int(s.get("value"))
+                  except: return default
+              return default
 
             played = get("gamesPlayed")
             win    = get("wins")
@@ -174,16 +139,9 @@ jobs:
             points = get("points")
 
             table.append({
-              "rank": rank,
-              "team": name,
-              "played": played,
-              "win": win,
-              "draw": draw,
-              "loss": loss,
-              "gf": gf,
-              "ga": ga,
-              "gd": gd,
-              "points": points,
+              "rank": rank, "team": name, "played": played,
+              "win": win, "draw": draw, "loss": loss,
+              "gf": gf, "ga": ga, "gd": gd, "points": points,
               "badge": crest,
             })
             rank += 1
@@ -204,8 +162,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/*
           if git diff --cached --quiet; then
-            git commit --allow-empty -m "chore: force pages rebuild (ESPN) [skip ci]"
+            git commit --allow-empty -m "chore: force pages rebuild (ESPN fixed) [skip ci]"
           else
-            git commit -m "chore: update fixtures & table from ESPN [skip ci]"
+            git commit -m "chore: update fixtures & table from ESPN (fixed endpoints) [skip ci]"
           fi
           git push
