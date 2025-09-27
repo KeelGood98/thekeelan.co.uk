@@ -15,7 +15,6 @@
     html,body{height:100%;margin:0;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#000}
     a{color:inherit;text-decoration:none}
 
-    /* Background image */
     body::before{
       content:""; position:fixed; inset:0; z-index:-1;
       background:
@@ -24,13 +23,13 @@
       filter: saturate(0.9) contrast(1.05);
     }
 
-    /* Layout: fixtures (wide) | right column (gif + table + r6) */
+    /* Layout: fixtures wide | right column compact */
     .wrap{
       min-height:100%;
       padding:24px;
       display:grid;
       gap:24px;
-      grid-template-columns: minmax(0,2fr) minmax(0,1.2fr);
+      grid-template-columns: minmax(0,2fr) minmax(0,1.15fr);
       align-items:start;
     }
     @media (max-width: 1100px){ .wrap{grid-template-columns:1fr} }
@@ -62,19 +61,22 @@
     .status.loss{color:var(--loss)}
     .empty{padding:14px; text-align:center; color:var(--muted)}
 
-    /* RIGHT column stack */
+    .teamline{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+    .crest{width:18px; height:18px; border-radius:50%; background:#111; vertical-align:middle; object-fit:cover}
+
+    /* Right column stack */
     .right-col{display:grid; gap:18px}
 
-    /* Smaller GIF card */
+    /* Small GIF */
     .gifbox{display:flex; align-items:center; justify-content:center; min-height:220px}
     .gifbox img{max-width:100%; max-height:220px; border-radius:14px}
 
-    /* Table styles (scrollable, numbers centered, logos) */
+    /* Table (scrollable, centered numbers, logos) */
     .table-wrap{overflow:auto; max-height:520px; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
     table{width:100%; border-collapse:collapse; font-size:14px; table-layout:auto}
     th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
     th{position:sticky; top:0; background:#0e0f13; text-align:center; font-weight:700}
-    th.left{ text-align:left }
+    th.left{text-align:left}
     td.num{text-align:center}
     tr:hover{background:#0e0f13}
     .club{display:flex; align-items:center; gap:8px}
@@ -94,15 +96,12 @@
 
       <div class="section">
         <h3>Upcoming</h3>
-        <div id="upcoming" class="list">
-          <div class="empty">Loading upcoming…</div>
-        </div>
+        <div id="upcoming" class="list"><div class="empty">Loading upcoming…</div></div>
       </div>
+
       <div class="section" style="margin-top:12px">
         <h3>Recent Results</h3>
-        <div id="recent" class="list">
-          <div class="empty">Loading results…</div>
-        </div>
+        <div id="recent" class="list"><div class="empty">Loading results…</div></div>
       </div>
 
       <div id="loadwarn" class="muted" style="padding:8px 2px 0 2px;"></div>
@@ -111,12 +110,10 @@
     <!-- RIGHT: GIF + Table + R6 -->
     <div class="right-col">
 
-      <!-- GIF -->
       <section class="card gifbox">
         <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
       </section>
 
-      <!-- Premier League Table -->
       <section class="card">
         <div class="header">
           <span class="badge"><span class="dot"></span> Premier League Table</span>
@@ -143,7 +140,6 @@
         </div>
       </section>
 
-      <!-- R6 Tracker -->
       <section class="card">
         <div class="header">
           <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
@@ -191,6 +187,10 @@
       return { cls, label: fx.score };
     }
 
+    function crest(imgUrl){
+      return imgUrl ? `<img class="crest" src="${imgUrl}" alt="">` : "";
+    }
+
     function fixtureRow(m) {
       const when = fmtDate(m.date);
       const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
@@ -204,6 +204,7 @@
       } else {
         statusHtml = `<div class="status upcoming">UPCOMING</div>`;
       }
+
       return `
         <div class="fixture">
           <div class="date">
@@ -211,7 +212,9 @@
             <div class="t">${when.num}<br>${fmtTime(m.time)}</div>
           </div>
           <div class="teams">
-            <div>${m.home} <span class="muted">vs</span> ${m.away}</div>
+            <div class="teamline">
+              ${crest(m.homeBadge)} ${m.home} <span class="muted">vs</span> ${crest(m.awayBadge)} ${m.away}
+            </div>
             <div class="comp">${m.comp}${m.venue ? " · " + m.venue : ""}</div>
             ${tv}
           </div>
@@ -244,7 +247,7 @@
         rc.innerHTML = recent.length ? recent.map(fixtureRow).join("") : `<div class="empty">No recent results yet.</div>`;
 
         warn.textContent = (!upcoming.length)
-          ? "Heads-up: Upcoming looks empty. Make sure the GitHub Action updated assets/fixtures.json today."
+          ? "Heads-up: Upcoming looks empty. Run the 'Update fixtures' action to refresh season data."
           : "";
       } catch (e) {
         console.error("fixtures.json load error:", e);
@@ -254,7 +257,7 @@
       }
     }
 
-    // Premier League table (TheSportsDB)
+    // Premier League table via TheSportsDB (logos + centered numbers)
     async function loadPLTable() {
       const now = new Date();
       const season = (now.getMonth() >= 7)
