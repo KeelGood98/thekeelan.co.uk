@@ -44,6 +44,25 @@ jobs:
             except Exception:
               return "", "TBC"
 
+          def pick_name(x):
+            # ESPN sometimes gives a string, sometimes an object with 'name'
+            if isinstance(x, str): return x
+            if isinstance(x, dict): return x.get("name") or x.get("shortName") or ""
+            return ""
+
+          def is_pl(comp_name, league_obj):
+            name = (comp_name or "").lower()
+            if "premier league" in name: return True
+            # fallbacks from league object
+            if isinstance(league_obj, dict):
+              nm = (league_obj.get("name") or "").lower()
+              ab = (league_obj.get("abbreviation") or "").lower()
+              if "premier league" in nm: return True
+              if ab in {"epl","pl"}: return True
+            return False
+
+          today = datetime.date.today()
+
           # ---------- Fixtures (past + future) ----------
           data = fetch(ESPN_SCHEDULE)
           events = (data.get("events") or []) + (data.get("nextEvents") or [])
@@ -52,16 +71,19 @@ jobs:
           for ev in events:
             date, time = to_date_time(ev.get("date",""))
             comps = (ev.get("competitions") or [{}])[0]
-            comp_name = comps.get("name") or (ev.get("league") or "")
-            comp_name = comp_name or "English Premier League"
 
+            comp_name = pick_name(comps.get("name")) or pick_name(ev.get("league"))
+            league_obj = ev.get("league") if isinstance(ev.get("league"), dict) else {}
+
+            if not is_pl(comp_name, league_obj):
+              continue  # only premier league
+
+            # teams
             teams = comps.get("competitors") or []
             home, away = None, None
             for t in teams:
-              if t.get("homeAway") == "home":
-                home = t
-              elif t.get("homeAway") == "away":
-                away = t
+              if t.get("homeAway") == "home": home = t
+              elif t.get("homeAway") == "away": away = t
             if not home or not away: 
               continue
 
@@ -71,20 +93,24 @@ jobs:
             hbadge = th.get("logo") or (th.get("logos") or [{}])[0].get("href")
             abadge = ta.get("logo") or (ta.get("logos") or [{}])[0].get("href")
 
-            status_name = (ev.get("status") or {}).get("type",{}).get("name","")
-            if status_name == "STATUS_FINAL":
+            stype = (ev.get("status") or {}).get("type",{})
+            completed = bool(stype.get("completed"))
+            state     = (stype.get("state") or "").lower()  # "pre","in","post"
+            if completed:
               hs = int(home.get("score") or 0); as_ = int(away.get("score") or 0)
-              score, st = f"{hs}–{as_}", "FT"
-            elif status_name == "STATUS_SCHEDULED":
-              score, st = None, "UPCOMING"
+              score, stat = f"{hs}–{as_}", "FT"
+            elif state in {"pre","scheduled"}:
+              score, stat = None, "UPCOMING"
             else:
-              score, st = None, "upcoming"
+              score, stat = None, "upcoming"
+
+            venue_name = (comps.get("venue") or {}).get("fullName") or ""
 
             fixtures.append({
               "date": date, "time": time or "TBC", "comp": comp_name,
-              "home": hname, "away": aname, "status": st, "score": score,
-              "venue": (comps.get("venue") or {}).get("fullName") or "",
-              "tv": [], "homeBadge": hbadge, "awayBadge": abadge,
+              "home": hname, "away": aname, "status": stat, "score": score,
+              "venue": venue_name, "tv": [],
+              "homeBadge": hbadge, "awayBadge": abadge,
             })
 
           # dedup + sort
@@ -94,6 +120,7 @@ jobs:
             if f["date"] and k not in seen:
               seen.add(k); clean.append(f)
           clean.sort(key=lambda x: (x["date"], x["time"], x["home"], x["away"]))
+
           os.makedirs("assets", exist_ok=True)
           with open("assets/fixtures.json","w",encoding="utf-8") as out:
             json.dump(clean, out, ensure_ascii=False, indent=2)
@@ -102,19 +129,22 @@ jobs:
           # ---------- Standings (full table) ----------
           tdata = fetch(ESPN_TABLE)
 
-          # Drill into children/standings/entries; formats vary a bit
-          def first_entries(obj):
-            # try children -> standings -> entries
-            for g in obj.get("children", []):
-              st = g.get("standings") or {}
-              ent = st.get("entries")
-              if ent:
-                return ent
-            # fallback: standings -> entries at root
-            st = obj.get("standings") or {}
-            return st.get("entries") or []
+          # Walk any shape until we find "entries"
+          def find_entries(obj):
+            if isinstance(obj, dict):
+              st = obj.get("standings")
+              if isinstance(st, dict) and "entries" in st:
+                return st["entries"]
+              for k, v in obj.items():
+                res = find_entries(v)
+                if res: return res
+            if isinstance(obj, list):
+              for it in obj:
+                res = find_entries(it)
+                if res: return res
+            return None
 
-          entries = first_entries(tdata)
+          entries = find_entries(tdata) or []
           table, rank = [], 1
           for e in entries:
             team = e.get("team") or {}
@@ -133,9 +163,9 @@ jobs:
             win    = get("wins")
             draw   = get("ties")
             loss   = get("losses")
-            gf     = get("pointsFor") or get("goalsFor")
-            ga     = get("pointsAgainst") or get("goalsAgainst")
-            gd     = gf - ga
+            gf     = get("goalsFor") or get("pointsFor")
+            ga     = get("goalsAgainst") or get("pointsAgainst")
+            gd     = (gf or 0) - (ga or 0)
             points = get("points")
 
             table.append({
@@ -162,8 +192,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/*
           if git diff --cached --quiet; then
-            git commit --allow-empty -m "chore: force pages rebuild (ESPN fixed) [skip ci]"
+            git commit --allow-empty -m "chore: force pages rebuild (ESPN robust) [skip ci]"
           else
-            git commit -m "chore: update fixtures & table from ESPN (fixed endpoints) [skip ci]"
+            git commit -m "chore: update fixtures & table from ESPN (robust) [skip ci]"
           fi
           git push
