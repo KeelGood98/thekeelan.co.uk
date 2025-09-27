@@ -22,17 +22,17 @@ jobs:
 
       - name: Build assets
         env:
-          # Optional: repo var to override season (e.g., 2026-2027)
+          # Optional: override the season via repo VARS → SEASON: "2025-2026"
           SEASON: ${{ vars.SEASON }}
         run: |
           python - <<'PY'
           import json, os, pathlib, time, urllib.request, datetime, sys
 
-          # ---------------- helpers ----------------
+          # ---------- helpers ----------
           def get(url, tries=4, sleep=1.2):
             for i in range(tries):
               try:
-                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/1.0"})
+                req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-updater/1.1"})
                 with urllib.request.urlopen(req, timeout=30) as r:
                   return json.loads(r.read().decode("utf-8"))
               except Exception as e:
@@ -41,30 +41,37 @@ jobs:
                   raise
                 time.sleep(sleep)
 
-          def iso_ts(date_str, time_str):
-            date_str = (date_str or "").strip()
-            time_str = (time_str or "00:00:00").strip()
-            if not date_str and not time_str: return ""
-            ts = f"{date_str}T{time_str}"
-            if not ts.endswith("Z"): ts += "Z"
+          def norm_ts(strTimestamp, dateEvent, strTime):
+            """
+            Build a sane ISO-ish timestamp. DO NOT append 'Z' if timestamp already has
+            a timezone (contains '+' or endswith 'Z').
+            """
+            ts = (strTimestamp or "").strip()
+            if not ts:
+              d = (dateEvent or "").strip()
+              t = (strTime or "00:00:00").strip()
+              ts = f"{d}T{t}".strip() if d else t
+            # Only append Z if there's no timezone info already
+            if ts and 'Z' not in ts and '+' not in ts:
+              ts += 'Z'
             return ts
 
-          # ---------------- season ----------------
+          # ---------- season ----------
           forced = (os.environ.get("SEASON") or "").strip()
           if forced:
             SEASON = forced
           else:
             today = datetime.date.today()
             SEASON = f"{today.year}-{today.year+1}" if today.month >= 8 else f"{today.year-1}-{today.year}"
-          print(f"[INFO] Using season: {SEASON}")
+          print(f"[INFO] Season: {SEASON}")
 
-          # ---------------- PL table ----------------
-          # TSDB: Premier League league id = 4328
+          # ---------- PL table ----------
+          # TSDB PL league id: 4328
           table_api = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={SEASON}"
           t = get(table_api) or {}
           rows = t.get("table") or []
           if not rows:
-            print("[WARN] No rows from lookuptable; check season string.")
+            print("[WARN] TSDB returned no table rows. Check the season string.")
 
           standings = [{
               "pos": int(r.get("intRank") or 0),
@@ -87,12 +94,13 @@ jobs:
             "standings": standings
           }
 
-          # ---------------- MUFC fixtures/results ----------------
+          # ---------- MUFC fixtures/results ----------
           # Resolve exact team id
           search = get("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United") or {}
           teams = search.get("teams") or []
           if not teams:
-            print("[ERR] No MUFC teams found.", file=sys.stderr); sys.exit(1)
+            print("[ERR] No MUFC team rows found.", file=sys.stderr); sys.exit(1)
+
           mu_names = {"manchester united", "man utd", "manchester u."}
           mu = None
           for tr in teams:
@@ -102,49 +110,62 @@ jobs:
           mu_id = mu["idTeam"]
           print(f"[INFO] MUFC team id: {mu_id}")
 
-          # Use the season feed (contains past + future) to avoid flaky eventsnext
-          season_feed = get(f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={mu_id}&s={SEASON}") or {}
-          items = season_feed.get("events") or []
-          if not items:
-            print("[WARN] No season events returned; fixtures may be empty.")
+          # Use all three feeds for belt-and-braces (season + last + next), then filter to MUFC only.
+          feeds = []
+          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={mu_id}&s={SEASON}") or {})
+          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={mu_id}") or {})
+          feeds.append(get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={mu_id}") or {})
 
+          raw_events = []
+          for f in feeds:
+            raw_events.extend(f.get("events") or [])
+            raw_events.extend(f.get("results") or [])
+
+          # Strict keep: only games where MUFC is home or away
           def keep_mu(e):
             h = (e.get("strHomeTeam") or "").strip().lower()
             a = (e.get("strAwayTeam") or "").strip().lower()
             return h in mu_names or a in mu_names
 
+          kept = [e for e in raw_events if keep_mu(e)]
+
+          # Map → our schema
           def map_event(e):
-            # Prefer timestamp if present; otherwise compose from date/time
-            ts = (e.get("strTimestamp") or "").strip()
-            if not ts:
-              ts = iso_ts(e.get("dateEvent"), e.get("strTime"))
+            ts = norm_ts(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime"))
             home = e.get("strHomeTeam") or ""
             away = e.get("strAwayTeam") or ""
             comp = e.get("strLeague") or (e.get("strLeagueShort") or "")
+
             hs, as_ = e.get("intHomeScore"), e.get("intAwayScore")
             finished = (hs is not None and as_ is not None)
             status = "FINISHED" if finished else "SCHEDULED"
+
             score = None
             if finished:
-              hs, as_ = int(hs), int(as_)
+              try:
+                hs, as_ = int(hs), int(as_)
+              except Exception:
+                hs = int(str(hs or "0").strip() or 0)
+                as_ = int(str(as_ or "0").strip() or 0)
               is_mu_home = home.strip().lower() in mu_names
               mu_score = hs if is_mu_home else as_
               opp_score = as_ if is_mu_home else hs
               outcome = "D" if mu_score == opp_score else ("W" if mu_score > opp_score else "L")
               score = {"home": hs, "away": as_, "outcome": outcome}
+
             return {"date": ts, "comp": comp, "home": home, "away": away, "status": status, "score": score}
 
-          mapped = [map_event(e) for e in items if keep_mu(e)]
+          mapped = [map_event(e) for e in kept]
 
-          # De-duplicate by date+teams (TSDB can repeat neutral/round variants)
+          # De-duplicate using (date, home, away)
           seen, dedup = set(), []
           for m in mapped:
-            key = (m["date"], m["home"], m["away"])
-            if key not in seen:
-              seen.add(key)
+            k = (m["date"], m["home"], m["away"])
+            if k not in seen:
+              seen.add(k)
               dedup.append(m)
 
-          # Sort by date ascending; front-end slices upcoming/recent
+          # Sort ascending by date; frontend will split upcoming/recent
           dedup.sort(key=lambda m: m["date"])
 
           fixtures = {
@@ -153,7 +174,7 @@ jobs:
             "matches": dedup
           }
 
-          # ---------------- write ----------------
+          # ---------- write ----------
           assets = pathlib.Path("assets")
           assets.mkdir(exist_ok=True)
           (assets/"table.json").write_text(json.dumps(table, ensure_ascii=False, indent=2), encoding="utf-8")
