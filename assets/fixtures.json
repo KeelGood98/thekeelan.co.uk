@@ -1,6 +1,6 @@
 {
   "team": "Manchester United",
-  "updated": "2025-09-27T21:11:17.559872Z",
+  "updated": "2025-09-27T21:19:55.815678Z",
   "matches": [
     {
       "date": "2025-08-03T21:00:00Z",
@@ -12,7 +12,8 @@
         "home": 2,
         "away": 2,
         "outcome": "D"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-08-09T11:45:00Z",
@@ -24,7 +25,8 @@
         "home": 1,
         "away": 1,
         "outcome": "D"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-08-17T15:30:00Z",
@@ -36,7 +38,8 @@
         "home": 0,
         "away": 1,
         "outcome": "L"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-08-24T15:30:00Z",
@@ -48,7 +51,8 @@
         "home": 1,
         "away": 1,
         "outcome": "D"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-08-30T14:00:00Z",
@@ -60,7 +64,8 @@
         "home": 3,
         "away": 2,
         "outcome": "W"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-09-14T15:30:00Z",
@@ -72,7 +77,8 @@
         "home": 3,
         "away": 0,
         "outcome": "L"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-09-20T16:30:00Z",
@@ -84,7 +90,8 @@
         "home": 2,
         "away": 1,
         "outcome": "W"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-09-27T11:30:00Z",
@@ -96,7 +103,8 @@
         "home": 3,
         "away": 1,
         "outcome": "L"
-      }
+      },
+      "tv": null
     },
     {
       "date": "2025-10-04T14:00:00Z",
@@ -104,7 +112,8 @@
       "home": "Manchester United",
       "away": "Sunderland",
       "status": "SCHEDULED",
-      "score": null
+      "score": null,
+      "tv": null
     },
     {
       "date": "2025-10-19T15:30:00Z",
@@ -112,7 +121,8 @@
       "home": "Liverpool",
       "away": "Manchester United",
       "status": "SCHEDULED",
-      "score": null
+      "score": null,
+      "tv": null
     },
     {
       "date": "2025-10-25T16:30:00Z",
@@ -120,7 +130,8 @@
       "home": "Manchester United",
       "away": "Brighton and Hove Albion",
       "status": "SCHEDULED",
-      "score": null
+      "score": null,
+      "tv": null
     },
     {
       "date": "2025-11-01T15:00:00Z",
@@ -128,7 +139,8 @@
       "home": "Nottingham Forest",
       "away": "Manchester United",
       "status": "SCHEDULED",
-      "score": null
+      "score": null,
+      "tv": null
     }
   ]
 }
