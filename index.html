@@ -15,7 +15,6 @@
     html,body{height:100%;margin:0;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
     a{color:inherit}
 
-    /* Background image */
     body::before{
       content:""; position:fixed; inset:0;
       background:
@@ -26,15 +25,13 @@
     }
 
     .wrap{min-height:100%;padding:24px;display:grid;gap:24px;grid-template-columns:1.1fr .9fr;align-items:start}
-    @media (max-width: 1000px){ .wrap{grid-template-columns:1fr} }
+    @media (max-width: 1200px){ .wrap{grid-template-columns:1fr} }
 
     .card{background:var(--glass); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; position:relative; overflow:hidden}
 
-    /* Left: GIF */
     .gifbox{display:flex; align-items:center; justify-content:center; min-height:60vh}
     .gifbox img{max-width:100%; max-height:75vh; border-radius:14px}
 
-    /* Right: two stacked panels */
     .stack{display:grid; gap:18px}
 
     .header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px}
@@ -43,11 +40,9 @@
     .muted{color:var(--muted); font-size:13px}
 
     .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
-    .cols{display:grid; grid-template-columns:1fr; gap:14px}
     .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
-
-    .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
-    .fixture:not(:last-child){border-bottom:1px dashed #1d1f25}
+    .list .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
+    .list .fixture:not(:last-child){border-bottom:1px dashed #1d1f25}
     .date{min-width:78px; text-align:center}
     .date .d{font-weight:800}
     .date .t{font-size:12px; color:var(--muted)}
@@ -63,150 +58,9 @@
     .status.draw{color:var(--draw)}
     .status.loss{color:var(--loss)}
     .empty{padding:14px; text-align:center; color:var(--muted)}
-  </style>
-</head>
-<body>
-  <div class="wrap">
 
-    <!-- LEFT: Your GIF -->
-    <section class="card gifbox">
-      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
-    </section>
-
-    <!-- RIGHT: Fixtures + Results -->
-    <div class="stack">
-      <section class="card">
-        <div class="header">
-          <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
-          <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
-        </div>
-
-        <div class="section">
-          <h3>Upcoming</h3>
-          <div id="upcoming" class="list"></div>
-        </div>
-        <div class="section" style="margin-top:12px">
-          <h3>Recent Results</h3>
-          <div id="recent" class="list"></div>
-        </div>
-
-        <div id="loadmsg" class="muted" style="position:absolute; bottom:10px; left:16px;">Loading fixtures…</div>
-      </section>
-
-      <!-- R6 Tracker -->
-      <section class="card">
-        <div class="header">
-          <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
-          <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
-        </div>
-        <iframe class="r6frame"
-          src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
-          loading="lazy"
-          onload="document.getElementById('r6fallback')?.remove()"
-          style="width:100%; height:420px; border:0; border-radius:12px; background:#0a0a0d">
-        </iframe>
-        <div id="r6fallback" class="muted" style="text-align:center; padding:10px">
-          Couldn’t embed R6 stats here. <a class="pill" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open tracker.gg</a>
-        </div>
-      </section>
-    </div>
-  </div>
-
-  <script>
-    const TEAM_NAME = "Manchester United";
-
-    // Format helpers (UK)
-    const UK_TZ = "Europe/London";
-    const fmtDate = (iso) => {
-      try {
-        // Treat as local UK midnight so ordering is sane
-        const d = new Date(iso + "T00:00:00");
-        const day = d.toLocaleDateString("en-GB",{weekday:"short", timeZone:UK_TZ});
-        const num = d.toLocaleDateString("en-GB",{day:"2-digit", month:"short", timeZone:UK_TZ});
-        return { day, num, d };
-      } catch { return { day:"", num:iso, d:new Date(iso) }; }
-    };
-    const fmtTime = (hhmm) => hhmm || "TBC";
-
-    // Work out win/draw/loss from a "x–y" score string
-    function resultClass(fx){
-      if (!fx || !fx.score || fx.status !== "FT") return { cls:"ft", label: fx.score ?? "FT" };
-      const parts = String(fx.score).replace('-', '–').split('–').map(s => parseInt(s.trim(), 10));
-      if (parts.length !== 2 || Number.isNaN(parts[0]) || Number.isNaN(parts[1])) return { cls:"ft", label: fx.score };
-      const [home, away] = parts;
-      const isHome = (fx.home || "").toLowerCase().startsWith("man");
-      let cls = "draw";
-      if (isHome && home > away || !isHome && away > home) cls = "win";
-      if (isHome && home < away || !isHome && away < home) cls = "loss";
-      return { cls, label: fx.score };
-    }
-
-    function fixtureRow(m) {
-      const when = fmtDate(m.date);
-      const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
-
-      // Decide the right status block
-      let statusHtml = "";
-      if ((m.status || "").toUpperCase() === "FT") {
-        const r = resultClass(m);
-        statusHtml = `<div class="status ${r.cls}">${r.label}</div>`;
-      } else if ((m.status || "").toUpperCase().includes("LIVE")) {
-        statusHtml = `<div class="status live">LIVE</div>`;
-      } else {
-        statusHtml = `<div class="status upcoming">UPCOMING</div>`;
-      }
-
-      return `
-        <div class="fixture">
-          <div class="date">
-            <div class="d">${when.day}</div>
-            <div class="t">${when.num}<br>${fmtTime(m.time)}</div>
-          </div>
-          <div class="teams">
-            <div>${m.home} <span class="muted">vs</span> ${m.away}</div>
-            <div class="comp">${m.comp}${m.venue ? " · " + m.venue : ""}</div>
-            ${tv}
-          </div>
-          ${statusHtml}
-        </div>`;
-    }
-
-    async function loadFixtures() {
-      const loadMsg = document.getElementById("loadmsg");
-      try {
-        const res = await fetch("assets/fixtures.json", { cache: "no-store" });
-        if (!res.ok) throw new Error(res.status + " " + res.statusText);
-        const data = await res.json();
-
-        // Stronger split: treat anything in future as upcoming,
-        // anything FT or past-dated as recent.
-        const today = new Date(); today.setHours(0,0,0,0);
-
-        const upcoming = data
-          .filter(x => (x.status || "").toUpperCase() !== "FT" && new Date(x.date) >= today)
-          .sort((a,b) => a.date.localeCompare(b.date))
-          .slice(0, 10);
-
-        const recent = data
-          .filter(x => (x.status || "").toUpperCase() === "FT" || new Date(x.date) < today)
-          .sort((a,b) => b.date.localeCompare(a.date))
-          .slice(0, 10);
-
-        document.getElementById("upcoming").innerHTML = upcoming.length
-          ? upcoming.map(fixtureRow).join("")
-          : `<div class="empty">No upcoming fixtures.</div>`;
-
-        document.getElementById("recent").innerHTML = recent.length
-          ? recent.map(fixtureRow).join("")
-          : `<div class="empty">No recent results yet.</div>`;
-
-        loadMsg.textContent = "";
-      } catch (e) {
-        loadMsg.textContent = "Couldn’t load fixtures.json (make sure /assets/fixtures.json exists).";
-        console.error(e);
-      }
-    }
-    loadFixtures();
-  </script>
-</body>
-</html>
+    /* Table styles */
+    .table-wrap{overflow:auto; border-radius:12px; border:1px solid var(--border); background:#0b0b0f}
+    table{width:100%; border-collapse:collapse; font-size:14px}
+    th, td{padding:10px 12px; border-bottom:1px solid #17181c; white-space:nowrap}
+    th{position:sticky; top:0; background:#0e0f13; tex
