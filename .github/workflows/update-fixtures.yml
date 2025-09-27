@@ -1,7 +1,7 @@
 name: Update fixtures
 
 on:
-  workflow_dispatch: {}        # enables the "Run workflow" button
+  workflow_dispatch: {}        # manual "Run workflow" button
   schedule:
     - cron: "23 5 * * *"       # daily at 05:23 UTC
 
@@ -20,16 +20,25 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Build assets/fixtures.json from TheSportsDB (no key)
+      - name: Build assets/fixtures.json from TheSportsDB (season + next/last)
         run: |
           python - <<'PY'
-          import json, os, urllib.request
+          import json, os, urllib.request, datetime
 
           # TheSportsDB config
-          TEAM_ID   = "133612"                 # Manchester United (TSDB team id)
-          TEAM_NAME = "Manchester United"      # filter by exact name
-          URL_NEXT  = f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}"
-          URL_LAST  = f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={TEAM_ID}"
+          TEAM_ID    = "133612"                 # Manchester United team id
+          TEAM_NAME  = "Manchester United"      # exact filter
+          EPL_LEAGUE = "4328"                   # Premier League (not directly used here)
+          URL_NEXT   = f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}"
+          URL_LAST   = f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={TEAM_ID}"
+
+          # Compute current season string, e.g. "2025-2026" (season runs Aug–May)
+          today = datetime.date.today()
+          if today.month >= 8:
+              season = f"{today.year}-{today.year+1}"
+          else:
+              season = f"{today.year-1}-{today.year}"
+          URL_SEASON = f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={TEAM_ID}&s={season}"
 
           def fetch(url):
             with urllib.request.urlopen(url, timeout=45) as r:
@@ -53,21 +62,32 @@ jobs:
               "venue": venue, "tv": []
             }
 
-          # Fetch
-          next_data = fetch(URL_NEXT)
-          last_data = fetch(URL_LAST)
+          # Fetch season + next + last, then merge
+          all_events = []
+
+          try:
+            season_data = fetch(URL_SEASON)
+            all_events += (season_data.get("events") or [])
+          except Exception as ex:
+            print("Season fetch failed:", ex)
+
+          try:
+            next_data = fetch(URL_NEXT)
+            all_events += (next_data.get("events") or [])
+          except Exception as ex:
+            print("Next fetch failed:", ex)
+
+          try:
+            last_data = fetch(URL_LAST)
+            all_events += (last_data.get("results") or [])
+          except Exception as ex:
+            print("Last fetch failed:", ex)
 
           # Strictly keep only Man United fixtures/results
-          next_events = [
-            map_event(e) for e in (next_data.get("events") or [])
-            if e.get("strHomeTeam") == TEAM_NAME or e.get("strAwayTeam") == TEAM_NAME
+          mapped = [
+            map_event(e) for e in all_events
+            if (e.get("strHomeTeam") == TEAM_NAME or e.get("strAwayTeam") == TEAM_NAME)
           ]
-          last_events = [
-            map_event(e) for e in (last_data.get("results") or [])
-            if e.get("strHomeTeam") == TEAM_NAME or e.get("strAwayTeam") == TEAM_NAME
-          ]
-
-          fixtures = next_events + last_events
 
           # Merge UK TV overrides if present
           tv_overrides = {}
@@ -77,16 +97,16 @@ jobs:
           except FileNotFoundError:
             pass
 
-          for fx in fixtures:
+          for fx in mapped:
             opponent = fx["away"] if fx["home"].lower().startswith("man") else fx["home"]
             key = f'{fx["date"]} {opponent}'
             if key in tv_overrides:
               fx["tv"] = tv_overrides[key]
 
           # Sort & de-dup
-          fixtures.sort(key=lambda x: (x["date"], x["time"]))
+          mapped.sort(key=lambda x: (x["date"], x["time"]))
           seen, dedup = set(), []
-          for f in fixtures:
+          for f in mapped:
             k = (f["date"], f["home"], f["away"])
             if k not in seen:
               seen.add(k); dedup.append(f)
@@ -95,17 +115,9 @@ jobs:
           with open("assets/fixtures.json","w",encoding="utf-8") as f:
             json.dump(dedup, f, ensure_ascii=False, indent=2)
 
+          print("Season used:", season)
           print("Wrote assets/fixtures.json with", len(dedup), "entries")
           PY
 
       - name: Commit & push if changed
         run: |
-          if [ -n "$(git status --porcelain)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets/fixtures.json
-            git commit -m "chore: auto-update fixtures from TheSportsDB [skip ci]"
-            git push
-          else
-            echo "No changes."
-          fi
