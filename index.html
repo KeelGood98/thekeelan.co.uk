@@ -5,113 +5,164 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>thekeelan.co.uk</title>
   <style>
-    :root {
-      --bg:#000; --panel:#0d0d0f; --fg:#eaeaea; --muted:#9aa0a6; --accent:#e50914;
-      --ok:#21c55d; --live:#f59e0b; --radius:16px; --shadow:0 8px 28px rgba(0,0,0,.35);
+    :root{
+      --bg:#000; --panel:#0d0d10; --fg:#eaeaea; --muted:#a0a4aa; --accent:#e50914;
+      --ok:#22c55e; --live:#f59e0b; --radius:18px; --shadow:0 12px 40px rgba(0,0,0,.35);
+      --glass:rgba(13,13,16,.65); --border:#1b1c20;
     }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:var(--fg)}
+    html,body{height:100%;margin:0;color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:inherit}
 
-    .wrap{min-height:100%;display:grid;grid-template-columns:1.15fr 1fr;gap:20px;padding:20px}
-    @media (max-width:900px){.wrap{grid-template-columns:1fr}}
+    /* Background image + soft overlay */
+    body::before{
+      content:""; position:fixed; inset:0;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.85)),
+        url("https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=1920&q=60") center/cover no-repeat;
+      z-index:-1;
+      filter: saturate(0.9) contrast(1.05);
+    }
 
-    .card{background:var(--panel);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;position:relative;overflow:hidden}
-    .gifbox{display:flex;align-items:center;justify-content:center}
-    .gifbox img{max-width:100%;max-height:80vh;border-radius:12px}
+    .wrap{min-height:100%;padding:24px;display:grid;gap:24px;grid-template-columns:1.1fr .9fr;align-items:start}
+    @media (max-width: 1000px){ .wrap{grid-template-columns:1fr} }
 
-    .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
-    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:#111;border:1px solid #222;font-weight:600}
-    .dot{width:8px;height:8px;background:var(--accent);border-radius:50%}
-    .muted{color:var(--muted);font-size:13px}
+    .card{background:var(--glass); border:1px solid var(--border); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; position:relative; overflow:hidden}
 
-    .cols{display:grid;grid-template-columns:1fr;gap:14px}
-    .section{background:#0b0b0c;border:1px solid #19191b;border-radius:12px;padding:10px}
-    .section h3{margin:0 0 8px 0;font-size:14px;letter-spacing:.2px;color:#cfcfcf}
+    /* Left: GIF */
+    .gifbox{display:flex; align-items:center; justify-content:center; min-height:60vh}
+    .gifbox img{max-width:100%; max-height:75vh; border-radius:14px}
 
-    .fixture{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:8px;border-radius:10px}
-    .fixture:not(:last-child){border-bottom:1px solid #19191b}
-    .date{min-width:72px;text-align:center}
-    .date .d{font-weight:700}
-    .date .t{font-size:12px;color:var(--muted)}
+    /* Right: two stacked panels */
+    .stack{display:grid; gap:18px}
+
+    .header{display:flex; align-items:center; justify-content:space-between; margin-bottom:8px}
+    .badge{display:inline-flex; gap:8px; align-items:center; padding:7px 11px; border-radius:999px; background:#0f0f12; border:1px solid var(--border); font-weight:700; letter-spacing:.2px}
+    .dot{width:9px; height:9px; background:var(--accent); border-radius:50%}
+    .muted{color:var(--muted); font-size:13px}
+
+    .section{background:#0b0b0f; border:1px solid var(--border); border-radius:14px; padding:12px}
+
+    .cols{display:grid; grid-template-columns:1fr; gap:14px}
+    .section h3{margin:0 0 10px 0; font-size:14px; color:#d8d8d8; letter-spacing:.25px}
+
+    .fixture{display:grid; grid-template-columns:auto 1fr auto; gap:12px; align-items:center; padding:10px 6px; border-radius:10px}
+    .fixture:not(:last-child){border-bottom:1px dashed #1d1f25}
+    .date{min-width:78px; text-align:center}
+    .date .d{font-weight:800}
+    .date .t{font-size:12px; color:var(--muted)}
     .teams{line-height:1.25}
-    .comp{font-size:12px;color:var(--muted)}
-    .status{font-weight:700}
+    .comp{font-size:12px; color:var(--muted)}
+    .badges{display:flex; gap:6px; flex-wrap:wrap; margin-top:4px}
+    .pill{font-size:11px; padding:3px 8px; border-radius:999px; background:#121318; border:1px solid #242633}
+    .status{font-weight:800; text-align:right}
     .status.upcoming{color:var(--ok)}
     .status.live{color:var(--live)}
-    .status.ft{color:#a3a3a3}
+    .status.ft{color:#aeb4bb}
+    .empty{padding:14px; text-align:center; color:var(--muted)}
 
-    .empty{padding:16px;text-align:center;color:var(--muted)}
+    .r6frame{width:100%; height:420px; border:0; border-radius:12px; background:#0a0a0d}
+    .fallback{padding:12px; text-align:center}
+    .btn{display:inline-block; margin-top:10px; padding:10px 14px; border-radius:10px; background:var(--accent); color:white; text-decoration:none; font-weight:700; box-shadow:0 6px 18px rgba(229,9,20,.35)}
   </style>
 </head>
 <body>
   <div class="wrap">
 
-    <!-- LEFT: your GIF -->
+    <!-- LEFT: Your GIF -->
     <section class="card gifbox">
       <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWZpb3poZnFpdWpxeWlybHRsb3M1aTVzeGNjMHFldWR1Nm9jczlpMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8fxad4tvqIzwk/giphy.gif" alt="funny gif" />
     </section>
 
-    <!-- RIGHT: Fixtures & Results (from local JSON) -->
-    <section class="card">
-      <div class="header">
-        <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
-        <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
-      </div>
+    <!-- RIGHT: Stack => Fixtures + R6 Tracker -->
+    <div class="stack">
 
-      <div class="cols">
-        <div class="section" id="upcoming">
+      <!-- Fixtures -->
+      <section class="card">
+        <div class="header">
+          <span class="badge"><span class="dot"></span> Man United — Fixtures & Results</span>
+          <a class="muted" href="https://www.google.com/search?q=manchester+united+fixtures" target="_blank" rel="noopener">Open full list ↗</a>
+        </div>
+
+        <div class="section">
           <h3>Upcoming</h3>
-          <div class="list"></div>
+          <div id="upcoming" class="list"></div>
         </div>
-        <div class="section" id="recent">
+        <div class="section" style="margin-top:12px">
           <h3>Recent Results</h3>
-          <div class="list"></div>
+          <div id="recent" class="list"></div>
         </div>
-      </div>
 
-      <div id="loadmsg" class="muted" style="position:absolute;bottom:10px;left:16px;">Loading fixtures…</div>
-    </section>
+        <div id="loadmsg" class="muted" style="position:absolute; bottom:10px; left:16px;">Loading fixtures…</div>
+      </section>
+
+      <!-- R6 Tracker -->
+      <section class="card">
+        <div class="header">
+          <span class="badge"><span class="dot"></span> R6 Tracker — BambyOnSpice</span>
+          <a class="muted" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open profile ↗</a>
+        </div>
+
+        <!-- Many sites block iframes; try this, otherwise fallback shows -->
+        <iframe class="r6frame"
+          src="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview?playlist=ranked"
+          loading="lazy"
+          onload="document.getElementById('r6fallback').style.display='none'">
+        </iframe>
+
+        <div id="r6fallback" class="fallback">
+          Couldn’t embed R6 stats here (blocked by site).<br/>
+          <a class="btn" href="https://tracker.gg/r6siege/profile/ubi/BambyOnSpice/overview" target="_blank" rel="noopener">Open on tracker.gg</a>
+        </div>
+      </section>
+
+    </div>
   </div>
 
   <script>
-    // UK formatting helper
+    const UK_TZ = "Europe/London";
+
     const fmtDate = (iso) => {
       try {
-        const d = new Date(iso + "T00:00:00");
-        const day = d.toLocaleDateString("en-GB", { weekday:"short" });
-        const num = d.toLocaleDateString("en-GB", { day:"2-digit", month:"short" });
+        const d = new Date(iso + "T00:00:00Z"); // interpret as UTC date
+        const day = d.toLocaleDateString("en-GB",{weekday:"short", timeZone:UK_TZ});
+        const num = d.toLocaleDateString("en-GB",{day:"2-digit", month:"short", timeZone:UK_TZ});
         return { day, num };
       } catch { return { day:"", num:iso }; }
     };
+    const fmtTime = (hhmm) => hhmm || "TBC";
 
-    const toTime = (hhmm) => hhmm ? hhmm : "TBC";
+    const statusClass = (s="")=>{
+      s = s.toLowerCase();
+      if (s.includes("live")) return "live";
+      if (s.includes("ft") || s.includes("full")) return "ft";
+      return "upcoming";
+    };
 
-    const row = (m) => {
+    const fixtureRow = (m) => {
       const when = fmtDate(m.date);
-      const statusClass =
-        (m.status || "").toLowerCase().includes("live") ? "live" :
-        (m.status || "").toLowerCase().includes("ft")   ? "ft"   : "upcoming";
-
-      const score = (m.score && m.status && m.status !== "upcoming") ? `<span class="status ${statusClass}">${m.score}</span>` : `<span class="status ${statusClass}">${m.status === "upcoming" ? "UPCOMING" : (m.status || "")}</span>`;
-
+      const stc = statusClass(m.status);
+      const statusText = m.status === "upcoming" ? "UPCOMING" : (m.score || m.status || "");
+      const tv = (m.tv && m.tv.length) ? `<div class="badges">${m.tv.map(ch=>`<span class="pill">${ch}</span>`).join("")}</div>` : "";
       return `
         <div class="fixture">
           <div class="date">
             <div class="d">${when.day}</div>
-            <div class="t">${when.num}<br>${toTime(m.time)}</div>
+            <div class="t">${when.num}<br>${fmtTime(m.time)}</div>
           </div>
           <div class="teams">
             <div>${m.home} <span class="muted">vs</span> ${m.away}</div>
             <div class="comp">${m.comp}${m.venue ? " · " + m.venue : ""}</div>
+            ${tv}
           </div>
-          <div>${score}</div>
+          <div class="status ${stc}">${statusText}</div>
         </div>`;
     };
 
-    async function load() {
+    async function loadFixtures() {
       const loadMsg = document.getElementById("loadmsg");
       try {
+        // fixtures generated/maintained by the Action below, plus your manual overrides for TV
         const res = await fetch("assets/fixtures.json", { cache: "no-store" });
         if (!res.ok) throw new Error(res.status + " " + res.statusText);
         const data = await res.json();
@@ -121,25 +172,28 @@
         const upcoming = data
           .filter(x => (x.status || "upcoming").toLowerCase() === "upcoming" || new Date(x.date) >= today)
           .sort((a,b) => a.date.localeCompare(b.date))
-          .slice(0, 6);
+          .slice(0, 8);
 
         const recent = data
           .filter(x => (x.status || "").toLowerCase() !== "upcoming" && new Date(x.date) <= today)
           .sort((a,b) => b.date.localeCompare(a.date))
-          .slice(0, 6);
+          .slice(0, 8);
 
-        const upEl = document.querySelector("#upcoming .list");
-        const reEl = document.querySelector("#recent .list");
+        document.getElementById("upcoming").innerHTML = upcoming.length
+          ? upcoming.map(fixtureRow).join("")
+          : `<div class="empty">No upcoming fixtures.</div>`;
 
-        upEl.innerHTML = upcoming.length ? upcoming.map(row).join("") : `<div class="empty">No upcoming fixtures added yet.</div>`;
-        reEl.innerHTML = recent.length ? recent.map(row).join("") : `<div class="empty">No recent results yet.</div>`;
+        document.getElementById("recent").innerHTML = recent.length
+          ? recent.map(fixtureRow).join("")
+          : `<div class="empty">No recent results.</div>`;
+
         loadMsg.textContent = "";
       } catch (e) {
-        loadMsg.textContent = "Couldn’t load fixtures.json — add it to /assets or check file name.";
+        loadMsg.textContent = "Couldn’t load fixtures.json (make sure /assets/fixtures.json exists).";
         console.error(e);
       }
     }
-    load();
+    loadFixtures();
   </script>
 </body>
 </html>
