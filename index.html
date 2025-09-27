@@ -21,7 +21,7 @@
     .muted{color:var(--muted)}
 
     /* table styling */
-    .table-wrap{max-height:560px;overflow:auto;border-radius:10px;border:1px solid var(--border)}
+    .table-wrap{overflow:auto;border-radius:10px;border:1px solid var(--border)}
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
@@ -35,7 +35,7 @@
     .L{background:#3a1a1a} /* red tint */
 
     /* iframe */
-    iframe{width:100%;min-height:560px;border:0;border-radius:10px}
+    iframe{width:100%;min-height:560px;border:0;border-radius:10px} 
 
     /* responsive */
     @media (max-width: 980px){.grid{grid-template-columns:1fr}}
@@ -55,7 +55,7 @@
       <!-- LEFT: free content area (e.g., GIF) -->
       <section class="card" id="leftCol">
         <h2 id="leftTitle">Left Panel</h2>
-        <div id="leftContent" class="muted">Add: small GIF or any widget.</div>
+        <div id="leftContent"><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="GIF" style="max-width:100%;border-radius:8px;"/></div>
       </section>
 
       <!-- CENTER: Premier League table -->
@@ -90,72 +90,8 @@
   </div>
 
   <script>
-    // minimal boot – we will fill details once you provide the page items
-    const bust = `?t=${Date.now()}`;
-
-    function setUpdated(ts){
-      const el = document.getElementById('lastUpdated');
-      el.textContent = 'Last updated: ' + (ts ? new Date(ts).toLocaleString() : new Date().toLocaleString());
-    }
-
-    // placeholders for data-driven renderers – wired but idle until we know sources
-    async function safeGet(url){
-      try{ const r = await fetch(url + bust, {cache:'no-store'}); if(!r.ok) throw 0; return await r.json(); }catch{ return null; }
-    }
-
-    function renderTable(rows){
-      const tb = document.getElementById('tableBody');
-      if(!rows || !rows.length){ tb.innerHTML = '<tr><td colspan="10" class="muted">No table data.</td></tr>'; return; }
-      tb.innerHTML = rows.map(r => `
-        <tr>
-          <td>${r.pos??''}</td>
-          <td>
-            <span class="team-cell">
-              ${r.badge?`<img class="badge" src="${r.badge}" alt="">`:''}
-              ${r.team??''}
-            </span>
-          </td>
-          <td>${r.played??''}</td><td>${r.won??''}</td><td>${r.drawn??''}</td><td>${r.lost??''}</td>
-          <td>${r.gf??''}</td><td>${r.ga??''}</td><td>${r.gd??''}</td><td><strong>${r.pts??''}</strong></td>
-        </tr>`).join('');
-    }
-
-    function renderFixtures(block){
-      const wrap = document.getElementById('fixturesWrap');
-      if(!block || !Array.isArray(block.matches)) { wrap.innerHTML = '<div class="muted">No fixtures data.</div>'; return; }
-      const isFinished = m => (m.status||'').toUpperCase()==='FINISHED';
-      const outcomeClass = o => o==='W'?'W':o==='D'?'D':o==='L'?'L':'';
-      const upcoming = block.matches.filter(m=>!isFinished(m)).sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,6);
-      const recent = block.matches.filter(isFinished).sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,6);
-      const fmt = d => new Date(d).toLocaleString([], {dateStyle:'medium', timeStyle:'short'});
-
-      const up = upcoming.length? `
-        <h3 style="margin:8px 0;">Upcoming</h3>
-        <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>
-        <tbody>
-          ${upcoming.map(m=>`<tr><td>${fmt(m.date)}</td><td>${m.comp||''}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join('')}
-        </tbody></table>` : '<div class="muted">No upcoming fixtures.</div>';
-
-      const rec = recent.length? `
-        <h3 style="margin:12px 0 6px;">Recent Results</h3>
-        <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th></tr></thead>
-        <tbody>
-          ${recent.map(m=>{
-            const sc = m.score?`${m.score.home}–${m.score.away}`:'';
-            const oc = m.score?.outcome||'';
-            return `<tr class="${outcomeClass(oc)}"><td>${new Date(m.date).toLocaleDateString()}</td><td>${m.comp||''}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td><td><strong>${sc}</strong>${oc?` (${oc})`:''}</td></tr>`;
-          }).join('')}
-        </tbody></table>` : '';
-
-      wrap.innerHTML = up + rec;
-    }
-
-    // Call these later when we know your sources:
-    // setUpdated(block.updated)
-    // renderTable(table.standings)
-    // renderFixtures(fixtures)
-
-    // R6 embed setter – provide a URL and we’ll drop it in.
+    // boot with your sources now set\nconst bust = `?t=${Date.now()}`;\n\nfunction setUpdated(ts){\n  const el = document.getElementById('lastUpdated');\n  el.textContent = 'Last updated: ' + (ts ? new Date(ts).toLocaleString() : new Date().toLocaleString());\n}\n\nasync function safeGet(url){\n  try{ const r = await fetch(url + bust, {cache:'no-store'}); if(!r.ok) throw 0; return await r.json(); }catch{ return null; }\n}\n\nfunction renderTable(rows){\n  const tb = document.getElementById('tableBody');\n  if(!rows || !rows.length){ tb.innerHTML = '<tr><td colspan="10" class="muted">No table data.</td></tr>'; return; }\n  tb.innerHTML = rows.map(r => `\n    <tr>\n      <td>${r.pos??''}</td>\n      <td>\n        <span class=\"team-cell\">\n          ${r.badge?`<img class=\"badge\" src=\"${r.badge}\" alt=\"\">`:''}\n          ${r.team??''}\n        </span>\n      </td>\n      <td>${r.played??''}</td><td>${r.won??''}</td><td>${r.drawn??''}</td><td>${r.lost??''}</td>\n      <td>${r.gf??''}</td><td>${r.ga??''}</td><td>${r.gd??''}</td><td><strong>${r.pts??''}</strong></td>\n    </tr>`).join('');\n}\n\nfunction renderFixtures(block){\n  const wrap = document.getElementById('fixturesWrap');\n  if(!block || !Array.isArray(block.matches)) { wrap.innerHTML = '<div class=\"muted\">No fixtures data.</div>'; return; }\n  const isFinished = m => (m.status||'').toUpperCase()==='FINISHED';\n  const outcomeClass = o => o==='W'?'W':o==='D'?'D':o==='L'?'L':'';\n  const upcoming = block.matches.filter(m=>!isFinished(m)).sort((a,b)=>new Date(a.date)-new Date(b.date)).slice(0,8);\n  const recent = block.matches.filter(isFinished).sort((a,b)=>new Date(b.date)-new Date(a.date)).slice(0,8);\n  const fmt = d => new Date(d).toLocaleString([], {dateStyle:'medium', timeStyle:'short'});\n\n  const up = upcoming.length? `\n    <h3 style=\"margin:8px 0;\">Upcoming</h3>\n    <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th></tr></thead>\n    <tbody>\n      ${upcoming.map(m=>`<tr><td>${fmt(m.date)}</td><td>${m.comp||''}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td></tr>`).join('')}\n    </tbody></table>` : '<div class=\"muted\">No upcoming fixtures.</div>';\n\n  const rec = recent.length? `\n    <h3 style=\"margin:12px 0 6px;\">Recent Results</h3>\n    <table><thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th></tr></thead>\n    <tbody>\n      ${recent.map(m=>{\n        const sc = m.score?`${m.score.home}–${m.score.away}`:'';\n        const oc = m.score?.outcome||'';\n        return `<tr class=\"${outcomeClass(oc)}\"><td>${new Date(m.date).toLocaleDateString()}</td><td>${m.comp||''}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td><td><strong>${sc}</strong>${oc?` (${oc})`:''}</td></tr>`;\n      }).join('')}\n    </tbody></table>` : '';\n\n  wrap.innerHTML = up + rec;\n}\n\n(async ()=>{\n  const table = await safeGet('/assets/table.json');\n  if(table){ renderTable(table.standings); setUpdated(table.updated); }\n  const fixtures = await safeGet('/assets/fixtures.json');\n  if(fixtures){ renderFixtures(fixtures); }\n  // R6 embed default to PC; change to /xbox/ or /psn/ if needed
+  window.setR6(`https://r6.tracker.network/profile/pc/BambyOnSpice?embed=1`);\n})();\n\n// R6 embed setter – provide a URL and we’ll drop it in.
     window.setR6 = (url) => {
       const f = document.getElementById('r6Frame');
       f.src = url || 'about:blank';
