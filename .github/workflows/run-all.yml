@@ -3,6 +3,10 @@ name: Run everything (orchestrator)
 on:
   workflow_dispatch:
     inputs:
+      skip_extras:
+        description: "Skip extras job (weather + free games)"
+        required: false
+        default: "false"
       force_redeploy:
         description: "Force Pages redeploy by touching assets/update_stamp.txt"
         required: false
@@ -22,12 +26,14 @@ jobs:
 
   extras:
     name: Update extras (weather + free games)
+    if: ${{ github.event.inputs.skip_extras != 'true' }}
     needs: football
     uses: KeelGood98/thekeelan.co.uk/.github/workflows/update-extras.yml@main
 
   redeploy:
-    name: Force GH Pages redeploy (optional)
-    if: ${{ github.event.inputs.force_redeploy != 'false' }}
+    name: Force GH Pages redeploy (always)
+    # always() means this runs even if previous jobs fail
+    if: ${{ always() && github.event.inputs.force_redeploy != 'false' }}
     needs: [football, extras]
     runs-on: ubuntu-latest
     steps:
