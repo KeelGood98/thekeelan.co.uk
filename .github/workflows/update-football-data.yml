@@ -3,7 +3,7 @@ name: Update site data (TSDB table + MUFC fixtures)
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 */6 * * *' # every 6 hours; adjust as you like
+    - cron: "13 5 * * *"   # daily ~05:13 UTC
 
 permissions:
   contents: write
@@ -11,41 +11,31 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install deps (if any)
+      - name: Build assets (table + fixtures + badges)
+        env:
+          TSDB_API_KEY: ${{ secrets.TSDB_API_KEY }}  # optional; falls back to '3'
         run: |
-          python -m pip install --upgrade pip
-          # pip install -r requirements.txt || true
-
-      - name: Build assets (table + fixtures [+ badges if you have a script])
-        run: |
-          set -e
-          mkdir -p assets
-          # Your existing scripts. Keep them exactly as you had them when it worked:
-          python scripts/update_table.py
-          python scripts/update_fixtures.py
-          # Optional badge refresher if you generate it by script:
-          if [ -f scripts/update_badges.py ]; then python scripts/update_badges.py; fi
-          # Touch/update stamp to force GH Pages redeploy
+          python -u scripts/update_table.py
+          python -u update_fixtures.py
+          python -u scripts/update_badges.py
           date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          echo "assets/update_stamp.txt:"
+          cat assets/update_stamp.txt
 
       - name: Commit & push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh football data (table + fixtures)"
-          file_pattern: |
-            assets/table.json
-            assets/fixtures.json
-            assets/badges.json
-            assets/update_stamp.txt
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.json assets/update_stamp.txt
+          git commit -m "chore: refresh football data (table + fixtures + badges) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "nothing to commit"
+          git pull --rebase
+          git push
