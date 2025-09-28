@@ -4,17 +4,18 @@ on:
   schedule:
     - cron: "*/120 * * * *"  # every 2 hours
   workflow_dispatch:
+  workflow_call:            # <-- IMPORTANT for reusable workflow
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -63,7 +64,7 @@ jobs:
                 })
             out = {"updated": int(time.time()*1000), "games": games}
             with open("assets/free_games.json","w") as f: json.dump(out, f)
-            print("Wrote assets/free_games.json (", len(games), "games )")
+            print(f"Wrote assets/free_games.json ( {len(games)} games )")
           except Exception as e:
             print("Free games error:", e, file=sys.stderr)
           PY
