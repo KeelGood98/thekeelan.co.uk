@@ -1,8 +1,8 @@
-name: Update site data (table + badges + MUFC fixtures)
+name: Update football data (table + badges + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"        # daily 06:00 UTC
+    - cron: "5 5 * * *"   # daily 05:05 UTC
   workflow_dispatch:
 
 permissions:
@@ -18,109 +18,111 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Build assets/table.json (all 20 teams) from TheSportsDB
-      - name: Build table.json
+      # ---- Build 20-team table (TheSportsDB) ----
+      - name: Build assets/table.json
         run: |
           python - <<'PY'
-          import json, time, urllib.request, urllib.parse
+          import json, time, urllib.request, urllib.parse, os, sys
           from datetime import datetime
-          import os, sys
 
           os.makedirs("assets", exist_ok=True)
 
-          def fetch(url, to=30):
-            req = urllib.request.Request(url, headers={"User-Agent":"gh-actions"})
-            with urllib.request.urlopen(req, timeout=to) as r:
+          def get(url, timeout=45):
+            req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # Current PL season string, e.g. 2025-2026
+          # Season string (e.g. 2025-2026), season starts in July
           now = datetime.utcnow()
           start = now.year if now.month >= 7 else now.year - 1
           season = f"{start}-{start+1}"
 
+          # PL league id on TSDB = 4328
           url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
-          data = json.loads(fetch(url).decode("utf-8"))
-          table = data.get("table") or []
+          try:
+            data = json.loads(get(url).decode("utf-8"))
+            table = data.get("table") or []
 
-          rows=[]
-          for t in table:
-            rows.append({
-              "pos":   int(t.get("intRank") or 0),
-              "team":  t.get("strTeam") or "",
-              "played":int(t.get("intPlayed") or 0),
-              "won":   int(t.get("intWin") or 0),
-              "drawn": int(t.get("intDraw") or 0),
-              "lost":  int(t.get("intLoss") or 0),
-              "gf":    int(t.get("intGoalsFor") or 0),
-              "ga":    int(t.get("intGoalsAgainst") or 0),
-              "gd":    int(t.get("intGoalDifference") or 0),
-              "pts":   int(t.get("intPoints") or 0)
-            })
-          rows.sort(key=lambda r: r["pos"] or 999)
+            rows = []
+            for t in table:
+              rows.append({
+                "pos": int(t.get("intRank") or 0),
+                "team": t.get("strTeam") or "",
+                "played": int(t.get("intPlayed") or 0),
+                "won": int(t.get("intWin") or 0),
+                "drawn": int(t.get("intDraw") or 0),
+                "lost": int(t.get("intLoss") or 0),
+                "gf": int(t.get("intGoalsFor") or 0),
+                "ga": int(t.get("intGoalsAgainst") or 0),
+                "gd": int(t.get("intGoalDifference") or 0),
+                "pts": int(t.get("intPoints") or 0)
+              })
 
-          out = {
-            "season": season,
-            "source": "TheSportsDB",
-            "updated": int(time.time()*1000),
-            "standings": rows
-          }
-          with open("assets/table.json","w",encoding="utf-8") as f:
-            json.dump(out,f,ensure_ascii=False)
-          print(f"Wrote assets/table.json with {len(rows)} rows")
+            rows.sort(key=lambda r: r["pos"] or 999)
+
+            out = {
+              "season": season,
+              "source": "TheSportsDB",
+              "updated": int(time.time()*1000),
+              "standings": rows
+            }
+            with open("assets/table.json","w", encoding="utf-8") as f:
+              json.dump(out, f, ensure_ascii=False)
+            print(f"Wrote assets/table.json with {len(rows)} rows for {season}")
+          except Exception as e:
+            print("Table build failed:", e, file=sys.stderr)
+            raise
           PY
 
-      # Build assets/badges.json from TSDB (league teams) + wiki fallback
-      - name: Build badges.json
+      # ---- Build badges.json with crest URLs (TheSportsDB) ----
+      - name: Build assets/badges.json
         run: |
           python - <<'PY'
-          import json, urllib.request, os, re
+          import json, time, urllib.request, urllib.parse, os
 
           os.makedirs("assets", exist_ok=True)
 
-          def fetch_json(url):
-            req = urllib.request.Request(url, headers={"User-Agent":"gh-actions"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-              return json.loads(r.read().decode("utf-8"))
+          def get(url, timeout=45):
+            req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+              return r.read()
 
-          def norm(s): return re.sub(r"[^a-z0-9]", "", (s or "").lower().replace("&","and"))
-          def https(u): return (u or "").replace("http://","https://")
+          # All PL teams
+          url = "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League"
+          data = json.loads(get(url).decode("utf-8"))
+          teams = data.get("teams") or []
 
-          # TSDB league teams (Premier League id 4328)
-          m = {}
-          try:
-            j = fetch_json("https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328")
-            for t in (j.get("teams") or []):
-              name = t.get("strTeam") or ""
-              badge = https(t.get("strTeamBadge") or "")
-              if name and badge:
-                m[norm(name)] = badge
-          except Exception as e:
-            print("TSDB badge fetch failed:", e)
+          badges = {}
+          for t in teams:
+            name = t.get("strTeam") or ""
+            crest = (t.get("strTeamBadge") or "").replace("http://","https://")
+            if name:
+              badges[name] = crest
 
-          # Known Wikipedia titles for exact crest fallback if needed (used client-side too)
-          wiki_titles = {
-            "brightonandhovealbion": "Brighton_&_Hove_Albion_F.C."
-          }
-          # Just store TSDB map here; the page will do wiki fallback for any gaps
-          with open("assets/badges.json","w") as f:
-            json.dump({"badges": m, "wiki_overrides": wiki_titles}, f)
-          print("Wrote assets/badges.json with", len(m), "entries")
+          out = {"updated": int(time.time()*1000), "badges": badges}
+          with open("assets/badges.json","w", encoding="utf-8") as f:
+            json.dump(out, f, ensure_ascii=False)
+          print(f"Wrote assets/badges.json with {len(badges)} entries")
           PY
 
-      # Your existing MUFC fixtures script
-      - name: Build fixtures.json
-        run: python update_fixtures.py
+      # ---- Build fixtures.json via helper script (Man United only) ----
+      - name: Build assets/fixtures.json
+        run: |
+          python update_fixtures.py
 
-      # Touch human-viewable timestamp
+      # ---- Touch update stamp (used by site header) ----
       - name: Touch update stamp
         run: |
-          date -u +"%Y-%m-%d %H:%M:%S UTC" > assets/update_stamp.txt
+          mkdir -p assets
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
           cat assets/update_stamp.txt
 
+      # ---- Commit & push (safe for concurrent pushes) ----
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin "$GITHUB_REF_NAME" || true
           git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
           git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
