@@ -1,68 +1,67 @@
 #!/usr/bin/env python3
-import json, os, time, urllib.request, urllib.parse
+import json, os, time, urllib.request
 from datetime import datetime, timezone
 
-OUT_DIR = "assets"
-os.makedirs(OUT_DIR, exist_ok=True)
+OUT = "assets"
+os.makedirs(OUT, exist_ok=True)
+
+TEAM_NAME = "Manchester United"
+PREF_LEAGUE = "English Premier League"
+FALLBACK_ID = "133612"  # MU first team on TheSportsDB
 
 def fetch(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": "keelan-actions/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent":"keelan-actions/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 def to_iso(ts, d, t):
-    # TheSportsDB gives either strTimestamp (UTC) or date+time (local-ish).
+    # normalise to ISO UTC
     if ts:
         try:
-            # already UTC like "2025-09-20 16:30:00"
             dt = datetime.fromisoformat(ts.replace(" ", "T")).replace(tzinfo=timezone.utc)
             return dt.isoformat().replace("+00:00", "Z")
-        except Exception:
-            pass
+        except: pass
     if d and t:
         try:
             dt = datetime.fromisoformat(f"{d}T{t}:00").replace(tzinfo=timezone.utc)
             return dt.isoformat().replace("+00:00", "Z")
-        except Exception:
-            pass
+        except: pass
     if d:
         try:
             dt = datetime.fromisoformat(f"{d}T00:00:00").replace(tzinfo=timezone.utc)
             return dt.isoformat().replace("+00:00", "Z")
-        except Exception:
-            pass
+        except: pass
     return None
 
-def outcome_for_mu(score_home, score_away, home_is_mu):
-    if score_home is None or score_away is None:
-        return None
-    if score_home == score_away:
-        return "D"
-    mu = score_home if home_is_mu else score_away
-    opp = score_away if home_is_mu else score_home
+def outcome_for_mu(sh, sa, home_is_mu):
+    if sh is None or sa is None: return None
+    if sh == sa: return "D"
+    mu = sh if home_is_mu else sa
+    opp = sa if home_is_mu else sh
     return "W" if mu > opp else "L"
 
-TEAM_NAME = "Manchester United"
+def norm(s): return (s or "").strip().lower()
 
-# 1) look up MU team id
+# ---- Resolve MU id safely
 tid = None
 try:
-    j = json.loads(fetch("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United").decode("utf-8"))
-    for t in (j.get("teams") or []):
-        if (t.get("strTeam") or "").strip().lower() == TEAM_NAME.lower():
-            tid = t.get("idTeam")
-            break
+    data = json.loads(fetch("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United").decode("utf-8"))
+    cands = [t for t in (data.get("teams") or []) if norm(t.get("strTeam")) == norm(TEAM_NAME)]
+    # prefer Premier League entry if multiple (e.g. U21/U23 etc.)
+    cands.sort(key=lambda t: 0 if PREF_LEAGUE.lower() in norm(t.get("strLeague")) else 1)
+    if cands:
+        tid = cands[0].get("idTeam")
 except Exception as e:
-    raise SystemExit(f"[fixtures] lookup error: {e}")
+    print("[fixtures] warn: lookup error:", e)
 
 if not tid:
-    raise SystemExit("[fixtures] could not resolve Manchester United idTeam")
+    print("[fixtures] using fallback id", FALLBACK_ID)
+    tid = FALLBACK_ID
 
 def load_events(kind):
     url = f"https://www.thesportsdb.com/api/v1/json/3/events{kind}.php?id={tid}"
     try:
         j = json.loads(fetch(url).decode("utf-8"))
-        # API returns {"results":[...]} for last, {"events":[...]} for next
         return (j.get("results") or j.get("events") or [])
     except Exception as e:
         print(f"[fixtures] warn {kind}:", e)
@@ -71,34 +70,27 @@ def load_events(kind):
 next_events = load_events("next")
 last_events = load_events("last")
 
-matches = []
-
-# past results
+raw = []
+# past
 for e in last_events:
-    home = e.get("strHomeTeam") or ""
-    away = e.get("strAwayTeam") or ""
-    ts = to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime"))
-    sh = None if (e.get("intHomeScore") in (None, "", "null")) else int(e.get("intHomeScore"))
-    sa = None if (e.get("intAwayScore") in (None, "", "null")) else int(e.get("intAwayScore"))
-    out = outcome_for_mu(sh, sa, home.lower()==TEAM_NAME.lower())
-    matches.append({
+    home, away = e.get("strHomeTeam") or "", e.get("strAwayTeam") or ""
+    sh = None if (e.get("intHomeScore") in (None,"","null")) else int(e.get("intHomeScore"))
+    sa = None if (e.get("intAwayScore") in (None,"","null")) else int(e.get("intAwayScore"))
+    raw.append({
         "status": "FINISHED",
-        "date": ts,
+        "date": to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime")),
         "comp": e.get("strLeague") or "",
         "home": home,
         "away": away,
-        "score": {"home": sh, "away": sa, "outcome": out},
+        "score": {"home": sh, "away": sa, "outcome": outcome_for_mu(sh, sa, norm(home)==norm(TEAM_NAME))},
         "tv": (e.get("strTVStation") or "").strip() or None
     })
-
-# upcoming fixtures
+# upcoming
 for e in next_events:
-    home = e.get("strHomeTeam") or ""
-    away = e.get("strAwayTeam") or ""
-    ts = to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime"))
-    matches.append({
+    home, away = e.get("strHomeTeam") or "", e.get("strAwayTeam") or ""
+    raw.append({
         "status": "SCHEDULED",
-        "date": ts,
+        "date": to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime")),
         "comp": e.get("strLeague") or "",
         "home": home,
         "away": away,
@@ -106,18 +98,17 @@ for e in next_events:
         "tv": (e.get("strTVStation") or "").strip() or None
     })
 
-# filter safeguard: only games where MU is home or away
-matches = [m for m in matches if (m["home"].lower()==TEAM_NAME.lower() or m["away"].lower()==TEAM_NAME.lower())]
+# ---- HARD FILTER: keep only MU matches
+mu = norm(TEAM_NAME)
+matches = [m for m in raw if norm(m["home"]) == mu or norm(m["away"]) == mu]
 
-# order by date ascending
-def ts_key(m):
-    try:
-        return m["date"] or ""
-    except:
-        return ""
-matches.sort(key=ts_key)
+# sanity: if API returned the wrong team (e.g., Bolton), abort the run
+if not matches or len(matches) < len(raw) * 0.3:
+    raise SystemExit("[fixtures] sanity check failed: fetched data doesn’t look like MU. Not writing fixtures.json.")
 
-with open(os.path.join(OUT_DIR, "fixtures.json"), "w", encoding="utf-8") as f:
+# order ascending by date
+matches.sort(key=lambda m: m["date"] or "")
+
+with open(os.path.join(OUT, "fixtures.json"), "w", encoding="utf-8") as f:
     json.dump({"updated": int(time.time()*1000), "team": TEAM_NAME, "matches": matches}, f)
-
-print(f"Wrote fixtures.json with {len(matches)} matches for {TEAM_NAME}")
+print(f"Wrote fixtures.json with {len(matches)} MU matches.")
