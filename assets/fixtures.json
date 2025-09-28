@@ -1,146 +1,67 @@
-{
-  "team": "Manchester United",
-  "updated": "2025-09-28T15:21:33.394918Z",
-  "matches": [
-    {
-      "date": "2025-08-03T21:00:00Z",
-      "comp": "English Premier League Summer Series",
-      "home": "Manchester United",
-      "away": "Everton",
-      "status": "FINISHED",
-      "score": {
-        "home": 2,
-        "away": 2,
-        "outcome": "D"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-08-09T11:45:00Z",
-      "comp": "Club Friendlies",
-      "home": "Manchester United",
-      "away": "Fiorentina",
-      "status": "FINISHED",
-      "score": {
-        "home": 1,
-        "away": 1,
-        "outcome": "D"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-08-17T15:30:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester United",
-      "away": "Arsenal",
-      "status": "FINISHED",
-      "score": {
-        "home": 0,
-        "away": 1,
-        "outcome": "L"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-08-24T15:30:00Z",
-      "comp": "English Premier League",
-      "home": "Fulham",
-      "away": "Manchester United",
-      "status": "FINISHED",
-      "score": {
-        "home": 1,
-        "away": 1,
-        "outcome": "D"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-08-30T14:00:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester United",
-      "away": "Burnley",
-      "status": "FINISHED",
-      "score": {
-        "home": 3,
-        "away": 2,
-        "outcome": "W"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-09-14T15:30:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester City",
-      "away": "Manchester United",
-      "status": "FINISHED",
-      "score": {
-        "home": 3,
-        "away": 0,
-        "outcome": "L"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-09-20T16:30:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester United",
-      "away": "Chelsea",
-      "status": "FINISHED",
-      "score": {
-        "home": 2,
-        "away": 1,
-        "outcome": "W"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-09-27T11:30:00Z",
-      "comp": "English Premier League",
-      "home": "Brentford",
-      "away": "Manchester United",
-      "status": "FINISHED",
-      "score": {
-        "home": 3,
-        "away": 1,
-        "outcome": "L"
-      },
-      "tv": null
-    },
-    {
-      "date": "2025-10-04T14:00:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester United",
-      "away": "Sunderland",
-      "status": "SCHEDULED",
-      "score": null,
-      "tv": null
-    },
-    {
-      "date": "2025-10-19T15:30:00Z",
-      "comp": "English Premier League",
-      "home": "Liverpool",
-      "away": "Manchester United",
-      "status": "SCHEDULED",
-      "score": null,
-      "tv": null
-    },
-    {
-      "date": "2025-10-25T16:30:00Z",
-      "comp": "English Premier League",
-      "home": "Manchester United",
-      "away": "Brighton and Hove Albion",
-      "status": "SCHEDULED",
-      "score": null,
-      "tv": null
-    },
-    {
-      "date": "2025-11-01T15:00:00Z",
-      "comp": "English Premier League",
-      "home": "Nottingham Forest",
-      "away": "Manchester United",
-      "status": "SCHEDULED",
-      "score": null,
-      "tv": null
-    }
-  ]
-}
+[
+  {
+    "date": "2025-08-03",
+    "time": "21:00",
+    "comp": "English Premier League Summer Series",
+    "home": "Manchester United",
+    "away": "Everton",
+    "status": "FT",
+    "score": "2–2",
+    "venue": "Mercedes-Benz Stadium",
+    "tv": [],
+    "homeBadge": null,
+    "awayBadge": null
+  },
+  {
+    "date": "2025-08-09",
+    "time": "11:45",
+    "comp": "Club Friendlies",
+    "home": "Manchester United",
+    "away": "Fiorentina",
+    "status": "FT",
+    "score": "1–1",
+    "venue": "Old Trafford",
+    "tv": [],
+    "homeBadge": null,
+    "awayBadge": null
+  },
+  {
+    "date": "2025-08-17",
+    "time": "15:30",
+    "comp": "English Premier League",
+    "home": "Manchester United",
+    "away": "Arsenal",
+    "status": "FT",
+    "score": "0–1",
+    "venue": "Old Trafford",
+    "tv": [],
+    "homeBadge": null,
+    "awayBadge": null
+  },
+  {
+    "date": "2025-08-30",
+    "time": "14:00",
+    "comp": "English Premier League",
+    "home": "Manchester United",
+    "away": "Burnley",
+    "status": "FT",
+    "score": "3–2",
+    "venue": "Old Trafford",
+    "tv": [],
+    "homeBadge": null,
+    "awayBadge": null
+  },
+  {
+    "date": "2025-09-20",
+    "time": "16:30",
+    "comp": "English Premier League",
+    "home": "Manchester United",
+    "away": "Chelsea",
+    "status": "FT",
+    "score": "2–1",
+    "venue": "Old Trafford",
+    "tv": [],
+    "homeBadge": null,
+    "awayBadge": null
+  }
+]
