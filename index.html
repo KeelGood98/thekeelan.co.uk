@@ -8,8 +8,7 @@
   <style>
     :root{
       --bg:#0c1117; --panel:#121823; --muted:#95a2b3; --text:#e6edf3; --accent:#00d4ff;
-      --ok:#19c37d; --warn:#e3b341; --bad:#f07470; --row:#0f1520;
-      --card-radius:16px; --gap:18px;
+      --row:#0f1520; --border:#0f2237; --card-radius:16px; --gap:18px;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -28,35 +27,37 @@
     }
     header .nav a.active{background:#0a7cc0; border-color:#0a7cc0; color:#fff}
 
+    /* WIDE layout: 3 columns on desktop */
     .wrap{
       max-width:1400px; margin:0 auto; padding:0 18px 28px;
       display:grid; grid-template-columns: 1fr 1.2fr 1fr; gap:var(--gap);
     }
+    @media (max-width:1100px){
+      .wrap{ grid-template-columns:1fr; }
+    }
+
     .card{
-      background:var(--panel); border:1px solid #0f2237; border-radius:var(--card-radius);
+      background:var(--panel); border:1px solid var(--border); border-radius:var(--card-radius);
       box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
       overflow:hidden;
     }
     .card h2{
       margin:0; padding:14px 16px; font-size:16px; font-weight:700; letter-spacing:.2px;
-      border-bottom:1px solid #0f2237; display:flex; justify-content:space-between; align-items:center;
+      border-bottom:1px solid var(--border); display:flex; justify-content:space-between; align-items:center;
       background:linear-gradient(180deg, rgba(255,255,255,.02), transparent);
     }
-    .panel-body{ padding:12px 14px; }
+    .panel-body{ padding:12px 14px; overflow:visible }
 
     /* Left GIF */
-    .gif{
-      width:100%; aspect-ratio:16/9; object-fit:cover; border-bottom-left-radius:0; border-bottom-right-radius:0;
-      display:block;
-    }
+    .gif{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; }
 
     /* Table */
     table{width:100%; border-collapse:collapse; font-size:14px}
     thead th{
       text-align:left; color:var(--muted); font-weight:600; padding:10px 8px; position:sticky; top:0;
-      background:var(--panel); z-index:1; border-bottom:1px solid #0f2237;
+      background:var(--panel); z-index:1; border-bottom:1px solid var(--border);
     }
-    tbody td{ padding:10px 8px; border-bottom:1px solid #0f2237; }
+    tbody td{ padding:10px 8px; border-bottom:1px solid var(--border); }
     tbody tr:nth-child(odd){ background:var(--row) }
     .num{ text-align:center; width:28px; color:#a8b6c6 }
     .tight{ width:26px; text-align:center }
@@ -67,16 +68,7 @@
       width:18px; height:18px; border-radius:999px; background:#0a2540; display:inline-grid; place-items:center; font-size:11px; color:#cde3ff;
       flex:0 0 18px;
     }
-    .grid{
-      display:grid; grid-template-columns: 1fr 1.2fr 1fr; gap:var(--gap)
-    }
-    @media (max-width:1100px){
-      .wrap{ grid-template-columns:1fr; }
-      .grid{ grid-template-columns:1fr; }
-    }
-
     .pill{font-size:12px; color:#9fb3c8; background:#0b1422; border:1px solid #0e2139; padding:4px 8px; border-radius:999px}
-    .ok{color:#19c37d} .warn{color:#e3b341} .bad{color:#f07470}
 
     .fixture-table td,.fixture-table th{ padding:8px 10px }
   </style>
@@ -154,75 +146,163 @@
   </div>
 
   <script>
+    // -------- helpers
     const BUST = () => `?t=${Date.now()}`;
-    const get = (s) => document.querySelector(s);
+    const $ = (s) => document.querySelector(s);
     let BADGES = {};
 
-    async function fetchJSON(path){
-      const res = await fetch(path + BUST(), {cache:'no-store'});
-      if(!res.ok) throw new Error(path + ' -> ' + res.status);
-      return res.json();
+    async function getJSON(path){
+      const r = await fetch(path + BUST(), {cache:'no-store'});
+      if(!r.ok) throw new Error(`${path} -> ${r.status}`);
+      return r.json();
     }
-    async function fetchText(path){
-      const res = await fetch(path + BUST(), {cache:'no-store'});
-      if(!res.ok) throw new Error(path + ' -> ' + res.status);
-      return res.text();
+    async function getText(path){
+      const r = await fetch(path + BUST(), {cache:'no-store'});
+      if(!r.ok) throw new Error(`${path} -> ${r.status}`);
+      return r.text();
     }
+    function initials(name){ return (name||'').split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase(); }
+    function coerceNum(v){ const n = parseInt(v,10); return isNaN(n) ? '' : n; }
 
-    function initials(name){
-      return name.split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase();
-    }
     function badgeCell(team){
       const url = BADGES[team];
       if(url){
-        return `<span class="badge" style="background:#0a2540"><img src="${url}" alt="" style="width:18px;height:18px;border-radius:999px;display:block"></span>`;
+        return `<span class="badge"><img src="${url}" alt="" style="width:18px;height:18px;border-radius:999px;display:block"></span>`;
       }
       return `<span class="badge">${initials(team)}</span>`;
     }
 
     async function loadBadges(){
-      try{
-        BADGES = await fetchJSON('/assets/badges.json');
-      }catch(e){
-        BADGES = {};
-      }
+      try{ BADGES = await getJSON('/assets/badges.json'); }
+      catch{ BADGES = {}; }
     }
 
     async function loadUpdated(){
       try{
-        const txt = await fetchText('/assets/update_stamp.txt');
-        // show file mtime instead of content (content might be arbitrary)
+        // use mtime rather than content
         const res = await fetch('/assets/update_stamp.txt' + BUST(), {method:'HEAD'});
         const m = res.headers.get('last-modified');
-        get('#updated').textContent = m ? new Date(m).toLocaleString() : (new Date()).toLocaleString();
-      }catch(e){
-        get('#updated').textContent = '—';
+        $('#updated').textContent = m ? new Date(m).toLocaleString() : new Date().toLocaleString();
+      }catch{
+        $('#updated').textContent = '—';
       }
     }
 
+    // ---- TABLE: robust extraction (array at root OR nested)
+    function findArrayDeep(obj){
+      if (Array.isArray(obj)) return obj;
+      if (obj && typeof obj === 'object'){
+        for (const k of Object.keys(obj)){
+          const found = findArrayDeep(obj[k]);
+          if (found) return found;
+        }
+      }
+      return null;
+    }
+
+    function normalizeTableRow(row){
+      // map lots of possible key names into a common shape
+      const team = row.team ?? row.name ?? row.club ?? row.Team ?? row.teamName ?? row.shortName ?? '';
+      const played = row.played ?? row.p ?? row.P ?? row.playedGames ?? '';
+      const won    = row.won ?? row.w ?? row.W ?? '';
+      const draw   = row.draw ?? row.d ?? row.D ?? row.drawn ?? '';
+      const lost   = row.lost ?? row.l ?? row.L ?? '';
+      const gf     = row.goalsFor ?? row.gf ?? row.F ?? row.for ?? '';
+      const ga     = row.goalsAgainst ?? row.ga ?? row.A ?? row.against ?? '';
+      const gd     = row.goalDiff ?? row.gd ?? row.GD ?? (gf!==''&&ga!==''?(gf-ga):'');
+      const pts    = row.points ?? row.pts ?? row.Pts ?? row.PTS ?? '';
+      const pos    = row.position ?? row.pos ?? row.rank ?? '';
+
+      return {
+        team: String(team||''),
+        pos: coerceNum(pos),
+        played: coerceNum(played), won: coerceNum(won), draw: coerceNum(draw), lost: coerceNum(lost),
+        goalsFor: coerceNum(gf), goalsAgainst: coerceNum(ga), goalDiff: coerceNum(gd), points: coerceNum(pts),
+      };
+    }
+
     async function loadTable(){
-      const body = get('#pl-rows');
+      const body = $('#pl-rows');
       try{
-        const table = await fetchJSON('/assets/table.json');
-        if(!Array.isArray(table) || table.length === 0) throw new Error('empty table');
-        body.innerHTML = table.slice(0, 20).map((row, i) => {
-          const { team, played, won, draw, lost, goalsFor, goalsAgainst, goalDiff, points } = row;
-          return `<tr>
-            <td class="num">${i+1}</td>
-            <td class="team">${badgeCell(team)} <span>${team}</span></td>
-            <td class="tight">${played ?? row.p ?? ''}</td>
-            <td class="tight">${won ?? row.w ?? ''}</td>
-            <td class="tight">${draw ?? row.d ?? ''}</td>
-            <td class="tight">${lost ?? row.l ?? ''}</td>
-            <td class="tight">${goalsFor ?? row.gf ?? ''}</td>
-            <td class="tight">${goalsAgainst ?? row.ga ?? ''}</td>
-            <td class="tight">${goalDiff ?? row.gd ?? ''}</td>
-            <td class="tight">${points ?? row.pts ?? ''}</td>
-          </tr>`;
-        }).join('');
+        const raw = await getJSON('/assets/table.json');
+        let arr = Array.isArray(raw) ? raw : null;
+
+        if(!arr){
+          // common wrappers: standings, table, records, data, etc.
+          const candidates = [
+            raw?.standings, raw?.table, raw?.records, raw?.data, raw?.leagueTable, raw?.result,
+          ].filter(Boolean);
+          for (const c of candidates){
+            if (Array.isArray(c)) { arr = c; break; }
+            if (!arr) arr = findArrayDeep(c);
+            if (arr) break;
+          }
+          if(!arr) arr = findArrayDeep(raw);
+        }
+        if(!arr || !arr.length) throw new Error('no rows');
+
+        let rows = arr.map(normalizeTableRow)
+          .filter(r => r.team && (r.points!=='' || r.played!=='')); // sanity
+
+        // sort by position if available, else by points desc, GD desc
+        if (rows.every(r => r.pos !== '')){
+          rows.sort((a,b)=>a.pos-b.pos);
+        } else {
+          rows.sort((a,b)=>(b.points - a.points) || (b.goalDiff - a.goalDiff));
+        }
+
+        // SHOW ALL 20
+        rows = rows.slice(0, 20);
+
+        body.innerHTML = rows.map((r,i)=>`
+          <tr>
+            <td class="num">${r.pos || (i+1)}</td>
+            <td class="team">${badgeCell(r.team)} <span>${r.team}</span></td>
+            <td class="tight">${r.played}</td>
+            <td class="tight">${r.won}</td>
+            <td class="tight">${r.draw}</td>
+            <td class="tight">${r.lost}</td>
+            <td class="tight">${r.goalsFor}</td>
+            <td class="tight">${r.goalsAgainst}</td>
+            <td class="tight">${r.goalDiff}</td>
+            <td class="tight">${r.points}</td>
+          </tr>
+        `).join('');
       }catch(e){
         body.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:14px">No table data.</td></tr>`;
       }
+    }
+
+    // ---- FIXTURES: robust extraction
+    function normalizeGame(g){
+      const home = g.home ?? g.homeTeam ?? g.home_name ?? g.home_team ?? g.teamHome ?? '';
+      const away = g.away ?? g.awayTeam ?? g.away_name ?? g.away_team ?? g.teamAway ?? '';
+      const comp = g.comp ?? g.competition ?? g.league ?? g.tournament ?? '';
+      const date = g.date ?? g.utcDate ?? g.kickoff ?? g.matchDate ?? g.start ?? '';
+      const timeUk = g.timeUk ?? g.time ?? g.kickoffTime ?? '';
+      const status = (g.status || '').toUpperCase();
+      const completed = g.completed ?? /FT|FULL|FINISHED|ENDED/.test(status);
+
+      const hs = g.hs ?? g.homeScore ?? g.scoreHome ?? g.fullTimeHome ?? '';
+      const as = g.as ?? g.awayScore ?? g.scoreAway ?? g.fullTimeAway ?? '';
+      const score = (hs!=='' && as!=='' ? `${hs}–${as}` : (g.score ?? ''));
+      const tv = g.tvUk ?? g.tv ?? g.channel ?? (g.broadcast && Array.isArray(g.broadcast) ? g.broadcast.join(', ') : '');
+
+      const skyUrl = g.skyUrl ?? (g.highlights && g.highlights.sky) || '';
+      const ytUrl  = g.ytUrl  ?? (g.highlights && g.highlights.yt)  || '';
+
+      return {date, timeUk, comp, home, away, tv, completed, score, skyUrl, ytUrl};
+    }
+
+    function pickGames(raw){
+      if (Array.isArray(raw)) return raw;
+      const candidates = [raw?.fixtures, raw?.matches, raw?.games, raw?.data, raw?.result].filter(Boolean);
+      for (const c of candidates){
+        if (Array.isArray(c)) return c;
+        const deep = findArrayDeep(c);
+        if (deep) return deep;
+      }
+      return findArrayDeep(raw) || [];
     }
 
     function fmtDate(d){
@@ -230,51 +310,46 @@
         const dt = new Date(d);
         if(!isNaN(dt)) return dt.toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
       }catch{}
-      return d ?? '';
+      return d || '';
     }
 
     async function loadFixtures(){
-      const upT = get('#upcoming tbody');
-      const reT = get('#recent tbody');
+      const upT = $('#upcoming tbody');
+      const reT = $('#recent tbody');
       try{
-        const data = await fetchJSON('/assets/fixtures.json');
-        if(!Array.isArray(data)) throw new Error('bad fixtures');
+        const raw = await getJSON('/assets/fixtures.json');
+        const arr = pickGames(raw).map(normalizeGame);
 
-        const upcoming = data.filter(g => !g.completed && !/FT/i.test(g.status || ''));
-        const recent   = data.filter(g =>  g.completed || /FT/i.test(g.status || '')).slice(-6).reverse();
+        const upcoming = arr.filter(g => !g.completed).slice(0, 6);
+        const recent   = arr.filter(g =>  g.completed).slice(-6).reverse();
 
         upT.innerHTML = upcoming.length
-          ? upcoming.map(g => {
-              const tv = g.tvUk ?? g.tv ?? g.channel ?? '';
-              return `<tr>
-                <td>${fmtDate(g.date)}</td>
-                <td>${g.timeUk ?? g.time ?? ''}</td>
-                <td>${g.comp ?? ''}</td>
-                <td>${g.home ?? ''}</td>
-                <td>${g.away ?? ''}</td>
-                <td>${tv || '—'}</td>
-              </tr>`;
-            }).join('')
-          : `<tr><td colspan="6" style="text-align:center; padding:10px">No upcoming fixtures.</td></tr>`;
+          ? upcoming.map(g => `
+            <tr>
+              <td>${fmtDate(g.date)}</td>
+              <td>${g.timeUk || ''}</td>
+              <td>${g.comp || ''}</td>
+              <td>${g.home || ''}</td>
+              <td>${g.away || ''}</td>
+              <td>${g.tv || '—'}</td>
+            </tr>`).join('')
+          : `<tr><td colspan="6" style="text-align:center; padding:10px">No fixtures data.</td></tr>`;
 
         reT.innerHTML = recent.length
           ? recent.map(g => {
-              const hs = g.scoreHome ?? g.hs ?? '';
-              const as = g.scoreAway ?? g.as ?? '';
               const sky = g.skyUrl ? `<a href="${g.skyUrl}" target="_blank" rel="noopener">Sky</a>` : '';
-              const yt  = g.ytUrl  ? `<a href="${g.ytUrl}" target="_blank" rel="noopener">YT</a>`  : '';
+              const yt  = g.ytUrl  ? `<a href="${g.ytUrl}"  target="_blank" rel="noopener">YT</a>`  : '';
               const links = [sky, yt].filter(Boolean).join(' · ') || '—';
               return `<tr>
                 <td>${fmtDate(g.date)}</td>
-                <td>${g.comp ?? ''}</td>
-                <td>${g.home ?? ''}</td>
-                <td>${g.away ?? ''}</td>
-                <td>${hs && as ? `${hs}–${as}` : (g.score ?? '')}</td>
+                <td>${g.comp || ''}</td>
+                <td>${g.home || ''}</td>
+                <td>${g.away || ''}</td>
+                <td>${g.score || ''}</td>
                 <td>${links}</td>
               </tr>`;
             }).join('')
-          : `<tr><td colspan="6" style="text-align:center; padding:10px">No recent results.</td></tr>`;
-
+          : `<tr><td colspan="6" style="text-align:center; padding:10px">No results data.</td></tr>`;
       }catch(e){
         upT.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:10px">No fixtures data.</td></tr>`;
         reT.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:10px">No results data.</td></tr>`;
