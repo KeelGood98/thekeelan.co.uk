@@ -2,7 +2,7 @@ name: Update extras data (weather + free games)
 
 on:
   schedule:
-    - cron: "*/120 * * * *"
+    - cron: "*/120 * * * *"  # every 2 hours
   workflow_dispatch:
   workflow_call:
 
@@ -19,12 +19,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build extras assets (never fail the job)
+      - name: Build extras assets (weather + free Steam games)
         shell: bash
         run: |
           set -u
+          mkdir -p assets
           python - <<'PY' || true
           import json, time, urllib.request, urllib.parse, sys, os, traceback
+
           os.makedirs("assets", exist_ok=True)
 
           def fetch(url, timeout=30):
@@ -32,8 +34,8 @@ jobs:
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
+          # Weather (Leeds) via Open-Meteo
           try:
-            # Weather (Leeds) via Open-Meteo
             wx_url = ("https://api.open-meteo.com/v1/forecast"
                       "?latitude=53.8008&longitude=-1.5491"
                       "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
@@ -47,20 +49,20 @@ jobs:
           except Exception as e:
             print("Weather error:", e); traceback.print_exc()
 
+          # Free Steam games via CheapShark
           try:
-            # Free Steam games via CheapShark
-            url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
-            deals = json.loads(fetch(url).decode("utf-8"))
+            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
+            deals = json.loads(fetch(deals_url).decode("utf-8"))
             games=[]
             for d in deals:
               try:
                 if str(d.get("salePrice","0")) == "0" or float(d.get("salePrice",0)) == 0.0:
                   appid = d.get("steamAppID")
-                  link = f"https://store.steampowered.com/app/{appid}/" if appid else None
+                  url = f"https://store.steampowered.com/app/{appid}/" if appid else None
                   games.append({
                     "title": d.get("title",""),
                     "steamAppID": appid,
-                    "url": link,
+                    "url": url,
                     "normalPrice": d.get("normalPrice"),
                     "dealRating": d.get("dealRating")
                   })
@@ -72,18 +74,26 @@ jobs:
           except Exception as e:
             print("Free games error:", e); traceback.print_exc()
 
-          # Never exit non-zero
+          # Always exit zero so the job continues
           sys.exit(0)
           PY
+
+      - name: Ensure placeholders exist (if APIs failed)
+        run: |
+          mkdir -p assets
+          [ -f assets/weather.json ] || echo '{"error":"unavailable","updated":null,"location":"Leeds, UK"}' > assets/weather.json
+          [ -f assets/free_games.json ] || echo '{"games":[],"updated":null}' > assets/free_games.json
+
       - name: Show results
         run: |
           ls -lah assets || true
-          for f in assets/*.json; do echo "---- $f"; head -c 400 "$f" || true; echo; done || true
+          echo "---- weather.json ----"; head -c 400 assets/weather.json || true; echo
+          echo "---- free_games.json ----"; head -c 400 assets/free_games.json || true; echo
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather.json assets/free_games.json
+          git add -A assets
           git commit -m "chore: refresh extras (weather + free games) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
