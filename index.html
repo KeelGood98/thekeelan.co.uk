@@ -20,17 +20,13 @@
     nav{display:flex;gap:8px}
     nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;opacity:.92}
     nav a.active{background:var(--accent);border-color:transparent;color:#04121f;font-weight:600}
-
-    /* wide, flexible grid */
     .grid{display:grid;grid-template-columns:minmax(340px,380px) 1.6fr 1.2fr;gap:18px}
     .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
     .card h2{margin:0;padding:14px 16px;border-bottom:1px solid var(--stroke);font-size:20px}
     .card-body{padding:14px 16px}
     .gif{width:100%;display:block}
-
-    /* Table */
     table{width:100%;border-collapse:collapse}
-    tbody{display:table-row-group !important} /* nuke any scrollable-tbody leftovers */
+    tbody{display:table-row-group !important}
     th,td{padding:10px 8px;text-align:center;font-size:14px}
     th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
     tbody tr{border-top:1px solid var(--stroke)}
@@ -68,13 +64,11 @@
     </header>
 
     <div class="grid">
-      <!-- LEFT: GIF only -->
       <div class="card">
         <h2>Left Panel</h2>
         <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
       </div>
 
-      <!-- MIDDLE: Table -->
       <div class="card" id="table-card">
         <div class="fx-head" style="padding-top:14px">
           <h2 style="border:none;padding:0">Premier League Table</h2>
@@ -92,7 +86,6 @@
         </table>
       </div>
 
-      <!-- RIGHT: Fixtures -->
       <div class="card" id="fx-card">
         <div class="fx-head">
           <h2 style="border:none;padding:0">Man United – Fixtures &amp; Results</h2>
@@ -127,7 +120,6 @@
   </div>
 
   <script>
-    // ---------- helpers ----------
     const bust = () => `?t=${Date.now()}`;
     const el = s => document.querySelector(s);
     const tb = s => el(s).querySelector("tbody");
@@ -142,12 +134,25 @@
     async function getJSON(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
     async function getText(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.text(); }catch{ return null; } }
 
+    // ----- tolerant badge matching -----
+    const normName = s => (s||"").toLowerCase().replace(/\bfc\b/g,"").replace(/&/g,"and").replace(/[.'’\-]/g,"").replace(/\s+/g," ").trim();
+    function getBadgeSrc(badgesObj, teamName){
+      if (!badgesObj) return null;
+      if (badgesObj[teamName]) return badgesObj[teamName];
+      if (!getBadgeSrc._cache){
+        const c = new Map();
+        for (const [k,v] of Object.entries(badgesObj)){ c.set(normName(k), v); }
+        getBadgeSrc._cache = c;
+      }
+      return getBadgeSrc._cache.get(normName(teamName)) || null;
+    }
+
     // ---------- deep array finder for table ----------
     function looksLikeTableRow(o){
       if (!o || typeof o!=="object") return false;
       const t = (o.team || o.teamName || o.name || (o.team?.name));
       const hasPos = ("pos" in o) || ("position" in o) || ("rank" in o);
-      const hasPts = ("pts" in o) || ("points" in o);
+      const hasPts = ("pts" in o) || ("points" in o) || ("total" in o);
       return !!t && (hasPos || hasPts);
     }
     function collectArrays(obj, out=[]){
@@ -158,7 +163,6 @@
     }
     function pickBestTableArray(obj){
       const arrays = collectArrays(obj, []);
-      // prefer bigger arrays that look like table rows
       const scored = arrays.map(a=>{
         const like = a.filter(looksLikeTableRow).length;
         return {a, score:like*100 + a.length};
@@ -171,47 +175,56 @@
       const won = r.won ?? r.w;
       const drawn = r.drawn ?? r.d;
       const lost = r.lost ?? r.l;
-      const gf = r.gf ?? r.goalsFor ?? r.f;
-      const ga = r.ga ?? r.goalsAgainst ?? r.a;
+      const gf = r.gf ?? r.goalsFor ?? r.f ?? r.goalsfor;
+      const ga = r.ga ?? r.goalsAgainst ?? r.a ?? r.goalsagainst;
       const gd = (r.gd!==undefined) ? r.gd : ( (gf!=null && ga!=null) ? (gf-ga) : "" );
       const pos = r.pos ?? r.position ?? r.rank ?? "";
-      const pts = r.pts ?? r.points ?? r.t ?? "";
+      const pts = r.pts ?? r.points ?? r.total ?? "";
       return { pos, team: teamName, played, won, drawn, lost, gf, ga, gd, pts };
     }
 
     // ---------- fixtures normaliser ----------
     function looksLikeMatch(o){
       if (!o || typeof o!=="object") return false;
-      const hasTeams = !!(o.home || o.away || o.homeTeam || o.awayTeam);
-      const hasDate = !!(o.date || o.utcDate || o.kickoff || o.start || o.matchDate);
+      const hasTeams = !!(o.home || o.away || o.homeTeam || o.awayTeam || o.strHomeTeam || o.strAwayTeam || o.teams);
+      const hasDate = !!(o.date || o.utcDate || o.kickoff || o.start || o.matchDate || o.strTimestamp || o.dateEvent);
       return hasTeams && hasDate;
     }
     function pickBestMatchArray(obj){
+      if (!obj) return [];
+      if (Array.isArray(obj)) return obj;
+      for (const k of ["matches","fixtures","events","games","data","schedule","items"]) {
+        if (Array.isArray(obj[k])) return obj[k];
+        if (obj[k] && typeof obj[k]==="object") {
+          for (const kk of ["matches","fixtures","events","games","items"]) {
+            if (Array.isArray(obj[k][kk])) return obj[k][kk];
+          }
+        }
+      }
       const arrays = collectArrays(obj, []);
       const scored = arrays.map(a=>{
         const like = a.filter(looksLikeMatch).length;
-        return {a, score:like*100 + a.length};
+        return {a, score: like*100 + a.length};
       }).sort((x,y)=>y.score-x.score);
       return scored.length ? scored[0].a : [];
     }
     function normaliseMatch(m){
-      const date = m.date || m.utcDate || m.kickoff || m.start || m.startTime || m.matchDate;
-      const hn = m.home?.name || m.homeTeam?.name || m.home || m.home_team || "";
-      const an = m.away?.name || m.awayTeam?.name || m.away || m.away_team || "";
-      const comp = m.comp || m.competition?.name || m.league || m.tournament || "";
-      const tv = m.tv || m.tv_uk || m.channel || m.broadcast || null;
+      const date = m.date || m.utcDate || m.kickoff || m.start || m.startTime || m.matchDate || m.strTimestamp || (m.dateEvent && (m.dateEvent+"T"+(m.strTime||"00:00:00Z")));
+      const hn = m.home?.name || m.homeTeam?.name || m.home || m.home_team || m.strHomeTeam || m.teams?.home?.name || "";
+      const an = m.away?.name || m.awayTeam?.name || m.away || m.away_team || m.strAwayTeam || m.teams?.away?.name || "";
+      const comp = m.comp || m.competition?.name || m.league || m.tournament || m.competition || m.strLeague || "";
+      const tv   = m.tv || m.tv_uk || m.channel || m.broadcast || (Array.isArray(m.broadcasts) ? m.broadcasts.join(", ") : m.broadcasts) || null;
+
       let homeS="", awayS="", outcome="";
-      if (m.score && typeof m.score === "object"){
-        homeS = (m.score.home ?? m.score.fullTime?.home ?? m.score.ft_home ?? "");
-        awayS = (m.score.away ?? m.score.fullTime?.away ?? m.score.ft_away ?? "");
-        outcome = (m.score.outcome || "").toLowerCase();
-      } else if (typeof m.score === "string"){
-        const mm = m.score.match(/(\d+)\D+(\d+)/);
-        if (mm){ homeS = +mm[1]; awayS = +mm[2]; }
+      const s = m.score || m.ft || m.result || {};
+      const hs = s.home ?? s.fullTime?.home ?? s.ft_home ?? s.h ?? m.intHomeScore;
+      const as = s.away ?? s.fullTime?.away ?? s.ft_away ?? s.a ?? m.intAwayScore;
+      if (hs !== undefined && hs !== "" && as !== undefined && as !== ""){
+        homeS = +hs; awayS = +as;
       }
-      const status = (m.status || "").toUpperCase();
-      const finished = status==="FINISHED" || m.completed === true || m.isFinished === true || (homeS!=="" && awayS!=="");
-      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome}, finished, highlights:m.highlights||{} };
+      const status = String(m.status||m.strStatus||"").toUpperCase();
+      const finished = status==="FINISHED" || status==="FT" || status==="MATCH FINISHED" || (homeS!=="" && awayS!=="");
+      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome:(finished ? (homeS===awayS?"d":(homeS>awayS?"w":"l")) : "")}, finished, highlights:m.highlights||{} };
     }
     function tvOverride(match, overrides){
       if (!overrides) return null;
@@ -225,29 +238,28 @@
       return hit?.tv || null;
     }
 
-    // ---------- render table ----------
     async function renderTable(){
-      const [table, badges] = await Promise.all([
+      const [table, badgesJson] = await Promise.all([
         getJSON("/assets/table.json"),
         getJSON("/assets/badges.json")
       ]);
 
-      const body = tb("#pl-table");
-      body.innerHTML = "";
+      const body = tb("#pl-table"); body.innerHTML = "";
 
-      const rawRows =
-        table?.standings || table?.table || table?.rows || table?.data || table?.teams ||
-        pickBestTableArray(table) || [];
+      if (!table){
+        el("#tableNote").textContent = "table.json not found or failed to parse.";
+        return 0;
+      }
+      const badges = badgesJson?.badges || badgesJson || null;
 
+      const rawRows = table?.standings || table?.table || table?.rows || table?.data || table?.teams || pickBestTableArray(table) || [];
       const rows = (Array.isArray(rawRows) ? rawRows : []).map(mapTableRow);
 
-      // small hint if data is truncated
       el("#tableNote").textContent = rows.length < 10
-        ? "Note: table source returned only " + rows.length + " rows (check /assets/table.json)."
-        : "";
+        ? `Note: table source returned only ${rows.length} rows (check /assets/table.json).` : "";
 
       rows.forEach(r=>{
-        const src = badges?.[r.team] || null;
+        const src = getBadgeSrc(badges, r.team);
         const tr = document.createElement("tr");
         tr.innerHTML = `
           <td>${r.pos}</td>
@@ -275,21 +287,26 @@
       return Number(tableUpdated||0);
     }
 
-    // ---------- render fixtures ----------
     async function renderFixtures(){
       const [fx, overrides] = await Promise.all([
         getJSON("/assets/fixtures.json"),
         getJSON("/assets/tv_overrides.json")
       ]);
 
-      const baseList =
-        fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : pickBestMatchArray(fx)) || [];
+      const upTB = tb("#fx-upcoming");
+      const rcTB = tb("#fx-recent");
+
+      if (!fx){
+        upTB.innerHTML = `<tr><td colspan="7" class="subtle">fixtures.json missing/invalid.</td></tr>`;
+        rcTB.innerHTML = `<tr><td colspan="7" class="subtle">fixtures.json missing/invalid.</td></tr>`;
+        return 0;
+      }
+      const baseList = fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : pickBestMatchArray(fx)) || [];
       const norm = baseList.map(normaliseMatch);
 
       const upcoming = norm.filter(m=>!m.finished).sort((a,b)=> new Date(a.date)-new Date(b.date)).slice(0,6);
       const recent   = norm.filter(m=> m.finished).sort((a,b)=> new Date(b.date)-new Date(a.date)).slice(0,6);
 
-      const upTB = tb("#fx-upcoming");
       upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
       upcoming.forEach(m=>{
         const tv = m.tv || tvOverride(m, overrides) || "—";
@@ -306,7 +323,6 @@
         `);
       });
 
-      const rcTB = tb("#fx-recent");
       rcTB.innerHTML = recent.length ? "" : `<tr><td colspan="7" class="subtle">No recent matches.</td></tr>`;
       recent.forEach(m=>{
         const oc = (m.score?.outcome || "").toLowerCase();
