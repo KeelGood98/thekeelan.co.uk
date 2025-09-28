@@ -29,13 +29,13 @@
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
 
-    /* Grid: centre card stays content-height; sides can stretch */
+    /* Grid: centre card stays content-height; sides can stretch to viewport */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
       padding:0 18px 24px;
-      align-items:start; /* <- prevents centre stretching */
+      align-items:start; /* prevents centre from stretching */
     }
     @media (max-width:1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width:980px){ .grid{grid-template-columns:1fr} }
@@ -121,7 +121,7 @@
   </div>
 
   <script>
-  // Set header height variable so left/right fill viewport nicely
+  // Set header height so left/right fill viewport without stretching the centre
   function setHeaderVar(){
     const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
     document.documentElement.style.setProperty('--hdr', h+'px');
@@ -140,18 +140,12 @@
     const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
 
     // ----- TABLE + BADGES -----
-    console.log("[badges] start");
     const [table, badgesFile] = await Promise.all([ getLocal('table.json'), getLocal('badges.json') ]);
     const tbody = document.getElementById("tableBody");
     const lu = document.getElementById("lastUpdated");
 
     const localBadges = {};
-    if (badgesFile?.badges) {
-      for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = toHttps(v || "");
-      console.log("[badges] local entries:", Object.keys(localBadges).length);
-    } else {
-      console.log("[badges] no local badges.json");
-    }
+    if (badgesFile?.badges) for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = toHttps(v || "");
 
     function rowHTML(r){
       const b = toHttps(r.badge || localBadges[norm(r.team)]);
@@ -174,7 +168,6 @@
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
     }
 
-    // Always try to upgrade initials to real crests
     function upgradeFromMap(map){
       document.querySelectorAll('.badge.initials[data-team]').forEach(el=>{
         const nm = el.getAttribute('data-team') || '';
@@ -184,64 +177,68 @@
           img.className = 'badge img';
           img.alt = '';
           img.referrerPolicy = 'no-referrer';
-          img.onerror = () => console.warn("[badges] img error:", nm, url);
           img.onload = () => el.replaceWith(img);
+          img.onerror = () => console.warn("[badges] image failed for", nm, url);
           img.src = url;
         }
       });
     }
 
-    // Try local map immediately (if any)
+    // Try local badges first
     if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
 
-    // Fetch league-wide maps (two endpoints), merge, then upgrade
-    async function fetchLeagueMaps(){
+    // League maps from TSDB
+    async function fetchTSDBLeagueMap(){
       const out = {...localBadges};
       try {
-        console.log("[badges] fetch search_all_teams …");
         const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
-        if (r1.ok) {
-          const j = await r1.json();
-          (j?.teams||[]).forEach(t => { out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""); });
-        }
-      } catch(e){ console.warn("[badges] search_all_teams failed", e); }
+        if (r1.ok) (await r1.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
+      } catch(e){ console.warn("[badges] TSDB search_all_teams failed", e); }
       try {
-        console.log("[badges] fetch lookup_all_teams …");
         const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
-        if (r2.ok) {
-          const j = await r2.json();
-          (j?.teams||[]).forEach(t => { out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""); });
-        }
-      } catch(e){ console.warn("[badges] lookup_all_teams failed", e); }
+        if (r2.ok) (await r2.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
+      } catch(e){ console.warn("[badges] TSDB lookup_all_teams failed", e); }
       return out;
     }
 
-    const leagueMap = await fetchLeagueMaps();
-    console.log("[badges] league map size:", Object.keys(leagueMap).length);
-    upgradeFromMap(leagueMap);
+    // Wikipedia fallback for any still missing
+    async function fetchWikiLogo(team){
+      try{
+        const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(team), {cache:'no-store'});
+        if (!r.ok) return null;
+        const j = await r.json();
+        // prefer originalimage, fallback to thumbnail
+        return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
+      }catch(e){ return null; }
+    }
 
-    // Targeted lookups for any that are STILL initials (handles odd names)
-    const still = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
-    if (still.length){
-      console.log("[badges] targeted lookups:", still.length);
-      for (const el of still.slice(0, 8)) { // be polite
-        const nm = el.getAttribute('data-team') || '';
-        try {
-          const r = await fetch('https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=' + encodeURIComponent(nm), {cache:'no-store'});
-          if (!r.ok) continue;
-          const j = await r.json();
-          const b = toHttps(j?.teams?.[0]?.strTeamBadge || "");
-          if (b) {
+    async function upgradeWithWiki(){
+      const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
+      if (!els.length) return;
+      // polite parallel (max 6 at once)
+      const chunk = async list => {
+        const batch = list.splice(0,6);
+        await Promise.all(batch.map(async el=>{
+          const name = el.getAttribute('data-team') || '';
+          const url  = await fetchWikiLogo(name);
+          if (url){
             const img = new Image();
             img.className = 'badge img';
             img.alt = '';
             img.referrerPolicy = 'no-referrer';
             img.onload = () => el.replaceWith(img);
-            img.src = b;
+            img.src = url;
           }
-        } catch(e){ console.warn("[badges] targeted lookup failed:", nm, e); }
-      }
+        }));
+        if (list.length) await chunk(list);
+      };
+      await chunk(els);
     }
+
+    // Merge TSDB league maps then try to upgrade; finally Wikipedia for stragglers
+    const leagueMap = await fetchTSDBLeagueMap();
+    upgradeFromMap(leagueMap);
+    await upgradeWithWiki();
 
     // ----- FIXTURES -----
     const fixtures = await getLocal('fixtures.json');
@@ -270,9 +267,9 @@
         const hm  = dt.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
         if (!/premier/i.test(comp||"")) return null;
         if (day === 'Sat' && hm === '12:30') return 'TNT Sports (est.)';
-        if (day === 'Sat' && (hm === '17:30' || '20:00'===hm)) return 'Sky Sports (est.)';
-        if (day === 'Sun' && (hm === '14:00' || '16:30'===hm || '19:00'===hm)) return 'Sky Sports (est.)';
-        if ((day === 'Mon' || day === 'Fri') && (hm === '19:45' || '20:00'===hm)) return 'Sky Sports (est.)';
+        if (day === 'Sat' && (hm === '17:30' || hm === '20:00')) return 'Sky Sports (est.)';
+        if (day === 'Sun' && (hm === '14:00' || hm === '16:30' || hm === '19:00')) return 'Sky Sports (est.)';
+        if ((day === 'Mon' || day === 'Fri') && (hm === '19:45' || hm === '20:00')) return 'Sky Sports (est.)';
         return 'TBD';
       }
 
