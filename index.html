@@ -14,6 +14,7 @@
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
     a{color:inherit;text-decoration:none}
+
     .wrap{max-width:1300px;margin:0 auto;padding:18px}
     header{display:flex;align-items:center;gap:12px;justify-content:space-between;margin-bottom:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:700}
@@ -29,11 +30,13 @@
 
     /* Left GIF + embed */
     .gif{width:100%;display:block}
-
     .embed{border:0;width:100%;height:580px}
 
     /* Table */
     table{width:100%;border-collapse:collapse}
+    /* RESET to avoid any accidental "scrollable tbody" rules from old CSS */
+    tbody{display:table-row-group !important;max-height:none !important;overflow:visible !important}
+    thead, tfoot{display:table-header-group}
     th,td{padding:10px 8px;text-align:center;font-size:14px}
     th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
     tbody tr{border-top:1px solid var(--stroke)}
@@ -87,10 +90,11 @@
         <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
         <div class="card-body">
           <h2 style="margin:-2px 0 8px 0;">R6 Tracker</h2>
-          <!-- Same embed that worked earlier -->
+          <!-- Use the variant that commonly embeds without 404.
+               If your original works again, swap the src back. -->
           <iframe
             class="embed"
-            src="https://tracker.gg/r6/profile/ubisoft/BambyOnSpice/overview?embed=true"
+            src="https://r6.tracker.network/profile/pc/BambyOnSpice?embed=true"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -155,49 +159,26 @@
     const bust = () => `?t=${Date.now()}`;
     const el = s => document.querySelector(s);
     const tb = s => el(s).querySelector("tbody");
-    const toISODate = (iso) => {
-      const d = new Date(iso);
-      return isNaN(d) ? null : d;
-    };
-    const fmtDate = iso => {
-      const d = toISODate(iso);
-      return d ? d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "—";
-    };
-    const fmtTime = iso => {
-      const d = toISODate(iso);
-      return d ? d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}) : "—";
-    };
+    const toDate = (v) => { const d = new Date(v); return isNaN(d) ? null : d; };
+    const fmtDate = v => { const d = toDate(v); return d ? d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "—"; };
+    const fmtTime = v => { const d = toDate(v); return d ? d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}) : "—"; };
     const initials = (name) => {
-      const parts = (name||"").split(/\s+/).filter(Boolean);
-      if (!parts.length) return "FC";
-      if (parts.length === 1) return parts[0][0].toUpperCase();
-      return (parts[0][0] + parts[parts.length-1][0]).toUpperCase();
+      const p = (name||"").split(/\s+/).filter(Boolean);
+      if (!p.length) return "FC";
+      return (p[0][0] + (p[p.length-1]?.[0]||"")).toUpperCase();
     };
-
-    async function tryFetchJSON(path){
-      try{
-        const r = await fetch(path + bust());
-        if (!r.ok) return null;
-        return await r.json();
-      }catch(e){ return null; }
-    }
-    async function tryFetchText(path){
-      try{
-        const r = await fetch(path + bust());
-        if (!r.ok) return null;
-        return await r.text();
-      }catch(e){ return null; }
-    }
+    async function getJSON(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
+    async function getText(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.text(); }catch{ return null; } }
 
     // ---------- Table ----------
     async function renderTable(){
       const [table, badges] = await Promise.all([
-        tryFetchJSON("/assets/table.json"),
-        tryFetchJSON("/assets/badges.json")
+        getJSON("/assets/table.json"),
+        getJSON("/assets/badges.json")
       ]);
-      const rows = (table?.standings || []);   // ALL teams
-      const tBody = tb("#pl-table");
-      tBody.innerHTML = "";
+      const rows = table?.standings || [];  // ALL rows
+      const body = tb("#pl-table");
+      body.innerHTML = "";
 
       rows.forEach(r=>{
         const src = badges?.[r.team] || null;
@@ -205,9 +186,7 @@
         tr.innerHTML = `
           <td>${r.pos ?? ""}</td>
           <td class="team">
-            <span class="badge">
-              ${src ? `<img src="${src}" alt="${r.team} badge">` : `<span>${initials(r.team)}</span>`}
-            </span>
+            <span class="badge">${src ? `<img src="${src}" alt="${r.team} badge">` : `<span>${initials(r.team)}</span>`}</span>
             <span>${r.team}</span>
           </td>
           <td>${r.played ?? ""}</td>
@@ -219,44 +198,37 @@
           <td>${r.gd ?? ""}</td>
           <td>${r.pts ?? ""}</td>
         `;
-        tBody.appendChild(tr);
+        body.appendChild(tr);
       });
 
       if (table?.updated){
         const d = new Date(table.updated);
         if (!isNaN(d)) el("#tableStamp").textContent = `Updated: ${d.toLocaleString("en-GB")}`;
       }
-      return table?.updated || 0;
+      return Number(table?.updated||0);
     }
 
     // ---------- Fixtures ----------
-    function tvFromOverrides(m, overrides){
+    function tvOverride(m, overrides){
       if (!overrides) return null;
-      // Try a few forgiving matches: by ISO date (yyyy-mm-dd) & opponent/home/away
       const day = (m.date||"").slice(0,10);
-      const cand = overrides.find(o=>{
-        const sameDay = o.date ? (o.date===day) : true;
-        const opp = (str)=> (str||"").toLowerCase();
-        const anyTeamMatch = o.home ? opp(o.home)===opp(m.home) : true;
-        const anyAwayMatch = o.away ? opp(o.away)===opp(m.away) : true;
-        return sameDay && anyTeamMatch && anyAwayMatch;
-      });
-      return cand?.tv || null;
+      return (overrides.find(o=>{
+        const okDay = o.date ? o.date===day : true;
+        const sameH = o.home ? o.home.toLowerCase()===(m.home||"").toLowerCase() : true;
+        const sameA = o.away ? o.away.toLowerCase()===(m.away||"").toLowerCase() : true;
+        return okDay && sameH && sameA;
+      })||{}).tv || null;
     }
 
     async function renderFixtures(){
       const [fx, overrides] = await Promise.all([
-        tryFetchJSON("/assets/fixtures.json"),
-        tryFetchJSON("/assets/tv_overrides.json")
+        getJSON("/assets/fixtures.json"),
+        getJSON("/assets/tv_overrides.json")
       ]);
 
-      const MU = "Manchester United";
-      const list = (fx?.matches || []).filter(m =>
-        (m.home||"").toLowerCase() === MU.toLowerCase() ||
-        (m.away||"").toLowerCase() === MU.toLowerCase()
-      );
+      // Use file as-is (assume it already contains MUFC only)
+      const list = fx?.matches || [];
 
-      // Upcoming
       const upcoming = list
         .filter(m => m.status==="SCHEDULED" || !m.score)
         .sort((a,b)=> new Date(a.date) - new Date(b.date))
@@ -265,7 +237,7 @@
       const upTB = tb("#fx-upcoming");
       upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
       upcoming.forEach(m=>{
-        const tv = m.tv || tvFromOverrides(m, overrides) || "—";
+        const tv = m.tv || tvOverride(m, overrides) || "—";
         upTB.insertAdjacentHTML("beforeend", `
           <tr>
             <td>${fmtDate(m.date)}</td>
@@ -279,7 +251,6 @@
         `);
       });
 
-      // Recent
       const recent = list
         .filter(m => m.status==="FINISHED" && m.score)
         .sort((a,b)=> new Date(b.date) - new Date(a.date))
@@ -307,22 +278,16 @@
         `);
       });
 
-      // Updated stamp (max of table/fixtures/update_stamp)
-      let stamp = 0;
-      if (fx?.updated) stamp = Math.max(stamp, fx.updated);
-      return stamp;
+      return Number(fx?.updated||0);
     }
 
     async function loadPage(){
-      const [tableUpdated, fixturesUpdated] = await Promise.all([
-        renderTable(),
-        renderFixtures()
-      ]);
+      const [tU, fU] = await Promise.all([renderTable(), renderFixtures()]);
 
       // Also allow update_stamp.txt as a last-resort stamp
-      let stamp = Math.max(Number(tableUpdated||0), Number(fixturesUpdated||0));
+      let stamp = Math.max(Number(tU||0), Number(fU||0));
       if (!stamp){
-        const txt = await tryFetchText("/assets/update_stamp.txt");
+        const txt = await getText("/assets/update_stamp.txt");
         if (txt){
           const d = new Date(txt.trim());
           if (!isNaN(d)) stamp = d.getTime();
