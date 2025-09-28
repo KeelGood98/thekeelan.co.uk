@@ -1,34 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Extras • thekeelan.co.uk</title>
-<meta name="theme-color" content="#0b0f14" />
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Extras • thekeelan.co.uk</title><meta name="theme-color" content="#0b0f14"/>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <style>
-:root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; }
-*{box-sizing:border-box}
-body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-  background:
-    linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.8)),
-    url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top/cover no-repeat fixed}
-.header{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px solid var(--border);background:rgba(11,15,20,.6);backdrop-filter:blur(8px)}
-a{color:var(--text);text-decoration:none}
-.grid{display:grid;gap:18px;padding:12px 18px 24px;grid-template-columns:1fr 1fr}
-@media (max-width:1000px){.grid{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
-.card h2{margin:0 0 8px}
-.muted{color:var(--muted)}
-.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.item{display:flex;gap:10px;align-items:center;padding:8px;border:1px solid var(--border);border-radius:10px}
-.item img{width:80px;height:40px;object-fit:cover;border-radius:8px}
-.badge{padding:0 6px;border:1px solid var(--border);border-radius:8px;margin-left:6px}
-</style>
-</head>
-<body>
-<header class="header">
-  <div>thekeelan.co.uk</div>
-  <nav><a href="/">Football</a></nav>
+:root{--text:#e9eef5;--muted:#9aa6b2;--card:#12161b;--border:#1e242c}
+*{box-sizing:border-box}body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.85)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center/cover fixed no-repeat}
+header{position:sticky;top:0;display:flex;align-items:center;gap:10px;padding:10px 16px;background:rgba(11,15,20,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+.muted{color:var(--muted)}.spacer{flex:1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+.list{list-style:none;margin:0;padding:0}.list li{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border:1px solid var(--border);border-radius:10px;margin:8px 0;background:#0f141a}
+</style></head><body>
+<header>
+  <strong>thekeelan.co.uk</strong><div class="spacer"></div>
+  <nav class="muted"><a href="/" class="muted" style="margin-right:10px">Football</a><a href="/extras.html" class="muted">Extras</a></nav>
 </header>
 
 <div class="grid">
@@ -39,54 +26,32 @@ a{color:var(--text);text-decoration:none}
 
   <section class="card">
     <h2>Steam Specials</h2>
-    <div id="deals" class="muted">Loading…</div>
+    <ul id="steam" class="list"><li class="muted">Loading…</li></ul>
+  </section>
+
+  <section class="card" style="grid-column:1/-1">
+    <h2>My Spotify Playlist</h2>
+    <!-- swap the playlist ID for yours if needed -->
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U?utm_source=generator" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </section>
 </div>
 
 <script>
-(async ()=>{
-  const bust = `?t=${Date.now()}`;
-  const j = async p => {
-    for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
-      try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
-    } return null;
-  };
+(async () => {
+  const bust=`?t=${Date.now()}`;
+  async function get(p){for(const u of[`/assets/${p}`,`assets/${p}`,`./assets/${p}`]){try{const r=await fetch(u+bust,{cache:'no-store'});if(r.ok)return r.json()}catch{}}return null}
 
-  // Weather
-  const wx = await j('weather.json');
-  const wxBox = document.getElementById('wx');
-  if (!wx) {
-    wxBox.textContent = 'No weather right now.';
-  } else {
-    const c = wx.current || {};
-    wxBox.innerHTML = `
-      <div class="row">
-        <div style="font-size:32px">${Math.round(c.temperature_2m ?? 0)}°C</div>
-        <div class="muted">Wind ${Math.round(c.wind_speed_10m ?? 0)} mph</div>
-      </div>
-    `;
-  }
+  const w = await get('weather.json'); const wx = document.getElementById('wx');
+  if(w?.current){ wx.innerHTML = `<div style="font-size:32px;font-weight:700">${Math.round(w.current.temperature_2m)}°C</div>
+    <div>Wind ${Math.round(w.current.wind_speed_10m)} mph</div><div class="muted" style="margin-top:6px">${w.location||'Leeds, UK'}</div>`; }
+  else { wx.textContent='No weather right now.'; }
 
-  // Specials
-  const sp = await j('specials.json');
-  const deals = document.getElementById('deals');
-  if (!sp?.specials?.length) {
-    deals.textContent = 'No specials right now.';
-  } else {
-    deals.innerHTML = sp.specials.slice(0,12).map(d => `
-      <a class="item" href="${d.url}" target="_blank" rel="noopener">
-        <img src="${d.header_image}" alt="">
-        <div>
-          <div>${d.name}</div>
-          <div class="muted">
-            £${(d.final_price/100).toFixed(2)}
-            <span class="badge">-${d.discount_percent}%</span>
-          </div>
-        </div>
-      </a>
-    `).join("");
-  }
+  const s = await get('steam_specials.json'); const ul = document.getElementById('steam');
+  if(!s?.items?.length){ ul.innerHTML = `<li class="muted">No specials right now.</li>`; }
+  else { ul.innerHTML = s.items.map(it=>`<li><div><strong>${it.title}</strong><br>
+    <small>£${it.salePrice.toFixed(2)} (was £${it.normalPrice.toFixed(2)})</small></div>
+    <div style="white-space:nowrap"><span style="padding:2px 8px;border:1px solid var(--border);border-radius:999px">${it.discount}% off</span>
+    ${it.url?` <a href="${it.url}" target="_blank" rel="noopener" style="margin-left:8px">Open</a>`:""}</div></li>`).join(''); }
 })();
 </script>
-</body>
-</html>
+</body></html>
