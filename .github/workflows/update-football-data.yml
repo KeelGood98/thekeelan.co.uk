@@ -3,8 +3,8 @@ name: Update football data / build
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes (optional)
-  workflow_call: {}           # <-- enables reuse from run-all.yml
+    - cron: "*/30 * * * *"
+  workflow_call: {}   # allows reuse later, but this file still runs by itself
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     env:
-      TSDB_KEY: ${{ secrets.TSDB_KEY }}
+      TSDB_KEY: ${{ secrets.TSDB_KEY }}   # ok if undefined; scripts fall back to '3'
       TSDB_LEAGUE_ID: "4328"
       SEASON: "2025-2026"
 
@@ -40,12 +40,12 @@ jobs:
         run: |
           echo "== assets =="
           ls -lah assets || true
-          echo "== preview table.json =="
-          head -c 600 assets/table.json || true; echo
-          echo "== preview badges.json =="
-          head -c 600 assets/badges.json || true; echo
-          echo "== preview fixtures.json =="
-          head -c 600 assets/fixtures.json || true; echo
+          echo "== table.json (first 400 bytes) =="
+          head -c 400 assets/table.json || true; echo
+          echo "== badges.json (first 400 bytes) =="
+          head -c 400 assets/badges.json || true; echo
+          echo "== fixtures.json (first 400 bytes) =="
+          head -c 400 assets/fixtures.json || true; echo
 
       - name: Commit and push
         run: |
