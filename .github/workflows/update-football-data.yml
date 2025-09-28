@@ -1,213 +1,48 @@
-name: Update site data (TSDB season → table + MUFC fixtures)
+name: Update football data / build
 
 on:
-  schedule:
-    - cron: "0 6 * * *"          # daily
   workflow_dispatch:
-  workflow_call:
-
-permissions:
-  contents: write
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      TSDB_KEY: ${{ secrets.TSDB_KEY }}
+      TSDB_LEAGUE_ID: "4328"
+      SEASON: "2025-2026"
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0        # allow rebase before push
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ---------- Premier League table (TSDB) ----------
-      - name: Build assets/table.json (TSDB)
+      - name: Update EPL table
+        run: python3 scripts/update_table.py
+
+      - name: Update badges
+        run: python3 scripts/update_badges.py
+
+      - name: Update fixtures (MUFC)
+        run: python3 scripts/update_fixtures.py
+
+      - name: Touch update stamp (force Pages redeploy)
+        run: date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+
+      - name: Commit & push changes
         run: |
-          python - <<'PY'
-          import json, time, urllib.request, urllib.parse, os
-          from datetime import datetime
-
-          os.makedirs("assets", exist_ok=True)
-
-          def fetch(url, timeout=40):
-            req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-              return r.read()
-
-          now = datetime.utcnow()
-          start = now.year if now.month >= 7 else now.year - 1
-          season = f"{start}-{start+1}"
-
-          # PL league table for the season
-          url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
-          data = json.loads(fetch(url).decode("utf-8"))
-          table = data.get("table") or []
-
-          rows = []
-          for t in table:
-            rows.append({
-              "pos": int(t.get("intRank") or 0),
-              "team": t.get("strTeam") or "",
-              "played": int(t.get("intPlayed") or 0),
-              "won": int(t.get("intWin") or 0),
-              "drawn": int(t.get("intDraw") or 0),
-              "lost": int(t.get("intLoss") or 0),
-              "gf": int(t.get("intGoalsFor") or 0),
-              "ga": int(t.get("intGoalsAgainst") or 0),
-              "gd": int(t.get("intGoalDifference") or 0),
-              "pts": int(t.get("intPoints") or 0)
-            })
-          rows.sort(key=lambda r: r["pos"] or 999)
-
-          out = {
-            "season": season,
-            "source": "TheSportsDB",
-            "updated": int(time.time()*1000),
-            "standings": rows
-          }
-          with open("assets/table.json","w") as f: json.dump(out, f)
-          print("Wrote assets/table.json with", len(rows), "rows for season", season)
-          PY
-
-      # ---------- MUFC fixtures (TSDB, filter from PL league season) ----------
-      - name: Build assets/fixtures.json (MUFC via TSDB – filtered from league)
-        run: |
-          python - <<'PY'
-          import json, time, urllib.request, urllib.parse, os
-          from datetime import datetime
-
-          os.makedirs("assets", exist_ok=True)
-
-          def fetch(url, timeout=40):
-            req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-              return r.read()
-
-          MU_NAME   = "Manchester United"
-          LEAGUE_ID = "4328"  # English Premier League
-
-          now = datetime.utcnow()
-          start = now.year if now.month >= 7 else now.year - 1
-          season = f"{start}-{start+1}"
-
-          # 1) Get the full PL season event list, then filter to MUFC
-          events = []
-          try:
-            url = f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={LEAGUE_ID}&s={urllib.parse.quote(season)}"
-            j = json.loads(fetch(url).decode("utf-8"))
-            events = j.get("events") or []
-          except Exception as e:
-            print("eventsseason (league) error:", e)
-
-          def iso_from(e):
-            ts = e.get("strTimestamp")
-            if ts:
-              ts = ts.replace(" ", "T")
-              if "Z" not in ts and "+" not in ts:
-                ts += "Z"
-              return ts
-            d  = (e.get("dateEvent") or "").strip()
-            tm = (e.get("strTime") or "00:00:00").strip()
-            if d and len(tm) == 5: tm += ":00"
-            return f"{d}T{tm}" if d else ""
-
-          def outcome_for_united(home, away, hs, as_):
-            if hs in (None,"") or as_ in (None,""): return None
-            try: hs, as_ = int(hs), int(as_)
-            except: return None
-            if home.lower() == MU_NAME.lower():
-              return "W" if hs>as_ else "D" if hs==as_ else "L"
-            if away.lower() == MU_NAME.lower():
-              return "W" if as_>hs else "D" if as_==hs else "L"
-            return None
-
-          mu_events = []
-          for e in events:
-            home = e.get("strHomeTeam") or ""
-            away = e.get("strAwayTeam") or ""
-            if home.lower() != MU_NAME.lower() and away.lower() != MU_NAME.lower():
-              continue
-            date = iso_from(e)
-            comp = e.get("strLeague") or ""
-            hs   = e.get("intHomeScore")
-            as_  = e.get("intAwayScore")
-            score = None
-            if hs not in (None,"") and as_ not in (None,""):
-              try: score = {"home": int(hs), "away": int(as_)}
-              except: pass
-            status = "FINISHED" if score else "SCHEDULED"
-            oc = outcome_for_united(home, away, hs, as_)
-            if score and oc: score["outcome"] = oc
-            mu_events.append({
-              "date": date,
-              "comp": comp,
-              "home": home,
-              "away": away,
-              "status": status,
-              "score": score,
-              "tv": ""
-            })
-
-          # 2) If for some reason league season failed, fallback to last/next by MU id (133612)
-          if not mu_events:
-            try:
-              mu_id = "133612"
-              last = json.loads(fetch(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={mu_id}").decode("utf-8")).get("results") or []
-              nxt  = json.loads(fetch(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={mu_id}").decode("utf-8")).get("events") or []
-              both = nxt + last
-              mu_events = []
-              for e in both:
-                date = iso_from(e)
-                comp = e.get("strLeague") or ""
-                home = e.get("strHomeTeam") or ""
-                away = e.get("strAwayTeam") or ""
-                hs   = e.get("intHomeScore")
-                as_  = e.get("intAwayScore")
-                score = None
-                if hs not in (None,"") and as_ not in (None,""):
-                  try: score = {"home": int(hs), "away": int(as_)}
-                  except: pass
-                status = "FINISHED" if score else "SCHEDULED"
-                oc = outcome_for_united(home, away, hs, as_)
-                if score and oc: score["outcome"] = oc
-                mu_events.append({
-                  "date": date,
-                  "comp": comp,
-                  "home": home,
-                  "away": away,
-                  "status": status,
-                  "score": score,
-                  "tv": ""
-                })
-            except Exception as e:
-              print("fallback last/next error:", e)
-
-          out = {
-            "team": MU_NAME,
-            "season": season,
-            "source": "TheSportsDB",
-            "updated": int(time.time()*1000),
-            "matches": mu_events
-          }
-          with open("assets/fixtures.json","w") as f: json.dump(out, f)
-          print("Wrote assets/fixtures.json with", len(mu_events), "MU events")
-          PY
-
-      - name: Verify outputs
-        run: |
-          echo "== assets =="
-          ls -lah assets || true
-          echo "== preview table.json =="
-          head -c 400 assets/table.json || true; echo
-          echo "== preview fixtures.json =="
-          head -c 400 assets/fixtures.json || true; echo
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/table.json assets/fixtures.json
-          git commit -m "chore: refresh football data (PL table + MU-only fixtures) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
-          git pull --rebase origin main || true
-          git push origin HEAD:main
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/*.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: refresh table, badges, fixtures"
+            git push
+          fi
