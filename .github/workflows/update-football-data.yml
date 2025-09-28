@@ -2,7 +2,7 @@ name: Update site data (table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"        # daily at 06:00 UTC
+    - cron: "0 6 * * *"    # daily 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -19,66 +18,101 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build assets/table.json from ESPN (20 teams)
+      - name: Build assets/table.json (ESPN; fallback TSDB)
         run: |
           python - <<'PY'
-          import json, time, urllib.request, ssl
-
+          import json, time, urllib.request, urllib.parse, ssl, sys, os
           ssl._create_default_https_context = ssl._create_unverified_context
-
-          URL = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
 
           def fetch(url):
             req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=30) as r:
               return r.read()
 
-          raw = json.loads(fetch(URL).decode("utf-8"))
+          def espn_table():
+            url = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
+            raw = json.loads(fetch(url).decode("utf-8"))
+            entries = []
 
-          entries = []
-          def walk(node):
-            if isinstance(node, dict):
-              if "standings" in node and node["standings"] and "entries" in node["standings"][0]:
-                entries.extend(node["standings"][0]["entries"])
-              for v in node.values(): walk(v)
-            elif isinstance(node, list):
-              for v in node: walk(v)
+            def walk(n):
+              if isinstance(n, dict):
+                if "standings" in n and n["standings"] and "entries" in n["standings"][0]:
+                  entries.extend(n["standings"][0]["entries"])
+                for v in n.values(): walk(v)
+              elif isinstance(n, list):
+                for v in n: walk(v)
 
-          walk(raw)
+            walk(raw)
+            rows=[]
+            for e in entries:
+              team = (e.get("team") or {}).get("displayName","")
+              stats = { s.get("name"): s.get("value") for s in (e.get("stats") or []) if isinstance(s,dict) and "name" in s }
+              if not team: 
+                continue
+              rows.append({
+                "pos": int(stats.get("rank",0) or 0),
+                "team": team,
+                "played": int(stats.get("gamesPlayed",0) or 0),
+                "won": int(stats.get("wins",0) or 0),
+                "drawn": int(stats.get("ties",0) or 0),
+                "lost": int(stats.get("losses",0) or 0),
+                "gf": int(stats.get("goalsFor",0) or 0),
+                "ga": int(stats.get("goalsAgainst",0) or 0),
+                "gd": int(stats.get("goalDifferential",0) or 0),
+                "pts": int(stats.get("points",0) or 0),
+              })
+            rows = [r for r in rows if r["team"]]
+            rows.sort(key=lambda r: r["pos"] or 999)
+            return rows
+
+          def tsdb_table():
+            # Season string e.g. 2025-2026
+            import datetime
+            now = datetime.datetime.utcnow()
+            start = now.year if now.month >= 7 else now.year - 1
+            season = f"{start}-{start+1}"
+            url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
+            data = json.loads(fetch(url).decode("utf-8"))
+            table = data.get("table") or []
+            rows=[]
+            for t in table:
+              rows.append({
+                "pos": int(t.get("intRank") or 0),
+                "team": t.get("strTeam") or "",
+                "played": int(t.get("intPlayed") or 0),
+                "won": int(t.get("intWin") or 0),
+                "drawn": int(t.get("intDraw") or 0),
+                "lost": int(t.get("intLoss") or 0),
+                "gf": int(t.get("intGoalsFor") or 0),
+                "ga": int(t.get("intGoalsAgainst") or 0),
+                "gd": int(t.get("intGoalDifference") or 0),
+                "pts": int(t.get("intPoints") or 0),
+              })
+            rows = [r for r in rows if r["team"]]
+            rows.sort(key=lambda r: r["pos"] or 999)
+            return rows
 
           rows = []
-          for e in entries:
-            team = (e.get("team") or {}).get("displayName","")
-            stats = { s["name"]: s.get("value") for s in (e.get("stats") or []) if "name" in s }
-            rows.append({
-              "pos": int(stats.get("rank", 0)),
-              "team": team,
-              "played": int(stats.get("gamesPlayed", 0)),
-              "won": int(stats.get("wins", 0)),
-              "drawn": int(stats.get("ties", 0)),
-              "lost": int(stats.get("losses", 0)),
-              "gf": int(stats.get("pointsFor", 0)),        # goals for
-              "ga": int(stats.get("pointsAgainst", 0)),    # goals against
-              "gd": int(stats.get("pointDifferential", 0)),
-              "pts": int(stats.get("points", 0))
-            })
+          try:
+            rows = espn_table()
+          except Exception as e:
+            print("ESPN table failed:", e, file=sys.stderr)
 
-          rows = [r for r in rows if r["team"]]
-          rows.sort(key=lambda r: r["pos"] or 999)
+          if len(rows) < 20:
+            try:
+              fallback = tsdb_table()
+              if len(fallback) >= len(rows):
+                rows = fallback
+            except Exception as e:
+              print("TSDB fallback failed:", e, file=sys.stderr)
 
-          out = {
-            "source": "ESPN",
-            "updated": int(time.time()*1000),
-            "standings": rows
-          }
-
-          import os
           os.makedirs("assets", exist_ok=True)
-          with open("assets/table.json","w") as f: json.dump(out, f)
-          print("wrote assets/table.json with", len(rows), "rows")
+          out = {"source":"ESPN+fallback","updated":int(time.time()*1000),"standings":rows}
+          with open("assets/table.json","w") as f: json.dump(out,f)
+          print("wrote assets/table.json rows:", len(rows))
           PY
 
-      - name: Build assets/fixtures.json (MUFC only)
+      - name: Build assets/fixtures.json (MUFC)
         run: |
           python update_fixtures.py
 
