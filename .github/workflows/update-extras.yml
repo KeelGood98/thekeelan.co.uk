@@ -1,8 +1,8 @@
-name: Update extras (weather + Steam specials)
+name: Update extras
 
 on:
   schedule:
-    - cron: "15,45 * * * *"    # every ~30 mins
+    - cron: "*/60 * * * *"   # hourly
   workflow_dispatch:
 
 permissions:
@@ -18,64 +18,52 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Build extras assets
         run: |
           python - <<'PY'
-          import json, time, urllib.request, sys, os
+          import json, time, urllib.request, os, sys
 
-          def fetch(url, timeout=30):
+          def get(url):
             req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-bot"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
               return r.read()
 
           os.makedirs("assets", exist_ok=True)
 
-          # Weather (Leeds, Open-Meteo)
+          # Leeds weather (Open-Meteo)
           try:
-            wx_url = ("https://api.open-meteo.com/v1/forecast"
-                      "?latitude=53.8008&longitude=-1.5491"
-                      "&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m"
-                      "&timezone=Europe%2FLondon")
-            wx = json.loads(fetch(wx_url).decode("utf-8"))
+            wx = json.loads(get(
+              "https://api.open-meteo.com/v1/forecast"
+              "?latitude=53.8008&longitude=-1.5491"
+              "&current=temperature_2m,wind_speed_10m"
+              "&timezone=Europe%2FLondon"
+            ).decode())
             wx["updated"] = int(time.time()*1000)
             wx["location"] = "Leeds, UK"
             with open("assets/weather.json","w") as f: json.dump(wx, f)
           except Exception as e:
-            print("weather failed:", e, file=sys.stderr)
+            print("weather err:", e, file=sys.stderr)
 
-          # Steam specials (CheapShark – store 1 is Steam)
+          # Steam specials (top discounts). If none, file still exists (empty list)
           try:
-            deals = json.loads(fetch("https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Savings&onSale=1&pageSize=40").decode())
-            specials=[]
+            deals = json.loads(get("https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Savings&pageSize=50").decode())
+            items=[]
             for d in deals:
               try:
-                normal = float(d.get("normalPrice", 0) or 0)
-                sale   = float(d.get("salePrice",   0) or 0)
-                if sale <= 0 or normal <= 0: 
-                  continue
-                pct = int(round((1 - sale/normal) * 100))
-                title = d.get("title","")
-                appid = d.get("steamAppID") or ""
-                url   = f"https://store.steampowered.com/app/{appid}/" if appid else d.get("dealID","")
-                specials.append({
-                  "title": title,
-                  "normalPrice": normal,
-                  "salePrice": sale,
-                  "discount": pct,
-                  "url": url
-                })
-              except:
-                pass
-            specials.sort(key=lambda x: (-x["discount"], x["salePrice"]))
-            with open("assets/steam_specials.json","w") as f:
-              json.dump({"updated": int(time.time()*1000), "items": specials[:20]}, f)
+                n=float(d.get("normalPrice",0) or 0); s=float(d.get("salePrice",0) or 0)
+                if n>0 and s>0 and s<n:
+                  pct=int(round((1-s/n)*100))
+                  url=f"https://store.steampowered.com/app/{d.get('steamAppID')}/" if d.get("steamAppID") else None
+                  items.append({"title":d.get("title",""),"normalPrice":n,"salePrice":s,"discount":pct,"url":url})
+              except: pass
+            items.sort(key=lambda x:(-x["discount"], x["salePrice"]))
+            with open("assets/steam_specials.json","w") as f: json.dump({"updated":int(time.time()*1000),"items":items[:20]}, f)
           except Exception as e:
-            print("specials failed:", e, file=sys.stderr)
+            print("specials err:", e, file=sys.stderr)
           PY
 
       - name: Commit & push
@@ -84,5 +72,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
           git add assets/weather.json assets/steam_specials.json
-          git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+          git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push origin HEAD:main
