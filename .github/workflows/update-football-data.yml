@@ -2,14 +2,8 @@ name: Update site data (table + badges + MUFC fixtures)
 
 on:
   schedule:
-    # Runs every day at 06:00 UTC (adjust if you like)
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * *"        # daily 06:00 UTC
   workflow_dispatch:
-
-# Prevent two runs from committing at the same time
-concurrency:
-  group: update-football-data
-  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -17,42 +11,116 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # This is the new script you created in /scripts
-      - name: Build table.json (20 teams) + badges.json
-        run: python scripts/update_table.py
+      # Build assets/table.json (all 20 teams) from TheSportsDB
+      - name: Build table.json
+        run: |
+          python - <<'PY'
+          import json, time, urllib.request, urllib.parse
+          from datetime import datetime
+          import os, sys
 
-      # Your existing script that writes assets/fixtures.json
+          os.makedirs("assets", exist_ok=True)
+
+          def fetch(url, to=30):
+            req = urllib.request.Request(url, headers={"User-Agent":"gh-actions"})
+            with urllib.request.urlopen(req, timeout=to) as r:
+              return r.read()
+
+          # Current PL season string, e.g. 2025-2026
+          now = datetime.utcnow()
+          start = now.year if now.month >= 7 else now.year - 1
+          season = f"{start}-{start+1}"
+
+          url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
+          data = json.loads(fetch(url).decode("utf-8"))
+          table = data.get("table") or []
+
+          rows=[]
+          for t in table:
+            rows.append({
+              "pos":   int(t.get("intRank") or 0),
+              "team":  t.get("strTeam") or "",
+              "played":int(t.get("intPlayed") or 0),
+              "won":   int(t.get("intWin") or 0),
+              "drawn": int(t.get("intDraw") or 0),
+              "lost":  int(t.get("intLoss") or 0),
+              "gf":    int(t.get("intGoalsFor") or 0),
+              "ga":    int(t.get("intGoalsAgainst") or 0),
+              "gd":    int(t.get("intGoalDifference") or 0),
+              "pts":   int(t.get("intPoints") or 0)
+            })
+          rows.sort(key=lambda r: r["pos"] or 999)
+
+          out = {
+            "season": season,
+            "source": "TheSportsDB",
+            "updated": int(time.time()*1000),
+            "standings": rows
+          }
+          with open("assets/table.json","w",encoding="utf-8") as f:
+            json.dump(out,f,ensure_ascii=False)
+          print(f"Wrote assets/table.json with {len(rows)} rows")
+          PY
+
+      # Build assets/badges.json from TSDB (league teams) + wiki fallback
+      - name: Build badges.json
+        run: |
+          python - <<'PY'
+          import json, urllib.request, os, re
+
+          os.makedirs("assets", exist_ok=True)
+
+          def fetch_json(url):
+            req = urllib.request.Request(url, headers={"User-Agent":"gh-actions"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+              return json.loads(r.read().decode("utf-8"))
+
+          def norm(s): return re.sub(r"[^a-z0-9]", "", (s or "").lower().replace("&","and"))
+          def https(u): return (u or "").replace("http://","https://")
+
+          # TSDB league teams (Premier League id 4328)
+          m = {}
+          try:
+            j = fetch_json("https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328")
+            for t in (j.get("teams") or []):
+              name = t.get("strTeam") or ""
+              badge = https(t.get("strTeamBadge") or "")
+              if name and badge:
+                m[norm(name)] = badge
+          except Exception as e:
+            print("TSDB badge fetch failed:", e)
+
+          # Known Wikipedia titles for exact crest fallback if needed (used client-side too)
+          wiki_titles = {
+            "brightonandhovealbion": "Brighton_&_Hove_Albion_F.C."
+          }
+          # Just store TSDB map here; the page will do wiki fallback for any gaps
+          with open("assets/badges.json","w") as f:
+            json.dump({"badges": m, "wiki_overrides": wiki_titles}, f)
+          print("Wrote assets/badges.json with", len(m), "entries")
+          PY
+
+      # Your existing MUFC fixtures script
       - name: Build fixtures.json
         run: python update_fixtures.py
 
-      # Optional: a human-readable stamp you can show on the site if you like
+      # Touch human-viewable timestamp
       - name: Touch update stamp
         run: |
-          mkdir -p assets
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          date -u +"%Y-%m-%d %H:%M:%S UTC" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
-      - name: Commit & push assets
+      - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "chore: refresh table+badges+fixtures $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-            # Rebase just in case another job touched the branch
-            git pull --rebase origin "${GITHUB_REF_NAME:-main}" || true
-            git push
-          fi
+          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git push
