@@ -2,9 +2,9 @@ name: Update extras data (weather + free games)
 
 on:
   schedule:
-    - cron: "*/120 * * * *"  # every 2 hours
+    - cron: "*/120 * * * *"
   workflow_dispatch:
-  workflow_call:            # <-- IMPORTANT for reusable workflow
+  workflow_call:
 
 permissions:
   contents: write
@@ -19,11 +19,12 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build extras assets
+      - name: Build extras assets (never fail the job)
+        shell: bash
         run: |
-          python - <<'PY'
-          import json, time, urllib.request, urllib.parse, sys, os
-
+          set -u
+          python - <<'PY' || true
+          import json, time, urllib.request, urllib.parse, sys, os, traceback
           os.makedirs("assets", exist_ok=True)
 
           def fetch(url, timeout=30):
@@ -31,8 +32,8 @@ jobs:
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # --- Leeds weather via Open-Meteo (no key) ---
           try:
+            # Weather (Leeds) via Open-Meteo
             wx_url = ("https://api.open-meteo.com/v1/forecast"
                       "?latitude=53.8008&longitude=-1.5491"
                       "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
@@ -44,30 +45,40 @@ jobs:
             with open("assets/weather.json","w") as f: json.dump(wx, f)
             print("Wrote assets/weather.json")
           except Exception as e:
-            print("Weather error:", e, file=sys.stderr)
+            print("Weather error:", e); traceback.print_exc()
 
-          # --- Free Steam games via CheapShark (no key) ---
           try:
-            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
-            deals = json.loads(fetch(deals_url).decode("utf-8"))
+            # Free Steam games via CheapShark
+            url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
+            deals = json.loads(fetch(url).decode("utf-8"))
             games=[]
             for d in deals:
-              if str(d.get("salePrice","0")) == "0" or float(d.get("salePrice",0)) == 0.0:
-                appid = d.get("steamAppID")
-                url = f"https://store.steampowered.com/app/{appid}/" if appid else None
-                games.append({
-                  "title": d.get("title",""),
-                  "steamAppID": appid,
-                  "url": url,
-                  "normalPrice": d.get("normalPrice"),
-                  "dealRating": d.get("dealRating")
-                })
+              try:
+                if str(d.get("salePrice","0")) == "0" or float(d.get("salePrice",0)) == 0.0:
+                  appid = d.get("steamAppID")
+                  link = f"https://store.steampowered.com/app/{appid}/" if appid else None
+                  games.append({
+                    "title": d.get("title",""),
+                    "steamAppID": appid,
+                    "url": link,
+                    "normalPrice": d.get("normalPrice"),
+                    "dealRating": d.get("dealRating")
+                  })
+              except Exception:
+                pass
             out = {"updated": int(time.time()*1000), "games": games}
             with open("assets/free_games.json","w") as f: json.dump(out, f)
             print(f"Wrote assets/free_games.json ( {len(games)} games )")
           except Exception as e:
-            print("Free games error:", e, file=sys.stderr)
+            print("Free games error:", e); traceback.print_exc()
+
+          # Never exit non-zero
+          sys.exit(0)
           PY
+      - name: Show results
+        run: |
+          ls -lah assets || true
+          for f in assets/*.json; do echo "---- $f"; head -c 400 "$f" || true; echo; done || true
 
       - name: Commit and push
         run: |
