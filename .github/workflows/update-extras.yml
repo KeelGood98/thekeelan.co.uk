@@ -1,8 +1,8 @@
-name: Update extras data (weather + free games)
+name: Update extras data (weather + Steam specials)
 
 on:
   schedule:
-    - cron: "*/120 * * * *"      # every 2 hours
+    - cron: "*/120 * * * *"    # every 2 hours
   workflow_dispatch:
 
 jobs:
@@ -21,16 +21,15 @@ jobs:
       - name: Build extras assets
         run: |
           python - <<'PY'
-          import json, time, urllib.request, urllib.parse, sys, os
-
+          import json, time, urllib.request, sys, os
           os.makedirs("assets", exist_ok=True)
 
-          def fetch(url, timeout=30):
+          def fetch(url):
             req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+            with urllib.request.urlopen(req, timeout=30) as r:
               return r.read()
 
-          # --- Leeds weather via Open-Meteo ---
+          # Weather (Open-Meteo)
           try:
             wx_url = ("https://api.open-meteo.com/v1/forecast"
                       "?latitude=53.8008&longitude=-1.5491"
@@ -40,43 +39,66 @@ jobs:
             wx = json.loads(fetch(wx_url).decode("utf-8"))
             wx["updated"] = int(time.time()*1000)
             wx["location"] = "Leeds, UK"
-            with open("assets/weather.json","w") as f: json.dump(wx, f)
-            print("Wrote assets/weather.json")
+            with open("assets/weather.json","w") as f: json.dump(wx,f)
           except Exception as e:
-            print("Weather error:", e, file=sys.stderr)
+            print("weather:",e,file=sys.stderr)
 
-          # --- Free Steam games via CheapShark ---
+          # Steam specials via CheapShark (top discounts)
           try:
-            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
-            deals = json.loads(fetch(deals_url).decode("utf-8"))
+            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=Savings&desc=1&pageSize=30"
+            arr = json.loads(fetch(deals_url).decode("utf-8"))
+            deals=[]
+            for d in arr:
+              if not d.get("isOnSale"):
+                continue
+              try:
+                savings = float(d.get("savings",0))
+              except:
+                savings = 0.0
+              if savings < 50:    # only show >=50% off
+                continue
+              appid = d.get("steamAppID")
+              deals.append({
+                "title": d.get("title",""),
+                "steamAppID": appid,
+                "url": (f"https://store.steampowered.com/app/{appid}/" if appid else d.get("dealID")),
+                "normalPrice": d.get("normalPrice"),
+                "salePrice": d.get("salePrice"),
+                "savings": savings
+              })
+            out = {"updated": int(time.time()*1000), "deals": deals}
+            with open("assets/deals.json","w") as f: json.dump(out,f)
+          except Exception as e:
+            print("deals:",e,file=sys.stderr)
+
+          # Still write freebies (may be empty)
+          try:
+            free_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
+            arr = json.loads(fetch(free_url).decode("utf-8"))
             games=[]
-            for d in deals:
+            for d in arr:
               price = str(d.get("salePrice","0")).strip()
-              if price in {"0","0.00"} or float(price or 0) == 0.0:
+              if price in {"0","0.00"}:
                 appid = d.get("steamAppID")
-                url = f"https://store.steampowered.com/app/{appid}/" if appid else None
                 games.append({
                   "title": d.get("title",""),
                   "steamAppID": appid,
-                  "url": url,
-                  "normalPrice": d.get("normalPrice"),
-                  "dealRating": d.get("dealRating")
+                  "url": f"https://store.steampowered.com/app/{appid}/" if appid else None,
+                  "normalPrice": d.get("normalPrice")
                 })
-            out = {"updated": int(time.time()*1000), "games": games}
-            with open("assets/free_games.json","w") as f: json.dump(out, f)
-            print("Wrote assets/free_games.json (", len(games), "games )")
+            with open("assets/free_games.json","w") as f: json.dump({"updated": int(time.time()*1000), "games": games}, f)
           except Exception as e:
-            print("Free games error:", e, file=sys.stderr)
+            print("freebies:",e,file=sys.stderr)
           PY
 
       - name: Touch update stamp
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
 
-      - name: Commit and push
+      - name: Commit & push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather.json assets/free_games.json assets/update_stamp.txt
+          git add assets/weather.json assets/deals.json assets/free_games.json assets/update_stamp.txt
           git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
