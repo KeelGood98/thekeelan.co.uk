@@ -1,36 +1,35 @@
+#!/usr/bin/env python3
 import os
-from fetch_helpers import http_get_json, write_json_atomic, qs
+from fetch_helpers import http_get_json, save_json, now_iso
 
-APIKEY = os.getenv("TSDB_KEY", "3")
-SEASON = os.getenv("SEASON", "2025-2026")
-LEAGUE_ID = os.getenv("TSDB_LEAGUE_ID", "4328")
-OUT = "assets/badges.json"
+OUT_PATH = os.path.join("assets", "badges.json")
 
-def fetch_team_badges():
-    url = qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/lookuptable.php", l=LEAGUE_ID, s=SEASON)
-    j = http_get_json(url)
-    teams = j.get("table") or []
-    badges = {}
-    for t in teams:
-        name = t.get("name") or t.get("team") or ""
-        tid  = t.get("teamid") or t.get("team_id")
-        badge = None
-        if tid:
-            d = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/lookupteam.php", id=tid))
-            arr = d.get("teams") or []
-            if arr: badge = arr[0].get("strTeamBadge")
-        if not badge and name:
-            d = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/searchteams.php", t=name))
-            arr = d.get("teams") or []
-            if arr: badge = arr[0].get("strTeamBadge")
-        badges[name] = badge or None
-    return badges
+def norm(s): 
+    return (s or "").strip()
 
 def main():
-    badges = fetch_team_badges()
-    out = { "season": SEASON, "updated": None, "badges": badges }
-    write_json_atomic(OUT, out)
-    print(f"[badges] Wrote {OUT} with {len(badges)} teams.")
+    api_key = os.environ.get("TSDB_API_KEY") or "3"
+    # two endpoints to be robust
+    urls = [
+        f"https://www.thesportsdb.com/api/v1/json/{api_key}/search_all_teams.php?l=English%20Premier%20League",
+        f"https://www.thesportsdb.com/api/v1/json/{api_key}/lookup_all_teams.php?id=4328",
+    ]
+    badges = {}
+    for u in urls:
+        try:
+            data = http_get_json(u) or {}
+            for t in (data.get("teams") or []):
+                name = norm(t.get("strTeam"))
+                crest = norm(t.get("strTeamBadge") or t.get("strTeamLogo") or "")
+                if name and crest and name not in badges:
+                    badges[name] = crest.replace("http://", "https://")
+        except Exception as e:
+            print("[badges] WARN", e)
+            continue
+
+    save_json(OUT_PATH, {"updated": now_iso(), "badges": badges})
+    print(f"[badges] OK wrote {len(badges)} crests to {OUT_PATH}")
+    return 0
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
