@@ -1,124 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Mum – Extras</title>
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <meta name="theme-color" content="#0b0f14" />
-  <style>
-    :root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --hdr:72px; }
-    *{box-sizing:border-box} html,body{height:100%}
-    body{
-      margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0.80)),
-        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
-      background-color:#0b0f14;
-    }
-    header{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:12px;padding:10px 18px;
-      backdrop-filter: blur(8px); background: rgba(11,15,20,0.6); border-bottom:1px solid var(--border);}
-    .brand{display:flex;gap:10px;align-items:center}
-    .brand-logo{width:28px;height:28px;border-radius:6px;background:
-      radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%), radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%);
-      box-shadow:0 0 0 1px #2a3340 inset}
-    .brand h1{margin:0;font-size:18px}
-    .nav{display:flex; gap:10px; margin-left:auto}
-    .nav a{padding:8px 12px;border:1px solid var(--border);border-radius:999px;color:var(--muted);text-decoration:none}
-    .nav a.active{color:#fff;border-color:transparent;background:linear-gradient(90deg,rgba(110,231,255,.20),rgba(167,139,250,.20));box-shadow:0 0 0 1px rgba(110,231,255,.25) inset}
-    .grid{display:grid;grid-template-columns:1.4fr 1.4fr;gap:18px;padding:12px 18px 24px;align-items:start}
-    @media (max-width: 1000px){ .grid{grid-template-columns:1fr} }
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
-    .card h2{margin:0 0 8px}
-    .muted{color:var(--muted)}
-    iframe{width:100%;border:0;border-radius:12px;min-height:380px}
-    ul.deals{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:10px}
-    ul.deals li{border:1px solid var(--border);border-radius:10px;padding:10px}
-    .row{display:flex;gap:12px;align-items:center;justify-content:space-between}
-    .small{font-size:12px;color:var(--muted)}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Extras</title>
+<meta name="theme-color" content="#0b0f14">
+<style>
+  :root{--text:#e9eef5;--muted:#9aa6b2;--card:#12161b;--border:#1e242c}
+  body{margin:0;background:#0b0f14;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+  header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--border)}
+  .grid{display:grid;gap:18px;padding:18px;grid-template-columns:1.2fr 1fr}
+  @media (max-width:1000px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
+  .muted{color:var(--muted)}
+  .deal{display:grid;grid-template-columns:64px 1fr auto;gap:10px;align-items:center;border-bottom:1px solid var(--border);padding:10px 0}
+  .deal img{width:64px;height:32px;object-fit:cover;border-radius:6px}
+  .pill{border:1px solid var(--border);padding:2px 6px;border-radius:999px}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand"><div class="brand-logo"></div><h1>thekeelan.co.uk</h1></div>
-    <nav class="nav"><a href="/">Football</a><a class="active" href="/extras.html">Extras</a></nav>
-  </header>
+<header>
+  <div>thekeelan.co.uk</div>
+  <nav><a href="/" style="color:var(--muted);text-decoration:none">Football</a></nav>
+</header>
 
-  <div class="grid">
-    <section class="card">
-      <h2>Leeds Weather</h2>
-      <div id="wx" class="muted">Loading…</div>
-    </section>
+<div class="grid">
+  <section class="card">
+    <h2>Leeds Weather</h2>
+    <div id="weather" class="muted">Loading…</div>
+  </section>
 
-    <section class="card">
-      <h2>My Spotify Playlist</h2>
-      <iframe style="background:#000" src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </section>
+  <section class="card">
+    <h2>Steam Specials</h2>
+    <div id="deals" class="muted">Loading…</div>
+  </section>
+</div>
 
-    <section class="card" style="grid-column:1 / -1">
-      <h2>Steam Specials (≥50% off)</h2>
-      <div id="deals" class="muted">Loading…</div>
-    </section>
-  </div>
-
-  <script>
+<script>
+(async () => {
   const bust = `?t=${Date.now()}`;
-  const paths = p => [`/assets/${p}`, `assets/${p}`, `./assets/${p}`];
-  const getJSON = async p => {
-    for (const u of paths(p)) { try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {} }
+  async function getJSON(name){
+    for (const p of [`/assets/${name}`, `assets/${name}`, `./assets/${name}`]){
+      try{ const r=await fetch(p+bust,{cache:'no-store'}); if(r.ok) return r.json(); }catch{}
+    }
     return null;
-  };
+  }
 
-  (async () => {
-    // Weather
-    const wx = await getJSON('weather.json');
-    const wxBox = document.getElementById('wx');
-    if (wx?.current && wx?.daily) {
-      const now = wx.current || {};
-      const days = wx.daily || {};
-      const day = i => (days.time||[])[i];
-      const max = i => (days.temperature_2m_max||[])[i];
-      const min = i => (days.temperature_2m_min||[])[i];
-      let items = "";
-      for (let i=0;i<5;i++){
-        if(!day(i)) break;
-        const d = new Date(day(i));
-        items += `<div style="border:1px solid var(--border);border-radius:10px;padding:10px;flex:1">
-          <div class="small">${d.toLocaleDateString('en-GB',{weekday:'short'})}</div>
-          <div>${Math.round(max(i))}° / ${Math.round(min(i))}°</div>
-        </div>`;
-      }
-      wxBox.innerHTML = `
-        <div style="font-size:36px;font-weight:700">${Math.round(now.temperature_2m)}°C</div>
-        <div class="small">${wx.location || "Leeds, UK"} • ${new Date(wx.updated||Date.now()).toLocaleString()}</div>
-        <div style="display:flex;gap:10px;margin-top:10px">${items}</div>
-      `;
-    } else {
-      wxBox.textContent = "Weather unavailable.";
-    }
+  // weather
+  const wx = await getJSON('weather.json');
+  const w = document.getElementById('weather');
+  if(!wx?.current){ w.textContent='No weather data.'; }
+  else {
+    const c = wx.current;
+    w.innerHTML = `<div style="font-size:22px">${Math.round(c.temperature_2m)}°C</div>
+                   <div class="muted">Wind ${Math.round(c.wind_speed_10m)} mph</div>`;
+  }
 
-    // Steam specials
-    const deals = await getJSON('deals.json');
-    const node = document.getElementById('deals');
-    const list = deals?.deals || [];
-    if (!list.length) {
-      node.textContent = "No big discounts right now.";
-      return;
-    }
-    node.innerHTML = `<ul class="deals">${
-      list.map(d => `
-        <li>
-          <div class="row">
-            <div>
-              <strong>${d.title}</strong>
-              <div class="small">£${d.salePrice} (was £${d.normalPrice}) – ${Math.round(d.savings)}% off</div>
-            </div>
-            ${d.url ? `<a href="${d.url}" target="_blank" rel="noopener noreferrer" style="padding:6px 10px;border:1px solid var(--border);border-radius:8px">View</a>` : ""}
-          </div>
-        </li>
-      `).join("")}
-    </ul>`;
-  })();
-  </script>
+  // steam deals
+  const deals = await getJSON('steam_deals.json');
+  const d = document.getElementById('deals');
+  if(!deals?.deals?.length){ d.textContent='No specials right now.'; }
+  else {
+    d.classList.remove('muted');
+    d.innerHTML = deals.deals.map(g=>`
+      <div class="deal">
+        <img src="${g.capsule_image||''}" alt="">
+        <div>
+          <div>${g.title}</div>
+          <a href="${g.url}" target="_blank" rel="noopener noreferrer" class="muted">${g.url}</a>
+        </div>
+        <div><span class="pill">-${g.discount_percent}%</span></div>
+      </div>
+    `).join('');
+  }
+})();
+</script>
 </body>
 </html>
