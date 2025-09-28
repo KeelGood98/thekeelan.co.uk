@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>thekeelan.co.uk</title>
+  <title>Your Mum</title>
 
-  <!-- Favicon / tab icon -->
+  <!-- Favicon / tab icon (optional) -->
+  <!-- Put a file in /assets (e.g. favicon.svg or favicon-32.png) and point to it here -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"> -->
-  <link rel="apple-touch-icon" href="/assets/favicon-192.png">
   <meta name="theme-color" content="#0b0f14" />
 
   <style>
     :root{
-      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c;
-      --accent:#6ee7ff; --hdr:72px; /* JS will overwrite --hdr to the real header height */
+      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
+      --hdr:72px; /* JS will replace this with the real header height */
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -31,13 +31,13 @@
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
 
-    /* Grid: centre is content-height; left/right can stretch to viewport */
+    /* Grid: centre is content-height; sides may stretch */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
       padding:0 18px 24px;
-      align-items:start;            /* <- critical: stops auto-stretch on the middle card */
+      align-items:start;            /* <- prevents centre from stretching */
     }
     @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
@@ -89,7 +89,7 @@
       </div>
     </section>
 
-    <!-- CENTRE (content-height only; no internal gap) -->
+    <!-- CENTRE (content-height only; no fake gap) -->
     <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
@@ -114,7 +114,7 @@
   </div>
 
   <script>
-  // measure header height so left/right can fill the viewport without forcing centre taller
+  // Keep left/right perfectly filling the viewport without forcing the centre taller
   function setHeaderVar(){
     const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
     document.documentElement.style.setProperty('--hdr', h+'px');
@@ -128,24 +128,30 @@
         try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
       } return null;
     };
+    const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
 
     // ===== TABLE + BADGES =====
+    console.log("[table] loading…");
     const [table, badgesFile] = await Promise.all([
       getLocal('table.json'),
-      getLocal('badges.json')        // optional, written by the Action
+      getLocal('badges.json')
     ]);
-
     const tbody = document.getElementById("tableBody");
     const lu = document.getElementById("lastUpdated");
 
-    // local badge map (from assets/badges.json if present)
     const localBadges = {};
-    if (badgesFile && badgesFile.badges) {
-      for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[k.toLowerCase()] = v || null;
+    if (badgesFile?.badges) {
+      for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = v || null;
+      console.log("[badges] local file entries:", Object.keys(badgesFile.badges).length);
+    } else {
+      console.log("[badges] no local badges.json found");
     }
 
-    function rowHTML(r, badgeUrl){
-      const badge = badgeUrl ? `<img class="badge img" src="${badgeUrl}" alt="">` : `<span class="badge" data-team="${r.team}"></span>`;
+    function rowHTML(r){
+      const bLocal = localBadges[norm(r.team)];
+      const b = r.badge || bLocal || null;
+      const badge = b ? `<img class="badge img" src="${b}" alt="">`
+                      : `<span class="badge missing-badge" data-team="${r.team}"></span>`;
       return `
         <tr>
           <td>${r.pos ?? ""}</td>
@@ -155,42 +161,84 @@
         </tr>`;
     }
 
-    const norms = s => (s||"").toLowerCase();
-
-    if (!table || !Array.isArray(table.standings) || table.standings.length === 0) {
+    if (!table?.standings?.length) {
       tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
-      tbody.innerHTML = table.standings
-        .map(r => rowHTML(r, r.badge || localBadges[norms(r.team)] || null))
-        .join("");
+      tbody.innerHTML = table.standings.map(rowHTML).join("");
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
+    }
 
-      // If any badges are still missing, fetch once from TSDB and patch
-      if (document.querySelector('[data-team]')) {
+    // If any badges still missing, fetch league-wide mappings, then (if needed) targeted lookups
+    const missingEls = () => Array.from(document.querySelectorAll('.missing-badge[data-team]'));
+    async function patchBadgesFromMap(map){
+      missingEls().forEach(el=>{
+        const nm = el.getAttribute('data-team') || '';
+        const url = map[norm(nm)];
+        if (url) {
+          const img = new Image();
+          img.className = 'badge img'; img.alt = ''; img.src = url;
+          img.onload = () => el.replaceWith(img);
+        }
+      });
+    }
+
+    async function fetchLeagueBadges(){
+      // Try two endpoints (some users report one or the other being flakier)
+      const maps = [];
+      try {
+        console.log("[badges] TSDB search_all_teams…");
+        const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
+        if (r1.ok) {
+          const j1 = await r1.json();
+          const m1 = {};
+          (j1?.teams||[]).forEach(t => m1[norm(t.strTeam)] = t.strTeamBadge || null);
+          maps.push(m1);
+        }
+      } catch(e){ console.warn("[badges] search_all_teams failed", e); }
+      try {
+        console.log("[badges] TSDB lookup_all_teams…");
+        const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
+        if (r2.ok) {
+          const j2 = await r2.json();
+          const m2 = {};
+          (j2?.teams||[]).forEach(t => m2[norm(t.strTeam)] = t.strTeamBadge || null);
+          maps.push(m2);
+        }
+      } catch(e){ console.warn("[badges] lookup_all_teams failed", e); }
+      // Merge with local
+      const merged = {...localBadges};
+      maps.forEach(m => Object.entries(m).forEach(([k,v]) => { if (v) merged[k]=v; }));
+      return merged;
+    }
+
+    if (missingEls().length) {
+      const leagueMap = await fetchLeagueBadges();
+      console.log("[badges] league map size:", Object.keys(leagueMap).length);
+      await patchBadgesFromMap(leagueMap);
+
+      // Last resort: direct searches for any still missing (limit to 8 to be polite)
+      const still = missingEls().slice(0,8);
+      for (const el of still) {
+        const nm = el.getAttribute('data-team') || '';
         try {
-          const all = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
-          if (all.ok) {
-            const js = await all.json();
-            const map = {};
-            (js?.teams || []).forEach(t => { map[norms(t.strTeam)] = t.strTeamBadge || null; });
-            document.querySelectorAll('[data-team]').forEach(el => {
-              const nm = norms(el.getAttribute('data-team') || '');
-              const b = map[nm] || localBadges[nm] || null;
-              if (b) {
-                const img = new Image();
-                img.className = 'badge img'; img.alt = ''; img.src = b;
-                img.onload = () => el.replaceWith(img);
-              }
-            });
+          console.log("[badges] targeted search:", nm);
+          const r = await fetch('https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=' + encodeURIComponent(nm), {cache:'no-store'});
+          if (!r.ok) continue;
+          const j = await r.json();
+          const b = j?.teams?.[0]?.strTeamBadge || null;
+          if (b) {
+            const img = new Image();
+            img.className = 'badge img'; img.alt = ''; img.src = b;
+            img.onload = () => el.replaceWith(img);
           }
-        } catch {}
+        } catch(e){ console.warn("[badges] targeted search failed for", nm, e); }
       }
     }
 
     // ===== FIXTURES =====
     const fixtures = await getLocal('fixtures.json');
     const wrap = document.getElementById("fixturesWrap");
-    if (!fixtures || !Array.isArray(fixtures.matches)) {
+    if (!fixtures?.matches?.length) {
       wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
     } else {
       const t = s => new Date(s).getTime() || 0;
