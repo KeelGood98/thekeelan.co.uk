@@ -5,27 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>thekeelan.co.uk</title>
 <meta name="theme-color" content="#0b0f14" />
-
 <style>
-:root{
-  --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
-  --hdr:72px;
-}
+:root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; --hdr:72px; }
 *{box-sizing:border-box}
 html,body{height:100%}
 body{
-  margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+  margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
   background:
-    linear-gradient(180deg, rgba(0,0,0,0.6), rgba(0,0,0,0.80)),
-    url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
+    linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top/cover no-repeat fixed;
   background-color:#0b0f14;
 }
-
-/* Header */
-.site-header{
-  position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:12px;padding:10px 18px;
-  background:rgba(11,15,20,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)
-}
+.site-header{position:sticky;top:0;z-index:40;display:flex;gap:12px;align-items:center;padding:10px 18px;background:rgba(11,15,20,.6);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
 .brand{display:flex;gap:10px;align-items:center}
 .brand-logo{width:28px;height:28px;border-radius:6px;background:
   radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
@@ -36,22 +27,17 @@ body{
 .nav a.active{color:var(--text);background:rgba(110,231,255,.15);border-color:transparent}
 #lastUpdated{white-space:nowrap}
 
-/* Grid layout */
-.grid{
-  display:grid; gap:18px; padding:12px 18px 24px;
-  grid-template-columns:1fr 1.6fr 1.2fr;
-  align-items:start;
-}
-@media (max-width:1200px){ .grid{grid-template-columns:1fr 1fr} }
-@media (max-width:980px){ .grid{grid-template-columns:1fr} }
+.grid{display:grid;gap:18px;padding:12px 18px 24px;grid-template-columns:1fr 1.6fr 1.2fr;align-items:start}
+@media (max-width:1200px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:980px){.grid{grid-template-columns:1fr}}
 
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
 .card h2{margin:0 0 8px}
 .muted{color:var(--muted)}
+/* no stretch on the left → no blank area below gif */
 .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
 .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
 
-/* Table */
 table{width:100%;border-collapse:collapse}
 th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
 thead th{position:sticky;top:0;background:#0f141a;z-index:1}
@@ -60,18 +46,13 @@ tr:hover td{background:#0f141a}
 .badge{width:20px;height:20px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#0f141a;font-weight:700;font-size:11px}
 .badge.img{background:none}
 .badge.initials{background: radial-gradient(closest-side,#1a2430,#0f141a);border:1px solid #243041;color:#b6c2cf;text-transform:uppercase}
-
-/* Results colouring */
-.W{background:#10361f} .D{background:#2b2b17} .L{background:#3a1a1a}
+.W{background:#10361f}.D{background:#2b2b17}.L{background:#3a1a1a}
 a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px}
 </style>
 </head>
 <body>
 <header id="siteHeader" class="site-header">
-  <div class="brand">
-    <div class="brand-logo" aria-hidden="true"></div>
-    <h1>thekeelan.co.uk</h1>
-  </div>
+  <div class="brand"><div class="brand-logo"></div><h1>thekeelan.co.uk</h1></div>
   <div class="spacer"></div>
   <div class="muted" id="lastUpdated">Last updated: —</div>
   <nav class="nav" aria-label="Primary">
@@ -81,22 +62,21 @@ a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border
 </header>
 
 <div class="grid">
-  <!-- Left -->
-  <section class="card stretch">
+  <!-- LEFT: content height only (no stretch) -->
+  <section class="card">
     <h2>Left Panel</h2>
-    <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
-           alt="gif" style="display:block;width:100%;height:auto;">
+    <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" style="display:block;width:100%;height:auto">
     </div>
   </section>
 
-  <!-- Centre -->
-  <section class="card" style="align-self:start;height:max-content;">
+  <!-- CENTRE -->
+  <section class="card" style="align-self:start;height:max-content">
     <h2>Premier League Table</h2>
-    <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
+    <div style="border:1px solid var(--border);border-radius:10px;overflow:auto">
       <table>
         <thead>
-          <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
+        <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
         </thead>
         <tbody id="tableBody">
           <tr><td colspan="10" class="muted">Waiting for data…</td></tr>
@@ -105,10 +85,10 @@ a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border
     </div>
   </section>
 
-  <!-- Right -->
+  <!-- RIGHT -->
   <section class="card stretch">
     <h2>Man United – Fixtures & Results</h2>
-    <div id="fixturesWrap" class="panel" style="padding:8px;">
+    <div id="fixturesWrap" class="panel" style="padding:8px">
       <div class="muted">Waiting for data…</div>
     </div>
   </section>
@@ -128,18 +108,16 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
       try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.text(); } catch {}
     } return null;
   };
-  const getJSON = async(p) => {
-    const t = await getText(p); return t ? JSON.parse(t) : null;
-  };
+  const getJSON = async(p) => { const t = await getText(p); return t?JSON.parse(t):null; };
   const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
   const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
-  const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
+  const toHttps = url => (url||"").replace(/^http:\/\//i,"https://");
 
   // Last updated
   const stamp = await getText("update_stamp.txt");
   if (stamp) document.getElementById("lastUpdated").textContent = "Last updated: " + stamp.trim();
 
-  // ===== Table + badges =====
+  // Table + badges
   const table = await getJSON("table.json");
   const badgesFile = await getJSON("badges.json");
   const tbody = document.getElementById("tableBody");
@@ -151,7 +129,7 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
     const crest = toHttps(localBadges[norm(r.team)]);
     const badge = crest
       ? `<img class="badge img" referrerpolicy="no-referrer" src="${crest}" alt="">`
-      : `<span class="badge initials">${initials(r.team||'')}</span>`;
+      : `<span class="badge initials" data-team="${r.team}">${initials(r.team||'')}</span>`;
     return `<tr>
       <td>${r.pos??""}</td>
       <td><span class="team-cell">${badge}${r.team??""}</span></td>
@@ -166,36 +144,66 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
     tbody.innerHTML = table.standings.map(rowHTML).join("");
   }
 
-  // ===== Fixtures & results (MUFC) =====
-  const fixtures = await getJSON("fixtures.json");
-  const wrap = document.getElementById("fixturesWrap");
+  // Badge upgrade: if any initials remain, try Wikipedia exact pages
+  const WP_TITLE = {
+    "Arsenal":"Arsenal_F.C.","Aston Villa":"Aston_Villa_F.C.","Bournemouth":"AFC_Bournemouth",
+    "Brentford":"Brentford_F.C.","Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.",
+    "Burnley":"Burnley_F.C.","Chelsea":"Chelsea_F.C.","Crystal Palace":"Crystal_Palace_F.C.",
+    "Everton":"Everton_F.C.","Fulham":"Fulham_F.C.","Leeds United":"Leeds_United_F.C.",
+    "Liverpool":"Liverpool_F.C.","Manchester City":"Manchester_City_F.C.","Manchester United":"Manchester_United_F.C.",
+    "Newcastle United":"Newcastle_United_F.C.","Nottingham Forest":"Nottingham_Forest_F.C.",
+    "Tottenham Hotspur":"Tottenham_Hotspur_F.C.","West Ham United":"West_Ham_United_F.C.",
+    "Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.","Sunderland":"Sunderland_A.F.C."
+  };
 
-  if (!fixtures?.matches?.length) {
-    wrap.innerHTML = '<div class="muted">⚠️ No fixtures data.</div>';
-    return;
+  async function wikiCrest(team){
+    const title = WP_TITLE[team] || (team.replace(/\s+/g,'_') + "_F.C.");
+    try{
+      const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title), {cache:'no-store'});
+      if (!r.ok) return null;
+      const j = await r.json();
+      return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
+    }catch(e){ return null; }
   }
 
-  const t = s => new Date(s.replace(' ','T')+'Z').getTime() || 0; // treat as UTC-ish for ordering
+  async function upgradeMissing(){
+    const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
+    for (const el of els){
+      const team = el.getAttribute('data-team') || '';
+      const url  = await wikiCrest(team);
+      if (url){
+        const img = new Image();
+        img.className='badge img'; img.alt=''; img.referrerPolicy='no-referrer';
+        img.onload=()=>el.replaceWith(img); img.src=url;
+      }
+    }
+  }
+  await upgradeMissing();
+
+  // Fixtures & results (Premier League)
+  const fixtures = await getJSON("fixtures.json");
+  const wrap = document.getElementById("fixturesWrap");
+  if (!fixtures?.matches?.length) {
+    wrap.innerHTML = '<div class="muted">⚠️ No fixtures data.</div>'; return;
+  }
+  const t = s => new Date(s.replace(' ','T')+'Z').getTime();
   const isFinished = m => !!m.score;
   const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
-
-  const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
+  const all = fixtures.matches.slice().sort((a,b)=> t(a.date)-t(b.date));
   const upcoming = all.filter(m => !isFinished(m)).slice(0,8);
-  const recent = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0,8);
-
+  const recent = all.filter(isFinished).sort((a,b)=> t(b.date)-t(a.date)).slice(0,8);
   const fmtD = d => new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'Europe/London'});
   const fmtT = d => new Date(d).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Europe/London'});
 
-  const upHTML = `
+  wrap.innerHTML = `
     <h3 style="margin:8px 0;">Upcoming</h3>
     <table>
       <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
       <tbody>
-        ${upcoming.map(m => `
+        ${upcoming.map(m=>`
           <tr>
             <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td>
-            <td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td>
-            <td>${m.tv || "TBD"}</td>
+            <td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td><td>${m.tv||"TBD"}</td>
           </tr>`).join("")}
       </tbody>
     </table>
@@ -210,19 +218,16 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
           const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
           const sky = `https://www.skysports.com/search?q=${q}`;
           const yt  = `https://www.youtube.com/results?search_query=${q}`;
-          return `
-            <tr class="${cls(oc)}">
-              <td>${fmtD(m.date)}</td><td>${m.comp||""}</td>
-              <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-              <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
-              <td><a class="btn" href="${sky}" target="_blank" rel="noopener">Sky</a>
-                  <a class="btn" href="${yt}" target="_blank" rel="noopener" style="margin-left:6px;">YT</a></td>
-            </tr>`;
+          return `<tr class="${cls(oc)}">
+            <td>${fmtD(m.date)}</td><td>${m.comp||""}</td>
+            <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+            <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
+            <td><a class="btn" href="${sky}" target="_blank" rel="noopener">Sky</a>
+                <a class="btn" href="${yt}"  target="_blank" rel="noopener" style="margin-left:6px;">YT</a></td>
+          </tr>`;
         }).join("")}
       </tbody>
-    </table>
-  `;
-  wrap.innerHTML = upHTML;
+    </table>`;
 })();
 </script>
 </body>
