@@ -1,48 +1,77 @@
 name: Update extras data (weather + free games)
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '5 */12 * * *' # twice a day; adjust as needed
-
-permissions:
-  contents: write
+    - cron: "*/120 * * * *"  # every 2 hours
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install deps (if any)
+      - name: Build extras assets
         run: |
-          python -m pip install --upgrade pip
-          # pip install -r requirements.txt || true
+          python - <<'PY'
+          import json, time, urllib.request, urllib.parse, sys, os
 
-      - name: Build extras assets (weather + free Steam games)
+          os.makedirs("assets", exist_ok=True)
+
+          def fetch(url, timeout=30):
+            req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+              return r.read()
+
+          # --- Leeds weather via Open-Meteo (no key) ---
+          try:
+            wx_url = ("https://api.open-meteo.com/v1/forecast"
+                      "?latitude=53.8008&longitude=-1.5491"
+                      "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
+                      "&daily=weather_code,temperature_2m_max,temperature_2m_min"
+                      "&timezone=Europe%2FLondon")
+            wx = json.loads(fetch(wx_url).decode("utf-8"))
+            wx["updated"] = int(time.time()*1000)
+            wx["location"] = "Leeds, UK"
+            with open("assets/weather.json","w") as f: json.dump(wx, f)
+            print("Wrote assets/weather.json")
+          except Exception as e:
+            print("Weather error:", e, file=sys.stderr)
+
+          # --- Free Steam games via CheapShark (no key) ---
+          try:
+            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
+            deals = json.loads(fetch(deals_url).decode("utf-8"))
+            games=[]
+            for d in deals:
+              if str(d.get("salePrice","0")) == "0" or float(d.get("salePrice",0)) == 0.0:
+                appid = d.get("steamAppID")
+                url = f"https://store.steampowered.com/app/{appid}/" if appid else None
+                games.append({
+                  "title": d.get("title",""),
+                  "steamAppID": appid,
+                  "url": url,
+                  "normalPrice": d.get("normalPrice"),
+                  "dealRating": d.get("dealRating")
+                })
+            out = {"updated": int(time.time()*1000), "games": games}
+            with open("assets/free_games.json","w") as f: json.dump(out, f)
+            print("Wrote assets/free_games.json (", len(games), "games )")
+          except Exception as e:
+            print("Free games error:", e, file=sys.stderr)
+          PY
+
+      - name: Commit and push
         run: |
-          set -e
-          mkdir -p assets
-          # Use your working scripts or inline requests; keep whatever worked last time:
-          # Example assumes you have scripts/fetch_helpers.py etc.
-          python scripts/fetch_helpers.py extras  # (or your own calls)
-          # Ensure the two files exist (fallback placeholders if scripts no-op)
-          [ -f assets/weather.json ] || echo '{"city":"Leeds","now":null,"forecast":[]}' > assets/weather.json
-          [ -f assets/free_games.json ] || echo '[]' > assets/free_games.json
-
-      - name: Commit & push
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: refresh extras (weather + free games)"
-          file_pattern: |
-            assets/weather.json
-            assets/free_games.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/weather.json assets/free_games.json
+          git commit -m "chore: refresh extras (weather + free games) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git push
