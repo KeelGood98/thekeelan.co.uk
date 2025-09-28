@@ -10,8 +10,8 @@
 
   <style>
     :root{
-      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
-      --hdr:72px;
+      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; --accent2:#a78bfa;
+      --hdr:72px; /* JS will set this to real header height */
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -22,29 +22,80 @@
         url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
       background-color:#0b0f14;
     }
-    header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+
+    /* ===== Header / Menu ===== */
+    .site-header{
+      position: sticky; top: 0; z-index: 50;
+      display:flex; align-items:center; gap:12px; padding:10px 18px;
+      backdrop-filter: blur(8px);
+      background: rgba(11,15,20,0.6);
+      border-bottom: 1px solid var(--border);
+    }
     .brand{display:flex;gap:10px;align-items:center}
     .brand-logo{width:28px;height:28px;border-radius:6px;background:
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
+    .brand h1{margin:0;font-size:18px}
 
+    .spacer{flex:1}
+    #lastUpdated{white-space:nowrap}
+
+    .nav{display:flex; gap:10px; align-items:center}
+    .nav a{
+      position:relative;
+      padding:8px 12px; border:1px solid var(--border); border-radius:999px;
+      color:var(--muted); text-decoration:none; transition:all .18s ease;
+    }
+    .nav a:hover{ color:var(--text); border-color:#2a3340; background:#0f141a; }
+    .nav a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+    .nav a.active{
+      color:var(--text);
+      border-color:transparent;
+      background: linear-gradient(90deg, rgba(110,231,255,.20), rgba(167,139,250,.20));
+      box-shadow: 0 0 0 1px rgba(110,231,255,.25) inset;
+    }
+
+    .nav-toggle{
+      display:none;
+      appearance:none; background:transparent; color:var(--text);
+      border:1px solid var(--border); border-radius:10px; padding:6px 10px; margin-left:6px;
+      font-size:16px; line-height:1;
+    }
+    .nav-toggle:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+    /* Mobile menu */
+    @media (max-width: 760px){
+      .nav{ display:none; }
+      .nav.open{
+        display:flex; flex-direction:column; gap:8px;
+        position:absolute; right:18px; top:calc(100% + 8px);
+        background: var(--card); border:1px solid var(--border); border-radius:12px;
+        padding:10px; box-shadow:0 12px 32px rgba(0,0,0,.45);
+      }
+      .nav-toggle{ display:inline-flex; }
+      #lastUpdated{ display:none; } /* keep header compact on mobile */
+    }
+
+    /* ===== Layout ===== */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
-      padding:0 18px 24px;
-      align-items:start; /* keep centre content-height only */
+      padding:12px 18px 24px;
+      align-items:start; /* centre column stays content-height */
     }
-    @media (max-width:1200px){ .grid{grid-template-columns:1fr 1fr} }
-    @media (max-width:980px){ .grid{grid-template-columns:1fr} }
+    @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
+    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
 
     .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
 
+    /* left/right fill viewport neatly; middle stays auto height */
     .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
     .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
 
+    /* ===== Tables ===== */
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
@@ -69,16 +120,30 @@
   </style>
 </head>
 <body>
-  <header id="siteHeader">
+  <!-- Header with nice menu -->
+  <header id="siteHeader" class="site-header">
     <div class="brand">
       <div class="brand-logo" aria-hidden="true"></div>
-      <h1 style="margin:0;font-size:18px;">thekeelan.co.uk</h1>
+      <h1>thekeelan.co.uk</h1>
     </div>
+
+    <div class="spacer"></div>
+
     <div class="muted" id="lastUpdated">Last updated: —</div>
+
+    <nav id="primaryNav" class="nav" aria-label="Primary">
+      <a href="/" class="active" title="Football">Football</a>
+      <a href="/extras.html" title="Extras">Extras</a>
+    </nav>
+
+    <button class="nav-toggle" aria-controls="primaryNav" aria-expanded="false" aria-label="Menu"
+            onclick="(function(btn){const nav=document.getElementById('primaryNav');const open=nav.classList.toggle('open');btn.setAttribute('aria-expanded',open); setHeaderVar();})(this)">
+      ☰
+    </button>
   </header>
 
   <div class="grid">
-    <!-- LEFT -->
+    <!-- LEFT (stretches) -->
     <section class="card stretch">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
@@ -89,11 +154,11 @@
       </div>
       <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:0">
         <h2>R6 Tracker</h2>
-        <iframe id="r6Frame" title="R6 Tracker" class="panel"></iframe>
+        <iframe id="r6Frame" title="R6 Tracker" class="panel" loading="lazy"></iframe>
       </div>
     </section>
 
-    <!-- CENTRE -->
+    <!-- CENTRE (content-height only; no stretch) -->
     <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
@@ -108,7 +173,7 @@
       </div>
     </section>
 
-    <!-- RIGHT -->
+    <!-- RIGHT (stretches) -->
     <section class="card stretch">
       <h2>Man United – Fixtures & Results</h2>
       <div id="fixturesWrap" class="panel" style="padding:8px;">
@@ -118,7 +183,7 @@
   </div>
 
   <script>
-  // header height → left/right fit neatly; centre stays content-height
+  // Header height → left/right fill viewport without stretching the centre
   function setHeaderVar(){
     const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
     document.documentElement.style.setProperty('--hdr', h+'px');
@@ -136,7 +201,7 @@
     const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
     const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
 
-    // --- exact Wikipedia club article titles (no city pages) ---
+    /* ---- exact Wikipedia club titles (used only for badge fallback) ---- */
     const WP_TITLE = {
       "Arsenal":"Arsenal_F.C.",
       "Aston Villa":"Aston_Villa_F.C.",
@@ -157,22 +222,20 @@
       "Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
       "West Ham United":"West_Ham_United_F.C.",
       "Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.",
-      "Sunderland":"Sunderland_A.F.C."   /* in case your data includes them */
+      "Sunderland":"Sunderland_A.F.C."
     };
 
     async function fetchWikiClubCrest(team){
-      // prefer a curated title; fall back to <Team>_F.C.
       const title = WP_TITLE[team] || (team.replace(/\s+/g,'_') + "_F.C.");
       try{
         const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title), {cache:'no-store'});
         if (!r.ok) return null;
         const j = await r.json();
-        // prefer originalimage (full crest), fallback thumbnail
         return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
       }catch(e){ return null; }
     }
 
-    // ===== TABLE + BADGES =====
+    /* ===== TABLE + BADGES ===== */
     const [table, badgesFile] = await Promise.all([ getLocal('table.json'), getLocal('badges.json') ]);
     const tbody = document.getElementById("tableBody");
     const lu = document.getElementById("lastUpdated");
@@ -226,18 +289,18 @@
       try {
         const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
         if (r1.ok) (await r1.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){ /* ignore */ }
+      } catch(e){}
       try {
         const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
         if (r2.ok) (await r2.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){ /* ignore */ }
+      } catch(e){}
       return out;
     }
 
     const leagueMap = await fetchTSDBLeagueMap();
     upgradeFromMap(leagueMap);
 
-    // EXACT Wikipedia club page fallback (fixes “city coat of arms” problem)
+    // Exact Wikipedia club crest fallback
     async function upgradeWithWikiExact(){
       const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
       if (!els.length) return;
@@ -259,7 +322,7 @@
     }
     await upgradeWithWikiExact();
 
-    // ===== FIXTURES =====
+    /* ===== FIXTURES ===== */
     const fixtures = await getLocal('fixtures.json');
     const wrap = document.getElementById("fixturesWrap");
     if (!fixtures?.matches?.length) {
@@ -347,4 +410,3 @@
   </script>
 </body>
 </html>
-
