@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Mum</title>
 
-  <!-- Optional favicon -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <meta name="theme-color" content="#0b0f14" />
 
@@ -29,13 +28,12 @@
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
 
-    /* Grid: centre card stays content-height; sides can stretch to viewport */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
       padding:0 18px 24px;
-      align-items:start; /* prevents centre from stretching */
+      align-items:start;       /* keep centre content-height only */
     }
     @media (max-width:1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width:980px){ .grid{grid-template-columns:1fr} }
@@ -44,7 +42,6 @@
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
 
-    /* Left/Right fill viewport neatly; middle stays auto */
     .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
     .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
 
@@ -81,7 +78,7 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT (stretches) -->
+    <!-- LEFT -->
     <section class="card stretch">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
@@ -96,7 +93,7 @@
       </div>
     </section>
 
-    <!-- CENTRE (content-height only) -->
+    <!-- CENTRE -->
     <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
@@ -111,7 +108,7 @@
       </div>
     </section>
 
-    <!-- RIGHT (stretches) -->
+    <!-- RIGHT -->
     <section class="card stretch">
       <h2>Man United – Fixtures & Results</h2>
       <div id="fixturesWrap" class="panel" style="padding:8px;">
@@ -121,7 +118,6 @@
   </div>
 
   <script>
-  // Set header height so left/right fill viewport without stretching the centre
   function setHeaderVar(){
     const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
     document.documentElement.style.setProperty('--hdr', h+'px');
@@ -187,58 +183,88 @@
     // Try local badges first
     if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
 
-    // League maps from TSDB
+    // TSDB league maps
     async function fetchTSDBLeagueMap(){
       const out = {...localBadges};
       try {
         const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
         if (r1.ok) (await r1.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){ console.warn("[badges] TSDB search_all_teams failed", e); }
+      } catch(e){ /* ignore */ }
       try {
         const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
         if (r2.ok) (await r2.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){ console.warn("[badges] TSDB lookup_all_teams failed", e); }
+      } catch(e){ /* ignore */ }
       return out;
     }
 
-    // Wikipedia fallback for any still missing
-    async function fetchWikiLogo(team){
-      try{
-        const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(team), {cache:'no-store'});
-        if (!r.ok) return null;
-        const j = await r.json();
-        // prefer originalimage, fallback to thumbnail
-        return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
-      }catch(e){ return null; }
+    const leagueMap = await fetchTSDBLeagueMap();
+    upgradeFromMap(leagueMap);
+
+    // ---- WIKIDATA fallback (club crest, not city arms) ----
+    const wdApi = 'https://www.wikidata.org/w/api.php?origin=*';
+    const commonsFileUrl = (file, width=40) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(file)}?width=${width}`;
+
+    async function searchWikidataItem(team){
+      // try multiple queries to bias football club
+      const queries = [
+        `${team} F.C.`, `${team} A.F.C.`, `${team} football club`, team
+      ];
+      for (const q of queries){
+        try{
+          const r = await fetch(`${wdApi}&action=wbsearchentities&language=en&type=item&limit=10&format=json&search=${encodeURIComponent(q)}`, {cache:'no-store'});
+          if (!r.ok) continue;
+          const j = await r.json();
+          const pick = (j.search||[]).find(s =>
+            /football club/i.test(s.description||'') || /association football club/i.test(s.description||'')
+          ) || (j.search||[])[0];
+          if (pick) return pick.id; // Qid
+        }catch(e){}
+      }
+      return null;
     }
 
-    async function upgradeWithWiki(){
+    async function fetchWikidataLogoUrl(qid){
+      try{
+        const r = await fetch(`${wdApi}&action=wbgetentities&ids=${encodeURIComponent(qid)}&props=claims&format=json`, {cache:'no-store'});
+        if (!r.ok) return null;
+        const j = await r.json();
+        const claims = j?.entities?.[qid]?.claims || {};
+        const getImageName = (p) => {
+          const c = claims[p]; if (!Array.isArray(c) || !c.length) return null;
+          const mainsnak = c[0]?.mainsnak; const v = mainsnak?.datavalue?.value;
+          return typeof v === 'string' ? v : v?.title || null; // P154 usually a string (filename)
+        };
+        // prefer P154 (logo), fallback P18 (image)
+        const file = getImageName('P154') || getImageName('P18');
+        if (file) return commonsFileUrl(file, 40);
+      }catch(e){}
+      return null;
+    }
+
+    async function upgradeWithWikidata(){
       const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
       if (!els.length) return;
-      // polite parallel (max 6 at once)
-      const chunk = async list => {
-        const batch = list.splice(0,6);
-        await Promise.all(batch.map(async el=>{
-          const name = el.getAttribute('data-team') || '';
-          const url  = await fetchWikiLogo(name);
+      // do small batches
+      const batch = async (list) => {
+        const chunk = list.splice(0,6);
+        await Promise.all(chunk.map(async el=>{
+          const team = el.getAttribute('data-team') || '';
+          const qid = await searchWikidataItem(team);
+          if (!qid) return;
+          const url = await fetchWikidataLogoUrl(qid);
           if (url){
             const img = new Image();
-            img.className = 'badge img';
-            img.alt = '';
-            img.referrerPolicy = 'no-referrer';
+            img.className = 'badge img'; img.alt = ''; img.referrerPolicy = 'no-referrer';
             img.onload = () => el.replaceWith(img);
             img.src = url;
           }
         }));
-        if (list.length) await chunk(list);
+        if (list.length) await batch(list);
       };
-      await chunk(els);
+      await batch(els);
     }
 
-    // Merge TSDB league maps then try to upgrade; finally Wikipedia for stragglers
-    const leagueMap = await fetchTSDBLeagueMap();
-    upgradeFromMap(leagueMap);
-    await upgradeWithWiki();
+    await upgradeWithWikidata();   // <- fixes place-name clubs
 
     // ----- FIXTURES -----
     const fixtures = await getLocal('fixtures.json');
