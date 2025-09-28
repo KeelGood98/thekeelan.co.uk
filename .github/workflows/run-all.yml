@@ -1,0 +1,49 @@
+name: Run everything (orchestrator)
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_redeploy:
+        description: "Force Pages redeploy by touching assets/update_stamp.txt"
+        required: false
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: orchestrator
+  cancel-in-progress: false
+
+jobs:
+  football:
+    name: Update football data
+    uses: ./.github/workflows/update-football-data.yml
+    permissions: inherit
+    secrets: inherit
+
+  extras:
+    name: Update extras (weather + free games)
+    needs: football
+    uses: ./.github/workflows/update-extras.yml
+    permissions: inherit
+    secrets: inherit
+
+  redeploy:
+    name: Force GH Pages redeploy (optional)
+    if: ${{ github.event.inputs.force_redeploy != 'false' }}
+    needs: [football, extras]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Touch update stamp
+        run: |
+          mkdir -p assets
+          date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/update_stamp.txt
+          git commit -m "chore: force Pages redeploy [${{ github.run_id }}]" || echo "No changes"
+          git push
