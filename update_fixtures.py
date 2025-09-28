@@ -1,9 +1,8 @@
 # update_fixtures.py
-import json, time, urllib.request, ssl, os, datetime
+import json, time, urllib.request, ssl, os
 
 ssl._create_default_https_context = ssl._create_unverified_context
-
-TEAM_ID = "360"  # ESPN team id for Manchester United
+TEAM_ID = "360"  # Manchester United
 URL = f"https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/{TEAM_ID}/schedule"
 
 def fetch(url):
@@ -11,92 +10,83 @@ def fetch(url):
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
 
-def parse():
+def parse_tv(comp):
+    # ESPN geoBroadcasts -> take TV names (if any)
+    gbs = comp.get("geoBroadcasts") or []
+    names=[]
+    for gb in gbs:
+        typ = (gb.get("type") or {}).get("shortName","").lower()
+        name = (gb.get("media") or {}).get("shortName") or gb.get("market") or gb.get("region")
+        if typ in {"tv","web"} and name:
+            names.append(str(name))
+    # de-dupe, keep order
+    seen=set(); out=[]
+    for n in names:
+        if n not in seen:
+            seen.add(n); out.append(n)
+    return ", ".join(out) if out else None
+
+def outcome_for_united(home_score, away_score, home_is_united):
+    if home_score is None or away_score is None:
+        return None
+    diff = (home_score - away_score) if home_is_united else (away_score - home_score)
+    if diff > 0: return "W"
+    if diff == 0: return "D"
+    return "L"
+
+def main():
     raw = json.loads(fetch(URL).decode("utf-8"))
-    team_name = (raw.get("team") or {}).get("displayName","Manchester United")
-
     events = raw.get("events") or []
-    matches = []
-
-    def outcome_for_united(home_score, away_score, home_is_united):
-        if home_score is None or away_score is None:
-            return None
-        diff = (home_score - away_score) if home_is_united else (away_score - home_score)
-        if diff > 0: return "W"
-        if diff == 0: return "D"
-        return "L"
-
+    matches=[]
     for ev in events:
-        try:
-            comp = (ev.get("competitions") or [])[0]
-        except Exception:
+        comps = ev.get("competitions") or []
+        if not comps: 
             continue
-
-        date_iso = ev.get("date")
-        comp_name = (comp.get("competitors") or [{}])[0].get("type","")  # ignored
-        competition = (comp.get("venue") or {}).get("fullName","")      # ignored
-        # ESPN puts competition name elsewhere:
-        comp_name = (ev.get("competitions") or [{}])[0].get("details", "") or (ev.get("name") or ev.get("shortName") or "")
-        if not comp_name:
-            comp_name = (ev.get("leagues") or [{}])[0].get("name","")
-
+        comp = comps[0]
         competitors = comp.get("competitors") or []
         home = next((c for c in competitors if c.get("homeAway")=="home"), None)
         away = next((c for c in competitors if c.get("homeAway")=="away"), None)
-        if not home or not away: 
+        if not home or not away:
+            continue
+        home_name = (home.get("team") or {}).get("displayName","")
+        away_name = (away.get("team") or {}).get("displayName","")
+        if "manchester united" not in home_name.lower() and "manchester united" not in away_name.lower():
             continue
 
-        home_name = (home.get("team") or {}).get("displayName")
-        away_name = (away.get("team") or {}).get("displayName")
-
-        # Filter strictly to games involving Manchester United (safety valve)
-        if "manchester united" not in (home_name or "").lower() and "manchester united" not in (away_name or "").lower():
-            continue
-
-        def parse_score(node):
-            try:
-                return int((node.get("score") or {}).get("value"))
-            except: 
-                try: return int(node.get("score"))
+        def score_of(c):
+            sc = c.get("score")
+            if isinstance(sc, dict) and "value" in sc:
+                try: return int(sc["value"])
                 except: return None
+            try: return int(sc)
+            except: return None
 
-        home_score = parse_score(home)
-        away_score = parse_score(away)
-
+        hs = score_of(home)
+        as_ = score_of(away)
         status_type = (((ev.get("status") or {}).get("type")) or {}).get("name","")
-        finished = status_type.lower() in {"status_final","final","post","fulltime","status_postponed"} or (
-            home_score is not None and away_score is not None
-        )
+        finished = (status_type or "").lower() in {"status_final","final","post","fulltime"} or (hs is not None and as_ is not None)
 
-        home_is_united = "manchester united" in (home_name or "").lower()
-        oc = outcome_for_united(home_score, away_score, home_is_united) if finished else None
+        oc = outcome_for_united(hs, as_, "manchester united" in home_name.lower()) if finished else None
+        tv = parse_tv(comp)
+
+        # competition name
+        comp_name = (ev.get("leagues") or [{}])[0].get("name") or ev.get("name") or ev.get("shortName") or ""
 
         matches.append({
-            "date": date_iso,        # full ISO; we’ll format on the page
-            "comp": comp_name or "",
-            "home": home_name or "",
-            "away": away_name or "",
+            "date": ev.get("date"),
+            "comp": comp_name,
+            "home": home_name,
+            "away": away_name,
             "status": "FINISHED" if finished else "SCHEDULED",
-            "score": None if not finished else {
-                "home": home_score,
-                "away": away_score,
-                "outcome": oc
-            }
+            "tv": tv,
+            "score": None if not finished else {"home": hs, "away": as_, "outcome": oc}
         })
 
     matches.sort(key=lambda m: m["date"] or "")
-    return {
-        "updated": int(time.time()*1000),
-        "team": team_name,
-        "matches": matches
-    }
-
-def main():
     os.makedirs("assets", exist_ok=True)
-    out = parse()
     with open("assets/fixtures.json","w") as f:
-        json.dump(out, f)
-    print("wrote assets/fixtures.json with", len(out["matches"]), "matches")
+        json.dump({"updated": int(time.time()*1000), "team":"Manchester United", "matches": matches}, f)
+    print("wrote assets/fixtures.json", len(matches))
 
 if __name__ == "__main__":
     main()
