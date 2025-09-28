@@ -1,113 +1,102 @@
-#!/usr/bin/env python3
-import os, datetime
-from fetch_helpers import http_get_json, save_json, now_iso
+# update_fixtures.py
+import json, time, urllib.request, ssl, os, datetime
 
-TEAM_NAME = "Manchester United"
-OUT_PATH = os.path.join("assets", "fixtures.json")
-TV_OVERRIDES_PATH = os.path.join("assets", "tv_overrides.json")
+ssl._create_default_https_context = ssl._create_unverified_context
 
-def to_iso(date_str, time_str, ts):
-    # Prefer TSDB strTimestamp if present; else combine date + time in Europe/London as ISO-like (no tz)
-    if ts:
-        # ts example: "2025-09-20T15:00:00+00:00"
-        return ts
-    if not date_str:
-        return ""
-    t = time_str or "15:00"  # default
-    return f"{date_str}T{t}:00"
+TEAM_ID = "360"  # ESPN team id for Manchester United
+URL = f"https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/{TEAM_ID}/schedule"
 
-def outcome_for_united(home, away, hs, as_):
-    if hs is None or as_ is None:
-        return ""
-    if home == TEAM_NAME:
-        if hs > as_: return "W"
-        if hs == as_: return "D"
-        return "L"
-    else:
-        if as_ > hs: return "W"
-        if as_ == hs: return "D"
+def fetch(url):
+    req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read()
+
+def parse():
+    raw = json.loads(fetch(URL).decode("utf-8"))
+    team_name = (raw.get("team") or {}).get("displayName","Manchester United")
+
+    events = raw.get("events") or []
+    matches = []
+
+    def outcome_for_united(home_score, away_score, home_is_united):
+        if home_score is None or away_score is None:
+            return None
+        diff = (home_score - away_score) if home_is_united else (away_score - home_score)
+        if diff > 0: return "W"
+        if diff == 0: return "D"
         return "L"
 
-def load_tv_overrides():
-    try:
-        ov = http_get_json("file:" + os.path.abspath(TV_OVERRIDES_PATH))
-        if isinstance(ov, dict):
-            return ov
-    except Exception:
-        pass
-    return {}
+    for ev in events:
+        try:
+            comp = (ev.get("competitions") or [])[0]
+        except Exception:
+            continue
 
-def apply_tv_overrides(matches, overrides):
-    # You can store overrides either as:
-    # {"2025-10-04": "TNT Sports"}  or by opponent-day: {"2025-10-04 Sunderland": "TNT Sports"}
-    if not overrides: return matches
-    out = []
-    for m in matches:
-        day = (m["date"] or "")[:10]
-        key1 = day
-        key2 = f"{day} {m['home'] if m['home']!=TEAM_NAME else m['away']}"
-        tv = overrides.get(key2) or overrides.get(key1)
-        if tv:
-            m = dict(m); m["tv"] = tv
-        out.append(m)
-    return out
+        date_iso = ev.get("date")
+        comp_name = (comp.get("competitors") or [{}])[0].get("type","")  # ignored
+        competition = (comp.get("venue") or {}).get("fullName","")      # ignored
+        # ESPN puts competition name elsewhere:
+        comp_name = (ev.get("competitions") or [{}])[0].get("details", "") or (ev.get("name") or ev.get("shortName") or "")
+        if not comp_name:
+            comp_name = (ev.get("leagues") or [{}])[0].get("name","")
 
-def unified(events):
-    res = []
-    for e in events or []:
-        comp = e.get("strLeague") or e.get("strLeagueShort") or ""
-        home = e.get("strHomeTeam") or ""
-        away = e.get("strAwayTeam") or ""
-        hs   = e.get("intHomeScore"); hs = int(hs) if hs not in (None, "", "null") else None
-        as_  = e.get("intAwayScore"); as_ = int(as_) if as_ not in (None, "", "null") else None
-        status = "SCHEDULED"
-        if hs is not None or as_ is not None:
-            status = "FINISHED"
-        res.append({
-            "date": to_iso(e.get("dateEventLocal") or e.get("dateEvent"), e.get("strTimeLocal") or e.get("strTime"), e.get("strTimestamp")),
-            "comp": comp,
-            "home": home,
-            "away": away,
-            "score": {
-                "home": hs if hs is not None else "",
-                "away": as_ if as_ is not None else "",
-                "outcome": outcome_for_united(home, away, hs, as_)
-            },
-            "status": status
+        competitors = comp.get("competitors") or []
+        home = next((c for c in competitors if c.get("homeAway")=="home"), None)
+        away = next((c for c in competitors if c.get("homeAway")=="away"), None)
+        if not home or not away: 
+            continue
+
+        home_name = (home.get("team") or {}).get("displayName")
+        away_name = (away.get("team") or {}).get("displayName")
+
+        # Filter strictly to games involving Manchester United (safety valve)
+        if "manchester united" not in (home_name or "").lower() and "manchester united" not in (away_name or "").lower():
+            continue
+
+        def parse_score(node):
+            try:
+                return int((node.get("score") or {}).get("value"))
+            except: 
+                try: return int(node.get("score"))
+                except: return None
+
+        home_score = parse_score(home)
+        away_score = parse_score(away)
+
+        status_type = (((ev.get("status") or {}).get("type")) or {}).get("name","")
+        finished = status_type.lower() in {"status_final","final","post","fulltime","status_postponed"} or (
+            home_score is not None and away_score is not None
+        )
+
+        home_is_united = "manchester united" in (home_name or "").lower()
+        oc = outcome_for_united(home_score, away_score, home_is_united) if finished else None
+
+        matches.append({
+            "date": date_iso,        # full ISO; we’ll format on the page
+            "comp": comp_name or "",
+            "home": home_name or "",
+            "away": away_name or "",
+            "status": "FINISHED" if finished else "SCHEDULED",
+            "score": None if not finished else {
+                "home": home_score,
+                "away": away_score,
+                "outcome": oc
+            }
         })
-    return res
+
+    matches.sort(key=lambda m: m["date"] or "")
+    return {
+        "updated": int(time.time()*1000),
+        "team": team_name,
+        "matches": matches
+    }
 
 def main():
-    api_key = os.environ.get("TSDB_API_KEY") or "3"
-    # 1) resolve MUFC id once
-    q = http_get_json(f"https://www.thesportsdb.com/api/v1/json/{api_key}/searchteams.php?t=Manchester%20United") or {}
-    teams = q.get("teams") or []
-    if not teams:
-        save_json(OUT_PATH, {"updated": now_iso(), "team": TEAM_NAME, "matches": []})
-        print("[fixtures] WARN: no team found")
-        return 0
-    team_id = teams[0].get("idTeam") or ""
-    # 2) last + next
-    last  = http_get_json(f"https://www.thesportsdb.com/api/v1/json/{api_key}/eventslast.php?id={team_id}") or {}
-    next_ = http_get_json(f"https://www.thesportsdb.com/api/v1/json/{api_key}/eventsnext.php?id={team_id}") or {}
-    last_e  = last.get("results") or last.get("events") or []
-    next_e  = next_.get("events")  or []
-    matches = unified(last_e) + unified(next_e)
-
-    # merge simple TV overrides
-    overrides = {}
-    try:
-        with open(TV_OVERRIDES_PATH, "r", encoding="utf-8") as f:
-            import json
-            overrides = json.load(f)
-    except Exception:
-        overrides = {}
-
-    matches = apply_tv_overrides(matches, overrides)
-
-    save_json(OUT_PATH, {"updated": now_iso(), "team": TEAM_NAME, "matches": matches})
-    print(f"[fixtures] OK wrote {len(matches)} matches to {OUT_PATH}")
-    return 0
+    os.makedirs("assets", exist_ok=True)
+    out = parse()
+    with open("assets/fixtures.json","w") as f:
+        json.dump(out, f)
+    print("wrote assets/fixtures.json with", len(out["matches"]), "matches")
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()
