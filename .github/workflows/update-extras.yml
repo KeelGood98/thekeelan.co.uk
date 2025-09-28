@@ -1,37 +1,55 @@
-name: Update extras data / build
+name: Update extras data (weather + free games)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"   # every 6 hours (example)
-  workflow_call: {}          # <-- enables reuse
+  workflow_call:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  extras:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
 
-      - name: Generate extras (weather/free games)
+      - name: Build extras
         run: |
-          # your existing steps here that write:
-          # assets/weather.json, assets/free_games.json
-          echo "extras pipeline here"
+          python - <<'PY'
+          import json, sys, urllib.request, time
+          from datetime import datetime, timezone
 
-      - name: Touch update stamp (force Pages redeploy)
-        run: date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          def write(path, data):
+              with open(path, "w", encoding="utf-8") as f:
+                  json.dump(data, f, ensure_ascii=False, indent=2)
+
+          # Weather: Open-Meteo (no key). Leeds coords.
+          try:
+              url = ("https://api.open-meteo.com/v1/forecast"
+                     "?latitude=53.8008&longitude=-1.5491"
+                     "&hourly=temperature_2m,relative_humidity_2m,precipitation"
+                     "&daily=weathercode,temperature_2m_max,temperature_2m_min"
+                     "&forecast_days=7&timezone=Europe%2FLondon")
+              with urllib.request.urlopen(url, timeout=30) as r:
+                  weather = json.load(r)
+          except Exception:
+              weather = {"error": True, "message": "weather fetch failed"}
+          write("assets/weather.json", {"updated": datetime.now(timezone.utc).isoformat(), "data": weather})
+
+          # Free games placeholder (safe no-op if sources change)
+          write("assets/free_games.json", {
+              "updated": datetime.now(timezone.utc).isoformat(),
+              "games": []
+          })
+          PY
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/*.json
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "data: refresh extras"
-            git pull --rebase origin main || true
-            git push
-          fi
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/weather.json assets/free_games.json
+          git commit -m "chore: refresh extras (weather + free games)" || true
+          git push || true
