@@ -7,8 +7,9 @@
 
   <style>
     :root{
-      --bg:#0c0f13; --card:#151a22; --muted:#8993a1; --text:#e8edf4; --accent:#3ba1ff;
-      --ok:#1fbf75; --bad:#f55454; --draw:#c1c7d0; --stroke:rgba(255,255,255,.08);
+      --bg:#0b0f14; --card:#141a22; --text:#e9eef5; --muted:#95a1b1;
+      --stroke:rgba(255,255,255,.09); --accent:#3aa0ff;
+      --w:#1ec178; --d:#c7ccd4; --l:#ff5b5b;
     }
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
@@ -18,15 +19,20 @@
     .brand{display:flex;align-items:center;gap:10px;font-weight:700}
     .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 16px var(--accent)}
     nav{display:flex;gap:8px}
-    nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;color:var(--text);opacity:.9}
-    nav a.active{background:var(--accent);border-color:transparent;color:#051320;font-weight:600}
-    .grid{display:grid;grid-template-columns:360px 1fr 460px;gap:18px}
-    .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;opacity:.92}
+    nav a.active{background:var(--accent);border-color:transparent;color:#04121f;font-weight:600}
+
+    .grid{display:grid;grid-template-columns:360px 1fr 520px;gap:18px}
+    .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
     .card h2{margin:0;padding:14px 16px;border-bottom:1px solid var(--stroke);font-size:20px}
     .card-body{padding:14px 16px}
-    .gif{width:100%;border-bottom-left-radius:14px;border-bottom-right-radius:14px;display:block}
 
-    /* TABLE */
+    /* Left GIF + embed */
+    .gif{width:100%;display:block}
+
+    .embed{border:0;width:100%;height:580px}
+
+    /* Table */
     table{width:100%;border-collapse:collapse}
     th,td{padding:10px 8px;text-align:center;font-size:14px}
     th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
@@ -37,33 +43,30 @@
     .badge img{width:100%;height:100%;object-fit:contain}
     .badge span{font-size:10px;color:var(--muted);font-weight:700}
 
-    /* Make the table area scrollable but show ALL 20 rows by default height */
-    .table-wrap{max-height:560px;overflow:auto;border-radius:0 0 14px 14px}
+    .table-wrap{max-height:560px;overflow:auto}
 
-    /* FIXTURES */
+    /* Fixtures */
+    .fx-head{display:flex;justify-content:space-between;align-items:center;padding:0 16px 10px 16px}
     .subtle{color:var(--muted);font-size:12px}
     .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--stroke);font-size:12px;color:var(--muted)}
-    .w{color:var(--ok)} .l{color:var(--bad)} .d{color:var(--draw)}
-    .twocol{display:grid;grid-template-columns: 1fr auto;gap:12px;align-items:center}
+    .w{color:var(--w)} .d{color:var(--d)} .l{color:var(--l)}
     .fixture-table th, .fixture-table td{padding:8px}
     .fixture-table th{font-size:11px}
     .fixture-table td{font-size:14px}
     .divider{height:1px;background:var(--stroke);margin:10px 0}
 
-    /* R6 embed takes full card height */
-    .embed{border:0;width:100%;height:620px;border-bottom-left-radius:14px;border-bottom-right-radius:14px}
-    @media (max-width:1200px){
-      .grid{grid-template-columns:1fr}
-      .embed{height:580px}
-    }
-
-    /* background image (football nets vibe) */
+    /* background spices */
     body::after{
       content:"";position:fixed;inset:0;pointer-events:none;
       background:
-        radial-gradient(1200px 600px at 60% 85%, rgba(59,161,255,.08), transparent 60%),
+        radial-gradient(1200px 600px at 65% 85%, rgba(58,160,255,.08), transparent 60%),
         radial-gradient(900px 500px at 20% 10%, rgba(255,255,255,.05), transparent 60%);
       mix-blend-mode:screen;
+    }
+
+    @media (max-width:1200px){
+      .grid{grid-template-columns:1fr}
+      .embed{height:520px}
     }
   </style>
 </head>
@@ -78,19 +81,28 @@
     </header>
 
     <div class="grid">
-      <!-- LEFT: GIF + R6 -->
+      <!-- LEFT -->
       <div class="card">
         <h2>Left Panel</h2>
         <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
         <div class="card-body">
           <h2 style="margin:-2px 0 8px 0;">R6 Tracker</h2>
-          <iframe class="embed" src="https://tracker.gg/r6/profile/ubisoft/BambyOnSpice/overview?embed=true" loading="lazy"></iframe>
+          <!-- Same embed that worked earlier -->
+          <iframe
+            class="embed"
+            src="https://tracker.gg/r6/profile/ubisoft/BambyOnSpice/overview?embed=true"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
 
       <!-- MIDDLE: TABLE -->
       <div class="card" id="table-card">
-        <h2>Premier League Table</h2>
+        <div class="fx-head" style="padding-top:14px">
+          <h2 style="border:none;padding:0">Premier League Table</h2>
+          <div class="subtle" id="tableStamp"></div>
+        </div>
         <div class="table-wrap">
           <table id="pl-table" aria-label="Premier League Table">
             <thead>
@@ -106,11 +118,13 @@
 
       <!-- RIGHT: FIXTURES -->
       <div class="card" id="fx-card">
-        <h2>Man United – Fixtures &amp; Results</h2>
-        <div class="card-body">
-          <div class="subtle" id="updatedStamp">Loading…</div>
+        <div class="fx-head">
+          <h2 style="border:none;padding:0">Man United – Fixtures &amp; Results</h2>
+          <div class="subtle" id="updatedStamp">—</div>
+        </div>
 
-          <h3 style="margin:14px 0 6px 0;">Upcoming</h3>
+        <div class="card-body">
+          <h3 style="margin:0 0 6px 0;">Upcoming</h3>
           <table class="fixture-table" id="fx-upcoming">
             <thead>
               <tr>
@@ -137,160 +151,190 @@
   </div>
 
   <script>
-    // Small helper for cache-busting
+    // ---------- Helpers ----------
     const bust = () => `?t=${Date.now()}`;
-
-    // Render helpers
-    const el = sel => document.querySelector(sel);
-    const tbody = sel => el(sel).querySelector("tbody");
-    const fmtDate = iso => {
-      if(!iso) return "—";
+    const el = s => document.querySelector(s);
+    const tb = s => el(s).querySelector("tbody");
+    const toISODate = (iso) => {
       const d = new Date(iso);
-      if (isNaN(d)) return iso;
-      return d.toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" });
+      return isNaN(d) ? null : d;
+    };
+    const fmtDate = iso => {
+      const d = toISODate(iso);
+      return d ? d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "—";
     };
     const fmtTime = iso => {
-      if(!iso) return "—";
-      const d = new Date(iso);
-      if (isNaN(d)) return "—";
-      return d.toLocaleTimeString("en-GB", { hour:"2-digit", minute:"2-digit" });
+      const d = toISODate(iso);
+      return d ? d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}) : "—";
+    };
+    const initials = (name) => {
+      const parts = (name||"").split(/\s+/).filter(Boolean);
+      if (!parts.length) return "FC";
+      if (parts.length === 1) return parts[0][0].toUpperCase();
+      return (parts[0][0] + parts[parts.length-1][0]).toUpperCase();
     };
 
-    // Fallback initials avatar when no badge is found
-    function initials(name){
-      const parts = (name||"").split(/\s+/).filter(Boolean);
-      const pick = (s)=>s[0] ? s[0].toUpperCase() : "";
-      if (!parts.length) return "FC";
-      if (parts.length === 1) return pick(parts[0]);
-      return pick(parts[0])+pick(parts[parts.length-1]);
+    async function tryFetchJSON(path){
+      try{
+        const r = await fetch(path + bust());
+        if (!r.ok) return null;
+        return await r.json();
+      }catch(e){ return null; }
+    }
+    async function tryFetchText(path){
+      try{
+        const r = await fetch(path + bust());
+        if (!r.ok) return null;
+        return await r.text();
+      }catch(e){ return null; }
     }
 
-    // ---- TABLE (ALL 20 TEAMS; NO SLICE) ----
+    // ---------- Table ----------
     async function renderTable(){
-      try{
-        const [tableRes, badgesRes] = await Promise.all([
-          fetch(`/assets/table.json${bust()}`),
-          fetch(`/assets/badges.json${bust()}`)
-        ]);
-        const table = await tableRes.json();
-        const badges = await badgesRes.json().catch(()=> ({}));
+      const [table, badges] = await Promise.all([
+        tryFetchJSON("/assets/table.json"),
+        tryFetchJSON("/assets/badges.json")
+      ]);
+      const rows = (table?.standings || []);   // ALL teams
+      const tBody = tb("#pl-table");
+      tBody.innerHTML = "";
 
-        const rows = table.standings || [];    // <-- SHOW ALL 20 ROWS
-        const tb = tbody("#pl-table");
-        tb.innerHTML = "";
+      rows.forEach(r=>{
+        const src = badges?.[r.team] || null;
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${r.pos ?? ""}</td>
+          <td class="team">
+            <span class="badge">
+              ${src ? `<img src="${src}" alt="${r.team} badge">` : `<span>${initials(r.team)}</span>`}
+            </span>
+            <span>${r.team}</span>
+          </td>
+          <td>${r.played ?? ""}</td>
+          <td>${r.won ?? ""}</td>
+          <td>${r.drawn ?? ""}</td>
+          <td>${r.lost ?? ""}</td>
+          <td>${r.gf ?? ""}</td>
+          <td>${r.ga ?? ""}</td>
+          <td>${r.gd ?? ""}</td>
+          <td>${r.pts ?? ""}</td>
+        `;
+        tBody.appendChild(tr);
+      });
 
-        rows.forEach((r)=>{
-          const tr = document.createElement("tr");
-          const badgeUrl = badges[r.team] || null;
-
-          tr.innerHTML = `
-            <td>${r.pos ?? ""}</td>
-            <td class="team">
-              <span class="badge">${
-                badgeUrl
-                  ? `<img src="${badgeUrl}" alt="${r.team} badge"/>`
-                  : `<span>${initials(r.team)}</span>`
-              }</span>
-              <span>${r.team}</span>
-            </td>
-            <td>${r.played ?? ""}</td>
-            <td>${r.won ?? ""}</td>
-            <td>${r.drawn ?? ""}</td>
-            <td>${r.lost ?? ""}</td>
-            <td>${r.gf ?? ""}</td>
-            <td>${r.ga ?? ""}</td>
-            <td>${r.gd ?? ""}</td>
-            <td>${r.pts ?? ""}</td>
-          `;
-          tb.appendChild(tr);
-        });
-      }catch(e){
-        console.error("table render error", e);
-        tbody("#pl-table").innerHTML = `<tr><td colspan="10" class="subtle">Could not load table.</td></tr>`;
+      if (table?.updated){
+        const d = new Date(table.updated);
+        if (!isNaN(d)) el("#tableStamp").textContent = `Updated: ${d.toLocaleString("en-GB")}`;
       }
+      return table?.updated || 0;
     }
 
-    // ---- FIXTURES (filtered to MUFC just in case) ----
+    // ---------- Fixtures ----------
+    function tvFromOverrides(m, overrides){
+      if (!overrides) return null;
+      // Try a few forgiving matches: by ISO date (yyyy-mm-dd) & opponent/home/away
+      const day = (m.date||"").slice(0,10);
+      const cand = overrides.find(o=>{
+        const sameDay = o.date ? (o.date===day) : true;
+        const opp = (str)=> (str||"").toLowerCase();
+        const anyTeamMatch = o.home ? opp(o.home)===opp(m.home) : true;
+        const anyAwayMatch = o.away ? opp(o.away)===opp(m.away) : true;
+        return sameDay && anyTeamMatch && anyAwayMatch;
+      });
+      return cand?.tv || null;
+    }
+
     async function renderFixtures(){
-      try{
-        const res = await fetch(`/assets/fixtures.json${bust()}`);
-        const data = await res.json();
-        const MU = "Manchester United";
-        const all = (data.matches || []).filter(m =>
-          (m.home||"").toLowerCase() === MU.toLowerCase() ||
-          (m.away||"").toLowerCase() === MU.toLowerCase()
-        );
+      const [fx, overrides] = await Promise.all([
+        tryFetchJSON("/assets/fixtures.json"),
+        tryFetchJSON("/assets/tv_overrides.json")
+      ]);
 
-        // stamp
-        const up = data.updated ? new Date(data.updated) : null;
-        el("#updatedStamp").textContent = up ? `Last updated: ${up.toLocaleString("en-GB")}` : "—";
+      const MU = "Manchester United";
+      const list = (fx?.matches || []).filter(m =>
+        (m.home||"").toLowerCase() === MU.toLowerCase() ||
+        (m.away||"").toLowerCase() === MU.toLowerCase()
+      );
 
-        const now = Date.now();
-        const upcoming = all
-          .filter(m => m.status === "SCHEDULED" || !m.score)
-          .sort((a,b)=> (new Date(a.date)) - (new Date(b.date)))
-          .slice(0, 6);
+      // Upcoming
+      const upcoming = list
+        .filter(m => m.status==="SCHEDULED" || !m.score)
+        .sort((a,b)=> new Date(a.date) - new Date(b.date))
+        .slice(0,6);
 
-        const recent = all
-          .filter(m => m.status === "FINISHED" && m.score)
-          .sort((a,b)=> (new Date(b.date)) - (new Date(a.date)))
-          .slice(0, 6);
+      const upTB = tb("#fx-upcoming");
+      upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
+      upcoming.forEach(m=>{
+        const tv = m.tv || tvFromOverrides(m, overrides) || "—";
+        upTB.insertAdjacentHTML("beforeend", `
+          <tr>
+            <td>${fmtDate(m.date)}</td>
+            <td>${fmtTime(m.date)}</td>
+            <td>${m.comp ?? ""}</td>
+            <td>${m.home ?? ""}</td>
+            <td>vs</td>
+            <td>${m.away ?? ""}</td>
+            <td>${tv}</td>
+          </tr>
+        `);
+      });
 
-        const upTB = tbody("#fx-upcoming");
-        upTB.innerHTML = "";
-        if (upcoming.length === 0){
-          upTB.innerHTML = `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
-        } else {
-          upcoming.forEach(m=>{
-            upTB.insertAdjacentHTML("beforeend", `
-              <tr>
-                <td>${fmtDate(m.date)}</td>
-                <td>${fmtTime(m.date)}</td>
-                <td>${m.comp ?? ""}</td>
-                <td>${m.home ?? ""}</td>
-                <td>vs</td>
-                <td>${m.away ?? ""}</td>
-                <td>${m.tv || "—"}</td>
-              </tr>
-            `);
-          });
+      // Recent
+      const recent = list
+        .filter(m => m.status==="FINISHED" && m.score)
+        .sort((a,b)=> new Date(b.date) - new Date(a.date))
+        .slice(0,6);
+
+      const rcTB = tb("#fx-recent");
+      rcTB.innerHTML = recent.length ? "" : `<tr><td colspan="7" class="subtle">No recent matches.</td></tr>`;
+      recent.forEach(m=>{
+        const oc = (m.score && m.score.outcome) ? m.score.outcome.toLowerCase() : "";
+        const ocLabel = oc ? `<span class="${oc} pill">${oc.toUpperCase()}</span>` : "";
+        const scoreTxt = (m.score) ? `${m.score.home}–${m.score.away}` : "—";
+        rcTB.insertAdjacentHTML("beforeend", `
+          <tr>
+            <td>${fmtDate(m.date)}</td>
+            <td>${m.comp ?? ""}</td>
+            <td>${m.home ?? ""}</td>
+            <td>vs</td>
+            <td>${m.away ?? ""}</td>
+            <td>${scoreTxt} ${ocLabel}</td>
+            <td>
+              ${m.highlights?.sky ? `<a class="pill" href="${m.highlights.sky}" target="_blank" rel="noopener">Sky</a>` : ""}
+              ${m.highlights?.yt  ? `<a class="pill" href="${m.highlights.yt}"  target="_blank" rel="noopener">YT</a>`  : ""}
+            </td>
+          </tr>
+        `);
+      });
+
+      // Updated stamp (max of table/fixtures/update_stamp)
+      let stamp = 0;
+      if (fx?.updated) stamp = Math.max(stamp, fx.updated);
+      return stamp;
+    }
+
+    async function loadPage(){
+      const [tableUpdated, fixturesUpdated] = await Promise.all([
+        renderTable(),
+        renderFixtures()
+      ]);
+
+      // Also allow update_stamp.txt as a last-resort stamp
+      let stamp = Math.max(Number(tableUpdated||0), Number(fixturesUpdated||0));
+      if (!stamp){
+        const txt = await tryFetchText("/assets/update_stamp.txt");
+        if (txt){
+          const d = new Date(txt.trim());
+          if (!isNaN(d)) stamp = d.getTime();
         }
-
-        const rcTB = tbody("#fx-recent");
-        rcTB.innerHTML = "";
-        if (recent.length === 0){
-          rcTB.innerHTML = `<tr><td colspan="7" class="subtle">No recent matches.</td></tr>`;
-        } else {
-          recent.forEach(m=>{
-            const oc = (m.score && m.score.outcome) ? m.score.outcome.toLowerCase() : "";
-            const ocLabel = oc ? `<span class="${oc} pill">${oc.toUpperCase()}</span>` : "";
-            const scoreTxt = (m.score) ? `${m.score.home}–${m.score.away}` : "—";
-            rcTB.insertAdjacentHTML("beforeend", `
-              <tr>
-                <td>${fmtDate(m.date)}</td>
-                <td>${m.comp ?? ""}</td>
-                <td>${m.home ?? ""}</td>
-                <td>vs</td>
-                <td>${m.away ?? ""}</td>
-                <td>${scoreTxt} ${ocLabel}</td>
-                <td>
-                  ${m.highlights?.sky ? `<a class="pill" href="${m.highlights.sky}" target="_blank" rel="noopener">Sky</a>` : ""}
-                  ${m.highlights?.yt  ? `<a class="pill" href="${m.highlights.yt}"  target="_blank" rel="noopener">YT</a>`  : ""}
-                </td>
-              </tr>
-            `);
-          });
-        }
-      }catch(e){
-        console.error("fixtures render error", e);
-        tbody("#fx-upcoming").innerHTML = `<tr><td colspan="7" class="subtle">Could not load fixtures.</td></tr>`;
-        tbody("#fx-recent").innerHTML   = `<tr><td colspan="7" class="subtle">—</td></tr>`;
+      }
+      if (stamp){
+        const d = new Date(stamp);
+        el("#updatedStamp").textContent = `Last updated: ${d.toLocaleString("en-GB")}`;
       }
     }
 
-    // Init
-    renderTable();
-    renderFixtures();
+    loadPage();
   </script>
 </body>
 </html>
