@@ -1,8 +1,8 @@
-name: Update football data (table + fixtures + badges)
+name: Update football data (table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # daily 06:00 UTC
+    - cron: "0 */6 * * *"   # every 6 hours; tweak if you want
   workflow_dispatch:
 
 permissions:
@@ -12,32 +12,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build table.json + badges.json (PL, 20 teams)
+      - name: Build table.json (ESPN)
         run: python scripts/update_table.py
 
-      - name: Build fixtures.json (MU only)
+      - name: Build fixtures.json (ESPN MUFC)
         run: python scripts/update_fixtures.py
 
       - name: Touch update stamp
         run: |
-          date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
           cat assets/update_stamp.txt
 
-      - name: Commit & push assets
+      - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${GITHUB_REF_NAME:-main} || true
-          git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
+
+          git add assets/table.json assets/fixtures.json assets/update_stamp.txt
+
+          # Pull-before-push avoids 'rejected - fetch first'
+          git fetch origin
+          git pull --rebase origin main || true
+
           git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
