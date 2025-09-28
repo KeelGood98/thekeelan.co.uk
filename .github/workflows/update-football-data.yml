@@ -3,7 +3,8 @@ name: Update football data / build
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    - cron: "*/30 * * * *"   # every 30 minutes (optional)
+  workflow_call: {}           # <-- enables reuse from run-all.yml
 
 jobs:
   build:
@@ -23,10 +24,10 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Update EPL table
+      - name: Update EPL table (20 rows guard)
         run: python3 scripts/update_table.py
 
-      - name: Update badges
+      - name: Update badges (crest URLs)
         run: python3 scripts/update_badges.py
 
       - name: Update fixtures (MUFC)
@@ -35,7 +36,18 @@ jobs:
       - name: Touch update stamp (force Pages redeploy)
         run: date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
 
-      - name: Commit & push changes
+      - name: Verify outputs
+        run: |
+          echo "== assets =="
+          ls -lah assets || true
+          echo "== preview table.json =="
+          head -c 600 assets/table.json || true; echo
+          echo "== preview badges.json =="
+          head -c 600 assets/badges.json || true; echo
+          echo "== preview fixtures.json =="
+          head -c 600 assets/fixtures.json || true; echo
+
+      - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -44,5 +56,6 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "data: refresh table, badges, fixtures"
+            git pull --rebase origin main || true
             git push
           fi
