@@ -1,33 +1,23 @@
-import json, os, time, tempfile, shutil
-from urllib.parse import urlencode
-import urllib.request
+#!/usr/bin/env python3
+import json, os, sys, time, urllib.request, datetime
 
-def http_get_json(url, retries=3, timeout=20):
+def http_get_json(url, timeout=30, tries=3, sleep_base=1.0):
     last = None
-    for i in range(retries):
+    for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "gh-actions/football"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
-                return json.loads(r.read().decode("utf-8"))
+            with urllib.request.urlopen(url, timeout=timeout) as r:
+                return json.load(r)
         except Exception as e:
             last = e
-            time.sleep(1.5 * (i + 1))
-    raise RuntimeError(f"GET {url} failed: {last}")
+            time.sleep(sleep_base * (i + 1))
+    if last:
+        raise last
 
-def read_json(path):
-    if not os.path.exists(path): return None
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def write_json_atomic(path, obj):
+def save_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    fd, tmppath = tempfile.mkstemp(prefix=".tmp_", suffix=".json", dir=os.path.dirname(path))
-    with os.fdopen(fd, "w", encoding="utf-8") as f:
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, ensure_ascii=False, indent=2)
-    shutil.move(tmppath, path)
+        f.write("\n")
 
-def now_ms():
-    return int(time.time() * 1000)
-
-def qs(base, **params):
-    return f"{base}?{urlencode(params)}"
+def now_iso():
+    return datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
