@@ -1,97 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Extras · thekeelan.co.uk</title>
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<meta name="theme-color" content="#0b0f14">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Extras • thekeelan.co.uk</title>
+<meta name="theme-color" content="#0b0f14" />
 <style>
-:root{--text:#e9eef5;--muted:#9aa6b2;--card:#12161b;--border:#1e242c}
-*{box-sizing:border-box} body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-background:linear-gradient(180deg,rgba(0,0,0,.60),rgba(0,0,0,.80)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top/cover no-repeat fixed;background-color:#0b0f14}
-header{display:flex;gap:12px;align-items:center;padding:10px 18px;border-bottom:1px solid var(--border);backdrop-filter:blur(8px);background:rgba(11,15,20,.6)}
-.brand-logo{width:28px;height:28px;border-radius:6px;background:
-  radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
-  radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%);box-shadow:0 0 0 1px #2a3340 inset}
-.spacer{flex:1}
-nav a{margin-left:8px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;color:var(--muted);text-decoration:none}
-nav a:hover{color:var(--text);background:#0f141a;border-color:#2a3340}
-
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:12px 18px 24px}
+:root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; }
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+  background:
+    linear-gradient(180deg, rgba(0,0,0,.6), rgba(0,0,0,.8)),
+    url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top/cover no-repeat fixed}
+.header{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:1px solid var(--border);background:rgba(11,15,20,.6);backdrop-filter:blur(8px)}
+a{color:var(--text);text-decoration:none}
+.grid{display:grid;gap:18px;padding:12px 18px 24px;grid-template-columns:1fr 1fr}
 @media (max-width:1000px){.grid{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
 .card h2{margin:0 0 8px}
-.row{display:flex;gap:10px;flex-wrap:wrap}
-.pill{border:1px solid var(--border);border-radius:10px;padding:8px 10px;min-width:120px}
-.deal{display:flex;gap:12px;border:1px solid var(--border);border-radius:12px;padding:10px;margin:8px 0;align-items:center}
-.deal img{width:80px;height:40px;object-fit:cover;border-radius:6px}
-.badge{border:1px solid var(--border);border-radius:999px;padding:2px 8px}
-a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text)}
+.muted{color:var(--muted)}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.item{display:flex;gap:10px;align-items:center;padding:8px;border:1px solid var(--border);border-radius:10px}
+.item img{width:80px;height:40px;object-fit:cover;border-radius:8px}
+.badge{padding:0 6px;border:1px solid var(--border);border-radius:8px;margin-left:6px}
 </style>
 </head>
 <body>
-<header>
-  <div class="brand-logo"></div><strong>thekeelan.co.uk</strong>
-  <div class="spacer"></div>
-  <nav><a href="/index.html">Football</a><a href="/extras.html" aria-current="page">Extras</a></nav>
+<header class="header">
+  <div>thekeelan.co.uk</div>
+  <nav><a href="/">Football</a></nav>
 </header>
 
 <div class="grid">
-  <section class="card" id="wx">
+  <section class="card">
     <h2>Leeds Weather</h2>
-    <div id="wxNow" class="row" style="margin:6px 0 10px"></div>
-    <div id="wxDays" class="row"></div>
+    <div id="wx" class="muted">Loading…</div>
   </section>
 
   <section class="card">
     <h2>Steam Specials</h2>
-    <div id="deals"><span style="color:#9aa6b2">Loading…</span></div>
+    <div id="deals" class="muted">Loading…</div>
   </section>
 </div>
 
 <script>
-const bust = `?t=${Date.now()}`;
-async function getJSON(p){ const u=[`/assets/${p}`,`assets/${p}`,`./assets/${p}`]; for(const x of u){ try{ const r=await fetch(x+bust,{cache:'no-store'}); if(r.ok) return r.json(); }catch{} } return null; }
-
-// Weather
 (async ()=>{
-  const j = await getJSON('weather.json');
-  const n = document.getElementById('wxNow'), d = document.getElementById('wxDays');
-  if(!j?.current){ n.innerHTML='<span style="color:#9aa6b2">No weather.</span>'; return; }
-  const c = Math.round(j.current.temperature_2m);
-  const w = Math.round(j.current.wind_speed_10m);
-  n.innerHTML = `<div class="pill"><strong>${c}°C</strong></div><div class="pill">Wind ${w} mph</div>`;
-  const days=(j.daily?.temperature_2m_max||[]).map((_,i)=>({
-    max: Math.round(j.daily.temperature_2m_max[i]),
-    min: Math.round(j.daily.temperature_2m_min[i]),
-    date: j.daily.time[i]
-  })).slice(0,5);
-  d.innerHTML = days.map(x=>{
-    const dd=new Date(x.date).toLocaleDateString('en-GB',{weekday:'short'});
-    return `<div class="pill"><strong>${dd}</strong><div>${x.max}° / ${x.min}°</div></div>`;
-  }).join('');
-})();
+  const bust = `?t=${Date.now()}`;
+  const j = async p => {
+    for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
+      try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
+    } return null;
+  };
 
-// Steam Specials
-(async ()=>{
-  const j = await getJSON('steam_specials.json');
-  const box = document.getElementById('deals');
-  const items = j?.items?.slice(0,10) || [];
-  if(!items.length){ box.innerHTML = '<span style="color:#9aa6b2">No specials right now.</span>'; return; }
-  const gbp = (p)=> (typeof p==='number') ? `£${(p/100).toFixed(2)}` : '';
-  box.innerHTML = items.map(it=>`
-    <div class="deal">
-      <img src="${it.image||''}" alt="">
-      <div style="flex:1;min-width:0">
-        <div style="font-weight:600">${it.name||'Unknown'}</div>
-        <div class="row" style="margin-top:6px">
-          <span class="badge">-${it.discount_percent}%</span>
-          <span class="badge">${gbp(it.final_price)} <span style="color:#9aa6b2;text-decoration:line-through;margin-left:6px">${gbp(it.original_price)}</span></span>
-          <a class="btn" href="${it.url}" target="_blank" rel="noopener">Open</a>
-        </div>
+  // Weather
+  const wx = await j('weather.json');
+  const wxBox = document.getElementById('wx');
+  if (!wx) {
+    wxBox.textContent = 'No weather right now.';
+  } else {
+    const c = wx.current || {};
+    wxBox.innerHTML = `
+      <div class="row">
+        <div style="font-size:32px">${Math.round(c.temperature_2m ?? 0)}°C</div>
+        <div class="muted">Wind ${Math.round(c.wind_speed_10m ?? 0)} mph</div>
       </div>
-    </div>`).join('');
+    `;
+  }
+
+  // Specials
+  const sp = await j('specials.json');
+  const deals = document.getElementById('deals');
+  if (!sp?.specials?.length) {
+    deals.textContent = 'No specials right now.';
+  } else {
+    deals.innerHTML = sp.specials.slice(0,12).map(d => `
+      <a class="item" href="${d.url}" target="_blank" rel="noopener">
+        <img src="${d.header_image}" alt="">
+        <div>
+          <div>${d.name}</div>
+          <div class="muted">
+            £${(d.final_price/100).toFixed(2)}
+            <span class="badge">-${d.discount_percent}%</span>
+          </div>
+        </div>
+      </a>
+    `).join("");
+  }
 })();
 </script>
 </body>
