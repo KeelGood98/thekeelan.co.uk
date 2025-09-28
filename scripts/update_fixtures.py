@@ -15,7 +15,6 @@ def fetch(url, timeout=30):
         return r.read()
 
 def to_iso(ts, d, t):
-    # normalise to ISO UTC
     if ts:
         try:
             dt = datetime.fromisoformat(ts.replace(" ", "T")).replace(tzinfo=timezone.utc)
@@ -47,7 +46,6 @@ tid = None
 try:
     data = json.loads(fetch("https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Manchester%20United").decode("utf-8"))
     cands = [t for t in (data.get("teams") or []) if norm(t.get("strTeam")) == norm(TEAM_NAME)]
-    # prefer Premier League entry if multiple (e.g. U21/U23 etc.)
     cands.sort(key=lambda t: 0 if PREF_LEAGUE.lower() in norm(t.get("strLeague")) else 1)
     if cands:
         tid = cands[0].get("idTeam")
@@ -71,7 +69,6 @@ next_events = load_events("next")
 last_events = load_events("last")
 
 raw = []
-# past
 for e in last_events:
     home, away = e.get("strHomeTeam") or "", e.get("strAwayTeam") or ""
     sh = None if (e.get("intHomeScore") in (None,"","null")) else int(e.get("intHomeScore"))
@@ -80,33 +77,28 @@ for e in last_events:
         "status": "FINISHED",
         "date": to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime")),
         "comp": e.get("strLeague") or "",
-        "home": home,
-        "away": away,
+        "home": home, "away": away,
         "score": {"home": sh, "away": sa, "outcome": outcome_for_mu(sh, sa, norm(home)==norm(TEAM_NAME))},
         "tv": (e.get("strTVStation") or "").strip() or None
     })
-# upcoming
 for e in next_events:
     home, away = e.get("strHomeTeam") or "", e.get("strAwayTeam") or ""
     raw.append({
         "status": "SCHEDULED",
         "date": to_iso(e.get("strTimestamp"), e.get("dateEvent"), e.get("strTime")),
         "comp": e.get("strLeague") or "",
-        "home": home,
-        "away": away,
+        "home": home, "away": away,
         "score": None,
         "tv": (e.get("strTVStation") or "").strip() or None
     })
 
-# ---- HARD FILTER: keep only MU matches
 mu = norm(TEAM_NAME)
 matches = [m for m in raw if norm(m["home"]) == mu or norm(m["away"]) == mu]
 
-# sanity: if API returned the wrong team (e.g., Bolton), abort the run
-if not matches or len(matches) < len(raw) * 0.3:
+# sanity: if API returns wrong team (e.g., Bolton), **fail** the job
+if not matches or len(matches) < max(3, int(len(raw) * 0.3)):
     raise SystemExit("[fixtures] sanity check failed: fetched data doesn’t look like MU. Not writing fixtures.json.")
 
-# order ascending by date
 matches.sort(key=lambda m: m["date"] or "")
 
 with open(os.path.join(OUT, "fixtures.json"), "w", encoding="utf-8") as f:
