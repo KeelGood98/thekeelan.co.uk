@@ -1,8 +1,8 @@
-name: Update football data (table + MUFC fixtures)
+name: Update football data
 
 on:
   schedule:
-    - cron: "20,50 * * * *"   # every ~30 mins
+    - cron: "*/30 * * * *"   # every 30 mins
   workflow_dispatch:
 
 permissions:
@@ -18,8 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
@@ -32,14 +31,12 @@ jobs:
       - name: Touch update stamp
         run: |
           date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
-          echo "Updated: $(cat assets/update_stamp.txt)"
 
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          # Rebase first to avoid 'fetch first' errors
           git pull --rebase origin main || true
           git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
-          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push origin HEAD:main
