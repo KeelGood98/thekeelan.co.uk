@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Mum</title>
+  <title>thekeelan.co.uk</title>
 
   <!-- Favicon / tab icon -->
-  <!-- Add your icon files to /assets and set the hrefs below -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
   <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png"> -->
   <link rel="apple-touch-icon" href="/assets/favicon-192.png">
   <meta name="theme-color" content="#0b0f14" />
 
   <style>
-    :root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; }
+    :root{
+      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c;
+      --accent:#6ee7ff; --hdr:72px; /* JS will overwrite --hdr to the real header height */
+    }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
@@ -29,21 +31,23 @@
       radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
 
+    /* Grid: centre is content-height; left/right can stretch to viewport */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
       gap:18px;
       padding:0 18px 24px;
-      align-items:stretch; /* all columns fill viewport height */
-      min-height:calc(100vh - 68px); /* roughly header height */
+      align-items:start;            /* <- critical: stops auto-stretch on the middle card */
     }
     @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
 
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35);display:flex;flex-direction:column;min-height:0}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
 
+    /* Left/Right stretch to viewport; middle stays auto */
+    .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
     .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
 
     table{width:100%;border-collapse:collapse}
@@ -61,7 +65,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header id="siteHeader">
     <div class="brand">
       <div class="brand-logo" aria-hidden="true"></div>
       <h1 style="margin:0;font-size:18px;">thekeelan.co.uk</h1>
@@ -70,8 +74,8 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT -->
-    <section class="card">
+    <!-- LEFT (stretches) -->
+    <section class="card stretch">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
         <img
@@ -79,16 +83,16 @@
           alt="gif" style="display:block;width:100%;height:auto;"
         />
       </div>
-      <div class="card" style="margin-top:12px;">
+      <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:0">
         <h2>R6 Tracker</h2>
-        <iframe id="r6Frame" title="R6 Tracker" class="panel" style="min-height:300px;"></iframe>
+        <iframe id="r6Frame" title="R6 Tracker" class="panel"></iframe>
       </div>
     </section>
 
-    <!-- CENTRE (fills height; table scrolls inside) -->
-    <section class="card">
+    <!-- CENTRE (content-height only; no internal gap) -->
+    <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
-      <div class="panel">
+      <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
         <table>
           <thead>
             <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
@@ -100,8 +104,8 @@
       </div>
     </section>
 
-    <!-- RIGHT (fills height; fixtures scroll inside) -->
-    <section class="card">
+    <!-- RIGHT (stretches) -->
+    <section class="card stretch">
       <h2>Man United – Fixtures & Results</h2>
       <div id="fixturesWrap" class="panel" style="padding:8px;">
         <div class="muted">Waiting for data…</div>
@@ -110,6 +114,13 @@
   </div>
 
   <script>
+  // measure header height so left/right can fill the viewport without forcing centre taller
+  function setHeaderVar(){
+    const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
+    document.documentElement.style.setProperty('--hdr', h+'px');
+  }
+  setHeaderVar(); addEventListener('resize', setHeaderVar);
+
   (async () => {
     const bust = `?t=${Date.now()}`;
     const getLocal = async (p) => {
@@ -118,22 +129,23 @@
       } return null;
     };
 
-    // ===== TABLE + BADGES (local) =====
+    // ===== TABLE + BADGES =====
     const [table, badgesFile] = await Promise.all([
       getLocal('table.json'),
-      getLocal('badges.json')
+      getLocal('badges.json')        // optional, written by the Action
     ]);
 
-    const badgeMap = {};
-    if (badgesFile && badgesFile.badges) {
-      Object.entries(badgesFile.badges).forEach(([k,v]) => { badgeMap[k.toLowerCase()] = v || null; });
-    }
     const tbody = document.getElementById("tableBody");
     const lu = document.getElementById("lastUpdated");
 
-    function rowHTML(r){
-      const b = r.badge || badgeMap[(r.team||'').toLowerCase()] || null;
-      const badge = b ? `<img class="badge img" src="${b}" alt="">` : `<span class="badge"></span>`;
+    // local badge map (from assets/badges.json if present)
+    const localBadges = {};
+    if (badgesFile && badgesFile.badges) {
+      for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[k.toLowerCase()] = v || null;
+    }
+
+    function rowHTML(r, badgeUrl){
+      const badge = badgeUrl ? `<img class="badge img" src="${badgeUrl}" alt="">` : `<span class="badge" data-team="${r.team}"></span>`;
       return `
         <tr>
           <td>${r.pos ?? ""}</td>
@@ -143,11 +155,36 @@
         </tr>`;
     }
 
+    const norms = s => (s||"").toLowerCase();
+
     if (!table || !Array.isArray(table.standings) || table.standings.length === 0) {
       tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
     } else {
-      tbody.innerHTML = table.standings.map(rowHTML).join("");
+      tbody.innerHTML = table.standings
+        .map(r => rowHTML(r, r.badge || localBadges[norms(r.team)] || null))
+        .join("");
       if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
+
+      // If any badges are still missing, fetch once from TSDB and patch
+      if (document.querySelector('[data-team]')) {
+        try {
+          const all = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
+          if (all.ok) {
+            const js = await all.json();
+            const map = {};
+            (js?.teams || []).forEach(t => { map[norms(t.strTeam)] = t.strTeamBadge || null; });
+            document.querySelectorAll('[data-team]').forEach(el => {
+              const nm = norms(el.getAttribute('data-team') || '');
+              const b = map[nm] || localBadges[nm] || null;
+              if (b) {
+                const img = new Image();
+                img.className = 'badge img'; img.alt = ''; img.src = b;
+                img.onload = () => el.replaceWith(img);
+              }
+            });
+          }
+        } catch {}
+      }
     }
 
     // ===== FIXTURES =====
