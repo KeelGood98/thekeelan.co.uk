@@ -1,78 +1,89 @@
-# scripts/update_fixtures.py
-import os, sys, datetime
-from fetch_helpers import http_get_json, read_json, write_json_atomic, now_ms, qs
+from datetime import datetime
+from fetch_helpers import safe_fetch, write_json, now_iso
 
-APIKEY = os.getenv("TSDB_KEY", "3")
-SEASON = os.getenv("SEASON", "2025-2026")
-TEAM_NAME = os.getenv("TEAM_NAME", "Manchester United")
-OUT = "assets/fixtures.json"
+TEAM_ID = 133612  # Manchester United
 
-def find_team_id(name):
-    j = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/searchteams.php", t=name))
-    arr = j.get("teams") or []
-    for t in arr:
-        if t.get("strTeam") == name:
-            return t.get("idTeam")
-    return arr[0].get("idTeam") if arr else None
+def normalise(ev):
+    # TSDB keys
+    date = ev.get("dateEvent") or ev.get("strTimestamp") or ""
+    time_s = ev.get("strTime")
+    if date and time_s and "T" not in date:
+        date = f"{date}T{time_s}:00Z"
 
-def parse_outcome(h, a, home_is_mufc):
+    hs = ev.get("intHomeScore")
+    as_ = ev.get("intAwayScore")
+    finished = (hs is not None and as_ is not None)
+
+    # Outcome W/D/L from Manchester United POV if needed
+    outcome = ""
     try:
-        h = int(h); a = int(a)
-    except: return ""
-    if h == a: return "d"
-    win = (h > a and home_is_mufc) or (a > h and not home_is_mufc)
-    return "w" if win else "l"
+        if finished:
+            hs_i, as_i = int(hs), int(as_)
+            if ev.get("strHomeTeam") == "Manchester United":
+                outcome = "w" if hs_i>as_i else "l" if hs_i<as_i else "d"
+            elif ev.get("strAwayTeam") == "Manchester United":
+                outcome = "w" if as_i>hs_i else "l" if as_i<hs_i else "d"
+    except Exception:
+        pass
 
-def season_fixtures(team_id):
-    # Use season endpoint if available; if not, combine last+next
-    events = []
-    try:
-        j = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/eventsseason.php", id=team_id, s=SEASON))
-        events = j.get("events") or []
-    except: pass
-    if not events:
-        last5 = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/eventslast.php", id=team_id)).get("results") or []
-        next5 = http_get_json(qs(f"https://www.thesportsdb.com/api/v1/json/{APIKEY}/eventsnext.php", id=team_id)).get("events") or []
-        events = last5 + next5
-    return events
+    hl = {}
+    if ev.get("strVideo"):
+        # TSDB often has direct YT link
+        url = ev["strVideo"]
+        if "youtu" in url:
+            hl["yt"] = url
+        else:
+            hl["sky"] = url
 
-def map_event(e):
-    # TSDB fields: dateEvent, strTime, strTimestamp (UTC), strLeague, strHomeTeam, strAwayTeam, intHomeScore, intAwayScore, strStatus
-    date_iso = e.get("strTimestamp") or (e.get("dateEvent") + "T" + (e.get("strTime") or "00:00:00Z"))
-    home = e.get("strHomeTeam") or e.get("homeTeam") or ""
-    away = e.get("strAwayTeam") or e.get("awayTeam") or ""
-    comp = e.get("strLeague") or e.get("strTournament") or e.get("strCompetition") or ""
-    hs = e.get("intHomeScore"); as_ = e.get("intAwayScore")
-    status = (e.get("strStatus") or "").upper()
-    finished = status in ("FINISHED","FT","MATCH FINISHED") or (hs not in (None,"") and as_ not in (None,""))
-    home_is_mufc = (home == "Manchester United")
-    outcome = parse_outcome(hs, as_, home_is_mufc) if finished else ""
     return {
-        "date": date_iso,
-        "comp": comp,
-        "home": home,
-        "away": away,
+        "id": ev.get("idEvent"),
+        "date": date,
+        "comp": ev.get("strLeague"),
+        "home": ev.get("strHomeTeam"),
+        "away": ev.get("strAwayTeam"),
+        "tv": None,
+        "score": {
+            "home": hs,
+            "away": as_,
+            "outcome": outcome
+        },
         "status": "FINISHED" if finished else "SCHEDULED",
-        "score": { "home": (int(hs) if hs not in (None,"") else ""), "away": (int(as_) if as_ not in (None,"") else ""), "outcome": outcome },
-        "tv": "",               # leave blank; page will fill via tv_overrides.json
-        "highlights": {}        # optional manual links
+        "highlights": hl
     }
+
+def fetch_all():
+    # season events (just in case you want the whole season)
+    today = datetime.utcnow()
+    y = today.year if today.month>=7 else today.year - 1
+    season = f"{y}-{y+1}"
+    season_url = f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={TEAM_ID}&s={season}"
+    season_data = safe_fetch(season_url, default={}) or {}
+    season_events = season_data.get("events") or []
+
+    next_data = safe_fetch(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}", default={}) or {}
+    last_data = safe_fetch(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={TEAM_ID}", default={}) or {}
+    next_events = next_data.get("events") or []
+    last_events = last_data.get("results") or []
+
+    # merge & dedupe by idEvent
+    seen, out = set(), []
+    for block in (season_events, next_events, last_events):
+        for ev in block:
+            i = ev.get("idEvent")
+            if i and i not in seen:
+                seen.add(i)
+                out.append(ev)
+    return out
 
 def main():
-    team_id = find_team_id(TEAM_NAME)
-    if not team_id:
-        raise SystemExit(f"[fixtures] Could not resolve team id for {TEAM_NAME}")
-    ev = season_fixtures(team_id)
-    mapped = [map_event(e) for e in ev]
+    raw = fetch_all()
+    norm = [normalise(e) for e in raw]
     out = {
-        "team": TEAM_NAME,
-        "season": SEASON,
-        "source": "TheSportsDB",
-        "updated": now_ms(),
-        "matches": mapped
+        "updated": now_iso(),
+        "matches": norm
     }
-    write_json_atomic(OUT, out)
-    print(f"[fixtures] Wrote {OUT} with {len(mapped)} matches.")
+    write_json("assets/fixtures.json", out)
+    print(f"Wrote assets/fixtures.json with {len(norm)} matches")
 
 if __name__ == "__main__":
     main()
