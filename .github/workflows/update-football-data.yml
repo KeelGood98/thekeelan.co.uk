@@ -18,31 +18,28 @@ jobs:
         with:
           python-version: "3.11"
 
-      # ---- Build 20-team table (TheSportsDB) ----
+      # ---- Build 20-team table (TSDB with Wikipedia fallback) ----
       - name: Build assets/table.json
         run: |
           python - <<'PY'
-          import json, time, urllib.request, urllib.parse, os, sys
+          import json, time, urllib.request, urllib.parse, os, sys, re
           from datetime import datetime
+          from html.parser import HTMLParser
 
           os.makedirs("assets", exist_ok=True)
 
-          def get(url, timeout=45):
+          def get(url, timeout=50):
             req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # Season string (e.g. 2025-2026), season starts in July
-          now = datetime.utcnow()
-          start = now.year if now.month >= 7 else now.year - 1
-          season = f"{start}-{start+1}"
-
-          # PL league id on TSDB = 4328
-          url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
-          try:
+          def build_tsdb_table():
+            now = datetime.utcnow()
+            start = now.year if now.month >= 7 else now.year - 1
+            season = f"{start}-{start+1}"
+            url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
             data = json.loads(get(url).decode("utf-8"))
             table = data.get("table") or []
-
             rows = []
             for t in table:
               rows.append({
@@ -57,67 +54,152 @@ jobs:
                 "gd": int(t.get("intGoalDifference") or 0),
                 "pts": int(t.get("intPoints") or 0)
               })
-
             rows.sort(key=lambda r: r["pos"] or 999)
+            return season, rows
 
-            out = {
-              "season": season,
-              "source": "TheSportsDB",
-              "updated": int(time.time()*1000),
-              "standings": rows
-            }
-            with open("assets/table.json","w", encoding="utf-8") as f:
-              json.dump(out, f, ensure_ascii=False)
-            print(f"Wrote assets/table.json with {len(rows)} rows for {season}")
-          except Exception as e:
-            print("Table build failed:", e, file=sys.stderr)
-            raise
+          # very small table parser to grab the "League table" from the Wikipedia season page
+          class TableGrab(HTMLParser):
+            def __init__(self):
+              super().__init__()
+              self.capture = False
+              self.in_th = False
+              self.header = []
+              self.rows = []
+              self.row = []
+              self.td_buf = []
+              self.depth = 0
+            def handle_starttag(self, tag, attrs):
+              if tag == "table":
+                # find class="wikitable" with a caption or preceding header mentioning "League table"
+                cls = " ".join(v for k,v in attrs if k=="class")
+                if "wikitable" in cls:
+                  self.capture = True
+                  self.header = []
+                  self.rows = []
+              if not self.capture: return
+              if tag in ("th","td"):
+                self.td_buf = []
+                if tag == "th": self.in_th = True
+              if tag == "tr":
+                self.row = []
+              self.depth += 1
+            def handle_endtag(self, tag):
+              if not self.capture: return
+              self.depth -= 1
+              if tag in ("th","td"):
+                txt = "".join(self.td_buf).strip()
+                self.row.append(re.sub(r"\[.*?\]","",txt))
+                if tag == "th": self.in_th = False
+              if tag == "tr":
+                if self.row:
+                  if not self.header:
+                    self.header = self.row
+                  else:
+                    self.rows.append(self.row)
+              if tag == "table":
+                self.capture = False
+            def handle_data(self, data):
+              if self.capture:
+                self.td_buf.append(data)
+
+          def build_wiki_table():
+            # Try the current season page first; fall back to generic Premier League page
+            pages = [
+              f"https://en.wikipedia.org/wiki/{datetime.utcnow().year}%E2%80%93{datetime.utcnow().year+1}_Premier_League",
+              "https://en.wikipedia.org/wiki/Premier_League"
+            ]
+            for url in pages:
+              try:
+                html = get(url).decode("utf-8", "ignore")
+                p = TableGrab(); p.feed(html)
+                # Find a table that has columns starting with Pos / Team or similar
+                for r in p.rows:
+                  pass
+                # Identify the correct table by checking header
+                hdr = [h.lower() for h in p.header]
+                # If header missing (parser limitations), try to detect by row shapes; otherwise bail to next page
+                if not p.rows: 
+                  continue
+                # Heuristic: rows with position (int) then team name then played ...
+                cleaned = []
+                for row in p.rows:
+                  if len(row) < 10: 
+                    continue
+                  try:
+                    pos = int(row[0])
+                  except:
+                    continue
+                  team = row[1]
+                  # Find numeric columns for P W D L GF GA GD Pts (positions vary slightly on wiki)
+                  nums = [c for c in row if re.fullmatch(r"-?\d+", c)]
+                  if len(nums) < 8: 
+                    continue
+                  # we’ll take the first 8 numeric cells as P W D L GF GA GD Pts
+                  P,W,D,L,GF,GA,GD,PTS = map(int, nums[:8])
+                  cleaned.append({
+                    "pos": pos, "team": team, "played": P, "won": W, "drawn": D, "lost": L,
+                    "gf": GF, "ga": GA, "gd": GD, "pts": PTS
+                  })
+                cleaned.sort(key=lambda r: r["pos"])
+                if len(cleaned) >= 18:   # good enough
+                  season = f"{datetime.utcnow().year}-{datetime.utcnow().year+1}"
+                  return season, cleaned
+              except Exception:
+                continue
+            return None, []
+
+          season, rows = build_tsdb_table()
+          if len(rows) < 20:
+            print(f"TSDB returned {len(rows)} rows; trying Wikipedia fallback…", file=sys.stderr)
+            season2, rows2 = build_wiki_table()
+            if rows2:
+              season, rows = season2, rows2
+
+          out = {
+            "season": season,
+            "source": "TSDB+Wiki" if len(rows) >= 20 else "TSDB",
+            "updated": int(time.time()*1000),
+            "standings": rows
+          }
+          with open("assets/table.json","w",encoding="utf-8") as f:
+            json.dump(out, f)
+          print(f"Wrote assets/table.json with {len(rows)} rows")
           PY
 
-      # ---- Build badges.json with crest URLs (TheSportsDB) ----
+      # ---- Build badges.json from TSDB ----
       - name: Build assets/badges.json
         run: |
           python - <<'PY'
-          import json, time, urllib.request, urllib.parse, os
-
+          import json, time, urllib.request, os
           os.makedirs("assets", exist_ok=True)
-
-          def get(url, timeout=45):
-            req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
-            with urllib.request.urlopen(req, timeout=timeout) as r:
+          def get(u):
+            req = urllib.request.Request(u, headers={"User-Agent":"thekeelan-actions/1.0"})
+            with urllib.request.urlopen(req, timeout=40) as r:
               return r.read()
-
-          # All PL teams
-          url = "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League"
-          data = json.loads(get(url).decode("utf-8"))
-          teams = data.get("teams") or []
-
+          data = json.loads(get("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League").decode("utf-8"))
           badges = {}
-          for t in teams:
+          for t in (data.get("teams") or []):
             name = t.get("strTeam") or ""
             crest = (t.get("strTeamBadge") or "").replace("http://","https://")
-            if name:
-              badges[name] = crest
-
+            if name: badges[name] = crest
           out = {"updated": int(time.time()*1000), "badges": badges}
-          with open("assets/badges.json","w", encoding="utf-8") as f:
-            json.dump(out, f, ensure_ascii=False)
-          print(f"Wrote assets/badges.json with {len(badges)} entries")
+          with open("assets/badges.json","w",encoding="utf-8") as f: json.dump(out,f)
+          print("Wrote assets/badges.json", len(badges))
           PY
 
-      # ---- Build fixtures.json via helper script (Man United only) ----
+      # ---- Build MUFC fixtures (Premier League only) ----
       - name: Build assets/fixtures.json
         run: |
           python update_fixtures.py
 
-      # ---- Touch update stamp (used by site header) ----
+      # ---- Update stamp ----
       - name: Touch update stamp
         run: |
           mkdir -p assets
           date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
           cat assets/update_stamp.txt
 
-      # ---- Commit & push (safe for concurrent pushes) ----
+      # ---- Commit & push safely ----
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
