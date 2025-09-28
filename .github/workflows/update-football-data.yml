@@ -1,42 +1,41 @@
-name: Update football data
+name: Update football data (table + fixtures + badges)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 mins
+    - cron: "0 6 * * *"    # daily 06:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: football-data
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build table + badges
+      - name: Build table.json + badges.json
         run: python scripts/update_table.py
 
-      - name: Build MUFC fixtures
+      - name: Build fixtures.json
         run: python scripts/update_fixtures.py
 
       - name: Touch update stamp
         run: |
-          date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
-      - name: Commit & push
+      - name: Commit & push assets
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main || true
           git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
-          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
-          git push origin HEAD:main
+          git commit -m "chore: refresh football data $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "No changes"
+          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD) || true
+          git push || true
