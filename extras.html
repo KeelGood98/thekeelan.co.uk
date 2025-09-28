@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Mum — Extras</title>
+  <meta name="theme-color" content="#0b0f14" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <style>
+    :root{
+      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff;
+      --hdr:72px;
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{
+      margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0.80)),
+        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
+      background-color:#0b0f14;
+    }
+    header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px}
+    .brand{display:flex;gap:10px;align-items:center}
+    .brand-logo{width:28px;height:28px;border-radius:6px;background:
+      radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
+      radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a.active, nav a:hover{color:var(--text)}
+    .grid{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;padding:0 18px 24px;align-items:start}
+    @media (max-width:1100px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+    .card h2{margin:0 0 8px}
+    .muted{color:var(--muted)}
+    .list{display:flex;flex-direction:column;gap:10px}
+    .game{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px;border:1px solid var(--border);border-radius:10px}
+    .game a{color:var(--text);text-decoration:none}
+    .pill{border:1px solid var(--border);border-radius:999px;padding:2px 8px;font-size:12px;color:var(--muted)}
+    iframe{width:100%;border:0;border-radius:10px}
+    .wx-now{display:flex;gap:14px;align-items:baseline}
+    .wx-now .temp{font-size:36px;font-weight:700}
+    .wx-rows{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:10px}
+    .wx-day{border:1px solid var(--border);border-radius:10px;padding:8px;text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-logo" aria-hidden="true"></div>
+      <h1 style="margin:0;font-size:18px;">thekeelan.co.uk</h1>
+    </div>
+    <nav>
+      <a href="/" title="Football">Football</a>
+      <a class="active" href="/extras.html" title="Extras">Extras</a>
+    </nav>
+  </header>
+
+  <div class="grid">
+    <!-- LEFT column -->
+    <section class="card">
+      <h2>Leeds Weather</h2>
+      <div id="wx" class="muted">Loading…</div>
+    </section>
+
+    <section class="card">
+      <h2>My Spotify Playlist</h2>
+      <iframe
+        style="min-height:420px"
+        src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </section>
+
+    <!-- full width -->
+    <section class="card" style="grid-column:1/-1">
+      <h2>Free Steam Games</h2>
+      <div id="games" class="list"><div class="muted">Checking freebies…</div></div>
+    </section>
+  </div>
+
+  <script>
+    const bust = `?t=${Date.now()}`;
+    const wxEl = document.getElementById('wx');
+    const gamesEl = document.getElementById('games');
+
+    // ---- Weather (Leeds) ----
+    const WMO = {
+      0: "Clear", 1: "Mainly clear", 2: "Partly cloudy", 3: "Overcast",
+      45: "Fog", 48: "Depositing rime fog",
+      51: "Light drizzle", 53:"Moderate drizzle", 55:"Dense drizzle",
+      61: "Light rain", 63:"Moderate rain", 65:"Heavy rain",
+      71: "Light snow", 73:"Moderate snow", 75:"Heavy snow",
+      80: "Rain showers", 81:"Rain showers", 82:"Violent rain showers",
+      95: "Thunderstorm", 96:"Thunderstorm (hail)", 99:"Thunderstorm (heavy hail)"
+    };
+    function wxIcon(code){ // super simple emoji set
+      if ([0,1].includes(code)) return "☀️";
+      if ([2,3].includes(code)) return "⛅";
+      if ([45,48].includes(code)) return "🌫️";
+      if ([61,63,65,80,81,82].includes(code)) return "🌧️";
+      if ([71,73,75].includes(code)) return "❄️";
+      if ([95,96,99].includes(code)) return "⛈️";
+      if ([51,53,55].includes(code)) return "🌦️";
+      return "🌡️";
+    }
+
+    async function loadWeather(){
+      try{
+        let j=null;
+        for (const u of ['/assets/weather.json','assets/weather.json','./assets/weather.json']){
+          try{ const r=await fetch(u+bust,{cache:'no-store'}); if(r.ok){ j=await r.json(); break; } }catch{}
+        }
+        if(!j){
+          // Fallback live (no key). Leeds centre: 53.8008, -1.5491
+          const url='https://api.open-meteo.com/v1/forecast?latitude=53.8008&longitude=-1.5491&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=Europe%2FLondon';
+          j = await (await fetch(url,{cache:'no-store'})).json();
+        }
+        const cur = j.current || j.current_weather || {};
+        const daily = j.daily || {};
+        const days = (daily.time||[]).map((d,i)=>({
+          date: d, code: daily.weather_code?.[i], tmax: daily.temperature_2m_max?.[i], tmin: daily.temperature_2m_min?.[i]
+        })).slice(0,5);
+
+        wxEl.innerHTML = `
+          <div class="wx-now">
+            <div class="temp">${Math.round(cur.temperature_2m ?? cur.temperature ?? 0)}°C</div>
+            <div>${wxIcon(cur.weather_code)} ${WMO[cur.weather_code] || '—'} · Wind ${Math.round(cur.wind_speed_10m ?? 0)} mph</div>
+          </div>
+          <div class="wx-rows">
+            ${days.map(d=>{
+              const dt = new Date(d.date).toLocaleDateString('en-GB',{weekday:'short'});
+              return `<div class="wx-day">
+                <div class="muted">${dt}</div>
+                <div style="font-size:18px">${wxIcon(d.code)}</div>
+                <div>${Math.round(d.tmax)}° / <span class="muted">${Math.round(d.tmin)}°</span></div>
+              </div>`;
+            }).join('')}
+          </div>
+          <div class="muted" style="margin-top:8px">Leeds, UK · ${new Date(j.updated || Date.now()).toLocaleString('en-GB')}</div>
+        `;
+      }catch(e){
+        wxEl.textContent = 'Could not load weather.';
+      }
+    }
+
+    // ---- Free Steam Games ----
+    async function loadGames(){
+      try{
+        let j=null;
+        for (const u of ['/assets/free_games.json','assets/free_games.json','./assets/free_games.json']){
+          try{ const r=await fetch(u+bust,{cache:'no-store'}); if(r.ok){ j=await r.json(); break; } }catch{}
+        }
+        if(!j){
+          // fallback live via CheapShark (no key). 1 = Steam
+          const url='https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0';
+          const arr = await (await fetch(url,{cache:'no-store'})).json();
+          j = { updated: Date.now(), games: arr.map(x=>({
+              title:x.title, steamAppID:x.steamAppID, normalPrice:x.normalPrice, dealRating:x.dealRating
+          })) };
+        }
+        const games = (j.games||[]).slice(0,20);
+        if(!games.length){ gamesEl.innerHTML='<div class="muted">No freebies right now.</div>'; return; }
+        gamesEl.innerHTML = games.map(g=>{
+          const steamUrl = g.steamAppID ? `https://store.steampowered.com/app/${g.steamAppID}/` : null;
+          const link = steamUrl || g.url || '#';
+          return `<div class="game">
+            <div>
+              <div><a href="${link}" target="_blank" rel="noopener">${g.title}</a></div>
+              <div class="muted">Steam · was £${Number(g.normalPrice||0).toFixed(2)}</div>
+            </div>
+            <div class="pill">FREE</div>
+          </div>`;
+        }).join('');
+      }catch(e){
+        gamesEl.innerHTML = '<div class="muted">Could not load freebies.</div>';
+      }
+    }
+
+    loadWeather();
+    loadGames();
+  </script>
+</body>
+</html>
