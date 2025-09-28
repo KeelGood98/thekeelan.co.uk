@@ -1,384 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Mum</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>thekeelan.co.uk</title>
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<meta name="theme-color" content="#0b0f14">
+<style>
+:root{--text:#e9eef5;--muted:#9aa6b2;--card:#12161b;--border:#1e242c;--accent:#6ee7ff;--hdr:72px}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,rgba(0,0,0,.60),rgba(0,0,0,.80)),url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top/cover no-repeat fixed;background-color:#0b0f14}
+header{position:sticky;top:0;z-index:10;display:flex;gap:12px;align-items:center;padding:10px 18px;border-bottom:1px solid var(--border);backdrop-filter:blur(8px);background:rgba(11,15,20,.6)}
+.brand{display:flex;gap:10px;align-items:center}
+.brand-logo{width:28px;height:28px;border-radius:6px;background:
+  radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
+  radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%);box-shadow:0 0 0 1px #2a3340 inset}
+.spacer{flex:1}
+#lastUpdated{color:var(--muted);white-space:nowrap}
+nav a{margin-left:8px;padding:8px 12px;border:1px solid var(--border);border-radius:999px;color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--text);background:#0f141a;border-color:#2a3340}
 
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <meta name="theme-color" content="#0b0f14" />
+.grid{display:grid;grid-template-columns:1fr 1.6fr 1.2fr;gap:18px;padding:12px 18px 24px}
+@media (max-width:1200px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:980px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.card h2{margin:0 0 8px}
+.panel{border:1px solid var(--border);border-radius:10px;overflow:auto}
+.left-img{border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.left-img img{display:block;width:100%;height:auto}
 
-  <style>
-    :root{
-      --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; --accent2:#a78bfa;
-      --hdr:72px; /* JS will set this to real header height */
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,0.60), rgba(0,0,0,0.80)),
-        url('https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a?auto=format&fit=crop&w=2400&q=60') center top / cover no-repeat fixed;
-      background-color:#0b0f14;
-    }
+/* table */
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
+thead th{position:sticky;top:0;background:#0f141a}
+.team-cell{display:flex;gap:8px;align-items:center;justify-content:flex-start}
+.badge{width:20px;height:20px;border-radius:50%;background:#0f141a;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:11px}
+.badge.img{background:none}
+.badge.initials{border:1px solid #243041;color:#b6c2cf;text-transform:uppercase}
 
-    /* ===== Header / Menu ===== */
-    .site-header{
-      position: sticky; top: 0; z-index: 50;
-      display:flex; align-items:center; gap:12px; padding:10px 18px;
-      backdrop-filter: blur(8px);
-      background: rgba(11,15,20,0.6);
-      border-bottom: 1px solid var(--border);
-    }
-    .brand{display:flex;gap:10px;align-items:center}
-    .brand-logo{width:28px;height:28px;border-radius:6px;background:
-      radial-gradient(circle at 30% 30%,#6ee7ff,transparent 40%),
-      radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
-    .brand h1{margin:0;font-size:18px}
+/* results banding */
+tr.W td{background:rgba(6,50,22,.8)}
+tr.D td{background:rgba(50,50,10,.6)}
+tr.L td{background:rgba(60,20,20,.7)}
 
-    .spacer{flex:1}
-    #lastUpdated{white-space:nowrap}
-
-    .nav{display:flex; gap:10px; align-items:center}
-    .nav a{
-      position:relative;
-      padding:8px 12px; border:1px solid var(--border); border-radius:999px;
-      color:var(--muted); text-decoration:none; transition:all .18s ease;
-    }
-    .nav a:hover{ color:var(--text); border-color:#2a3340; background:#0f141a; }
-    .nav a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
-    .nav a.active{
-      color:var(--text);
-      border-color:transparent;
-      background: linear-gradient(90deg, rgba(110,231,255,.20), rgba(167,139,250,.20));
-      box-shadow: 0 0 0 1px rgba(110,231,255,.25) inset;
-    }
-
-    /* ===== Layout ===== */
-    .grid{
-      display:grid;
-      grid-template-columns:1fr 1.6fr 1.2fr;
-      gap:18px;
-      padding:12px 18px 24px;
-      align-items:start; /* centre column stays content-height */
-    }
-    @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
-    @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
-
-    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
-    .card h2{margin:0 0 8px}
-    .muted{color:var(--muted)}
-
-    /* left/right fill viewport neatly; middle stays auto height */
-    .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
-    .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
-
-    /* ===== Tables ===== */
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
-    thead th{position:sticky;top:0;background:#0f141a;z-index:1}
-    tr:hover td{background:#0f141a}
-
-    .team-cell{display:flex;align-items:center;justify-content:center;gap:8px}
-    .badge{
-      width:20px;height:20px;border-radius:50%;
-      display:inline-flex;align-items:center;justify-content:center;
-      background:#0f141a;
-      font-weight:700;font-size:11px;letter-spacing:.5px
-    }
-    .badge.img{background:none}
-    .badge.initials{
-      background: radial-gradient(closest-side, #1a2430, #0f141a);
-      border:1px solid #243041; color:#b6c2cf; text-transform:uppercase;
-    }
-
-    /* W/D/L row highlights */
-    .W td{background:#0f3922}    /* green-ish */
-    .D td{background:#2a2a19}    /* amber-ish */
-    .L td{background:#3a1a1a}    /* red-ish */
-
-    a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px;text-decoration:none;color:var(--text)}
-    a.btn:hover{background:#0f141a}
-  </style>
+a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px;text-decoration:none;color:var(--text)}
+</style>
 </head>
 <body>
-  <!-- Header -->
-  <header id="siteHeader" class="site-header">
-    <div class="brand">
-      <div class="brand-logo" aria-hidden="true"></div>
-      <h1>thekeelan.co.uk</h1>
+<header id="siteHeader">
+  <div class="brand"><div class="brand-logo"></div><strong>thekeelan.co.uk</strong></div>
+  <div class="spacer"></div>
+  <div id="lastUpdated">Last updated: —</div>
+  <nav><a href="/" aria-current="page">Football</a><a href="/extras.html">Extras</a></nav>
+</header>
+
+<div class="grid">
+  <!-- Left -->
+  <section class="card">
+    <h2>Left Panel</h2>
+    <div class="left-img">
+      <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="">
     </div>
+  </section>
 
-    <div class="spacer"></div>
-    <div class="muted" id="lastUpdated">Last updated: —</div>
+  <!-- Centre -->
+  <section class="card" id="tableCard">
+    <h2>Premier League Table</h2>
+    <div class="panel">
+      <table>
+        <thead><tr><th>#</th><th style="text-align:left">Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead>
+        <tbody id="tableBody"><tr><td colspan="10" style="color:#9aa6b2">No or partial table data. Check /assets/table.json.</td></tr></tbody>
+      </table>
+    </div>
+  </section>
 
-    <nav class="nav" aria-label="Primary">
-      <a href="/" class="active" title="Football">Football</a>
-      <a href="/extras.html" title="Extras">Extras</a>
-    </nav>
-  </header>
+  <!-- Right -->
+  <section class="card">
+    <h2>Man United – Fixtures & Results</h2>
+    <div id="fixturesWrap" class="panel" style="padding:8px"><div style="color:#9aa6b2">Waiting for data…</div></div>
+  </section>
+</div>
 
-  <div class="grid">
-    <!-- LEFT -->
-    <section class="card stretch">
-      <h2>Left Panel</h2>
-      <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
-        <img
-          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
-          alt="gif" style="display:block;width:100%;height:auto;"
-        />
-      </div>
-    </section>
+<script>
+const bust = `?t=${Date.now()}`;
+const urls = (p)=>[`/assets/${p}`,`assets/${p}`,`./assets/${p}`];
+async function getJSON(p){
+  for(const u of urls(p)){ try{ const r=await fetch(u+bust,{cache:'no-store'}); if(r.ok) return r.json(); }catch{} }
+  return null;
+}
+async function getText(p){
+  for(const u of urls(p)){ try{ const r=await fetch(u+bust,{cache:'no-store'}); if(r.ok) return r.text(); }catch{} }
+  return "";
+}
+const norm = s=>(s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
+const initials = t=>t.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
+const https = u=>(u||"").replace(/^http:\/\//,"https://");
 
-    <!-- CENTRE -->
-    <section class="card" style="align-self:start;height:max-content;">
-      <h2>Premier League Table</h2>
-      <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
-        <table>
-          <thead>
-            <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
-          </thead>
-          <tbody id="tableBody">
-            <tr><td colspan="10" class="muted">Waiting for data…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+// ------------- TABLE + BADGES -------------
+(async ()=>{
+  const [table,badges] = await Promise.all([getJSON('table.json'), getJSON('badges.json')]);
+  const tbody = document.getElementById('tableBody');
+  const lu = document.getElementById('lastUpdated');
 
-    <!-- RIGHT -->
-    <section class="card stretch">
-      <h2>Man United – Fixtures & Results</h2>
-      <div id="fixturesWrap" class="panel" style="padding:8px;">
-        <div class="muted">Waiting for data…</div>
-      </div>
-    </section>
-  </div>
-
-  <script>
-  // Header height → left/right fill viewport without stretching the centre
-  function setHeaderVar(){
-    const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
-    document.documentElement.style.setProperty('--hdr', h+'px');
+  if(lu){
+    const s = await getText('update_stamp.txt');
+    lu.textContent = 'Last updated: ' + (s?.trim() || new Date(table?.updated||Date.now()).toLocaleString());
   }
-  setHeaderVar(); addEventListener('resize', setHeaderVar);
 
-  (async () => {
-    const bust = `?t=${Date.now()}`;
-    const tryPaths = (p) => [`/assets/${p}`, `assets/${p}`, `./assets/${p}`];
+  if(!table?.standings?.length){ return; }
 
-    const getJSON = async (p) => {
-      for (const u of tryPaths(p)) {
-        try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
-      } return null;
-    };
-    const getText = async (p) => {
-      for (const u of tryPaths(p)) {
-        try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.text(); } catch {}
-      } return null;
-    };
+  const bmap = Object.fromEntries(Object.entries(badges?.badges||{}).map(([k,v])=>[k, https(v)]));
+  const rows = table.standings;
+  tbody.innerHTML = rows.map(r=>{
+    const img = bmap[norm(r.team)];
+    const badge = img ? `<img class="badge img" referrerpolicy="no-referrer" src="${img}" alt="">`
+                      : `<span class="badge initials" data-team="${r.team}">${initials(r.team||'')}</span>`;
+    return `<tr>
+      <td>${r.pos}</td>
+      <td style="text-align:left"><span class="team-cell">${badge}${r.team}</span></td>
+      <td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td>
+      <td>${r.gf}</td><td>${r.ga}</td><td>${r.gd}</td><td><strong>${r.pts}</strong></td>
+    </tr>`;
+  }).join('');
+})();
 
-    const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
-    const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
-    const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
+// ------------- FIXTURES -------------
+(async ()=>{
+  const fx = await getJSON('fixtures.json');
+  const wrap = document.getElementById('fixturesWrap');
+  if(!fx?.matches?.length){ wrap.innerHTML = '<div style="color:#9aa6b2">No fixtures data.</div>'; return; }
 
-    /* ---- exact Wikipedia club titles (used only for badge fallback) ---- */
-    const WP_TITLE = {
-      "Arsenal":"Arsenal_F.C.","Aston Villa":"Aston_Villa_F.C.","Bournemouth":"AFC_Bournemouth",
-      "Brentford":"Brentford_F.C.","Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.","Burnley":"Burnley_F.C.",
-      "Chelsea":"Chelsea_F.C.","Crystal Palace":"Crystal_Palace_F.C.","Everton":"Everton_F.C.","Fulham":"Fulham_F.C.",
-      "Leeds United":"Leeds_United_F.C.","Liverpool":"Liverpool_F.C.","Manchester City":"Manchester_City_F.C.",
-      "Manchester United":"Manchester_United_F.C.","Newcastle United":"Newcastle_United_F.C.",
-      "Nottingham Forest":"Nottingham_Forest_F.C.","Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
-      "West Ham United":"West_Ham_United_F.C.","Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.",
-      "Sunderland":"Sunderland_A.F.C."
-    };
+  const t = s=>new Date(s).getTime()||0;
+  const finished = m=>{
+    const st=(m.status||'').toUpperCase();
+    if(st==='FINISHED') return true;
+    if(st==='SCHEDULED') return false;
+    if(m.score && Number.isFinite(m.score.home) && Number.isFinite(m.score.away)) return true;
+    return t(m.date) < Date.now();
+  };
+  const all = fx.matches.slice().sort((a,b)=>t(a.date)-t(b.date));
+  const up  = all.filter(m=>!finished(m)).slice(0,8);
+  const rec = all.filter(finished).sort((a,b)=>t(b.date)-t(a.date)).slice(0,8);
+  const fmtD = d=>new Date(d).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric',timeZone:'Europe/London'});
+  const fmtT = d=>new Date(d).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Europe/London'});
 
-    async function fetchWikiClubCrest(team){
-      const title = WP_TITLE[team] || (team.replace(/\s+/g,'_') + "_F.C.");
-      try{
-        const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title), {cache:'no-store'});
-        if (!r.ok) return null;
-        const j = await r.json();
-        return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
-      }catch(e){ return null; }
-    }
+  const guessTV=(date,comp)=>{
+    const dt=new Date(date); const day=dt.toLocaleString('en-GB',{weekday:'short',timeZone:'Europe/London'});
+    const hm =dt.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Europe/London'});
+    if(!/premier/i.test(comp||"")) return '';
+    if(day==='Sat'&&hm==='12:30') return 'TNT';
+    if(day==='Sat'&&(hm==='17:30'||hm==='20:00')) return 'Sky';
+    if(day==='Sun'&&(hm==='14:00'||hm==='16:30'||hm==='19:00')) return 'Sky';
+    if((day==='Mon'||day==='Fri')&&(hm==='19:45'||hm==='20:00')) return 'Sky';
+    return '';
+  };
 
-    /* ===== TABLE + BADGES ===== */
-    const [table, badgesFile] = await Promise.all([ getJSON('table.json'), getJSON('badges.json') ]);
-    const tbody = document.getElementById("tableBody");
+  const upHTML = `
+    <h3 style="margin:8px 0">Upcoming</h3>
+    <table><thead><tr><th>Date (UK)</th><th>Time</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
+    <tbody>
+      ${up.map(m=>`<tr>
+        <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td><td>${m.comp||''}</td>
+        <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+        <td>${(m.tv||'').replace(/;|,/g,', ') || guessTV(m.date,m.comp)}</td>
+      </tr>`).join('')}
+    </tbody></table>`;
 
-    const localBadges = {};
-    if (badgesFile?.badges) for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = toHttps(v || "");
+  const rowCls=oc=>oc==='W'?'W':(oc==='D'?'D':(oc==='L'?'L':''));
+  const recHTML = `
+    <h3 style="margin:12px 0 6px">Recent Results</h3>
+    <table>
+      <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
+      <tbody>
+        ${rec.map(m=>{
+          const sc = m.score ? `${m.score.home}–${m.score.away}` : '';
+          const oc = m.score?.outcome || '';
+          const y = new Date(m.date).getFullYear();
+          const q = encodeURIComponent(`${m.home} ${m.away} highlights ${y}`);
+          const sky = `https://www.skysports.com/search?q=${q}`;
+          const yt  = `https://www.youtube.com/results?search_query=${q}`;
+          return `<tr class="${rowCls(oc)}">
+            <td>${fmtD(m.date)}</td><td>${m.comp||''}</td>
+            <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+            <td><strong>${sc}</strong>${oc?` (${oc})`:''}</td>
+            <td><a class="btn" href="${sky}" target="_blank" rel="noopener">Sky</a>
+                <a class="btn" href="${yt}"  target="_blank" rel="noopener" style="margin-left:6px">YT</a></td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+    </table>`;
 
-    function rowHTML(r){
-      const b = toHttps(r.badge || localBadges[norm(r.team)]);
-      const badge = b
-        ? `<img class="badge img" referrerpolicy="no-referrer" src="${b}" alt="">`
-        : `<span class="badge initials" data-team="${r.team}">${initials(r.team||'')}</span>`;
-      return `
-        <tr>
-          <td>${r.pos ?? ""}</td>
-          <td><span class="team-cell">${badge}${r.team ?? ""}</span></td>
-          <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
-          <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td><strong>${r.pts ?? ""}</strong></td>
-        </tr>`;
-    }
-
-    if (!table?.standings?.length) {
-      tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No or partial table data. Check /assets/table.json.</div></td></tr>';
-    } else {
-      tbody.innerHTML = table.standings.map(rowHTML).join("");
-    }
-
-    function upgradeFromMap(map){
-      document.querySelectorAll('.badge.initials[data-team]').forEach(el=>{
-        const nm = el.getAttribute('data-team') || '';
-        const url = toHttps(map[norm(nm)]);
-        if (url) {
-          const img = new Image();
-          img.className = 'badge img';
-          img.alt = '';
-          img.referrerPolicy = 'no-referrer';
-          img.onload = () => el.replaceWith(img);
-          img.onerror = () => console.warn("[badges] image failed for", nm, url);
-          img.src = url;
-        }
-      });
-    }
-
-    // Try local badges first
-    if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
-
-    // TSDB league maps (if available) to improve badge coverage
-    async function fetchTSDBLeagueMap(){
-      const out = {...localBadges};
-      try {
-        const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
-        if (r1.ok) (await r1.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){}
-      try {
-        const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
-        if (r2.ok) (await r2.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
-      } catch(e){}
-      return out;
-    }
-
-    const leagueMap = await fetchTSDBLeagueMap();
-    upgradeFromMap(leagueMap);
-
-    // Exact Wikipedia crest fallback for any remaining initials
-    async function upgradeWithWikiExact(){
-      const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
-      if (!els.length) return;
-      const chunk = async list => {
-        const part = list.splice(0,6);
-        await Promise.all(part.map(async el=>{
-          const team = el.getAttribute('data-team') || '';
-          const url  = await fetchWikiClubCrest(team);
-          if (url){
-            const img = new Image();
-            img.className = 'badge img'; img.alt=''; img.referrerPolicy='no-referrer';
-            img.onload = () => el.replaceWith(img);
-            img.src = url;
-          }
-        }));
-        if (list.length) await chunk(list);
-      };
-      await chunk(els);
-    }
-    await upgradeWithWikiExact();
-
-    /* ===== FIXTURES ===== */
-    const fixtures = await getJSON('fixtures.json');
-    const wrap = document.getElementById("fixturesWrap");
-    if (!fixtures?.matches?.length) {
-      wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
-    } else {
-      const t = s => new Date(s).getTime() || 0;
-      const isFinished = m => {
-        const st = (m.status || "").toUpperCase();
-        if (st === "FINISHED") return true;
-        if (st === "SCHEDULED") return false;
-        if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
-        return t(m.date) < Date.now();
-      };
-      const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
-      const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
-      const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
-      const recent   = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
-      const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
-      const fmtT = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
-
-      function guessUkTv(dateStr, comp) {
-        const dt = new Date(dateStr);
-        const day = dt.toLocaleString('en-GB', { weekday:'short', timeZone:'Europe/London' });
-        const hm  = dt.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
-        if (!/premier/i.test(comp||"")) return null;
-        if (day === 'Sat' && hm === '12:30') return 'TNT Sports (est.)';
-        if (day === 'Sat' && (hm === '17:30' || hm === '20:00')) return 'Sky Sports (est.)';
-        if (day === 'Sun' && (hm === '14:00' || hm === '16:30' || hm === '19:00')) return 'Sky Sports (est.)';
-        if ((day === 'Mon' || day === 'Fri') && (hm === '19:45' || hm === '20:00')) return 'Sky Sports (est.)';
-        return 'TBD';
-      }
-
-      const upHTML = `
-        <h3 style="margin:8px 0;">Upcoming</h3>
-        <table>
-          <thead><tr><th>Date (UK)</th><th>Time</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
-          <tbody>
-            ${upcoming.map(m => {
-              const tv = (m.tv || '').trim() || guessUkTv(m.date, m.comp) || 'TBD';
-              return `<tr>
-                <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td>
-                <td>${m.comp||""}</td><td>${m.home}</td><td>vs</td><td>${m.away}</td>
-                <td>${tv}</td>
-              </tr>`;
-            }).join("")}
-          </tbody>
-        </table>
-      `;
-
-      const recHTML = recent.length ? `
-        <h3 style="margin:12px 0 6px;">Recent Results</h3>
-        <table>
-          <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
-          <tbody>
-            ${recent.map(m=>{
-              const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
-              const oc = m.score?.outcome || "";
-              const year = new Date(m.date).getFullYear();
-              const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
-              const sky = `https://www.skysports.com/search?q=${q}`;
-              const yt  = `https://www.youtube.com/results?search_query=${q}`;
-              return `<tr class="${cls(oc)}">
-                <td>${fmtD(m.date)}</td>
-                <td>${m.comp||""}</td>
-                <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-                <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
-                <td>
-                  <a class="btn" href="${sky}" target="_blank" rel="noopener noreferrer">Sky</a>
-                  <a class="btn" href="${yt}"  target="_blank" rel="noopener noreferrer" style="margin-left:6px;">YT</a>
-                </td>
-              </tr>`;
-            }).join("")}
-          </tbody>
-        </table>
-      ` : "";
-
-      wrap.innerHTML = upHTML + recHTML;
-    }
-
-    /* ===== Last updated ===== */
-    let updatedText = await getText('update_stamp.txt');
-    if (!updatedText) {
-      const times = [];
-      if (table?.updated)  times.push(+table.updated);
-      if (fixtures?.updated) times.push(+fixtures.updated);
-      if (times.length) updatedText = new Date(Math.max(...times)).toLocaleString();
-    }
-    document.getElementById('lastUpdated').textContent = "Last updated: " + (updatedText ? updatedText.trim() : "—");
-  })();
-  </script>
+  wrap.innerHTML = upHTML + recHTML;
+})();
+</script>
 </body>
 </html>
