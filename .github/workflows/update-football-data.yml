@@ -2,7 +2,7 @@ name: Update site data (TSDB season → table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"    # daily
+    - cron: "0 6 * * *"          # daily
   workflow_dispatch:
   workflow_call:
 
@@ -14,12 +14,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0        # allow rebase before push
 
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ---------- Premier League table ----------
+      # ---------- Premier League table (TSDB) ----------
       - name: Build assets/table.json (TSDB)
         run: |
           python - <<'PY'
@@ -67,7 +69,7 @@ jobs:
           print("Wrote assets/table.json with", len(rows), "rows for season", season)
           PY
 
-      # ---------- MUFC fixtures from TSDB (no ESPN) ----------
+      # ---------- MUFC fixtures (TSDB only; no ESPN) ----------
       - name: Build assets/fixtures.json (MUFC via TSDB)
         run: |
           python - <<'PY'
@@ -189,4 +191,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/table.json assets/fixtures.json
           git commit -m "chore: refresh football data (table + fixtures via TSDB) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
-          git push
+          git pull --rebase origin main || true
+          git push origin HEAD:main
