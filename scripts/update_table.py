@@ -1,32 +1,35 @@
 #!/usr/bin/env python3
-import json, time, urllib.request, urllib.parse, os
-from datetime import datetime
+import json, os, time, urllib.request, urllib.parse
+from datetime import datetime, timezone
 
-API = "https://www.thesportsdb.com/api/v1/json/3"
-PL  = "4328"  # Premier League
+OUT_DIR = "assets"
+os.makedirs(OUT_DIR, exist_ok=True)
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-bot"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return json.loads(r.read().decode())
+def fetch(url, timeout=30):
+    req = urllib.request.Request(url, headers={"User-Agent": "keelan-actions/1.0"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read()
 
-def season_now():
-    now = datetime.utcnow()
-    start = now.year if now.month >= 7 else now.year - 1
-    return f"{start}-{start+1}"
+def norm(s: str) -> str:
+    return (s or "").lower().replace("&", "and").replace(".", "").replace("-", " ").strip()
 
-def main():
-    os.makedirs("assets", exist_ok=True)
-    s = season_now()
+# ----- work out current PL season (e.g. "2025-2026")
+now = datetime.now(timezone.utc)
+start = now.year if now.month >= 7 else now.year - 1
+season = f"{start}-{start+1}"
 
-    # Full 20-team table
-    data  = get(f"{API}/lookuptable.php?l={PL}&s={urllib.parse.quote(s)}")
-    table = data.get("table") or []
-    rows=[]
-    for t in table:
+# ----- THESPORTSDB: league 4328 = English Premier League
+table_url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
+teams_url = "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League"
+
+# ----- build table (20 rows expected)
+rows = []
+try:
+    data = json.loads(fetch(table_url).decode("utf-8"))
+    for t in data.get("table") or []:
         rows.append({
-            "pos":    int(t.get("intRank") or 0),
-            "team":   t.get("strTeam") or "",
+            "pos":  int(t.get("intRank") or 0),
+            "team": t.get("strTeam") or "",
             "played": int(t.get("intPlayed") or 0),
             "won":    int(t.get("intWin") or 0),
             "drawn":  int(t.get("intDraw") or 0),
@@ -34,21 +37,37 @@ def main():
             "gf":     int(t.get("intGoalsFor") or 0),
             "ga":     int(t.get("intGoalsAgainst") or 0),
             "gd":     int(t.get("intGoalDifference") or 0),
-            "pts":    int(t.get("intPoints") or 0)
+            "pts":    int(t.get("intPoints") or 0),
         })
     rows.sort(key=lambda r: r["pos"] or 999)
-    with open("assets/table.json","w") as f:
-        json.dump({"season":s,"updated":int(time.time()*1000),"standings":rows}, f)
+except Exception as e:
+    raise SystemExit(f"[table] ERROR: {e}")
 
-    # Badges
-    badges={}
-    teams = get(f"{API}/search_all_teams.php?l=English%20Premier%20League").get("teams") or []
-    for tm in teams:
-        name=(tm.get("strTeam") or "").strip()
-        badge=(tm.get("strTeamBadge") or "").replace("http://","https://")
-        if name: badges[name]=badge
-    with open("assets/badges.json","w") as f:
-        json.dump({"updated":int(time.time()*1000),"badges":badges}, f)
+if len(rows) < 10:
+    raise SystemExit(f"[table] ERROR: fetched only {len(rows)} rows")
 
-if __name__=="__main__":
-    main()
+# ----- build crest/badge map (used by index)
+badges = {}
+try:
+    tdata = json.loads(fetch(teams_url).decode("utf-8"))
+    for t in (tdata.get("teams") or []):
+        name = t.get("strTeam") or ""
+        badge = t.get("strTeamBadge") or ""
+        if name and badge:
+            badges[norm(name)] = badge.replace("http://", "https://")
+except Exception as e:
+    print("[badges] warn:", e)
+
+# ----- write assets
+with open(os.path.join(OUT_DIR, "table.json"), "w", encoding="utf-8") as f:
+    json.dump({
+        "season": season,
+        "source": "TheSportsDB",
+        "updated": int(time.time() * 1000),
+        "standings": rows
+    }, f)
+
+with open(os.path.join(OUT_DIR, "badges.json"), "w", encoding="utf-8") as f:
+    json.dump({"badges": badges, "updated": int(time.time() * 1000)}, f)
+
+print(f"Wrote table.json ({len(rows)} rows) + badges.json ({len(badges)} crests)")
