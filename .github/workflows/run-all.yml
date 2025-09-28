@@ -2,52 +2,30 @@ name: Run everything (orchestrator)
 
 on:
   workflow_dispatch:
-    inputs:
-      skip_extras:
-        description: "Skip extras job (weather + free games)"
-        required: false
-        default: "false"
-      force_redeploy:
-        description: "Force Pages redeploy by touching assets/update_stamp.txt"
-        required: false
-        default: "true"
-
-permissions:
-  contents: write
-
-concurrency:
-  group: orchestrator
-  cancel-in-progress: false
 
 jobs:
   football:
-    name: Update football data
-    uses: ./.github/workflows/update-football-data.yml
+    uses: ./.github/workflows/update-football-data.yml   # same repo
+    secrets: inherit
 
   extras:
-    name: Update extras (weather + free games)
-    if: ${{ github.event.inputs.skip_extras != 'true' }}
     needs: football
-    uses: ./.github/workflows/update-extras.yml
+    uses: ./.github/workflows/update-extras.yml          # same repo
+    secrets: inherit
 
-  redeploy:
-    name: Force GH Pages redeploy (always)
-    if: ${{ always() && github.event.inputs.force_redeploy != 'false' }}
+  touch:
     needs: [football, extras]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Touch update stamp
+      - name: Force Pages redeploy
         run: |
-          mkdir -p assets
-          date -u +'%Y-%m-%dT%H:%M:%SZ' > assets/update_stamp.txt
-      - name: Commit & push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/update_stamp.txt
-          git commit -m "chore: force Pages redeploy [${{ github.run_id }}]" || echo "No changes"
+          git commit -m "chore: bump update_stamp to force deploy" || echo "no changes"
           git pull --rebase origin main || true
-          git push origin HEAD:main
+          git push || true
