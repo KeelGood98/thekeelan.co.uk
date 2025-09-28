@@ -1,8 +1,8 @@
-name: Update site data (table + MUFC fixtures)
+name: Update football data (PL table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"    # daily 06:00 UTC
+    - cron: "0 */6 * * *"   # every 6 hours
   workflow_dispatch:
 
 permissions:
@@ -14,116 +14,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build assets/table.json (ESPN; fallback TSDB)
+      - name: Build Premier League table (20 teams) + badges
         run: |
-          python - <<'PY'
-          import json, time, urllib.request, urllib.parse, ssl, sys, os
-          ssl._create_default_https_context = ssl._create_unverified_context
+          python scripts/update_table.py
 
-          def fetch(url):
-            req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0"})
-            with urllib.request.urlopen(req, timeout=30) as r:
-              return r.read()
-
-          def espn_table():
-            url = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
-            raw = json.loads(fetch(url).decode("utf-8"))
-            entries = []
-
-            def walk(n):
-              if isinstance(n, dict):
-                if "standings" in n and n["standings"] and "entries" in n["standings"][0]:
-                  entries.extend(n["standings"][0]["entries"])
-                for v in n.values(): walk(v)
-              elif isinstance(n, list):
-                for v in n: walk(v)
-
-            walk(raw)
-            rows=[]
-            for e in entries:
-              team = (e.get("team") or {}).get("displayName","")
-              stats = { s.get("name"): s.get("value") for s in (e.get("stats") or []) if isinstance(s,dict) and "name" in s }
-              if not team: 
-                continue
-              rows.append({
-                "pos": int(stats.get("rank",0) or 0),
-                "team": team,
-                "played": int(stats.get("gamesPlayed",0) or 0),
-                "won": int(stats.get("wins",0) or 0),
-                "drawn": int(stats.get("ties",0) or 0),
-                "lost": int(stats.get("losses",0) or 0),
-                "gf": int(stats.get("goalsFor",0) or 0),
-                "ga": int(stats.get("goalsAgainst",0) or 0),
-                "gd": int(stats.get("goalDifferential",0) or 0),
-                "pts": int(stats.get("points",0) or 0),
-              })
-            rows = [r for r in rows if r["team"]]
-            rows.sort(key=lambda r: r["pos"] or 999)
-            return rows
-
-          def tsdb_table():
-            # Season string e.g. 2025-2026
-            import datetime
-            now = datetime.datetime.utcnow()
-            start = now.year if now.month >= 7 else now.year - 1
-            season = f"{start}-{start+1}"
-            url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
-            data = json.loads(fetch(url).decode("utf-8"))
-            table = data.get("table") or []
-            rows=[]
-            for t in table:
-              rows.append({
-                "pos": int(t.get("intRank") or 0),
-                "team": t.get("strTeam") or "",
-                "played": int(t.get("intPlayed") or 0),
-                "won": int(t.get("intWin") or 0),
-                "drawn": int(t.get("intDraw") or 0),
-                "lost": int(t.get("intLoss") or 0),
-                "gf": int(t.get("intGoalsFor") or 0),
-                "ga": int(t.get("intGoalsAgainst") or 0),
-                "gd": int(t.get("intGoalDifference") or 0),
-                "pts": int(t.get("intPoints") or 0),
-              })
-            rows = [r for r in rows if r["team"]]
-            rows.sort(key=lambda r: r["pos"] or 999)
-            return rows
-
-          rows = []
-          try:
-            rows = espn_table()
-          except Exception as e:
-            print("ESPN table failed:", e, file=sys.stderr)
-
-          if len(rows) < 20:
-            try:
-              fallback = tsdb_table()
-              if len(fallback) >= len(rows):
-                rows = fallback
-            except Exception as e:
-              print("TSDB fallback failed:", e, file=sys.stderr)
-
-          os.makedirs("assets", exist_ok=True)
-          out = {"source":"ESPN+fallback","updated":int(time.time()*1000),"standings":rows}
-          with open("assets/table.json","w") as f: json.dump(out,f)
-          print("wrote assets/table.json rows:", len(rows))
-          PY
-
-      - name: Build assets/fixtures.json (MUFC)
+      - name: Build MUFC fixtures/results
         run: |
-          python update_fixtures.py
+          python scripts/update_fixtures.py
 
       - name: Touch update stamp
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          date -u +"%Y-%m-%d %H:%M:%S UTC" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
-      - name: Commit & push
+      - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/table.json assets/fixtures.json assets/update_stamp.txt
-          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
+          git commit -m "chore: refresh PL table + MUFC fixtures ($(date -u +'%Y-%m-%dT%H:%M:%SZ'))" || echo "No changes"
           git push
