@@ -1,71 +1,55 @@
 {
-  "updated": 1759093994647,
+  "updated": 1759094313990,
   "team": "Manchester United",
+  "source": "ESPN",
   "matches": [
     {
-      "date": "2025-08-03T21:00:00Z",
-      "comp": "English Premier League Summer Series",
-      "home": "Manchester United",
-      "away": "Everton",
-      "status": "FINISHED",
-      "tv": "",
-      "score": {
-        "home": 2,
-        "away": 2,
-        "outcome": "D"
-      }
-    },
-    {
-      "date": "2025-08-09T11:45:00Z",
-      "comp": "Club Friendlies",
-      "home": "Manchester United",
-      "away": "Fiorentina",
-      "status": "FINISHED",
-      "tv": "",
-      "score": {
-        "home": 1,
-        "away": 1,
-        "outcome": "D"
-      }
-    },
-    {
       "date": "2025-08-17T15:30:00Z",
-      "comp": "English Premier League",
+      "comp": "ARS @ MAN",
       "home": "Manchester United",
       "away": "Arsenal",
       "status": "FINISHED",
-      "tv": "",
-      "score": {
-        "home": 0,
-        "away": 1,
-        "outcome": "L"
-      }
+      "tv": "TBD"
+    },
+    {
+      "date": "2025-08-24T15:30:00Z",
+      "comp": "MAN @ FUL",
+      "home": "Fulham",
+      "away": "Manchester United",
+      "status": "FINISHED",
+      "tv": "TBD"
     },
     {
       "date": "2025-08-30T14:00:00Z",
-      "comp": "English Premier League",
+      "comp": "BUR @ MAN",
       "home": "Manchester United",
       "away": "Burnley",
       "status": "FINISHED",
-      "tv": "",
-      "score": {
-        "home": 3,
-        "away": 2,
-        "outcome": "W"
-      }
+      "tv": "TBD"
+    },
+    {
+      "date": "2025-09-14T15:30:00Z",
+      "comp": "MAN @ MNC",
+      "home": "Manchester City",
+      "away": "Manchester United",
+      "status": "FINISHED",
+      "tv": "TBD"
     },
     {
       "date": "2025-09-20T16:30:00Z",
-      "comp": "English Premier League",
+      "comp": "CHE @ MAN",
       "home": "Manchester United",
       "away": "Chelsea",
       "status": "FINISHED",
-      "tv": "",
-      "score": {
-        "home": 2,
-        "away": 1,
-        "outcome": "W"
-      }
+      "tv": "TBD"
+    },
+    {
+      "date": "2025-09-27T11:30:00Z",
+      "comp": "MAN @ BRE",
+      "home": "Brentford",
+      "away": "Manchester United",
+      "status": "FINISHED",
+      "tv": "TBD"
     }
   ]
 }
