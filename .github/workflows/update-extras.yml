@@ -1,8 +1,8 @@
-name: Update extras (weather + steam specials)
+name: Update extras (weather + Steam specials)
 
 on:
   schedule:
-    - cron: "*/120 * * * *"   # every 2 hours
+    - cron: "0 */4 * * *"   # every 4 hours
   workflow_dispatch:
 
 permissions:
@@ -13,64 +13,69 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build weather.json + steam_specials.json
+      - name: Build weather.json + specials.json
         run: |
           python - <<'PY'
-          import json, time, urllib.request, os
+          import json, time, urllib.request, os, sys
 
           os.makedirs("assets", exist_ok=True)
 
-          def fetch(url, to=30):
-            req = urllib.request.Request(url, headers={"User-Agent":"gh-actions"})
-            with urllib.request.urlopen(req, timeout=to) as r:
+          def get(url, timeout=45):
+            req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
+            with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # Leeds weather (Open-Meteo, no key)
+          # --- Open-Meteo: Leeds ---
           try:
-            wx_url=("https://api.open-meteo.com/v1/forecast"
-                    "?latitude=53.8008&longitude=-1.5491"
-                    "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
-                    "&daily=weather_code,temperature_2m_max,temperature_2m_min"
-                    "&timezone=Europe%2FLondon")
-            wx = json.loads(fetch(wx_url).decode("utf-8"))
+            wx_url = ("https://api.open-meteo.com/v1/forecast"
+                      "?latitude=53.8008&longitude=-1.5491"
+                      "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
+                      "&daily=weather_code,temperature_2m_max,temperature_2m_min"
+                      "&timezone=Europe%2FLondon")
+            wx = json.loads(get(wx_url).decode("utf-8"))
             wx["updated"] = int(time.time()*1000)
             wx["location"] = "Leeds, UK"
-            with open("assets/weather.json","w") as f: json.dump(wx,f)
+            with open("assets/weather.json","w",encoding="utf-8") as f:
+              json.dump(wx, f)
             print("Wrote assets/weather.json")
           except Exception as e:
-            print("weather failed:", e)
+            print("Weather error:", e, file=sys.stderr)
 
-          # Steam Specials – Steam's public "featuredcategories" endpoint
+          # --- Steam "featuredcategories" specials ---
           try:
-            sc = json.loads(fetch("https://store.steampowered.com/api/featuredcategories/?l=en&cc=GB").decode("utf-8"))
-            items = (sc.get("specials",{}) or {}).get("items",[]) or []
-            out=[]
-            for it in items:
-              if not it.get("discounted"): 
-                continue
-              out.append({
-                "id": it.get("id"),
-                "name": it.get("name") or it.get("title") or "",
-                "discount_percent": it.get("discount_percent",0),
-                "original_price": it.get("original_price",0),
-                "final_price": it.get("final_price",0),
-                "image": it.get("header_image") or it.get("small_capsule_image") or it.get("large_capsule_image"),
-                "url": f"https://store.steampowered.com/app/{it.get('id','')}/"
-              })
-            with open("assets/steam_specials.json","w") as f: json.dump({"updated": int(time.time()*1000), "items": out}, f)
-            print("Wrote assets/steam_specials.json", len(out), "items")
+            sp = json.loads(get("https://store.steampowered.com/api/featuredcategories/?cc=GB&l=en").decode("utf-8"))
+            items = (sp.get("specials") or {}).get("items") or []
+            out = {
+              "updated": int(time.time()*1000),
+              "specials": [
+                {
+                  "id": it.get("id"),
+                  "name": it.get("name"),
+                  "final_price": it.get("final_price"),
+                  "original_price": it.get("original_price"),
+                  "discount_percent": it.get("discount_percent"),
+                  "header_image": it.get("header_image"),
+                  "url": f"https://store.steampowered.com/app/{it.get('id')}/"
+                } for it in items if it.get("id")
+              ]
+            }
+            with open("assets/specials.json","w",encoding="utf-8") as f:
+              json.dump(out, f)
+            print(f"Wrote assets/specials.json ({len(out['specials'])} items)")
           except Exception as e:
-            print("steam specials failed:", e)
+            print("Steam specials error:", e, file=sys.stderr)
           PY
 
       - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather.json assets/steam_specials.json
+          git pull --rebase origin "$GITHUB_REF_NAME" || true
+          git add assets/weather.json assets/specials.json
           git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
