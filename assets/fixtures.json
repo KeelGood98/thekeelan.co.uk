@@ -1,1 +1,111 @@
-{"source": "ESPN", "team": "Manchester United", "updated": 1759092393312, "matches": [{"date": "2025-08-17T15:30Z", "comp": "English Premier League", "home": "Manchester United", "away": "Arsenal", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}, {"date": "2025-08-24T15:30Z", "comp": "English Premier League", "home": "Fulham", "away": "Manchester United", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}, {"date": "2025-08-30T14:00Z", "comp": "English Premier League", "home": "Manchester United", "away": "Burnley", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}, {"date": "2025-09-14T15:30Z", "comp": "English Premier League", "home": "Manchester City", "away": "Manchester United", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}, {"date": "2025-09-20T16:30Z", "comp": "English Premier League", "home": "Manchester United", "away": "Chelsea", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}, {"date": "2025-09-27T11:30Z", "comp": "English Premier League", "home": "Brentford", "away": "Manchester United", "tv": "", "status": "", "state": "", "score": {"home": null, "away": null, "outcome": ""}}]}
+{
+  "updated": 1759092993083,
+  "team": "Manchester United",
+  "matches": [
+    {
+      "date": "2025-08-03T21:00:00Z",
+      "comp": "English Premier League Summer Series",
+      "home": "Manchester United",
+      "away": "Everton",
+      "status": "FINISHED",
+      "tv": "",
+      "score": {
+        "home": 2,
+        "away": 2,
+        "outcome": "D"
+      }
+    },
+    {
+      "date": "2025-08-09T11:45:00Z",
+      "comp": "Club Friendlies",
+      "home": "Manchester United",
+      "away": "Fiorentina",
+      "status": "FINISHED",
+      "tv": "",
+      "score": {
+        "home": 1,
+        "away": 1,
+        "outcome": "D"
+      }
+    },
+    {
+      "date": "2025-08-17T15:30:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Arsenal",
+      "status": "FINISHED",
+      "tv": "",
+      "score": {
+        "home": 0,
+        "away": 1,
+        "outcome": "L"
+      }
+    },
+    {
+      "date": "2025-08-30T14:00:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Burnley",
+      "status": "FINISHED",
+      "tv": "",
+      "score": {
+        "home": 3,
+        "away": 2,
+        "outcome": "W"
+      }
+    },
+    {
+      "date": "2025-09-20T16:30:00Z",
+      "comp": "English Premier League",
+      "home": "Manchester United",
+      "away": "Chelsea",
+      "status": "FINISHED",
+      "tv": "",
+      "score": {
+        "home": 2,
+        "away": 1,
+        "outcome": "W"
+      }
+    },
+    {
+      "date": "2025-10-04T14:00:00Z",
+      "comp": "English League 1",
+      "home": "Bolton Wanderers",
+      "away": "Peterborough United",
+      "status": "SCHEDULED",
+      "tv": ""
+    },
+    {
+      "date": "2025-10-11T14:00:00Z",
+      "comp": "English League 1",
+      "home": "Burton Albion",
+      "away": "Bolton Wanderers",
+      "status": "SCHEDULED",
+      "tv": ""
+    },
+    {
+      "date": "2025-10-16T19:00:00Z",
+      "comp": "English League 1",
+      "home": "Huddersfield Town",
+      "away": "Bolton Wanderers",
+      "status": "SCHEDULED",
+      "tv": ""
+    },
+    {
+      "date": "2025-10-25T11:30:00Z",
+      "comp": "English League 1",
+      "home": "Bolton Wanderers",
+      "away": "Cardiff City",
+      "status": "SCHEDULED",
+      "tv": ""
+    },
+    {
+      "date": "2025-11-08T15:00:00Z",
+      "comp": "English League 1",
+      "home": "Bolton Wanderers",
+      "away": "Port Vale",
+      "status": "SCHEDULED",
+      "tv": ""
+    }
+  ]
+}
