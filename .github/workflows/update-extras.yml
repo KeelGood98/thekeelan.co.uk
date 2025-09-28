@@ -2,7 +2,7 @@ name: Update extras data (weather + free games)
 
 on:
   schedule:
-    - cron: "*/120 * * * *"  # every 2 hours
+    - cron: "*/120 * * * *"   # every 2 hours
   workflow_dispatch:
   workflow_call:
 
@@ -14,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-python@v5
         with:
@@ -34,7 +36,7 @@ jobs:
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # Weather (Leeds) via Open-Meteo
+          # Weather (Leeds) via Open-Meteo (no key)
           try:
             wx_url = ("https://api.open-meteo.com/v1/forecast"
                       "?latitude=53.8008&longitude=-1.5491"
@@ -49,7 +51,7 @@ jobs:
           except Exception as e:
             print("Weather error:", e); traceback.print_exc()
 
-          # Free Steam games via CheapShark
+          # Free Steam games via CheapShark (no key)
           try:
             deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=0"
             deals = json.loads(fetch(deals_url).decode("utf-8"))
@@ -74,8 +76,7 @@ jobs:
           except Exception as e:
             print("Free games error:", e); traceback.print_exc()
 
-          # Always exit zero so the job continues
-          sys.exit(0)
+          sys.exit(0)   # never fail the job
           PY
 
       - name: Ensure placeholders exist (if APIs failed)
@@ -96,4 +97,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A assets
           git commit -m "chore: refresh extras (weather + free games) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
-          git push
+          git pull --rebase origin main || true
+          git push origin HEAD:main
