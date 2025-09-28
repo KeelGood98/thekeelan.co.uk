@@ -7,15 +7,7 @@ on:
         description: "Force Pages redeploy by touching assets/update_stamp.txt"
         required: false
         default: "true"
-  # Optional: run automatically when site or workflows change
-  push:
-    branches: [ "main" ]
-    paths:
-      - "**/*.html"
-      - "assets/**"
-      - ".github/workflows/**"
 
-# Top-level permissions for any commits this workflow makes
 permissions:
   contents: write
 
@@ -26,13 +18,12 @@ concurrency:
 jobs:
   football:
     name: Update football data
-    # NOTE: make sure this path matches your file name
-    uses: ./.github/workflows/update-football-data.yml
+    uses: KeelGood98/thekeelan.co.uk/.github/workflows/update-football-data.yml@main
 
   extras:
     name: Update extras (weather + free games)
     needs: football
-    uses: ./.github/workflows/update-extras.yml
+    uses: KeelGood98/thekeelan.co.uk/.github/workflows/update-extras.yml@main
 
   redeploy:
     name: Force GH Pages redeploy (optional)
