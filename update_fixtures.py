@@ -1,87 +1,84 @@
-# scripts/update_fixtures.py
-import json, time, urllib.request, os, sys
-from datetime import datetime, timezone
+#!/usr/bin/env python3
+import json, time, urllib.request, urllib.parse, os
 
-UA = {"User-Agent":"KeelBot/1.0"}
-API = "https://www.thesportsdb.com/api/v1/json/3"
-MUFC_ID = "133612"   # Manchester United
+os.makedirs("assets", exist_ok=True)
 
-def get(url, timeout=30):
-    req = urllib.request.Request(url, headers=UA)
+def get(url, timeout=45):
+    req = urllib.request.Request(url, headers={"User-Agent":"thekeelan-actions/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
-def to_iso(ts: str | None, date: str | None, time_s: str | None):
-    # TSDB can give strTimestamp (UTC) or separate date/time
-    if ts:
-        try:
-            # e.g. "2025-09-20 14:00:00"
-            dt = datetime.strptime(ts, "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
-            return dt.isoformat()
-        except: pass
-    if date and time_s:
-        try:
-            dt = datetime.strptime(f"{date} {time_s}", "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc)
-            return dt.isoformat()
-        except: pass
-    if date:
-        try:
-            dt = datetime.strptime(date, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-            return dt.isoformat()
-        except: pass
-    return None
+def tsdb_team_id(team_name="Manchester United"):
+    q = urllib.parse.quote(team_name)
+    data = json.loads(get(f"https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t={q}").decode("utf-8"))
+    teams = data.get("teams") or []
+    return teams[0].get("idTeam") if teams else None
 
-def outcome_for_mu(home, away, hs, as_):
-    try:
-        hs = int(hs) if hs is not None else None
-        as_ = int(as_) if as_ is not None else None
-    except:
-        return None
-    if hs is None or as_ is None:
-        return None
-    if home == "Manchester United":
-        if hs > as_: return "W"
-        if hs == as_: return "D"
-        return "L"
-    else:
-        if as_ > hs: return "W"
-        if as_ == hs: return "D"
-        return "L"
+def next_events(team_id):
+    d = json.loads(get(f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={team_id}").decode("utf-8"))
+    return d.get("events") or []
 
-def map_event(e):
-    iso = to_iso(e.get("strTimestamp"), e.get("dateEventUTC") or e.get("dateEvent"), (e.get("strTimeUTC") or e.get("strTime")))
-    hs, as_ = e.get("intHomeScore"), e.get("intAwayScore")
-    status = "SCHEDULED" if (hs in (None,"") and as_ in (None,"")) else "FINISHED"
-    oc = outcome_for_mu(e.get("strHomeTeam"), e.get("strAwayTeam"), hs, as_)
-    return {
-        "date": iso,
-        "comp": e.get("strLeague") or "",
-        "home": e.get("strHomeTeam") or "",
-        "away": e.get("strAwayTeam") or "",
-        "tv": (e.get("strTVStation") or "").strip(),
-        "status": status,
-        "score": None if status=="SCHEDULED" else {
-            "home": int(hs), "away": int(as_), "outcome": oc
-        }
-    }
+def last_events(team_id):
+    d = json.loads(get(f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={team_id}").decode("utf-8"))
+    return d.get("results") or []
 
-def main():
-    os.makedirs("assets", exist_ok=True)
+tid = tsdb_team_id("Manchester United")
+matches = []
 
-    # next & last
-    upcoming = json.loads(get(f"{API}/eventsnext.php?id={MUFC_ID}").decode("utf-8")).get("events") or []
-    recent   = json.loads(get(f"{API}/eventslast.php?id={MUFC_ID}").decode("utf-8")).get("results") or []
+if tid:
+    # Upcoming
+    for e in next_events(tid):
+        dt = (e.get("dateEvent") or "") + " " + (e.get("strTimeLocal") or e.get("strTime") or "00:00:00")
+        matches.append({
+            "date": dt.strip(),
+            "comp": e.get("strLeague"),
+            "home": e.get("strHomeTeam"),
+            "away": e.get("strAwayTeam"),
+            "status": "SCHEDULED",
+            "tv": None,
+            "score": None
+        })
 
-    items = [map_event(e) for e in (upcoming + recent)]
-    # Filter out any strange null dates
-    items = [m for m in items if m.get("date")]
+    # Recent
+    for e in last_events(tid):
+        dt = (e.get("dateEvent") or "") + " " + (e.get("strTimeLocal") or e.get("strTime") or "00:00:00")
+        hs = e.get("intHomeScore"); as_ = e.get("intAwayScore")
+        score = None
+        if hs is not None and as_ is not None:
+            try:
+                score = {"home": int(hs), "away": int(as_)}
+            except:
+                score = None
 
-    # sort by date ascending for whole list (UI splits/limits)
-    items.sort(key=lambda m: m["date"])
+        # Work out W/D/L from the MUFC perspective
+        outcome = None
+        if score:
+            if e.get("strHomeTeam") == "Manchester United":
+                if score["home"] > score["away"]: outcome = "W"
+                elif score["home"] == score["away"]: outcome = "D"
+                else: outcome = "L"
+            elif e.get("strAwayTeam") == "Manchester United":
+                if score["away"] > score["home"]: outcome = "W"
+                elif score["away"] == score["home"]: outcome = "D"
+                else: outcome = "L"
 
-    with open("assets/fixtures.json","w") as f:
-        json.dump({"updated": int(time.time()*1000), "matches": items}, f)
-    print("Wrote assets/fixtures.json with", len(items), "matches")
+        matches.append({
+            "date": dt.strip(),
+            "comp": e.get("strLeague"),
+            "home": e.get("strHomeTeam"),
+            "away": e.get("strAwayTeam"),
+            "status": "FINISHED" if score else "FINISHED",
+            "tv": None,
+            "score": score,
+            "outcome": outcome
+        })
 
-if __name__ == "__main__":
-    main()
+# Sort by date ascending; keep reasonable amount
+def sort_key(m):
+    return m.get("date","")
+matches = sorted(matches, key=sort_key)
+
+out = {"updated": int(time.time()*1000), "matches": matches}
+with open("assets/fixtures.json","w",encoding="utf-8") as f:
+    json.dump(out, f)
+print(f"Wrote assets/fixtures.json ({len(matches)} matches)")
