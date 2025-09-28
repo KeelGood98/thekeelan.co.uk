@@ -1,61 +1,47 @@
-name: Update football data / build
+name: Update site data (TSDB table + MUFC fixtures)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "*/30 * * * *"
-  workflow_call: {}   # allows reuse later, but this file still runs by itself
+  workflow_call:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    env:
-      TSDB_KEY: ${{ secrets.TSDB_KEY }}   # ok if undefined; scripts fall back to '3'
-      TSDB_LEAGUE_ID: "4328"
-      SEASON: "2025-2026"
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          fetch-depth: 0
 
-      - name: Update EPL table (20 rows guard)
-        run: python3 scripts/update_table.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Update badges (crest URLs)
-        run: python3 scripts/update_badges.py
-
-      - name: Update fixtures (MUFC)
-        run: python3 scripts/update_fixtures.py
-
-      - name: Touch update stamp (force Pages redeploy)
-        run: date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
-
-      - name: Verify outputs
+      - name: Install Python deps
         run: |
-          echo "== assets =="
-          ls -lah assets || true
-          echo "== table.json (first 400 bytes) =="
-          head -c 400 assets/table.json || true; echo
-          echo "== badges.json (first 400 bytes) =="
-          head -c 400 assets/badges.json || true; echo
-          echo "== fixtures.json (first 400 bytes) =="
-          head -c 400 assets/fixtures.json || true; echo
+          python -m pip install --upgrade pip
+          pip install requests pytz
+
+      - name: Build football assets (table + fixtures + badges)
+        run: |
+          python scripts/update_table.py
+          python scripts/update_fixtures.py
+          python scripts/update_badges.py
+
+      - name: Touch update stamp
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/*.json
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.json assets/update_stamp.txt
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "data: refresh table, badges, fixtures"
-            git pull --rebase origin main || true
+            git commit -m "chore: refresh football data (table + fixtures) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
             git push
           fi
