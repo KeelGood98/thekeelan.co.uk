@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Mum</title>
-
   <style>
     :root{
       --bg:#0b0f14; --card:#141a22; --text:#e9eef5; --muted:#95a1b1;
@@ -14,8 +13,7 @@
     *{box-sizing:border-box}
     html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
     a{color:inherit;text-decoration:none}
-
-    .wrap{max-width:1300px;margin:0 auto;padding:18px}
+    .wrap{max-width:1600px;margin:0 auto;padding:18px}
     header{display:flex;align-items:center;gap:12px;justify-content:space-between;margin-bottom:14px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:700}
     .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 16px var(--accent)}
@@ -23,32 +21,28 @@
     nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;opacity:.92}
     nav a.active{background:var(--accent);border-color:transparent;color:#04121f;font-weight:600}
 
-    .grid{display:grid;grid-template-columns:360px 1fr 520px;gap:18px}
+    /* Wider, flexible grid: left min 340, right min 460, centre grows */
+    .grid{
+      display:grid;
+      grid-template-columns:minmax(340px, 380px) 1.6fr 1.2fr;
+      gap:18px;
+    }
     .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
     .card h2{margin:0;padding:14px 16px;border-bottom:1px solid var(--stroke);font-size:20px}
     .card-body{padding:14px 16px}
-
-    /* Left GIF + embed */
     .gif{width:100%;display:block}
-    .embed{border:0;width:100%;height:580px}
 
     /* Table */
     table{width:100%;border-collapse:collapse}
-    /* RESET to avoid any accidental "scrollable tbody" rules from old CSS */
-    tbody{display:table-row-group !important;max-height:none !important;overflow:visible !important}
-    thead, tfoot{display:table-header-group}
+    tbody{display:table-row-group !important} /* ensure no weird "scrollable tbody" styles survive */
     th,td{padding:10px 8px;text-align:center;font-size:14px}
     th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
     tbody tr{border-top:1px solid var(--stroke)}
     tbody tr:hover{background:rgba(255,255,255,.03)}
     td.team{text-align:left;display:flex;align-items:center;gap:10px}
-    .badge{width:18px;height:18px;border-radius:50%;display:inline-grid;place-items:center;background:#0f1319;border:1px solid var(--stroke);overflow:hidden}
+    .badge{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;background:#0f1319;border:1px solid var(--stroke);overflow:hidden}
     .badge img{width:100%;height:100%;object-fit:contain}
     .badge span{font-size:10px;color:var(--muted);font-weight:700}
-
-    .table-wrap{max-height:560px;overflow:auto}
-
-    /* Fixtures */
     .fx-head{display:flex;justify-content:space-between;align-items:center;padding:0 16px 10px 16px}
     .subtle{color:var(--muted);font-size:12px}
     .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--stroke);font-size:12px;color:var(--muted)}
@@ -57,8 +51,6 @@
     .fixture-table th{font-size:11px}
     .fixture-table td{font-size:14px}
     .divider{height:1px;background:var(--stroke);margin:10px 0}
-
-    /* background spices */
     body::after{
       content:"";position:fixed;inset:0;pointer-events:none;
       background:
@@ -66,10 +58,8 @@
         radial-gradient(900px 500px at 20% 10%, rgba(255,255,255,.05), transparent 60%);
       mix-blend-mode:screen;
     }
-
     @media (max-width:1200px){
       .grid{grid-template-columns:1fr}
-      .embed{height:520px}
     }
   </style>
 </head>
@@ -84,21 +74,10 @@
     </header>
 
     <div class="grid">
-      <!-- LEFT -->
+      <!-- LEFT: only GIF now -->
       <div class="card">
         <h2>Left Panel</h2>
         <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
-        <div class="card-body">
-          <h2 style="margin:-2px 0 8px 0;">R6 Tracker</h2>
-          <!-- Use the variant that commonly embeds without 404.
-               If your original works again, swap the src back. -->
-          <iframe
-            class="embed"
-            src="https://r6.tracker.network/profile/pc/BambyOnSpice?embed=true"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
       </div>
 
       <!-- MIDDLE: TABLE -->
@@ -107,17 +86,15 @@
           <h2 style="border:none;padding:0">Premier League Table</h2>
           <div class="subtle" id="tableStamp"></div>
         </div>
-        <div class="table-wrap">
-          <table id="pl-table" aria-label="Premier League Table">
-            <thead>
-              <tr>
-                <th>#</th><th style="text-align:left">Team</th>
-                <th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <table id="pl-table" aria-label="Premier League Table">
+          <thead>
+            <tr>
+              <th>#</th><th style="text-align:left">Team</th>
+              <th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
       </div>
 
       <!-- RIGHT: FIXTURES -->
@@ -155,14 +132,14 @@
   </div>
 
   <script>
-    // ---------- Helpers ----------
+    // ---- utils ----
     const bust = () => `?t=${Date.now()}`;
     const el = s => document.querySelector(s);
     const tb = s => el(s).querySelector("tbody");
-    const toDate = (v) => { const d = new Date(v); return isNaN(d) ? null : d; };
+    const toDate = v => { const d = new Date(v); return isNaN(d) ? null : d; };
     const fmtDate = v => { const d = toDate(v); return d ? d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "—"; };
     const fmtTime = v => { const d = toDate(v); return d ? d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}) : "—"; };
-    const initials = (name) => {
+    const initials = name => {
       const p = (name||"").split(/\s+/).filter(Boolean);
       if (!p.length) return "FC";
       return (p[0][0] + (p[p.length-1]?.[0]||"")).toUpperCase();
@@ -170,21 +147,79 @@
     async function getJSON(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
     async function getText(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.text(); }catch{ return null; } }
 
-    // ---------- Table ----------
+    // ---- table normaliser ----
+    function normaliseTable(table){
+      let rows = table?.standings || table?.table || table?.rows || table?.data || table?.teams || [];
+      if (!Array.isArray(rows)) rows = [];
+      const map = r => {
+        const teamName = r.team || r.teamName || r.name || (r.team?.name) || "";
+        const played = r.played ?? r.playedGames ?? r.p;
+        const won = r.won ?? r.w;
+        const drawn = r.drawn ?? r.d;
+        const lost = r.lost ?? r.l;
+        const gf = r.gf ?? r.goalsFor ?? r.f;
+        const ga = r.ga ?? r.goalsAgainst ?? r.a;
+        const gd = (r.gd!==undefined) ? r.gd : ( (gf!=null && ga!=null) ? (gf-ga) : "" );
+        const pos = r.pos ?? r.position ?? r.rank ?? "";
+        const pts = r.pts ?? r.points ?? r.t ?? "";
+        return { pos, team: teamName, played, won, drawn, lost, gf, ga, gd, pts };
+      };
+      return rows.map(map);
+    }
+
+    // ---- fixtures normaliser ----
+    function normaliseMatch(m){
+      // Dates
+      const date = m.date || m.utcDate || m.kickoff || m.start || m.startTime || m.matchDate;
+      // Teams
+      const hn = m.home?.name || m.homeTeam?.name || m.home || m.home_team || "";
+      const an = m.away?.name || m.awayTeam?.name || m.away || m.away_team || "";
+      // Comp
+      const comp = m.comp || m.competition?.name || m.league || m.tournament || "";
+      // TV
+      const tv = m.tv || m.tv_uk || m.channel || m.broadcast || null;
+      // Score
+      let homeS="", awayS="", outcome="";
+      if (m.score && typeof m.score === "object"){
+        homeS = (m.score.home ?? m.score.fullTime?.home ?? m.score.ft_home ?? "");
+        awayS = (m.score.away ?? m.score.fullTime?.away ?? m.score.ft_away ?? "");
+        outcome = (m.score.outcome || "").toLowerCase();
+      } else if (typeof m.score === "string"){
+        const mm = m.score.match(/(\d+)\D+(\d+)/);
+        if (mm){ homeS = +mm[1]; awayS = +mm[2]; }
+      }
+      const status = (m.status || "").toUpperCase();
+      const finished = status==="FINISHED" || m.completed === true || m.isFinished === true || (homeS!=="" && awayS!=="");
+      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome}, finished };
+    }
+
+    function tvOverride(match, overrides){
+      if (!overrides) return null;
+      const day = (match.date||"").slice(0,10);
+      const hit = overrides.find(o=>{
+        const okDay = o.date ? o.date===day : true;
+        const sameH = o.home ? o.home.toLowerCase()===(match.home||"").toLowerCase() : true;
+        const sameA = o.away ? o.away.toLowerCase()===(match.away||"").toLowerCase() : true;
+        return okDay && sameH && sameA;
+      });
+      return hit?.tv || null;
+    }
+
+    // ---- render table ----
     async function renderTable(){
       const [table, badges] = await Promise.all([
         getJSON("/assets/table.json"),
         getJSON("/assets/badges.json")
       ]);
-      const rows = table?.standings || [];  // ALL rows
       const body = tb("#pl-table");
       body.innerHTML = "";
+      const rows = normaliseTable(table);
 
       rows.forEach(r=>{
         const src = badges?.[r.team] || null;
         const tr = document.createElement("tr");
         tr.innerHTML = `
-          <td>${r.pos ?? ""}</td>
+          <td>${r.pos}</td>
           <td class="team">
             <span class="badge">${src ? `<img src="${src}" alt="${r.team} badge">` : `<span>${initials(r.team)}</span>`}</span>
             <span>${r.team}</span>
@@ -201,38 +236,31 @@
         body.appendChild(tr);
       });
 
-      if (table?.updated){
-        const d = new Date(table.updated);
+      // stamp
+      let tableUpdated = table?.updated || table?.lastUpdated || table?.meta?.updated || 0;
+      if (tableUpdated){
+        const d = new Date(tableUpdated);
         if (!isNaN(d)) el("#tableStamp").textContent = `Updated: ${d.toLocaleString("en-GB")}`;
       }
-      return Number(table?.updated||0);
+      return Number(tableUpdated||0);
     }
 
-    // ---------- Fixtures ----------
-    function tvOverride(m, overrides){
-      if (!overrides) return null;
-      const day = (m.date||"").slice(0,10);
-      return (overrides.find(o=>{
-        const okDay = o.date ? o.date===day : true;
-        const sameH = o.home ? o.home.toLowerCase()===(m.home||"").toLowerCase() : true;
-        const sameA = o.away ? o.away.toLowerCase()===(m.away||"").toLowerCase() : true;
-        return okDay && sameH && sameA;
-      })||{}).tv || null;
-    }
-
+    // ---- render fixtures ----
     async function renderFixtures(){
       const [fx, overrides] = await Promise.all([
         getJSON("/assets/fixtures.json"),
         getJSON("/assets/tv_overrides.json")
       ]);
 
-      // Use file as-is (assume it already contains MUFC only)
-      const list = fx?.matches || [];
+      // Try to find the array of matches in a few shapes
+      let list = fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : []);
+      if (!Array.isArray(list)) list = [];
 
-      const upcoming = list
-        .filter(m => m.status==="SCHEDULED" || !m.score)
-        .sort((a,b)=> new Date(a.date) - new Date(b.date))
-        .slice(0,6);
+      // Normalise and (by default) assume the file already contains MUFC only
+      const norm = list.map(normaliseMatch);
+
+      const upcoming = norm.filter(m=>!m.finished).sort((a,b)=> new Date(a.date) - new Date(b.date)).slice(0,6);
+      const recent   = norm.filter(m=> m.finished).sort((a,b)=> new Date(b.date) - new Date(a.date)).slice(0,6);
 
       const upTB = tb("#fx-upcoming");
       upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
@@ -251,17 +279,12 @@
         `);
       });
 
-      const recent = list
-        .filter(m => m.status==="FINISHED" && m.score)
-        .sort((a,b)=> new Date(b.date) - new Date(a.date))
-        .slice(0,6);
-
       const rcTB = tb("#fx-recent");
       rcTB.innerHTML = recent.length ? "" : `<tr><td colspan="7" class="subtle">No recent matches.</td></tr>`;
       recent.forEach(m=>{
-        const oc = (m.score && m.score.outcome) ? m.score.outcome.toLowerCase() : "";
+        const oc = (m.score?.outcome || "").toLowerCase();
         const ocLabel = oc ? `<span class="${oc} pill">${oc.toUpperCase()}</span>` : "";
-        const scoreTxt = (m.score) ? `${m.score.home}–${m.score.away}` : "—";
+        const scoreTxt = (m.score && m.score.home!=="") ? `${m.score.home}–${m.score.away}` : "—";
         rcTB.insertAdjacentHTML("beforeend", `
           <tr>
             <td>${fmtDate(m.date)}</td>
@@ -278,13 +301,13 @@
         `);
       });
 
-      return Number(fx?.updated||0);
+      let fxUpdated = fx?.updated || fx?.lastUpdated || 0;
+      return Number(fxUpdated||0);
     }
 
     async function loadPage(){
       const [tU, fU] = await Promise.all([renderTable(), renderFixtures()]);
-
-      // Also allow update_stamp.txt as a last-resort stamp
+      // fall back to update_stamp.txt
       let stamp = Math.max(Number(tU||0), Number(fU||0));
       if (!stamp){
         const txt = await getText("/assets/update_stamp.txt");
@@ -298,7 +321,6 @@
         el("#updatedStamp").textContent = `Last updated: ${d.toLocaleString("en-GB")}`;
       }
     }
-
     loadPage();
   </script>
 </body>
