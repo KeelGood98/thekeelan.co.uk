@@ -21,12 +21,8 @@
     nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;opacity:.92}
     nav a.active{background:var(--accent);border-color:transparent;color:#04121f;font-weight:600}
 
-    /* Wider, flexible grid: left min 340, right min 460, centre grows */
-    .grid{
-      display:grid;
-      grid-template-columns:minmax(340px, 380px) 1.6fr 1.2fr;
-      gap:18px;
-    }
+    /* wide, flexible grid */
+    .grid{display:grid;grid-template-columns:minmax(340px,380px) 1.6fr 1.2fr;gap:18px}
     .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
     .card h2{margin:0;padding:14px 16px;border-bottom:1px solid var(--stroke);font-size:20px}
     .card-body{padding:14px 16px}
@@ -34,7 +30,7 @@
 
     /* Table */
     table{width:100%;border-collapse:collapse}
-    tbody{display:table-row-group !important} /* ensure no weird "scrollable tbody" styles survive */
+    tbody{display:table-row-group !important} /* nuke any scrollable-tbody leftovers */
     th,td{padding:10px 8px;text-align:center;font-size:14px}
     th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
     tbody tr{border-top:1px solid var(--stroke)}
@@ -58,9 +54,7 @@
         radial-gradient(900px 500px at 20% 10%, rgba(255,255,255,.05), transparent 60%);
       mix-blend-mode:screen;
     }
-    @media (max-width:1200px){
-      .grid{grid-template-columns:1fr}
-    }
+    @media (max-width:1200px){ .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
@@ -74,18 +68,19 @@
     </header>
 
     <div class="grid">
-      <!-- LEFT: only GIF now -->
+      <!-- LEFT: GIF only -->
       <div class="card">
         <h2>Left Panel</h2>
         <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
       </div>
 
-      <!-- MIDDLE: TABLE -->
+      <!-- MIDDLE: Table -->
       <div class="card" id="table-card">
         <div class="fx-head" style="padding-top:14px">
           <h2 style="border:none;padding:0">Premier League Table</h2>
           <div class="subtle" id="tableStamp"></div>
         </div>
+        <div class="subtle" id="tableNote" style="padding:0 16px 6px 16px;"></div>
         <table id="pl-table" aria-label="Premier League Table">
           <thead>
             <tr>
@@ -97,7 +92,7 @@
         </table>
       </div>
 
-      <!-- RIGHT: FIXTURES -->
+      <!-- RIGHT: Fixtures -->
       <div class="card" id="fx-card">
         <div class="fx-head">
           <h2 style="border:none;padding:0">Man United – Fixtures &amp; Results</h2>
@@ -132,7 +127,7 @@
   </div>
 
   <script>
-    // ---- utils ----
+    // ---------- helpers ----------
     const bust = () => `?t=${Date.now()}`;
     const el = s => document.querySelector(s);
     const tb = s => el(s).querySelector("tbody");
@@ -147,38 +142,64 @@
     async function getJSON(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
     async function getText(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.text(); }catch{ return null; } }
 
-    // ---- table normaliser ----
-    function normaliseTable(table){
-      let rows = table?.standings || table?.table || table?.rows || table?.data || table?.teams || [];
-      if (!Array.isArray(rows)) rows = [];
-      const map = r => {
-        const teamName = r.team || r.teamName || r.name || (r.team?.name) || "";
-        const played = r.played ?? r.playedGames ?? r.p;
-        const won = r.won ?? r.w;
-        const drawn = r.drawn ?? r.d;
-        const lost = r.lost ?? r.l;
-        const gf = r.gf ?? r.goalsFor ?? r.f;
-        const ga = r.ga ?? r.goalsAgainst ?? r.a;
-        const gd = (r.gd!==undefined) ? r.gd : ( (gf!=null && ga!=null) ? (gf-ga) : "" );
-        const pos = r.pos ?? r.position ?? r.rank ?? "";
-        const pts = r.pts ?? r.points ?? r.t ?? "";
-        return { pos, team: teamName, played, won, drawn, lost, gf, ga, gd, pts };
-      };
-      return rows.map(map);
+    // ---------- deep array finder for table ----------
+    function looksLikeTableRow(o){
+      if (!o || typeof o!=="object") return false;
+      const t = (o.team || o.teamName || o.name || (o.team?.name));
+      const hasPos = ("pos" in o) || ("position" in o) || ("rank" in o);
+      const hasPts = ("pts" in o) || ("points" in o);
+      return !!t && (hasPos || hasPts);
+    }
+    function collectArrays(obj, out=[]){
+      if (!obj || typeof obj!=="object") return out;
+      if (Array.isArray(obj)){ out.push(obj); return out; }
+      for (const k in obj) collectArrays(obj[k], out);
+      return out;
+    }
+    function pickBestTableArray(obj){
+      const arrays = collectArrays(obj, []);
+      // prefer bigger arrays that look like table rows
+      const scored = arrays.map(a=>{
+        const like = a.filter(looksLikeTableRow).length;
+        return {a, score:like*100 + a.length};
+      }).sort((x,y)=>y.score-x.score);
+      return scored.length ? scored[0].a : [];
+    }
+    function mapTableRow(r){
+      const teamName = r.team || r.teamName || r.name || (r.team?.name) || "";
+      const played = r.played ?? r.playedGames ?? r.p;
+      const won = r.won ?? r.w;
+      const drawn = r.drawn ?? r.d;
+      const lost = r.lost ?? r.l;
+      const gf = r.gf ?? r.goalsFor ?? r.f;
+      const ga = r.ga ?? r.goalsAgainst ?? r.a;
+      const gd = (r.gd!==undefined) ? r.gd : ( (gf!=null && ga!=null) ? (gf-ga) : "" );
+      const pos = r.pos ?? r.position ?? r.rank ?? "";
+      const pts = r.pts ?? r.points ?? r.t ?? "";
+      return { pos, team: teamName, played, won, drawn, lost, gf, ga, gd, pts };
     }
 
-    // ---- fixtures normaliser ----
+    // ---------- fixtures normaliser ----------
+    function looksLikeMatch(o){
+      if (!o || typeof o!=="object") return false;
+      const hasTeams = !!(o.home || o.away || o.homeTeam || o.awayTeam);
+      const hasDate = !!(o.date || o.utcDate || o.kickoff || o.start || o.matchDate);
+      return hasTeams && hasDate;
+    }
+    function pickBestMatchArray(obj){
+      const arrays = collectArrays(obj, []);
+      const scored = arrays.map(a=>{
+        const like = a.filter(looksLikeMatch).length;
+        return {a, score:like*100 + a.length};
+      }).sort((x,y)=>y.score-x.score);
+      return scored.length ? scored[0].a : [];
+    }
     function normaliseMatch(m){
-      // Dates
       const date = m.date || m.utcDate || m.kickoff || m.start || m.startTime || m.matchDate;
-      // Teams
       const hn = m.home?.name || m.homeTeam?.name || m.home || m.home_team || "";
       const an = m.away?.name || m.awayTeam?.name || m.away || m.away_team || "";
-      // Comp
       const comp = m.comp || m.competition?.name || m.league || m.tournament || "";
-      // TV
       const tv = m.tv || m.tv_uk || m.channel || m.broadcast || null;
-      // Score
       let homeS="", awayS="", outcome="";
       if (m.score && typeof m.score === "object"){
         homeS = (m.score.home ?? m.score.fullTime?.home ?? m.score.ft_home ?? "");
@@ -190,9 +211,8 @@
       }
       const status = (m.status || "").toUpperCase();
       const finished = status==="FINISHED" || m.completed === true || m.isFinished === true || (homeS!=="" && awayS!=="");
-      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome}, finished };
+      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome}, finished, highlights:m.highlights||{} };
     }
-
     function tvOverride(match, overrides){
       if (!overrides) return null;
       const day = (match.date||"").slice(0,10);
@@ -205,15 +225,26 @@
       return hit?.tv || null;
     }
 
-    // ---- render table ----
+    // ---------- render table ----------
     async function renderTable(){
       const [table, badges] = await Promise.all([
         getJSON("/assets/table.json"),
         getJSON("/assets/badges.json")
       ]);
+
       const body = tb("#pl-table");
       body.innerHTML = "";
-      const rows = normaliseTable(table);
+
+      const rawRows =
+        table?.standings || table?.table || table?.rows || table?.data || table?.teams ||
+        pickBestTableArray(table) || [];
+
+      const rows = (Array.isArray(rawRows) ? rawRows : []).map(mapTableRow);
+
+      // small hint if data is truncated
+      el("#tableNote").textContent = rows.length < 10
+        ? "Note: table source returned only " + rows.length + " rows (check /assets/table.json)."
+        : "";
 
       rows.forEach(r=>{
         const src = badges?.[r.team] || null;
@@ -236,7 +267,6 @@
         body.appendChild(tr);
       });
 
-      // stamp
       let tableUpdated = table?.updated || table?.lastUpdated || table?.meta?.updated || 0;
       if (tableUpdated){
         const d = new Date(tableUpdated);
@@ -245,22 +275,19 @@
       return Number(tableUpdated||0);
     }
 
-    // ---- render fixtures ----
+    // ---------- render fixtures ----------
     async function renderFixtures(){
       const [fx, overrides] = await Promise.all([
         getJSON("/assets/fixtures.json"),
         getJSON("/assets/tv_overrides.json")
       ]);
 
-      // Try to find the array of matches in a few shapes
-      let list = fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : []);
-      if (!Array.isArray(list)) list = [];
+      const baseList =
+        fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : pickBestMatchArray(fx)) || [];
+      const norm = baseList.map(normaliseMatch);
 
-      // Normalise and (by default) assume the file already contains MUFC only
-      const norm = list.map(normaliseMatch);
-
-      const upcoming = norm.filter(m=>!m.finished).sort((a,b)=> new Date(a.date) - new Date(b.date)).slice(0,6);
-      const recent   = norm.filter(m=> m.finished).sort((a,b)=> new Date(b.date) - new Date(a.date)).slice(0,6);
+      const upcoming = norm.filter(m=>!m.finished).sort((a,b)=> new Date(a.date)-new Date(b.date)).slice(0,6);
+      const recent   = norm.filter(m=> m.finished).sort((a,b)=> new Date(b.date)-new Date(a.date)).slice(0,6);
 
       const upTB = tb("#fx-upcoming");
       upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
@@ -307,7 +334,6 @@
 
     async function loadPage(){
       const [tU, fU] = await Promise.all([renderTable(), renderFixtures()]);
-      // fall back to update_stamp.txt
       let stamp = Math.max(Number(tU||0), Number(fU||0));
       if (!stamp){
         const txt = await getText("/assets/update_stamp.txt");
