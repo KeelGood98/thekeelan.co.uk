@@ -2,295 +2,289 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <title>thekeelan.co.uk — Football</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Mum</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%2300d4ff%22/></svg>">
   <style>
     :root{
-      --bg:#0b0f14; --card:#141a22; --text:#e9eef5; --muted:#95a1b1;
-      --stroke:rgba(255,255,255,.09); --accent:#3aa0ff;
-      --w:#1ec178; --d:#c7ccd4; --l:#ff5b5b;
+      --bg:#0c1117; --panel:#121823; --muted:#95a2b3; --text:#e6edf3; --accent:#00d4ff;
+      --ok:#19c37d; --warn:#e3b341; --bad:#f07470; --row:#0f1520;
+      --card-radius:16px; --gap:18px;
     }
     *{box-sizing:border-box}
-    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1600px;margin:0 auto;padding:18px}
-    header{display:flex;align-items:center;gap:12px;justify-content:space-between;margin-bottom:14px}
-    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
-    .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);display:inline-block;box-shadow:0 0 16px var(--accent)}
-    nav{display:flex;gap:8px}
-    nav a{padding:8px 12px;border:1px solid var(--stroke);border-radius:999px;opacity:.92}
-    nav a.active{background:var(--accent);border-color:transparent;color:#04121f;font-weight:600}
-    .grid{display:grid;grid-template-columns:minmax(340px,380px) 1.6fr 1.2fr;gap:18px}
-    .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
-    .card h2{margin:0;padding:14px 16px;border-bottom:1px solid var(--stroke);font-size:20px}
-    .card-body{padding:14px 16px}
-    .gif{width:100%;display:block}
-    table{width:100%;border-collapse:collapse}
-    tbody{display:table-row-group !important}
-    th,td{padding:10px 8px;text-align:center;font-size:14px}
-    th{text-transform:uppercase;letter-spacing:.06em;font-size:12px;color:var(--muted)}
-    tbody tr{border-top:1px solid var(--stroke)}
-    tbody tr:hover{background:rgba(255,255,255,.03)}
-    td.team{text-align:left;display:flex;align-items:center;gap:10px}
-    .badge{width:20px;height:20px;border-radius:50%;display:inline-grid;place-items:center;background:#0f1319;border:1px solid var(--stroke);overflow:hidden}
-    .badge img{width:100%;height:100%;object-fit:contain}
-    .badge span{font-size:10px;color:var(--muted);font-weight:700}
-    .fx-head{display:flex;justify-content:space-between;align-items:center;padding:0 16px 10px 16px}
-    .subtle{color:var(--muted);font-size:12px}
-    .pill{display:inline-block;padding:2px 8px;border-radius:999px;border:1px solid var(--stroke);font-size:12px;color:var(--muted)}
-    .w{color:var(--w)} .d{color:var(--d)} .l{color:var(--l)}
-    .fixture-table th, .fixture-table td{padding:8px}
-    .fixture-table th{font-size:11px}
-    .fixture-table td{font-size:14px}
-    .divider{height:1px;background:var(--stroke);margin:10px 0}
-    @media (max-width:1200px){ .grid{grid-template-columns:1fr} }
+    html,body{height:100%}
+    body{
+      margin:0; background:radial-gradient(1200px 600px at 70% -10%, #0d2238 0%, #0c1117 60%);
+      color:var(--text); font:14px/1.45 system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+    header{
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 18px; color:var(--muted);
+    }
+    header .nav a{
+      display:inline-block; margin-left:8px; padding:6px 12px; border-radius:999px;
+      background:#0b1422; color:#cde3ff; text-decoration:none;
+      border:1px solid #0e2139; transition:all .15s;
+    }
+    header .nav a.active{background:#0a7cc0; border-color:#0a7cc0; color:#fff}
+
+    .wrap{
+      max-width:1400px; margin:0 auto; padding:0 18px 28px;
+      display:grid; grid-template-columns: 1fr 1.2fr 1fr; gap:var(--gap);
+    }
+    .card{
+      background:var(--panel); border:1px solid #0f2237; border-radius:var(--card-radius);
+      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset;
+      overflow:hidden;
+    }
+    .card h2{
+      margin:0; padding:14px 16px; font-size:16px; font-weight:700; letter-spacing:.2px;
+      border-bottom:1px solid #0f2237; display:flex; justify-content:space-between; align-items:center;
+      background:linear-gradient(180deg, rgba(255,255,255,.02), transparent);
+    }
+    .panel-body{ padding:12px 14px; }
+
+    /* Left GIF */
+    .gif{
+      width:100%; aspect-ratio:16/9; object-fit:cover; border-bottom-left-radius:0; border-bottom-right-radius:0;
+      display:block;
+    }
+
+    /* Table */
+    table{width:100%; border-collapse:collapse; font-size:14px}
+    thead th{
+      text-align:left; color:var(--muted); font-weight:600; padding:10px 8px; position:sticky; top:0;
+      background:var(--panel); z-index:1; border-bottom:1px solid #0f2237;
+    }
+    tbody td{ padding:10px 8px; border-bottom:1px solid #0f2237; }
+    tbody tr:nth-child(odd){ background:var(--row) }
+    .num{ text-align:center; width:28px; color:#a8b6c6 }
+    .tight{ width:26px; text-align:center }
+    .team{
+      display:flex; align-items:center; gap:10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+    }
+    .badge{
+      width:18px; height:18px; border-radius:999px; background:#0a2540; display:inline-grid; place-items:center; font-size:11px; color:#cde3ff;
+      flex:0 0 18px;
+    }
+    .grid{
+      display:grid; grid-template-columns: 1fr 1.2fr 1fr; gap:var(--gap)
+    }
+    @media (max-width:1100px){
+      .wrap{ grid-template-columns:1fr; }
+      .grid{ grid-template-columns:1fr; }
+    }
+
+    .pill{font-size:12px; color:#9fb3c8; background:#0b1422; border:1px solid #0e2139; padding:4px 8px; border-radius:999px}
+    .ok{color:#19c37d} .warn{color:#e3b341} .bad{color:#f07470}
+
+    .fixture-table td,.fixture-table th{ padding:8px 10px }
   </style>
 </head>
 <body>
+  <header>
+    <div>thekeelan.co.uk</div>
+    <div class="nav">
+      <a class="active" href="./">Football</a>
+      <a href="./extras.html">Extras</a>
+    </div>
+  </header>
+
   <div class="wrap">
-    <header>
-      <div class="brand"><span class="dot"></span> thekeelan.co.uk</div>
-      <nav>
-        <a class="active" href="./">Football</a>
-        <a href="./extras.html">Extras</a>
-      </nav>
-    </header>
+    <!-- Left panel -->
+    <section class="card">
+      <h2>Left Panel</h2>
+      <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="">
+    </section>
 
-    <div class="grid">
-      <div class="card">
-        <h2>Left Panel</h2>
-        <img class="gif" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif" alt="gif" />
-      </div>
-
-      <div class="card" id="table-card">
-        <div class="fx-head" style="padding-top:14px">
-          <h2 style="border:none;padding:0">Premier League Table</h2>
-          <div class="subtle" id="tableStamp"></div>
-        </div>
-        <div class="subtle" id="tableNote" style="padding:0 16px 6px 16px;"></div>
-        <table id="pl-table" aria-label="Premier League Table">
+    <!-- Table -->
+    <section class="card">
+      <h2>
+        <span>Premier League Table</span>
+        <small class="pill">Updated: <span id="updated">—</span></small>
+      </h2>
+      <div class="panel-body">
+        <table id="pl-table">
           <thead>
             <tr>
-              <th>#</th><th style="text-align:left">Team</th>
-              <th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+              <th class="num">#</th>
+              <th>Team</th>
+              <th class="tight">P</th>
+              <th class="tight">W</th>
+              <th class="tight">D</th>
+              <th class="tight">L</th>
+              <th class="tight">GF</th>
+              <th class="tight">GA</th>
+              <th class="tight">GD</th>
+              <th class="tight">Pts</th>
             </tr>
           </thead>
-          <tbody></tbody>
+          <tbody id="pl-rows">
+            <tr><td colspan="10" style="text-align:center; padding:18px">Loading…</td></tr>
+          </tbody>
         </table>
       </div>
+    </section>
 
-      <div class="card" id="fx-card">
-        <div class="fx-head">
-          <h2 style="border:none;padding:0">Man United – Fixtures &amp; Results</h2>
-          <div class="subtle" id="updatedStamp">—</div>
-        </div>
+    <!-- Fixtures -->
+    <section class="card">
+      <h2>Man United – Fixtures &amp; Results</h2>
+      <div class="panel-body">
+        <h3 style="margin:6px 0 8px; color:#cde3ff; font-size:14px">Upcoming</h3>
+        <table class="fixture-table" id="upcoming">
+          <thead>
+          <tr>
+            <th>Date (UK)</th><th>Time</th><th>Comp</th><th>Home</th><th>Away</th><th>TV (UK)</th>
+          </tr>
+          </thead>
+          <tbody><tr><td colspan="6" style="text-align:center; padding:10px">Loading…</td></tr></tbody>
+        </table>
 
-        <div class="card-body">
-          <h3 style="margin:0 0 6px 0;">Upcoming</h3>
-          <table class="fixture-table" id="fx-upcoming">
-            <thead>
-              <tr>
-                <th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV (UK)</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-
-          <div class="divider"></div>
-
-          <h3 style="margin:10px 0 6px 0;">Recent Results</h3>
-          <table class="fixture-table" id="fx-recent">
-            <thead>
-              <tr>
-                <th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <h3 style="margin:16px 0 8px; color:#cde3ff; font-size:14px">Recent Results</h3>
+        <table class="fixture-table" id="recent">
+          <thead>
+          <tr>
+            <th>Date</th><th>Comp</th><th>Home</th><th>Away</th><th>Score</th><th>Highlights</th>
+          </tr>
+          </thead>
+          <tbody><tr><td colspan="6" style="text-align:center; padding:10px">Loading…</td></tr></tbody>
+        </table>
       </div>
-    </div>
+    </section>
   </div>
 
   <script>
-    const bust = () => `?t=${Date.now()}`;
-    const el = s => document.querySelector(s);
-    const tb = s => el(s).querySelector("tbody");
-    const toDate = v => { const d = new Date(v); return isNaN(d) ? null : d; };
-    const fmtDate = v => { const d = toDate(v); return d ? d.toLocaleDateString("en-GB",{day:"2-digit",month:"short",year:"numeric"}) : "—"; };
-    const fmtTime = v => { const d = toDate(v); return d ? d.toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"}) : "—"; };
-    const initials = name => { const p=(name||"").split(/\s+/).filter(Boolean); return p.length? (p[0][0]+(p[p.length-1]?.[0]||"")).toUpperCase() : "FC"; };
-    async function getJSON(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.json(); }catch{ return null; } }
-    async function getText(path){ try{ const r=await fetch(path + bust()); if(!r.ok) return null; return await r.text(); }catch{ return null; } }
+    const BUST = () => `?t=${Date.now()}`;
+    const get = (s) => document.querySelector(s);
+    let BADGES = {};
 
-    function looksLikeTableRow(o){
-      if (!o || typeof o!=="object") return false;
-      const t = (o.team || o.teamName || o.name || (o.team?.name));
-      const hasPos = ("pos" in o) || ("position" in o) || ("rank" in o);
-      const hasPts = ("pts" in o) || ("points" in o);
-      return !!t && (hasPos || hasPts);
+    async function fetchJSON(path){
+      const res = await fetch(path + BUST(), {cache:'no-store'});
+      if(!res.ok) throw new Error(path + ' -> ' + res.status);
+      return res.json();
     }
-    function collectArrays(obj, out=[]){
-      if (!obj || typeof obj!=="object") return out;
-      if (Array.isArray(obj)){ out.push(obj); return out; }
-      for (const k in obj) collectArrays(obj[k], out);
-      return out;
+    async function fetchText(path){
+      const res = await fetch(path + BUST(), {cache:'no-store'});
+      if(!res.ok) throw new Error(path + ' -> ' + res.status);
+      return res.text();
     }
-    function pickBestTableArray(obj){
-      const arrays = collectArrays(obj, []);
-      const scored = arrays.map(a=>{
-        const like = a.filter(looksLikeTableRow).length;
-        return {a, score:like*100 + a.length};
-      }).sort((x,y)=>y.score-x.score);
-      return scored.length ? scored[0].a : [];
+
+    function initials(name){
+      return name.split(/\s+/).map(w=>w[0]).join('').slice(0,3).toUpperCase();
     }
-    function mapTableRow(r){
-      const teamName = r.team || r.teamName || r.name || (r.team?.name) || "";
-      const played = r.played ?? r.playedGames ?? r.p;
-      const won = r.won ?? r.w;
-      const drawn = r.drawn ?? r.d;
-      const lost = r.lost ?? r.l;
-      const gf = r.gf ?? r.goalsFor ?? r.f;
-      const ga = r.ga ?? r.goalsAgainst ?? r.a;
-      const gd = (r.gd!==undefined) ? r.gd : ( (gf!=null && ga!=null) ? (gf-ga) : "" );
-      const pos = r.pos ?? r.position ?? r.rank ?? "";
-      const pts = r.pts ?? r.points ?? r.t ?? "";
-      return { pos, team: teamName, played, won, drawn, lost, gf, ga, gd, pts };
-    }
-    function looksLikeMatch(o){
-      if (!o || typeof o!=="object") return false;
-      const hasTeams = !!(o.home || o.away || o.homeTeam || o.awayTeam);
-      const hasDate = !!(o.date || o.utcDate || o.kickoff || o.start || o.matchDate);
-      return hasTeams && hasDate;
-    }
-    function pickBestMatchArray(obj){
-      const arrays = collectArrays(obj, []);
-      const scored = arrays.map(a=>{
-        const like = a.filter(looksLikeMatch).length;
-        return {a, score:like*100 + a.length};
-      }).sort((x,y)=>y.score-x.score);
-      return scored.length ? scored[0].a : [];
-    }
-    function normaliseMatch(m){
-      const date = m.date || m.utcDate || m.kickoff || m.start || m.startTime || m.matchDate;
-      const hn = m.home?.name || m.homeTeam?.name || m.home || m.home_team || "";
-      const an = m.away?.name || m.awayTeam?.name || m.away || m.away_team || "";
-      const comp = m.comp || m.competition?.name || m.league || m.tournament || "";
-      const tv = m.tv || m.tv_uk || m.channel || m.broadcast || null;
-      let homeS="", awayS="", outcome="";
-      if (m.score && typeof m.score === "object"){
-        homeS = (m.score.home ?? m.score.fullTime?.home ?? m.score.ft_home ?? "");
-        awayS = (m.score.away ?? m.score.fullTime?.away ?? m.score.ft_away ?? "");
-        outcome = (m.score.outcome || "").toLowerCase();
-      } else if (typeof m.score === "string"){
-        const mm = m.score.match(/(\d+)\D+(\d+)/);
-        if (mm){ homeS = +mm[1]; awayS = +mm[2]; }
+    function badgeCell(team){
+      const url = BADGES[team];
+      if(url){
+        return `<span class="badge" style="background:#0a2540"><img src="${url}" alt="" style="width:18px;height:18px;border-radius:999px;display:block"></span>`;
       }
-      const status = (m.status || "").toUpperCase();
-      const finished = status==="FINISHED" || m.completed === true || m.isFinished === true || (homeS!=="" && awayS!=="");
-      return { date, comp, home: hn, away: an, tv, score:{home:homeS, away:awayS, outcome}, finished, highlights:m.highlights||{} };
-    }
-    function tvOverride(match, overrides){
-      if (!overrides) return null;
-      const day = (match.date||"").slice(0,10);
-      const hit = overrides.find(o=>{
-        const okDay = o.date ? o.date===day : true;
-        const sameH = o.home ? o.home.toLowerCase()===(match.home||"").toLowerCase() : true;
-        const sameA = o.away ? o.away.toLowerCase()===(match.away||"").toLowerCase() : true;
-        return okDay && sameH && sameA;
-      });
-      return hit?.tv || null;
+      return `<span class="badge">${initials(team)}</span>`;
     }
 
-    async function renderTable(){
-      const [table, badges] = await Promise.all([
-        getJSON("/assets/table.json"),
-        getJSON("/assets/badges.json")
-      ]);
-      const body = tb("#pl-table"); body.innerHTML = "";
-      const rawRows = table?.standings || table?.table || table?.rows || table?.data || table?.teams || pickBestTableArray(table) || [];
-      const rows = (Array.isArray(rawRows) ? rawRows : []).map(mapTableRow);
-      el("#tableNote").textContent = rows.length < 10 ? `Note: table source returned only ${rows.length} rows (check /assets/table.json).` : "";
-      rows.forEach(r=>{
-        const src = badges?.[r.team] || null;
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-          <td>${r.pos}</td>
-          <td class="team">
-            <span class="badge">${src ? `<img src="${src}" alt="${r.team} badge">` : `<span>${initials(r.team)}</span>`}</span>
-            <span>${r.team}</span>
-          </td>
-          <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
-          <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td>${r.pts ?? ""}</td>`;
-        body.appendChild(tr);
-      });
-      let tableUpdated = table?.updated || table?.lastUpdated || table?.meta?.updated || 0;
-      if (tableUpdated){
-        const d = new Date(tableUpdated);
-        if (!isNaN(d)) el("#tableStamp").textContent = `Updated: ${d.toLocaleString("en-GB")}`;
-      }
-      return Number(tableUpdated||0);
-    }
-
-    async function renderFixtures(){
-      const [fx, overrides] = await Promise.all([
-        getJSON("/assets/fixtures.json"),
-        getJSON("/assets/tv_overrides.json")
-      ]);
-      const baseList = fx?.matches || fx?.fixtures || (Array.isArray(fx) ? fx : pickBestMatchArray(fx)) || [];
-      const norm = baseList.map(normaliseMatch);
-      const upcoming = norm.filter(m=>!m.finished).sort((a,b)=> new Date(a.date)-new Date(b.date)).slice(0,6);
-      const recent   = norm.filter(m=> m.finished).sort((a,b)=> new Date(b.date)-new Date(a.date)).slice(0,6);
-
-      const upTB = tb("#fx-upcoming");
-      upTB.innerHTML = upcoming.length ? "" : `<tr><td colspan="7" class="subtle">No upcoming fixtures.</td></tr>`;
-      upcoming.forEach(m=>{
-        const tv = m.tv || tvOverride(m, overrides) || "—";
-        upTB.insertAdjacentHTML("beforeend", `
-          <tr>
-            <td>${fmtDate(m.date)}</td><td>${fmtTime(m.date)}</td><td>${m.comp ?? ""}</td>
-            <td>${m.home ?? ""}</td><td>vs</td><td>${m.away ?? ""}</td><td>${tv}</td>
-          </tr>`);
-      });
-
-      const rcTB = tb("#fx-recent");
-      rcTB.innerHTML = recent.length ? "" : `<tr><td colspan="7" class="subtle">No recent matches.</td></tr>`;
-      recent.forEach(m=>{
-        const oc = (m.score?.outcome || "").toLowerCase();
-        const ocLabel = oc ? `<span class="${oc} pill">${oc.toUpperCase()}</span>` : "";
-        const scoreTxt = (m.score && m.score.home!=="") ? `${m.score.home}–${m.score.away}` : "—";
-        rcTB.insertAdjacentHTML("beforeend", `
-          <tr>
-            <td>${fmtDate(m.date)}</td><td>${m.comp ?? ""}</td>
-            <td>${m.home ?? ""}</td><td>vs</td><td>${m.away ?? ""}</td>
-            <td>${scoreTxt} ${ocLabel}</td>
-            <td>
-              ${m.highlights?.sky ? `<a class="pill" href="${m.highlights.sky}" target="_blank" rel="noopener">Sky</a>` : ""}
-              ${m.highlights?.yt  ? `<a class="pill" href="${m.highlights.yt}"  target="_blank" rel="noopener">YT</a>`  : ""}
-            </td>
-          </tr>`);
-      });
-
-      let fxUpdated = fx?.updated || fx?.lastUpdated || 0;
-      return Number(fxUpdated||0);
-    }
-
-    async function loadPage(){
-      const [tU, fU] = await Promise.all([renderTable(), renderFixtures()]);
-      let stamp = Math.max(Number(tU||0), Number(fU||0));
-      if (!stamp){
-        const txt = await getText("/assets/update_stamp.txt");
-        if (txt){
-          const d = new Date(txt.trim());
-          if (!isNaN(d)) stamp = d.getTime();
-        }
-      }
-      if (stamp){
-        const d = new Date(stamp);
-        el("#updatedStamp").textContent = `Last updated: ${d.toLocaleString("en-GB")}`;
+    async function loadBadges(){
+      try{
+        BADGES = await fetchJSON('/assets/badges.json');
+      }catch(e){
+        BADGES = {};
       }
     }
-    loadPage();
+
+    async function loadUpdated(){
+      try{
+        const txt = await fetchText('/assets/update_stamp.txt');
+        // show file mtime instead of content (content might be arbitrary)
+        const res = await fetch('/assets/update_stamp.txt' + BUST(), {method:'HEAD'});
+        const m = res.headers.get('last-modified');
+        get('#updated').textContent = m ? new Date(m).toLocaleString() : (new Date()).toLocaleString();
+      }catch(e){
+        get('#updated').textContent = '—';
+      }
+    }
+
+    async function loadTable(){
+      const body = get('#pl-rows');
+      try{
+        const table = await fetchJSON('/assets/table.json');
+        if(!Array.isArray(table) || table.length === 0) throw new Error('empty table');
+        body.innerHTML = table.slice(0, 20).map((row, i) => {
+          const { team, played, won, draw, lost, goalsFor, goalsAgainst, goalDiff, points } = row;
+          return `<tr>
+            <td class="num">${i+1}</td>
+            <td class="team">${badgeCell(team)} <span>${team}</span></td>
+            <td class="tight">${played ?? row.p ?? ''}</td>
+            <td class="tight">${won ?? row.w ?? ''}</td>
+            <td class="tight">${draw ?? row.d ?? ''}</td>
+            <td class="tight">${lost ?? row.l ?? ''}</td>
+            <td class="tight">${goalsFor ?? row.gf ?? ''}</td>
+            <td class="tight">${goalsAgainst ?? row.ga ?? ''}</td>
+            <td class="tight">${goalDiff ?? row.gd ?? ''}</td>
+            <td class="tight">${points ?? row.pts ?? ''}</td>
+          </tr>`;
+        }).join('');
+      }catch(e){
+        body.innerHTML = `<tr><td colspan="10" style="text-align:center; padding:14px">No table data.</td></tr>`;
+      }
+    }
+
+    function fmtDate(d){
+      try{
+        const dt = new Date(d);
+        if(!isNaN(dt)) return dt.toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'});
+      }catch{}
+      return d ?? '';
+    }
+
+    async function loadFixtures(){
+      const upT = get('#upcoming tbody');
+      const reT = get('#recent tbody');
+      try{
+        const data = await fetchJSON('/assets/fixtures.json');
+        if(!Array.isArray(data)) throw new Error('bad fixtures');
+
+        const upcoming = data.filter(g => !g.completed && !/FT/i.test(g.status || ''));
+        const recent   = data.filter(g =>  g.completed || /FT/i.test(g.status || '')).slice(-6).reverse();
+
+        upT.innerHTML = upcoming.length
+          ? upcoming.map(g => {
+              const tv = g.tvUk ?? g.tv ?? g.channel ?? '';
+              return `<tr>
+                <td>${fmtDate(g.date)}</td>
+                <td>${g.timeUk ?? g.time ?? ''}</td>
+                <td>${g.comp ?? ''}</td>
+                <td>${g.home ?? ''}</td>
+                <td>${g.away ?? ''}</td>
+                <td>${tv || '—'}</td>
+              </tr>`;
+            }).join('')
+          : `<tr><td colspan="6" style="text-align:center; padding:10px">No upcoming fixtures.</td></tr>`;
+
+        reT.innerHTML = recent.length
+          ? recent.map(g => {
+              const hs = g.scoreHome ?? g.hs ?? '';
+              const as = g.scoreAway ?? g.as ?? '';
+              const sky = g.skyUrl ? `<a href="${g.skyUrl}" target="_blank" rel="noopener">Sky</a>` : '';
+              const yt  = g.ytUrl  ? `<a href="${g.ytUrl}" target="_blank" rel="noopener">YT</a>`  : '';
+              const links = [sky, yt].filter(Boolean).join(' · ') || '—';
+              return `<tr>
+                <td>${fmtDate(g.date)}</td>
+                <td>${g.comp ?? ''}</td>
+                <td>${g.home ?? ''}</td>
+                <td>${g.away ?? ''}</td>
+                <td>${hs && as ? `${hs}–${as}` : (g.score ?? '')}</td>
+                <td>${links}</td>
+              </tr>`;
+            }).join('')
+          : `<tr><td colspan="6" style="text-align:center; padding:10px">No recent results.</td></tr>`;
+
+      }catch(e){
+        upT.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:10px">No fixtures data.</td></tr>`;
+        reT.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:10px">No results data.</td></tr>`;
+      }
+    }
+
+    (async () => {
+      await loadBadges();
+      await Promise.all([loadUpdated(), loadTable(), loadFixtures()]);
+    })();
   </script>
 </body>
 </html>
