@@ -2,9 +2,9 @@ name: Update site data (TSDB season → table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"  # daily 06:00 UTC (tweak as you like)
+    - cron: "0 6 * * *"    # daily
   workflow_dispatch:
-  workflow_call:
+  workflow_call:           # <-- IMPORTANT for reusable workflow
 
 permissions:
   contents: write
@@ -19,7 +19,6 @@ jobs:
         with:
           python-version: "3.11"
 
-      # --- Premier League table via TheSportsDB ---
       - name: Build assets/table.json (TSDB)
         run: |
           python - <<'PY'
@@ -33,19 +32,16 @@ jobs:
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # Determine current PL season string, e.g. 2025-2026
           now = datetime.utcnow()
           start = now.year if now.month >= 7 else now.year - 1
           season = f"{start}-{start+1}"
 
-          # TSDB: Premier League league id = 4328
           url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4328&s={urllib.parse.quote(season)}"
           try:
             data = json.loads(fetch(url).decode("utf-8"))
             table = data.get("table") or []
             rows = []
             for t in table:
-              # TheSportsDB keys
               rows.append({
                 "pos": int(t.get("intRank") or 0),
                 "team": t.get("strTeam") or "",
@@ -72,7 +68,6 @@ jobs:
             print("Table build failed:", e, file=sys.stderr)
           PY
 
-      # --- MUFC fixtures via your existing script ---
       - name: Build assets/fixtures.json (update_fixtures.py)
         run: |
           python update_fixtures.py
