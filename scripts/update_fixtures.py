@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Build assets/fixtures.json for Manchester United.
+Build assets/fixtures.json for Manchester United with correct UK times.
 
 Order of sources (strongest to weakest):
   1) Team season       : /eventsseason.php?id=<teamId>&s=<season>
@@ -8,18 +8,20 @@ Order of sources (strongest to weakest):
   3) League rounds     : /eventsround.php?id=4328&s=<season>&r=1..40        -> filter MUFC
   4) Fallback (stitch) : /eventslast.php?id=<teamId> + /eventsnext.php?id=<teamId>
 
-This keeps your existing JSON shape so the front-end colours W/D/L and shows TV links.
+We output ISO timestamps in UTC (Z). If TSDB provides strTimestamp we use it.
+Otherwise we interpret the provided kick-off as Europe/London and convert to UTC.
 """
 
 import json, os, sys, time, urllib.request, urllib.parse
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo  # Python 3.9+
 
 ASSETS_DIR = "assets"
 OUT_FILE = os.path.join(ASSETS_DIR, "fixtures.json")
 TV_OVERRIDES_FILE = os.path.join(ASSETS_DIR, "tv_overrides.json")
 
 TEAM_NAME = "Manchester United"
-DEFAULT_TEAM_ID = "133612"        # MUFC on TheSportsDB (safety net)
+DEFAULT_TEAM_ID = "133612"        # MUFC on TheSportsDB
 PL_LEAGUE_ID = "4328"             # English Premier League
 
 BASE = "https://www.thesportsdb.com/api/v1/json/3"
@@ -45,18 +47,53 @@ def lookup_team_id(name: str) -> str:
         print("[fixtures] team lookup failed:", e, file=sys.stderr)
     return DEFAULT_TEAM_ID
 
-def to_iso(date_str, time_str):
+# ---- Time handling ----
+UK_TZ = ZoneInfo("Europe/London")
+
+def to_iso_utc_from_local(date_str, time_str):
+    """Interpret given date & time as Europe/London, convert to UTC ISO with Z."""
     d = (date_str or "").strip()
-    t = (time_str or "15:00").strip()  # default time if missing
+    t = (time_str or "").strip()
+    if not t or t.upper() in ("TBD", "00:00"):
+        t = "15:00"  # safe default if missing
     try:
-        dt = datetime.strptime(d + " " + t, "%Y-%m-%d %H:%M")
-        return dt.strftime("%Y-%m-%dT%H:%M:00Z")
+        naive = datetime.strptime(d + " " + t, "%Y-%m-%d %H:%M")
+        local_dt = naive.replace(tzinfo=UK_TZ)
+        utc_dt = local_dt.astimezone(timezone.utc)
+        return utc_dt.strftime("%Y-%m-%dT%H:%M:00Z")
     except Exception:
+        # last-ditch: date only at 15:00 UK
         try:
-            dt = datetime.strptime(d, "%Y-%m-%d")
-            return dt.strftime("%Y-%m-%dT15:00:00Z")
+            naive = datetime.strptime(d + " 15:00", "%Y-%m-%d %H:%M")
+            local_dt = naive.replace(tzinfo=UK_TZ)
+            utc_dt = local_dt.astimezone(timezone.utc)
+            return utc_dt.strftime("%Y-%m-%dT%H:%M:00Z")
         except Exception:
             return None
+
+def best_iso_utc(e):
+    """
+    Choose the best UTC timestamp:
+      - strTimestamp (already UTC or has offset)
+      - else interpret dateEvent + (strTimeLocal or strTime) as Europe/London -> convert to UTC
+    """
+    ts = (e.get("strTimestamp") or "").strip()
+    if ts:
+        try:
+            # TSDB often like "2025-09-20 16:30:00+00:00" or ISO; normalise to UTC 'Z'
+            ts_norm = ts.replace(" ", "T").replace("Z", "+00:00")
+            dt = datetime.fromisoformat(ts_norm)  # aware
+            utc_dt = dt.astimezone(timezone.utc)
+            return utc_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+        except Exception:
+            pass
+
+    # Fallback: treat as UK local time
+    date_str = e.get("dateEvent") or ""
+    time_local = e.get("strTimeLocal") or e.get("strTime") or ""
+    return to_iso_utc_from_local(date_str, time_local)
+
+# -----------------------
 
 def outcome_from_mufc_pov(home, away, hs, as_):
     try:
@@ -78,7 +115,7 @@ def guess_uk_tv(date_iso, comp):
     try:
         dt = datetime.strptime(date_iso, "%Y-%m-%dT%H:%M:00Z")
         hm = dt.strftime("%H:%M")
-        wk = dt.strftime("%a")  # Mon..Sun
+        wk = dt.strftime("%a")  # Mon..Sun (in UTC, but pattern is fine for heuristic)
         if wk == "Sat" and hm == "12:30": return "TNT Sports (est.)"
         if wk == "Sat" and hm in ("17:30","20:00"): return "Sky Sports (est.)"
         if wk == "Sun" and hm in ("14:00","16:30","19:00"): return "Sky Sports (est.)"
@@ -121,16 +158,12 @@ def get_league_rounds(league_id, season, max_rounds=40):
         url = f"{BASE}/eventsround.php?id={league_id}&s={urllib.parse.quote(season)}&r={r}"
         try:
             evs = (fetch_json(url).get("events") or [])
-            if not evs:
-                # Stop if we start hitting empty rounds continuously
-                if r > 38:
-                    break
+            if not evs and r > 38:
+                break
             all_events.extend(evs)
         except Exception as e:
             print(f"[fixtures] round {r} failed:", e, file=sys.stderr)
-            # keep going, some rounds might not exist yet
             continue
-    # Deduplicate by idEvent
     out, seen = [], set()
     for e in all_events:
         k = e.get("idEvent")
@@ -155,11 +188,16 @@ def get_next(team_id):
         print("[fixtures] next failed:", e, file=sys.stderr)
         return []
 
+def is_mufc(e):
+    h = (e.get("strHomeTeam") or "").lower()
+    a = (e.get("strAwayTeam") or "").lower()
+    return ("manchester united" in h) or ("manchester united" in a)
+
 def normalise(e, tv_overrides):
     home = (e.get("strHomeTeam") or "").strip()
     away = (e.get("strAwayTeam") or "").strip()
     comp = (e.get("strLeague") or e.get("strLeagueShort") or "").strip()
-    date_iso = to_iso(e.get("dateEvent"), e.get("strTimeLocal") or e.get("strTime"))
+    date_iso = best_iso_utc(e)
 
     hs = e.get("intHomeScore")
     as_ = e.get("intAwayScore")
@@ -190,11 +228,6 @@ def normalise(e, tv_overrides):
         "status": status
     }
 
-def is_mufc(e):
-    h = (e.get("strHomeTeam") or "").lower()
-    a = (e.get("strAwayTeam") or "").lower()
-    return ("manchester united" in h) or ("manchester united" in a)
-
 def build():
     os.makedirs(ASSETS_DIR, exist_ok=True)
 
@@ -209,30 +242,28 @@ def build():
     # 1) Team season
     raw = get_team_season(team_id, season)
 
-    # 2) League season (filter MUFC) if team season empty
+    # 2) League season (filter MUFC)
     if not raw:
         print("[fixtures] team season empty -> trying league season…")
         league_all = get_league_season(PL_LEAGUE_ID, season)
         raw = [e for e in league_all if is_mufc(e)]
 
-    # 3) League rounds (filter MUFC) if still empty
+    # 3) League rounds (filter MUFC)
     if not raw:
         print("[fixtures] league season empty -> trying league rounds…")
         rounds_all = get_league_rounds(PL_LEAGUE_ID, season, max_rounds=40)
         raw = [e for e in rounds_all if is_mufc(e)]
 
-    # 4) Absolute fallback: last + next stitched
+    # 4) Fallback: stitched last + next
     used_fallback_stitch = False
     if not raw:
         print("[fixtures] rounds empty -> using last+next fallback")
         used_fallback_stitch = True
         raw = (get_last(team_id) or []) + (get_next(team_id) or [])
 
-    # Filter & normalise
     filtered = [e for e in (raw or []) if is_mufc(e)]
     matches = [normalise(e, tv_overrides) for e in filtered]
 
-    # sort by date
     def key_dt(m):
         try: return datetime.strptime(m.get("date") or "", "%Y-%m-%dT%H:%M:00Z")
         except: return datetime.max
