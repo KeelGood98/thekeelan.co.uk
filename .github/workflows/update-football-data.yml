@@ -1,8 +1,8 @@
-name: Update football data (table + MUFC fixtures)
+name: Update site data (table + MUFC fixtures)
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours; tweak if you want
+    - cron: "0 6 * * *"   # daily 06:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -14,33 +14,33 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build table.json (ESPN)
-        run: python scripts/update_table.py
-
-      - name: Build fixtures.json (ESPN MUFC)
-        run: python scripts/update_fixtures.py
-
-      - name: Touch update stamp
+      # --- TABLE (unchanged – your existing logic here) ---
+      - name: Build assets/table.json
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
-          cat assets/update_stamp.txt
+          python scripts/update_table.py
 
-      - name: Commit & push
+      # --- FIXTURES (make sure we point to scripts/update_fixtures.py) ---
+      - name: Build assets/fixtures.json
+        run: |
+          python scripts/update_fixtures.py
+          echo "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > assets/update_stamp.txt
+          echo "Preview first 3 lines:"
+          head -n 3 assets/fixtures.json || true
+
+      - name: Commit & push assets
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git pull --rebase origin ${{ github.ref_name }} || true
           git add assets/table.json assets/fixtures.json assets/update_stamp.txt
-
-          # Pull-before-push avoids 'rejected - fetch first'
-          git fetch origin
-          git pull --rebase origin main || true
-
-          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git commit -m "chore: refresh table + fixtures $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
