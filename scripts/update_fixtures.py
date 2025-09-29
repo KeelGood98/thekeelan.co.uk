@@ -2,9 +2,13 @@
 """
 Build assets/fixtures.json for Manchester United.
 
-- Primary source: TheSportsDB season endpoint.
-- Robust fallbacks: eventslast + eventsnext if season returns nothing.
-- Keeps your JSON shape so the frontend continues to colour W/D/L and show TV/links.
+Order of sources (strongest to weakest):
+  1) Team season       : /eventsseason.php?id=<teamId>&s=<season>
+  2) League season     : /eventsseason.php?id=4328&s=<season> (Premier League) -> filter MUFC
+  3) League rounds     : /eventsround.php?id=4328&s=<season>&r=1..40        -> filter MUFC
+  4) Fallback (stitch) : /eventslast.php?id=<teamId> + /eventsnext.php?id=<teamId>
+
+This keeps your existing JSON shape so the front-end colours W/D/L and shows TV links.
 """
 
 import json, os, sys, time, urllib.request, urllib.parse
@@ -14,8 +18,9 @@ ASSETS_DIR = "assets"
 OUT_FILE = os.path.join(ASSETS_DIR, "fixtures.json")
 TV_OVERRIDES_FILE = os.path.join(ASSETS_DIR, "tv_overrides.json")
 
-TEAM_NAME = "Manchester United"   # we’ll look up the id by name
-DEFAULT_TEAM_ID = "133612"        # safety net
+TEAM_NAME = "Manchester United"
+DEFAULT_TEAM_ID = "133612"        # MUFC on TheSportsDB (safety net)
+PL_LEAGUE_ID = "4328"             # English Premier League
 
 BASE = "https://www.thesportsdb.com/api/v1/json/3"
 
@@ -42,7 +47,7 @@ def lookup_team_id(name: str) -> str:
 
 def to_iso(date_str, time_str):
     d = (date_str or "").strip()
-    t = (time_str or "15:00").strip()
+    t = (time_str or "15:00").strip()  # default time if missing
     try:
         dt = datetime.strptime(d + " " + t, "%Y-%m-%d %H:%M")
         return dt.strftime("%Y-%m-%dT%H:%M:00Z")
@@ -94,28 +99,60 @@ def load_tv_overrides():
         print("[tv_overrides] warn:", e, file=sys.stderr)
     return {}
 
-def get_events_season(team_id, season):
+def get_team_season(team_id, season):
     url = f"{BASE}/eventsseason.php?id={team_id}&s={urllib.parse.quote(season)}"
     try:
         return (fetch_json(url).get("events") or [])
     except Exception as e:
-        print("[fixtures] season fetch failed:", e, file=sys.stderr)
+        print("[fixtures] team season failed:", e, file=sys.stderr)
         return []
 
-def get_events_last(team_id):
+def get_league_season(league_id, season):
+    url = f"{BASE}/eventsseason.php?id={league_id}&s={urllib.parse.quote(season)}"
+    try:
+        return (fetch_json(url).get("events") or [])
+    except Exception as e:
+        print("[fixtures] league season failed:", e, file=sys.stderr)
+        return []
+
+def get_league_rounds(league_id, season, max_rounds=40):
+    all_events = []
+    for r in range(1, max_rounds+1):
+        url = f"{BASE}/eventsround.php?id={league_id}&s={urllib.parse.quote(season)}&r={r}"
+        try:
+            evs = (fetch_json(url).get("events") or [])
+            if not evs:
+                # Stop if we start hitting empty rounds continuously
+                if r > 38:
+                    break
+            all_events.extend(evs)
+        except Exception as e:
+            print(f"[fixtures] round {r} failed:", e, file=sys.stderr)
+            # keep going, some rounds might not exist yet
+            continue
+    # Deduplicate by idEvent
+    out, seen = [], set()
+    for e in all_events:
+        k = e.get("idEvent")
+        if k and k not in seen:
+            seen.add(k)
+            out.append(e)
+    return out
+
+def get_last(team_id):
     url = f"{BASE}/eventslast.php?id={team_id}"
     try:
         return (fetch_json(url).get("results") or [])
     except Exception as e:
-        print("[fixtures] last fetch failed:", e, file=sys.stderr)
+        print("[fixtures] last failed:", e, file=sys.stderr)
         return []
 
-def get_events_next(team_id):
+def get_next(team_id):
     url = f"{BASE}/eventsnext.php?id={team_id}"
     try:
         return (fetch_json(url).get("events") or [])
     except Exception as e:
-        print("[fixtures] next fetch failed:", e, file=sys.stderr)
+        print("[fixtures] next failed:", e, file=sys.stderr)
         return []
 
 def normalise(e, tv_overrides):
@@ -153,6 +190,11 @@ def normalise(e, tv_overrides):
         "status": status
     }
 
+def is_mufc(e):
+    h = (e.get("strHomeTeam") or "").lower()
+    a = (e.get("strAwayTeam") or "").lower()
+    return ("manchester united" in h) or ("manchester united" in a)
+
 def build():
     os.makedirs(ASSETS_DIR, exist_ok=True)
 
@@ -162,30 +204,39 @@ def build():
 
     team_id = lookup_team_id(TEAM_NAME) or DEFAULT_TEAM_ID
     print(f"[fixtures] Using team id {team_id} for {TEAM_NAME}")
+    print(f"[fixtures] Season {season}")
 
-    raw = get_events_season(team_id, season)
+    # 1) Team season
+    raw = get_team_season(team_id, season)
 
-    # Fallback if season feed empty: stitch last + next
+    # 2) League season (filter MUFC) if team season empty
     if not raw:
-        last_e = get_events_last(team_id)
-        next_e = get_events_next(team_id)
-        raw = (last_e or []) + (next_e or [])
-        print(f"[fixtures] season empty; using last+next fallback: {len(raw)} events")
+        print("[fixtures] team season empty -> trying league season…")
+        league_all = get_league_season(PL_LEAGUE_ID, season)
+        raw = [e for e in league_all if is_mufc(e)]
 
-    # Only keep games where MUFC is actually one of the teams
-    filtered = []
-    for e in (raw or []):
-        h = (e.get("strHomeTeam") or "").lower()
-        a = (e.get("strAwayTeam") or "").lower()
-        if "manchester united" in h or "manchester united" in a:
-            filtered.append(e)
+    # 3) League rounds (filter MUFC) if still empty
+    if not raw:
+        print("[fixtures] league season empty -> trying league rounds…")
+        rounds_all = get_league_rounds(PL_LEAGUE_ID, season, max_rounds=40)
+        raw = [e for e in rounds_all if is_mufc(e)]
 
+    # 4) Absolute fallback: last + next stitched
+    used_fallback_stitch = False
+    if not raw:
+        print("[fixtures] rounds empty -> using last+next fallback")
+        used_fallback_stitch = True
+        raw = (get_last(team_id) or []) + (get_next(team_id) or [])
+
+    # Filter & normalise
+    filtered = [e for e in (raw or []) if is_mufc(e)]
     matches = [normalise(e, tv_overrides) for e in filtered]
+
     # sort by date
-    def t(m):
+    def key_dt(m):
         try: return datetime.strptime(m.get("date") or "", "%Y-%m-%dT%H:%M:00Z")
         except: return datetime.max
-    matches.sort(key=t)
+    matches.sort(key=key_dt)
 
     out = {
         "team": TEAM_NAME,
@@ -195,7 +246,9 @@ def build():
     }
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False)
-    print(f"[fixtures] Wrote {OUT_FILE} with {len(matches)} matches")
+
+    print(f"[fixtures] Wrote {OUT_FILE} with {len(matches)} matches"
+          + (" (fallback: last+next)" if used_fallback_stitch else ""))
 
 if __name__ == "__main__":
     try:
