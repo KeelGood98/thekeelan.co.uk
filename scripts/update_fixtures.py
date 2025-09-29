@@ -1,259 +1,190 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 """
-Build assets/fixtures.json for Manchester United by merging:
-- ESPN team schedule (reliable upcoming)
-- TheSportsDB team feeds (reliable finished scores)
+Build assets/fixtures.json for Manchester United (all comps, whole season).
 
-Keeps your existing output schema used by index.html.
+- Source: TheSportsDB season endpoint (free, no key required).
+- Team ID (MUFC): 133612  (do NOT change unless you want another club)
+- Does not modify the league table pipeline.
+- Optional TV overrides: assets/tv_overrides.json
+  Example:
+  {
+    "2025-09-20 Chelsea": "Sky Sports",
+    "2025-10-25 Brighton": "TNT Sports"
+  }
 """
 
-import json, os, sys, time, urllib.request, urllib.error, re
-from datetime import datetime, timezone
+import json, os, sys, time, urllib.request
+from datetime import datetime, timedelta, timezone
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-ASSETS = os.path.join(ROOT, "assets")
-OUT_PATH = os.path.join(ASSETS, "fixtures.json")
-TV_OVERRIDES = os.path.join(ASSETS, "tv_overrides.json")
+ASSETS_DIR = "assets"
+OUT_FILE    = os.path.join(ASSETS_DIR, "fixtures.json")
+TV_OVERRIDES_FILE = os.path.join(ASSETS_DIR, "tv_overrides.json")
 
-TEAM = "Manchester United"
+TEAM_ID_MUFC = "133612"  # Manchester United on TheSportsDB
 
-# ESPN (Premier League team id for MUFC)
-ESPN_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/teams/360/schedule"
-
-# TheSportsDB (MUFC)
-TSDB_BASE = "https://www.thesportsdb.com/api/v1/json/3/"
-TSDB_TEAM_ID = "133612"  # MUFC
-TSDB_NEXT = TSDB_BASE + f"eventsnext.php?id={TSDB_TEAM_ID}"
-TSDB_LAST = TSDB_BASE + f"eventslast.php?id={TSDB_TEAM_ID}"
-
-UA = {"User-Agent": "keelan/fixtures-merge 1.1"}
-
-def fetch_json(url, timeout=35):
-    req = urllib.request.Request(url, headers=UA)
+def fetch(url, timeout=30):
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "GitHubAction/1.0 (+thekeelan.co.uk)"}
+    )
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+        return r.read()
 
-def ensure_assets():
-    os.makedirs(ASSETS, exist_ok=True)
+def current_season_str(now_utc: datetime) -> str:
+    # PL season runs Jul/ Aug -> next year
+    start = now_utc.year if now_utc.month >= 7 else now_utc.year - 1
+    return f"{start}-{start+1}"
 
-def iso_utc(s):
-    if not s:
-        return datetime.utcnow().replace(tzinfo=timezone.utc).isoformat().replace("+00:00","Z")
+def load_tv_overrides():
     try:
-        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        with open(TV_OVERRIDES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            if isinstance(data, dict):
+                return data
+    except FileNotFoundError:
+        pass
+    except Exception as e:
+        print("[tv_overrides] warning:", e, file=sys.stderr)
+    return {}
+
+def to_iso(date_str, time_str):
+    """
+    Convert date + time (both strings) to ISO8601 (UTC) for our JSON.
+    If time is missing, assume 15:00.
+    """
+    d = (date_str or "").strip()
+    t = (time_str or "15:00").strip()
+    # TheSportsDB times can be local or UTC; we just keep a consistent string.
+    try:
+        dt = datetime.strptime(d + " " + t, "%Y-%m-%d %H:%M")
+        # keep naive but mark as 'Z' so client treats it consistently
+        return dt.strftime("%Y-%m-%dT%H:%M:00Z")
     except Exception:
-        # Fallback patterns
-        for fmt in ("%Y-%m-%dT%H:%M:%S", "%Y-%m-%dT%H:%M"):
-            try:
-                dt = datetime.strptime(s[:len(fmt)], fmt).replace(tzinfo=timezone.utc)
-                break
-            except Exception:
-                dt = None
-        if dt is None:
-            dt = datetime.utcnow().replace(tzinfo=timezone.utc)
-    dt = dt.astimezone(timezone.utc)
-    return dt.isoformat().replace("+00:00","Z")
+        # Fallback to date only
+        try:
+            dt = datetime.strptime(d, "%Y-%m-%d")
+            return dt.strftime("%Y-%m-%dT15:00:00Z")
+        except Exception:
+            return None
 
-_slug_re = re.compile(r"[^a-z0-9]+", re.I)
-def slug(x):
-    return _slug_re.sub("", (x or "").lower())
-
-def key_from(home, away, date_iso):
-    # Robust merge key (names can vary slightly across sources)
-    return f"{date_iso[:10]}|{slug(home)}|{slug(away)}"
-
-def to_int(x):
+def outcome_from_mufc_pov(home, away, hs, as_):
     try:
-        return int(x)
+        hs = int(hs) if hs is not None else None
+        as_ = int(as_) if as_ is not None else None
     except Exception:
         return None
-
-def outcome_for_mu(home, away, hs, as_):
-    if hs is None or as_ is None: return None
-    mu = TEAM.lower()
-    if (home or "").lower() == mu:
-        return "W" if hs > as_ else ("D" if hs == as_ else "L")
-    if (away or "").lower() == mu:
-        return "W" if as_ > hs else ("D" if as_ == hs else "L")
+    if hs is None or as_ is None:
+        return None
+    if home.lower() == "manchester united":
+        if   hs > as_: return "W"
+        elif hs < as_: return "L"
+        else:          return "D"
+    elif away.lower() == "manchester united":
+        if   as_ > hs: return "W"
+        elif as_ < hs: return "L"
+        else:          return "D"
     return None
 
-def apply_tv_overrides(matches):
-    if not os.path.exists(TV_OVERRIDES): return
+def guess_uk_tv(date_iso, comp):
+    # simple heuristic – your front-end also guesses; this is a light helper
+    if not comp or "premier" not in comp.lower():
+        return ""
     try:
-        with open(TV_OVERRIDES, "r", encoding="utf-8") as f:
-            ov = json.load(f) or {}
+        dt = datetime.strptime(date_iso, "%Y-%m-%dT%H:%M:00Z")
+        # treat this as UK local time block guess
+        hm = dt.strftime("%H:%M")
+        wk = dt.strftime("%a")  # Mon/Tue/...
+        if wk == "Sat" and hm == "12:30": return "TNT Sports (est.)"
+        if wk == "Sat" and hm in ("17:30","20:00"): return "Sky Sports (est.)"
+        if wk == "Sun" and hm in ("14:00","16:30","19:00"): return "Sky Sports (est.)"
+        if wk in ("Mon","Fri") and hm in ("19:45","20:00"): return "Sky Sports (est.)"
     except Exception:
-        return
-    by_date = ov.get("by_date") or {}
-    by_exact = ov.get("by_exact") or {}
-    for m in matches:
-        d = m["date"][:10]
-        k = f'{m["date"]}|{m["home"]} v {m["away"]}'
-        if k in by_exact:
-            m["tv"] = by_exact[k]
-        elif d in by_date:
-            m["tv"] = by_date[d]
+        pass
+    return "TBD"
 
-# -------- ESPN (primary for upcoming, secondary for structure)
-def from_espn():
-    data = fetch_json(ESPN_URL)
-    events = (data or {}).get("events") or []
-    out = []
-    for ev in events:
-        comps = ev.get("competitions") or []
-        if not comps: continue
-        c0 = comps[0]
+def season_events(team_id, season_str):
+    url = f"https://www.thesportsdb.com/api/v1/json/3/eventsseason.php?id={team_id}&s={season_str}"
+    raw = fetch(url).decode("utf-8")
+    data = json.loads(raw)
+    return data.get("events") or []
 
-        # Competitors
-        home = away = ""
-        hs = as_ = None
-        for comptr in c0.get("competitors", []):
-            nm = comptr.get("team", {}).get("displayName") or ""
-            side = comptr.get("homeAway")
-            sc = comptr.get("score")
-            sc_i = to_int(sc) if sc is not None else None
-            if side == "home":
-                home, hs = nm, sc_i
-            elif side == "away":
-                away, as_ = nm, sc_i
+def build():
+    os.makedirs(ASSETS_DIR, exist_ok=True)
 
-        # Only keep MUFC fixtures
-        if TEAM.lower() not in (home.lower(), away.lower()):
+    now_utc = datetime.utcnow().replace(tzinfo=timezone.utc)
+    season  = current_season_str(now_utc)
+
+    tv_overrides = load_tv_overrides()
+
+    events = season_events(TEAM_ID_MUFC, season)
+
+    matches = []
+    for e in events:
+        home = (e.get("strHomeTeam") or "").strip()
+        away = (e.get("strAwayTeam") or "").strip()
+
+        # Safety guard: only keep matches where MUFC is involved
+        if "manchester united" not in (home.lower() + " " + away.lower()):
             continue
 
-        comp_name = ""
-        try:
-            comp_name = c0.get("name") or ev.get("name") or ev.get("shortName") or ""
-        except Exception:
-            comp_name = ev.get("name") or ""
+        comp = (e.get("strLeague") or e.get("strLeagueShort") or "").strip()
 
-        state = (c0.get("status") or {}).get("type", {}).get("state", "").lower()
-        completed = (c0.get("status") or {}).get("type", {}).get("completed", False)
-        status = "FINISHED" if (completed or state == "post") else "SCHEDULED"
+        # Time: prefer local if provided, else strTime, else noon
+        date_iso = to_iso(e.get("dateEvent"), e.get("strTimeLocal") or e.get("strTime"))
 
-        date_iso = iso_utc(ev.get("date"))
-        tv = "TBD"  # ESPN often US-centric – we override if you provide TV overrides
+        # Score / status
+        hs = e.get("intHomeScore")
+        as_ = e.get("intAwayScore")
+        finished = (hs is not None and as_ is not None)
+        status = "FINISHED" if finished else "SCHEDULED"
 
-        item = {
-            "date": date_iso,
-            "comp": comp_name or "English Premier League",
+        score = None
+        if finished:
+            score = {
+                "home": int(hs),
+                "away": int(as_),
+                "outcome": outcome_from_mufc_pov(home, away, hs, as_)
+            }
+
+        # TV channel: TheSportsDB sometimes has strTVChannel; allow override; else guess
+        tv_raw = (e.get("strTVChannel") or "").strip()
+        # Override key: "YYYY-MM-DD Opponent" (opponent from MUFC pov)
+        opp = away if home.lower() == "manchester united" else home
+        override_key = f"{(e.get('dateEvent') or '').strip()} {opp}"
+        tv = tv_overrides.get(override_key, tv_raw) or ""
+        if not tv:
+            tv = guess_uk_tv(date_iso or "", comp)
+
+        matches.append({
+            "date": date_iso,        # ISO string "YYYY-MM-DDTHH:MM:00Z"
+            "comp": comp,
             "home": home,
             "away": away,
-            "status": status,
-            "tv": tv
-        }
-        if status == "FINISHED" and hs is not None and as_ is not None:
-            sc = {"home": hs, "away": as_}
-            oc = outcome_for_mu(home, away, hs, as_)
-            if oc: sc["outcome"] = oc
-            item["score"] = sc
-
-        out.append(item)
+            "tv": tv,
+            "score": score,
+            "status": status
+        })
 
     # Sort chronologically
-    out.sort(key=lambda m: m["date"])
-    return out
-
-# -------- TSDB (reliable scores for recent results; fallback for upcoming if ESPN empty)
-def from_tsdb():
-    out = []
-    def norm(ev):
-        # Compose timestamp
-        ts = ev.get("strTimestamp")
-        if not ts:
-            ts = (ev.get("dateEvent") or "") + "T" + (ev.get("strTime") or "00:00:00Z")
-        date_iso = iso_utc(ts)
-        home = ev.get("strHomeTeam") or ""
-        away = ev.get("strAwayTeam") or ""
-        if TEAM.lower() not in (home.lower(), away.lower()):
-            return None
-        comp = ev.get("strLeague") or ""
-        tv = ev.get("strTVStation") or "TBD"
-        hs = to_int(ev.get("intHomeScore"))
-        as_ = to_int(ev.get("intAwayScore"))
-        status = "FINISHED" if (hs is not None and as_ is not None) else "SCHEDULED"
-        it = {"date": date_iso, "comp": comp, "home": home, "away": away, "status": status, "tv": tv}
-        if status == "FINISHED":
-            sc = {"home": hs, "away": as_}
-            oc = outcome_for_mu(home, away, hs, as_)
-            if oc: sc["outcome"] = oc
-            it["score"] = sc
-        return it
-
-    for url, arr_key in ((TSDB_NEXT, "events"), (TSDB_LAST, "results")):
-        try:
-            js = fetch_json(url)
-            for ev in (js or {}).get(arr_key) or []:
-                it = norm(ev)
-                if it: out.append(it)
-        except Exception as e:
-            print("[fixtures] TSDB fetch error:", e, file=sys.stderr)
-            continue
-
-    # De-dupe + sort
-    seen = set(); dedup = []
-    for m in out:
-        k = key_from(m["home"], m["away"], m["date"])
-        if k in seen: continue
-        seen.add(k); dedup.append(m)
-    dedup.sort(key=lambda m: m["date"])
-    return dedup
-
-# -------- merge logic
-def merge_espn_tsdb():
-    espn = []
-    try:
-        espn = from_espn()
-    except Exception as e:
-        print("[fixtures] ESPN error:", e, file=sys.stderr)
-
-    tsdb = []
-    try:
-        tsdb = from_tsdb()
-    except Exception as e:
-        print("[fixtures] TSDB error:", e, file=sys.stderr)
-
-    # Index ESPN by key (structure + upcoming)
-    by_key = {}
-    for m in espn:
-        by_key[key_from(m["home"], m["away"], m["date"])] = m
-
-    # For finished matches, prefer TSDB for scores/outcomes if ESPN lacked them
-    for m in tsdb:
-        k = key_from(m["home"], m["away"], m["date"])
-        if k not in by_key:
-            by_key[k] = m
-        else:
-            base = by_key[k]
-            # If TSDB has score/outcome and base doesn't, fill it
-            if m.get("status") == "FINISHED":
-                if not base.get("score") and m.get("score"):
-                    base["score"] = m["score"]
-                # prefer a clearer competition name if ESPN blank
-                if not base.get("comp"): base["comp"] = m.get("comp") or base.get("comp")
-
-    merged = list(by_key.values())
-    merged.sort(key=lambda m: m["date"])
-
-    # Apply TV overrides at the end
-    apply_tv_overrides(merged)
-    return merged
-
-def main():
-    ensure_assets()
-    matches = merge_espn_tsdb()
+    def t(m): 
+        try:   return datetime.strptime(m.get("date") or "", "%Y-%m-%dT%H:%M:00Z")
+        except: return datetime.max
+    matches.sort(key=t)
 
     out = {
-        "updated": int(time.time() * 1000),
-        "team": TEAM,
-        "source": "ESPN+TSDB",
+        "team": "Manchester United",
+        "season": season,
+        "updated": int(time.time()*1000),
         "matches": matches
     }
-    with open(OUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=2)
-    print(f"Wrote {OUT_PATH} with {len(matches)} matches (merged ESPN+TSDB)")
+
+    with open(OUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False)
+    print(f"Wrote {OUT_FILE} with {len(matches)} matches for season {season}")
 
 if __name__ == "__main__":
-    main()
+    try:
+        build()
+    except Exception as e:
+        print("[fixtures] ERROR:", e, file=sys.stderr)
+        sys.exit(1)
