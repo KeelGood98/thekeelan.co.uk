@@ -107,10 +107,9 @@
       background: radial-gradient(closest-side, #1a2430, #0f141a);
       border:1px solid #243041; color:#b6c2cf; text-transform:uppercase;
     }
-
     .W{background:#10361f} .D{background:#2b2b17} .L{background:#3a1a1a}
 
-    /* ===== Competition chips (new) ===== */
+    /* ===== Competition chips ===== */
     .comp-chip{
       display:inline-flex; align-items:center; gap:6px;
       background:#0f141a; border:1px solid var(--border);
@@ -119,9 +118,23 @@
     }
     .comp-chip .comp-badge{ width:16px; height:16px; border-radius:50%; display:inline-block }
     .comp-chip .comp-dot{ width:8px; height:8px; border-radius:50%; background:#2a3340; display:inline-block }
+
+    /* ===== F1 podium chips ===== */
+    .driver-chip{
+      display:inline-flex; align-items:center; gap:6px;
+      border:1px solid var(--border); border-radius:999px;
+      padding:2px 8px; font-size:12px;
+      background:#0f141a; white-space:nowrap;
+    }
+    .driver-chip .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+    .driver-chip.p1 .dot{background:#d4af37} /* gold */
+    .driver-chip.p2 .dot{background:#c0c0c0} /* silver */
+    .driver-chip.p3 .dot{background:#cd7f32} /* bronze */
+    .driver-chip .team{color:#b7c0cc; opacity:.9}
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header id="siteHeader" class="site-header">
     <div class="brand">
       <div class="brand-logo" aria-hidden="true"></div>
@@ -129,7 +142,6 @@
     </div>
 
     <div class="spacer"></div>
-
     <div class="muted" id="lastUpdated">Last updated: —</div>
 
     <nav id="primaryNav" class="nav" aria-label="Primary">
@@ -144,7 +156,7 @@
   </header>
 
   <div class="grid">
-    <!-- LEFT -->
+    <!-- LEFT (stretches) -->
     <section class="card stretch">
       <h2>Left Panel</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:hidden;">
@@ -153,9 +165,17 @@
           alt="gif" style="display:block;width:100%;height:auto;"
         />
       </div>
+
+      <!-- F1 results card -->
+      <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:0">
+        <h2 id="f1Title">F1 — This Season (Results)</h2>
+        <div id="f1Wrap" class="panel" style="padding:8px;">
+          <div class="muted">Loading F1 results…</div>
+        </div>
+      </div>
     </section>
 
-    <!-- CENTRE -->
+    <!-- CENTRE (table) -->
     <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
       <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
@@ -170,7 +190,7 @@
       </div>
     </section>
 
-    <!-- RIGHT -->
+    <!-- RIGHT (fixtures/results) -->
     <section class="card stretch">
       <h2>Man United – Fixtures & Results</h2>
       <div id="fixturesWrap" class="panel" style="padding:8px;">
@@ -180,6 +200,7 @@
   </div>
 
   <script>
+  // Header height → for viewport math
   function setHeaderVar(){
     const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
     document.documentElement.style.setProperty('--hdr', h+'px');
@@ -197,7 +218,7 @@
     const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
     const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
 
-    /* ---- exact Wikipedia club titles (for crest fallback) ---- */
+    /* ---- Wikipedia club titles ---- */
     const WP_TITLE = {
       "Arsenal":"Arsenal_F.C.","Aston Villa":"Aston_Villa_F.C.","Bournemouth":"AFC_Bournemouth",
       "Brentford":"Brentford_F.C.","Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.",
@@ -263,7 +284,6 @@
         }
       });
     }
-
     if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
 
     async function fetchTSDBLeagueMap(){
@@ -302,7 +322,7 @@
     }
     await upgradeWithWikiExact();
 
-    /* ===== COMPETITION BADGES (new) ===== */
+    /* ===== COMPETITION BADGES ===== */
     const COMP_BADGE_CACHE = {};
     const COMP_BADGE_FALLBACK = {
       "english premier league": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/120px-Premier_League_Logo.svg.png",
@@ -443,9 +463,75 @@
       `;
 
       wrap.innerHTML = upHTML + recHTML;
-      // Upgrade comp chips into image+text after rendering
       upgradeCompBadges();
     }
+
+    /* ===== F1 RESULTS (Ergast API) ===== */
+    async function loadF1(){
+      const wrap = document.getElementById('f1Wrap');
+      const title = document.getElementById('f1Title');
+      try{
+        // All results for current season (limit high so we get full grid)
+        const r = await fetch('https://ergast.com/api/f1/current/results.json?limit=1000', {cache:'no-store'});
+        if(!r.ok) throw new Error('HTTP '+r.status);
+        const j = await r.json();
+        const races = j?.MRData?.RaceTable?.Races || [];
+        const season = j?.MRData?.RaceTable?.season || new Date().getFullYear();
+        if (title) title.textContent = `F1 — ${season} Results`;
+
+        // Completed races only (have Results array)
+        const done = races.filter(x => Array.isArray(x.Results) && x.Results.length);
+
+        if(!done.length){
+          wrap.innerHTML = '<div class="muted">No completed races yet.</div>';
+          return;
+        }
+
+        const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short' });
+        const podiumOf = (race) => {
+          // Grab P1/P2/P3
+          const got = {1:null,2:null,3:null};
+          for(const res of race.Results){
+            const pos = parseInt(res.position || res.positionText,10);
+            if (pos>=1 && pos<=3 && !got[pos]){
+              got[pos] = {
+                code: (res.Driver?.code || (res.Driver?.familyName||'').slice(0,3)).toUpperCase(),
+                team: res.Constructor?.name || ''
+              };
+            }
+          }
+          return [got[1], got[2], got[3]];
+        };
+
+        const rows = done.map(r => {
+          const [p1,p2,p3] = podiumOf(r);
+          const chip = (obj, cls) => obj
+            ? `<span class="driver-chip ${cls}"><span class="dot"></span><span>${obj.code}</span><span class="team">(${obj.team})</span></span>`
+            : `<span class="muted">–</span>`;
+          return `
+            <tr>
+              <td>${fmtD(r.date)}</td>
+              <td style="text-align:left">${r.raceName}</td>
+              <td>${chip(p1,'p1')}</td>
+              <td>${chip(p2,'p2')}</td>
+              <td>${chip(p3,'p3')}</td>
+            </tr>`;
+        }).join('');
+
+        wrap.innerHTML = `
+          <table>
+            <thead>
+              <tr><th style="min-width:70px">Date</th><th style="text-align:left">Grand Prix</th><th>P1</th><th>P2</th><th>P3</th></tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>`;
+      }catch(e){
+        console.error('F1 fetch failed', e);
+        document.getElementById('f1Wrap').innerHTML =
+          '<div class="muted">⚠️ Couldn’t load F1 results right now.</div>';
+      }
+    }
+    loadF1();
   })();
   </script>
 </body>
