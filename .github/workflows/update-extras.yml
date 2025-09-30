@@ -1,16 +1,16 @@
-name: Update extras (weather + steam specials + F1)
+name: Update extras data (weather + steam specials + F1)
 
 on:
   schedule:
     - cron: "*/120 * * * *"   # every 2 hours
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - uses: actions/checkout@v4
 
@@ -23,110 +23,101 @@ jobs:
         run: |
           python - <<'PY'
           import json, time, urllib.request, urllib.parse, sys, os
-          from datetime import datetime, timezone
-
-          os.makedirs("assets", exist_ok=True)
 
           def fetch(url, timeout=30):
-            req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
+            req = urllib.request.Request(
+              url,
+              headers={"User-Agent":"thekeelan-bot/1.0 (+github actions)"}
+            )
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          # --- Leeds weather via Open-Meteo (no key) ---
+          def write_json(path, obj):
+            os.makedirs(os.path.dirname(path), exist_ok=True)
+            with open(path, "w", encoding="utf-8") as f:
+              json.dump(obj, f, ensure_ascii=False)
+
+          now_ms = int(time.time()*1000)
+          os.makedirs("assets", exist_ok=True)
+
+          # --- Weather (Open-Meteo) ---
           try:
-            wx_url = ("https://api.open-meteo.com/v1/forecast"
-                      "?latitude=53.8008&longitude=-1.5491"
-                      "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
-                      "&daily=weather_code,temperature_2m_max,temperature_2m_min"
-                      "&timezone=Europe%2FLondon")
+            wx_url = (
+              "https://api.open-meteo.com/v1/forecast"
+              "?latitude=53.8008&longitude=-1.5491"
+              "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
+              "&daily=weather_code,temperature_2m_max,temperature_2m_min"
+              "&timezone=Europe%2FLondon"
+            )
             wx = json.loads(fetch(wx_url).decode("utf-8"))
-            wx["updated"] = int(time.time()*1000)
+            wx["updated"] = now_ms
             wx["location"] = "Leeds, UK"
-            with open("assets/weather.json","w", encoding="utf-8") as f:
-              json.dump(wx, f)
-            print("Wrote assets/weather.json")
+            write_json("assets/weather.json", wx)
+            print("✓ weather.json")
           except Exception as e:
-            print("Weather error:", e, file=sys.stderr)
+            print("weather error:", e, file=sys.stderr)
+            # keep previous file if present; no stub required
 
-          # --- Steam specials (leave as-is if you already populate assets/steam_specials.json elsewhere)
-          # If you want to build it here, paste your existing logic. Otherwise this step simply touches file if missing.
+          # --- Steam Specials (Store API) ---
           try:
-            sp = {"updated": int(time.time()*1000), "note": "populate via your existing process if any"}
-            path = "assets/steam_specials.json"
-            if not os.path.exists(path):
-              with open(path, "w", encoding="utf-8") as f:
-                json.dump(sp, f)
-              print("Created placeholder assets/steam_specials.json (no changes if you already write it).")
-          except Exception as e:
-            print("Steam specials note:", e, file=sys.stderr)
-
-          # --- F1 results via Ergast (server-side) ---
-          try:
-            base = "https://ergast.com/api/f1"
-            sched = json.loads(fetch(f"{base}/current.json").decode("utf-8"))
-            races = sched.get("MRData", {}).get("RaceTable", {}).get("Races", []) or []
-            if not races:
-              raise RuntimeError("no races in schedule")
-
-            now = datetime.now(timezone.utc).timestamp()
-            done = []
-            for r in races:
-              # Compose UTC race datetime if time exists; else just use date at 00:00Z
-              date = r.get("date")
-              time_str = r.get("time") or "00:00:00Z"
-              dt_str = f"{date}T{time_str}"
-              try:
-                ts = datetime.fromisoformat(dt_str.replace("Z","+00:00")).timestamp()
-              except Exception:
-                ts = 0
-              if ts < now:
-                done.append(r)
-
-            # Take last 8 finished races (reverse chron)
-            done = done[-8:]
-
-            out_items = []
-            season = sched.get("MRData", {}).get("RaceTable", {}).get("season")
-            for r in reversed(done):  # newest first in UI
-              round_no = r.get("round")
-              try:
-                res = json.loads(fetch(f"{base}/{season}/{round_no}/results.json?limit=3").decode("utf-8"))
-                results = (res.get("MRData", {}).get("RaceTable", {}).get("Races", []) or [{}])[0].get("Results", [])[:3]
-              except Exception:
-                results = []
-              top3 = []
-              for x in results:
-                drv = x.get("Driver", {}) or {}
-                cons = x.get("Constructor", {}) or {}
-                driver_name = drv.get("familyName") or drv.get("code") or ""
-                top3.append({
-                  "pos": x.get("position"),
-                  "driver": driver_name,
-                  "team": cons.get("name","")
-                })
-              out_items.append({
-                "date": r.get("date"),
-                "race": r.get("raceName",""),
-                "top3": top3
+            # Featured categories contains "specials"
+            sp = json.loads(fetch("https://store.steampowered.com/api/featuredcategories/?cc=GB&l=en").decode("utf-8"))
+            items = (sp.get("specials") or {}).get("items") or []
+            specials = []
+            for it in items:
+              specials.append({
+                "id": it.get("id"),
+                "name": it.get("name"),
+                "original_price": it.get("original_price"),
+                "final_price": it.get("final_price"),
+                "discount_percent": it.get("discount_percent"),
+                "capsule_image": it.get("capsule_image"),
+                "url": f"https://store.steampowered.com/app/{it.get('id')}/" if it.get("id") else None
               })
-
-            f1 = {
-              "updated": int(time.time()*1000),
-              "season": season,
-              "items": out_items
-            }
-            with open("assets/f1.json","w", encoding="utf-8") as f:
-              json.dump(f1, f)
-            print("Wrote assets/f1.json with", len(out_items), "races")
+            write_json("assets/steam_specials.json", {"updated": now_ms, "specials": specials})
+            print(f"✓ steam_specials.json ({len(specials)} items)")
           except Exception as e:
-            print("F1 build error:", e, file=sys.stderr)
+            print("steam specials error:", e, file=sys.stderr)
+            # still write a stub so the site doesn't break
+            write_json("assets/steam_specials.json", {"updated": now_ms, "specials": []})
 
+          # --- F1 results (Ergast) ---
+          try:
+            # Use HTTPS and include a large limit so we get all rounds
+            f1 = json.loads(fetch("https://ergast.com/api/f1/current/results.json?limit=1000").decode("utf-8"))
+            races = []
+            for race in ((f1.get("MRData") or {}).get("RaceTable") or {}).get("Races", []):
+              res = race.get("Results", [])
+              if not res:
+                continue
+              winner = res[0]
+              races.append({
+                "round": race.get("round"),
+                "name": race.get("raceName"),
+                "date": f"{race.get('date','')}T{race.get('time','')}",
+                "circuit": (race.get("Circuit") or {}).get("circuitName"),
+                "winner": {
+                  "driver": ((winner.get("Driver") or {}).get("familyName")),
+                  "constructor": ((winner.get("Constructor") or {}).get("name")),
+                  "grid": winner.get("grid"),
+                  "time": (winner.get("Time") or {}).get("time"),
+                  "status": winner.get("status")
+                }
+              })
+            write_json("assets/f1.json", {"updated": now_ms, "races": races})
+            print(f"✓ f1.json ({len(races)} races)")
+          except Exception as e:
+            print("f1 error:", e, file=sys.stderr)
+            # Always leave a stub so the commit step succeeds and the UI shows a soft message
+            write_json("assets/f1.json", {"updated": now_ms, "races": []})
+            print("↳ wrote stub f1.json")
           PY
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather.json assets/steam_specials.json assets/f1.json
-          git commit -m "chore: refresh extras (weather + steam specials + F1) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          # Add whatever changed inside /assets (avoids 'pathspec did not match' errors)
+          git add -A assets/
+          git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
