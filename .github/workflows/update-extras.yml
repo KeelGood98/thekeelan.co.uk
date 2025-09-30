@@ -1,114 +1,115 @@
-name: Update extras (weather • steam specials • F1)
+name: Update extras (weather + steam specials + F1)
 
 on:
   schedule:
     - cron: "*/120 * * * *"   # every 2 hours
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Build extras assets
         run: |
           python - <<'PY'
-          import json, time, urllib.request, os, sys
+          import json, time, urllib.request, urllib.parse, os, sys
+          os.makedirs("assets", exist_ok=True)
 
-          def fetch(url, timeout=30, headers=None):
-            req = urllib.request.Request(url, headers=headers or {"User-Agent":"github-actions/1.0"})
+          def fetch(url, timeout=40):
+            req = urllib.request.Request(url, headers={"User-Agent":"GH-Actions/1.0"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
               return r.read()
 
-          os.makedirs("assets", exist_ok=True)
+          def to_https(u:str|None):
+            return (u or "").replace("http://","https://")
 
-          # --- Weather (Open-Meteo) ---
+          # 1) Weather (Open-Meteo)
           try:
-            wx_url = ("https://api.open-meteo.com/v1/forecast"
-                      "?latitude=53.8008&longitude=-1.5491"
-                      "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
-                      "&daily=weather_code,temperature_2m_max,temperature_2m_min"
-                      "&timezone=Europe%2FLondon")
+            wx_url = (
+              "https://api.open-meteo.com/v1/forecast"
+              "?latitude=53.8008&longitude=-1.5491"
+              "&current=temperature_2m,apparent_temperature,is_day,weather_code,wind_speed_10m"
+              "&daily=weather_code,temperature_2m_max,temperature_2m_min"
+              "&timezone=Europe%2FLondon"
+            )
             wx = json.loads(fetch(wx_url).decode("utf-8"))
             wx["updated"] = int(time.time()*1000)
             wx["location"] = "Leeds, UK"
-            with open("assets/weather.json","w") as f: json.dump(wx, f)
-            print("✔ wrote assets/weather.json")
+            with open("assets/weather.json","w") as f:
+              json.dump(wx, f)
           except Exception as e:
             print("weather error:", e, file=sys.stderr)
 
-          # --- Steam specials (CheapShark) ---
+          # 2) Steam specials (CheapShark) -> assets/steam_specials.json
           try:
-            # Treat "specials" as top savings right now
-            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&upperPrice=999&sortBy=Savings&desc=1&pageSize=50"
+            deals_url = "https://www.cheapshark.com/api/1.0/deals?storeID=1&sortBy=DealRating&pageSize=40"
             deals = json.loads(fetch(deals_url).decode("utf-8"))
-            out = {
-              "updated": int(time.time()*1000),
-              "specials": [
-                {
-                  "title": d.get("title",""),
-                  "normalPrice": d.get("normalPrice"),
-                  "salePrice": d.get("salePrice"),
-                  "savings": float(d.get("savings",0)),
-                  "steamAppID": d.get("steamAppID"),
-                  "steamUrl": f"https://store.steampowered.com/app/{d.get('steamAppID')}/" if d.get("steamAppID") else None,
-                  "dealRating": d.get("dealRating"),
-                } for d in deals if d.get("title")
-              ]
-            }
-            with open("assets/steam_specials.json","w") as f: json.dump(out, f)
-            print("✔ wrote assets/steam_specials.json (", len(out["specials"]), "items )")
+            out=[]
+            for d in deals:
+              # only include if discounted (savings > 0)
+              try:
+                sav = float(d.get("savings","0"))
+              except: sav = 0.0
+              if sav <= 0.1: 
+                continue
+              appid = d.get("steamAppID") or ""
+              # Make a reliable image ourselves from the appid (if present)
+              img = ""
+              if appid:
+                img = f"https://cdn.cloudflare.steamstatic.com/steam/apps/{appid}/capsule_sm_120.jpg"
+              out.append({
+                "title": d.get("title",""),
+                "normalPrice": d.get("normalPrice",""),
+                "salePrice": d.get("salePrice",""),
+                "savings": sav,
+                "metacriticScore": d.get("metacriticScore"),
+                "steamAppID": appid,
+                "image": img,
+                "dealID": d.get("dealID"),
+                "url": ("https://store.steampowered.com/app/" + appid + "/") if appid else d.get("dealID")
+              })
+            with open("assets/steam_specials.json","w") as f:
+              json.dump({"updated":int(time.time()*1000),"items":out}, f)
           except Exception as e:
             print("steam specials error:", e, file=sys.stderr)
 
-          # --- F1 results this season (Ergast) ---
+          # 3) F1 results (Ergast) -> assets/f1.json
           try:
-            # Ergast is HTTP; this runs server-side in Actions so that's OK.
-            f1_url = "http://ergast.com/api/f1/current/results.json?limit=1000"
-            raw = json.loads(fetch(f1_url, headers={"User-Agent":"github-actions/1.0 (ergast)"}).decode("utf-8"))
-            races = raw.get("MRData", {}).get("RaceTable", {}).get("Races", []) or []
-            data = {
-              "updated": int(time.time()*1000),
-              "races": []
-            }
-            for r in races:
-              data["races"].append({
-                "round": int(r.get("round", "0")),
-                "raceName": r.get("raceName",""),
-                "date": r.get("date",""),
-                "time": r.get("time",""),
-                "circuit": r.get("Circuit",{}).get("circuitName",""),
-                "country": r.get("Circuit",{}).get("Location",{}).get("country",""),
-                "results": [
-                  {
-                    "pos": int(x.get("position","0")),
-                    "driver": f'{x.get("Driver",{}).get("givenName","")[0]}. {x.get("Driver",{}).get("familyName","")}'.strip(),
-                    "team": x.get("Constructor",{}).get("name",""),
-                    "pts": int(x.get("points","0")),
-                    "status": x.get("status","")
-                  } for x in (r.get("Results") or [])
-                ]
-              })
-            with open("assets/f1.json","w") as f: json.dump(data, f)
-            print("✔ wrote assets/f1.json (", len(data["races"]), "races )")
+            f1_url = "https://ergast.com/api/f1/current/results.json?limit=500"
+            data = json.loads(fetch(f1_url).decode("utf-8"))
+            races = data.get("MRData",{}).get("RaceTable",{}).get("Races",[])
+            # Flatten each race to simple block
+            def row(r):
+              res = r.get("Results",[])
+              def pos(n): return res[n]["Driver"]["familyName"] if len(res)>n else None
+              return {
+                "round": r.get("round"),
+                "date": r.get("date"),
+                "raceName": r.get("raceName"),
+                "circuit": r.get("Circuit",{}).get("circuitName"),
+                "country": r.get("Circuit",{}).get("Location",{}).get("country"),
+                "p1": pos(0), "p2": pos(1), "p3": pos(2),
+              }
+            rows = [row(r) for r in races]
+            with open("assets/f1.json","w") as f:
+              json.dump({"updated":int(time.time()*1000),"races":rows}, f)
           except Exception as e:
             print("f1 error:", e, file=sys.stderr)
           PY
 
-      - name: Commit and push
+      - name: Commit & push
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A assets
-          git commit -m "chore: refresh extras (wx + specials + F1) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git add assets/weather.json assets/steam_specials.json assets/f1.json
+          git commit -m "chore: refresh extras $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
