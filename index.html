@@ -60,7 +60,7 @@ tr:hover td{background:#0f141a}
 a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px;text-decoration:none;color:var(--text)}
 .badge.comp{width:auto;height:auto;border-radius:999px;padding:2px 8px;border:1px solid #243041;background:#0f141a;color:#b6c2cf;font-size:11px}
 
-/* small F1 pill */
+/* F1 */
 .f1-pill{display:inline-grid;grid-template-columns:auto auto auto;gap:10px;align-items:center}
 .f1-podium{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:6px}
 .podium-card{border:1px solid var(--border);border-radius:10px;padding:6px;text-align:center}
@@ -90,7 +90,7 @@ a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border
            alt="gif" style="display:block;width:100%;height:auto" />
     </div>
 
-    <!-- F1 results (self-contained) -->
+    <!-- F1 results -->
     <div class="card" style="margin-top:12px;">
       <h2>F1 — This Season (Results)</h2>
       <div id="f1Wrap" class="panel" style="padding:10px">
@@ -143,11 +143,30 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
     if (r.ok) document.getElementById("lastUpdated").textContent = "Last updated: " + (await r.text()).trim();
   } catch {}
 
-  /* ====== TABLE ====== */
+  /* ====== TABLE + BADGES ====== */
   const [table, badgesFile] = await Promise.all([ getJSON('table.json'), getJSON('badges.json') ]);
   const tbody = document.getElementById("tableBody");
+
+  // Build badge map from file
   const badgeMap = {};
-  if (badgesFile?.badges) for (const [k,v] of Object.entries(badgesFile.badges)) badgeMap[norm(k)] = toHttps(v||"");
+  if (badgesFile?.badges) {
+    for (const [k,v] of Object.entries(badgesFile.badges)) badgeMap[norm(k)] = toHttps(v||"");
+  }
+
+  // FALLBACK: if no/too-few badges, fetch from TheSportsDB live
+  if (Object.keys(badgeMap).length < 10) {
+    try {
+      const r = await fetch("https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League", {cache:'no-store'});
+      if (r.ok) {
+        const j = await r.json();
+        for (const t of (j.teams || [])) {
+          const name = (t.strTeam || "").trim();
+          const badge = toHttps(t.strTeamBadge || "");
+          if (name && badge) badgeMap[norm(name)] = badge;
+        }
+      }
+    } catch {}
+  }
 
   function rowHTML(r){
     const crest = badgeMap[norm(r.team)] || "";
@@ -245,9 +264,37 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
     wrap.innerHTML = upHTML + recHTML;
   }
 
-  /* ====== F1 (read-only, isolated) ====== */
-  const f1 = await getJSON('f1.json');
+  /* ====== F1 ====== */
+  let f1 = await getJSON('f1.json');
   const f1Wrap = document.getElementById('f1Wrap');
+
+  // FALLBACK: live fetch from Ergast if local file empty/missing
+  if (!f1?.races?.length) {
+    try {
+      const r = await fetch('https://ergast.com/api/f1/current/results.json?limit=1000',{cache:'no-store'});
+      if (r.ok) {
+        const j = await r.json();
+        const races = j?.MRData?.RaceTable?.Races || [];
+        races.sort((a,b)=>parseInt(a.round||0)-parseInt(b.round||0));
+        const latest = races.slice(-12).map(r => ({
+          round: r.round,
+          raceName: r.raceName,
+          country: r.Circuit?.Location?.country || "",
+          date: r.date,
+          podium: (r.Results||[]).slice(0,3).map(p=>({
+            pos: p.position,
+            driver: `${p.Driver?.givenName||""} ${p.Driver?.familyName||""}`.trim(),
+            code: p.Driver?.code || p.Driver?.driverId,
+            constructor: p.Constructor?.name || "",
+            status: p.status,
+            points: p.points
+          }))
+        }));
+        f1 = { races: latest };
+      }
+    } catch {}
+  }
+
   if (f1?.races?.length) {
     f1Wrap.innerHTML = f1.races.slice().reverse().map(r=>`
       <div style="margin:10px 0;padding:8px;border:1px solid var(--border);border-radius:10px">
@@ -260,7 +307,7 @@ setHeaderVar(); addEventListener('resize', setHeaderVar);
           ${r.podium.map(p=>`
             <div class="podium-card">
               <small class="muted">P${p.pos}</small>
-              <strong>${p.code||p.driver}</strong>
+              <strong>${(p.code||p.driver||"").toUpperCase()}</strong>
               <div class="muted" style="font-size:12px">${p.constructor}</div>
             </div>
           `).join('')}
