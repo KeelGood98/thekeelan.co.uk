@@ -69,7 +69,7 @@
 
     /* ===== Tables ===== */
     table{width:100%;border-collapse:collapse}
-    th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
+    th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center;vertical-align:middle}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
     tr:hover td{background:#0f141a}
 
@@ -90,15 +90,16 @@
     tr.W td{ background: var(--good); }
     tr.D td{ background: var(--draw); }
     tr.L td{ background: var(--bad); }
+
     a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px}
 
-    /* Mini comp “badge” */
-    .comp-pill{
-      display:inline-grid; place-items:center; width:56px; height:56px; border-radius:50%;
-      border:1px solid #2a3340; background: radial-gradient(closest-side,#141a22,#0f141a);
-      font-size:10px; line-height:1.05; color:#bcd; letter-spacing:.3px;
+    /* Compact comp chip */
+    .comp-chip{
+      display:inline-flex; align-items:center; justify-content:center;
+      height:24px; padding:0 10px; border-radius:9999px;
+      border:1px solid #2a3340; background:#0f141a; color:#bcd; font-size:11px; letter-spacing:.3px;
+      white-space:nowrap;
     }
-    .comp-pill .sm{font-size:9px;color:#89a}
     .pill-cell{display:flex;justify-content:center}
 
     /* F1 list */
@@ -186,26 +187,12 @@
 
     /* ---- exact Wikipedia club titles (used only for badge fallback) ---- */
     const WP_TITLE = {
-      "Arsenal":"Arsenal_F.C.",
-      "Aston Villa":"Aston_Villa_F.C.",
-      "Bournemouth":"AFC_Bournemouth",
-      "Brentford":"Brentford_F.C.",
-      "Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.",
-      "Burnley":"Burnley_F.C.",
-      "Chelsea":"Chelsea_F.C.",
-      "Crystal Palace":"Crystal_Palace_F.C.",
-      "Everton":"Everton_F.C.",
-      "Fulham":"Fulham_F.C.",
-      "Leeds United":"Leeds_United_F.C.",
-      "Liverpool":"Liverpool_F.C.",
-      "Manchester City":"Manchester_City_F.C.",
-      "Manchester United":"Manchester_United_F.C.",
-      "Newcastle United":"Newcastle_United_F.C.",
-      "Nottingham Forest":"Nottingham_Forest_F.C.",
-      "Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
-      "West Ham United":"West_Ham_United_F.C.",
-      "Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.",
-      "Sunderland":"Sunderland_A.F.C."
+      "Arsenal":"Arsenal_F.C.","Aston Villa":"Aston_Villa_F.C.","Bournemouth":"AFC_Bournemouth","Brentford":"Brentford_F.C.",
+      "Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.","Burnley":"Burnley_F.C.","Chelsea":"Chelsea_F.C.",
+      "Crystal Palace":"Crystal_Palace_F.C.","Everton":"Everton_F.C.","Fulham":"Fulham_F.C.","Leeds United":"Leeds_United_F.C.",
+      "Liverpool":"Liverpool_F.C.","Manchester City":"Manchester_City_F.C.","Manchester United":"Manchester_United_F.C.",
+      "Newcastle United":"Newcastle_United_F.C.","Nottingham Forest":"Nottingham_Forest_F.C.","Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
+      "West Ham United":"West_Ham_United_F.C.","Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.","Sunderland":"Sunderland_A.F.C."
     };
 
     async function fetchWikiClubCrest(team){
@@ -282,7 +269,6 @@
       const leagueMap = await fetchTSDBLeagueMap();
       upgradeFromMap(leagueMap);
 
-      // Wikipedia fallbacks for any stragglers
       (async function upgradeWithWikiExact(){
         const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
         if (!els.length) return;
@@ -333,6 +319,19 @@
         const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
         const fmtT = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
 
+        const compAbbr = (comp='') => {
+          comp = comp.toLowerCase();
+          if (comp.includes('premier')) return 'EPL';
+          if (comp.includes('champions')) return 'UCL';
+          if (comp.includes('europa')) return 'UEL';
+          if (comp.includes('fa cup')) return 'FAC';
+          if (comp.includes('league cup') || comp.includes('efl')) return 'EFL';
+          if (comp.includes('friendly')) return 'FR';
+          if (comp.includes('league 1')) return 'L1';
+          return (comp.split(' ').map(s=>s[0]).join('') || '—').toUpperCase().slice(0,4);
+        };
+        const compChip = (comp) => `<span class="comp-chip" title="${comp||''}">${compAbbr(comp)}</span>`;
+
         function guessUkTv(dateStr, comp) {
           const dt = new Date(dateStr);
           const day = dt.toLocaleString('en-GB', { weekday:'short', timeZone:'Europe/London' });
@@ -345,14 +344,6 @@
           return 'TBD';
         }
 
-        const compPill = (comp) => {
-          // Simple 2-line comp pill, keeps things tidy
-          const short = /premier/i.test(comp) ? 'English' : comp.split(' ')[0] || '';
-          const rest  = /premier/i.test(comp) ? 'Premier' : (comp.split(' ')[1]||'');
-          const last  = /premier/i.test(comp) ? 'League' : (comp.split(' ')[2]||'');
-          return `<div class="comp-pill"><span class="sm">${short}</span>${rest}<br>${last}</div>`;
-        };
-
         const upHTML = `
           <h3 style="margin:8px 0;">Upcoming</h3>
           ${upcoming.length ? `
@@ -363,8 +354,8 @@
                   const tvRaw = (m.tv || '').replace(/;|,/g, ', ').trim();
                   const tv = tvRaw || guessUkTv(m.date, m.comp);
                   return `<tr>
-                    <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td>
-                    <td class="pill-cell">${compPill(m.comp||'')}</td>
+                    <td>${fmtD(m.date)}</td><td style="white-space:nowrap">${fmtT(m.date)}</td>
+                    <td class="pill-cell">${compChip(m.comp||'')}</td>
                     <td>${m.home}</td><td>vs</td><td>${m.away}</td>
                     <td>${tv}</td>
                   </tr>`;
@@ -388,7 +379,7 @@
                 const yt  = `https://www.youtube.com/results?search_query=${q}`;
                 return `<tr class="${cls(oc)}">
                   <td>${fmtD(m.date)}</td>
-                  <td class="pill-cell">${compPill(m.comp||'')}</td>
+                  <td class="pill-cell">${compChip(m.comp||'')}</td>
                   <td>${m.home}</td><td>vs</td><td>${m.away}</td>
                   <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
                   <td>
@@ -409,56 +400,21 @@
       }
     })();
 
-    /* ===== F1 (Ergast) ===== */
+    /* ===== F1 (from /assets/f1.json generated in workflow) ===== */
     (async function renderF1(){
       const wrap = document.getElementById("f1Wrap");
       try{
-        const r = await fetch('https://ergast.com/api/f1/current.json', {cache:'no-store'});
-        if (!r.ok) throw new Error("schedule not ok");
-        const sched = await r.json();
-        const races = sched?.MRData?.RaceTable?.Races || [];
-        if (!races.length){ wrap.innerHTML = '<div class="muted">No races found.</div>'; return; }
-
-        const now = Date.now();
-        const finished = races.filter(x => new Date(x.date + 'T' + (x.time || '00:00:00Z')).getTime() < now).slice(-6).reverse();
-
-        if (!finished.length){
-          wrap.innerHTML = '<div class="muted">No completed races yet.</div>';
-          return;
-        }
-
-        // fetch top 3 results per round
-        async function roundTop3(season, round){
-          const rr = await fetch(`https://ergast.com/api/f1/${season}/${round}/results.json?limit=3`, {cache:'no-store'});
-          if (!rr.ok) return null;
-          const jj = await rr.json();
-          const list = jj?.MRData?.RaceTable?.Races?.[0]?.Results || [];
-          return list.slice(0,3).map(x => ({
-            driver: `${x.Driver?.familyName || x.Driver?.code || ''}`,
-            team: x.Constructor?.name || '',
-            pos: x.position
-          }));
-        }
-
-        const year = (sched?.MRData?.RaceTable?.season)|| new Date().getFullYear();
-        const items = [];
-        for (const g of finished){
-          try{
-            const top3 = await roundTop3(year, g.round);
-            items.push({ name: g.raceName, date: g.date, top3: top3 || []});
-          }catch{ items.push({ name: g.raceName, date: g.date, top3: []}); }
-        }
+        const f1 = await getLocal('f1.json');
+        const items = f1?.items || [];
+        if (!items.length){ wrap.innerHTML = '<div class="muted">⚠️ Couldn’t load F1 results right now.</div>'; return; }
 
         wrap.innerHTML = `
           <ul class="f1-list">
             ${items.map(it => `
               <li class="f1-item">
                 <div><strong>${new Date(it.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short'})}</strong><br><span class="muted">${new Date(it.date).getFullYear()}</span></div>
-                <div><strong>${it.name}</strong></div>
-                <div>${it.top3.length
-                  ? it.top3.map(p => `${p.pos}. ${p.driver} <span class="muted">(${p.team})</span>`).join('<br>')
-                  : '<span class="muted">Results unavailable</span>'}
-                </div>
+                <div><strong>${it.race}</strong></div>
+                <div>${(it.top3||[]).map(p => `${p.pos}. ${p.driver} <span class="muted">(${p.team})</span>`).join('<br>')}</div>
               </li>
             `).join('')}
           </ul>
