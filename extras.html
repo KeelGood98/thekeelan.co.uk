@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Extras — thekeelan.co.uk</title>
-<meta name="theme-color" content="#0b0f14"/>
+<meta name="theme-color" content="#0b0f14" />
 <style>
-:root{--text:#e9eef5;--muted:#9aa6b2;--card:#12161b;--border:#1e242c}
+:root{ --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; --hdr:64px; }
 *{box-sizing:border-box}
-body{margin:0;color:var(--text);font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;background:#0b0f14}
-.header{position:sticky;top:0;z-index:20;padding:10px 18px;background:rgba(11,15,20,.65);backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:12px 18px 24px}
-@media (max-width: 980px){.grid{grid-template-columns:1fr}}
+body{ margin:0; color:var(--text); font:14px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial;
+  background:#0b0f14; }
+.header{position:sticky;top:0;z-index:10;display:flex;gap:10px;align-items:center;padding:10px 16px;border-bottom:1px solid var(--border);background:#0e1318}
+.header a{color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:6px 10px;border-radius:999px}
+.header a.active{background:linear-gradient(90deg,rgba(110,231,255,.20),rgba(167,139,250,.20));color:var(--text);border-color:transparent}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px}
+@media (max-width:1000px){.grid{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px}
 .card h2{margin:0 0 8px}
-.list{display:flex;flex-direction:column;gap:10px}
-.item{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;border:1px solid var(--border);border-radius:10px;padding:10px}
-.item img{width:52px;height:26px;object-fit:cover;border-radius:6px}
-.btn{border:1px solid var(--border);border-radius:8px;padding:6px 10px;color:var(--text);text-decoration:none}
+.special{display:flex;align-items:center;gap:12px;border:1px solid var(--border);border-radius:10px;padding:8px;margin:8px 0}
+.special img{width:72px;height:32px;object-fit:cover;border-radius:8px;border:1px solid #1b2330}
+.btn{margin-left:auto;padding:6px 10px;border:1px solid var(--border);border-radius:8px;text-decoration:none;color:var(--text)}
 .muted{color:var(--muted)}
-.footer{margin:14px 18px}
 </style>
 </head>
 <body>
-<div class="header">
-  <a href="/" class="btn">Football</a>
-  <span class="muted" id="updated" style="margin-left:10px"></span>
-</div>
+  <div class="header">
+    <a href="/" >Football</a>
+    <a href="/extras.html" class="active">Extras</a>
+    <div style="flex:1"></div>
+    <div id="updated" class="muted"></div>
+  </div>
 
-<div class="grid">
-  <section class="card">
-    <h2>Leeds Weather</h2>
-    <div id="weather" class="muted">Loading…</div>
-  </section>
+  <div class="grid">
+    <section class="card">
+      <h2>Leeds Weather</h2>
+      <div id="weather" class="muted">Loading…</div>
+    </section>
 
-  <section class="card">
-    <h2>Steam Specials</h2>
-    <div id="steam" class="list"></div>
-  </section>
-</div>
+    <section class="card">
+      <h2>Steam Specials</h2>
+      <div id="specials" class="muted">Loading…</div>
+    </section>
 
-<div class="card" style="margin:0 18px 24px">
-  <h2>My Spotify Playlist</h2>
-  <!-- Your playlist -->
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator"
-    width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
+    <section class="card" style="grid-column:1/-1">
+      <h2>My Spotify Playlist</h2>
+      <iframe style="width:100%;border:0;border-radius:12px" height="380"
+        src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator&theme=0" loading="lazy" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+  </div>
 
 <script>
 (async () => {
-  const bust = '?t=' + Date.now();
-  const get = async (p) => {
-    for (const u of ["/assets/"+p,"assets/"+p,"./assets/"+p]) {
-      try { const r=await fetch(u+bust,{cache:"no-store"}); if (r.ok) return r.json(); } catch {}
+  const bust = `?t=${Date.now()}`;
+  const getJSON = async (p) => {
+    for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
+      try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
     } return null;
   };
-  const upd = document.getElementById("updated");
+  const toHttps = url => (url||"").replace(/^http:\/\//i,"https://");
 
-  // Weather
-  const wx = await get("weather.json");
+  // updated stamp
+  try {
+    const r = await fetch(`/assets/update_stamp.txt${bust}`, {cache:'no-store'});
+    if (r.ok) document.getElementById("updated").textContent = "Updated: " + (await r.text()).trim();
+  } catch {}
+
+  // weather
+  const wx = await getJSON('weather.json');
+  const w = document.getElementById("weather");
   if (wx?.current) {
-    const c = wx.current;
-    document.getElementById("weather").innerHTML = `
-      <div style="font-size:42px;margin-bottom:6px">${Math.round(c.temperature_2m)}°C</div>
-      <div>Wind ${Math.round(c.wind_speed_10m)} mph</div>`;
-    upd.textContent = "Updated: "+ new Date(wx.updated||Date.now()).toLocaleString();
+    const t = Math.round(wx.current.temperature_2m);
+    const wind = Math.round(wx.current.wind_speed_10m);
+    w.innerHTML = `<div style="font-size:28px">${t}°C</div><div class="muted">Wind ${wind} mph</div>`;
   } else {
-    document.getElementById("weather").textContent = "Couldn't load weather.";
+    w.textContent = "Couldn't load weather right now.";
   }
 
-  // Steam specials (built server-side). Images come from steam app id to avoid broken thumbs.
-  const sp = await get("steam_specials.json");
-  const list = document.getElementById("steam");
-  if (!sp?.items?.length) {
-    list.innerHTML = `<div class="muted">No specials right now.</div>`;
+  // steam specials
+  const sp = await getJSON('steam_specials.json');
+  const s = document.getElementById("specials");
+  if (sp?.specials?.length) {
+    s.innerHTML = sp.specials.slice(0,12).map(x => `
+      <div class="special">
+        <img referrerpolicy="no-referrer" src="${toHttps(x.header_image)}" alt="">
+        <div><div>${x.name||"Unnamed"}</div><div class="muted">-${x.discount_percent || 0}%</div></div>
+        ${x.url ? `<a class="btn" target="_blank" rel="noopener" href="${x.url}">View</a>` : ""}
+      </div>`).join('');
   } else {
-    list.innerHTML = sp.items.slice(0,20).map(g => `
-      <div class="item">
-        <img referrerpolicy="no-referrer" src="${g.image||""}" alt="">
-        <div>
-          <div>${g.title||""}</div>
-          <div class="muted">${g.savings?`-${Math.round(g.savings)}%`:""}</div>
-        </div>
-        <a class="btn" href="${g.url||"#"}" target="_blank" rel="noopener">View</a>
-      </div>`).join("");
+    s.textContent = "No specials right now.";
   }
 })();
 </script>
