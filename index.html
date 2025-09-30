@@ -12,6 +12,7 @@
     :root{
       --text:#e9eef5; --muted:#9aa6b2; --card:#12161b; --border:#1e242c; --accent:#6ee7ff; --accent2:#a78bfa;
       --hdr:72px;
+      --good:#0f2d22; --bad:#2f1416; --draw:#2b2b17;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -23,8 +24,9 @@
       background-color:#0b0f14;
     }
 
+    /* ===== Header / Menu ===== */
     .site-header{
-      position: sticky; top: 0; z-index: 50;
+      position: sticky; top: 0; z-index: 10;
       display:flex; align-items:center; gap:12px; padding:10px 18px;
       backdrop-filter: blur(8px);
       background: rgba(11,15,20,0.6);
@@ -36,13 +38,9 @@
       radial-gradient(circle at 70% 70%,#a78bfa,transparent 40%); box-shadow:0 0 0 1px #2a3340 inset}
     .brand h1{margin:0;font-size:18px}
     .spacer{flex:1}
-    #lastUpdated{white-space:nowrap}
-
+    #lastUpdated{white-space:nowrap;color:var(--muted);font-size:13px}
     .nav{display:flex; gap:10px; align-items:center}
-    .nav a{
-      padding:8px 12px; border:1px solid var(--border); border-radius:999px;
-      color:var(--muted); text-decoration:none; transition:all .18s ease;
-    }
+    .nav a{padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);text-decoration:none}
     .nav a:hover{ color:var(--text); border-color:#2a3340; background:#0f141a; }
     .nav a.active{
       color:var(--text);
@@ -51,6 +49,7 @@
       box-shadow: 0 0 0 1px rgba(110,231,255,.25) inset;
     }
 
+    /* ===== Layout ===== */
     .grid{
       display:grid;
       grid-template-columns:1fr 1.6fr 1.2fr;
@@ -61,44 +60,52 @@
     @media (max-width: 1200px){ .grid{grid-template-columns:1fr 1fr} }
     @media (max-width: 980px){ .grid{grid-template-columns:1fr} }
 
-    .card{
-      background:var(--card);border:1px solid var(--border);
-      border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)
-    }
+    .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:14px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
     .card h2{margin:0 0 8px}
     .muted{color:var(--muted)}
+    .panel{border:1px solid var(--border);border-radius:10px;overflow:auto}
     .stretch{display:flex;flex-direction:column;height:calc(100dvh - var(--hdr) - 24px);min-height:420px}
-    .panel{border:1px solid var(--border);border-radius:10px;overflow:auto;flex:1;min-height:0}
-    iframe{width:100%;border:0;border-radius:10px}
+    .fill{flex:1;min-height:0}
 
-    /* tables / pills */
+    /* ===== Tables ===== */
     table{width:100%;border-collapse:collapse}
     th,td{padding:8px 10px;border-bottom:1px solid var(--border);text-align:center}
     thead th{position:sticky;top:0;background:#0f141a;z-index:1}
     tr:hover td{background:#0f141a}
+
     .team-cell{display:flex;align-items:center;justify-content:center;gap:8px}
     .badge{
       width:20px;height:20px;border-radius:50%;
       display:inline-flex;align-items:center;justify-content:center;
-      background:#0f141a;font-weight:700;font-size:11px;letter-spacing:.5px
+      background:#0f141a;
+      font-weight:700;font-size:11px;letter-spacing:.5px
     }
     .badge.img{background:none}
-    .badge.initials{background: radial-gradient(closest-side, #1a2430, #0f141a);border:1px solid #243041;color:#b6c2cf;text-transform:uppercase}
+    .badge.initials{
+      background: radial-gradient(closest-side, #1a2430, #0f141a);
+      border:1px solid #243041; color:#b6c2cf; text-transform:uppercase;
+    }
 
-    /* fixtures/results cards (green win, amber draw, red loss) */
-    .row-card{border:1px solid var(--border);border-radius:12px;margin:8px 0;padding:10px 12px}
-    .row-card.win{background:rgba(16,54,31,.55)}
-    .row-card.draw{background:rgba(43,43,23,.55)}
-    .row-card.loss{background:rgba(58,26,26,.55)}
-    .pill{display:inline-flex;align-items:center;gap:6px;padding:6px 8px;border:1px solid var(--border);border-radius:999px;background:#0f141a;font-size:12px}
+    /* Fixtures rows outcome colouring */
+    tr.W td{ background: var(--good); }
+    tr.D td{ background: var(--draw); }
+    tr.L td{ background: var(--bad); }
+    a.btn{display:inline-block;padding:2px 8px;border:1px solid var(--border);border-radius:8px;font-size:12px}
 
-    /* F1 chips */
-    .driver-chip{display:inline-flex;gap:6px;align-items:center;padding:4px 8px;border:1px solid var(--border);border-radius:999px;background:#0f141a;font-size:12px}
-    .driver-chip .dot{width:8px;height:8px;border-radius:50%}
-    .driver-chip.p1 .dot{background:#d4af37}
-    .driver-chip.p2 .dot{background:#bfbfbf}
-    .driver-chip.p3 .dot{background:#cd7f32}
-    .driver-chip .team{opacity:.7;margin-left:2px}
+    /* Mini comp “badge” */
+    .comp-pill{
+      display:inline-grid; place-items:center; width:56px; height:56px; border-radius:50%;
+      border:1px solid #2a3340; background: radial-gradient(closest-side,#141a22,#0f141a);
+      font-size:10px; line-height:1.05; color:#bcd; letter-spacing:.3px;
+    }
+    .comp-pill .sm{font-size:9px;color:#89a}
+    .pill-cell{display:flex;justify-content:center}
+
+    /* F1 list */
+    .f1-list{list-style:none;margin:0;padding:0}
+    .f1-item{display:grid;grid-template-columns:90px 1fr 1fr;gap:10px;padding:8px 10px;border-bottom:1px solid var(--border)}
+    .f1-item strong{font-weight:700}
+    .warn{color:#ffcc66}
   </style>
 </head>
 <body>
@@ -108,7 +115,7 @@
       <h1>thekeelan.co.uk</h1>
     </div>
     <div class="spacer"></div>
-    <div class="muted" id="lastUpdated">Last updated: —</div>
+    <div id="lastUpdated">Last updated: —</div>
     <nav class="nav" aria-label="Primary">
       <a href="/" class="active" title="Football">Football</a>
       <a href="/extras.html" title="Extras">Extras</a>
@@ -120,15 +127,16 @@
     <section class="card stretch">
       <h2>Left Panel</h2>
       <div class="panel" style="overflow:hidden">
-        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
-             alt="gif" style="display:block;width:100%;height:auto;">
+        <img
+          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcThlOWlqcmc5YnZmcTVtaDByZHdpZHd4cWo4YTl0NXB4NGlxNnFlaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yRl0DstAx4nN0RjDLV/giphy.gif"
+          alt="gif" style="display:block;width:100%;height:auto;"
+        />
       </div>
 
-      <!-- F1 block -->
-      <div class="card" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;flex:1;min-height:0">
-        <h2 id="f1Title">F1 — This Season (Results)</h2>
-        <div id="f1Wrap" class="panel" style="padding:8px;">
-          <div class="muted">Loading…</div>
+      <div class="card fill" style="margin-top:12px;display:flex;flex-direction:column;min-height:0">
+        <h2>F1 — This Season (Results)</h2>
+        <div id="f1Wrap" class="panel fill" style="padding:8px">
+          <div class="muted">Loading F1 results…</div>
         </div>
       </div>
     </section>
@@ -136,7 +144,7 @@
     <!-- CENTRE -->
     <section class="card" style="align-self:start;height:max-content;">
       <h2>Premier League Table</h2>
-      <div style="border:1px solid var(--border);border-radius:10px;overflow:auto;">
+      <div class="panel">
         <table>
           <thead>
             <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
@@ -151,259 +159,318 @@
     <!-- RIGHT -->
     <section class="card stretch">
       <h2>Man United – Fixtures & Results</h2>
-      <div id="fixturesWrap" class="panel" style="padding:8px;">
+      <div id="fixturesWrap" class="panel fill" style="padding:8px;">
         <div class="muted">Waiting for data…</div>
       </div>
     </section>
   </div>
 
-<script>
-/* header height for stretch columns */
-function setHeaderVar(){
-  const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
-  document.documentElement.style.setProperty('--hdr', h+'px');
-}
-setHeaderVar(); addEventListener('resize', setHeaderVar);
-
-(async () => {
-  const bust = `?t=${Date.now()}`;
-  const getLocal = async (p) => {
-    for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
-      try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
-    } return null;
-  };
-  const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
-  const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
-  const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
-
-  /* Wikipedia page titles (crest fallback) */
-  const WP_TITLE = {
-    "Arsenal":"Arsenal_F.C.","Aston Villa":"Aston_Villa_F.C.","AFC Bournemouth":"AFC_Bournemouth","Brentford":"Brentford_F.C.",
-    "Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.","Burnley":"Burnley_F.C.","Chelsea":"Chelsea_F.C.",
-    "Crystal Palace":"Crystal_Palace_F.C.","Everton":"Everton_F.C.","Fulham":"Fulham_F.C.","Leeds United":"Leeds_United_F.C.",
-    "Liverpool":"Liverpool_F.C.","Manchester City":"Manchester_City_F.C.","Manchester United":"Manchester_United_F.C.",
-    "Newcastle United":"Newcastle_United_F.C.","Nottingham Forest":"Nottingham_Forest_F.C.","Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
-    "West Ham United":"West_Ham_United_F.C.","Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.","Sunderland":"Sunderland_A.F.C."
-  };
-  async function fetchWikiClubCrest(team){
-    const title = WP_TITLE[team] || (team.replace(/\s+/g,'_') + "_F.C.");
-    try{
-      const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title), {cache:'no-store'});
-      if (!r.ok) return null;
-      const j = await r.json();
-      return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
-    }catch(e){ return null; }
+  <script>
+  // Header var for nice stretch layout
+  function setHeaderVar(){
+    const h = document.getElementById('siteHeader')?.getBoundingClientRect().height || 72;
+    document.documentElement.style.setProperty('--hdr', h+'px');
   }
+  setHeaderVar(); addEventListener('resize', setHeaderVar);
 
-  /* ===== TABLE ===== */
-  const [table, badgesFile] = await Promise.all([ getLocal('table.json'), getLocal('badges.json') ]);
-  const tbody = document.getElementById("tableBody");
-  const lu = document.getElementById("lastUpdated");
-
-  const localBadges = {};
-  if (badgesFile?.badges) for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = toHttps(v || "");
-
-  function rowHTML(r){
-    const b = toHttps(r.badge || localBadges[norm(r.team)]);
-    const badge = b
-      ? `<img class="badge img" referrerpolicy="no-referrer" src="${b}" alt="">`
-      : `<span class="badge initials" data-team="${r.team}">${initials(r.team||'')}</span>`;
-    return `
-      <tr>
-        <td>${r.pos ?? ""}</td>
-        <td><span class="team-cell">${badge}${r.team ?? ""}</span></td>
-        <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
-        <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td><strong>${r.pts ?? ""}</strong></td>
-      </tr>`;
-  }
-  if (!table?.standings?.length) {
-    tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
-  } else {
-    tbody.innerHTML = table.standings.map(rowHTML).join("");
-    const updated = (await getLocal('update_stamp.txt')) || null; // optional
-    if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
-  }
-  function upgradeFromMap(map){
-    document.querySelectorAll('.badge.initials[data-team]').forEach(el=>{
-      const nm = el.getAttribute('data-team') || '';
-      const url = toHttps(map[norm(nm)]);
-      if (url) {
-        const img = new Image();
-        img.className = 'badge img'; img.alt = ''; img.referrerPolicy = 'no-referrer';
-        img.onload = () => el.replaceWith(img);
-        img.src = url;
-      }
-    });
-  }
-  if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
-  async function upgradeWithWikiExact(){
-    const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
-    if (!els.length) return;
-    const chunk = async list => {
-      const part = list.splice(0,6);
-      await Promise.all(part.map(async el=>{
-        const team = el.getAttribute('data-team') || '';
-        const url  = await fetchWikiClubCrest(team);
-        if (url){
-          const img = new Image();
-          img.className = 'badge img'; img.alt=''; img.referrerPolicy='no-referrer';
-          img.onload = () => el.replaceWith(img);
-          img.src = url;
-        }
-      }));
-      if (list.length) await chunk(list);
+  (async () => {
+    const bust = `?t=${Date.now()}`;
+    const getLocal = async (p) => {
+      for (const u of [`/assets/${p}`, `assets/${p}`, `./assets/${p}`]) {
+        try { const r = await fetch(u + bust, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
+      } return null;
     };
-    await chunk(els);
-  }
-  await upgradeWithWikiExact();
+    const norm = s => (s||"").toLowerCase().replace(/&/g,"and").replace(/[^a-z0-9]/g,"");
+    const initials = team => team.split(/\s+/).filter(Boolean).map(w=>w[0]).slice(0,2).join('').toUpperCase();
+    const toHttps = url => (url||"").replace(/^http:\/\//i, "https://");
 
-  /* ===== FIXTURES & RESULTS ===== */
-  const fixtures = await getLocal('fixtures.json');
-  const wrap = document.getElementById("fixturesWrap");
-  function t(s){ return new Date(s).getTime() || 0; }
-  function fmtD(d){ return new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' }); }
-  function fmtT(d){ return new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' }); }
-  const isFinished = m => {
-    const st = (m.status || "").toUpperCase();
-    if (st === "FINISHED") return true;
-    if (st === "SCHEDULED") return false;
-    if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
-    return t(m.date) < Date.now();
-  };
-  const cls = o => o === "W" ? "win" : o === "D" ? "draw" : o === "L" ? "loss" : "";
+    /* ---- exact Wikipedia club titles (used only for badge fallback) ---- */
+    const WP_TITLE = {
+      "Arsenal":"Arsenal_F.C.",
+      "Aston Villa":"Aston_Villa_F.C.",
+      "Bournemouth":"AFC_Bournemouth",
+      "Brentford":"Brentford_F.C.",
+      "Brighton and Hove Albion":"Brighton_&_Hove_Albion_F.C.",
+      "Burnley":"Burnley_F.C.",
+      "Chelsea":"Chelsea_F.C.",
+      "Crystal Palace":"Crystal_Palace_F.C.",
+      "Everton":"Everton_F.C.",
+      "Fulham":"Fulham_F.C.",
+      "Leeds United":"Leeds_United_F.C.",
+      "Liverpool":"Liverpool_F.C.",
+      "Manchester City":"Manchester_City_F.C.",
+      "Manchester United":"Manchester_United_F.C.",
+      "Newcastle United":"Newcastle_United_F.C.",
+      "Nottingham Forest":"Nottingham_Forest_F.C.",
+      "Tottenham Hotspur":"Tottenham_Hotspur_F.C.",
+      "West Ham United":"West_Ham_United_F.C.",
+      "Wolverhampton Wanderers":"Wolverhampton_Wanderers_F.C.",
+      "Sunderland":"Sunderland_A.F.C."
+    };
 
-  if (!fixtures?.matches?.length) {
-    wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
-  } else {
-    const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
-    const upcoming = all.filter(m => !isFinished(m));
-    const recent   = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 10);
+    async function fetchWikiClubCrest(team){
+      const title = WP_TITLE[team] || (team.replace(/\s+/g,'_') + "_F.C.");
+      try{
+        const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title), {cache:'no-store'});
+        if (!r.ok) return null;
+        const j = await r.json();
+        return toHttps(j?.originalimage?.source || j?.thumbnail?.source || null);
+      }catch(e){ return null; }
+    }
 
-    const upHTML = `
-      <h3 style="margin:8px 0;">Upcoming</h3>
-      <table>
-        <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
-        <tbody>
-        ${upcoming.map(m=>{
-          const tv = (m.tv || '').replace(/;|,/g, ', ').trim() || 'TBD';
-          return `<tr>
-            <td>${fmtD(m.date)}</td>
-            <td>${fmtT(m.date)}</td>
-            <td><span class="pill">${m.comp||""}</span></td>
-            <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-            <td>${tv}</td>
-          </tr>`;
-        }).join("") || `<tr><td colspan="7" class="muted">No upcoming fixtures.</td></tr>`}
-        </tbody>
-      </table>`;
+    /* ===== TABLE + BADGES ===== */
+    try {
+      const [table, badgesFile] = await Promise.all([ getLocal('table.json'), getLocal('badges.json') ]);
+      const tbody = document.getElementById("tableBody");
+      const lu = document.getElementById("lastUpdated");
 
-    const recHTML = `
-      <h3 style="margin:12px 0 6px;">Recent Results</h3>
-      ${recent.map(m=>{
-        const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
-        const oc = m.score?.outcome || "";
-        const year = new Date(m.date).getFullYear();
-        const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
-        const sky = `https://www.skysports.com/search?q=${q}`;
-        const yt  = `https://www.youtube.com/results?search_query=${q}`;
+      const localBadges = {};
+      if (badgesFile?.badges) for (const [k,v] of Object.entries(badgesFile.badges)) localBadges[norm(k)] = toHttps(v || "");
+
+      function rowHTML(r){
+        const b = toHttps(r.badge || localBadges[norm(r.team)]);
+        const badge = b
+          ? `<img class="badge img" referrerpolicy="no-referrer" src="${b}" alt="">`
+          : `<span class="badge initials" data-team="${r.team}">${initials(r.team||'')}</span>`;
         return `
-          <div class="row-card ${cls(oc)}">
-            <div style="display:grid;grid-template-columns:80px 60px 160px 1fr 1fr 60px 80px 100px;gap:8px;align-items:center">
-              <div>${fmtD(m.date)}</div>
-              <div>${fmtT(m.date)}</div>
-              <div><span class="pill">${m.comp||""}</span></div>
-              <div style="text-align:right">${m.home}</div>
-              <div style="text-align:center">vs</div>
-              <div style="text-align:left">${m.away}</div>
-              <div><strong>${sc}</strong>${oc?` (${oc})`:""}</div>
-              <div>
-                <a class="pill" href="${sky}" target="_blank" rel="noopener noreferrer">Sky</a>
-                <a class="pill" href="${yt}"  target="_blank" rel="noopener noreferrer" style="margin-left:6px;">YT</a>
-              </div>
-            </div>
-          </div>`;
-      }).join("")}
-    `;
-    wrap.innerHTML = upHTML + recHTML;
-  }
-})();
-
-/* ===== F1 RESULTS (prefer local /assets/f1_results.json, fallback to live) ===== */
-async function loadF1(){
-  const wrap = document.getElementById('f1Wrap');
-  const title = document.getElementById('f1Title');
-
-  function render(data){
-    const season = data?.season || new Date().getFullYear();
-    if (title) title.textContent = `F1 — ${season} Results`;
-    const races = data?.races || [];
-    if (!races.length){
-      wrap.innerHTML = '<div class="muted">No completed races yet.</div>';
-      return;
-    }
-    const chip = (obj, cls) =>
-      obj
-        ? `<span class="driver-chip ${cls}"><span class="dot"></span><span>${obj.code}</span><span class="team">(${obj.team})</span></span>`
-        : `<span class="muted">–</span>`;
-
-    const rows = races.map(r=>{
-      const [p1,p2,p3] = r.podium || [];
-      const dt = new Date(r.date).toLocaleDateString('en-GB', { day:'2-digit', month:'short' });
-      return `<tr>
-        <td>${dt}</td>
-        <td style="text-align:left">${r.name}</td>
-        <td>${chip(p1,'p1')}</td>
-        <td>${chip(p2,'p2')}</td>
-        <td>${chip(p3,'p3')}</td>
-      </tr>`;
-    }).join('');
-
-    wrap.innerHTML = `
-      <table>
-        <thead>
-          <tr><th style="min-width:70px">Date</th><th style="text-align:left">Grand Prix</th><th>P1</th><th>P2</th><th>P3</th></tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>`;
-  }
-
-  try{
-    // Prefer local asset from GitHub Action
-    const local = await (async () => {
-      for (const p of ['/assets/f1_results.json','assets/f1_results.json','./assets/f1_results.json']){
-        try { const r = await fetch(p + `?t=${Date.now()}`, {cache:'no-store'}); if (r.ok) return r.json(); } catch {}
+          <tr>
+            <td>${r.pos ?? ""}</td>
+            <td><span class="team-cell">${badge}${r.team ?? ""}</span></td>
+            <td>${r.played ?? ""}</td><td>${r.won ?? ""}</td><td>${r.drawn ?? ""}</td><td>${r.lost ?? ""}</td>
+            <td>${r.gf ?? ""}</td><td>${r.ga ?? ""}</td><td>${r.gd ?? ""}</td><td><strong>${r.pts ?? ""}</strong></td>
+          </tr>`;
       }
-      return null;
-    })();
-    if (local?.races?.length){ render(local); return; }
-  }catch(e){}
 
-  // Fallback: live Ergast (if allowed)
-  try{
-    const r = await fetch('https://ergast.com/api/f1/current/results.json?limit=1000', {cache:'no-store'});
-    if(!r.ok) throw 0;
-    const j = await r.json();
-    const races = j?.MRData?.RaceTable?.Races || [];
-    const season = j?.MRData?.RaceTable?.season || new Date().getFullYear();
-    const out = {season, races:[]};
-    for (const rr of races){
-      if (!Array.isArray(rr.Results) || rr.Results.length < 3) continue;
-      const pick = n => {
-        const found = rr.Results.find(x => String(x.position || x.positionText) === String(n));
-        if (!found) return null;
-        const d = found.Driver || {};
-        const code = d.code || (d.familyName||'').slice(0,3).toUpperCase();
-        return {code, team:(found.Constructor||{}).name||''};
-      };
-      out.races.push({date: rr.date, name: rr.raceName, podium:[pick(1),pick(2),pick(3)]});
+      if (!table?.standings?.length) {
+        tbody.innerHTML = '<tr><td colspan="10"><div class="muted">⚠️ No table data (check /assets/table.json).</div></td></tr>';
+      } else {
+        tbody.innerHTML = table.standings.map(rowHTML).join("");
+        if (lu) lu.textContent = "Last updated: " + new Date(table.updated || Date.now()).toLocaleString();
+      }
+
+      function upgradeFromMap(map){
+        document.querySelectorAll('.badge.initials[data-team]').forEach(el=>{
+          const nm = el.getAttribute('data-team') || '';
+          const url = toHttps(map[norm(nm)]);
+          if (url) {
+            const img = new Image();
+            img.className = 'badge img';
+            img.alt = '';
+            img.referrerPolicy = 'no-referrer';
+            img.onload = () => el.replaceWith(img);
+            img.onerror = () => console.warn("[badges] image failed for", nm, url);
+            img.src = url;
+          }
+        });
+      }
+
+      if (Object.keys(localBadges).length) upgradeFromMap(localBadges);
+
+      async function fetchTSDBLeagueMap(){
+        const out = {...localBadges};
+        try {
+          const r1 = await fetch('https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League', {cache:'no-store'});
+          if (r1.ok) (await r1.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
+        } catch(e){}
+        try {
+          const r2 = await fetch('https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id=4328', {cache:'no-store'});
+          if (r2.ok) (await r2.json())?.teams?.forEach(t => out[norm(t.strTeam)] = toHttps(t.strTeamBadge||""));
+        } catch(e){}
+        return out;
+      }
+
+      const leagueMap = await fetchTSDBLeagueMap();
+      upgradeFromMap(leagueMap);
+
+      // Wikipedia fallbacks for any stragglers
+      (async function upgradeWithWikiExact(){
+        const els = Array.from(document.querySelectorAll('.badge.initials[data-team]'));
+        if (!els.length) return;
+        const chunk = async list => {
+          const part = list.splice(0,6);
+          await Promise.all(part.map(async el=>{
+            const team = el.getAttribute('data-team') || '';
+            const url  = await fetchWikiClubCrest(team);
+            if (url){
+              const img = new Image();
+              img.className = 'badge img'; img.alt=''; img.referrerPolicy='no-referrer';
+              img.onload = () => el.replaceWith(img);
+              img.src = url;
+            }
+          }));
+          if (list.length) await chunk(list);
+        };
+        await chunk(els);
+      })();
+
+    } catch(e){
+      console.error("table/badges error", e);
     }
-    render(out);
-  }catch(e){
-    console.error('F1 fetch failed', e);
-    wrap.innerHTML = '<div class="muted">⚠️ Couldn’t load F1 results right now.</div>';
-  }
-}
-loadF1();
-</script>
+
+    /* ===== FIXTURES ===== */
+    (async function renderFixtures(){
+      const wrap = document.getElementById("fixturesWrap");
+      try{
+        const fixtures = await getLocal('fixtures.json');
+        if (!fixtures?.matches?.length) {
+          wrap.innerHTML = '<div class="muted">⚠️ No fixtures data (check /assets/fixtures.json).</div>';
+          return;
+        }
+        const t = s => new Date(s).getTime() || 0;
+        const isFinished = m => {
+          const st = (m.status || "").toUpperCase();
+          if (st === "FINISHED") return true;
+          if (st === "SCHEDULED") return false;
+          if (m.score && typeof m.score.home === "number" && typeof m.score.away === "number") return true;
+          return t(m.date) < Date.now();
+        };
+        const cls = o => o === "W" ? "W" : o === "D" ? "D" : o === "L" ? "L" : "";
+
+        const all = fixtures.matches.slice().sort((a,b)=> t(a.date) - t(b.date));
+        const upcoming = all.filter(m => !isFinished(m)).slice(0, 8);
+        const recent   = all.filter(isFinished).sort((a,b)=> t(b.date) - t(a.date)).slice(0, 8);
+
+        const fmtD = d => new Date(d).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric', timeZone:'Europe/London' });
+        const fmtT = d => new Date(d).toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
+
+        function guessUkTv(dateStr, comp) {
+          const dt = new Date(dateStr);
+          const day = dt.toLocaleString('en-GB', { weekday:'short', timeZone:'Europe/London' });
+          const hm  = dt.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', hour12:false, timeZone:'Europe/London' });
+          if (!/premier/i.test(comp||"")) return 'TBD';
+          if (day === 'Sat' && hm === '12:30') return 'TNT Sports (est.)';
+          if (day === 'Sat' && (hm === '17:30' || hm === '20:00')) return 'Sky Sports (est.)';
+          if (day === 'Sun' && (hm === '14:00' || hm === '16:30' || hm === '19:00')) return 'Sky Sports (est.)';
+          if ((day === 'Mon' || day === 'Fri') && (hm === '19:45' || hm === '20:00')) return 'Sky Sports (est.)';
+          return 'TBD';
+        }
+
+        const compPill = (comp) => {
+          // Simple 2-line comp pill, keeps things tidy
+          const short = /premier/i.test(comp) ? 'English' : comp.split(' ')[0] || '';
+          const rest  = /premier/i.test(comp) ? 'Premier' : (comp.split(' ')[1]||'');
+          const last  = /premier/i.test(comp) ? 'League' : (comp.split(' ')[2]||'');
+          return `<div class="comp-pill"><span class="sm">${short}</span>${rest}<br>${last}</div>`;
+        };
+
+        const upHTML = `
+          <h3 style="margin:8px 0;">Upcoming</h3>
+          ${upcoming.length ? `
+            <table>
+              <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
+              <tbody>
+                ${upcoming.map(m => {
+                  const tvRaw = (m.tv || '').replace(/;|,/g, ', ').trim();
+                  const tv = tvRaw || guessUkTv(m.date, m.comp);
+                  return `<tr>
+                    <td>${fmtD(m.date)}</td><td>${fmtT(m.date)}</td>
+                    <td class="pill-cell">${compPill(m.comp||'')}</td>
+                    <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+                    <td>${tv}</td>
+                  </tr>`;
+                }).join("")}
+              </tbody>
+            </table>
+          ` : `<div class="muted">No upcoming fixtures.</div>`}
+        `;
+
+        const recHTML = recent.length ? `
+          <h3 style="margin:12px 0 6px;">Recent Results</h3>
+          <table>
+            <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
+            <tbody>
+              ${recent.map(m=>{
+                const sc = m.score ? `${m.score.home}–${m.score.away}` : "";
+                const oc = m.score?.outcome || "";
+                const year = new Date(m.date).getFullYear();
+                const q = encodeURIComponent(`${m.home} ${m.away} highlights ${year}`);
+                const sky = `https://www.skysports.com/search?q=${q}`;
+                const yt  = `https://www.youtube.com/results?search_query=${q}`;
+                return `<tr class="${cls(oc)}">
+                  <td>${fmtD(m.date)}</td>
+                  <td class="pill-cell">${compPill(m.comp||'')}</td>
+                  <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+                  <td><strong>${sc}</strong>${oc?` (${oc})`:""}</td>
+                  <td>
+                    <a class="btn" href="${sky}" target="_blank" rel="noopener noreferrer">Sky</a>
+                    <a class="btn" href="${yt}"  target="_blank" rel="noopener noreferrer" style="margin-left:6px;">YT</a>
+                  </td>
+                </tr>`;
+              }).join("")}
+            </tbody>
+          </table>
+        ` : "";
+
+        wrap.innerHTML = upHTML + recHTML;
+
+      }catch(e){
+        console.error("fixtures error", e);
+        wrap.innerHTML = '<div class="muted">⚠️ Couldn’t load fixtures.</div>';
+      }
+    })();
+
+    /* ===== F1 (Ergast) ===== */
+    (async function renderF1(){
+      const wrap = document.getElementById("f1Wrap");
+      try{
+        const r = await fetch('https://ergast.com/api/f1/current.json', {cache:'no-store'});
+        if (!r.ok) throw new Error("schedule not ok");
+        const sched = await r.json();
+        const races = sched?.MRData?.RaceTable?.Races || [];
+        if (!races.length){ wrap.innerHTML = '<div class="muted">No races found.</div>'; return; }
+
+        const now = Date.now();
+        const finished = races.filter(x => new Date(x.date + 'T' + (x.time || '00:00:00Z')).getTime() < now).slice(-6).reverse();
+
+        if (!finished.length){
+          wrap.innerHTML = '<div class="muted">No completed races yet.</div>';
+          return;
+        }
+
+        // fetch top 3 results per round
+        async function roundTop3(season, round){
+          const rr = await fetch(`https://ergast.com/api/f1/${season}/${round}/results.json?limit=3`, {cache:'no-store'});
+          if (!rr.ok) return null;
+          const jj = await rr.json();
+          const list = jj?.MRData?.RaceTable?.Races?.[0]?.Results || [];
+          return list.slice(0,3).map(x => ({
+            driver: `${x.Driver?.familyName || x.Driver?.code || ''}`,
+            team: x.Constructor?.name || '',
+            pos: x.position
+          }));
+        }
+
+        const year = (sched?.MRData?.RaceTable?.season)|| new Date().getFullYear();
+        const items = [];
+        for (const g of finished){
+          try{
+            const top3 = await roundTop3(year, g.round);
+            items.push({ name: g.raceName, date: g.date, top3: top3 || []});
+          }catch{ items.push({ name: g.raceName, date: g.date, top3: []}); }
+        }
+
+        wrap.innerHTML = `
+          <ul class="f1-list">
+            ${items.map(it => `
+              <li class="f1-item">
+                <div><strong>${new Date(it.date).toLocaleDateString('en-GB',{day:'2-digit',month:'short'})}</strong><br><span class="muted">${new Date(it.date).getFullYear()}</span></div>
+                <div><strong>${it.name}</strong></div>
+                <div>${it.top3.length
+                  ? it.top3.map(p => `${p.pos}. ${p.driver} <span class="muted">(${p.team})</span>`).join('<br>')
+                  : '<span class="muted">Results unavailable</span>'}
+                </div>
+              </li>
+            `).join('')}
+          </ul>
+        `;
+
+      }catch(e){
+        console.error("F1 error", e);
+        wrap.innerHTML = `<div class="warn">⚠️ Couldn’t load F1 results right now.</div>`;
+      }
+    })();
+
+  })();
+  </script>
 </body>
 </html>
