@@ -1,10 +1,9 @@
-name: Update site data (table + fixtures + badges)
+name: Update football data (table + fixtures)
 
 on:
   schedule:
-    - cron: "0 6 * * *"      # daily 06:00 UTC
+    - cron: "0 6 * * *"    # 06:00 UTC daily
   workflow_dispatch:
-  workflow_call:
 
 permissions:
   contents: write
@@ -19,30 +18,95 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Build the Premier League table (TheSportsDB) -> assets/table.json
-      - name: Build table.json
+      # --- Premier League table via TheSportsDB (full 20 teams) ---
+      - name: Build assets/table.json
         run: |
-          python scripts/update_table.py
+          python - <<'PY'
+          import json, time, urllib.request, urllib.parse
+          from datetime import datetime
 
-      # Build MUFC fixtures -> assets/fixtures.json
-      - name: Build fixtures.json
+          def fetch(url, timeout=30):
+              req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
+              with urllib.request.urlopen(req, timeout=timeout) as r:
+                  return r.read()
+
+          # current season string (e.g., 2025-2026)
+          now = datetime.utcnow()
+          start = now.year if now.month >= 7 else now.year - 1
+          season = f"{start}-{start+1}"
+
+          # PL league id in TSDB
+          league_id = "4328"
+          table_url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={league_id}&s={urllib.parse.quote(season)}"
+          data = json.loads(fetch(table_url).decode("utf-8"))
+          table = data.get("table") or []
+
+          rows = []
+          for t in table:
+              rows.append({
+                "pos": int(t.get("intRank") or 0),
+                "team": t.get("strTeam") or "",
+                "played": int(t.get("intPlayed") or 0),
+                "won": int(t.get("intWin") or 0),
+                "drawn": int(t.get("intDraw") or 0),
+                "lost": int(t.get("intLoss") or 0),
+                "gf": int(t.get("intGoalsFor") or 0),
+                "ga": int(t.get("intGoalsAgainst") or 0),
+                "gd": int(t.get("intGoalDifference") or 0),
+                "pts": int(t.get("intPoints") or 0)
+              })
+          rows.sort(key=lambda r: r["pos"] or 999)
+
+          out = {
+            "season": season,
+            "source": "TheSportsDB",
+            "updated": int(time.time()*1000),
+            "standings": rows
+          }
+          with open("assets/table.json","w") as f:
+              json.dump(out, f)
+          print("Wrote assets/table.json")
+
+          # Optional crest map (used as a **fallback** only)
+          # We store a simple { teamName: httpsBadgeUrl } file.
+          # Using both 'search_all_teams' and 'lookup_all_teams' to be safe.
+          badge_map = {}
+          for u in [
+            "https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=English%20Premier%20League",
+            f"https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id={league_id}"
+          ]:
+              try:
+                  j = json.loads(fetch(u).decode("utf-8"))
+                  for team in (j.get("teams") or []):
+                      name = (team.get("strTeam") or "").strip()
+                      badge = (team.get("strTeamBadge") or "").replace("http://","https://")
+                      if name and badge:
+                          badge_map[name] = badge
+              except Exception as e:
+                  print("Badge fetch failed:", e)
+
+          with open("assets/badges.json","w") as f:
+              json.dump({"badges": badge_map}, f)
+          print("Wrote assets/badges.json")
+
+          PY
+
+      # --- Your existing fixtures builder (must write assets/fixtures.json) ---
+      - name: Build assets/fixtures.json
         run: |
           python update_fixtures.py
 
-      # Build club badges from current table using Wikipedia -> assets/badges.json
-      - name: Build badges.json
-        run: |
-          python scripts/update_badges.py
-
-      # Touch the update stamp (if you still like seeing it deployed)
+      # --- Touch a stamp so the site can show "Last updated" clearly ---
       - name: Touch update stamp
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
-      - name: Commit & push
+      - name: Commit and push
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/table.json assets/fixtures.json assets/badges.json assets/update_stamp.txt
+          git add assets/table.json assets/badges.json assets/fixtures.json assets/update_stamp.txt
           git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git pull --rebase
           git push
