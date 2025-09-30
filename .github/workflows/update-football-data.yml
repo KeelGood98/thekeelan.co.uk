@@ -1,9 +1,10 @@
-name: Update site data (table + MUFC fixtures)
+name: Update site data (table + fixtures + badges)
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # daily 06:00 UTC
+    - cron: "0 6 * * *"      # daily 06:00 UTC
   workflow_dispatch:
+  workflow_call:
 
 permissions:
   contents: write
@@ -12,35 +13,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # --- TABLE (unchanged – your existing logic here) ---
-      - name: Build assets/table.json
+      # Build the Premier League table (TheSportsDB) -> assets/table.json
+      - name: Build table.json
         run: |
           python scripts/update_table.py
 
-      # --- FIXTURES (make sure we point to scripts/update_fixtures.py) ---
-      - name: Build assets/fixtures.json
+      # Build MUFC fixtures -> assets/fixtures.json
+      - name: Build fixtures.json
         run: |
-          python scripts/update_fixtures.py
-          echo "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" > assets/update_stamp.txt
-          echo "Preview first 3 lines:"
-          head -n 3 assets/fixtures.json || true
+          python update_fixtures.py
 
-      - name: Commit & push assets
+      # Build club badges from current table using Wikipedia -> assets/badges.json
+      - name: Build badges.json
         run: |
-          git config user.name  "github-actions[bot]"
+          python scripts/update_badges.py
+
+      # Touch the update stamp (if you still like seeing it deployed)
+      - name: Touch update stamp
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin ${{ github.ref_name }} || true
-          git add assets/table.json assets/fixtures.json assets/update_stamp.txt
-          git commit -m "chore: refresh table + fixtures $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
+          git add assets/table.json assets/fixtures.json assets/badges.json assets/update_stamp.txt
+          git commit -m "chore: refresh football data $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
           git push
