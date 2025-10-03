@@ -1,76 +1,96 @@
 #!/usr/bin/env python3
-import json
-from datetime import datetime, timezone
-from pathlib import Path
+"""
+Builds assets/fixtures.json from ESPN team schedule (Premier League).
+We use ESPN team id for Manchester United (id=360).
 
-import requests
-from bs4 import BeautifulSoup
-from dateutil import parser as dtparse
-import pytz
-
-OUT = Path("assets/fixtures.json")
-BBC_TEAM_URL = "https://www.bbc.co.uk/sport/football/teams/manchester-united/scores-fixtures"
-TZ_UK = pytz.timezone("Europe/London")
-
-COMP_MAP = {
-    "Premier League":"EPL","English Premier League":"EPL","UEFA Champions League":"UCL",
-    "FA Cup":"FAC","EFL Cup":"EFL","Carabao Cup":"EFL","Community Shield":"CS",
-    "Friendly":"CF","Club Friendlies":"CF"
+Produces:
+{
+  "upcoming": [ ... ],
+  "results":  [ ... ]
 }
-def comp_tag(name:str)->str:
-    for k,v in COMP_MAP.items():
-        if k.lower() in name.lower(): return v
-    return "".join(p[0] for p in name.split()[:3]).upper()
+"""
 
-def fetch():
-    r=requests.get(BBC_TEAM_URL,timeout=30); r.raise_for_status()
-    soup=BeautifulSoup(r.text,"html.parser")
-    cards=soup.select("[data-event-id]")
-    up,res=[],[]
-    now=datetime.now(tz=TZ_UK)
+import datetime as dt
+import json
+import pathlib
+import sys
+import urllib.request
 
-    for card in cards:
-        ko=card.get("data-kickoff")
-        ko_dt=None
-        if ko:
-            try:
-                ko_dt=dtparse.parse(ko)
-                ko_dt=ko_dt.replace(tzinfo=timezone.utc).astimezone(TZ_UK) if ko_dt.tzinfo is None else ko_dt.astimezone(TZ_UK)
-            except: pass
+OUT = pathlib.Path("assets/fixtures.json")
+TEAM_ID = 360  # Manchester United on ESPN
+URL = (
+    f"https://site.api.espn.com/apis/v2/sports/soccer/eng.1/teams/{TEAM_ID}/schedule"
+    "?region=gb&lang=en"
+)
 
-        teams=card.select(".sp-c-fixture__team-name,.qa-full-team-name")
-        if len(teams)>=2:
-            home=teams[0].get_text(strip=True); away=teams[1].get_text(strip=True)
+def fetch_json(url):
+    with urllib.request.urlopen(url, timeout=30) as r:
+        return json.load(r)
+
+def parse_event(ev):
+    comp = ev["competitions"][0]
+    date_iso = ev["date"]
+    # ESPN ISO → cut to minutes
+    date = dt.datetime.fromisoformat(date_iso.replace("Z","+00:00")).strftime("%Y-%m-%d")
+    time_uk = dt.datetime.fromisoformat(date_iso.replace("Z","+00:00")).strftime("%H:%M")
+
+    # identify home/away and scores
+    home, away = None, None
+    for c in comp.get("competitors", []):
+        name = c["team"]["displayName"]
+        if c.get("homeAway") == "home":
+            home = name
+            home_score = c.get("score")
         else:
-            names=[t.get_text(strip=True) for t in card.select("[class*='team-name']")]
-            home=names[0] if names else "TBC"; away=names[1] if len(names)>1 else "TBC"
+            away = name
+            away_score = c.get("score")
 
-        comp_el = card.select_one(".sp-c-fixture__competition, .sp-c-fixture__block, .gel-minion")
-        comp_name = comp_el.get_text(strip=True) if comp_el else "Premier League"
-        comp = comp_tag(comp_name)
+    # competition name (EPL / FA Cup / etc.)
+    comp_text = comp.get("notes", [{}])[0].get("headline") or ev.get("shortName") or "Match"
 
-        # score
-        nums = [n.get_text(strip=True) for n in card.select(".sp-c-fixture__number")]
-        score = f"{nums[0]}–{nums[1]}" if len(nums)>=2 and nums[0].isdigit() and nums[1].isdigit() else ""
+    status = ev.get("status", {}).get("type", {}).get("state", "").lower()
+    is_final = status in ("post", "final")
+    is_pre   = status in ("pre", "scheduled")
 
-        item = {
-            "date": ko_dt.isoformat() if ko_dt else "",
-            "time_uk": ko_dt.strftime("%H:%M") if ko_dt else "",
-            "comp": comp, "comp_full": comp_name,
-            "home": home, "away": away, "tv":"TBD"
-        }
+    score = None
+    if is_final and home_score is not None and away_score is not None:
+        score = f"{home_score}–{away_score}"
 
-        if ko_dt and ko_dt>now:
-            up.append(item)
-        else:
-            res.append({**item, "score": score or "—", "result": ""})
+    tv = None
+    # ESPN broadcast sometimes in competitions[0].broadcasts → list
+    for b in comp.get("broadcasts", []):
+        if b.get("market") == "uk" and b.get("names"):
+            tv = b["names"][0]
+            break
 
-    up.sort(key=lambda x:x["date"]); res.sort(key=lambda x:x["date"], reverse=True)
-    return {"team":"Manchester United","upcoming":up[:12],"results":res[:20]}
+    return {
+        "date": date,
+        "time_uk": time_uk,
+        "comp": comp_text,
+        "home": home,
+        "away": away,
+        "tv": tv,
+        "score": score,
+        "state": "final" if is_final else ("upcoming" if is_pre else "inplay")
+    }
 
 def main():
-    data=fetch(); OUT.parent.mkdir(parents=True,exist_ok=True)
-    with OUT.open("w",encoding="utf-8") as f: json.dump(data,f,ensure_ascii=False,indent=2)
-    print(f"Wrote {OUT}: {len(data['upcoming'])} upcoming, {len(data['results'])} results")
+    data = fetch_json(URL)
+    events = data.get("events", [])
+    parsed = [parse_event(ev) for ev in events]
 
-if __name__=="__main__": main()
+    upcoming = [e for e in parsed if e["state"] == "upcoming"]
+    results  = [e for e in parsed if e["state"] == "final"]
+
+    # sort: upcoming by date/time asc, results desc
+    key = lambda e: (e["date"], e["time_uk"])
+    upcoming.sort(key=key)
+    results.sort(key=key, reverse=True)
+
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    with OUT.open("w", encoding="utf-8") as f:
+        json.dump({"upcoming": upcoming[:10], "results": results[:12]}, f, ensure_ascii=False, indent=2)
+    print(f"wrote {OUT}: {len(upcoming)} upcoming / {len(results)} results")
+
+if __name__ == "__main__":
+    sys.exit(main())
