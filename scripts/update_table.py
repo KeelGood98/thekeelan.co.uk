@@ -1,70 +1,59 @@
 #!/usr/bin/env python3
-import json, sys, os, time
-import pandas as pd
-import requests
+import json
+import re
+from pathlib import Path
 
-URL = "https://www.bbc.co.uk/sport/football/premier-league/table"
-OUT = "assets/table.json"
+import requests
+from bs4 import BeautifulSoup
+
+OUT = Path("assets/table.json")
+BBC_TABLE_URL = "https://www.bbc.co.uk/sport/football/premier-league/table"
+
+def badge_from_name(name: str) -> str:
+    special = {
+        "Manchester United": "MU", "Manchester City": "MC", "Newcastle United": "NU",
+        "Brighton & Hove Albion": "B&A", "Brighton and Hove Albion":"B&A",
+        "AFC Bournemouth": "AB", "Nottingham Forest": "NF", "West Ham United": "WH",
+        "Tottenham Hotspur": "TH", "Crystal Palace": "CP", "Sheffield United":"SU",
+        "Wolverhampton Wanderers":"WW"
+    }
+    if name in special: return special[name]
+    parts = re.split(r"\s+|&", name.strip())
+    letters = [p[0].upper() for p in parts if p]
+    return (letters[0]+(letters[1] if len(letters)>1 else "")) or "??"
+
+def fetch_table():
+    r = requests.get(BBC_TABLE_URL, timeout=30)
+    r.raise_for_status()
+    soup = BeautifulSoup(r.text, "html.parser")
+    table = soup.find("table")
+    if not table: raise RuntimeError("BBC table not found")
+
+    body = table.find("tbody")
+    rows = body.find_all("tr") if body else table.find_all("tr")
+
+    data=[]
+    for row in rows:
+        cols = [c.get_text(strip=True) for c in row.find_all(["th","td"])]
+        if len(cols) < 10: continue
+        try: pos = int(cols[0])
+        except: continue
+        team = cols[1]
+        p,w,d,l,gf,ga,gd,pts = [int(x) for x in cols[2:10]]
+        data.append({
+            "pos":pos,"team":team,"p":p,"w":w,"d":d,"l":l,"gf":gf,"ga":ga,"gd":gd,"pts":pts,
+            "badge": badge_from_name(team)
+        })
+    data.sort(key=lambda x:x["pos"])
+    if len(data)<18: raise RuntimeError(f"Only {len(data)} rows scraped")
+    return data
 
 def main():
-    try:
-        html = requests.get(URL, timeout=20)
-        html.raise_for_status()
-        # BBC has multiple tables; pick the first with "Pos" and "Team"
-        tables = pd.read_html(html.text)
-        table = None
-        for t in tables:
-            cols = [c.lower() for c in t.columns.astype(str)]
-            if any("pos" in c for c in cols) and any("team" in c for c in cols):
-                table = t
-                break
-        if table is None:
-            raise RuntimeError("No suitable table found")
+    data=fetch_table()
+    OUT.parent.mkdir(parents=True,exist_ok=True)
+    with OUT.open("w",encoding="utf-8") as f:
+        json.dump({"league":"Premier League","rows":data}, f, ensure_ascii=False, indent=2)
+    print(f"Wrote {OUT} with {len(data)} teams")
 
-        # Normalise column names
-        colmap = {}
-        for c in table.columns:
-            lc = str(c).lower()
-            if "pos" in lc: colmap[c] = "pos"
-            elif "team" in lc: colmap[c] = "team"
-            elif lc in ("pld","p","played"): colmap[c] = "p"
-            elif lc in ("w","won"): colmap[c] = "w"
-            elif lc in ("d","drawn","draws"): colmap[c] = "d"
-            elif lc in ("l","lost"): colmap[c] = "l"
-            elif lc in ("f","gf","for"): colmap[c] = "gf"
-            elif lc in ("a","ga","against"): colmap[c] = "ga"
-            elif lc in ("gd","goal difference","goal diff"): colmap[c] = "gd"
-            elif lc in ("pts","points"): colmap[c] = "pts"
-        table = table.rename(columns=colmap)
-
-        required = ["pos","team","p","w","d","l","gf","ga","gd","pts"]
-        for r in required:
-            if r not in table.columns:
-                table[r] = ""
-
-        rows = []
-        for _, r in table.iterrows():
-            rows.append({
-                "pos": int(r["pos"]) if str(r["pos"]).isdigit() else r["pos"],
-                "team": str(r["team"]),
-                "p": int(r["p"]) if str(r["p"]).isdigit() else r["p"],
-                "w": int(r["w"]) if str(r["w"]).isdigit() else r["w"],
-                "d": int(r["d"]) if str(r["d"]).isdigit() else r["d"],
-                "l": int(r["l"]) if str(r["l"]).isdigit() else r["l"],
-                "gf": int(r["gf"]) if str(r["gf"]).isdigit() else r["gf"],
-                "ga": int(r["ga"]) if str(r["ga"]).isdigit() else r["ga"],
-                "gd": int(r["gd"]) if str(r["gd"]).replace("-","").isdigit() else r["gd"],
-                "pts": int(r["pts"]) if str(r["pts"]).isdigit() else r["pts"],
-            })
-
-        os.makedirs(os.path.dirname(OUT), exist_ok=True)
-        with open(OUT, "w", encoding="utf-8") as f:
-            json.dump(rows, f, ensure_ascii=False, indent=2)
-        print(f"wrote {OUT} ({len(rows)} rows)")
-    except Exception as e:
-        print(f"[update_table] Non-fatal: {e}")
-        # do NOT overwrite existing file on failure
-        sys.exit(0)
-
-if __name__ == "__main__":
+if __name__=="__main__":
     main()
