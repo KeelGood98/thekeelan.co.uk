@@ -1,108 +1,48 @@
-name: Update extras (weather + steam specials + F1)
+name: build
 
 on:
   schedule:
-    - cron: "*/120 * * * *"   # every 2 hours
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    - cron: "*/30 * * * *"  # every 30 mins
+  workflow_dispatch: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Build extras assets
+      # ---- TABLE stays as you already have it in your table workflow ----
+      # If you have a separate workflow for table.json, leave it there.
+
+      # ---- FIXTURES (Man United) ----
+      - name: Build assets/fixtures.json
+        run: python scripts/update_fixtures.py
+
+      # ---- F1 ----
+      - name: Build assets/f1.json
+        run: python scripts/update_f1.py
+
+      # ---- Touch update stamp (for top-right) ----
+      - name: Touch update stamp
         run: |
-          python - <<'PY'
-          import json, time, urllib.request, urllib.parse
-
-          def fetch(url, timeout=30):
-              req = urllib.request.Request(url, headers={"User-Agent":"GitHubAction/1.0"})
-              with urllib.request.urlopen(req, timeout=timeout) as r:
-                  return r.read()
-
-          # --- Weather (Leeds) via Open-Meteo ---
-          try:
-              wx_url = ("https://api.open-meteo.com/v1/forecast"
-                        "?latitude=53.8008&longitude=-1.5491"
-                        "&current=temperature_2m,is_day,weather_code,wind_speed_10m"
-                        "&daily=weather_code,temperature_2m_max,temperature_2m_min"
-                        "&timezone=Europe%2FLondon")
-              wx = json.loads(fetch(wx_url).decode("utf-8"))
-              wx["updated"] = int(time.time()*1000)
-              wx["location"] = "Leeds, UK"
-              with open("assets/weather.json","w") as f:
-                  json.dump(wx, f)
-              print("Wrote assets/weather.json")
-          except Exception as e:
-              print("Weather error:", e)
-
-          # --- Steam specials via the official featuredcategories endpoint ---
-          try:
-              sp = json.loads(fetch("https://store.steampowered.com/api/featuredcategories/?cc=GB").decode("utf-8"))
-              specials = sp.get("specials", {}).get("items", [])
-              out = {
-                "updated": int(time.time()*1000),
-                "specials": [{
-                  "name": it.get("name",""),
-                  "discount_percent": it.get("discount_percent", 0),
-                  "header_image": (it.get("header_image","") or "").replace("http://","https://"),
-                  "url": ("https://store.steampowered.com/app/%s/" % it.get("id")) if it.get("id") else None
-                } for it in specials]
-              }
-              with open("assets/steam_specials.json","w") as f:
-                  json.dump(out, f)
-              print("Wrote assets/steam_specials.json with", len(out["specials"]), "items")
-          except Exception as e:
-              print("Steam specials error:", e)
-
-          # --- F1 results for the CURRENT season via Ergast (no key) ---
-          # We'll store the last 12 finished races with podium (top 3).
-          try:
-              url = "https://ergast.com/api/f1/current/results.json?limit=1000"
-              j = json.loads(fetch(url).decode("utf-8"))
-              races = j.get("MRData",{}).get("RaceTable",{}).get("Races",[])
-              # keep only finished rounds, newest first
-              races.sort(key=lambda r: int(r.get("round","0")))
-              latest = []
-              for r in races:
-                  results = r.get("Results",[])
-                  podium = results[:3]
-                  latest.append({
-                    "round": r.get("round"),
-                    "raceName": r.get("raceName"),
-                    "country": (r.get("Circuit",{}).get("Location",{}).get("country") or ""),
-                    "date": r.get("date"),
-                    "podium": [{
-                      "pos": p.get("position"),
-                      "driver": f'{p.get("Driver",{}).get("givenName","")} {p.get("Driver",{}).get("familyName","")}'.strip(),
-                      "code": p.get("Driver",{}).get("code") or p.get("Driver",{}).get("driverId"),
-                      "constructor": p.get("Constructor",{}).get("name",""),
-                      "status": p.get("status"),
-                      "points": p.get("points")
-                    } for p in podium]
-                  })
-              latest = latest[-12:]  # last 12
-              out = {"updated": int(time.time()*1000), "races": latest}
-              with open("assets/f1.json","w") as f:
-                  json.dump(out, f)
-              print("Wrote assets/f1.json with", len(out["races"]), "races")
-          except Exception as e:
-              print("F1 error:", e)
-          PY
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/weather.json assets/steam_specials.json assets/f1.json
-          git commit -m "chore: refresh extras (weather + steam + f1) $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes"
-          git pull --rebase
-          git push
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/fixtures.json assets/f1.json assets/update_stamp.txt || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh extras $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          else
+            echo "No changes to commit."
+          fi
