@@ -1,19 +1,31 @@
 name: update-extras
+
 on:
-  schedule: [{ cron: "0 */3 * * *" }]  # every 3 hours
+  schedule:
+    - cron: "0 * * * *"   # hourly
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.11" }
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
 
       - name: Install deps
-        run: pip install requests
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
+      # your existing scripts (weather, steam, f1) – keep them as-is
       - name: Weather
         run: python scripts/update_weather.py
 
@@ -23,16 +35,14 @@ jobs:
       - name: F1 (best-effort)
         run: python scripts/update_f1.py || true
 
-      - name: Touch update stamp (same file used by both pages)
-        run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
-          cat assets/update_stamp.txt
-
       - name: Commit and push
         run: |
+          git config user.name  "github-actions[bot]"
           git config user.email "actions@github.com"
-          git config user.name "github-actions[bot]"
-          git add assets/*.json assets/update_stamp.txt
-          git commit -m "chore: refresh extras $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "no changes"
-          git pull --rebase
-          git push
+          git add assets/*.json || true
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: refresh extras $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
