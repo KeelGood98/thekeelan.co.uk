@@ -1,47 +1,57 @@
 name: update-football-data
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
   workflow_dispatch:
+  schedule:
+    # Every 3 hours
+    - cron: "0 */3 * * *"
 
 permissions:
-  contents: write   # IMPORTANT: allow commit & push
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests beautifulsoup4 lxml
 
+      # --- TABLE (hard fail if it doesn't work) ---
       - name: Build table.json (20 teams)
-        run: python scripts/update_table.py
+        run: |
+          python scripts/update_table.py
 
-      - name: Build fixtures.json
-        run: python scripts/update_fixtures.py
+      # --- FIXTURES (best effort) ---
+      # Keep your existing fixtures script. If it fails, we proceed so the table still updates.
+      - name: Build fixtures.json (best effort)
+        run: |
+          set +e
+          python scripts/update_fixtures.py
+          echo "Fixtures step exit code: $?"
+          set -e
 
+      # --- Update stamp used by both pages ---
       - name: Touch update stamp
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
+          cat assets/update_stamp.txt
 
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "actions@github.com"
-          git add assets/*.json assets/update_stamp.txt || true
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
