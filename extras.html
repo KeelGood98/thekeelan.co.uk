@@ -1,102 +1,96 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>thekeelan.co.uk — Extras</title>
   <style>
-    :root{--bg:#0f1216;--card:#171b22;--muted:#9aa4b2;--text:#e8edf2;--soft:#242a34}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font:14px/1.4 system-ui,Segoe UI,Roboto,Helvetica,Arial}
-    a{color:#9ad;text-decoration:none}
-    .wrap{max-width:1420px;margin:0 auto;padding:16px}
-    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
-    .title{font-weight:700}
-    .updated{color:var(--muted);font-size:12px}
-    nav a{margin-right:10px;color:#bcd}
+    :root{--bg:#0e141b;--panel:#121a23;--border:#1d2835;--muted:#7a8aa0;--text:#e6eef8;--accent:#42a5ff;}
+    *{box-sizing:border-box} html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:1280px;margin:0 auto;padding:16px}
+    header{display:flex;gap:12px;margin-bottom:12px}
+    header .nav a{margin-right:12px;opacity:.9}
+    header .nav a.active{font-weight:600}
+    .stamp{margin-left:auto;color:var(--muted);font-size:.9rem}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 0 0 1px #111 inset}
-    .card h3{margin:0 0 8px;font-size:16px}
-    .muted{color:var(--muted)}
-    .steam-item{display:flex;align-items:center;justify-content:space-between;padding:8px;border-bottom:1px solid var(--soft)}
-    .steam-left{display:flex;align-items:center;gap:10px}
-    .thumb{width:44px;height:22px;background:#0e131a;border-radius:4px}
-    iframe{width:100%;height:360px;border:0;border-radius:12px}
     @media (max-width:1000px){.grid{grid-template-columns:1fr}}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:12px}
+    .h{font-weight:700;margin:2px 0 8px 0;font-size:1.05rem}
+    .muted{color:var(--muted)}
+    .row{display:flex;align-items:center;gap:10px;padding:8px;border-bottom:1px solid var(--border)}
+    .row:last-child{border-bottom:none}
+    .row img{width:60px;height:30px;object-fit:cover;border-radius:6px;background:#000}
+    .btn{display:inline-flex;align-items:center;justify-content:center;height:28px;padding:0 10px;border:1px solid var(--border);border-radius:8px;background:#0d2030;color:#a7d7ff;font-size:.84rem}
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div>
-        <div class="title">thekeelan.co.uk — Extras</div>
-        <nav>
-          <a href="index.html">Football</a>
-          <a href="extras.html">Extras</a>
-        </nav>
+      <div class="nav">
+        <a href="index.html">Football</a>
+        <a class="active" href="extras.html">Extras</a>
       </div>
-      <div class="updated">Updated: <span id="last-updated">—</span></div>
+      <div class="stamp" id="updated"></div>
     </header>
 
     <div class="grid">
-      <section class="card">
-        <h3>Leeds Weather</h3>
-        <div id="wx"><div class="muted">Loading…</div></div>
-      </section>
+      <div class="card">
+        <div class="h">Leeds Weather</div>
+        <div id="weather" class="muted">Loading…</div>
+      </div>
 
-      <section class="card">
-        <h3>Steam Specials</h3>
-        <div id="steam"><div class="muted">Loading…</div></div>
-      </section>
+      <div class="card">
+        <div class="h">Steam Specials</div>
+        <div id="steam"></div>
+      </div>
     </div>
 
-    <section class="card" style="margin-top:16px">
-      <h3>My Spotify Playlist</h3>
-      <div style="margin-top:8px">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-      </div>
-    </section>
+    <div class="card" style="margin-top:16px">
+      <div class="h">My Spotify Playlist</div>
+      <!-- your playlist -->
+      <iframe style="border-radius:12px;width:100%;height:380px;border:0;"
+        src="https://open.spotify.com/embed/playlist/2Ap76LC4PX2HUyTW2VXe9u?utm_source=generator"
+        loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
   </div>
 
-<script>
-async function fetchJSON(u){try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw 0;return await r.json()}catch(e){return null}}
-async function fetchText(u){try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw 0;return await r.text()}catch(e){return null}}
+  <script>
+    async function getJSON(u){const r=await fetch(u); if(!r.ok) throw new Error(u); return r.json();}
+    async function getText(u){const r=await fetch(u); if(!r.ok) throw new Error(u); return r.text();}
 
-(async()=>{
-  const el=document.getElementById('last-updated');
-  const t=await fetchText('assets/update_stamp.txt');
-  if(el && t) el.textContent=t.trim();
-})();
+    async function weather(){
+      try{
+        const w = await getJSON('assets/weather.json'); // {location, temp_c, wind_mph}
+        document.querySelector('#weather').innerHTML =
+          `<div style="font-size:2.2rem">${Math.round(w.temp_c)}°C</div>
+           <div class="muted">Wind ${Math.round(w.wind_mph)} mph</div>`;
+      }catch(e){document.querySelector('#weather').textContent='No weather right now.';}
+    }
 
-(async()=>{
-  const wxEl=document.getElementById('wx');
-  const wx=await fetchJSON('assets/weather.json');
-  if(!wx || !wx.current){
-    wxEl.innerHTML='<div class="muted">Weather unavailable.</div>'; return;
-  }
-  wxEl.innerHTML = `
-    <div style="font-size:40px;font-weight:700">${Math.round(wx.current.temperature)}°C</div>
-    <div class="muted">Wind ${Math.round(wx.current.wind_mph)} mph</div>`;
-})();
+    async function steam(){
+      try{
+        const s = await getJSON('assets/steam_specials.json'); // [{title,discount_percent,final_price,header_image,url}]
+        const box = document.querySelector('#steam'); box.innerHTML='';
+        if(!Array.isArray(s) || s.length===0){ box.innerHTML = '<div class="muted">No specials right now.</div>'; return;}
+        s.slice(0,10).forEach(g=>{
+          box.insertAdjacentHTML('beforeend', `
+            <div class="row">
+              <img src="${g.header_image}" alt="">
+              <div style="flex:1 1 auto">
+                <div><strong>${g.title}</strong></div>
+                <div class="muted">${g.discount_percent}% — £${g.final_price}</div>
+              </div>
+              <a class="btn" href="${g.url}" target="_blank" rel="noopener">View</a>
+            </div>
+          `);
+        });
+      }catch(e){document.querySelector('#steam').innerHTML='<div class="muted">No specials right now.</div>';}
+    }
 
-(async()=>{
-  const sEl=document.getElementById('steam');
-  const data=await fetchJSON('assets/steam_specials.json');
-  if(!data || !Array.isArray(data.items) || !data.items.length){
-    sEl.innerHTML='<div class="muted">No specials right now.</div>'; return;
-  }
-  sEl.innerHTML = data.items.map(x=>`
-    <div class="steam-item">
-      <div class="steam-left">
-        <img class="thumb" src="${x.thumb||''}" alt="">
-        <div>
-          <div>${x.title||''}</div>
-          <div class="muted">${x.discount||''}</div>
-        </div>
-      </div>
-      <a target="_blank" rel="noopener" href="${x.url}">View</a>
-    </div>`).join('');
-})();
-</script>
+    function stamp(){getText('assets/update_stamp.txt').then(t=>{document.getElementById('updated').textContent='Updated: '+t.trim();}).catch(()=>{});}
+
+    stamp(); weather(); steam();
+  </script>
 </body>
 </html>
