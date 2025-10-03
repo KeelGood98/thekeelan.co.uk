@@ -7,73 +7,72 @@
   <style>
     :root{
       --bg:#0f1216;--card:#171b22;--muted:#9aa4b2;--text:#e8edf2;--soft:#242a34;
-      --green:#0a3;--red:#a22;--amber:#a80;--pill:#0f1720;
-      --win:#0f2b1a;--loss:#2b1212;--draw:#1d1f27;--accent:#1b2738;
+      --pill:#0f1720;--win:#0f2b1a;--loss:#2b1212;--draw:#1d1f27;
     }
     *{box-sizing:border-box}
     body{margin:0;background:var(--bg);color:var(--text);font:14px/1.4 system-ui,Segoe UI,Roboto,Helvetica,Arial}
-    a{color:#9ad} a:hover{opacity:.85}
+    a{color:#9ad;text-decoration:none} a:hover{opacity:.85}
     .wrap{max-width:1420px;margin:0 auto;padding:16px}
     header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
     .title{font-weight:700;letter-spacing:.2px}
     .updated{color:var(--muted);font-size:12px}
+    nav a{margin-right:10px;color:#bcd}
     .grid{display:grid;grid-template-columns:340px 1fr 480px;gap:16px}
     .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 0 0 1px #111 inset}
     .card h3{margin:0 0 8px;font-size:16px}
-    .left-img{width:100%;height:auto;border-radius:10px;display:block}
     .muted{color:var(--muted)}
     .warn{background:#261b10;border:1px solid #3a2a16;color:#ffdd9b;padding:8px 10px;border-radius:8px}
+    .left-hole{height:260px;border-radius:10px;background:#0c0f14;display:block}
 
     .table-wrap{overflow:auto}
     table{width:100%;border-collapse:collapse}
     th,td{padding:10px 8px;border-bottom:1px solid var(--soft);text-align:left;white-space:nowrap}
     thead th{font-size:12px;color:var(--muted);position:sticky;top:0;background:var(--card)}
     .tight td,.tight th{padding:8px 6px}
-    .mt{margin-top:14px}
 
-    /* EPL table */
     .badge{width:22px;height:22px;display:inline-grid;place-items:center;border-radius:50%;
       font-size:11px;background:#223041;color:#bcd;margin-right:8px;overflow:hidden}
     .badge img{width:100%;height:100%;object-fit:cover;display:block}
     .tbl-num{color:#95a2b2;font-variant-numeric:tabular-nums}
 
-    /* Competitions pill */
     .comp-pill{display:inline-block;min-width:28px;padding:3px 8px;border-radius:999px;
       background:var(--pill);color:#bcd;border:1px solid #1f2b3c;font-size:12px;text-align:center}
 
-    /* Results colouring */
     .res-win{background:var(--win)}
     .res-loss{background:var(--loss)}
     .res-draw{background:var(--draw)}
 
-    /* small screen */
     @media (max-width:1200px){ .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="title">thekeelan.co.uk — Football</div>
+      <div>
+        <div class="title">thekeelan.co.uk — Football</div>
+        <nav>
+          <a href="index.html">Football</a>
+          <a href="extras.html">Extras</a>
+        </nav>
+      </div>
       <div class="updated">Last updated: <span id="last-updated">—</span></div>
     </header>
 
     <div class="grid">
 
-      <!-- Left panel: GIF + F1 -->
+      <!-- Left: GIF placeholder + F1 -->
       <section class="card">
-        <img class="left-img" src="https://media.tenor.com/8G7a4rQmH9IAAAAC/stone-cold-stunner-vince-mcmahon.gif" alt="Left panel GIF" />
-        <div class="card mt">
+        <div class="left-hole"></div>
+        <div class="card" style="margin-top:14px">
           <h3>F1 — This Season (Results)</h3>
           <div id="f1-box"><div class="muted">No F1 results yet.</div></div>
         </div>
       </section>
 
-      <!-- Centre: Premier League Table -->
+      <!-- Middle: Table -->
       <section class="card">
         <h3>Premier League Table</h3>
-        <div id="table-root">
-          <div class="warn">Waiting for table data…</div>
-        </div>
+        <div id="table-root"><div class="warn">Waiting for table data…</div></div>
       </section>
 
       <!-- Right: Fixtures & Results -->
@@ -85,77 +84,135 @@
     </div>
   </div>
 
-  <!-- ========== DATA RENDERING ========== -->
   <script>
-  /* ---------- Helpers ---------- */
+  // ---------- helpers ----------
+  const TEAM = "Manchester United";
+  const teamLower = TEAM.toLowerCase();
   const UK_FMT = new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/London",dateStyle:"medium",timeStyle:"short"});
-  async function fetchText(u){try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw 0;return await r.text()}catch{return null}}
-  async function fetchJSON(u){try{const r=await fetch(u,{cache:"no-store"});if(!r.ok)throw 0;return await r.json()}catch{return null}}
 
-  /* ---------- Last-updated ---------- */
-  (async()=>{const el=document.getElementById("last-updated");if(!el)return;
-    const t=await fetchText("assets/update_stamp.txt"); if(t) el.textContent=t.trim();
+  async function fetchText(url){try{const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw 0;return await r.text()}catch(_){return null}}
+  async function fetchJSON(url){try{const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw 0;return await r.json()}catch(_){return null}}
+
+  // ---------- stamp ----------
+  (async()=>{
+    const el=document.getElementById("last-updated");
+    const t=await fetchText("assets/update_stamp.txt");
+    if(el && t) el.textContent=t.trim();
   })();
 
-  /* ---------- EPL Table (assets/table.json + assets/badges.json) ---------- */
+  // ---------- table ----------
   (async()=>{
     const root=document.getElementById("table-root");
     if(!root) return;
 
-    const [table,badges] = await Promise.all([
+    const [raw,badges]=await Promise.all([
       fetchJSON("assets/table.json"),
       fetchJSON("assets/badges.json")
     ]);
 
-    if(!table || !Array.isArray(table) || !table.length){
-      root.innerHTML = `<div class="warn">No or partial table data. Check /assets/table.json.</div>`;
-      return;
-    }
+    // tolerate many shapes
+    let list=[];
+    if(Array.isArray(raw)) list=raw;
+    else if(raw && Array.isArray(raw.table)) list=raw.table;
+    else if(raw && Array.isArray(raw.standings)) list=raw.standings;
+    else if(raw && Array.isArray(raw.rows)) list=raw.rows;
+    else if(raw && raw.data && Array.isArray(raw.data)) list=raw.data;
 
-    const badgeFor = (team) => {
-      const b = badges && (badges[team] || badges[team?.replace(/&/g,'&amp;')] );
-      if (b && b.url) return `<span class="badge"><img src="${b.url}" alt=""></span>`;
-      const code = (b && b.code) ? b.code : (team || "").split(" ").map(s=>s[0]).join("").slice(0,2).toUpperCase();
+    if(!list.length){ root.innerHTML=`<div class="warn">No or partial table data. Check /assets/table.json.</div>`; return; }
+
+    const norm=(r,i)=>({
+      pos: r.pos ?? r.rank ?? r.position ?? (i+1),
+      team: r.team ?? r.team_name ?? r.club ?? r.name ?? "",
+      p: r.p ?? r.played ?? r.P ?? r.games ?? r.matches ?? "",
+      w: r.w ?? r.won ?? r.W ?? "",
+      d: r.d ?? r.draw ?? r.drawn ?? r.D ?? "",
+      l: r.l ?? r.lost ?? r.L ?? "",
+      gf: r.gf ?? r.goals_for ?? r.F ?? "",
+      ga: r.ga ?? r.goals_against ?? r.A ?? "",
+      gd: (r.gd ?? r.goal_diff ?? r.GD ?? ( (r.gf!=null && r.ga!=null) ? (r.gf-r.ga) : "" )),
+      pts: r.pts ?? r.points ?? r.Pts ?? r.PTS ?? ""
+    });
+
+    const rows=list.map(norm);
+
+    const badgeFor=(team)=>{
+      const b = badges && (badges[team] || badges[team?.replace(/&/g,"&amp;")]);
+      if(b && b.url) return `<span class="badge"><img src="${b.url}" alt=""></span>`;
+      const code=(b && b.code)?b.code:(team||"").split(" ").map(s=>s[0]).join("").slice(0,2).toUpperCase();
       return `<span class="badge">${code}</span>`;
     };
 
-    const rows = table.map((t,idx)=>`
-      <tr>
-        <td class="tbl-num">${t.pos ?? (idx+1)}</td>
-        <td>${badgeFor(t.team)}${t.team ?? ""}</td>
-        <td class="tbl-num">${t.p ?? t.played ?? ""}</td>
-        <td class="tbl-num">${t.w ?? t.won ?? ""}</td>
-        <td class="tbl-num">${t.d ?? t.drawn ?? ""}</td>
-        <td class="tbl-num">${t.l ?? t.lost ?? ""}</td>
-        <td class="tbl-num">${t.gf ?? ""}</td>
-        <td class="tbl-num">${t.ga ?? ""}</td>
-        <td class="tbl-num">${t.gd ?? ""}</td>
-        <td class="tbl-num">${t.pts ?? t.points ?? ""}</td>
-      </tr>`).join("");
-
-    root.innerHTML = `
+    root.innerHTML=`
       <div class="table-wrap">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
-            </tr>
-          </thead>
-          <tbody>${rows}</tbody>
+        <table>
+          <thead><tr>
+            <th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th><th>Pts</th>
+          </tr></thead>
+          <tbody>
+            ${rows.map((t,i)=>`
+              <tr>
+                <td class="tbl-num">${t.pos ?? (i+1)}</td>
+                <td>${badgeFor(t.team)}${t.team}</td>
+                <td class="tbl-num">${t.p}</td>
+                <td class="tbl-num">${t.w}</td>
+                <td class="tbl-num">${t.d}</td>
+                <td class="tbl-num">${t.l}</td>
+                <td class="tbl-num">${t.gf}</td>
+                <td class="tbl-num">${t.ga}</td>
+                <td class="tbl-num">${t.gd}</td>
+                <td class="tbl-num">${t.pts}</td>
+              </tr>`).join("")}
+          </tbody>
         </table>
       </div>`;
   })();
 
-  /* ---------- Fixtures & Results (assets/fixtures.json) ---------- */
-  (function(){
-    const root = document.getElementById("fixtures-root");
+  // ---------- fixtures ----------
+  (async()=>{
+    const root=document.getElementById("fixtures-root");
     if(!root) return;
 
-    const pill = (code,title)=>`<span class="comp-pill" title="${(title||code).replace(/"/g,"&quot;")}">${code}</span>`;
-    const tvLinks = (hl)=> {
-      const bits=[]; if(hl && hl.sky) bits.push(`<a href="${hl.sky}" target="_blank" rel="noopener">Sky</a>`);
-      if(hl && hl.yt) bits.push(`<a href="${hl.yt}" target="_blank" rel="noopener">YT</a>`); return bits.join(" ");
-    };
+    const pill=(code,title)=>`<span class="comp-pill" title="${(title||code).replace(/"/g,"&quot;")}">${code}</span>`;
+    const tvLinks=(hl)=>{const a=[]; if(hl&&hl.sky)a.push(`<a href="${hl.sky}" target="_blank" rel="noopener">Sky</a>`); if(hl&&hl.yt)a.push(`<a href="${hl.yt}" target="_blank" rel="noopener">YT</a>`); return a.join(" ")};
+
+    const data=await fetchJSON("assets/fixtures.json");
+    if(!data){ root.innerHTML=`<div class="warn">Couldn't load fixtures right now.</div>`; return; }
+
+    // flatten to array
+    let matches=[];
+    if(Array.isArray(data)) matches=data;
+    else if(Array.isArray(data.matches)) matches=data.matches;
+    else {
+      const up=Array.isArray(data.upcoming)?data.upcoming:[];
+      const rs=Array.isArray(data.results)?data.results:[];
+      matches=[...up,...rs];
+    }
+
+    // normalise
+    matches = matches.map(m=>({
+      date_uk: m.date_uk || m.date || "—",
+      time_uk: m.time_uk || m.time || "—",
+      comp: m.comp || "—",
+      comp_code: m.comp_code || (m.comp?.split(" ").map(s=>s[0]).join("").toUpperCase()) || "—",
+      home: m.home || "—",
+      away: m.away || "—",
+      tv: m.tv || "TBD",
+      highlights: m.highlights || {sky:null,yt:null},
+      score: (m.score && typeof m.score==="object") ? m.score :
+             (typeof m.intHomeScore!=="undefined" && typeof m.intAwayScore!=="undefined")
+               ? {home:m.intHomeScore, away:m.intAwayScore, outcome:m.outcome||""}
+               : null
+    }));
+
+    // ✨ HARD FILTER: Manchester United only
+    matches = matches.filter(m =>
+      (m.home||"").toLowerCase().includes(teamLower) ||
+      (m.away||"").toLowerCase().includes(teamLower)
+    );
+
+    const upcoming = matches.filter(m=>!m.score);
+    const results  = matches.filter(m=>m.score);
 
     const rowUpcoming = (m)=>`
       <tr>
@@ -167,99 +224,58 @@
 
     const rowResult = (m)=>{
       const sc=m.score||{};
-      const haveNums = Number.isFinite(Number(sc.home)) && Number.isFinite(Number(sc.away));
-      const scoreTxt = haveNums ? `${sc.home}–${sc.away}` : "—";
-      const klass = sc.outcome==="W" ? "res-win" : sc.outcome==="L" ? "res-loss" : sc.outcome==="D" ? "res-draw" : "";
-      return `
-        <tr class="${klass}">
-          <td>${m.date_uk}</td>
-          <td>${pill(m.comp_code,m.comp)}</td>
-          <td>${m.home}</td><td>vs</td><td>${m.away}</td>
-          <td>${scoreTxt}</td>
-          <td>${tvLinks(m.highlights)}</td>
-        </tr>`;
+      const hn=Number(sc.home), an=Number(sc.away);
+      const haveNums = Number.isFinite(hn) && Number.isFinite(an);
+      const scoreTxt = haveNums ? `${hn}–${an}` : "—";
+      const out = sc.outcome || (haveNums ? (hn>an?"W":hn<an?"L":"D") : "");
+      const k = out==="W"?"res-win":out==="L"?"res-loss":out==="D"?"res-draw":"";
+      return `<tr class="${k}">
+        <td>${m.date_uk}</td><td>${pill(m.comp_code,m.comp)}</td>
+        <td>${m.home}</td><td>vs</td><td>${m.away}</td>
+        <td>${scoreTxt}</td><td>${tvLinks(m.highlights)}</td>
+      </tr>`;
     };
 
-    (async()=>{
-      const data = await fetchJSON("assets/fixtures.json");
-      if(!data){ root.innerHTML = `<div class="warn">Couldn't load fixtures right now.</div>`; return; }
-
-      let matches=[];
-      if(Array.isArray(data)) matches=data;
-      else if(Array.isArray(data.matches)) matches=data.matches;
-      else {
-        const up=Array.isArray(data.upcoming)?data.upcoming:[];
-        const rs=Array.isArray(data.results)?data.results:[];
-        matches=[...up,...rs];
-      }
-      if(!matches.length){ root.innerHTML = `<div class="warn">No fixtures data.</div>`; return; }
-
-      matches = matches.map(m=>({
-        date_uk: m.date_uk || m.date || "—",
-        time_uk: m.time_uk || m.time || "—",
-        comp: m.comp || "—",
-        comp_code: m.comp_code || "—",
-        home: m.home || "—",
-        away: m.away || "—",
-        tv: m.tv || "TBD",
-        highlights: m.highlights || {sky:null,yt:null},
-        utc: m.utc || null,
-        score: (m.score && typeof m.score==="object") ? m.score :
-               (typeof m.intHomeScore!=="undefined" && typeof m.intAwayScore!=="undefined")
-                 ? {home:m.intHomeScore, away:m.intAwayScore, outcome:m.outcome||""}
-                 : null
-      }));
-
-      const upcoming = matches.filter(m=>!m.score);
-      const results  = matches.filter(m=>m.score);
-
-      root.innerHTML = `
-        <div class="card">
-          <h3>Upcoming</h3>
-          <div class="table-wrap">
-            <table class="table">
-              <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
-              <tbody>${
-                upcoming.length ? upcoming.map(rowUpcoming).join("")
-                                : `<tr><td colspan="7">No upcoming fixtures.</td></tr>`}
-              </tbody>
-            </table>
-          </div>
+    root.innerHTML=`
+      <div class="card">
+        <h3>Upcoming</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date (UK)</th><th>Time (UK)</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>TV</th></tr></thead>
+            <tbody>${upcoming.length?upcoming.map(rowUpcoming).join(""):`<tr><td colspan="7">No upcoming fixtures.</td></tr>`}</tbody>
+          </table>
         </div>
-        <div class="card mt">
-          <h3>Recent Results</h3>
-          <div class="table-wrap">
-            <table class="table">
-              <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
-              <tbody>${
-                results.length ? results.slice().reverse().map(rowResult).join("")
-                               : `<tr><td colspan="7">No results yet.</td></tr>`}
-              </tbody>
-            </table>
-          </div>
-        </div>`;
-    })();
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Recent Results</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Date</th><th>Comp</th><th>Home</th><th></th><th>Away</th><th>Score</th><th>Highlights</th></tr></thead>
+            <tbody>${results.length?results.slice().reverse().map(rowResult).join(""):`<tr><td colspan="7">No results yet.</td></tr>`}</tbody>
+          </table>
+        </div>
+      </div>`;
   })();
 
-  /* ---------- F1 (assets/f1.json) ---------- */
+  // ---------- F1 ----------
   (async()=>{
     const box=document.getElementById("f1-box"); if(!box) return;
     const data=await fetchJSON("assets/f1.json");
     if(!data || !Array.isArray(data.races) || !data.races.length){
       box.innerHTML=`<div class="muted">No F1 results yet.</div>`; return;
     }
-    const rows = data.races.map(r=>{
+    const rows=data.races.map(r=>{
       const top3=(r.top3||[]).map(t=>`${t.pos}. ${t.name} (${t.team})`).join("<br>");
-      const when=r.date_utc?new Date(r.date_utc):null;
+      const when=r.date_uk||r.date||r.date_utc||"";
       return `<tr>
         <td>${r.round||""}</td>
         <td>${r.race||""}${r.country?`, ${r.country}`:""}</td>
-        <td>${when?UK_FMT.format(when):""}</td>
+        <td>${when}</td>
         <td>${top3||""}</td>
       </tr>`;
     }).join("");
     box.innerHTML=`<div class="table-wrap">
-      <table class="table tight">
+      <table class="tight">
         <thead><tr><th>Rd</th><th>Race</th><th>Date (UK)</th><th>Top 3</th></tr></thead>
         <tbody>${rows}</tbody>
       </table></div>`;
