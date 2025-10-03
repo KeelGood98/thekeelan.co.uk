@@ -1,88 +1,130 @@
 #!/usr/bin/env python3
 """
-Builds assets/table.json from ESPN's public standings API (Premier League).
+Build assets/table.json with the current Premier League table.
 
-No HTML scraping; stable JSON.
+We fetch data from the Premier League public API instead of scraping
+Wikipedia/Skysports (which change markup often).
+
+Output schema (list of 20 dicts):
+[
+  {
+    "pos": 1, "team": "Liverpool", "P": 6, "W": 5, "D": 0, "L": 1,
+    "GF": 12, "GA": 7, "GD": 5, "Pts": 15
+  },
+  ...
+]
+
+This matches what index.html expects.
 """
 
 import json
-import pathlib
+import os
 import sys
-import time
-import urllib.request
+from pathlib import Path
+from typing import Dict, Any, List
 
-OUT = pathlib.Path("assets/table.json")
-ESPN_STANDINGS = (
-    "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
-    "?region=gb&lang=en&sort=rank:asc"
-)
+import requests
 
-# Map ESPN stat abbreviations to our keys
-STAT_MAP = {
-    "GP": "P",   # games played
-    "W":  "W",
-    "D":  "D",
-    "L":  "L",
-    "GF": "GF",
-    "GA": "GA",
-    "GD": "GD",
-    "P":  "Pts",
+
+API = "https://footballapi.pulselive.com/football"
+HEADERS = {
+    # These headers are required by the PL API when called from non-browser envs
+    "Origin": "https://www.premierleague.com",
+    "Referer": "https://www.premierleague.com/",
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": "application/json",
 }
 
-def fetch_json(url):
-    with urllib.request.urlopen(url, timeout=30) as r:
-        return json.load(r)
 
-def entries_to_rows(entries):
+def get_current_comp_season_id() -> int:
+    """
+    Look up the current Premier League competition season id.
+    Competition id for PL is 1.
+
+    API: /competitions/{compId}/compseasons
+    """
+    url = f"{API}/competitions/1/compseasons"
+    r = requests.get(url, headers=HEADERS, timeout=20)
+    r.raise_for_status()
+    seasons = r.json()  # list of {id, label, year, current, ...}
+
+    # Prefer the one flagged 'current', otherwise the latest by id
+    current = [s for s in seasons if s.get("current")]
+    if current:
+        return int(current[0]["id"])
+
+    seasons_sorted = sorted(seasons, key=lambda s: int(s["id"]), reverse=True)
+    return int(seasons_sorted[0]["id"])
+
+
+def fetch_table(comp_season_id: int) -> List[Dict[str, Any]]:
+    """
+    API: /standings?compSeasons={id}&altIds=true&detail=2
+    """
+    params = {
+        "compSeasons": comp_season_id,
+        "altIds": "true",
+        "detail": "2",
+        "page": 0,
+        "pageSize": 50,
+    }
+    url = f"{API}/standings"
+    r = requests.get(url, headers=HEADERS, params=params, timeout=30)
+    r.raise_for_status()
+    data = r.json()
+
+    # The table is usually in standings[0]['table']
+    try:
+        table = data["standings"][0]["table"]
+    except (KeyError, IndexError) as e:
+        raise RuntimeError(f"Unexpected standings JSON shape: {e}")
+
     rows = []
-    for e in entries:
-        team = e["team"]["displayName"]
-        rank = int(e["stats"][0]["value"]) if e["stats"] and e["stats"][0]["name"].lower() == "rank" else None
-
-        # Build dict of stats by abbreviation
-        stats_by_abbr = {}
-        for s in e.get("stats", []):
-            abbr = s.get("abbreviation")
-            if abbr: stats_by_abbr[abbr] = s.get("value")
-
-        row = {
-            "#": rank,
-            "Team": team,
-            "P":  stats_by_abbr.get("GP", 0),
-            "W":  stats_by_abbr.get("W", 0),
-            "D":  stats_by_abbr.get("D", 0),
-            "L":  stats_by_abbr.get("L", 0),
-            "GF": stats_by_abbr.get("GF", 0),
-            "GA": stats_by_abbr.get("GA", 0),
-            "GD": stats_by_abbr.get("GD", 0),
-            "Pts": stats_by_abbr.get("P", 0),
-        }
-        rows.append(row)
-
-    # sanity
-    rows = [r for r in rows if r["#"] is not None]
-    rows.sort(key=lambda r: r["#"])
+    for row in table:
+        # overall record
+        overall = row["overall"]
+        team = row["team"]["name"]
+        rows.append(
+            {
+                "pos": row["position"],
+                "team": team,
+                "P": overall["played"],
+                "W": overall["won"],
+                "D": overall["drawn"],
+                "L": overall["lost"],
+                "GF": overall["goalsFor"],
+                "GA": overall["goalsAgainst"],
+                "GD": overall["goalDifference"],
+                "Pts": overall["points"],
+            }
+        )
     if len(rows) < 18:
         raise RuntimeError(f"Only {len(rows)} rows scraped")
     return rows
 
-def main():
-    data = fetch_json(ESPN_STANDINGS)
-    # children[0] → the league (there is usually one child)
-    entries = (
-        data.get("children", [{}])[0]
-        .get("standings", {})
-        .get("entries", [])
-    )
-    rows = entries_to_rows(entries)
 
-    OUT.parent.mkdir(parents=True, exist_ok=True)
-    with OUT.open("w", encoding="utf-8") as f:
+def write_json(rows: List[Dict[str, Any]], out_path: Path) -> None:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
+    print(f"Wrote {out_path} ({len(rows)} teams)")
 
-    # touch a simple update stamp used in your header
-    pathlib.Path("assets/update_stamp.txt").write_text(time.strftime("%Y-%m-%dT%H:%M:%SZ"), encoding="utf-8")
-    print(f"wrote {OUT} with {len(rows)} rows")
+
+def main() -> None:
+    repo = Path(__file__).resolve().parents[1]
+    out_path = repo / "assets" / "table.json"
+
+    comp_season_id = get_current_comp_season_id()
+    rows = fetch_table(comp_season_id)
+    write_json(rows, out_path)
+
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        main()
+    except Exception as e:
+        print(f"ERROR: {e}", file=sys.stderr)
+        sys.exit(1)
