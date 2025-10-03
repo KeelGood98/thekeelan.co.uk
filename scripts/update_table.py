@@ -1,85 +1,83 @@
-#!/usr/bin/env python3
-import json, sys, time, urllib.request
+# scripts/update_table.py
+import json, time, urllib.request, urllib.parse, os, sys
+from datetime import datetime
 
-ESPN_STANDINGS = "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings?region=gb"
+ASSETS_DIR = "assets"
+LEAGUE_ID = "4328"  # TheSportsDB: English Premier League
 
 def fetch(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    req = urllib.request.Request(url, headers={"User-Agent":"GHAction/1.0"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read().decode("utf-8"))
+        return r.read()
 
-def stat_map(stats):
-    m = {}
-    for s in stats or []:
-        name = s.get("name")
-        val = s.get("value")
-        if val is None:
-            dv = s.get("displayValue")
-            try:
-                val = int(str(dv).replace("–","-"))
-            except Exception:
-                val = dv
-        m[name] = val
-    return m
+def norm(s: str) -> str:
+    return (s or "").lower().replace("&","and").replace("’","'") \
+            .replace("–","-").replace("—","-") \
+            .encode("ascii","ignore").decode() \
+            .replace(" ", "").replace("-", "").replace(".", "")
 
 def main():
-    data = fetch(ESPN_STANDINGS)
+    os.makedirs(ASSETS_DIR, exist_ok=True)
 
-    # ESPN nests things; entries live under children[0].standings.entries in practice
-    children = data.get("children") or []
-    if not children:
-        print("ERROR: ESPN payload unexpected (no children)", file=sys.stderr)
-        sys.exit(1)
+    # --- season string like 2025-2026
+    now = datetime.utcnow()
+    start = now.year if now.month >= 7 else now.year - 1
+    season = f"{start}-{start+1}"
 
-    node = children[0]
-    standings = node.get("standings", {})
-    entries = standings.get("entries") or []
+    # --- TABLE
+    table_url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={urllib.parse.quote(season)}"
+    try:
+        data = json.loads(fetch(table_url).decode("utf-8"))
+    except Exception as e:
+        print("ERROR fetching table:", e, file=sys.stderr)
+        data = {}
 
     rows = []
-    for e in entries:
-        team = e.get("team", {})
-        name = team.get("displayName") or team.get("name") or ""
-        logos = team.get("logos") or []
-        logo = (logos[0].get("href") if logos else None) or ""
-
-        sm = stat_map(e.get("stats"))
-        # common keys in ESPN soccer standings
-        pos = sm.get("rank") or e.get("rank") or None
-        played = sm.get("gamesPlayed") or sm.get("GP")
-        won = sm.get("wins") or sm.get("W")
-        drawn = sm.get("ties") or sm.get("draws") or sm.get("D")
-        lost = sm.get("losses") or sm.get("L")
-        gf = sm.get("pointsFor") or sm.get("goalsFor")
-        ga = sm.get("pointsAgainst") or sm.get("goalsAgainst")
-        gd = sm.get("pointDifferential") or sm.get("goalDifferential") or sm.get("GD")
-        pts = sm.get("points") or sm.get("P")
-
-        row = {
-            "pos": int(pos) if pos not in (None, "") else None,
-            "team": name,
-            "played": int(played or 0),
-            "won": int(won or 0),
-            "drawn": int(drawn or 0),
-            "lost": int(lost or 0),
-            "gf": int(gf or 0),
-            "ga": int(ga or 0),
-            "gd": int(gd or 0),
-            "pts": int(pts or 0),
-            "logo": logo,
-        }
-        rows.append(row)
-
-    rows = [r for r in rows if r["team"]]
+    for t in (data.get("table") or []):
+        # intRank may be string -> cast safely
+        def _int(k): 
+            try: return int(t.get(k) or 0)
+            except: return 0
+        rows.append({
+            "pos": _int("intRank"),
+            "team": t.get("strTeam") or "",
+            "played": _int("intPlayed"),
+            "won": _int("intWin"),
+            "drawn": _int("intDraw"),
+            "lost": _int("intLoss"),
+            "gf": _int("intGoalsFor"),
+            "ga": _int("intGoalsAgainst"),
+            "gd": _int("intGoalDifference"),
+            "pts": _int("intPoints"),
+        })
     rows.sort(key=lambda r: r["pos"] or 999)
 
-    out = {
-        "source": "ESPN",
+    table_out = {
+        "season": season,
+        "source": "TheSportsDB",
         "updated": int(time.time() * 1000),
-        "standings": rows,
+        "standings": rows
     }
-    with open("assets/table.json", "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False)
-    print(f"Wrote assets/table.json with {len(rows)} rows")
+    with open(os.path.join(ASSETS_DIR, "table.json"), "w", encoding="utf-8") as f:
+        json.dump(table_out, f)
+    print("Wrote assets/table.json with", len(rows), "rows for", season)
+
+    # --- BADGES (league teams → badge urls)
+    badge_map = {}
+    try:
+        teams_url = f"https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id={LEAGUE_ID}"
+        teams = json.loads(fetch(teams_url).decode("utf-8")).get("teams") or []
+        for tm in teams:
+            name = tm.get("strTeam") or ""
+            badge = tm.get("strTeamBadge") or ""
+            # normalize to your JS keying (lowercase + strip non-alnum + &→and)
+            badge_map[norm(name)] = (badge or "").replace("http://","https://")
+    except Exception as e:
+        print("ERROR building badges:", e, file=sys.stderr)
+
+    with open(os.path.join(ASSETS_DIR, "badges.json"), "w", encoding="utf-8") as f:
+        json.dump({"badges": badge_map, "updated": int(time.time()*1000)}, f)
+    print("Wrote assets/badges.json with", len(badge_map), "entries")
 
 if __name__ == "__main__":
     main()
