@@ -1,95 +1,76 @@
 #!/usr/bin/env python3
-import json, sys, os, re
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
+from dateutil import parser as dtparse
+import pytz
 
-TEAM = "Manchester United"
-BASE = "https://www.bbc.co.uk/sport/football/teams/manchester-united/scores-fixtures"
-OUT = "assets/fixtures.json"
+OUT = Path("assets/fixtures.json")
+BBC_TEAM_URL = "https://www.bbc.co.uk/sport/football/teams/manchester-united/scores-fixtures"
+TZ_UK = pytz.timezone("Europe/London")
 
-# months to try for a typical season (Aug–May)
-MONTHS = ["08","09","10","11","12","01","02","03","04","05"]
+COMP_MAP = {
+    "Premier League":"EPL","English Premier League":"EPL","UEFA Champions League":"UCL",
+    "FA Cup":"FAC","EFL Cup":"EFL","Carabao Cup":"EFL","Community Shield":"CS",
+    "Friendly":"CF","Club Friendlies":"CF"
+}
+def comp_tag(name:str)->str:
+    for k,v in COMP_MAP.items():
+        if k.lower() in name.lower(): return v
+    return "".join(p[0] for p in name.split()[:3]).upper()
 
-def year_span():
-    today = datetime.utcnow()
-    y = today.year
-    # season crosses new year: Aug->Dec (year-0), Jan->May (year+1)
-    return [(y if m in ["08","09","10","11","12"] else y+1, m) for m in MONTHS]
+def fetch():
+    r=requests.get(BBC_TEAM_URL,timeout=30); r.raise_for_status()
+    soup=BeautifulSoup(r.text,"html.parser")
+    cards=soup.select("[data-event-id]")
+    up,res=[],[]
+    now=datetime.now(tz=TZ_UK)
 
-def fetch_month(y, m):
-    url = f"{BASE}/{y}-{m}"
-    r = requests.get(url, timeout=20)
-    r.raise_for_status()
-    return r.text
+    for card in cards:
+        ko=card.get("data-kickoff")
+        ko_dt=None
+        if ko:
+            try:
+                ko_dt=dtparse.parse(ko)
+                ko_dt=ko_dt.replace(tzinfo=timezone.utc).astimezone(TZ_UK) if ko_dt.tzinfo is None else ko_dt.astimezone(TZ_UK)
+            except: pass
 
-def parse_month(html):
-    soup = BeautifulSoup(html, "lxml")
-    blocks = soup.select("[data-event-id]")  # each fixture block
-    matches = []
-    for b in blocks:
-        try:
-            # date at section heading up the tree
-            date_header = b.find_previous("h3")
-            date_txt = date_header.get_text(strip=True) if date_header else ""
-            # teams
-            home = b.select_one(".sp-c-fixture__team--home .sp-c-fixture__team-name-trunc").get_text(strip=True)
-            away = b.select_one(".sp-c-fixture__team--away .sp-c-fixture__team-name-trunc").get_text(strip=True)
-            comp = b.select_one(".sp-c-fixture__competition").get_text(strip=True) if b.select_one(".sp-c-fixture__competition") else "English Premier League"
-            time_el = b.select_one(".sp-c-fixture__number--time, .sp-c-fixture__status .qa-status-description")
-            time_txt = time_el.get_text(strip=True) if time_el else "TBD"
+        teams=card.select(".sp-c-fixture__team-name,.qa-full-team-name")
+        if len(teams)>=2:
+            home=teams[0].get_text(strip=True); away=teams[1].get_text(strip=True)
+        else:
+            names=[t.get_text(strip=True) for t in card.select("[class*='team-name']")]
+            home=names[0] if names else "TBC"; away=names[1] if len(names)>1 else "TBC"
 
-            # score if finished
-            h_sc = b.select_one(".sp-c-fixture__number--home")
-            a_sc = b.select_one(".sp-c-fixture__number--away")
-            score = None
-            if h_sc and a_sc:
-                hs = h_sc.get_text(strip=True)
-                as_ = a_sc.get_text(strip=True)
-                if hs.isdigit() and as_.isdigit():
-                    hs, as_ = int(hs), int(as_)
-                    outcome = "W" if ((TEAM.lower() == home.lower() and hs>as_) or (TEAM.lower()==away.lower() and as_>hs)) else ("L" if ((TEAM.lower()==home.lower() and hs<as_) or (TEAM.lower()==away.lower() and as_<hs)) else "D")
-                    score = {"home":hs,"away":as_,"outcome":outcome}
+        comp_el = card.select_one(".sp-c-fixture__competition, .sp-c-fixture__block, .gel-minion")
+        comp_name = comp_el.get_text(strip=True) if comp_el else "Premier League"
+        comp = comp_tag(comp_name)
 
-            matches.append({
-                "date_uk": date_txt,
-                "time_uk": time_txt if ":" in time_txt else "15:00" if time_txt.lower()=="tbd" else time_txt,
-                "comp": comp,
-                "comp_code": "".join(w[0] for w in comp.split() if w)[:3].upper(),
-                "home": home,
-                "away": away,
-                "tv": "TBD",
-                "highlights": {},
-                "score": score
-            })
-        except Exception:
-            continue
-    return matches
+        # score
+        nums = [n.get_text(strip=True) for n in card.select(".sp-c-fixture__number")]
+        score = f"{nums[0]}–{nums[1]}" if len(nums)>=2 and nums[0].isdigit() and nums[1].isdigit() else ""
+
+        item = {
+            "date": ko_dt.isoformat() if ko_dt else "",
+            "time_uk": ko_dt.strftime("%H:%M") if ko_dt else "",
+            "comp": comp, "comp_full": comp_name,
+            "home": home, "away": away, "tv":"TBD"
+        }
+
+        if ko_dt and ko_dt>now:
+            up.append(item)
+        else:
+            res.append({**item, "score": score or "—", "result": ""})
+
+    up.sort(key=lambda x:x["date"]); res.sort(key=lambda x:x["date"], reverse=True)
+    return {"team":"Manchester United","upcoming":up[:12],"results":res[:20]}
 
 def main():
-    all_matches = []
-    try:
-        for y, m in year_span():
-            try:
-                html = fetch_month(y, m)
-                all_matches.extend(parse_month(html))
-            except Exception:
-                continue
+    data=fetch(); OUT.parent.mkdir(parents=True,exist_ok=True)
+    with OUT.open("w",encoding="utf-8") as f: json.dump(data,f,ensure_ascii=False,indent=2)
+    print(f"Wrote {OUT}: {len(data['upcoming'])} upcoming, {len(data['results'])} results")
 
-        # filter keep only fixtures that involve Manchester United
-        mu = [m for m in all_matches if TEAM.lower() in (m["home"].lower()+" "+m["away"].lower())]
-
-        upcoming = [m for m in mu if not m["score"]]
-        results  = [m for m in mu if m["score"]]
-
-        payload = {"upcoming": upcoming, "results": results}
-        os.makedirs(os.path.dirname(OUT), exist_ok=True)
-        with open(OUT, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        print(f"wrote {OUT}: {len(upcoming)} upcoming, {len(results)} results")
-    except Exception as e:
-        print(f"[update_fixtures] Non-fatal: {e}")
-        sys.exit(0)
-
-if __name__ == "__main__":
-    main()
+if __name__=="__main__": main()
