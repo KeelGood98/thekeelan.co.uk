@@ -1,83 +1,70 @@
-# scripts/update_table.py
-import json, time, urllib.request, urllib.parse, os, sys
-from datetime import datetime
+#!/usr/bin/env python3
+import json, sys, os, time
+import pandas as pd
+import requests
 
-ASSETS_DIR = "assets"
-LEAGUE_ID = "4328"  # TheSportsDB: English Premier League
-
-def fetch(url, timeout=30):
-    req = urllib.request.Request(url, headers={"User-Agent":"GHAction/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
-
-def norm(s: str) -> str:
-    return (s or "").lower().replace("&","and").replace("’","'") \
-            .replace("–","-").replace("—","-") \
-            .encode("ascii","ignore").decode() \
-            .replace(" ", "").replace("-", "").replace(".", "")
+URL = "https://www.bbc.co.uk/sport/football/premier-league/table"
+OUT = "assets/table.json"
 
 def main():
-    os.makedirs(ASSETS_DIR, exist_ok=True)
-
-    # --- season string like 2025-2026
-    now = datetime.utcnow()
-    start = now.year if now.month >= 7 else now.year - 1
-    season = f"{start}-{start+1}"
-
-    # --- TABLE
-    table_url = f"https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l={LEAGUE_ID}&s={urllib.parse.quote(season)}"
     try:
-        data = json.loads(fetch(table_url).decode("utf-8"))
+        html = requests.get(URL, timeout=20)
+        html.raise_for_status()
+        # BBC has multiple tables; pick the first with "Pos" and "Team"
+        tables = pd.read_html(html.text)
+        table = None
+        for t in tables:
+            cols = [c.lower() for c in t.columns.astype(str)]
+            if any("pos" in c for c in cols) and any("team" in c for c in cols):
+                table = t
+                break
+        if table is None:
+            raise RuntimeError("No suitable table found")
+
+        # Normalise column names
+        colmap = {}
+        for c in table.columns:
+            lc = str(c).lower()
+            if "pos" in lc: colmap[c] = "pos"
+            elif "team" in lc: colmap[c] = "team"
+            elif lc in ("pld","p","played"): colmap[c] = "p"
+            elif lc in ("w","won"): colmap[c] = "w"
+            elif lc in ("d","drawn","draws"): colmap[c] = "d"
+            elif lc in ("l","lost"): colmap[c] = "l"
+            elif lc in ("f","gf","for"): colmap[c] = "gf"
+            elif lc in ("a","ga","against"): colmap[c] = "ga"
+            elif lc in ("gd","goal difference","goal diff"): colmap[c] = "gd"
+            elif lc in ("pts","points"): colmap[c] = "pts"
+        table = table.rename(columns=colmap)
+
+        required = ["pos","team","p","w","d","l","gf","ga","gd","pts"]
+        for r in required:
+            if r not in table.columns:
+                table[r] = ""
+
+        rows = []
+        for _, r in table.iterrows():
+            rows.append({
+                "pos": int(r["pos"]) if str(r["pos"]).isdigit() else r["pos"],
+                "team": str(r["team"]),
+                "p": int(r["p"]) if str(r["p"]).isdigit() else r["p"],
+                "w": int(r["w"]) if str(r["w"]).isdigit() else r["w"],
+                "d": int(r["d"]) if str(r["d"]).isdigit() else r["d"],
+                "l": int(r["l"]) if str(r["l"]).isdigit() else r["l"],
+                "gf": int(r["gf"]) if str(r["gf"]).isdigit() else r["gf"],
+                "ga": int(r["ga"]) if str(r["ga"]).isdigit() else r["ga"],
+                "gd": int(r["gd"]) if str(r["gd"]).replace("-","").isdigit() else r["gd"],
+                "pts": int(r["pts"]) if str(r["pts"]).isdigit() else r["pts"],
+            })
+
+        os.makedirs(os.path.dirname(OUT), exist_ok=True)
+        with open(OUT, "w", encoding="utf-8") as f:
+            json.dump(rows, f, ensure_ascii=False, indent=2)
+        print(f"wrote {OUT} ({len(rows)} rows)")
     except Exception as e:
-        print("ERROR fetching table:", e, file=sys.stderr)
-        data = {}
-
-    rows = []
-    for t in (data.get("table") or []):
-        # intRank may be string -> cast safely
-        def _int(k): 
-            try: return int(t.get(k) or 0)
-            except: return 0
-        rows.append({
-            "pos": _int("intRank"),
-            "team": t.get("strTeam") or "",
-            "played": _int("intPlayed"),
-            "won": _int("intWin"),
-            "drawn": _int("intDraw"),
-            "lost": _int("intLoss"),
-            "gf": _int("intGoalsFor"),
-            "ga": _int("intGoalsAgainst"),
-            "gd": _int("intGoalDifference"),
-            "pts": _int("intPoints"),
-        })
-    rows.sort(key=lambda r: r["pos"] or 999)
-
-    table_out = {
-        "season": season,
-        "source": "TheSportsDB",
-        "updated": int(time.time() * 1000),
-        "standings": rows
-    }
-    with open(os.path.join(ASSETS_DIR, "table.json"), "w", encoding="utf-8") as f:
-        json.dump(table_out, f)
-    print("Wrote assets/table.json with", len(rows), "rows for", season)
-
-    # --- BADGES (league teams → badge urls)
-    badge_map = {}
-    try:
-        teams_url = f"https://www.thesportsdb.com/api/v1/json/3/lookup_all_teams.php?id={LEAGUE_ID}"
-        teams = json.loads(fetch(teams_url).decode("utf-8")).get("teams") or []
-        for tm in teams:
-            name = tm.get("strTeam") or ""
-            badge = tm.get("strTeamBadge") or ""
-            # normalize to your JS keying (lowercase + strip non-alnum + &→and)
-            badge_map[norm(name)] = (badge or "").replace("http://","https://")
-    except Exception as e:
-        print("ERROR building badges:", e, file=sys.stderr)
-
-    with open(os.path.join(ASSETS_DIR, "badges.json"), "w", encoding="utf-8") as f:
-        json.dump({"badges": badge_map, "updated": int(time.time()*1000)}, f)
-    print("Wrote assets/badges.json with", len(badge_map), "entries")
+        print(f"[update_table] Non-fatal: {e}")
+        # do NOT overwrite existing file on failure
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()
