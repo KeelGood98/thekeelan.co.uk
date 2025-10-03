@@ -1,59 +1,88 @@
 #!/usr/bin/env python3
+"""
+Builds assets/table.json from ESPN's public standings API (Premier League).
+
+No HTML scraping; stable JSON.
+"""
+
 import json
-import re
-from pathlib import Path
+import pathlib
+import sys
+import time
+import urllib.request
 
-import requests
-from bs4 import BeautifulSoup
+OUT = pathlib.Path("assets/table.json")
+ESPN_STANDINGS = (
+    "https://site.api.espn.com/apis/v2/sports/soccer/eng.1/standings"
+    "?region=gb&lang=en&sort=rank:asc"
+)
 
-OUT = Path("assets/table.json")
-BBC_TABLE_URL = "https://www.bbc.co.uk/sport/football/premier-league/table"
+# Map ESPN stat abbreviations to our keys
+STAT_MAP = {
+    "GP": "P",   # games played
+    "W":  "W",
+    "D":  "D",
+    "L":  "L",
+    "GF": "GF",
+    "GA": "GA",
+    "GD": "GD",
+    "P":  "Pts",
+}
 
-def badge_from_name(name: str) -> str:
-    special = {
-        "Manchester United": "MU", "Manchester City": "MC", "Newcastle United": "NU",
-        "Brighton & Hove Albion": "B&A", "Brighton and Hove Albion":"B&A",
-        "AFC Bournemouth": "AB", "Nottingham Forest": "NF", "West Ham United": "WH",
-        "Tottenham Hotspur": "TH", "Crystal Palace": "CP", "Sheffield United":"SU",
-        "Wolverhampton Wanderers":"WW"
-    }
-    if name in special: return special[name]
-    parts = re.split(r"\s+|&", name.strip())
-    letters = [p[0].upper() for p in parts if p]
-    return (letters[0]+(letters[1] if len(letters)>1 else "")) or "??"
+def fetch_json(url):
+    with urllib.request.urlopen(url, timeout=30) as r:
+        return json.load(r)
 
-def fetch_table():
-    r = requests.get(BBC_TABLE_URL, timeout=30)
-    r.raise_for_status()
-    soup = BeautifulSoup(r.text, "html.parser")
-    table = soup.find("table")
-    if not table: raise RuntimeError("BBC table not found")
+def entries_to_rows(entries):
+    rows = []
+    for e in entries:
+        team = e["team"]["displayName"]
+        rank = int(e["stats"][0]["value"]) if e["stats"] and e["stats"][0]["name"].lower() == "rank" else None
 
-    body = table.find("tbody")
-    rows = body.find_all("tr") if body else table.find_all("tr")
+        # Build dict of stats by abbreviation
+        stats_by_abbr = {}
+        for s in e.get("stats", []):
+            abbr = s.get("abbreviation")
+            if abbr: stats_by_abbr[abbr] = s.get("value")
 
-    data=[]
-    for row in rows:
-        cols = [c.get_text(strip=True) for c in row.find_all(["th","td"])]
-        if len(cols) < 10: continue
-        try: pos = int(cols[0])
-        except: continue
-        team = cols[1]
-        p,w,d,l,gf,ga,gd,pts = [int(x) for x in cols[2:10]]
-        data.append({
-            "pos":pos,"team":team,"p":p,"w":w,"d":d,"l":l,"gf":gf,"ga":ga,"gd":gd,"pts":pts,
-            "badge": badge_from_name(team)
-        })
-    data.sort(key=lambda x:x["pos"])
-    if len(data)<18: raise RuntimeError(f"Only {len(data)} rows scraped")
-    return data
+        row = {
+            "#": rank,
+            "Team": team,
+            "P":  stats_by_abbr.get("GP", 0),
+            "W":  stats_by_abbr.get("W", 0),
+            "D":  stats_by_abbr.get("D", 0),
+            "L":  stats_by_abbr.get("L", 0),
+            "GF": stats_by_abbr.get("GF", 0),
+            "GA": stats_by_abbr.get("GA", 0),
+            "GD": stats_by_abbr.get("GD", 0),
+            "Pts": stats_by_abbr.get("P", 0),
+        }
+        rows.append(row)
+
+    # sanity
+    rows = [r for r in rows if r["#"] is not None]
+    rows.sort(key=lambda r: r["#"])
+    if len(rows) < 18:
+        raise RuntimeError(f"Only {len(rows)} rows scraped")
+    return rows
 
 def main():
-    data=fetch_table()
-    OUT.parent.mkdir(parents=True,exist_ok=True)
-    with OUT.open("w",encoding="utf-8") as f:
-        json.dump({"league":"Premier League","rows":data}, f, ensure_ascii=False, indent=2)
-    print(f"Wrote {OUT} with {len(data)} teams")
+    data = fetch_json(ESPN_STANDINGS)
+    # children[0] → the league (there is usually one child)
+    entries = (
+        data.get("children", [{}])[0]
+        .get("standings", {})
+        .get("entries", [])
+    )
+    rows = entries_to_rows(entries)
 
-if __name__=="__main__":
-    main()
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    with OUT.open("w", encoding="utf-8") as f:
+        json.dump(rows, f, ensure_ascii=False, indent=2)
+
+    # touch a simple update stamp used in your header
+    pathlib.Path("assets/update_stamp.txt").write_text(time.strftime("%Y-%m-%dT%H:%M:%SZ"), encoding="utf-8")
+    print(f"wrote {OUT} with {len(rows)} rows")
+
+if __name__ == "__main__":
+    sys.exit(main())
