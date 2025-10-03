@@ -1,48 +1,45 @@
-name: build
+name: refresh extras
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # every 30 mins
-  workflow_dispatch: {}
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      # ---- TABLE stays as you already have it in your table workflow ----
-      # If you have a separate workflow for table.json, leave it there.
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 lxml
 
-      # ---- FIXTURES (Man United) ----
-      - name: Build assets/fixtures.json
-        run: python scripts/update_fixtures.py
+      - name: Build weather.json
+        run: python scripts/update_weather.py
 
-      # ---- F1 ----
-      - name: Build assets/f1.json
+      - name: Build steam specials
+        run: python scripts/update_extras.py
+
+      - name: Build F1 results
         run: python scripts/update_f1.py
 
-      # ---- Touch update stamp (for top-right) ----
       - name: Touch update stamp
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > assets/update_stamp.txt
-          cat assets/update_stamp.txt
 
-      - name: Commit and push
+      - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/fixtures.json assets/f1.json assets/update_stamp.txt || true
-          if ! git diff --cached --quiet; then
-            git commit -m "chore: refresh extras $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git add assets/weather.json assets/steam_specials.json assets/f1.json assets/update_stamp.txt || true
+          git commit -m "chore: refresh extras $(date -u +"%Y-%m-%dT%H:%M:%SZ")" || echo "nothing to commit"
+          git pull --rebase
+          git push
