@@ -1,206 +1,95 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+import json, sys, os, re
+import requests
+from bs4 import BeautifulSoup
+from datetime import datetime
 
-import json
-import os
-import time
-import urllib.request
-from datetime import datetime, timezone
-from zoneinfo import ZoneInfo
+TEAM = "Manchester United"
+BASE = "https://www.bbc.co.uk/sport/football/teams/manchester-united/scores-fixtures"
+OUT = "assets/fixtures.json"
 
-ASSETS_DIR = "assets"
-TEAM_ID = "133612"  # Man United on TheSportsDB
-TEAM_NAME = "Manchester United"
+# months to try for a typical season (Aug–May)
+MONTHS = ["08","09","10","11","12","01","02","03","04","05"]
 
-UTC = timezone.utc
-UK_TZ = ZoneInfo("Europe/London")
+def year_span():
+    today = datetime.utcnow()
+    y = today.year
+    # season crosses new year: Aug->Dec (year-0), Jan->May (year+1)
+    return [(y if m in ["08","09","10","11","12"] else y+1, m) for m in MONTHS]
 
+def fetch_month(y, m):
+    url = f"{BASE}/{y}-{m}"
+    r = requests.get(url, timeout=20)
+    r.raise_for_status()
+    return r.text
 
-def fetch(url: str, timeout: int = 30) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": "GHAction/1.0"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
-
-
-def safe_int(x, default=None):
-    try:
-        return int(x)
-    except Exception:
-        return default
-
-
-def to_https(u: str | None) -> str | None:
-    if not u:
-        return u
-    return u.replace("http://", "https://")
-
-
-def comp_short(name: str) -> str:
-    n = (name or "").lower()
-    if "champions league" in n and "qualif" in n:
-        return "UCLQ"
-    if "champions league" in n:
-        return "UCL"
-    if "europa league" in n:
-        return "UEL"
-    if "premier league" in n:
-        return "EPL"
-    if "fa cup" in n:
-        return "FAC"
-    if "carabao" in n or "efl cup" in n or "league cup" in n:
-        return "LC"
-    if "community shield" in n:
-        return "CS"
-    if "friendly" in n:
-        return "FR"
-    parts = [p[:1].upper() for p in name.split() if p and p[0].isalpha()]
-    return "".join(parts)[:4] or "UNK"
-
-
-def to_uk_date_time(dt_utc: datetime):
-    uk = dt_utc.astimezone(UK_TZ)
-    return uk.strftime("%Y-%m-%d"), uk.strftime("%H:%M")
-
-
-def read_tv_overrides(path="assets/tv_overrides.json"):
-    try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        return data.get("overrides") or []
-    except FileNotFoundError:
-        return []
-    except Exception as e:
-        print("WARN: tv_overrides.json parse error:", e)
-        return []
-
-
-def apply_override(match, overrides):
-    for o in overrides:
-        if (
-            o.get("date_uk") == match["date_uk"]
-            and o.get("time_uk") == match["time_uk"]
-            and (o.get("home") or "").lower() == match["home"].lower()
-            and (o.get("away") or "").lower() == match["away"].lower()
-        ):
-            if o.get("tv"):
-                match["tv"] = o["tv"]
-            hl = o.get("highlights")
-            if isinstance(hl, dict):
-                match["highlights"] = {
-                    "sky": to_https(hl.get("sky")),
-                    "yt": to_https(hl.get("yt")),
-                }
-            return
-
-
-def build_match(e: dict) -> dict:
-    stamp = e.get("strTimestamp")
-    dt_utc = None
-    if stamp:
+def parse_month(html):
+    soup = BeautifulSoup(html, "lxml")
+    blocks = soup.select("[data-event-id]")  # each fixture block
+    matches = []
+    for b in blocks:
         try:
-            dt_utc = datetime.fromisoformat(stamp.replace("Z", "+00:00")).astimezone(UTC)
+            # date at section heading up the tree
+            date_header = b.find_previous("h3")
+            date_txt = date_header.get_text(strip=True) if date_header else ""
+            # teams
+            home = b.select_one(".sp-c-fixture__team--home .sp-c-fixture__team-name-trunc").get_text(strip=True)
+            away = b.select_one(".sp-c-fixture__team--away .sp-c-fixture__team-name-trunc").get_text(strip=True)
+            comp = b.select_one(".sp-c-fixture__competition").get_text(strip=True) if b.select_one(".sp-c-fixture__competition") else "English Premier League"
+            time_el = b.select_one(".sp-c-fixture__number--time, .sp-c-fixture__status .qa-status-description")
+            time_txt = time_el.get_text(strip=True) if time_el else "TBD"
+
+            # score if finished
+            h_sc = b.select_one(".sp-c-fixture__number--home")
+            a_sc = b.select_one(".sp-c-fixture__number--away")
+            score = None
+            if h_sc and a_sc:
+                hs = h_sc.get_text(strip=True)
+                as_ = a_sc.get_text(strip=True)
+                if hs.isdigit() and as_.isdigit():
+                    hs, as_ = int(hs), int(as_)
+                    outcome = "W" if ((TEAM.lower() == home.lower() and hs>as_) or (TEAM.lower()==away.lower() and as_>hs)) else ("L" if ((TEAM.lower()==home.lower() and hs<as_) or (TEAM.lower()==away.lower() and as_<hs)) else "D")
+                    score = {"home":hs,"away":as_,"outcome":outcome}
+
+            matches.append({
+                "date_uk": date_txt,
+                "time_uk": time_txt if ":" in time_txt else "15:00" if time_txt.lower()=="tbd" else time_txt,
+                "comp": comp,
+                "comp_code": "".join(w[0] for w in comp.split() if w)[:3].upper(),
+                "home": home,
+                "away": away,
+                "tv": "TBD",
+                "highlights": {},
+                "score": score
+            })
         except Exception:
-            dt_utc = None
-
-    if dt_utc is None:
-        d = e.get("dateEvent") or ""
-        t = e.get("strTime") or "00:00:00"
-        if len(t) == 5:
-            t += ":00"
-        try:
-            dt_utc = datetime.fromisoformat(f"{d}T{t}").replace(tzinfo=UTC)
-        except Exception:
-            dt_utc = datetime.utcnow().replace(tzinfo=UTC)
-
-    date_uk, time_uk = to_uk_date_time(dt_utc)
-    comp_name = e.get("strLeague") or ""
-    comp_code = comp_short(comp_name)
-    home = e.get("strHomeTeam") or ""
-    away = e.get("strAwayTeam") or ""
-    hs = safe_int(e.get("intHomeScore"))
-    as_ = safe_int(e.get("intAwayScore"))
-
-    score_obj = None
-    if hs is not None and as_ is not None:
-        outcome = ""
-        if home.lower() == TEAM_NAME.lower():
-            outcome = "W" if hs > as_ else "D" if hs == as_ else "L"
-        elif away.lower() == TEAM_NAME.lower():
-            outcome = "W" if as_ > hs else "D" if hs == as_ else "L"
-        score_obj = {"home": hs, "away": as_, "outcome": outcome}
-
-    return {
-        "date_uk": date_uk,
-        "time_uk": time_uk,
-        "comp": comp_name,
-        "comp_code": comp_code,
-        "home": home,
-        "away": away,
-        "score": score_obj,
-        "tv": "TBD",
-        "highlights": {"sky": None, "yt": None},
-        "utc": dt_utc.isoformat(),
-        "idEvent": e.get("idEvent"),
-    }
-
+            continue
+    return matches
 
 def main():
-    os.makedirs(ASSETS_DIR, exist_ok=True)
-    overrides = read_tv_overrides()
-
-    url_next = f"https://www.thesportsdb.com/api/v1/json/3/eventsnext.php?id={TEAM_ID}"
-    url_last = f"https://www.thesportsdb.com/api/v1/json/3/eventslast.php?id={TEAM_ID}"
-
-    matches = []
-
+    all_matches = []
     try:
-        jn = json.loads(fetch(url_next).decode("utf-8"))
-        for e in jn.get("events") or []:
-            m = build_match(e)
-            apply_override(m, overrides)
-            matches.append(m)
-    except Exception as exc:
-        print("ERROR fetching next:", exc)
+        for y, m in year_span():
+            try:
+                html = fetch_month(y, m)
+                all_matches.extend(parse_month(html))
+            except Exception:
+                continue
 
-    try:
-        jl = json.loads(fetch(url_last).decode("utf-8"))
-        for e in jl.get("results") or []:
-            m = build_match(e)
-            apply_override(m, overrides)
-            matches.append(m)
-    except Exception as exc:
-        print("ERROR fetching last:", exc)
+        # filter keep only fixtures that involve Manchester United
+        mu = [m for m in all_matches if TEAM.lower() in (m["home"].lower()+" "+m["away"].lower())]
 
-    seen = set()
-    deduped = []
-    for m in matches:
-        k = m.get("idEvent")
-        if k and k in seen:
-            continue
-        if k:
-            seen.add(k)
-        deduped.append(m)
+        upcoming = [m for m in mu if not m["score"]]
+        results  = [m for m in mu if m["score"]]
 
-    def _iso(s):
-        try:
-            return datetime.fromisoformat(s)
-        except Exception:
-            return datetime.utcnow().replace(tzinfo=UTC)
-
-    deduped.sort(key=lambda x: _iso(x.get("utc", "")))
-
-    out = {
-        "updated": int(time.time() * 1000),
-        "team": TEAM_NAME,
-        "matches": deduped,
-        "source": "TheSportsDB",
-    }
-
-    with open(os.path.join(ASSETS_DIR, "fixtures.json"), "w", encoding="utf-8") as f:
-        json.dump(out, f, ensure_ascii=False)
-
-    print(f"Wrote assets/fixtures.json with {len(deduped)} matches")
-
+        payload = {"upcoming": upcoming, "results": results}
+        os.makedirs(os.path.dirname(OUT), exist_ok=True)
+        with open(OUT, "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=2)
+        print(f"wrote {OUT}: {len(upcoming)} upcoming, {len(results)} results")
+    except Exception as e:
+        print(f"[update_fixtures] Non-fatal: {e}")
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()
