@@ -14,18 +14,18 @@
     "url": "https://store.steampowered.com/app/1086940"
   },
   {
-    "title": "Ghost of Tsushima DIRECTOR'S CUT",
-    "discount_percent": 33,
-    "final_price": 33.49,
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1750948552",
-    "url": "https://store.steampowered.com/app/2215430"
-  },
-  {
     "title": "Red Dead Redemption 2",
     "discount_percent": 75,
     "final_price": 14.99,
     "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1759502961",
     "url": "https://store.steampowered.com/app/1174180"
+  },
+  {
+    "title": "Ghost of Tsushima DIRECTOR'S CUT",
+    "discount_percent": 33,
+    "final_price": 33.49,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215430/header.jpg?t=1750948552",
+    "url": "https://store.steampowered.com/app/2215430"
   },
   {
     "title": "Cyberpunk 2077",
@@ -42,20 +42,6 @@
     "url": "https://store.steampowered.com/app/1144200"
   },
   {
-    "title": "No Man's Sky",
-    "discount_percent": 60,
-    "final_price": 19.99,
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/a75a92618e83b3b4bb59e968a045659978d42ae7/header_alt_assets_25.jpg?t=1758016598",
-    "url": "https://store.steampowered.com/app/275850"
-  },
-  {
-    "title": "Hogwarts Legacy",
-    "discount_percent": 80,
-    "final_price": 9.99,
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/a3cdc6f40d97df8ac993679c2dd1edeb5222421e/header.jpg?t=1753912780",
-    "url": "https://store.steampowered.com/app/990080"
-  },
-  {
     "title": "PEAK",
     "discount_percent": 20,
     "final_price": 5.11,
@@ -63,10 +49,24 @@
     "url": "https://store.steampowered.com/app/3527290"
   },
   {
-    "title": "Warhammer 40,000: Space Marine 2",
-    "discount_percent": 50,
-    "final_price": 27.49,
-    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2183900/bd7a518b51e8496827258181b81b68890a8ccfd8/header_alt_assets_7.jpg?t=1759222220",
-    "url": "https://store.steampowered.com/app/2183900"
+    "title": "HELLDIVERS™ 2",
+    "discount_percent": 20,
+    "final_price": 27.99,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553850/14293cf6c4eeb6959b9333ecd42fcc021a8fc1e3/header.jpg?t=1757033568",
+    "url": "https://store.steampowered.com/app/553850"
+  },
+  {
+    "title": "CloverPit",
+    "discount_percent": 10,
+    "final_price": 7.65,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3314790/8ba81356b84aa937573fa29fdd708dbd96b01537/header.jpg?t=1759224878",
+    "url": "https://store.steampowered.com/app/3314790"
+  },
+  {
+    "title": "No Man's Sky",
+    "discount_percent": 60,
+    "final_price": 19.99,
+    "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/a75a92618e83b3b4bb59e968a045659978d42ae7/header_alt_assets_25.jpg?t=1758016598",
+    "url": "https://store.steampowered.com/app/275850"
   }
 ]
