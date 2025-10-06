@@ -181,13 +181,8 @@ async function pollLiveBanner(){
   const prefs=await fetchSmart("/api/prefs","./data/prefs.json").catch(() => ({ favorite_team: "Manchester United" }));
   const team=encodeURIComponent(prefs.favorite_team||"Manchester United");
   try{
-    
-let info = null;
-try {
-  const r = await fetch(`/api/club/live?team=${team}`, { cache: "no-store" });
-  info = r.ok ? await r.json() : null;
-} catch {}
-const banner=$("#live-banner"), text=$("#live-text");
+    const info=await jget(`/api/club/live?team=${team}`);
+    const banner=$("#live-banner"), text=$("#live-text");
     if(info.state==="live"){
       const msg=`LIVE — ${info.home} ${info.score} ${info.away}`;
       text.textContent=msg;
