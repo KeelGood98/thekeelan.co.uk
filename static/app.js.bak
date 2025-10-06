@@ -85,13 +85,13 @@ async function loadFootball(){
 
   try{
     const [res, fix, table, teams, scorers, assists, keepers] = await Promise.all([
-      fetchSmart("/api/pl/results","./data/pl_results.json"),
-      fetchSmart("/api/pl/fixtures","./data/pl_fixtures.json"),
-      fetchSmart("/api/pl/table","./data/pl_table.json"),
-      fetchSmart("/api/pl/teams","./data/teams.json"),
-      fetchSmart("/api/pl/scorers","./data/pl_scorers.json"),
-      fetchSmart("/api/pl/assists","./data/pl_assists.json"),
-      fetchSmart("/api/pl/cleansheets","./data/pl_cleansheets.json"),
+      jget("/api/pl/results"),
+      jget("/api/pl/fixtures"),
+      jget("/api/pl/table"),
+      jget("/api/pl/teams"),
+      jgetSafe("/api/pl/scorers",     {updated:null, scorers:[]}),
+      jgetSafe("/api/pl/assists",     {updated:null, assists:[]}),
+      jgetSafe("/api/pl/cleansheets", {updated:null, keepers:[]}),
     ]);
 
     // Results (single-line)
@@ -178,7 +178,7 @@ async function loadFootball(){
 // ===== LIVE banner =====
 let liveDismissKey="liveDismiss";
 async function pollLiveBanner(){
-  const prefs=await fetchSmart("/api/prefs","./data/prefs.json").catch(() => ({ favorite_team: "Manchester United" }));
+  const prefs=await jgetSafe("/api/prefs",{favorite_team:"Manchester United"});
   const team=encodeURIComponent(prefs.favorite_team||"Manchester United");
   try{
     const info=await jget(`/api/club/live?team=${team}`);
@@ -210,9 +210,9 @@ async function loadGaming(){
 
   try{
     const [steam,gp,rel]=await Promise.all([
-      fetchSmart("/api/gaming/steam","./data/steam_deals.json"),
-      fetchSmart("/api/gaming/gamepass","./data/gamepass.json"),
-      fetchSmart("/api/gaming/releases","./data/releases.json")
+      jget("/api/gaming/steam"),
+      jget("/api/gaming/gamepass"),
+      jget("/api/gaming/releases")
     ]);
 
     // Steam: compute % if missing; show only discounted
@@ -269,8 +269,8 @@ async function loadExtras(){
 
   try{
     const [leeds,gar]=await Promise.all([
-      fetchSmart("/api/extras/weather/leeds","./data/weather_leeds.json"),
-      fetchSmart("/api/extras/weather/garforth","./data/weather_garforth.json"),
+      jget("/api/extras/weather/leeds"),
+      jget("/api/extras/weather/garforth"),
     ]);
 
     const theme=currentTheme();
