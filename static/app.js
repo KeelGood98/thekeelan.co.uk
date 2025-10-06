@@ -1,0 +1,308 @@
+// ===== helpers =====
+const $ = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+const setStatus = t => { const el = $("#status"); if (el) el.textContent = t; };
+
+const jget = u => fetch(u, { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(u + " -> " + r.status); return r.json(); });
+
+const jgetSafe = async (u, fallback) => {
+  try { const r = await fetch(u, { cache: "no-store" }); if (!r.ok) throw 0; return await r.json(); }
+  catch { return fallback; }
+};
+
+const fmtDate = s => { try{const d=new Date(s);return isNaN(d)?s:d.toLocaleString("en-GB",{dateStyle:"medium",timeStyle:"short"})}catch{return s} };
+const fmtGBP = n => (n==null?"-":new Intl.NumberFormat("en-GB",{style:"currency",currency:"GBP",maximumFractionDigits:2}).format(n));
+
+const setSkel = (tb,rows=4,cols=4)=>{ if(!tb)return; tb.innerHTML=""; for(let i=0;i<rows;i++){const tr=document.createElement("tr");for(let c=0;c<cols;c++){const td=document.createElement("td");td.className="skel";tr.appendChild(td);}tb.appendChild(tr);} };
+const setErr = (tb,cols,msg)=>{ if(!tb)return; tb.innerHTML=""; const tr=document.createElement("tr"); const td=document.createElement("td"); td.colSpan=cols; td.textContent=msg||"Failed to load."; tr.appendChild(td); tb.appendChild(tr); };
+
+// ===== theme =====
+function applyTheme(t, sunrise=null, sunset=null){
+  const body=document.body;
+  if(t==="auto" && sunrise && sunset){
+    const now=new Date(), s1=new Date(sunrise), s2=new Date(sunset);
+    body.className=(now>s1 && now<s2)?"theme-leeds":"theme-dark";
+  }else{
+    body.className=({leeds:"theme-leeds",dark:"theme-dark",neon:"theme-neon",auto:"theme-dark"}[t]||"theme-dark");
+  }
+}
+const saveTheme=t=>localStorage.setItem("theme",t);
+const currentTheme=()=>localStorage.getItem("theme")||"auto";
+$$(".theme-btn").forEach(b=>b.addEventListener("click",()=>{ saveTheme(b.dataset.theme); applyTheme(currentTheme()); }));
+
+// ===== football helpers =====
+function computeSnapshot(res,fix){
+  const ms=res.matches||[];
+  const goals=ms.reduce((s,m)=>s+(+m.hs||0)+(+m.as||0),0);
+  const avg=ms.length?(goals/ms.length):0;
+  let big=null; ms.forEach(m=>{const d=Math.abs((+m.hs||0)-(+m.as||0)); if(!big||d>big.d) big={d,txt:`${m.home} ${m.hs}-${m.as} ${m.away}`};});
+  let next=null; (fix.matches||[]).forEach(m=>{const d=new Date(m.date); if(!isNaN(d)) next=(!next||d<next)?d:next;});
+  return {matches:ms.length,goals,avg:avg.toFixed(1),biggest:big?big.txt:"—",next:next?next.toLocaleString("en-GB"):"—"};
+}
+
+// ISO week helpers (to select only the next gameweek)
+function isoWeekYear(d){
+  const tmp=new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  tmp.setUTCDate(tmp.getUTCDate()+4-(tmp.getUTCDay()||7));
+  return tmp.getUTCFullYear();
+}
+function isoWeek(d){
+  const tmp=new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  tmp.setUTCDate(tmp.getUTCDate()+4-(tmp.getUTCDay()||7));
+  const yearStart=new Date(Date.UTC(tmp.getUTCFullYear(),0,1));
+  return Math.ceil((((tmp - yearStart) / 86400000) + 1)/7);
+}
+function nextGameweek(matches){
+  const dates = (matches||[]).map(m=>new Date(m.date)).filter(d=>!isNaN(d));
+  if(!dates.length) return [];
+  const min = new Date(Math.min(...dates));
+  const wy = isoWeekYear(min), w = isoWeek(min);
+  return (matches||[])
+    .filter(m=>{const d=new Date(m.date); return !isNaN(d) && isoWeek(d)===w && isoWeekYear(d)===wy;})
+    .sort((a,b)=>new Date(a.date)-new Date(b.date));
+}
+
+const FIXTURE_LIMIT = 50; // upper bound; we'll filter to next gameweek anyway
+
+// ===== FOOTBALL =====
+async function loadFootball(){
+  setStatus("Loading football…");
+  const rBody=$("#tb-results"), fBody=$("#tb-fixtures"), tBody=$("#tb-table");
+  setSkel(rBody,4,4); setSkel(fBody,4,4); setSkel(tBody,6,8);
+
+  try{
+    const [res, fix, table, teams, scorers, assists, keepers] = await Promise.all([
+      jget("/api/pl/results"),
+      jget("/api/pl/fixtures"),
+      jget("/api/pl/table"),
+      jget("/api/pl/teams"),
+      jgetSafe("/api/pl/scorers",     {updated:null, scorers:[]}),
+      jgetSafe("/api/pl/assists",     {updated:null, assists:[]}),
+      jgetSafe("/api/pl/cleansheets", {updated:null, keepers:[]}),
+    ]);
+
+    // Results (single-line)
+    rBody.innerHTML="";
+    (res.matches||[]).forEach(m=>{
+      const tr=document.createElement("tr");
+      tr.innerHTML=`<td class="nowrap">${fmtDate(m.date)}</td>
+                    <td class="clip">${m.home}</td>
+                    <td class="num nowrap">${m.hs??""} - ${m.as??""}</td>
+                    <td class="clip">${m.away}</td>`;
+      rBody.appendChild(tr);
+    });
+    $("#u-pl-results").textContent=res.updated?`Updated ${new Date(res.updated).toLocaleString("en-GB")}`:"—";
+    if(!(res.matches||[]).length) setErr(rBody,4,"No results.");
+
+    // Fixtures: ONLY next gameweek
+    const ng = nextGameweek(fix.matches||[]).slice(0, FIXTURE_LIMIT);
+    fBody.innerHTML="";
+    ng.forEach(m=>{
+      const tr=document.createElement("tr");
+      const full=`${fmtDate(m.date)} • ${m.home} vs ${m.away}`;
+      tr.setAttribute("title", full);
+      tr.setAttribute("aria-label", full);
+      tr.innerHTML=`<td class="nowrap">${fmtDate(m.date)}</td>
+                    <td class="clip">${m.home}</td>
+                    <td class="center nowrap">vs</td>
+                    <td class="clip">${m.away}</td>`;
+      fBody.appendChild(tr);
+    });
+    $("#u-pl-fixtures").textContent=fix.updated?`Updated ${new Date(fix.updated).toLocaleString("en-GB")}`:"—";
+    if(!ng.length) setErr(fBody,4,"No upcoming fixtures.");
+
+    // Snapshot
+    const s=computeSnapshot(res, {matches:ng});
+    $("#snap-matches").textContent=s.matches;
+    $("#snap-goals").textContent=s.goals;
+    $("#snap-avg").textContent=s.avg;
+    $("#snap-big").textContent=s.biggest;
+    $("#snap-next").textContent=s.next;
+    $("#u-snap").textContent=`Updated ${new Date().toLocaleString("en-GB")}`;
+
+    // Leaders
+    function fillList(el,arr,field){
+      el.innerHTML="";
+      if(!arr.length){ el.innerHTML=`<li class="note">No data.</li>`; return; }
+      arr.slice(0,8).forEach((p,i)=>{
+        const li=document.createElement("li");
+        li.innerHTML=`<span class="rank">${i+1}</span>
+                      <span class="name">${p.name||""}</span>
+                      <span class="team">${p.team||""}</span>
+                      <span class="num">${p[field]??0}</span>`;
+        el.appendChild(li);
+      });
+    }
+    fillList($("#leaders-scorers"), scorers.scorers||[], "goals");
+    fillList($("#leaders-assists"), assists.assists||[], "assists");
+    fillList($("#leaders-clean"),   keepers.keepers||[], "clean_sheets");
+    $("#u-leaders").textContent=(scorers.updated||assists.updated||keepers.updated)
+      ?`Updated ${new Date(scorers.updated||assists.updated||keepers.updated).toLocaleString("en-GB")}`:"—";
+
+    // Table
+    const crestMap=new Map(((teams&&teams.teams)||[]).map(t=>[t.name,t.crest]));
+    tBody.innerHTML="";
+    (table.table||[]).slice(0,20).forEach(row=>{
+      const crest=crestMap.get(row.team), img=crest?`<img class="crest" src="${crest}" alt="">`:"";
+      const tr=document.createElement("tr");
+      tr.innerHTML=`<td class="num">${row.pos}</td>
+                    <td class="teamcell">${img}<span>${row.team}</span></td>
+                    <td class="num">${row.played}</td>
+                    <td class="num">${row.won}</td>
+                    <td class="num">${row.draw}</td>
+                    <td class="num">${row.lost}</td>
+                    <td class="num">${row.gd}</td>
+                    <td class="num">${row.pts}</td>`;
+      tBody.appendChild(tr);
+    });
+    $("#u-pl-table").textContent=table.updated?`Updated ${new Date(table.updated).toLocaleString("en-GB")}`:"—";
+    if(!(table.table||[]).length) setErr(tBody,8,"No table data.");
+
+    setStatus("Football updated.");
+  }catch(err){ console.error(err); setStatus("Football failed."); }
+}
+
+// ===== LIVE banner =====
+let liveDismissKey="liveDismiss";
+async function pollLiveBanner(){
+  const prefs=await jgetSafe("/api/prefs",{favorite_team:"Manchester United"});
+  const team=encodeURIComponent(prefs.favorite_team||"Manchester United");
+  try{
+    const info=await jget(`/api/club/live?team=${team}`);
+    const banner=$("#live-banner"), text=$("#live-text");
+    if(info.state==="live"){
+      const msg=`LIVE — ${info.home} ${info.score} ${info.away}`;
+      text.textContent=msg;
+      if(localStorage.getItem(liveDismissKey)!==msg){ banner.classList.remove("hidden"); }
+    }else if(info.state==="upcoming"){
+      text.textContent=`Kickoff soon — ${info.home} vs ${info.away} (${fmtDate(info.kickoff)})`;
+      if(localStorage.getItem(liveDismissKey)!=="upcoming:"+info.kickoff){ banner.classList.remove("hidden"); }
+    }else{
+      banner.classList.add("hidden");
+    }
+  }catch{}
+}
+$("#live-close").addEventListener("click",()=>{
+  const txt=$("#live-text").textContent||"dismissed";
+  localStorage.setItem(liveDismissKey, txt.startsWith("Kickoff")?"upcoming:"+txt:txt);
+  $("#live-banner").classList.add("hidden");
+});
+setInterval(pollLiveBanner,30000);
+
+// ===== GAMING =====
+async function loadGaming(){
+  setStatus("Loading gaming…");
+  const sBody=$("#tb-steam"), gBody=$("#tb-gp"), rBody=$("#tb-rel");
+  setSkel(sBody,6,4); setSkel(gBody,4,3); setSkel(rBody,4,2);
+
+  try{
+    const [steam,gp,rel]=await Promise.all([
+      jget("/api/gaming/steam"),
+      jget("/api/gaming/gamepass"),
+      jget("/api/gaming/releases")
+    ]);
+
+    // Steam: compute % if missing; show only discounted
+    sBody.innerHTML="";
+    const deals=(steam.deals||[]).map(d=>{
+      let pct=(d.discount_pct??0);
+      if((!pct||pct<=0) && d.original_price!=null && d.price!=null && d.original_price>d.price){
+        pct=Math.max(0,Math.round(100*(1-(d.price/d.original_price))));
+      }
+      return {...d, discount_pct:pct};
+    }).filter(d=>d.discount_pct>0)
+      .sort((a,b)=>b.discount_pct-a.discount_pct);
+
+    deals.forEach(d=>{
+      const tr=document.createElement("tr");
+      tr.innerHTML=`<td><a target="_blank" href="${d.url}">${d.name}</a></td>
+                    <td class="num">${d.discount_pct}% off</td>
+                    <td class="num">${fmtGBP(d.price)}</td>
+                    <td class="num">${d.original_price!=null?fmtGBP(d.original_price):"-"}</td>`;
+      sBody.appendChild(tr);
+    });
+    $("#u-steam").textContent=steam.updated?`Updated ${new Date(steam.updated).toLocaleString("en-GB")}`:"—";
+    if(!deals.length) setErr(sBody,4,"No discounted deals right now.");
+
+    // Game Pass
+    gBody.innerHTML="";
+    (gp.titles||[]).forEach(t=>{
+      const tr=document.createElement("tr");
+      tr.innerHTML=`<td>${t.name}</td><td>${t.platform}</td><td>${t.status}</td>`;
+      gBody.appendChild(tr);
+    });
+    $("#u-gp").textContent=gp.updated?`Updated ${new Date(gp.updated).toLocaleString("en-GB")}`:"—";
+    if(!(gp.titles||[]).length) setErr(gBody,3,"No data.");
+
+    // Releases
+    rBody.innerHTML="";
+    (rel.games||[]).forEach(g=>{
+      const tr=document.createElement("tr");
+      tr.innerHTML=`<td>${g.name}</td><td>${g.date||"-"}</td>`;
+      rBody.appendChild(tr);
+    });
+    $("#u-rel").textContent=rel.updated?`Updated ${new Date(rel.updated).toLocaleString("en-GB")}`:"—";
+    if(!(rel.games||[]).length) setErr(rBody,2,"No upcoming releases.");
+
+    setStatus("Gaming updated.");
+  }catch(err){ console.error(err); setStatus("Gaming failed."); }
+}
+
+// ===== EXTRAS =====
+async function loadExtras(){
+  setStatus("Loading extras…");
+  const lBody=$("#weather-leeds"), gBody=$("#weather-garforth");
+  setSkel(lBody,7,4); setSkel(gBody,7,4);
+
+  try{
+    const [leeds,gar]=await Promise.all([
+      jget("/api/extras/weather/leeds"),
+      jget("/api/extras/weather/garforth"),
+    ]);
+
+    const theme=currentTheme();
+    if(theme==="auto" && (leeds.daily||[]).length){
+      applyTheme("auto", leeds.daily[0].sunrise, leeds.daily[0].sunset);
+    }else{
+      applyTheme(theme);
+    }
+
+    function fillWeather(tb,data,badgeSel){
+      tb.innerHTML="";
+      (data.daily||[]).forEach(d=>{
+        const tr=document.createElement("tr");
+        tr.innerHTML=`<td>${d.date}</td><td class="num">${d.tmin}</td><td class="num">${d.tmax}</td><td class="num">${d.rain}</td>`;
+        tb.appendChild(tr);
+      });
+      $(badgeSel).textContent=data.updated?`Updated ${new Date(data.updated).toLocaleString("en-GB")}`:"—";
+      if(!(data.daily||[]).length) setErr(tb,4,"No weather data.");
+    }
+
+    fillWeather(lBody,leeds,"#u-weather-leeds");
+    fillWeather(gBody,gar,"#u-weather-garforth");
+
+    setStatus("Extras updated.");
+  }catch(err){ console.error(err); setStatus("Extras failed."); }
+}
+
+// ===== tabs + init =====
+$$(".tab").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    $$(".tab").forEach(b=>{b.classList.remove("active"); b.setAttribute("aria-selected","false");});
+    btn.classList.add("active"); btn.setAttribute("aria-selected","true");
+    $$(".panel").forEach(p=>p.classList.remove("active"));
+    $("#"+btn.dataset.tab).classList.add("active");
+    if(btn.dataset.tab==="football") loadFootball();
+    if(btn.dataset.tab==="gaming")   loadGaming();
+    if(btn.dataset.tab==="extras")   loadExtras();
+  });
+});
+
+document.addEventListener("DOMContentLoaded",()=>{
+  document.body.style.setProperty("--bg-image","url('/static/bg.jpg')");
+  applyTheme(currentTheme());
+  loadFootball();
+  pollLiveBanner();
+  setTimeout(()=>loadExtras(),300);
+});

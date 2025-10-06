@@ -1,0 +1,167 @@
+:root{
+  --bg:#0b1220;
+  --text:#e6edf3;
+  --muted:#9aa6bf;
+  --card:rgba(13,18,28,.78);
+  --card-border:#1b2433;
+  --accent:#4cc9f0;
+  --accent-2:#a78bfa;
+  --radius:14px;
+  --shadow:0 8px 24px rgba(0,0,0,.35);
+  --bg-image: url('/static/bg.jpg');
+}
+
+/* themes */
+body.theme-leeds{ --accent:#ffde00; --accent-2:#1d428a; }
+body.theme-dark { }
+body.theme-neon { --card:rgba(10,12,18,.86); --accent:#00e5ff; --accent-2:#ff3dac; }
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--text);
+  font:400 16px/1.45 Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 50% -80%, rgba(76,201,240,.08), transparent 60%),
+    linear-gradient(to bottom, rgba(0,0,0,.65), rgba(0,0,0,.55)),
+    var(--bg) var(--bg-image) center/cover fixed;
+}
+
+/* Header */
+header{
+  max-width:1400px; margin:18px auto 8px;
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+  padding:0 12px;
+}
+.brand{display:flex; align-items:baseline; gap:12px}
+.brand h1{margin:0; font-weight:800; letter-spacing:.2px}
+#status{color:var(--muted)}
+
+.tabs{display:flex; gap:10px; flex:1}
+.tab{
+  background:#101827; border:1px solid var(--card-border);
+  padding:8px 14px; border-radius:999px; color:var(--text);
+  cursor:pointer; opacity:.9
+}
+.tab.active{ background: linear-gradient(180deg, #1a2433, #0e1625); border-color:#233046; box-shadow:0 0 0 1px rgba(76,201,240,.3) inset; }
+
+.theme-switch{display:flex; align-items:center; gap:8px}
+.theme-btn{border:1px solid var(--card-border); background:#0f1724; color:var(--text); padding:6px 10px; border-radius:8px; cursor:pointer}
+.theme-btn:hover{border-color:#2a3a55}
+
+/* live banner */
+.live{
+  position:sticky; top:0; z-index:8; margin:0 auto 8px; max-width:1400px;
+  display:flex; align-items:center; gap:12px; padding:8px 12px;
+  background:linear-gradient(90deg, rgba(255,20,80,.15), rgba(255,20,80,.05));
+  border:1px solid rgba(255,20,80,.35); border-radius:10px; backdrop-filter:blur(8px)
+}
+.live.hidden{display:none}
+.live-dot{width:10px; height:10px; border-radius:50%; background:#ff3666; box-shadow:0 0 12px #ff3666}
+#live-close{margin-left:auto; background:transparent; border:0; color:#fff; font-size:18px; cursor:pointer}
+
+/* layout */
+main{max-width:1400px; margin:10px auto 40px; padding:0 12px}
+.panel{display:none}
+.panel.active{display:block}
+
+.grid.two{display:grid; grid-template-columns:1fr 1fr; gap:18px; align-items:start}
+@media (max-width:1100px){ .grid.two{grid-template-columns:1fr} }
+
+.card{
+  background:var(--card); border:1px solid var(--card-border);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:14px 16px;
+}
+.card-title{
+  font-weight:700; letter-spacing:.3px; margin-bottom:10px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.muted{color:var(--muted); font-weight:600}
+
+/* two-column top area */
+.top-two{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:18px;
+  align-items:start;
+}
+
+/* stats below as a simple vertical stack */
+#stats-stack{ display:flex; flex-direction:column; gap:18px; margin-top:18px; }
+
+/* tables (global) */
+.table{width:100%; border-collapse:collapse}
+.table thead th{
+  text-align:left; color:var(--muted); font-weight:700; font-size:.9rem;
+  padding:10px 10px; border-bottom:1px solid #263347
+}
+.table td{
+  padding:8px 10px; /* compact rows */
+  border-bottom:1px solid rgba(38,51,71,.35);
+  vertical-align:middle;
+}
+.num{text-align:right}
+.center{text-align:center}
+.teamcell{display:flex; align-items:center; gap:8px}
+.crest{width:18px; height:18px; object-fit:contain; filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
+
+/* single-line default */
+.nowrap{ white-space:nowrap; }
+.clip{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+/* Keep compact single-line look in the top pair */
+.top-two .table{ table-layout:fixed; }
+
+/* Date + 'vs' widths tuned */
+#card-results .table thead th:nth-child(1),
+#card-results .table td:nth-child(1),
+#card-fixtures .table thead th:nth-child(1),
+#card-fixtures .table td:nth-child(1){
+  width: 170px;
+}
+#card-fixtures .table thead th:nth-child(3),
+#card-fixtures .table td:nth-child(3){
+  width: 40px;
+  text-align:center;
+}
+
+/* Fixtures: unwrap long names on hover so you can read them */
+#card-fixtures .table tbody tr:hover{
+  background: rgba(255,255,255,.04);
+}
+#card-fixtures .table tbody tr:hover td:nth-child(2),
+#card-fixtures .table tbody tr:hover td:nth-child(4){
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+/* snapshot */
+.snap{display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:12px}
+.snap .k{color:var(--muted); font-size:.9rem}
+.snap .v{font-size:1.4rem; font-weight:800}
+.snap .v.small{font-size:1rem; font-weight:700}
+@media (max-width:1100px){ .snap{grid-template-columns:repeat(2, minmax(0,1fr))} }
+
+/* leaders */
+.leaders{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+.leaders h4{margin:4px 0 10px; color:var(--muted)}
+.leader-list{margin:0; padding:0; list-style:none; max-height:240px; overflow:auto; border:1px dashed rgba(255,255,255,.08); border-radius:10px}
+.leader-list li{display:grid; grid-template-columns:28px 1fr 1fr 42px; gap:8px; align-items:center; padding:8px 10px}
+.leader-list li:not(:last-child){border-bottom:1px solid rgba(255,255,255,.06)}
+.rank{
+  width:22px; height:22px; border-radius:999px; display:inline-grid; place-items:center;
+  background:linear-gradient(180deg, var(--accent), var(--accent-2));
+  color:#05101a; font-weight:800; font-size:.9rem
+}
+.leader-list .team{color:var(--muted); font-size:.95rem}
+.leader-list .num{text-align:right; font-weight:800}
+
+/* skeleton cell */
+.skel{height:14px; border-radius:6px; background:linear-gradient(90deg, rgba(255,255,255,.05), rgba(255,255,255,.12), rgba(255,255,255,.05)); background-size:200% 100%; animation:shimmer 1.1s infinite}
+@keyframes shimmer{0%{background-position:0 0}100%{background-position:-200% 0}}
+
+/* embeds */
+.embed{overflow:hidden; border-radius:var(--radius)}
