@@ -1,67 +1,72 @@
-/* Media page renderer — prefers snapshot JSON, falls back to /api/media if present */
-(function () {
-  const $ = (s) => document.querySelector(s);
-
-  async function fetchMedia() {
-    // try snapshot first (works on GitHub Pages)
-    try {
-      const r = await fetch("/data/media.json", { cache: "no-store" });
-      if (r.ok) return await r.json();
-    } catch {}
-    // optional fallback to a live API if you expose one on the Pi
-    try {
-      const r2 = await fetch("/api/media", { cache: "no-store" });
-      if (r2.ok) return await r2.json();
-    } catch {}
-    throw new Error("No media data available");
-  }
-
-  const fmtDate = (s) => {
-    try {
+(function(){
+  const fmtDate = s => {
+    try{
       const d = new Date(s);
-      return isNaN(d) ? s : d.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
-    } catch { return s; }
+      return isNaN(d) ? s : d.toLocaleDateString('en-GB', {year:'numeric', month:'short', day:'2-digit'});
+    }catch{ return s; }
   };
 
-  function card(i) {
-    const providers = (i.providers || []);
-    const provHtml = providers.map(p => {
-      if (p.logo) return `<span class="prov"><img class="prov__logo" src="${p.logo}" alt="${p.name}" title="${p.name}"></span>`;
-      return `<span class="prov">${p.name}</span>`;
-    }).join("");
+  const img = (path, size='w342') =>
+    path ? `https://image.tmdb.org/t/p/${size}${path}` : null;
+
+  const el = sel => document.querySelector(sel);
+
+  function card(item, isTV){
+    const poster = img(item.poster_path) || img(item.backdrop_path) || '';
+    const dateLabel = isTV ? 'TV' : 'Movie';
+    const dateVal   = isTV ? item.air_date : item.release_date;
+
+    const providers = (item.providers || []).slice(0,4); // show up to 4
+    const chips = providers.map(p => `
+      <span class="badge">
+        ${p.logo_path ? `<img src="${img(p.logo_path,'w45')}" alt="">` : ''}
+        ${p.provider_name}
+      </span>`).join('');
 
     return `
-      <article class="media-card">
-        <div class="poster">
-          ${i.poster ? `<img src="${i.poster}" alt="${i.title}">` : `<div class="no-poster">No image</div>`}
+      <article class="card">
+        <div class="poster" style="background-image:url('${poster||''}')"></div>
+        <div class="card-body">
+          <div class="title">${(item.title || item.name || 'Untitled')}</div>
+          <div class="meta">
+            <span>${dateLabel}</span>
+            <span>•</span>
+            <span>${fmtDate(dateVal)}</span>
+          </div>
+          <div class="overview">${item.overview || ''}</div>
+          <div class="chips">${chips}</div>
         </div>
-        <div class="meta">
-          <h4 class="title">${i.title || ""}</h4>
-          <div class="sub">${i.kind === "movie" ? "Movie" : "TV"} • ${fmtDate(i.date || "")}</div>
-          <div class="providers">${provHtml || `<span class="prov prov--tba">TBA</span>`}</div>
-          ${i.overview ? `<p class="ov">${i.overview}</p>` : ""}
-        </div>
-      </article>
-    `;
+      </article>`;
   }
 
-  function render(list, rootSel) {
-    const root = $(rootSel);
-    if (!root) return;
-    root.innerHTML = list.length ? list.map(card).join("") : `<div class="muted">Nothing found in this window.</div>`;
-  }
+  async function boot(){
+    // Load the prebuilt JSON (works on PI and on GitHub Pages)
+    const r = await fetch('./data/media.json', {cache:'no-store'});
+    const data = await r.json();
 
-  async function init() {
-    try {
-      const data = await fetchMedia();
-      render(data.movies || [], "#movies");
-      render(data.shows  || [], "#shows");
-    } catch (e) {
-      console.error(e);
-      render([], "#movies");
-      render([], "#shows");
+    // Movies
+    const mg = el('#movies-grid'), me = el('#movies-empty');
+    const tvg = el('#tv-grid'), te = el('#tv-empty');
+
+    el('#movies-updated').textContent = data.updated ? `Updated ${data.updated}` : '';
+    el('#tv-updated').textContent     = data.updated ? `Updated ${data.updated}` : '';
+
+    if (data.movies && data.movies.length){
+      mg.innerHTML = data.movies.map(m => card(m, false)).join('');
+      me.classList.add('hidden');
+    } else {
+      mg.innerHTML = '';
+      me.classList.remove('hidden');
+    }
+
+    if (data.tv && data.tv.length){
+      tvg.innerHTML = data.tv.map(t => card(t, true)).join('');
+      te.classList.add('hidden');
+    } else {
+      tvg.innerHTML = '';
+      te.classList.remove('hidden');
     }
   }
 
-  document.addEventListener("DOMContentLoaded", init);
+  boot().catch(console.error);
 })();
