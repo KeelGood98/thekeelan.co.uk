@@ -1,77 +1,67 @@
-/* Media page: load /api/media (Pi live) or /data/media.json (snapshot) and render */
+/* Media page renderer — prefers snapshot JSON, falls back to /api/media if present */
+(function () {
+  const $ = (s) => document.querySelector(s);
 
-async function fetchSmart(apiUrl, staticPath) {
-  // Same pattern as the Football/Gaming pages
-  try {
-    const r = await fetch(apiUrl, { cache: "no-store" });
-    if (!r.ok) throw 0;
-    return await r.json();
-  } catch {
-    const r2 = await fetch(staticPath, { cache: "no-store" });
-    if (!r2.ok) throw new Error(staticPath + " -> " + r2.status);
-    return await r2.json();
+  async function fetchMedia() {
+    // try snapshot first (works on GitHub Pages)
+    try {
+      const r = await fetch("./data/media.json", { cache: "no-store" });
+      if (r.ok) return await r.json();
+    } catch {}
+    // optional fallback to a live API if you expose one on the Pi
+    try {
+      const r2 = await fetch("/api/media", { cache: "no-store" });
+      if (r2.ok) return await r2.json();
+    } catch {}
+    throw new Error("No media data available");
   }
-}
 
-function el(tag, cls, text) {
-  const x = document.createElement(tag);
-  if (cls) x.className = cls;
-  if (text) x.textContent = text;
-  return x;
-}
+  const fmtDate = (s) => {
+    try {
+      const d = new Date(s);
+      return isNaN(d) ? s : d.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+    } catch { return s; }
+  };
 
-function card(item) {
-  const c = el("article", "media-card");
-  const img = el("img", "media-card__poster");
-  img.alt = item.title || "";
-  img.loading = "lazy";
-  img.src = item.poster || "/static/bg.jpg";
-  c.appendChild(img);
+  function card(i) {
+    const providers = (i.providers || []);
+    const provHtml = providers.map(p => {
+      if (p.logo) return `<span class="prov"><img class="prov__logo" src="${p.logo}" alt="${p.name}" title="${p.name}"></span>`;
+      return `<span class="prov">${p.name}</span>`;
+    }).join("");
 
-  const body = el("div", "media-card__body");
-  body.appendChild(el("h3", "media-card__title", item.title || ""));
-  if (item.date) body.appendChild(el("div", "muted", new Date(item.date).toLocaleDateString("en-GB")));
-  if (item.overview) body.appendChild(el("p", "media-card__ov", item.overview));
+    return `
+      <article class="media-card">
+        <div class="poster">
+          ${i.poster ? `<img src="${i.poster}" alt="${i.title}">` : `<div class="no-poster">No image</div>`}
+        </div>
+        <div class="meta">
+          <h4 class="title">${i.title || ""}</h4>
+          <div class="sub">${i.kind === "movie" ? "Movie" : "TV"} • ${fmtDate(i.date || "")}</div>
+          <div class="providers">${provHtml || `<span class="prov prov--tba">TBA</span>`}</div>
+          ${i.overview ? `<p class="ov">${i.overview}</p>` : ""}
+        </div>
+      </article>
+    `;
+  }
 
-  const provRow = el("div", "media-card__providers");
-  (item.providers || []).forEach(p => {
-    const span = el("span", "prov");
-    if (p.logo) {
-      const logo = el("img", "prov__logo");
-      logo.alt = p.name;
-      logo.src = p.logo;
-      logo.title = p.name;
-      span.appendChild(logo);
-    } else {
-      span.textContent = p.name;
+  function render(list, rootSel) {
+    const root = $(rootSel);
+    if (!root) return;
+    root.innerHTML = list.length ? list.map(card).join("") : `<div class="muted">Nothing found in this window.</div>`;
+  }
+
+  async function init() {
+    try {
+      const data = await fetchMedia();
+      render(data.movies || [], "#movies");
+      render(data.shows  || [], "#shows");
+    } catch (e) {
+      console.error(e);
+      render([], "#movies");
+      render([], "#shows");
     }
-    provRow.appendChild(span);
-  });
-  if (!provRow.childNodes.length) provRow.appendChild(el("span", "muted", "TBC"));
-  body.appendChild(provRow);
-
-  c.appendChild(body);
-  return c;
-}
-
-function renderList(rootId, list) {
-  const root = document.getElementById(rootId);
-  root.innerHTML = "";
-  if (!list || !list.length) {
-    root.appendChild(el("div", "muted", "Nothing found in this window."));
-    return;
   }
-  list.forEach(item => root.appendChild(card(item)));
-}
 
-(async function init() {
-  try {
-    const data = await fetchSmart("/api/media", "/data/media.json");
-    renderList("movies", data.movies);
-    renderList("shows",  data.shows);
-  } catch (e) {
-    console.error(e);
-    document.getElementById("movies").textContent = "Failed to load.";
-    document.getElementById("shows").textContent  = "Failed to load.";
-  }
+  document.addEventListener("DOMContentLoaded", init);
 })();
