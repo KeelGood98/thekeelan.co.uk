@@ -1,5 +1,7 @@
-// Lightweight fetch that tries API first (on the Pi) and falls back to static json (on GH Pages)
+/* Media page: load /api/media (Pi live) or /data/media.json (snapshot) and render */
+
 async function fetchSmart(apiUrl, staticPath) {
+  // Same pattern as the Football/Gaming pages
   try {
     const r = await fetch(apiUrl, { cache: "no-store" });
     if (!r.ok) throw 0;
@@ -11,61 +13,65 @@ async function fetchSmart(apiUrl, staticPath) {
   }
 }
 
-function fmtDate(iso) {
-  if (!iso) return "TBC";
-  const d = new Date(iso);
-  if (Number.isNaN(d)) return iso;
-  return d.toLocaleDateString(undefined, { year:"numeric", month:"short", day:"2-digit" });
+function el(tag, cls, text) {
+  const x = document.createElement(tag);
+  if (cls) x.className = cls;
+  if (text) x.textContent = text;
+  return x;
 }
 
-function renderMediaGrid(el, items) {
-  el.innerHTML = items.map(x => `
-    <div class="media-item">
-      ${x.poster
-        ? `<img src="${x.poster}" alt="">`
-        : `<div style="width:92px;height:138px;background:#0b1220;border-radius:8px"></div>`}
-      <div class="meta">
-        <div class="title">${x.title ?? ""}</div>
-        <div class="date">${fmtDate(x.date)}</div>
-        ${x.rating ? `<div class="rating">★ ${Number(x.rating).toFixed(1)}</div>` : ``}
-        ${x.overview ? `<div class="ov">${x.overview.slice(0,160)}${x.overview.length>160?"…":""}</div>` : ``}
-      </div>
-    </div>
-  `).join("");
-}
+function card(item) {
+  const c = el("article", "media-card");
+  const img = el("img", "media-card__poster");
+  img.alt = item.title || "";
+  img.loading = "lazy";
+  img.src = item.poster || "/static/bg.jpg";
+  c.appendChild(img);
 
-async function loadMedia() {
-  try {
-    const [movies, shows] = await Promise.all([
-      fetchSmart("/api/media/movies", "./data/media_movies.json"),
-      fetchSmart("/api/media/tv",     "./data/media_tv.json"),
-    ]);
+  const body = el("div", "media-card__body");
+  body.appendChild(el("h3", "media-card__title", item.title || ""));
+  if (item.date) body.appendChild(el("div", "muted", new Date(item.date).toLocaleDateString("en-GB")));
+  if (item.overview) body.appendChild(el("p", "media-card__ov", item.overview));
 
-    const m = movies.movies ?? [];
-    const s = shows.shows ?? [];
-    const stamp = movies.updated || shows.updated || "";
-    const updatedEl = document.querySelector("#media-updated");
-    if (updatedEl) updatedEl.textContent = stamp ? `Updated ${stamp}` : "";
-
-    renderMediaGrid(document.querySelector("#movies-grid"), m);
-    renderMediaGrid(document.querySelector("#tv-grid"), s);
-  } catch (e) {
-    console.error("Media load failed:", e);
-    const mg = document.querySelector("#movies-grid");
-    const tg = document.querySelector("#tv-grid");
-    if (mg) mg.innerHTML = `<p>Couldn’t load movies.</p>`;
-    if (tg) tg.innerHTML = `<p>Couldn’t load TV shows.</p>`;
-  }
-}
-
-// Hook up the Media tab without touching your existing JS
-document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector("#btn-media");
-  if (!btn) return;
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
-    const panel = document.querySelector("#panel-media");
-    if (panel) panel.classList.add("active");
-    loadMedia();
+  const provRow = el("div", "media-card__providers");
+  (item.providers || []).forEach(p => {
+    const span = el("span", "prov");
+    if (p.logo) {
+      const logo = el("img", "prov__logo");
+      logo.alt = p.name;
+      logo.src = p.logo;
+      logo.title = p.name;
+      span.appendChild(logo);
+    } else {
+      span.textContent = p.name;
+    }
+    provRow.appendChild(span);
   });
-});
+  if (!provRow.childNodes.length) provRow.appendChild(el("span", "muted", "TBC"));
+  body.appendChild(provRow);
+
+  c.appendChild(body);
+  return c;
+}
+
+function renderList(rootId, list) {
+  const root = document.getElementById(rootId);
+  root.innerHTML = "";
+  if (!list || !list.length) {
+    root.appendChild(el("div", "muted", "Nothing found in this window."));
+    return;
+  }
+  list.forEach(item => root.appendChild(card(item)));
+}
+
+(async function init() {
+  try {
+    const data = await fetchSmart("/api/media", "/data/media.json");
+    renderList("movies", data.movies);
+    renderList("shows",  data.shows);
+  } catch (e) {
+    console.error(e);
+    document.getElementById("movies").textContent = "Failed to load.";
+    document.getElementById("shows").textContent  = "Failed to load.";
+  }
+})();

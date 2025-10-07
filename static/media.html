@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kez's Board – Media</title>
+  <link rel="stylesheet" href="/static/styles.css?v=1">
+  <link rel="stylesheet" href="/static/media.css?v=1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Kez's Board</div>
+    <nav class="nav">
+      <a class="chip" href="/">Football</a>
+      <a class="chip" href="/gaming">Gaming</a>
+      <a class="chip" href="/extras">Extras</a>
+      <a class="chip chip--active" href="/media">Media</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Upcoming Movies</h2>
+      <div id="movies" class="media-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming TV</h2>
+      <div id="shows" class="media-grid"></div>
+    </section>
+  </main>
+
+  <script src="/static/media.js?v=1"></script>
+</body>
+</html>
