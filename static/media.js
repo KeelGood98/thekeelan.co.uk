@@ -5,7 +5,7 @@
   async function fetchMedia() {
     // try snapshot first (works on GitHub Pages)
     try {
-      const r = await fetch("./data/media.json", { cache: "no-store" });
+      const r = await fetch("/data/media.json", { cache: "no-store" });
       if (r.ok) return await r.json();
     } catch {}
     // optional fallback to a live API if you expose one on the Pi
