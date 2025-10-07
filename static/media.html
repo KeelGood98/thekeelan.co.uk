@@ -3,46 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kez's Board · Media</title>
+  <title>Kez's Board — Media</title>
 
-  <!-- Base styles you already have -->
-  <link rel="stylesheet" href="./styles.css?v=1" />
-  <!-- Page-specific styles -->
-  <link rel="stylesheet" href="./media.css?v=1" />
+  <!-- Global site styles + Media page styles -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./media.css" />
 </head>
-
 <body>
-  <!-- Same header + pill nav as index.html so styling matches -->
-  <header class="topbar">
-    <div class="brand">Kez's Board</div>
-    <nav class="tabs">
-      <a class="tab" href="./index.html#football">Football</a>
-      <a class="tab" href="./index.html#gaming">Gaming</a>
-      <a class="tab" href="./index.html#extras">Extras</a>
-      <a class="tab active" href="./media.html">Media</a>
+  <!-- Top bar / keep this very similar to other pages -->
+  <header class="kb-header">
+    <div class="kb-brand"><a href="./index.html">Kez's Board</a></div>
+    <nav class="kb-tabs">
+      <a href="./index.html">Football</a>
+      <a href="./gaming.html">Gaming</a>
+      <a href="./extras.html">Extras</a>
+      <a class="active" href="./media.html">Media</a>
     </nav>
   </header>
 
-  <main class="content">
-    <section class="panel">
-      <div class="panel-head">
+  <main class="kb-container">
+    <section class="kb-panel">
+      <div class="kb-panel__heading">
         <h2>Upcoming Movies</h2>
-        <small id="movies-updated"></small>
+        <span class="kb-updated" id="movies-updated"></span>
       </div>
-      <div id="movies-grid" class="media-grid"></div>
-      <div id="movies-empty" class="empty hidden">Nothing found in this window.</div>
+      <div id="movies-grid" class="kb-grid"></div>
+      <div id="movies-empty" class="kb-empty"></div>
     </section>
 
-    <section class="panel">
-      <div class="panel-head">
+    <section class="kb-panel">
+      <div class="kb-panel__heading">
         <h2>Upcoming TV</h2>
-        <small id="tv-updated"></small>
+        <span class="kb-updated" id="tv-updated"></span>
       </div>
-      <div id="tv-grid" class="media-grid"></div>
-      <div id="tv-empty" class="empty hidden">Nothing found in this window.</div>
+      <div id="tv-grid" class="kb-grid"></div>
+      <div id="tv-empty" class="kb-empty"></div>
     </section>
   </main>
 
-  <script src="./media.js?v=1"></script>
+  <template id="card-tpl">
+    <article class="media-card">
+      <div class="media-card__poster">
+        <img alt="" loading="lazy" />
+        <span class="media-card__badge type"></span>
+      </div>
+      <div class="media-card__body">
+        <h3 class="media-card__title"></h3>
+        <div class="media-card__meta">
+          <span class="kind"></span>
+          <span class="dot">•</span>
+          <span class="date"></span>
+        </div>
+        <p class="media-card__overview"></p>
+        <div class="media-card__providers"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="./media.js" defer></script>
 </body>
 </html>
