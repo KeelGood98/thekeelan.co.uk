@@ -1,133 +1,96 @@
-/* Media page renderer
-   - Reads /data/media.json (already built by update_media.py)
-   - Renders two sections: movies & tv
-   - Robust against slightly different key names (title/name, release_date/first_air_date, poster/poster_path)
-*/
+/* Media page loader — uses the prebuilt snapshot at /data/media.json */
 
-(async function () {
-  const toJSON = async (u) => {
-    const r = await fetch(u, { cache: "no-store" });
-    if (!r.ok) throw new Error(`${u} -> ${r.status}`);
-    return r.json();
-  };
+const DATA_URL = "/data/media.json"; // absolute, so it works from /media.html
 
-  let data;
-  try {
-    data = await toJSON("./data/media.json");
-  } catch (e) {
-    console.error("Failed to load media.json", e);
-    byId("movies-empty").textContent = "Couldn't load media data.";
-    byId("tv-empty").textContent = "Couldn't load media data.";
-    return;
-  }
+const TMDB_IMG = "https://image.tmdb.org/t/p/w342";
+const FALLBACK = "data:image/svg+xml;charset=utf-8," +
+  encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' width='342' height='513'>
+    <rect width='100%' height='100%' fill='#222'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle'
+    fill='#999' font-family='system-ui' font-size='18'>No poster</text></svg>`);
 
-  const windowInfo = data?.window || {};
-  if (windowInfo.updated) {
-    setText("movies-updated", `Updated ${fmtDate(windowInfo.updated)}`);
-    setText("tv-updated", `Updated ${fmtDate(windowInfo.updated)}`);
-  }
+async function getJSON(url) {
+  const r = await fetch(url, { cache: "no-store" });
+  if (!r.ok) throw new Error(url + " -> " + r.status);
+  return r.json();
+}
 
-  const movies = Array.isArray(data?.movies) ? data.movies : [];
-  const tv = Array.isArray(data?.tv) ? data.tv : [];
-
-  renderList("movies-grid", "movies-empty", movies, "movie");
-  renderList("tv-grid", "tv-empty", tv, "tv");
-})();
-
-/* ----------------- helpers ----------------- */
-
-function byId(id) { return document.getElementById(id); }
-function setText(id, t) { const el = byId(id); if (el) el.textContent = t || ""; }
-function fmtDate(s) { try { const d = new Date(s); return isNaN(d) ? s : d.toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" }); } catch { return s; } }
-function truncate(s, n) {
+function cut(s, n = 220) {
   if (!s) return "";
-  if (s.length <= n) return s;
-  const cut = s.slice(0, n).lastIndexOf(" ");
-  return s.slice(0, cut > 0 ? cut : n) + "…";
-}
-function coalescePoster(p) {
-  if (!p) return "";
-  // If it already looks like a URL, use it; otherwise assume TMDb path
-  if (/^https?:\/\//i.test(p)) return p;
-  return `https://image.tmdb.org/t/p/w342${p}`;
-}
-function kindLabel(t) { return (t === "movie" ? "Film" : "TV"); }
-
-function providerDotClass(name="") {
-  const s = name.toLowerCase();
-  if (s.includes("netflix")) return "netflix";
-  if (s.includes("disney"))  return "disney";
-  if (s.includes("prime") || s.includes("amazon")) return "prime";
-  if (s.includes("now"))     return "now";
-  if (s.includes("sky"))     return "sky";
-  if (s.includes("bbc"))     return "bbc";
-  if (s.includes("itv"))     return "itv";
-  if (s.includes("apple"))   return "apple";
-  return "";
+  return s.length > n ? s.slice(0, n - 1) + "…" : s;
 }
 
-function normalize(item, forcedType) {
-  const type = forcedType || item.type || (item.media_type || "").toLowerCase();
-  const title = item.title || item.name || item.original_title || item.original_name || "Untitled";
-  const date = item.release_date || item.first_air_date || item.date || "";
-  const overview = item.overview || item.description || "";
-  const poster = coalescePoster(item.poster || item.poster_path || "");
-  const providers = Array.isArray(item.providers) ? item.providers : (Array.isArray(item.uk_providers) ? item.uk_providers : []);
-  return { type, title, date, overview, poster, providers };
+function badge(txt) {
+  const el = document.createElement("span");
+  el.className = "badge";
+  el.textContent = txt;
+  return el;
 }
 
-function renderList(gridId, emptyId, list, forcedType) {
-  const grid = byId(gridId);
-  const empty = byId(emptyId);
-  grid.innerHTML = "";
-  empty.textContent = "";
+function card(item, kind) {
+  // kind = "movie" or "tv"
+  const img = document.createElement("img");
+  img.loading = "lazy";
+  img.src = item.poster ? (TMDB_IMG + item.poster) : FALLBACK;
+  img.alt = (item.title || item.name || "") + " poster";
 
-  // Filter to upcoming window if dates exist (<= 90 days ahead)
-  const now = new Date();
-  const ahead = new Date(+now + 90 * 864e5);
-  const filtered = list.filter(it => {
-    const d = new Date(it.release_date || it.first_air_date || it.date || "");
-    // If it has a date, keep next 90 days. If no date, keep it anyway.
-    return isNaN(d) ? true : (d >= now && d <= ahead);
-  });
+  const h3 = document.createElement("h3");
+  h3.textContent = (kind === "movie" ? item.title : item.name) || "Untitled";
 
-  if (!filtered.length) {
-    empty.textContent = "Nothing found in this window.";
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  const date = item.date ? new Date(item.date) : null;
+  meta.textContent = `${kind === "movie" ? "Film" : "TV"} • ` +
+    (date ? date.toLocaleDateString("en-GB", { day:"2-digit", month:"short", year:"numeric" }) : "TBA");
+
+  const badges = document.createElement("div");
+  badges.className = "badges";
+  if (item.provider) badges.append(badge(item.provider));
+  if (item.isNew) badges.append(badge("NEW"));
+
+  const ov = document.createElement("div");
+  ov.className = "overview";
+  ov.textContent = cut(item.overview, 320);
+
+  const right = document.createElement("div");
+  right.style.flex = "1 1 auto";
+  right.append(h3, meta, badges, ov);
+
+  const card = document.createElement("div");
+  card.className = "card";
+  card.append(img, right);
+  return card;
+}
+
+function drawList(where, list, kind) {
+  const host = document.getElementById(where);
+  host.innerHTML = "";
+  if (!list || !list.length) {
+    const d = document.createElement("div");
+    d.className = "card";
+    d.textContent = "Nothing found in this window.";
+    host.append(d);
     return;
   }
-
-  const tpl = document.getElementById("card-tpl");
-  filtered.forEach(it => {
-    const m = normalize(it, forcedType);
-    const node = tpl.content.cloneNode(true);
-
-    const img = node.querySelector("img");
-    if (m.poster) {
-      img.src = m.poster;
-      img.alt = m.title;
-    } else {
-      img.alt = `${m.title} (no artwork)`;
-    }
-
-    node.querySelector(".media-card__title").textContent = m.title;
-    node.querySelector(".media-card__badge.type").textContent = kindLabel(m.type);
-    node.querySelector(".kind").textContent = kindLabel(m.type);
-    node.querySelector(".date").textContent = m.date ? fmtDate(m.date) : "TBA";
-    node.querySelector(".media-card__overview").textContent = truncate(m.overview, 260);
-
-    const provWrap = node.querySelector(".media-card__providers");
-    if (m.providers && m.providers.length) {
-      m.providers.slice(0,5).forEach(p => {
-        const a = document.createElement("span");
-        a.className = "provider";
-        const dot = document.createElement("span");
-        dot.className = "dot " + providerDotClass(String(p));
-        a.appendChild(dot);
-        a.appendChild(document.createTextNode(p));
-        provWrap.appendChild(a);
-      });
-    }
-
-    grid.appendChild(node);
-  });
+  // Sort by date ascending
+  list.sort((a,b) => String(a.date).localeCompare(String(b.date)));
+  for (const it of list) host.append(card(it, kind));
 }
+
+(async function init() {
+  try {
+    const data = await getJSON(DATA_URL);
+    // Expecting { movies:[{title,poster,date,provider,overview,isNew}], tv:[{name,poster,date,provider,overview,isNew}] }
+    drawList("movies", data.movies || [], "movie");
+    drawList("tv", data.tv || [], "tv");
+  } catch (e) {
+    console.error("Media load failed:", e);
+    for (const id of ["movies","tv"]) {
+      const host = document.getElementById(id);
+      host.innerHTML = "";
+      const d = document.createElement("div");
+      d.className = "card";
+      d.textContent = "Couldn't load media data.";
+      host.append(d);
+    }
+  }
+})();

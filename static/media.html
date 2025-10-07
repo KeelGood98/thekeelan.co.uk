@@ -5,61 +5,87 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kez's Board — Media</title>
 
-  <!-- Global site styles + Media page styles -->
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./media.css" />
+  <!-- Use ABSOLUTE paths so the page works no matter where it's served from -->
+  <link rel="stylesheet" href="/styles.css?v=med1">
+
+  <style>
+    /* Small page-specific helpers (the rest comes from styles.css) */
+    .page { max-width: 1200px; margin: 90px auto 48px; padding: 0 16px; }
+    .section { background: rgba(0,0,0,.45); border: 1px solid rgba(255,255,255,.08);
+               border-radius: 14px; padding: 18px 18px 8px; margin-bottom: 22px; }
+    .section h2 { margin: 0 0 12px; }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat( auto-fill, minmax(240px, 1fr) );
+      gap: 16px;
+    }
+    .card {
+      display:flex; gap:12px; padding:12px; border-radius:12px;
+      background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.06);
+      min-height: 130px;
+    }
+    .card img {
+      width: 92px; height: 138px; object-fit: cover; border-radius: 8px;
+      background: #222;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 1rem; }
+    .meta { opacity:.8; font-size:.85rem; margin-bottom:6px }
+    .badges { display:flex; gap:6px; flex-wrap:wrap; }
+    .badge {
+      font-size:.72rem; padding: 3px 7px; border-radius: 999px;
+      background: rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15);
+      letter-spacing:.02em;
+    }
+    .overview { margin-top:6px; line-height:1.35; opacity:.9;
+      display:-webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow:hidden;
+    }
+
+    /* top bar (reuse same visual style as the index page) */
+    .topbar { position: fixed; inset: 0 0 auto 0; height: 64px; display:flex; align-items:center;
+      backdrop-filter: blur(10px); background: linear-gradient(180deg, rgba(0,0,0,.55), rgba(0,0,0,.15) 70%, transparent);
+      padding: 0 18px; z-index: 50; border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .brand { font-weight: 700; margin-right: 14px; }
+    .tabs { display:flex; gap:10px; }
+    .pill {
+      display:inline-flex; align-items:center; padding: 10px 16px; border-radius: 999px;
+      background: rgba(0,0,0,.55); border: 1px solid rgba(255,255,255,.12);
+      text-decoration:none; color: #dfe8f6;
+    }
+    .pill:hover { background: rgba(255,255,255,.06); }
+    .pill.active { outline: 2px solid rgba(120,170,255,.45); }
+  </style>
 </head>
 <body>
-  <!-- Top bar / keep this very similar to other pages -->
-  <header class="kb-header">
-    <div class="kb-brand"><a href="./index.html">Kez's Board</a></div>
-    <nav class="kb-tabs">
-      <a href="./index.html">Football</a>
-      <a href="./gaming.html">Gaming</a>
-      <a href="./extras.html">Extras</a>
-      <a class="active" href="./media.html">Media</a>
+
+  <header class="topbar">
+    <div class="brand"><a href="/" class="pill" style="padding:6px 10px">Kez’s Board</a></div>
+    <nav class="tabs">
+      <a class="pill" href="/">Football</a>
+      <a class="pill" href="/#gaming">Gaming</a>
+      <a class="pill" href="/#extras">Extras</a>
+      <a class="pill active" href="/media.html">Media</a>
     </nav>
   </header>
 
-  <main class="kb-container">
-    <section class="kb-panel">
-      <div class="kb-panel__heading">
-        <h2>Upcoming Movies</h2>
-        <span class="kb-updated" id="movies-updated"></span>
+  <main class="page">
+    <section class="section" id="sec-movies">
+      <h2>Upcoming Movies</h2>
+      <div id="movies" class="media-grid">
+        <div class="card"><div>Loading…</div></div>
       </div>
-      <div id="movies-grid" class="kb-grid"></div>
-      <div id="movies-empty" class="kb-empty"></div>
     </section>
 
-    <section class="kb-panel">
-      <div class="kb-panel__heading">
-        <h2>Upcoming TV</h2>
-        <span class="kb-updated" id="tv-updated"></span>
+    <section class="section" id="sec-tv">
+      <h2>Upcoming TV</h2>
+      <div id="tv" class="media-grid">
+        <div class="card"><div>Loading…</div></div>
       </div>
-      <div id="tv-grid" class="kb-grid"></div>
-      <div id="tv-empty" class="kb-empty"></div>
     </section>
   </main>
 
-  <template id="card-tpl">
-    <article class="media-card">
-      <div class="media-card__poster">
-        <img alt="" loading="lazy" />
-        <span class="media-card__badge type"></span>
-      </div>
-      <div class="media-card__body">
-        <h3 class="media-card__title"></h3>
-        <div class="media-card__meta">
-          <span class="kind"></span>
-          <span class="dot">•</span>
-          <span class="date"></span>
-        </div>
-        <p class="media-card__overview"></p>
-        <div class="media-card__providers"></div>
-      </div>
-    </article>
-  </template>
-
-  <script src="./media.js" defer></script>
+  <!-- Absolute path again to avoid 404/relative issues -->
+  <script defer src="/media.js?v=med1"></script>
 </body>
 </html>
