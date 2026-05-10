@@ -89,6 +89,17 @@
 
         <section class="card home-card">
           <div class="section-title">
+            <h2>Media Pick</h2>
+            <span>Trending now</span>
+          </div>
+
+          <div id="homeMediaPick" class="home-feature">
+            Loading media...
+          </div>
+        </section>
+
+        <section class="card home-card home-card-wide">
+          <div class="section-title">
             <h2>Quick Launch</h2>
             <span>Useful links</span>
           </div>
@@ -202,10 +213,72 @@
     </section>
 
     <section class="tab-panel" id="media">
-      <section class="card">
-        <h2>Media</h2>
-        <p>Films, TV, streaming releases, YouTube highlights, all that good stuff.</p>
+      <section class="card media-hero">
+        <div>
+          <h2>Media Watch</h2>
+          <p>Trending films, TV, UK cinema bits and streaming links.</p>
+        </div>
+        <span>Powered by TMDB</span>
       </section>
+
+      <div class="grid media-grid">
+        <section class="card media-wide">
+          <div class="section-title">
+            <h2>Trending Movies</h2>
+            <span>This week</span>
+          </div>
+
+          <div id="mediaTrendingMovies" class="media-card-grid">
+            Loading trending movies...
+          </div>
+        </section>
+
+        <section class="card media-wide">
+          <div class="section-title">
+            <h2>Trending TV</h2>
+            <span>This week</span>
+          </div>
+
+          <div id="mediaTrendingTv" class="media-card-grid">
+            Loading trending TV...
+          </div>
+        </section>
+
+        <section class="card media-wide">
+          <div class="section-title">
+            <h2>Upcoming Movies</h2>
+            <span>UK region</span>
+          </div>
+
+          <div id="mediaUpcomingMovies" class="media-card-grid">
+            Loading upcoming movies...
+          </div>
+        </section>
+
+        <section class="card media-wide">
+          <div class="section-title">
+            <h2>Now Playing</h2>
+            <span>UK cinemas</span>
+          </div>
+
+          <div id="mediaNowPlaying" class="media-card-grid">
+            Loading now playing...
+          </div>
+        </section>
+
+        <section class="card media-wide-full">
+          <div class="section-title">
+            <h2>Media Links</h2>
+            <span>Streaming shortcuts</span>
+          </div>
+
+          <div id="mediaLinks" class="gaming-links">
+            Loading media links...
+          </div>
+
+          <p id="mediaAttribution" class="media-attribution"></p>
+        </section>
+      </div>
     </section>
 
     <section class="tab-panel" id="extras">
