@@ -1,0 +1,35 @@
+name: Update media data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "44 8,14,20 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-media:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update media JSON
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: python scripts/update_media.py
+
+      - name: Commit updated media data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update media data"
+          file_pattern: data/media.json
