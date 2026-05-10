@@ -1,23 +1,49 @@
 {
   "updated": "manual",
-  "featured": [
+  "source": "Manual fallback",
+  "bestDeals": [
     {
       "title": "Euro Truck Simulator 2",
-      "platform": "PC",
-      "note": "Chill driving, mods, radio, Stream Deck potential.",
-      "status": "Installed"
+      "store": "Steam",
+      "salePrice": "N/A",
+      "normalPrice": "N/A",
+      "saving": "0%",
+      "dealRating": "",
+      "steamRating": "",
+      "steamRatingPercent": "",
+      "thumb": "",
+      "url": "https://store.steampowered.com/",
+      "dealID": ""
+    }
+  ],
+  "watchlist": [
+    {
+      "title": "Euro Truck Simulator 2",
+      "searchTitle": "Euro Truck Simulator 2",
+      "store": "Steam",
+      "salePrice": "N/A",
+      "normalPrice": "N/A",
+      "saving": "0%",
+      "dealRating": "",
+      "steamRating": "",
+      "steamRatingPercent": "",
+      "thumb": "",
+      "url": "https://store.steampowered.com/",
+      "dealID": ""
     },
     {
       "title": "Rainbow Six Siege",
-      "platform": "PC",
-      "note": "Pain, suffering, occasional good round.",
-      "status": "Main game"
-    },
-    {
-      "title": "Grand Theft Auto V",
-      "platform": "PC",
-      "note": "Useful for messing with mods, plugins and chaos.",
-      "status": "Backlog"
+      "searchTitle": "Rainbow Six Siege",
+      "store": "Steam",
+      "salePrice": "N/A",
+      "normalPrice": "N/A",
+      "saving": "0%",
+      "dealRating": "",
+      "steamRating": "",
+      "steamRatingPercent": "",
+      "thumb": "",
+      "url": "https://store.steampowered.com/",
+      "dealID": ""
     }
   ],
   "gamepass": [
@@ -29,24 +55,12 @@
     {
       "title": "Halo Infinite",
       "genre": "FPS",
-      "note": "Still worth having installed for quick multiplayer."
+      "note": "Quick multiplayer option."
     },
     {
       "title": "PowerWash Simulator",
       "genre": "Chill",
-      "note": "Weirdly satisfying. Brain-off mode."
-    }
-  ],
-  "deals": [
-    {
-      "title": "Steam Wishlist",
-      "price": "Check Steam",
-      "note": "Add proper deal tracking later."
-    },
-    {
-      "title": "CDKeys / Fanatical / Humble",
-      "price": "Manual check",
-      "note": "Useful for cheap keys, but we’ll keep it manual for now."
+      "note": "Brain-off mode."
     }
   ],
   "links": [
@@ -57,6 +71,10 @@
     {
       "label": "PC Game Pass",
       "url": "https://www.xbox.com/en-GB/xbox-game-pass/pc-game-pass"
+    },
+    {
+      "label": "CheapShark",
+      "url": "https://www.cheapshark.com/"
     },
     {
       "label": "CDKeys",
