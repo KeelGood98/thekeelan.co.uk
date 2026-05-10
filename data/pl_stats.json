@@ -1,19 +1,227 @@
 {
-  "updated": "manual",
-  "source": "Manual fallback",
+  "updated": "2026-05-10T21:09:09.480153+00:00",
+  "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
     {
-      "name": "Loading soon",
-      "team": "TBC",
-      "teamBadge": "",
-      "goals": 0,
+      "name": "Erling Haaland",
+      "firstName": "Erling",
+      "lastName": "Haaland",
+      "nationality": "Norway",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 26,
+      "assists": 8,
+      "penalties": 3
+    },
+    {
+      "name": "Thiago Rodrigues",
+      "firstName": "",
+      "lastName": "Thiago",
+      "nationality": "Brazil",
+      "team": "Brentford",
+      "teamBadge": "https://crests.football-data.org/402.png",
+      "goals": 22,
+      "assists": 1,
+      "penalties": 8
+    },
+    {
+      "name": "Antoine Semenyo",
+      "firstName": "Antoine",
+      "lastName": "Semenyo",
+      "nationality": "Ghana",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 15,
+      "assists": 4,
+      "penalties": 1
+    },
+    {
+      "name": "João Pedro",
+      "firstName": "",
+      "lastName": "João Pedro",
+      "nationality": "Brazil",
+      "team": "Chelsea",
+      "teamBadge": "https://crests.football-data.org/61.png",
+      "goals": 15,
+      "assists": 5,
+      "penalties": 0
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "firstName": "Viktor",
+      "lastName": "Gyökeres",
+      "nationality": "Sweden",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 14,
+      "assists": 1,
+      "penalties": 3
+    },
+    {
+      "name": "Danny Welbeck",
+      "firstName": "Danny",
+      "lastName": "Welbeck",
+      "nationality": "England",
+      "team": "Brighton",
+      "teamBadge": "https://crests.football-data.org/397.png",
+      "goals": 13,
+      "assists": 1,
+      "penalties": 1
+    },
+    {
+      "name": "Morgan Gibbs-White",
+      "firstName": "Morgan",
+      "lastName": "Gibbs-White",
+      "nationality": "England",
+      "team": "Nott'm Forest",
+      "teamBadge": "https://crests.football-data.org/351.png",
+      "goals": 13,
+      "assists": 5,
+      "penalties": 1
+    },
+    {
+      "name": "Dominic Calvert-Lewin",
+      "firstName": "Dominic",
+      "lastName": "Calvert-Lewin",
+      "nationality": "England",
+      "team": "Leeds United",
+      "teamBadge": "https://crests.football-data.org/341.png",
+      "goals": 12,
+      "assists": 1,
+      "penalties": 3
+    },
+    {
+      "name": "Eli Kroupi",
+      "firstName": "Eli",
+      "lastName": "Kroupi",
+      "nationality": "France",
+      "team": "Bournemouth",
+      "teamBadge": "https://crests.football-data.org/bournemouth.png",
+      "goals": 12,
       "assists": 0,
+      "penalties": 2
+    },
+    {
+      "name": "Ollie Watkins",
+      "firstName": "Ollie",
+      "lastName": "Watkins",
+      "nationality": "England",
+      "team": "Aston Villa",
+      "teamBadge": "https://crests.football-data.org/58.png",
+      "goals": 12,
+      "assists": 2,
       "penalties": 0
     }
   ],
-  "bestAttacks": [],
-  "bestDefences": [],
-  "goalDifferenceLeaders": [],
-  "manUnitedSummary": null
+  "bestAttacks": [
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsFor": 72,
+      "played": 35
+    },
+    {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsFor": 68,
+      "played": 36
+    },
+    {
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalsFor": 63,
+      "played": 36
+    },
+    {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalsFor": 60,
+      "played": 36
+    },
+    {
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
+      "goalsFor": 56,
+      "played": 36
+    }
+  ],
+  "bestDefences": [
+    {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 26,
+      "played": 36
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsAgainst": 32,
+      "played": 35
+    },
+    {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalsAgainst": 42,
+      "played": 36
+    },
+    {
+      "name": "Crystal Palace",
+      "badge": "https://crests.football-data.org/354.png",
+      "goalsAgainst": 44,
+      "played": 35
+    },
+    {
+      "name": "Aston Villa",
+      "badge": "https://crests.football-data.org/58.png",
+      "goalsAgainst": 46,
+      "played": 36
+    }
+  ],
+  "goalDifferenceLeaders": [
+    {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalDifference": 42,
+      "played": 36
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalDifference": 40,
+      "played": 35
+    },
+    {
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalDifference": 15,
+      "played": 36
+    },
+    {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalDifference": 12,
+      "played": 36
+    },
+    {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalDifference": 10,
+      "played": 36
+    }
+  ],
+  "manUnitedSummary": {
+    "position": 3,
+    "name": "Manchester United",
+    "fullName": "Manchester United FC",
+    "badge": "https://crests.football-data.org/66.png",
+    "played": 36,
+    "won": 18,
+    "drawn": 11,
+    "lost": 7,
+    "goalsFor": 63,
+    "goalsAgainst": 48,
+    "goalDifference": 15,
+    "points": 65
+  }
 }
