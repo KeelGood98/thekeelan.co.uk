@@ -206,12 +206,18 @@ function renderGamepassCards(items) {
   }
 
   return items.map((item) => `
-    <article class="mini-card">
-      <div class="mini-card-top">
-        <h3>${item.title || "Untitled"}</h3>
-        <span>${item.genre || ""}</span>
+    <article class="mini-card mini-card-icon-layout">
+      <div class="mini-card-icon-wrap">
+        ${item.icon ? `<img class="mini-card-icon" src="${item.icon}" alt="${item.title} icon">` : `<div class="mini-card-icon mini-card-icon-fallback">🎮</div>`}
       </div>
-      <p>${item.note || ""}</p>
+
+      <div class="mini-card-body">
+        <div class="mini-card-top">
+          <h3>${item.title || "Untitled"}</h3>
+          <span>${item.genre || ""}</span>
+        </div>
+        <p>${item.note || ""}</p>
+      </div>
     </article>
   `).join("");
 }
@@ -222,8 +228,9 @@ function renderGamingLinks(items) {
   }
 
   return items.map((item) => `
-    <a class="gaming-link" href="${item.url}" target="_blank" rel="noopener noreferrer">
-      ${item.label}
+    <a class="gaming-link gaming-link-with-logo" href="${item.url}" target="_blank" rel="noopener noreferrer">
+      ${item.logo ? `<img class="gaming-link-logo" src="${item.logo}" alt="${item.label} logo">` : ""}
+      <span>${item.label}</span>
     </a>
   `).join("");
 }
