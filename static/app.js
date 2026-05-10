@@ -1,6 +1,7 @@
 const DATA_PATHS = {
   table: "data/pl_table.json",
   fixtures: "data/mufc_fixtures.json",
+  stats: "data/pl_stats.json",
   gaming: "data/gaming.json",
   weather: "data/weather.json",
   media: "data/media.json"
@@ -9,6 +10,7 @@ const DATA_PATHS = {
 const APP_STATE = {
   table: null,
   fixtures: null,
+  stats: null,
   gaming: null,
   weather: null,
   media: null
@@ -51,6 +53,7 @@ async function loadDashboard() {
   await Promise.all([
     loadPremierLeagueTable(),
     loadFixtures(),
+    loadPremierLeagueStats(),
     loadGaming(),
     loadWeather(),
     loadMedia()
@@ -68,6 +71,7 @@ function updateLastUpdatedLabel() {
   const dates = [
     APP_STATE.table?.updated,
     APP_STATE.fixtures?.updated,
+    APP_STATE.stats?.updated,
     APP_STATE.gaming?.updated,
     APP_STATE.weather?.updated,
     APP_STATE.media?.updated
@@ -116,7 +120,7 @@ async function loadPremierLeagueTable() {
     if (!body) return;
 
     body.innerHTML = data.teams.map((team, index) => `
-      <tr>
+      <tr class="${team.name === "Manchester United" ? "highlight-row" : ""}">
         <td>${team.position || index + 1}</td>
         <td>
           <div class="team-cell">
@@ -128,6 +132,8 @@ async function loadPremierLeagueTable() {
         <td>${team.won ?? 0}</td>
         <td>${team.drawn ?? 0}</td>
         <td>${team.lost ?? 0}</td>
+        <td>${team.goalsFor ?? 0}</td>
+        <td>${team.goalsAgainst ?? 0}</td>
         <td>${team.goalDifference ?? 0}</td>
         <td><strong>${team.points ?? 0}</strong></td>
       </tr>
@@ -138,7 +144,7 @@ async function loadPremierLeagueTable() {
     if (body) {
       body.innerHTML = `
         <tr>
-          <td colspan="8">Could not load Premier League table: ${error.message}</td>
+          <td colspan="10">Could not load Premier League table: ${error.message}</td>
         </tr>
       `;
     }
@@ -146,7 +152,9 @@ async function loadPremierLeagueTable() {
 }
 
 async function loadFixtures() {
-  const list = document.getElementById("fixturesList");
+  const nextMatch = document.getElementById("mufcNextMatch");
+  const recentResults = document.getElementById("mufcRecentResults");
+  const upcomingFixtures = document.getElementById("mufcUpcomingFixtures");
 
   try {
     const data = await fetchJson(DATA_PATHS.fixtures);
@@ -156,42 +164,232 @@ async function loadFixtures() {
       throw new Error("fixtures array missing from JSON");
     }
 
-    if (!list) return;
+    if (nextMatch) {
+      nextMatch.innerHTML = renderFeatureMatch(data.nextMatch);
+    }
 
-    list.innerHTML = data.fixtures.map((fixture) => renderFixtureCard(fixture)).join("");
+    if (recentResults) {
+      recentResults.innerHTML = renderMatchList(data.recentResults || [], "No recent results found.");
+    }
+
+    if (upcomingFixtures) {
+      upcomingFixtures.innerHTML = renderMatchList(data.upcomingFixtures || [], "No upcoming fixtures found.");
+    }
   } catch (error) {
     console.error("Fixture load error:", error);
 
-    if (list) {
-      list.innerHTML = `Could not load fixtures: ${error.message}`;
-    }
+    if (nextMatch) nextMatch.innerHTML = `Could not load fixtures: ${error.message}`;
+    if (recentResults) recentResults.innerHTML = "";
+    if (upcomingFixtures) upcomingFixtures.innerHTML = "";
   }
 }
 
-function renderFixtureCard(fixture) {
-  const resultClass = fixture.result ? `result ${fixture.result}` : "";
-  const scoreOrVs = fixture.score ? fixture.score : "vs";
-  const channelText = fixture.channel && fixture.channel !== "TBC"
-    ? ` · ${fixture.channel}`
-    : "";
+async function loadPremierLeagueStats() {
+  const topScorers = document.getElementById("plTopScorers");
+  const bestAttacks = document.getElementById("plBestAttacks");
+  const bestDefences = document.getElementById("plBestDefences");
+  const mufcSummary = document.getElementById("mufcSummary");
+
+  try {
+    const data = await fetchJson(DATA_PATHS.stats);
+    APP_STATE.stats = data;
+
+    if (topScorers) {
+      topScorers.innerHTML = renderTopScorers(data.topScorers || []);
+    }
+
+    if (bestAttacks) {
+      bestAttacks.innerHTML = renderTeamStatList(data.bestAttacks || [], "goalsFor", "goals");
+    }
+
+    if (bestDefences) {
+      bestDefences.innerHTML = renderTeamStatList(data.bestDefences || [], "goalsAgainst", "conceded");
+    }
+
+    if (mufcSummary) {
+      mufcSummary.innerHTML = renderMufcSummary(data.manUnitedSummary);
+    }
+  } catch (error) {
+    console.error("Premier League stats load error:", error);
+
+    if (topScorers) topScorers.innerHTML = `Could not load stats: ${error.message}`;
+    if (bestAttacks) bestAttacks.innerHTML = "";
+    if (bestDefences) bestDefences.innerHTML = "";
+    if (mufcSummary) mufcSummary.innerHTML = "";
+  }
+}
+
+function renderFeatureMatch(match) {
+  if (!match) {
+    return `<p class="muted">No next match found.</p>`;
+  }
+
+  const statusLabel = formatStatus(match.status);
+  const matchday = match.matchday ? `Matchday ${match.matchday}` : "Premier League";
+  const scoreText = match.score ? match.score : "vs";
 
   return `
-    <article class="fixture">
-      <div class="fixture-top">
-        <span>${fixture.date || "TBC"}</span>
-        <span>${fixture.competition || "Premier League"}</span>
+    <article class="feature-match-card">
+      <div class="feature-match-top">
+        <span>${matchday}</span>
+        <strong>${statusLabel}</strong>
       </div>
 
-      <div class="fixture-main">
-        ${fixture.home || "TBC"} ${scoreOrVs} ${fixture.away || "TBC"}
-        ${fixture.result ? `<span class="${resultClass}">${fixture.result}</span>` : ""}
+      <div class="feature-match-main">
+        <h3>${match.home || "TBC"} ${scoreText} ${match.away || "TBC"}</h3>
+        <p>${match.date || "TBC"} · ${match.competition || "Premier League"}</p>
       </div>
 
-      <div class="fixture-meta">
-        ${fixture.venue || "TBC"}${channelText}
+      <div class="feature-match-meta">
+        <span>${match.venue || "Venue TBC"}</span>
+        ${match.channel && match.channel !== "TBC" ? `<span>${match.channel}</span>` : ""}
       </div>
     </article>
   `;
+}
+
+function renderMatchList(matches, emptyMessage) {
+  if (!matches.length) {
+    return `<p class="muted">${emptyMessage}</p>`;
+  }
+
+  return matches.map((match) => renderDetailedFixtureCard(match)).join("");
+}
+
+function renderDetailedFixtureCard(match) {
+  const scoreOrVs = match.score ? match.score : "vs";
+  const resultClass = match.result ? `result ${match.result}` : "";
+  const statusLabel = formatStatus(match.status);
+  const halfTime = match.halfTimeScore ? `HT ${match.halfTimeScore}` : "";
+  const winner = match.winner ? `Winner: ${match.winner}` : "";
+  const matchday = match.matchday ? `MD ${match.matchday}` : "";
+
+  return `
+    <article class="fixture detailed-fixture">
+      <div class="fixture-top">
+        <span>${match.date || "TBC"}</span>
+        <span>${statusLabel}</span>
+      </div>
+
+      <div class="fixture-main">
+        ${match.home || "TBC"} ${scoreOrVs} ${match.away || "TBC"}
+        ${match.result ? `<span class="${resultClass}">${match.result}</span>` : ""}
+      </div>
+
+      <div class="fixture-detail-row">
+        ${matchday ? `<span>${matchday}</span>` : ""}
+        ${halfTime ? `<span>${halfTime}</span>` : ""}
+        ${winner ? `<span>${winner}</span>` : ""}
+      </div>
+
+      <div class="fixture-meta">
+        ${match.competition || "Premier League"}
+        ${match.channel && match.channel !== "TBC" ? ` · ${match.channel}` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function formatStatus(status) {
+  const labels = {
+    FINISHED: "Finished",
+    TIMED: "Scheduled",
+    SCHEDULED: "Scheduled",
+    IN_PLAY: "Live",
+    PAUSED: "Half-time",
+    POSTPONED: "Postponed",
+    SUSPENDED: "Suspended",
+    CANCELLED: "Cancelled"
+  };
+
+  return labels[status] || status || "TBC";
+}
+
+function renderTopScorers(items) {
+  if (!items.length) {
+    return `<p class="muted">No scorers found.</p>`;
+  }
+
+  return items.map((player, index) => `
+    <div class="stats-row">
+      <div class="stats-left">
+        <strong>${index + 1}</strong>
+        ${player.teamBadge ? `<img class="badge" src="${player.teamBadge}" alt="${player.team} badge">` : ""}
+        <div>
+          <span>${player.name || "Unknown"}</span>
+          <p>${player.team || "Unknown team"}</p>
+        </div>
+      </div>
+
+      <div class="stats-number">
+        <strong>${player.goals ?? 0}</strong>
+        <span>goals</span>
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderTeamStatList(items, valueKey, label) {
+  if (!items.length) {
+    return `<p class="muted">No team stats found.</p>`;
+  }
+
+  return items.map((team, index) => `
+    <div class="stats-row">
+      <div class="stats-left">
+        <strong>${index + 1}</strong>
+        ${team.badge ? `<img class="badge" src="${team.badge}" alt="${team.name} badge">` : ""}
+        <div>
+          <span>${team.name || "Unknown"}</span>
+          <p>${team.played ?? 0} played</p>
+        </div>
+      </div>
+
+      <div class="stats-number">
+        <strong>${team[valueKey] ?? 0}</strong>
+        <span>${label}</span>
+      </div>
+    </div>
+  `).join("");
+}
+
+function renderMufcSummary(team) {
+  if (!team) {
+    return `<p class="muted">No United summary found.</p>`;
+  }
+
+  return `
+    <div class="mufc-summary-card">
+      <div class="team-cell">
+        ${team.badge ? `<img class="badge large-badge" src="${team.badge}" alt="${team.name} badge">` : ""}
+        <div>
+          <h3>${team.name || "Manchester United"}</h3>
+          <p>${ordinal(team.position)} · ${team.points ?? 0} pts</p>
+        </div>
+      </div>
+
+      <div class="summary-grid">
+        <span><strong>${team.played ?? 0}</strong>P</span>
+        <span><strong>${team.won ?? 0}</strong>W</span>
+        <span><strong>${team.drawn ?? 0}</strong>D</span>
+        <span><strong>${team.lost ?? 0}</strong>L</span>
+        <span><strong>${team.goalsFor ?? 0}</strong>GF</span>
+        <span><strong>${team.goalsAgainst ?? 0}</strong>GA</span>
+      </div>
+    </div>
+  `;
+}
+
+function ordinal(value) {
+  const number = Number(value);
+
+  if (!number) return "Position TBC";
+
+  const suffixes = ["th", "st", "nd", "rd"];
+  const mod100 = number % 100;
+  const suffix = suffixes[(mod100 - 20) % 10] || suffixes[mod100] || suffixes[0];
+
+  return `${number}${suffix}`;
 }
 
 async function loadGaming() {
@@ -362,12 +560,10 @@ function loadHomeNextFixture() {
   const target = document.getElementById("homeNextFixture");
   if (!target) return;
 
-  const fixtures = APP_STATE.fixtures?.fixtures || [];
-
-  const nextFixture =
-    fixtures.find((fixture) => !fixture.score && fixture.status !== "FINISHED") ||
-    fixtures.find((fixture) => !fixture.score) ||
-    fixtures[0];
+  const nextFixture = APP_STATE.fixtures?.nextMatch ||
+    APP_STATE.fixtures?.upcomingFixtures?.[0] ||
+    APP_STATE.fixtures?.fixtures?.find((fixture) => !fixture.score && fixture.status !== "FINISHED") ||
+    APP_STATE.fixtures?.fixtures?.[0];
 
   if (!nextFixture) {
     target.innerHTML = `<p class="muted">No fixture data found.</p>`;
