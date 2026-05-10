@@ -1,0 +1,35 @@
+{
+  "updated": "manual",
+  "fixtures": [
+    {
+      "date": "Sat 15 Nov, 15:00",
+      "competition": "Premier League",
+      "home": "Manchester United",
+      "away": "Everton",
+      "score": "",
+      "result": "",
+      "venue": "Old Trafford",
+      "channel": "TBC"
+    },
+    {
+      "date": "Sun 23 Nov, 16:30",
+      "competition": "Premier League",
+      "home": "Chelsea",
+      "away": "Manchester United",
+      "score": "",
+      "result": "",
+      "venue": "Stamford Bridge",
+      "channel": "Sky Sports"
+    },
+    {
+      "date": "Sun 9 Nov",
+      "competition": "Premier League",
+      "home": "Manchester United",
+      "away": "Brighton",
+      "score": "2-1",
+      "result": "W",
+      "venue": "Old Trafford",
+      "channel": ""
+    }
+  ]
+}
