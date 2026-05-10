@@ -1,0 +1,45 @@
+{
+  "updated": "manual",
+  "teams": [
+    {
+      "name": "Arsenal",
+      "badge": "",
+      "played": 10,
+      "won": 7,
+      "drawn": 2,
+      "lost": 1,
+      "goalDifference": 14,
+      "points": 23
+    },
+    {
+      "name": "Manchester City",
+      "badge": "",
+      "played": 10,
+      "won": 7,
+      "drawn": 1,
+      "lost": 2,
+      "goalDifference": 13,
+      "points": 22
+    },
+    {
+      "name": "Manchester United",
+      "badge": "",
+      "played": 10,
+      "won": 5,
+      "drawn": 2,
+      "lost": 3,
+      "goalDifference": 3,
+      "points": 17
+    },
+    {
+      "name": "Liverpool",
+      "badge": "",
+      "played": 10,
+      "won": 4,
+      "drawn": 4,
+      "lost": 2,
+      "goalDifference": 5,
+      "points": 16
+    }
+  ]
+}
