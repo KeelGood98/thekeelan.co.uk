@@ -7,8 +7,12 @@ from urllib.error import HTTPError, URLError
 
 
 BASE_URL = "https://www.cheapshark.com/api/1.0"
+FX_URL = "https://api.frankfurter.dev/v1/latest?base=USD&symbols=GBP"
+
 DATA_DIR = Path("data")
 GAMING_FILE = DATA_DIR / "gaming.json"
+
+USD_TO_GBP_RATE = 0.79
 
 
 STORE_NAMES = {
@@ -111,10 +115,7 @@ GAMEPASS_PICKS = [
 ]
 
 
-def fetch_json(endpoint: str, params: dict | None = None):
-    query = f"?{urlencode(params)}" if params else ""
-    url = f"{BASE_URL}{endpoint}{query}"
-
+def fetch_json_url(url: str):
     request = Request(
         url,
         headers={
@@ -132,12 +133,39 @@ def fetch_json(endpoint: str, params: dict | None = None):
         raise RuntimeError(f"Network error from {url}: {error}") from error
 
 
-def money(value: str | float | int) -> str:
+def fetch_json(endpoint: str, params: dict | None = None):
+    query = f"?{urlencode(params)}" if params else ""
+    url = f"{BASE_URL}{endpoint}{query}"
+
+    return fetch_json_url(url)
+
+
+def get_usd_to_gbp_rate() -> float:
     try:
-        amount = float(value)
-        return f"${amount:.2f}"
+        raw = fetch_json_url(FX_URL)
+        rate = raw.get("rates", {}).get("GBP")
+
+        if not rate:
+            raise RuntimeError("GBP rate missing from Frankfurter response")
+
+        return float(rate)
+    except Exception as error:
+        print(f"WARNING: Could not fetch USD to GBP rate. Using fallback {USD_TO_GBP_RATE}. Error: {error}")
+        return USD_TO_GBP_RATE
+
+
+def to_float(value: str | float | int) -> float:
+    try:
+        return float(value)
     except Exception:
-        return "$0.00"
+        return 0.0
+
+
+def money_gbp_from_usd(value: str | float | int, usd_to_gbp_rate: float) -> str:
+    amount_usd = to_float(value)
+    amount_gbp = amount_usd * usd_to_gbp_rate
+
+    return f"£{amount_gbp:.2f}"
 
 
 def percentage(value: str | float | int) -> str:
@@ -152,14 +180,19 @@ def cheapshark_deal_url(deal_id: str) -> str:
     return f"https://www.cheapshark.com/redirect?dealID={deal_id}"
 
 
-def normalise_deal(item: dict) -> dict:
+def normalise_deal(item: dict, usd_to_gbp_rate: float) -> dict:
     store_id = str(item.get("storeID", "")).strip()
+
+    sale_price_usd = item.get("salePrice", "0")
+    normal_price_usd = item.get("normalPrice", "0")
 
     return {
         "title": item.get("title", "Unknown"),
         "store": STORE_NAMES.get(store_id, f"Store {store_id}" if store_id else "Unknown store"),
-        "salePrice": money(item.get("salePrice", "0")),
-        "normalPrice": money(item.get("normalPrice", "0")),
+        "salePrice": money_gbp_from_usd(sale_price_usd, usd_to_gbp_rate),
+        "normalPrice": money_gbp_from_usd(normal_price_usd, usd_to_gbp_rate),
+        "salePriceUsd": f"${to_float(sale_price_usd):.2f}",
+        "normalPriceUsd": f"${to_float(normal_price_usd):.2f}",
         "saving": percentage(item.get("savings", "0")),
         "dealRating": item.get("dealRating", ""),
         "steamRating": item.get("steamRatingText", ""),
@@ -170,7 +203,7 @@ def normalise_deal(item: dict) -> dict:
     }
 
 
-def get_best_deals() -> list[dict]:
+def get_best_deals(usd_to_gbp_rate: float) -> list[dict]:
     raw = fetch_json(
         "/deals",
         {
@@ -183,12 +216,12 @@ def get_best_deals() -> list[dict]:
         }
     )
 
-    deals = [normalise_deal(item) for item in raw if item.get("dealID")]
+    deals = [normalise_deal(item, usd_to_gbp_rate) for item in raw if item.get("dealID")]
 
     return deals[:12]
 
 
-def get_watchlist_deals() -> list[dict]:
+def get_watchlist_deals(usd_to_gbp_rate: float) -> list[dict]:
     watchlist = []
 
     for title in WATCHLIST_TITLES:
@@ -203,7 +236,7 @@ def get_watchlist_deals() -> list[dict]:
         )
 
         if raw:
-            deal = normalise_deal(raw[0])
+            deal = normalise_deal(raw[0], usd_to_gbp_rate)
             deal["searchTitle"] = title
             watchlist.append(deal)
         else:
@@ -213,6 +246,8 @@ def get_watchlist_deals() -> list[dict]:
                 "store": "No deal found",
                 "salePrice": "N/A",
                 "normalPrice": "N/A",
+                "salePriceUsd": "N/A",
+                "normalPriceUsd": "N/A",
                 "saving": "0%",
                 "dealRating": "",
                 "steamRating": "",
@@ -226,11 +261,16 @@ def get_watchlist_deals() -> list[dict]:
 
 
 def build_gaming_data() -> dict:
+    usd_to_gbp_rate = get_usd_to_gbp_rate()
+
     return {
         "updated": datetime.now(timezone.utc).isoformat(),
         "source": "CheapShark",
-        "bestDeals": get_best_deals(),
-        "watchlist": get_watchlist_deals(),
+        "currency": "GBP",
+        "originalCurrency": "USD",
+        "usdToGbpRate": usd_to_gbp_rate,
+        "bestDeals": get_best_deals(usd_to_gbp_rate),
+        "watchlist": get_watchlist_deals(usd_to_gbp_rate),
         "gamepass": GAMEPASS_PICKS,
         "links": QUICK_LINKS
     }
@@ -252,6 +292,7 @@ def main():
 
     write_json(GAMING_FILE, data)
     print(f"Wrote {GAMING_FILE}")
+    print(f"Converted USD to GBP using rate: {data['usdToGbpRate']}")
 
 
 if __name__ == "__main__":
