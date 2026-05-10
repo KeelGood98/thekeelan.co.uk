@@ -906,67 +906,162 @@ th {
   border-radius: 18px;
 }
 
-.extras-pill-grid {
-  display: flex;
-  flex-wrap: wrap;
+.internet-check-grid {
+  display: grid;
   gap: 0.75rem;
 }
 
-.extras-pill {
-  display: inline-flex;
+.internet-check-card {
+  display: flex;
   align-items: center;
-  gap: 0.6rem;
-  padding: 0.75rem 1rem;
-  border-radius: 999px;
+  gap: 0.9rem;
+  padding: 0.95rem;
+  border-radius: 18px;
   color: var(--text);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--card-border);
-  font-weight: 800;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
-.extras-pill:hover {
+.internet-check-card:hover {
   transform: translateY(-2px);
-  background: rgba(96, 165, 250, 0.18);
+  background: rgba(96, 165, 250, 0.16);
   border-color: rgba(96, 165, 250, 0.45);
 }
 
-.extras-pill span {
-  font-size: 1.1rem;
+.internet-check-card > span {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  font-size: 1.4rem;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.extras-status-row {
+.internet-check-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.internet-check-card p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.meme-panel {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.meme-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 0.75rem;
 }
 
-.extras-status-chip {
-  padding: 1rem;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+.meme-button {
+  border: 1px solid var(--card-border);
+  background: rgba(96, 165, 250, 0.18);
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 900;
 }
 
-.extras-status-chip > span {
+.meme-button:hover {
+  background: var(--accent);
+  color: #031225;
+}
+
+.meme-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.meme-status {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.meme-result {
+  min-height: 260px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  overflow: hidden;
+}
+
+.meme-placeholder {
+  min-height: 260px;
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  margin-bottom: 0.8rem;
-  border-radius: 15px;
-  font-size: 1.4rem;
-  background: rgba(255, 255, 255, 0.075);
-}
-
-.extras-status-chip strong {
-  display: block;
-}
-
-.extras-status-chip p {
-  margin: 0.35rem 0 0;
+  text-align: center;
+  padding: 1rem;
   color: var(--muted);
+}
+
+.meme-placeholder span {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.meme-placeholder p {
+  margin: 0;
+}
+
+.meme-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.meme-image {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.meme-info {
+  align-self: center;
+}
+
+.meme-info h3 {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+
+.meme-info p {
+  color: var(--muted);
+}
+
+.meme-info a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+}
+
+.meme-info a:hover {
+  background: var(--accent);
+  color: #031225;
 }
 
 .muted {
@@ -984,8 +1079,7 @@ footer {
   .deal-grid,
   .media-card-grid,
   .forecast-grid,
-  .weather-stats-grid,
-  .extras-status-row {
+  .weather-stats-grid {
     grid-template-columns: 1fr;
   }
 
@@ -995,6 +1089,10 @@ footer {
 
   .home-weather-stats {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .meme-card {
+    grid-template-columns: 1fr;
   }
 }
 
