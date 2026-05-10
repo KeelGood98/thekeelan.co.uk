@@ -32,33 +32,28 @@
     </section>
 
     <section class="tab-panel active" id="home">
-      <section class="card home-hero">
-        <div>
-          <p class="eyebrow">Dashboard</p>
-          <h2>The stuff I check, without the faff.</h2>
-          <p>
-            Football updates, gaming deals, live weather, media picks and quick links — all in one place.
-          </p>
+      <section class="card home-weather-hero">
+        <div class="home-weather-left">
+          <p class="eyebrow">Leeds Weather</p>
+
+          <div id="homeWeatherHeroMain" class="home-weather-main">
+            <div class="weather-icon weather-icon-large">🌡️</div>
+
+            <div>
+              <h2>Loading weather...</h2>
+              <p>Fetching the latest weather data.</p>
+            </div>
+          </div>
         </div>
 
-        <div id="homeWeatherBadge" class="home-hero-badge weather-mini-badge">
-          <span>Leeds Weather</span>
-          <strong>Loading...</strong>
+        <div id="homeWeatherHeroStats" class="home-weather-stats">
+          <span>Wind —</span>
+          <span>Humidity —</span>
+          <span>Rain —</span>
         </div>
       </section>
 
       <div class="grid home-grid">
-        <section class="card home-card">
-          <div class="section-title">
-            <h2>Current Weather</h2>
-            <span>Leeds</span>
-          </div>
-
-          <div id="homeWeather" class="home-feature">
-            Loading weather...
-          </div>
-        </section>
-
         <section class="card home-card">
           <div class="section-title">
             <h2>Next United Fixture</h2>
@@ -92,7 +87,7 @@
           </div>
         </section>
 
-        <section class="card home-card home-card-wide">
+        <section class="card home-card">
           <div class="section-title">
             <h2>Quick Launch</h2>
             <span>Useful links</span>
