@@ -112,11 +112,19 @@
     </section>
 
     <section class="tab-panel" id="football">
-      <div class="grid two-col">
+      <section class="card football-hero">
+        <div>
+          <h2>Football Centre</h2>
+          <p>Premier League table, United fixtures, recent results and league stats.</p>
+        </div>
+        <span>Powered by football-data.org</span>
+      </section>
+
+      <div class="grid football-main-grid">
         <section class="card">
           <div class="section-title">
             <h2>Premier League Table</h2>
-            <span>Top flight chaos</span>
+            <span>Full table</span>
           </div>
 
           <div class="table-wrap">
@@ -129,6 +137,8 @@
                   <th>W</th>
                   <th>D</th>
                   <th>L</th>
+                  <th>GF</th>
+                  <th>GA</th>
                   <th>GD</th>
                   <th>Pts</th>
                 </tr>
@@ -136,7 +146,7 @@
 
               <tbody id="plTableBody">
                 <tr>
-                  <td colspan="8">Loading table...</td>
+                  <td colspan="10">Loading table...</td>
                 </tr>
               </tbody>
             </table>
@@ -146,14 +156,65 @@
         <section class="card">
           <div class="section-title">
             <h2>Manchester United</h2>
-            <span>Fixtures & results</span>
+            <span>Match centre</span>
           </div>
 
-          <div id="fixturesList" class="fixture-list">
-            Loading fixtures...
+          <div id="mufcNextMatch" class="football-feature-match">
+            Loading next match...
+          </div>
+
+          <div class="football-subsection">
+            <h3>Recent Results</h3>
+            <div id="mufcRecentResults" class="fixture-list">
+              Loading recent results...
+            </div>
+          </div>
+
+          <div class="football-subsection">
+            <h3>Upcoming Fixtures</h3>
+            <div id="mufcUpcomingFixtures" class="fixture-list">
+              Loading upcoming fixtures...
+            </div>
           </div>
         </section>
       </div>
+
+      <section class="card football-stats-card">
+        <div class="section-title">
+          <h2>Premier League Stats</h2>
+          <span>Top scorers and team stats</span>
+        </div>
+
+        <div class="grid football-stats-grid">
+          <section>
+            <h3>Top Scorers</h3>
+            <div id="plTopScorers" class="stats-list">
+              Loading top scorers...
+            </div>
+          </section>
+
+          <section>
+            <h3>Best Attacks</h3>
+            <div id="plBestAttacks" class="stats-list">
+              Loading attacking stats...
+            </div>
+          </section>
+
+          <section>
+            <h3>Best Defences</h3>
+            <div id="plBestDefences" class="stats-list">
+              Loading defensive stats...
+            </div>
+          </section>
+
+          <section>
+            <h3>United Summary</h3>
+            <div id="mufcSummary" class="stats-list">
+              Loading United summary...
+            </div>
+          </section>
+        </div>
+      </section>
     </section>
 
     <section class="tab-panel" id="gaming">
