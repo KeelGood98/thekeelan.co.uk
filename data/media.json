@@ -1,0 +1,68 @@
+{
+  "updated": "manual",
+  "source": "Manual fallback",
+  "region": "GB",
+  "trendingMovies": [
+    {
+      "id": 0,
+      "mediaType": "movie",
+      "title": "Loading soon",
+      "overview": "TMDB media data will appear here after the GitHub Action runs.",
+      "poster": "",
+      "backdrop": "",
+      "releaseDate": "TBC",
+      "rating": "N/A",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/"
+    }
+  ],
+  "trendingTv": [
+    {
+      "id": 0,
+      "mediaType": "tv",
+      "title": "Loading soon",
+      "overview": "Trending TV data will appear here after the GitHub Action runs.",
+      "poster": "",
+      "backdrop": "",
+      "releaseDate": "TBC",
+      "rating": "N/A",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/"
+    }
+  ],
+  "upcomingMovies": [],
+  "nowPlayingMovies": [],
+  "links": [
+    {
+      "label": "Netflix",
+      "url": "https://www.netflix.com/gb/",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=netflix.com"
+    },
+    {
+      "label": "Prime Video",
+      "url": "https://www.primevideo.com/",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=primevideo.com"
+    },
+    {
+      "label": "Disney+",
+      "url": "https://www.disneyplus.com/en-gb",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=disneyplus.com"
+    },
+    {
+      "label": "NOW",
+      "url": "https://www.nowtv.com/",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=nowtv.com"
+    },
+    {
+      "label": "Apple TV+",
+      "url": "https://tv.apple.com/gb",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=tv.apple.com"
+    },
+    {
+      "label": "TMDB",
+      "url": "https://www.themoviedb.org/",
+      "logo": "https://www.google.com/s2/favicons?sz=64&domain=themoviedb.org"
+    }
+  ],
+  "attribution": "This product uses the TMDB API but is not endorsed or certified by TMDB."
+}
