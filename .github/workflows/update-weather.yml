@@ -1,0 +1,33 @@
+name: Update weather data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "12 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update weather JSON
+        run: python scripts/update_weather.py
+
+      - name: Commit updated weather data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update weather data"
+          file_pattern: data/weather.json
