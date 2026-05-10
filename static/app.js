@@ -237,55 +237,60 @@ async function loadWeather() {
 }
 
 function loadHome() {
-  loadHomeWeather();
+  loadHomeWeatherHero();
   loadHomeNextFixture();
   loadHomeTopDeal();
   loadHomeTopThree();
   loadHomeQuickLinks();
 }
 
-function loadHomeWeather() {
-  const target = document.getElementById("homeWeather");
-  const badge = document.getElementById("homeWeatherBadge");
+function loadHomeWeatherHero() {
+  const main = document.getElementById("homeWeatherHeroMain");
+  const stats = document.getElementById("homeWeatherHeroStats");
 
   const weather = APP_STATE.weather;
   const current = weather?.current;
 
   if (!current) {
-    if (target) target.innerHTML = `<p class="muted">No weather data found.</p>`;
-    if (badge) badge.innerHTML = `<span>Leeds Weather</span><strong>N/A</strong>`;
+    if (main) {
+      main.innerHTML = `
+        <div class="weather-icon weather-icon-large">🌡️</div>
+        <div>
+          <h2>Weather unavailable</h2>
+          <p>No weather data found.</p>
+        </div>
+      `;
+    }
+
+    if (stats) {
+      stats.innerHTML = `
+        <span>Wind —</span>
+        <span>Humidity —</span>
+        <span>Rain —</span>
+      `;
+    }
+
     return;
   }
 
-  if (badge) {
-    badge.innerHTML = `
-      <span>${weather.location || "Leeds"} Weather</span>
-      <strong>${current.icon || "🌡️"} ${current.temperature ?? "N/A"}°C</strong>
+  if (main) {
+    main.innerHTML = `
+      <div class="weather-icon weather-icon-large">${current.icon || "🌡️"}</div>
+
+      <div>
+        <h2>${current.temperature ?? "N/A"}°C in ${weather.location || "Leeds"}</h2>
+        <p>${current.description || "Unknown"} · Feels like ${current.feelsLike ?? "N/A"}°C</p>
+      </div>
     `;
   }
 
-  if (!target) return;
-
-  target.innerHTML = `
-    <div class="weather-current">
-      <div class="weather-icon">${current.icon || "🌡️"}</div>
-
-      <div>
-        <h3>${current.temperature ?? "N/A"}°C</h3>
-        <p>${current.description || "Unknown"} · Feels like ${current.feelsLike ?? "N/A"}°C</p>
-      </div>
-    </div>
-
-    <div class="weather-stats">
+  if (stats) {
+    stats.innerHTML = `
       <span>Wind ${current.windSpeed ?? "N/A"} mph</span>
       <span>Humidity ${current.humidity ?? "N/A"}%</span>
       <span>Rain ${current.precipitation ?? "N/A"} mm</span>
-    </div>
-
-    <button class="home-jump-button" data-jump-tab="extras">Open Weather</button>
-  `;
-
-  setupJumpButtons();
+    `;
+  }
 }
 
 function loadHomeNextFixture() {
