@@ -1,13 +1,15 @@
 const DATA_PATHS = {
   table: "data/pl_table.json",
   fixtures: "data/mufc_fixtures.json",
-  gaming: "data/gaming.json"
+  gaming: "data/gaming.json",
+  weather: "data/weather.json"
 };
 
 const APP_STATE = {
   table: null,
   fixtures: null,
-  gaming: null
+  gaming: null,
+  weather: null
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -36,7 +38,8 @@ async function loadDashboard() {
   await Promise.all([
     loadPremierLeagueTable(),
     loadFixtures(),
-    loadGaming()
+    loadGaming(),
+    loadWeather()
   ]);
 
   loadHome();
@@ -51,7 +54,8 @@ function updateLastUpdatedLabel() {
   const dates = [
     APP_STATE.table?.updated,
     APP_STATE.fixtures?.updated,
-    APP_STATE.gaming?.updated
+    APP_STATE.gaming?.updated,
+    APP_STATE.weather?.updated
   ]
     .filter(Boolean)
     .map((value) => new Date(value))
@@ -213,11 +217,75 @@ async function loadGaming() {
   }
 }
 
+async function loadWeather() {
+  const extrasWeather = document.getElementById("extrasWeather");
+
+  try {
+    const data = await fetchJson(DATA_PATHS.weather);
+    APP_STATE.weather = data;
+
+    if (extrasWeather) {
+      extrasWeather.innerHTML = renderFullWeather(data);
+    }
+  } catch (error) {
+    console.error("Weather load error:", error);
+
+    if (extrasWeather) {
+      extrasWeather.innerHTML = `Could not load weather data: ${error.message}`;
+    }
+  }
+}
+
 function loadHome() {
+  loadHomeWeather();
   loadHomeNextFixture();
   loadHomeTopDeal();
   loadHomeTopThree();
   loadHomeQuickLinks();
+}
+
+function loadHomeWeather() {
+  const target = document.getElementById("homeWeather");
+  const badge = document.getElementById("homeWeatherBadge");
+
+  const weather = APP_STATE.weather;
+  const current = weather?.current;
+
+  if (!current) {
+    if (target) target.innerHTML = `<p class="muted">No weather data found.</p>`;
+    if (badge) badge.innerHTML = `<span>Leeds Weather</span><strong>N/A</strong>`;
+    return;
+  }
+
+  if (badge) {
+    badge.innerHTML = `
+      <span>${weather.location || "Leeds"} Weather</span>
+      <strong>${current.icon || "🌡️"} ${current.temperature ?? "N/A"}°C</strong>
+    `;
+  }
+
+  if (!target) return;
+
+  target.innerHTML = `
+    <div class="weather-current">
+      <div class="weather-icon">${current.icon || "🌡️"}</div>
+
+      <div>
+        <h3>${current.temperature ?? "N/A"}°C</h3>
+        <p>${current.description || "Unknown"} · Feels like ${current.feelsLike ?? "N/A"}°C</p>
+      </div>
+    </div>
+
+    <div class="weather-stats">
+      <span>Wind ${current.windSpeed ?? "N/A"} mph</span>
+      <span>Humidity ${current.humidity ?? "N/A"}%</span>
+      <span>Rain ${current.precipitation ?? "N/A"} mm</span>
+    </div>
+
+    <button class="home-jump-button" data-jump-tab="extras">Open Weather</button>
+  `;
+
+  setupJumpButtons();
 }
 
 function loadHomeNextFixture() {
@@ -403,4 +471,43 @@ function renderGamingLinks(items) {
       <span>${item.label}</span>
     </a>
   `).join("");
+}
+
+function renderFullWeather(data) {
+  const current = data.current || {};
+  const forecast = data.forecast || [];
+
+  return `
+    <div class="weather-panel">
+      <div class="weather-current weather-current-large">
+        <div class="weather-icon weather-icon-large">${current.icon || "🌡️"}</div>
+
+        <div>
+          <h3>${current.temperature ?? "N/A"}°C</h3>
+          <p>${current.description || "Unknown"} · Feels like ${current.feelsLike ?? "N/A"}°C</p>
+        </div>
+      </div>
+
+      <div class="weather-stats weather-stats-grid">
+        <span>Wind ${current.windSpeed ?? "N/A"} mph</span>
+        <span>Gusts ${current.windGusts ?? "N/A"} mph</span>
+        <span>Humidity ${current.humidity ?? "N/A"}%</span>
+        <span>Rain ${current.precipitation ?? "N/A"} mm</span>
+      </div>
+
+      <div class="forecast-grid">
+        ${forecast.map((day, index) => `
+          <article class="forecast-card">
+            <div class="forecast-icon">${day.icon || "🌡️"}</div>
+            <div>
+              <h3>${index === 0 ? "Today" : index === 1 ? "Tomorrow" : day.date}</h3>
+              <p>${day.description || "Unknown"}</p>
+              <strong>${day.maxTemp ?? "N/A"}° / ${day.minTemp ?? "N/A"}°C</strong>
+              <span>Rain chance ${day.rainChance ?? "N/A"}%</span>
+            </div>
+          </article>
+        `).join("")}
+      </div>
+    </div>
+  `;
 }
