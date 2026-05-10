@@ -1,1 +1,70 @@
-
+{
+  "updated": "manual",
+  "featured": [
+    {
+      "title": "Euro Truck Simulator 2",
+      "platform": "PC",
+      "note": "Chill driving, mods, radio, Stream Deck potential.",
+      "status": "Installed"
+    },
+    {
+      "title": "Rainbow Six Siege",
+      "platform": "PC",
+      "note": "Pain, suffering, occasional good round.",
+      "status": "Main game"
+    },
+    {
+      "title": "Grand Theft Auto V",
+      "platform": "PC",
+      "note": "Useful for messing with mods, plugins and chaos.",
+      "status": "Backlog"
+    }
+  ],
+  "gamepass": [
+    {
+      "title": "Forza Horizon 5",
+      "genre": "Racing",
+      "note": "Good controller game. Easy to jump in."
+    },
+    {
+      "title": "Halo Infinite",
+      "genre": "FPS",
+      "note": "Still worth having installed for quick multiplayer."
+    },
+    {
+      "title": "PowerWash Simulator",
+      "genre": "Chill",
+      "note": "Weirdly satisfying. Brain-off mode."
+    }
+  ],
+  "deals": [
+    {
+      "title": "Steam Wishlist",
+      "price": "Check Steam",
+      "note": "Add proper deal tracking later."
+    },
+    {
+      "title": "CDKeys / Fanatical / Humble",
+      "price": "Manual check",
+      "note": "Useful for cheap keys, but we’ll keep it manual for now."
+    }
+  ],
+  "links": [
+    {
+      "label": "Steam",
+      "url": "https://store.steampowered.com/"
+    },
+    {
+      "label": "PC Game Pass",
+      "url": "https://www.xbox.com/en-GB/xbox-game-pass/pc-game-pass"
+    },
+    {
+      "label": "CDKeys",
+      "url": "https://www.cdkeys.com/"
+    },
+    {
+      "label": "Humble Bundle",
+      "url": "https://www.humblebundle.com/"
+    }
+  ]
+}
