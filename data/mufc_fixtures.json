@@ -1,35 +1,83 @@
 {
-  "updated": "manual",
+  "updated": "2026-05-10T16:31:31.871580+00:00",
+  "source": "football-data.org",
   "fixtures": [
     {
-      "date": "Sat 15 Nov, 15:00",
+      "date": "Mon 13 Apr, 19:00",
       "competition": "Premier League",
       "home": "Manchester United",
-      "away": "Everton",
-      "score": "",
-      "result": "",
-      "venue": "Old Trafford",
-      "channel": "TBC"
+      "away": "Leeds United",
+      "score": "1-2",
+      "result": "L",
+      "venue": "TBC",
+      "channel": "",
+      "status": "FINISHED"
     },
     {
-      "date": "Sun 23 Nov, 16:30",
+      "date": "Sat 18 Apr, 19:00",
       "competition": "Premier League",
       "home": "Chelsea",
       "away": "Manchester United",
-      "score": "",
-      "result": "",
-      "venue": "Stamford Bridge",
-      "channel": "Sky Sports"
+      "score": "0-1",
+      "result": "W",
+      "venue": "TBC",
+      "channel": "",
+      "status": "FINISHED"
     },
     {
-      "date": "Sun 9 Nov",
+      "date": "Mon 27 Apr, 19:00",
       "competition": "Premier League",
       "home": "Manchester United",
-      "away": "Brighton",
+      "away": "Brentford",
       "score": "2-1",
       "result": "W",
-      "venue": "Old Trafford",
-      "channel": ""
+      "venue": "TBC",
+      "channel": "",
+      "status": "FINISHED"
+    },
+    {
+      "date": "Sun 03 May, 14:30",
+      "competition": "Premier League",
+      "home": "Manchester United",
+      "away": "Liverpool",
+      "score": "3-2",
+      "result": "W",
+      "venue": "TBC",
+      "channel": "",
+      "status": "FINISHED"
+    },
+    {
+      "date": "Sat 09 May, 14:00",
+      "competition": "Premier League",
+      "home": "Sunderland",
+      "away": "Manchester United",
+      "score": "0-0",
+      "result": "D",
+      "venue": "TBC",
+      "channel": "",
+      "status": "FINISHED"
+    },
+    {
+      "date": "Sun 17 May, 11:30",
+      "competition": "Premier League",
+      "home": "Manchester United",
+      "away": "Nott'm Forest",
+      "score": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "date": "Sun 24 May, 15:00",
+      "competition": "Premier League",
+      "home": "Brighton",
+      "away": "Manchester United",
+      "score": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
     }
   ]
 }
