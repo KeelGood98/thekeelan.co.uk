@@ -285,8 +285,8 @@
       <section class="card extras-hero">
         <div>
           <p class="eyebrow">Extras</p>
-          <h2>Weather, music and useful bits.</h2>
-          <p>Extra stuff that does not need its own tab, but is still handy to have nearby.</p>
+          <h2>Weather, music, internet checks and random nonsense.</h2>
+          <p>Useful bits, quick checks and a meme button because obviously.</p>
         </div>
 
         <span>Utility drawer</span>
@@ -323,84 +323,59 @@
           </div>
         </section>
 
-        <section class="card extras-wide">
+        <section class="card">
           <div class="section-title">
-            <h2>Quick Links</h2>
-            <span>No ugly blue links allowed</span>
+            <h2>Internet Check</h2>
+            <span>Quick links</span>
           </div>
 
-          <div class="extras-pill-grid">
-            <a class="extras-pill" href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer">
-              <span>⚡</span>
-              <strong>Speedtest</strong>
-            </a>
-
-            <a class="extras-pill" href="https://fast.com/" target="_blank" rel="noopener noreferrer">
-              <span>📡</span>
-              <strong>Fast.com</strong>
-            </a>
-
-            <a class="extras-pill" href="https://downdetector.co.uk/" target="_blank" rel="noopener noreferrer">
+          <div class="internet-check-grid">
+            <a class="internet-check-card" href="https://downdetector.co.uk/" target="_blank" rel="noopener noreferrer">
               <span>🚨</span>
-              <strong>Downdetector</strong>
+              <div>
+                <h3>Down Detector</h3>
+                <p>Check if everything is broken, or just your end.</p>
+              </div>
             </a>
 
-            <a class="extras-pill" href="https://github.com/" target="_blank" rel="noopener noreferrer">
-              <span>🐙</span>
-              <strong>GitHub</strong>
+            <a class="internet-check-card" href="https://www.speedtest.net/" target="_blank" rel="noopener noreferrer">
+              <span>⚡</span>
+              <div>
+                <h3>Speedtest.net</h3>
+                <p>Open speed test in a new tab.</p>
+              </div>
             </a>
 
-            <a class="extras-pill" href="https://status.github.com/" target="_blank" rel="noopener noreferrer">
-              <span>✅</span>
-              <strong>GitHub Status</strong>
-            </a>
-
-            <a class="extras-pill" href="https://www.cloudflarestatus.com/" target="_blank" rel="noopener noreferrer">
-              <span>☁️</span>
-              <strong>Cloudflare Status</strong>
-            </a>
-
-            <a class="extras-pill" href="https://mxtoolbox.com/" target="_blank" rel="noopener noreferrer">
-              <span>🧰</span>
-              <strong>MXToolbox</strong>
-            </a>
-
-            <a class="extras-pill" href="https://haveibeenpwned.com/" target="_blank" rel="noopener noreferrer">
-              <span>🔐</span>
-              <strong>Have I Been Pwned</strong>
+            <a class="internet-check-card" href="https://burnie.com/" target="_blank" rel="noopener noreferrer">
+              <span>🔥</span>
+              <div>
+                <h3>Burnie.com</h3>
+                <p>Important scientific research.</p>
+              </div>
             </a>
           </div>
         </section>
 
         <section class="card extras-wide">
           <div class="section-title">
-            <h2>Site Status</h2>
-            <span>Static site, auto-updated data</span>
+            <h2>Random Meme</h2>
+            <span>Press the button</span>
           </div>
 
-          <div class="extras-status-row">
-            <div class="extras-status-chip">
-              <span>⚽</span>
-              <strong>Football</strong>
-              <p>football-data.org</p>
+          <div class="meme-panel">
+            <div class="meme-actions">
+              <button id="randomMemeButton" class="meme-button" type="button">
+                Generate meme
+              </button>
+
+              <span id="memeStatus" class="meme-status">Ready when you are.</span>
             </div>
 
-            <div class="extras-status-chip">
-              <span>🎮</span>
-              <strong>Gaming</strong>
-              <p>CheapShark</p>
-            </div>
-
-            <div class="extras-status-chip">
-              <span>🎬</span>
-              <strong>Media</strong>
-              <p>TMDB</p>
-            </div>
-
-            <div class="extras-status-chip">
-              <span>🌦️</span>
-              <strong>Weather</strong>
-              <p>Open-Meteo</p>
+            <div id="memeResult" class="meme-result">
+              <div class="meme-placeholder">
+                <span>🎲</span>
+                <p>Click the button and let the internet cook.</p>
+              </div>
             </div>
           </div>
         </section>
