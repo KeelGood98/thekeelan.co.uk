@@ -141,58 +141,75 @@ async function loadFixtures() {
 }
 
 async function loadGaming() {
-  const featuredList = document.getElementById("gamingFeatured");
-  const gamepassList = document.getElementById("gamingGamepass");
-  const dealsList = document.getElementById("gamingDeals");
-  const linksList = document.getElementById("gamingLinks");
+  const bestDeals = document.getElementById("gamingBestDeals");
+  const watchlist = document.getElementById("gamingWatchlist");
+  const gamepass = document.getElementById("gamingGamepass");
+  const links = document.getElementById("gamingLinks");
 
-  if (!featuredList || !gamepassList || !dealsList || !linksList) return;
+  if (!bestDeals || !watchlist || !gamepass || !links) return;
 
   try {
     const data = await fetchJson(DATA_PATHS.gaming);
 
-    featuredList.innerHTML = renderGameCards(data.featured || []);
-    gamepassList.innerHTML = renderGameCards(data.gamepass || []);
-    dealsList.innerHTML = renderDealCards(data.deals || []);
-    linksList.innerHTML = renderGamingLinks(data.links || []);
+    bestDeals.innerHTML = renderDealGrid(data.bestDeals || []);
+    watchlist.innerHTML = renderDealGrid(data.watchlist || []);
+    gamepass.innerHTML = renderGamepassCards(data.gamepass || []);
+    links.innerHTML = renderGamingLinks(data.links || []);
   } catch (error) {
     console.error("Gaming load error:", error);
 
-    featuredList.innerHTML = `Could not load gaming data: ${error.message}`;
-    gamepassList.innerHTML = "";
-    dealsList.innerHTML = "";
-    linksList.innerHTML = "";
+    bestDeals.innerHTML = `Could not load gaming data: ${error.message}`;
+    watchlist.innerHTML = "";
+    gamepass.innerHTML = "";
+    links.innerHTML = "";
   }
 }
 
-function renderGameCards(items) {
+function renderDealGrid(items) {
   if (!items.length) {
-    return `<p class="muted">Nothing added yet.</p>`;
+    return `<p class="muted">No deals found.</p>`;
+  }
+
+  return items.map((item) => {
+    const image = item.thumb
+      ? `<img class="deal-thumb" src="${item.thumb}" alt="${item.title} cover">`
+      : `<div class="deal-thumb deal-thumb-empty">🎮</div>`;
+
+    return `
+      <a class="deal-card" href="${item.url}" target="_blank" rel="noopener noreferrer">
+        ${image}
+
+        <div class="deal-content">
+          <div class="deal-title-row">
+            <h3>${item.title || "Untitled"}</h3>
+            <span class="deal-saving">${item.saving || "0%"}</span>
+          </div>
+
+          <div class="deal-price-row">
+            <strong>${item.salePrice || "N/A"}</strong>
+            <span>${item.normalPrice || ""}</span>
+          </div>
+
+          <div class="deal-meta">
+            <span>${item.store || "Unknown store"}</span>
+            ${item.steamRating ? `<span>${item.steamRating}</span>` : ""}
+          </div>
+        </div>
+      </a>
+    `;
+  }).join("");
+}
+
+function renderGamepassCards(items) {
+  if (!items.length) {
+    return `<p class="muted">No Game Pass picks added yet.</p>`;
   }
 
   return items.map((item) => `
     <article class="mini-card">
       <div class="mini-card-top">
         <h3>${item.title || "Untitled"}</h3>
-        <span>${item.status || item.platform || item.genre || ""}</span>
-      </div>
-      <p>${item.note || ""}</p>
-      ${item.platform ? `<div class="mini-meta">${item.platform}</div>` : ""}
-      ${item.genre ? `<div class="mini-meta">${item.genre}</div>` : ""}
-    </article>
-  `).join("");
-}
-
-function renderDealCards(items) {
-  if (!items.length) {
-    return `<p class="muted">No deals added yet.</p>`;
-  }
-
-  return items.map((item) => `
-    <article class="mini-card">
-      <div class="mini-card-top">
-        <h3>${item.title || "Untitled"}</h3>
-        <span>${item.price || ""}</span>
+        <span>${item.genre || ""}</span>
       </div>
       <p>${item.note || ""}</p>
     </article>
