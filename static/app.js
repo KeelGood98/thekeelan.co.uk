@@ -2,14 +2,16 @@ const DATA_PATHS = {
   table: "data/pl_table.json",
   fixtures: "data/mufc_fixtures.json",
   gaming: "data/gaming.json",
-  weather: "data/weather.json"
+  weather: "data/weather.json",
+  media: "data/media.json"
 };
 
 const APP_STATE = {
   table: null,
   fixtures: null,
   gaming: null,
-  weather: null
+  weather: null,
+  media: null
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -39,7 +41,8 @@ async function loadDashboard() {
     loadPremierLeagueTable(),
     loadFixtures(),
     loadGaming(),
-    loadWeather()
+    loadWeather(),
+    loadMedia()
   ]);
 
   loadHome();
@@ -55,7 +58,8 @@ function updateLastUpdatedLabel() {
     APP_STATE.table?.updated,
     APP_STATE.fixtures?.updated,
     APP_STATE.gaming?.updated,
-    APP_STATE.weather?.updated
+    APP_STATE.weather?.updated,
+    APP_STATE.media?.updated
   ]
     .filter(Boolean)
     .map((value) => new Date(value))
@@ -202,7 +206,7 @@ async function loadGaming() {
     }
 
     if (links) {
-      links.innerHTML = renderGamingLinks(data.links || []);
+      links.innerHTML = renderGenericLinks(data.links || []);
     }
   } catch (error) {
     console.error("Gaming load error:", error);
@@ -236,11 +240,61 @@ async function loadWeather() {
   }
 }
 
+async function loadMedia() {
+  const trendingMovies = document.getElementById("mediaTrendingMovies");
+  const trendingTv = document.getElementById("mediaTrendingTv");
+  const upcomingMovies = document.getElementById("mediaUpcomingMovies");
+  const nowPlaying = document.getElementById("mediaNowPlaying");
+  const mediaLinks = document.getElementById("mediaLinks");
+  const mediaAttribution = document.getElementById("mediaAttribution");
+
+  try {
+    const data = await fetchJson(DATA_PATHS.media);
+    APP_STATE.media = data;
+
+    if (trendingMovies) {
+      trendingMovies.innerHTML = renderMediaGrid(data.trendingMovies || []);
+    }
+
+    if (trendingTv) {
+      trendingTv.innerHTML = renderMediaGrid(data.trendingTv || []);
+    }
+
+    if (upcomingMovies) {
+      upcomingMovies.innerHTML = renderMediaGrid(data.upcomingMovies || []);
+    }
+
+    if (nowPlaying) {
+      nowPlaying.innerHTML = renderMediaGrid(data.nowPlayingMovies || []);
+    }
+
+    if (mediaLinks) {
+      mediaLinks.innerHTML = renderGenericLinks(data.links || []);
+    }
+
+    if (mediaAttribution) {
+      mediaAttribution.textContent = data.attribution || "";
+    }
+  } catch (error) {
+    console.error("Media load error:", error);
+
+    if (trendingMovies) {
+      trendingMovies.innerHTML = `Could not load media data: ${error.message}`;
+    }
+
+    if (trendingTv) trendingTv.innerHTML = "";
+    if (upcomingMovies) upcomingMovies.innerHTML = "";
+    if (nowPlaying) nowPlaying.innerHTML = "";
+    if (mediaLinks) mediaLinks.innerHTML = "";
+  }
+}
+
 function loadHome() {
   loadHomeWeatherHero();
   loadHomeNextFixture();
   loadHomeTopDeal();
   loadHomeTopThree();
+  loadHomeMediaPick();
   loadHomeQuickLinks();
 }
 
@@ -378,18 +432,56 @@ function loadHomeTopThree() {
   `).join("");
 }
 
+function loadHomeMediaPick() {
+  const target = document.getElementById("homeMediaPick");
+  if (!target) return;
+
+  const items = [
+    ...(APP_STATE.media?.trendingMovies || []),
+    ...(APP_STATE.media?.trendingTv || [])
+  ];
+
+  const pick = items[0];
+
+  if (!pick) {
+    target.innerHTML = `<p class="muted">No media data found.</p>`;
+    return;
+  }
+
+  const poster = pick.poster
+    ? `<img class="home-deal-thumb" src="${pick.poster}" alt="${pick.title} poster">`
+    : `<div class="home-deal-thumb home-deal-thumb-empty">🎬</div>`;
+
+  target.innerHTML = `
+    <a class="home-feature-link" href="${pick.url}" target="_blank" rel="noopener noreferrer">
+      <div class="home-feature-main">
+        ${poster}
+        <div>
+          <h3>${pick.title || "Untitled"}</h3>
+          <p>${pick.mediaType === "tv" ? "TV" : "Movie"} · ⭐ ${pick.rating || "N/A"}</p>
+        </div>
+      </div>
+
+      <strong class="home-saving">Trending</strong>
+    </a>
+  `;
+}
+
 function loadHomeQuickLinks() {
   const target = document.getElementById("homeQuickLinks");
   if (!target) return;
 
-  const links = APP_STATE.gaming?.links || [];
+  const links = [
+    ...(APP_STATE.gaming?.links || []).slice(0, 3),
+    ...(APP_STATE.media?.links || []).slice(0, 3)
+  ];
 
   if (!links.length) {
     target.innerHTML = `<p class="muted">No quick links found.</p>`;
     return;
   }
 
-  target.innerHTML = renderGamingLinks(links.slice(0, 6));
+  target.innerHTML = renderGenericLinks(links);
 }
 
 function setupJumpButtons() {
@@ -465,7 +557,41 @@ function renderGamepassCards(items) {
   `).join("");
 }
 
-function renderGamingLinks(items) {
+function renderMediaGrid(items) {
+  if (!items.length) {
+    return `<p class="muted">No media items found.</p>`;
+  }
+
+  return items.map((item) => {
+    const poster = item.poster
+      ? `<img class="media-poster" src="${item.poster}" alt="${item.title} poster">`
+      : `<div class="media-poster media-poster-empty">🎬</div>`;
+
+    const typeLabel = item.mediaType === "tv" ? "TV" : "Movie";
+
+    return `
+      <a class="media-card" href="${item.url}" target="_blank" rel="noopener noreferrer">
+        ${poster}
+
+        <div class="media-content">
+          <div class="media-title-row">
+            <h3>${item.title || "Untitled"}</h3>
+            <span>${typeLabel}</span>
+          </div>
+
+          <p>${item.overview || "No overview available."}</p>
+
+          <div class="media-meta">
+            <span>${item.releaseDate || "TBC"}</span>
+            <span>⭐ ${item.rating || "N/A"}</span>
+          </div>
+        </div>
+      </a>
+    `;
+  }).join("");
+}
+
+function renderGenericLinks(items) {
   if (!items.length) {
     return `<p class="muted">No links added yet.</p>`;
   }
