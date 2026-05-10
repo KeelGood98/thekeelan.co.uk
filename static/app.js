@@ -4,6 +4,12 @@ const DATA_PATHS = {
   gaming: "data/gaming.json"
 };
 
+const APP_STATE = {
+  table: null,
+  fixtures: null,
+  gaming: null
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
   loadDashboard();
@@ -33,6 +39,7 @@ async function loadDashboard() {
     loadGaming()
   ]);
 
+  loadHome();
   updateLastUpdatedLabel();
 }
 
@@ -41,7 +48,26 @@ function updateLastUpdatedLabel() {
 
   if (!lastUpdated) return;
 
-  lastUpdated.textContent = `Updated ${new Date().toLocaleString("en-GB", {
+  const dates = [
+    APP_STATE.table?.updated,
+    APP_STATE.fixtures?.updated,
+    APP_STATE.gaming?.updated
+  ]
+    .filter(Boolean)
+    .map((value) => new Date(value))
+    .filter((date) => !Number.isNaN(date.getTime()));
+
+  if (!dates.length) {
+    lastUpdated.textContent = `Updated ${new Date().toLocaleString("en-GB", {
+      dateStyle: "medium",
+      timeStyle: "short"
+    })}`;
+    return;
+  }
+
+  const newest = new Date(Math.max(...dates.map((date) => date.getTime())));
+
+  lastUpdated.textContent = `Updated ${newest.toLocaleString("en-GB", {
     dateStyle: "medium",
     timeStyle: "short"
   })}`;
@@ -60,14 +86,15 @@ async function fetchJson(path) {
 async function loadPremierLeagueTable() {
   const body = document.getElementById("plTableBody");
 
-  if (!body) return;
-
   try {
     const data = await fetchJson(DATA_PATHS.table);
+    APP_STATE.table = data;
 
     if (!data.teams || !Array.isArray(data.teams)) {
       throw new Error("teams array missing from JSON");
     }
+
+    if (!body) return;
 
     body.innerHTML = data.teams.map((team, index) => `
       <tr>
@@ -89,55 +116,63 @@ async function loadPremierLeagueTable() {
   } catch (error) {
     console.error("Premier League table load error:", error);
 
-    body.innerHTML = `
-      <tr>
-        <td colspan="8">Could not load Premier League table: ${error.message}</td>
-      </tr>
-    `;
+    if (body) {
+      body.innerHTML = `
+        <tr>
+          <td colspan="8">Could not load Premier League table: ${error.message}</td>
+        </tr>
+      `;
+    }
   }
 }
 
 async function loadFixtures() {
   const list = document.getElementById("fixturesList");
 
-  if (!list) return;
-
   try {
     const data = await fetchJson(DATA_PATHS.fixtures);
+    APP_STATE.fixtures = data;
 
     if (!data.fixtures || !Array.isArray(data.fixtures)) {
       throw new Error("fixtures array missing from JSON");
     }
 
-    list.innerHTML = data.fixtures.map((fixture) => {
-      const resultClass = fixture.result ? `result ${fixture.result}` : "";
-      const scoreOrVs = fixture.score ? fixture.score : "vs";
-      const channelText = fixture.channel && fixture.channel !== "TBC"
-        ? ` · ${fixture.channel}`
-        : "";
+    if (!list) return;
 
-      return `
-        <article class="fixture">
-          <div class="fixture-top">
-            <span>${fixture.date || "TBC"}</span>
-            <span>${fixture.competition || "Premier League"}</span>
-          </div>
-
-          <div class="fixture-main">
-            ${fixture.home || "TBC"} ${scoreOrVs} ${fixture.away || "TBC"}
-            ${fixture.result ? `<span class="${resultClass}">${fixture.result}</span>` : ""}
-          </div>
-
-          <div class="fixture-meta">
-            ${fixture.venue || "TBC"}${channelText}
-          </div>
-        </article>
-      `;
-    }).join("");
+    list.innerHTML = data.fixtures.map((fixture) => renderFixtureCard(fixture)).join("");
   } catch (error) {
     console.error("Fixture load error:", error);
-    list.innerHTML = `Could not load fixtures: ${error.message}`;
+
+    if (list) {
+      list.innerHTML = `Could not load fixtures: ${error.message}`;
+    }
   }
+}
+
+function renderFixtureCard(fixture) {
+  const resultClass = fixture.result ? `result ${fixture.result}` : "";
+  const scoreOrVs = fixture.score ? fixture.score : "vs";
+  const channelText = fixture.channel && fixture.channel !== "TBC"
+    ? ` · ${fixture.channel}`
+    : "";
+
+  return `
+    <article class="fixture">
+      <div class="fixture-top">
+        <span>${fixture.date || "TBC"}</span>
+        <span>${fixture.competition || "Premier League"}</span>
+      </div>
+
+      <div class="fixture-main">
+        ${fixture.home || "TBC"} ${scoreOrVs} ${fixture.away || "TBC"}
+        ${fixture.result ? `<span class="${resultClass}">${fixture.result}</span>` : ""}
+      </div>
+
+      <div class="fixture-meta">
+        ${fixture.venue || "TBC"}${channelText}
+      </div>
+    </article>
+  `;
 }
 
 async function loadGaming() {
@@ -146,23 +181,158 @@ async function loadGaming() {
   const gamepass = document.getElementById("gamingGamepass");
   const links = document.getElementById("gamingLinks");
 
-  if (!bestDeals || !watchlist || !gamepass || !links) return;
-
   try {
     const data = await fetchJson(DATA_PATHS.gaming);
+    APP_STATE.gaming = data;
 
-    bestDeals.innerHTML = renderDealGrid(data.bestDeals || []);
-    watchlist.innerHTML = renderDealGrid(data.watchlist || []);
-    gamepass.innerHTML = renderGamepassCards(data.gamepass || []);
-    links.innerHTML = renderGamingLinks(data.links || []);
+    if (bestDeals) {
+      bestDeals.innerHTML = renderDealGrid(data.bestDeals || []);
+    }
+
+    if (watchlist) {
+      watchlist.innerHTML = renderDealGrid(data.watchlist || []);
+    }
+
+    if (gamepass) {
+      gamepass.innerHTML = renderGamepassCards(data.gamepass || []);
+    }
+
+    if (links) {
+      links.innerHTML = renderGamingLinks(data.links || []);
+    }
   } catch (error) {
     console.error("Gaming load error:", error);
 
-    bestDeals.innerHTML = `Could not load gaming data: ${error.message}`;
-    watchlist.innerHTML = "";
-    gamepass.innerHTML = "";
-    links.innerHTML = "";
+    if (bestDeals) {
+      bestDeals.innerHTML = `Could not load gaming data: ${error.message}`;
+    }
+
+    if (watchlist) watchlist.innerHTML = "";
+    if (gamepass) gamepass.innerHTML = "";
+    if (links) links.innerHTML = "";
   }
+}
+
+function loadHome() {
+  loadHomeNextFixture();
+  loadHomeTopDeal();
+  loadHomeTopThree();
+  loadHomeQuickLinks();
+}
+
+function loadHomeNextFixture() {
+  const target = document.getElementById("homeNextFixture");
+  if (!target) return;
+
+  const fixtures = APP_STATE.fixtures?.fixtures || [];
+
+  const nextFixture =
+    fixtures.find((fixture) => !fixture.score && fixture.status !== "FINISHED") ||
+    fixtures.find((fixture) => !fixture.score) ||
+    fixtures[0];
+
+  if (!nextFixture) {
+    target.innerHTML = `<p class="muted">No fixture data found.</p>`;
+    return;
+  }
+
+  target.innerHTML = `
+    <div class="home-feature-main">
+      <span class="home-icon">⚽</span>
+      <div>
+        <h3>${nextFixture.home || "TBC"} ${nextFixture.score ? nextFixture.score : "vs"} ${nextFixture.away || "TBC"}</h3>
+        <p>${nextFixture.date || "TBC"} · ${nextFixture.competition || "Premier League"}</p>
+      </div>
+    </div>
+
+    <button class="home-jump-button" data-jump-tab="football">Open Football</button>
+  `;
+
+  setupJumpButtons();
+}
+
+function loadHomeTopDeal() {
+  const target = document.getElementById("homeTopDeal");
+  if (!target) return;
+
+  const deals = APP_STATE.gaming?.bestDeals || [];
+  const topDeal = deals[0];
+
+  if (!topDeal) {
+    target.innerHTML = `<p class="muted">No deal data found.</p>`;
+    return;
+  }
+
+  const image = topDeal.thumb
+    ? `<img class="home-deal-thumb" src="${topDeal.thumb}" alt="${topDeal.title} cover">`
+    : `<div class="home-deal-thumb home-deal-thumb-empty">🎮</div>`;
+
+  target.innerHTML = `
+    <a class="home-feature-link" href="${topDeal.url}" target="_blank" rel="noopener noreferrer">
+      <div class="home-feature-main">
+        ${image}
+        <div>
+          <h3>${topDeal.title || "Untitled"}</h3>
+          <p>${topDeal.salePrice || "N/A"} <span>${topDeal.normalPrice || ""}</span></p>
+        </div>
+      </div>
+
+      <strong class="home-saving">${topDeal.saving || "0%"}</strong>
+    </a>
+  `;
+}
+
+function loadHomeTopThree() {
+  const target = document.getElementById("homeTopThree");
+  if (!target) return;
+
+  const teams = APP_STATE.table?.teams || [];
+
+  if (!teams.length) {
+    target.innerHTML = `<p class="muted">No table data found.</p>`;
+    return;
+  }
+
+  target.innerHTML = teams.slice(0, 3).map((team, index) => `
+    <div class="home-list-row">
+      <div class="team-cell">
+        <strong>${team.position || index + 1}</strong>
+        ${team.badge ? `<img class="badge" src="${team.badge}" alt="${team.name} badge">` : ""}
+        <span>${team.name}</span>
+      </div>
+      <strong>${team.points ?? 0} pts</strong>
+    </div>
+  `).join("");
+}
+
+function loadHomeQuickLinks() {
+  const target = document.getElementById("homeQuickLinks");
+  if (!target) return;
+
+  const links = APP_STATE.gaming?.links || [];
+
+  if (!links.length) {
+    target.innerHTML = `<p class="muted">No quick links found.</p>`;
+    return;
+  }
+
+  target.innerHTML = renderGamingLinks(links.slice(0, 6));
+}
+
+function setupJumpButtons() {
+  const buttons = document.querySelectorAll("[data-jump-tab]");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const tabName = button.dataset.jumpTab;
+      const tab = document.querySelector(`.tab[data-tab="${tabName}"]`);
+
+      if (tab) {
+        tab.click();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    });
+  });
 }
 
 function renderDealGrid(items) {
