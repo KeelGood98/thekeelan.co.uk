@@ -31,7 +31,14 @@ async function loadDashboard() {
     loadFixtures()
   ]);
 
+  updateLastUpdatedLabel();
+}
+
+function updateLastUpdatedLabel() {
   const lastUpdated = document.getElementById("lastUpdated");
+
+  if (!lastUpdated) return;
+
   lastUpdated.textContent = `Updated ${new Date().toLocaleString("en-GB", {
     dateStyle: "medium",
     timeStyle: "short"
@@ -51,31 +58,38 @@ async function fetchJson(path) {
 async function loadPremierLeagueTable() {
   const body = document.getElementById("plTableBody");
 
+  if (!body) return;
+
   try {
     const data = await fetchJson(DATA_PATHS.table);
 
+    if (!data.teams || !Array.isArray(data.teams)) {
+      throw new Error("teams array missing from JSON");
+    }
+
     body.innerHTML = data.teams.map((team, index) => `
       <tr>
-        <td>${index + 1}</td>
+        <td>${team.position || index + 1}</td>
         <td>
           <div class="team-cell">
             ${team.badge ? `<img class="badge" src="${team.badge}" alt="${team.name} badge">` : ""}
             <span>${team.name}</span>
           </div>
         </td>
-        <td>${team.played}</td>
-        <td>${team.won}</td>
-        <td>${team.drawn}</td>
-        <td>${team.lost}</td>
-        <td>${team.goalDifference}</td>
-        <td><strong>${team.points}</strong></td>
+        <td>${team.played ?? 0}</td>
+        <td>${team.won ?? 0}</td>
+        <td>${team.drawn ?? 0}</td>
+        <td>${team.lost ?? 0}</td>
+        <td>${team.goalDifference ?? 0}</td>
+        <td><strong>${team.points ?? 0}</strong></td>
       </tr>
     `).join("");
   } catch (error) {
-    console.error(error);
+    console.error("Premier League table load error:", error);
+
     body.innerHTML = `
       <tr>
-        <td colspan="8">Could not load Premier League table.</td>
+        <td colspan="8">Could not load Premier League table: ${error.message}</td>
       </tr>
     `;
   }
@@ -84,31 +98,42 @@ async function loadPremierLeagueTable() {
 async function loadFixtures() {
   const list = document.getElementById("fixturesList");
 
+  if (!list) return;
+
   try {
     const data = await fetchJson(DATA_PATHS.fixtures);
 
+    if (!data.fixtures || !Array.isArray(data.fixtures)) {
+      throw new Error("fixtures array missing from JSON");
+    }
+
     list.innerHTML = data.fixtures.map((fixture) => {
       const resultClass = fixture.result ? `result ${fixture.result}` : "";
+      const scoreOrVs = fixture.score ? fixture.score : "vs";
+      const channelText = fixture.channel && fixture.channel !== "TBC"
+        ? ` · ${fixture.channel}`
+        : "";
 
       return `
         <article class="fixture">
           <div class="fixture-top">
-            <span>${fixture.date}</span>
-            <span>${fixture.competition}</span>
+            <span>${fixture.date || "TBC"}</span>
+            <span>${fixture.competition || "Premier League"}</span>
           </div>
+
           <div class="fixture-main">
-            ${fixture.home} ${fixture.score ? fixture.score : "vs"} ${fixture.away}
+            ${fixture.home || "TBC"} ${scoreOrVs} ${fixture.away || "TBC"}
             ${fixture.result ? `<span class="${resultClass}">${fixture.result}</span>` : ""}
           </div>
+
           <div class="fixture-meta">
-            ${fixture.venue || ""}
-            ${fixture.channel ? ` · ${fixture.channel}` : ""}
+            ${fixture.venue || "TBC"}${channelText}
           </div>
         </article>
       `;
     }).join("");
   } catch (error) {
-    console.error(error);
-    list.innerHTML = "Could not load fixtures.";
+    console.error("Fixture load error:", error);
+    list.innerHTML = `Could not load fixtures: ${error.message}`;
   }
 }
