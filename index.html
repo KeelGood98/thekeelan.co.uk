@@ -23,14 +23,78 @@
       <h2>Welcome back</h2>
 
       <div class="quick-links">
-        <button class="tab active" data-tab="football">Football</button>
+        <button class="tab active" data-tab="home">Home</button>
+        <button class="tab" data-tab="football">Football</button>
         <button class="tab" data-tab="gaming">Gaming</button>
         <button class="tab" data-tab="media">Media</button>
         <button class="tab" data-tab="extras">Extras</button>
       </div>
     </section>
 
-    <section class="tab-panel active" id="football">
+    <section class="tab-panel active" id="home">
+      <section class="card home-hero">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h2>Football, gaming, media and useful bits.</h2>
+          <p>
+            A quick overview of the stuff worth checking without jumping straight into the league table like a spreadsheet goblin.
+          </p>
+        </div>
+
+        <div class="home-hero-badge">
+          <span>GitHub Pages</span>
+          <strong>Live</strong>
+        </div>
+      </section>
+
+      <div class="grid home-grid">
+        <section class="card home-card">
+          <div class="section-title">
+            <h2>Next United Fixture</h2>
+            <span>From football data</span>
+          </div>
+
+          <div id="homeNextFixture" class="home-feature">
+            Loading next fixture...
+          </div>
+        </section>
+
+        <section class="card home-card">
+          <div class="section-title">
+            <h2>Top Gaming Deal</h2>
+            <span>Best current deal</span>
+          </div>
+
+          <div id="homeTopDeal" class="home-feature">
+            Loading top deal...
+          </div>
+        </section>
+
+        <section class="card home-card">
+          <div class="section-title">
+            <h2>Premier League Top 3</h2>
+            <span>Quick glance</span>
+          </div>
+
+          <div id="homeTopThree" class="home-list">
+            Loading table...
+          </div>
+        </section>
+
+        <section class="card home-card">
+          <div class="section-title">
+            <h2>Quick Launch</h2>
+            <span>Useful links</span>
+          </div>
+
+          <div id="homeQuickLinks" class="gaming-links">
+            Loading links...
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="football">
       <div class="grid two-col">
         <section class="card">
           <div class="section-title">
