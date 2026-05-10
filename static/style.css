@@ -174,7 +174,7 @@ body {
 }
 
 .home-hero-badge {
-  min-width: 150px;
+  min-width: 170px;
   padding: 1rem;
   border-radius: 20px;
   background: rgba(96, 165, 250, 0.1);
@@ -190,7 +190,12 @@ body {
 }
 
 .home-hero-badge strong {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.weather-mini-badge {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.25);
 }
 
 .home-grid {
@@ -199,6 +204,11 @@ body {
 
 .home-card {
   min-height: 210px;
+}
+
+.home-card-wide {
+  grid-column: span 2;
+  min-height: auto;
 }
 
 .home-feature {
@@ -303,6 +313,118 @@ body {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.055);
   border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Weather */
+
+.weather-current {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather-current h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.weather-current p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+}
+
+.weather-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 22px;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.weather-icon-large {
+  width: 86px;
+  height: 86px;
+  border-radius: 28px;
+  font-size: 2.8rem;
+}
+
+.weather-current-large h3 {
+  font-size: 3rem;
+}
+
+.weather-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.weather-stats span {
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.9rem;
+}
+
+.weather-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.weather-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.weather-stats-grid span {
+  text-align: center;
+  border-radius: 16px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.forecast-card {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  padding: 0.9rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.forecast-icon {
+  font-size: 1.8rem;
+}
+
+.forecast-card h3 {
+  margin: 0;
+}
+
+.forecast-card p {
+  margin: 0.25rem 0;
+  color: var(--muted);
+}
+
+.forecast-card strong {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.forecast-card span {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
 }
 
 /* Football */
@@ -654,7 +776,9 @@ footer {
 }
 
 @media (max-width: 1100px) {
-  .deal-grid {
+  .deal-grid,
+  .forecast-grid,
+  .weather-stats-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -671,6 +795,10 @@ footer {
   .gaming-grid,
   .home-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-card-wide {
+    grid-column: span 1;
   }
 
   .layout,
