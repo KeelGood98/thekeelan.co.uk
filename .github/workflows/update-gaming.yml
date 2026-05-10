@@ -1,0 +1,33 @@
+name: Update gaming data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "33 7,13,19,23 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-gaming:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update gaming JSON
+        run: python scripts/update_gaming.py
+
+      - name: Commit updated gaming data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update gaming data"
+          file_pattern: data/gaming.json
