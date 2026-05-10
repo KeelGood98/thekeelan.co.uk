@@ -535,7 +535,7 @@ th {
   color: #fca5a5;
 }
 
-/* Gaming and Media shared */
+/* Shared section heroes */
 
 .gaming-hero,
 .media-hero,
@@ -906,85 +906,65 @@ th {
   border-radius: 18px;
 }
 
-.extras-link-grid {
-  display: grid;
+.extras-pill-grid {
+  display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-.extras-link-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  padding: 0.85rem;
-  border-radius: 18px;
+.extras-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
   color: var(--text);
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+  font-weight: 800;
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 
-.extras-link-card:hover {
+.extras-pill:hover {
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.085);
+  background: rgba(96, 165, 250, 0.18);
   border-color: rgba(96, 165, 250, 0.45);
 }
 
-.extras-link-card > span {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 auto;
-  border-radius: 14px;
-  font-size: 1.3rem;
-  background: rgba(255, 255, 255, 0.075);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.extras-pill span {
+  font-size: 1.1rem;
 }
 
-.extras-link-card h3 {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.extras-link-card p {
-  margin: 0.25rem 0 0;
-  color: var(--muted);
-}
-
-.extras-status-grid {
+.extras-status-row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 0.75rem;
 }
 
-.extras-status-card {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.85rem;
-  padding: 0.9rem;
+.extras-status-chip {
+  padding: 1rem;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.055);
   border: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-.extras-status-card > span {
+.extras-status-chip > span {
   display: grid;
   place-items: center;
   width: 44px;
   height: 44px;
-  flex: 0 0 auto;
+  margin-bottom: 0.8rem;
   border-radius: 15px;
   font-size: 1.4rem;
   background: rgba(255, 255, 255, 0.075);
 }
 
-.extras-status-card h3 {
-  margin: 0;
-  font-size: 1rem;
+.extras-status-chip strong {
+  display: block;
 }
 
-.extras-status-card p {
+.extras-status-chip p {
   margin: 0.35rem 0 0;
   color: var(--muted);
 }
@@ -1005,7 +985,7 @@ footer {
   .media-card-grid,
   .forecast-grid,
   .weather-stats-grid,
-  .extras-status-grid {
+  .extras-status-row {
     grid-template-columns: 1fr;
   }
 
