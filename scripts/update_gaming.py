@@ -71,27 +71,33 @@ WATCHLIST_TITLES = [
 QUICK_LINKS = [
     {
         "label": "Steam",
-        "url": "https://store.steampowered.com/"
+        "url": "https://store.steampowered.com/",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=store.steampowered.com"
     },
     {
         "label": "PC Game Pass",
-        "url": "https://www.xbox.com/en-GB/xbox-game-pass/pc-game-pass"
+        "url": "https://www.xbox.com/en-GB/xbox-game-pass/pc-game-pass",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
     },
     {
         "label": "CheapShark",
-        "url": "https://www.cheapshark.com/"
+        "url": "https://www.cheapshark.com/",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=cheapshark.com"
     },
     {
         "label": "CDKeys",
-        "url": "https://www.cdkeys.com/"
+        "url": "https://www.cdkeys.com/",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=cdkeys.com"
     },
     {
         "label": "Humble Bundle",
-        "url": "https://www.humblebundle.com/"
+        "url": "https://www.humblebundle.com/",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=humblebundle.com"
     },
     {
         "label": "Fanatical",
-        "url": "https://www.fanatical.com/"
+        "url": "https://www.fanatical.com/",
+        "logo": "https://www.google.com/s2/favicons?sz=64&domain=fanatical.com"
     }
 ]
 
@@ -100,17 +106,38 @@ GAMEPASS_PICKS = [
     {
         "title": "Forza Horizon 5",
         "genre": "Racing",
-        "note": "Good controller game. Easy to jump in."
+        "note": "Good controller game. Easy to jump in.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
     },
     {
         "title": "Halo Infinite",
         "genre": "FPS",
-        "note": "Quick multiplayer option if you fancy pain with plasma grenades."
+        "note": "Quick multiplayer option if you fancy pain with plasma grenades.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
     },
     {
         "title": "PowerWash Simulator",
         "genre": "Chill",
-        "note": "Brain-off mode. Weirdly elite."
+        "note": "Brain-off mode. Weirdly elite.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
+    },
+    {
+        "title": "Sea of Thieves",
+        "genre": "Adventure",
+        "note": "Great if you fancy pirate chaos with mates.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
+    },
+    {
+        "title": "Microsoft Flight Simulator",
+        "genre": "Sim",
+        "note": "Sit back, fly somewhere random, pretend you're productive.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
+    },
+    {
+        "title": "Age of Empires IV",
+        "genre": "Strategy",
+        "note": "Good shout if you want something slower and a bit more tactical.",
+        "icon": "https://www.google.com/s2/favicons?sz=64&domain=xbox.com"
     }
 ]
 
@@ -164,7 +191,6 @@ def to_float(value: str | float | int) -> float:
 def money_gbp_from_usd(value: str | float | int, usd_to_gbp_rate: float) -> str:
     amount_usd = to_float(value)
     amount_gbp = amount_usd * usd_to_gbp_rate
-
     return f"£{amount_gbp:.2f}"
 
 
@@ -217,7 +243,6 @@ def get_best_deals(usd_to_gbp_rate: float) -> list[dict]:
     )
 
     deals = [normalise_deal(item, usd_to_gbp_rate) for item in raw if item.get("dealID")]
-
     return deals[:12]
 
 
