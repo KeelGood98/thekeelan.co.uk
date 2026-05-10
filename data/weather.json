@@ -1,0 +1,41 @@
+{
+  "updated": "manual",
+  "source": "Manual fallback",
+  "location": "Leeds",
+  "latitude": 53.8008,
+  "longitude": -1.5491,
+  "current": {
+    "time": "",
+    "temperature": 10,
+    "feelsLike": 8,
+    "humidity": 80,
+    "precipitation": 0,
+    "windSpeed": 8,
+    "windGusts": 15,
+    "weatherCode": 3,
+    "description": "Overcast",
+    "icon": "☁️"
+  },
+  "forecast": [
+    {
+      "date": "Today",
+      "description": "Overcast",
+      "icon": "☁️",
+      "maxTemp": 12,
+      "minTemp": 7,
+      "rainChance": 30,
+      "sunrise": "",
+      "sunset": ""
+    },
+    {
+      "date": "Tomorrow",
+      "description": "Light rain",
+      "icon": "🌦️",
+      "maxTemp": 11,
+      "minTemp": 6,
+      "rainChance": 55,
+      "sunrise": "",
+      "sunset": ""
+    }
+  ]
+}
