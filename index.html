@@ -35,19 +35,30 @@
       <section class="card home-hero">
         <div>
           <p class="eyebrow">Dashboard</p>
-          <h2>Football, gaming, media and useful bits.</h2>
+          <h2>The stuff I check, without the faff.</h2>
           <p>
-            A quick overview of the stuff worth checking without jumping straight into the league table like a spreadsheet goblin.
+            Football updates, gaming deals, live weather, media picks and quick links — all in one place.
           </p>
         </div>
 
-        <div class="home-hero-badge">
-          <span>GitHub Pages</span>
-          <strong>Live</strong>
+        <div id="homeWeatherBadge" class="home-hero-badge weather-mini-badge">
+          <span>Leeds Weather</span>
+          <strong>Loading...</strong>
         </div>
       </section>
 
       <div class="grid home-grid">
+        <section class="card home-card">
+          <div class="section-title">
+            <h2>Current Weather</h2>
+            <span>Leeds</span>
+          </div>
+
+          <div id="homeWeather" class="home-feature">
+            Loading weather...
+          </div>
+        </section>
+
         <section class="card home-card">
           <div class="section-title">
             <h2>Next United Fixture</h2>
@@ -81,7 +92,7 @@
           </div>
         </section>
 
-        <section class="card home-card">
+        <section class="card home-card home-card-wide">
           <div class="section-title">
             <h2>Quick Launch</h2>
             <span>Useful links</span>
@@ -203,9 +214,20 @@
     </section>
 
     <section class="tab-panel" id="extras">
+      <section class="card extras-weather-card">
+        <div class="section-title">
+          <h2>Leeds Weather</h2>
+          <span>Powered by Open-Meteo</span>
+        </div>
+
+        <div id="extrasWeather">
+          Loading weather...
+        </div>
+      </section>
+
       <section class="card">
         <h2>Extras</h2>
-        <p>Weather, Spotify playlist, random widgets, maybe a GIF because obviously.</p>
+        <p>Spotify playlist, random widgets, useful links and other bits can go here next.</p>
       </section>
     </section>
   </main>
