@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>thekeelan.co.uk</title>
+
   <link rel="stylesheet" href="static/style.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div>
       <h1>thekeelan.co.uk</h1>
     </div>
+
     <div class="status-pill" id="lastUpdated">Loading...</div>
   </header>
 
   <main class="layout">
     <section class="card hero-card">
       <h2>Welcome back</h2>
-      <p>
-      </p>
+
       <div class="quick-links">
         <button class="tab active" data-tab="football">Football</button>
         <button class="tab" data-tab="gaming">Gaming</button>
@@ -34,6 +37,7 @@
             <h2>Premier League Table</h2>
             <span>Top flight chaos</span>
           </div>
+
           <div class="table-wrap">
             <table>
               <thead>
@@ -48,6 +52,7 @@
                   <th>Pts</th>
                 </tr>
               </thead>
+
               <tbody id="plTableBody">
                 <tr>
                   <td colspan="8">Loading table...</td>
@@ -62,6 +67,7 @@
             <h2>Manchester United</h2>
             <span>Fixtures & results</span>
           </div>
+
           <div id="fixturesList" class="fixture-list">
             Loading fixtures...
           </div>
@@ -70,25 +76,70 @@
     </section>
 
     <section class="tab-panel" id="gaming">
-      <section class="card">
-        <h2>Gaming</h2>
-      </section>
+      <div class="grid gaming-grid">
+        <section class="card">
+          <div class="section-title">
+            <h2>Featured Games</h2>
+            <span>Currently relevant</span>
+          </div>
+
+          <div id="gamingFeatured" class="mini-card-list">
+            Loading featured games...
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <h2>PC Game Pass</h2>
+            <span>Worth a look</span>
+          </div>
+
+          <div id="gamingGamepass" class="mini-card-list">
+            Loading Game Pass picks...
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <h2>Deals</h2>
+            <span>Manual for now</span>
+          </div>
+
+          <div id="gamingDeals" class="mini-card-list">
+            Loading deals...
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <h2>Quick Links</h2>
+            <span>Useful bits</span>
+          </div>
+
+          <div id="gamingLinks" class="gaming-links">
+            Loading links...
+          </div>
+        </section>
+      </div>
     </section>
 
     <section class="tab-panel" id="media">
       <section class="card">
         <h2>Media</h2>
+        <p>Films, TV, streaming releases, YouTube highlights, all that good stuff.</p>
       </section>
     </section>
 
     <section class="tab-panel" id="extras">
       <section class="card">
         <h2>Extras</h2>
+        <p>Weather, Spotify playlist, random widgets, maybe a GIF because obviously.</p>
       </section>
     </section>
   </main>
 
   <footer>
+    <p>Built clean. Hosted on GitHub Pages.</p>
   </footer>
 
   <script src="static/app.js"></script>
