@@ -1,0 +1,35 @@
+name: Update football data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6,12,18,22 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-football:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update football JSON
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python scripts/update_football.py
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update football data"
+          file_pattern: data/*.json
