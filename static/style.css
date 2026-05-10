@@ -144,6 +144,169 @@ body {
   font-size: 0.9rem;
 }
 
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+}
+
+/* Home */
+
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.home-hero h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.home-hero p {
+  max-width: 720px;
+}
+
+.home-hero-badge {
+  min-width: 150px;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(96, 165, 250, 0.1);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  text-align: center;
+}
+
+.home-hero-badge span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
+
+.home-hero-badge strong {
+  font-size: 1.5rem;
+}
+
+.home-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-card {
+  min-height: 210px;
+}
+
+.home-feature {
+  height: calc(100% - 2.5rem);
+}
+
+.home-feature-main {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.home-feature-main h3 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+.home-feature-main p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.home-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  font-size: 1.5rem;
+  flex: 0 0 auto;
+}
+
+.home-jump-button {
+  margin-top: 1rem;
+  border: 1px solid var(--card-border);
+  background: rgba(96, 165, 250, 0.18);
+  color: var(--text);
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.home-jump-button:hover {
+  background: var(--accent);
+  color: #031225;
+}
+
+.home-feature-link {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.home-feature-link:hover h3 {
+  text-decoration: underline;
+}
+
+.home-deal-thumb {
+  width: 58px;
+  height: 58px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  flex: 0 0 auto;
+}
+
+.home-deal-thumb-empty {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+.home-feature-link span {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.home-saving {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+}
+
+.home-list {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.home-list-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Football */
+
 .table-wrap {
   overflow-x: auto;
 }
@@ -498,13 +661,15 @@ footer {
 
 @media (max-width: 900px) {
   .site-header,
-  .gaming-hero {
+  .gaming-hero,
+  .home-hero {
     flex-direction: column;
     align-items: flex-start;
   }
 
   .two-col,
-  .gaming-grid {
+  .gaming-grid,
+  .home-grid {
     grid-template-columns: 1fr;
   }
 
