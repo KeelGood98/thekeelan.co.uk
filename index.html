@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>thekeelan.co.uk</title>
+  <link rel="stylesheet" href="static/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <h1>thekeelan.co.uk</h1>
+      <p>Football, gaming, media and other nonsense. Properly rebuilt this time.</p>
+    </div>
+    <div class="status-pill" id="lastUpdated">Loading...</div>
+  </header>
+
+  <main class="layout">
+    <section class="card hero-card">
+      <h2>Welcome back</h2>
+      <p>
+        Clean rebuild. No Raspberry Pi. No cursed backups. No Bolton fixtures sneaking into Man United.
+      </p>
+      <div class="quick-links">
+        <button class="tab active" data-tab="football">Football</button>
+        <button class="tab" data-tab="gaming">Gaming</button>
+        <button class="tab" data-tab="media">Media</button>
+        <button class="tab" data-tab="extras">Extras</button>
+      </div>
+    </section>
+
+    <section class="tab-panel active" id="football">
+      <div class="grid two-col">
+        <section class="card">
+          <div class="section-title">
+            <h2>Premier League Table</h2>
+            <span>Top flight chaos</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Team</th>
+                  <th>P</th>
+                  <th>W</th>
+                  <th>D</th>
+                  <th>L</th>
+                  <th>GD</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody id="plTableBody">
+                <tr>
+                  <td colspan="8">Loading table...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <h2>Manchester United</h2>
+            <span>Fixtures & results</span>
+          </div>
+          <div id="fixturesList" class="fixture-list">
+            Loading fixtures...
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="tab-panel" id="gaming">
+      <section class="card">
+        <h2>Gaming</h2>
+        <p>Steam deals, Game Pass, and other bits can go here next.</p>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="media">
+      <section class="card">
+        <h2>Media</h2>
+        <p>Films, TV, streaming releases, YouTube highlights, all that good stuff.</p>
+      </section>
+    </section>
+
+    <section class="tab-panel" id="extras">
+      <section class="card">
+        <h2>Extras</h2>
+        <p>Weather, Spotify playlist, random widgets, maybe a GIF because obviously.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built clean. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="static/app.js"></script>
+</body>
+</html>
