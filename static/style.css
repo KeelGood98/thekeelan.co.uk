@@ -48,11 +48,6 @@ body {
   letter-spacing: -0.06em;
 }
 
-.site-header p {
-  margin: 0.5rem 0 0;
-  color: var(--muted);
-}
-
 .status-pill {
   padding: 0.65rem 1rem;
   border: 1px solid var(--card-border);
@@ -246,8 +241,138 @@ th {
 
 /* Gaming */
 
+.gaming-hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.gaming-hero h2 {
+  margin: 0;
+}
+
+.gaming-hero p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.gaming-hero span {
+  color: var(--muted);
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
 .gaming-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.gaming-wide {
+  grid-column: span 1;
+}
+
+.deal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.deal-card {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 0.8rem;
+  min-height: 112px;
+  padding: 0.8rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.085);
+  border-color: rgba(96, 165, 250, 0.45);
+}
+
+.deal-thumb {
+  width: 80px;
+  height: 100%;
+  min-height: 80px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.deal-thumb-empty {
+  display: grid;
+  place-items: center;
+  font-size: 1.7rem;
+}
+
+.deal-content {
+  min-width: 0;
+}
+
+.deal-title-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.deal-title-row h3 {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.25;
+}
+
+.deal-saving {
+  flex: 0 0 auto;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.18);
+  color: #86efac;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.deal-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.55rem;
+}
+
+.deal-price-row strong {
+  font-size: 1.1rem;
+}
+
+.deal-price-row span {
+  color: var(--muted);
+  text-decoration: line-through;
+  font-size: 0.9rem;
+}
+
+.deal-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.deal-meta span {
+  padding: 0.22rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.055);
 }
 
 .mini-card-list {
@@ -286,12 +411,6 @@ th {
   line-height: 1.5;
 }
 
-.mini-meta {
-  margin-top: 0.55rem;
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 .gaming-links {
   display: flex;
   flex-wrap: wrap;
@@ -327,8 +446,15 @@ footer {
   color: var(--muted);
 }
 
+@media (max-width: 1100px) {
+  .deal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 900px) {
-  .site-header {
+  .site-header,
+  .gaming-hero {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -343,6 +469,14 @@ footer {
   footer {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .deal-card {
+    grid-template-columns: 70px minmax(0, 1fr);
+  }
+
+  .deal-thumb {
+    width: 70px;
   }
 
   body {
