@@ -16,6 +16,7 @@ const APP_STATE = {
 
 document.addEventListener("DOMContentLoaded", () => {
   setupTabs();
+  setupMemeButton();
   loadDashboard();
 });
 
@@ -33,6 +34,16 @@ function setupTabs() {
       tab.classList.add("active");
       document.getElementById(target)?.classList.add("active");
     });
+  });
+}
+
+function setupMemeButton() {
+  const button = document.getElementById("randomMemeButton");
+
+  if (!button) return;
+
+  button.addEventListener("click", () => {
+    loadRandomMeme();
   });
 }
 
@@ -498,6 +509,82 @@ function setupJumpButtons() {
       }
     });
   });
+}
+
+async function loadRandomMeme() {
+  const button = document.getElementById("randomMemeButton");
+  const status = document.getElementById("memeStatus");
+  const result = document.getElementById("memeResult");
+
+  if (!button || !status || !result) return;
+
+  button.disabled = true;
+  status.textContent = "Summoning nonsense...";
+  result.innerHTML = `
+    <div class="meme-placeholder">
+      <span>⏳</span>
+      <p>Loading meme...</p>
+    </div>
+  `;
+
+  try {
+    const meme = await fetchSafeMeme();
+
+    result.innerHTML = `
+      <article class="meme-card">
+        <img class="meme-image" src="${meme.url}" alt="${meme.title || "Random meme"}">
+
+        <div class="meme-info">
+          <h3>${meme.title || "Random meme"}</h3>
+          <p>r/${meme.subreddit || "memes"} · by ${meme.author || "unknown"}</p>
+
+          <a href="${meme.postLink || meme.url}" target="_blank" rel="noopener noreferrer">
+            Open source
+          </a>
+        </div>
+      </article>
+    `;
+
+    status.textContent = "Fresh nonsense loaded.";
+  } catch (error) {
+    console.error("Meme load error:", error);
+
+    result.innerHTML = `
+      <div class="meme-placeholder">
+        <span>💀</span>
+        <p>Could not load a meme. The internet has failed us.</p>
+      </div>
+    `;
+
+    status.textContent = "Meme machine had a wobble.";
+  } finally {
+    button.disabled = false;
+  }
+}
+
+async function fetchSafeMeme() {
+  const endpoints = [
+    "https://meme-api.com/gimme/memes",
+    "https://meme-api.com/gimme/wholesomememes",
+    "https://meme-api.com/gimme/me_irl"
+  ];
+
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const endpoint = endpoints[attempt % endpoints.length];
+    const response = await fetch(`${endpoint}?v=${Date.now()}`);
+
+    if (!response.ok) {
+      throw new Error(`Meme API returned ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!data.nsfw && !data.spoiler && data.url) {
+      return data;
+    }
+  }
+
+  throw new Error("No safe meme returned");
 }
 
 function renderDealGrid(items) {
