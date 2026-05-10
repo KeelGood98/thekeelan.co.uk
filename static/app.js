@@ -1,6 +1,7 @@
 const DATA_PATHS = {
   table: "data/pl_table.json",
-  fixtures: "data/mufc_fixtures.json"
+  fixtures: "data/mufc_fixtures.json",
+  gaming: "data/gaming.json"
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -28,7 +29,8 @@ function setupTabs() {
 async function loadDashboard() {
   await Promise.all([
     loadPremierLeagueTable(),
-    loadFixtures()
+    loadFixtures(),
+    loadGaming()
   ]);
 
   updateLastUpdatedLabel();
@@ -136,4 +138,75 @@ async function loadFixtures() {
     console.error("Fixture load error:", error);
     list.innerHTML = `Could not load fixtures: ${error.message}`;
   }
+}
+
+async function loadGaming() {
+  const featuredList = document.getElementById("gamingFeatured");
+  const gamepassList = document.getElementById("gamingGamepass");
+  const dealsList = document.getElementById("gamingDeals");
+  const linksList = document.getElementById("gamingLinks");
+
+  if (!featuredList || !gamepassList || !dealsList || !linksList) return;
+
+  try {
+    const data = await fetchJson(DATA_PATHS.gaming);
+
+    featuredList.innerHTML = renderGameCards(data.featured || []);
+    gamepassList.innerHTML = renderGameCards(data.gamepass || []);
+    dealsList.innerHTML = renderDealCards(data.deals || []);
+    linksList.innerHTML = renderGamingLinks(data.links || []);
+  } catch (error) {
+    console.error("Gaming load error:", error);
+
+    featuredList.innerHTML = `Could not load gaming data: ${error.message}`;
+    gamepassList.innerHTML = "";
+    dealsList.innerHTML = "";
+    linksList.innerHTML = "";
+  }
+}
+
+function renderGameCards(items) {
+  if (!items.length) {
+    return `<p class="muted">Nothing added yet.</p>`;
+  }
+
+  return items.map((item) => `
+    <article class="mini-card">
+      <div class="mini-card-top">
+        <h3>${item.title || "Untitled"}</h3>
+        <span>${item.status || item.platform || item.genre || ""}</span>
+      </div>
+      <p>${item.note || ""}</p>
+      ${item.platform ? `<div class="mini-meta">${item.platform}</div>` : ""}
+      ${item.genre ? `<div class="mini-meta">${item.genre}</div>` : ""}
+    </article>
+  `).join("");
+}
+
+function renderDealCards(items) {
+  if (!items.length) {
+    return `<p class="muted">No deals added yet.</p>`;
+  }
+
+  return items.map((item) => `
+    <article class="mini-card">
+      <div class="mini-card-top">
+        <h3>${item.title || "Untitled"}</h3>
+        <span>${item.price || ""}</span>
+      </div>
+      <p>${item.note || ""}</p>
+    </article>
+  `).join("");
+}
+
+function renderGamingLinks(items) {
+  if (!items.length) {
+    return `<p class="muted">No links added yet.</p>`;
+  }
+
+  return items.map((item) => `
+    <a class="gaming-link" href="${item.url}" target="_blank" rel="noopener noreferrer">
+      ${item.label}
+    </a>
+  `).join("");
 }
