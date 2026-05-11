@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-11T11:46:13.896471+00:00",
+  "updated": "2026-05-11T17:11:48.510630+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,10 +9,10 @@
       "title": "Project Hail Mary",
       "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
       "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y8vQKqARUYPktoQTp1kLuHqBZkh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.2",
-      "votes": 2108,
+      "votes": 2158,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
       "releaseDate": "2026-05-06",
       "rating": "7.2",
-      "votes": 109,
+      "votes": 111,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -36,44 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
       "releaseDate": "2026-03-26",
       "rating": "7.0",
-      "votes": 701,
+      "votes": 706,
       "url": "https://www.themoviedb.org/movie/1325734"
-    },
-    {
-      "id": 1314481,
-      "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.8",
-      "votes": 427,
-      "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1330021,
-      "mediaType": "movie",
-      "title": "Remarkably Bright Creatures",
-      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
-      "poster": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1yw8C3xPzrliGpQp0qHID7F1zOT.jpg",
-      "releaseDate": "2026-05-07",
-      "rating": "8.1",
-      "votes": 68,
-      "url": "https://www.themoviedb.org/movie/1330021"
-    },
-    {
-      "id": 936075,
-      "mediaType": "movie",
-      "title": "Michael",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
-      "releaseDate": "2026-04-22",
-      "rating": "7.6",
-      "votes": 634,
-      "url": "https://www.themoviedb.org/movie/936075"
     },
     {
       "id": 1226863,
@@ -84,8 +48,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "6.7",
-      "votes": 798,
+      "votes": 799,
       "url": "https://www.themoviedb.org/movie/1226863"
+    },
+    {
+      "id": 936075,
+      "mediaType": "movie",
+      "title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
+      "releaseDate": "2026-04-22",
+      "rating": "7.6",
+      "votes": 640,
+      "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.8",
+      "votes": 434,
+      "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
       "id": 1007757,
@@ -96,20 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
       "releaseDate": "2026-05-01",
       "rating": "8.9",
-      "votes": 447,
+      "votes": 475,
       "url": "https://www.themoviedb.org/movie/1007757"
     },
     {
-      "id": 1266127,
+      "id": 1330021,
       "mediaType": "movie",
-      "title": "Ready or Not 2: Here I Come",
-      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
-      "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
-      "releaseDate": "2026-03-19",
-      "rating": "7.4",
-      "votes": 543,
-      "url": "https://www.themoviedb.org/movie/1266127"
+      "title": "Remarkably Bright Creatures",
+      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+      "poster": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "releaseDate": "2026-05-07",
+      "rating": "8.1",
+      "votes": 75,
+      "url": "https://www.themoviedb.org/movie/1330021"
     },
     {
       "id": 1327819,
@@ -120,8 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
       "releaseDate": "2026-03-04",
       "rating": "7.9",
-      "votes": 888,
+      "votes": 893,
       "url": "https://www.themoviedb.org/movie/1327819"
+    },
+    {
+      "id": 1266127,
+      "mediaType": "movie",
+      "title": "Ready or Not 2: Here I Come",
+      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
+      "releaseDate": "2026-03-19",
+      "rating": "7.4",
+      "votes": 548,
+      "url": "https://www.themoviedb.org/movie/1266127"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.4",
-      "votes": 12197,
+      "votes": 12202,
       "url": "https://www.themoviedb.org/tv/76479"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10539,
+      "votes": 10544,
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.3",
-      "votes": 2917,
+      "votes": 2934,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -170,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5254,
+      "votes": 5257,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
       "releaseDate": "2025-03-04",
       "rating": "8.1",
-      "votes": 846,
+      "votes": 849,
       "url": "https://www.themoviedb.org/tv/202555"
     },
     {
@@ -194,32 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mce2ZupMnD6fmIT5AcpriP3zNTA.jpg",
       "releaseDate": "2023-04-27",
       "rating": "6.8",
-      "votes": 503,
+      "votes": 504,
       "url": "https://www.themoviedb.org/tv/114922"
     },
     {
-      "id": 272432,
+      "id": 254953,
       "mediaType": "tv",
-      "title": "Born with Luck",
-      "overview": "Zhang Yi'ang, a veteran detective, is sent to Sanjiangkou to investigate a case but soon finds himself caught in a web of crime and corruption. While pursuing a powerful criminal network, he unexpectedly receives help from a group of bungling thieves, who inadvertently aid his mission to unravel the truth behind a murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/3t7xGceBAsSzWMuDdUpa6xS0x7p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/anhYZV0WFz4Lv2Ldp2KIZdPCKAh.jpg",
-      "releaseDate": "2026-05-04",
-      "rating": "8.5",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/272432"
-    },
-    {
-      "id": 289219,
-      "mediaType": "tv",
-      "title": "Star Wars: Maul - Shadow Lord",
-      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/cCUQAclLHCDQH6nduHwuqMdezmm.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
-      "releaseDate": "2026-04-06",
-      "rating": "8.3",
-      "votes": 123,
-      "url": "https://www.themoviedb.org/tv/289219"
+      "title": "Rooster",
+      "overview": "On a college campus, an author navigates a complicated relationship with his daughter.",
+      "poster": "https://image.tmdb.org/t/p/w500/aikvD4Nu7N6ekbrXNua8vJlO8JU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mhZAT8ktiNi7YwuL50kmumsau69.jpg",
+      "releaseDate": "2026-03-08",
+      "rating": "7.5",
+      "votes": 44,
+      "url": "https://www.themoviedb.org/tv/254953"
     },
     {
       "id": 262280,
@@ -230,20 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4CtOMphAmfHJ6cztlAYjkdStkHP.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.8",
-      "votes": 20,
+      "votes": 21,
       "url": "https://www.themoviedb.org/tv/262280"
     },
     {
-      "id": 290856,
+      "id": 127865,
       "mediaType": "tv",
-      "title": "Marshals",
-      "overview": "With the Yellowstone Ranch behind him, Kayce Dutton joins an elite unit of U.S. Marshals, combining his skills as a cowboy and Navy SEAL to bring range justice to Montana, where he and his teammates must balance family, duty and the high psychological cost that comes with serving as the last line of defense in the region's war on violence.",
-      "poster": "https://image.tmdb.org/t/p/w500/nInfaveN1iFpRIcMGNKENoVVUT2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yGJGwt7DdIWTUXuahLfhcH1gi7G.jpg",
-      "releaseDate": "2026-03-01",
-      "rating": "7.4",
-      "votes": 161,
-      "url": "https://www.themoviedb.org/tv/290856"
+      "title": "The Chestnut Man",
+      "overview": "At a grisly murder scene sits a figurine made of chestnuts. From this creepy clue, two detectives hunt a killer linked to a politician's missing child.",
+      "poster": "https://image.tmdb.org/t/p/w500/tdLJTZJ184PsO9QkK9aPeeAXLlo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fIXTetAsXkPO6UUUw85IU4oactf.jpg",
+      "releaseDate": "2021-09-29",
+      "rating": "7.5",
+      "votes": 667,
+      "url": "https://www.themoviedb.org/tv/127865"
+    },
+    {
+      "id": 136315,
+      "mediaType": "tv",
+      "title": "The Bear",
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg",
+      "releaseDate": "2022-06-23",
+      "rating": "8.2",
+      "votes": 1689,
+      "url": "https://www.themoviedb.org/tv/136315"
     }
   ],
   "upcomingMovies": [
@@ -272,18 +272,6 @@
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bK1TTmowTrHXq4SGu5FzqQJh0ip.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/454639"
-    },
-    {
       "id": 1083381,
       "mediaType": "movie",
       "title": "Backrooms",
@@ -296,6 +284,18 @@
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bK1TTmowTrHXq4SGu5FzqQJh0ip.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/454639"
+    },
+    {
       "id": 1497970,
       "mediaType": "movie",
       "title": "Tom and Jerry: Forbidden Compass",
@@ -303,8 +303,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5qttWFjsO62k88civZaDMHiBTvy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/9VM1KI9sVZETl0d00FK7CnBzxiw.jpg",
       "releaseDate": "2026-05-22",
-      "rating": "6.6",
-      "votes": 37,
+      "rating": "6.7",
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1497970"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "6.7",
-      "votes": 797,
+      "votes": 798,
       "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.2",
-      "votes": 105,
+      "votes": 110,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 630,
+      "votes": 634,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.8",
-      "votes": 427,
+      "votes": 428,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-05-08",
       "rating": "7.7",
-      "votes": 26,
+      "votes": 27,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
