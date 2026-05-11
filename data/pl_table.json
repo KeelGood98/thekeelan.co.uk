@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-11T15:40:15.768215+00:00",
+  "updated": "2026-05-11T20:05:39.965606+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -186,6 +186,20 @@
     },
     {
       "position": 14,
+      "name": "Leeds United",
+      "fullName": "Leeds United FC",
+      "badge": "https://crests.football-data.org/341.png",
+      "played": 36,
+      "won": 10,
+      "drawn": 14,
+      "lost": 12,
+      "goalsFor": 47,
+      "goalsAgainst": 52,
+      "goalDifference": -5,
+      "points": 44
+    },
+    {
+      "position": 15,
       "name": "Crystal Palace",
       "fullName": "Crystal Palace FC",
       "badge": "https://crests.football-data.org/354.png",
@@ -199,7 +213,7 @@
       "points": 44
     },
     {
-      "position": 15,
+      "position": 16,
       "name": "Nott'm Forest",
       "fullName": "Nottingham Forest FC",
       "badge": "https://crests.football-data.org/351.png",
@@ -213,32 +227,18 @@
       "points": 43
     },
     {
-      "position": 16,
-      "name": "Leeds United",
-      "fullName": "Leeds United FC",
-      "badge": "https://crests.football-data.org/341.png",
-      "played": 35,
-      "won": 10,
-      "drawn": 13,
-      "lost": 12,
-      "goalsFor": 47,
-      "goalsAgainst": 52,
-      "goalDifference": -5,
-      "points": 43
-    },
-    {
       "position": 17,
       "name": "Tottenham",
       "fullName": "Tottenham Hotspur FC",
       "badge": "https://crests.football-data.org/73.png",
-      "played": 35,
+      "played": 36,
       "won": 9,
-      "drawn": 10,
+      "drawn": 11,
       "lost": 16,
       "goalsFor": 45,
       "goalsAgainst": 54,
       "goalDifference": -9,
-      "points": 37
+      "points": 38
     },
     {
       "position": 18,
