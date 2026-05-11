@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-11T20:05:42.587337+00:00",
+  "updated": "2026-05-11T23:13:43.826169+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -59,6 +59,17 @@
       "penalties": 3
     },
     {
+      "name": "Dominic Calvert-Lewin",
+      "firstName": "Dominic",
+      "lastName": "Calvert-Lewin",
+      "nationality": "England",
+      "team": "Leeds United",
+      "teamBadge": "https://crests.football-data.org/341.png",
+      "goals": 13,
+      "assists": 1,
+      "penalties": 4
+    },
+    {
       "name": "Danny Welbeck",
       "firstName": "Danny",
       "lastName": "Welbeck",
@@ -79,17 +90,6 @@
       "goals": 13,
       "assists": 5,
       "penalties": 1
-    },
-    {
-      "name": "Dominic Calvert-Lewin",
-      "firstName": "Dominic",
-      "lastName": "Calvert-Lewin",
-      "nationality": "England",
-      "team": "Leeds United",
-      "teamBadge": "https://crests.football-data.org/341.png",
-      "goals": 12,
-      "assists": 1,
-      "penalties": 3
     },
     {
       "name": "Eli Kroupi",
