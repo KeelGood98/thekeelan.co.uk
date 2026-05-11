@@ -959,6 +959,133 @@ th {
   flex: 0 0 auto;
 }
 
+/* Setup / Steam */
+
+.setup-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.setup-hero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.95rem;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.16), transparent 16rem),
+    rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.setup-icon {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  flex: 0 0 auto;
+  border-radius: 22px;
+  font-size: 2rem;
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.24);
+}
+
+.setup-hero h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.setup-hero p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.setup-spec-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.setup-spec {
+  padding: 0.95rem;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+}
+
+.setup-spec span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.35rem;
+}
+
+.setup-spec strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.setup-spec p {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.steam-profile-card {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr) auto;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 1rem;
+  min-height: 132px;
+  border-radius: 20px;
+  color: var(--text);
+  text-decoration: none;
+  background:
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.16), transparent 16rem),
+    rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.steam-profile-card:hover {
+  transform: translateY(-2px);
+  background: rgba(96, 165, 250, 0.16);
+  border-color: rgba(96, 165, 250, 0.45);
+}
+
+.steam-logo {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.steam-profile-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.steam-profile-card p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+.steam-profile-card > strong {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  color: #bfdbfe;
+  background: rgba(96, 165, 250, 0.15);
+  font-size: 0.85rem;
+}
+
 /* Media */
 
 .media-card-grid {
@@ -1253,7 +1380,8 @@ footer {
   .deal-grid,
   .media-card-grid,
   .forecast-grid,
-  .weather-stats-grid {
+  .weather-stats-grid,
+  .setup-spec-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1339,6 +1467,15 @@ footer {
   .media-poster {
     width: 72px;
     height: 108px;
+  }
+
+  .steam-profile-card {
+    grid-template-columns: 58px minmax(0, 1fr);
+  }
+
+  .steam-profile-card > strong {
+    grid-column: 1 / -1;
+    justify-self: flex-start;
   }
 
   body {
