@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-12T16:55:42.962057+00:00",
+  "updated": "2026-05-12T21:54:07.615709+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
-      "rating": "8.3",
-      "votes": 2474,
+      "rating": "8.4",
+      "votes": 2538,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
@@ -23,9 +23,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
       "releaseDate": "2026-05-06",
-      "rating": "7.2",
-      "votes": 123,
+      "rating": "7.1",
+      "votes": 127,
       "url": "https://www.themoviedb.org/movie/931285"
+    },
+    {
+      "id": 1226863,
+      "mediaType": "movie",
+      "title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "releaseDate": "2026-04-01",
+      "rating": "6.7",
+      "votes": 817,
+      "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
       "id": 1007757,
@@ -36,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
       "releaseDate": "2026-05-01",
       "rating": "8.9",
-      "votes": 616,
+      "votes": 642,
       "url": "https://www.themoviedb.org/movie/1007757"
+    },
+    {
+      "id": 1325734,
+      "mediaType": "movie",
+      "title": "The Drama",
+      "overview": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
+      "poster": "https://image.tmdb.org/t/p/w500/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
+      "releaseDate": "2026-03-26",
+      "rating": "7.0",
+      "votes": 716,
+      "url": "https://www.themoviedb.org/movie/1325734"
     },
     {
       "id": 936075,
@@ -47,8 +71,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "7.6",
-      "votes": 651,
+      "rating": "7.5",
+      "votes": 655,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -60,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
       "releaseDate": "2026-05-07",
       "rating": "8.3",
-      "votes": 120,
+      "votes": 125,
       "url": "https://www.themoviedb.org/movie/1330021"
     },
     {
@@ -72,32 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-04-29",
       "rating": "6.8",
-      "votes": 450,
+      "votes": 460,
       "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1325734,
-      "mediaType": "movie",
-      "title": "The Drama",
-      "overview": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-      "poster": "https://image.tmdb.org/t/p/w500/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
-      "releaseDate": "2026-03-26",
-      "rating": "7.0",
-      "votes": 714,
-      "url": "https://www.themoviedb.org/movie/1325734"
-    },
-    {
-      "id": 1226863,
-      "mediaType": "movie",
-      "title": "The Super Mario Galaxy Movie",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
-      "releaseDate": "2026-04-01",
-      "rating": "6.7",
-      "votes": 814,
-      "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
       "id": 1327819,
@@ -108,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
       "releaseDate": "2026-03-04",
       "rating": "7.9",
-      "votes": 927,
+      "votes": 936,
       "url": "https://www.themoviedb.org/movie/1327819"
     },
     {
@@ -120,7 +120,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
       "releaseDate": "2026-03-19",
       "rating": "7.5",
-      "votes": 595,
+      "votes": 602,
       "url": "https://www.themoviedb.org/movie/1266127"
     }
   ],
@@ -134,20 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.4",
-      "votes": 12238,
+      "votes": 12247,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 235930,
-      "mediaType": "tv",
-      "title": "Devil May Cry",
-      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
-      "releaseDate": "2025-04-03",
-      "rating": "7.9",
-      "votes": 311,
-      "url": "https://www.themoviedb.org/tv/235930"
     },
     {
       "id": 124364,
@@ -158,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.3",
-      "votes": 3030,
+      "votes": 3044,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -170,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10573,
+      "votes": 10579,
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
@@ -182,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
       "releaseDate": "2025-03-04",
       "rating": "8.1",
-      "votes": 864,
+      "votes": 868,
       "url": "https://www.themoviedb.org/tv/202555"
     },
     {
@@ -194,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mce2ZupMnD6fmIT5AcpriP3zNTA.jpg",
       "releaseDate": "2023-04-27",
       "rating": "6.9",
-      "votes": 507,
+      "votes": 509,
       "url": "https://www.themoviedb.org/tv/114922"
     },
     {
@@ -206,20 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5266,
+      "votes": 5268,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 262280,
+      "id": 235930,
       "mediaType": "tv",
-      "title": "Legends",
-      "overview": "As drugs flood the streets of '90s Britain, a team of civil servants is thrust undercover to topple the gangs behind it.",
-      "poster": "https://image.tmdb.org/t/p/w500/dGienbU1xNZJcbY8i8ubJusjDwD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4CtOMphAmfHJ6cztlAYjkdStkHP.jpg",
-      "releaseDate": "2026-05-07",
-      "rating": "7.8",
-      "votes": 24,
-      "url": "https://www.themoviedb.org/tv/262280"
+      "title": "Devil May Cry",
+      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
+      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
+      "releaseDate": "2025-04-03",
+      "rating": "8.0",
+      "votes": 316,
+      "url": "https://www.themoviedb.org/tv/235930"
     },
     {
       "id": 272432,
@@ -234,16 +222,28 @@
       "url": "https://www.themoviedb.org/tv/272432"
     },
     {
-      "id": 262388,
+      "id": 262280,
       "mediaType": "tv",
-      "title": "M.I.A.",
-      "overview": "Restless in the Florida Keys, Etta Tiger Jonze dreams of a life in Miami's glittering, sub-tropical kingdom. When her family's drug-running business shatters in tragedy, however, Etta embarks on a dangerous journey through Miami's neon-lit underbelly that will define who she is and what she's ultimately capable of.",
-      "poster": "https://image.tmdb.org/t/p/w500/uvocuo6mgQTtNa7O6a3MQoTfuh4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wqjhAWmqHrIIn4PdchGCuEgPksw.jpg",
+      "title": "Legends",
+      "overview": "As drugs flood the streets of '90s Britain, a team of civil servants is thrust undercover to topple the gangs behind it.",
+      "poster": "https://image.tmdb.org/t/p/w500/dGienbU1xNZJcbY8i8ubJusjDwD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4CtOMphAmfHJ6cztlAYjkdStkHP.jpg",
       "releaseDate": "2026-05-07",
-      "rating": "8.1",
-      "votes": 27,
-      "url": "https://www.themoviedb.org/tv/262388"
+      "rating": "7.8",
+      "votes": 25,
+      "url": "https://www.themoviedb.org/tv/262280"
+    },
+    {
+      "id": 136315,
+      "mediaType": "tv",
+      "title": "The Bear",
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wHNwlE6ftEpgjVbdhLXOtv1hLs0.jpg",
+      "releaseDate": "2022-06-23",
+      "rating": "8.2",
+      "votes": 1689,
+      "url": "https://www.themoviedb.org/tv/136315"
     }
   ],
   "upcomingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "6.7",
-      "votes": 813,
+      "votes": 815,
       "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.2",
-      "votes": 120,
+      "votes": 123,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 649,
+      "votes": 651,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.8",
-      "votes": 447,
+      "votes": 450,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
       "releaseDate": "2026-04-03",
       "rating": "7.0",
-      "votes": 712,
+      "votes": 714,
       "url": "https://www.themoviedb.org/movie/1325734"
     },
     {
@@ -438,20 +438,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rGmHJzGyvHgKisPWhagGrqlJmYg.jpg",
       "releaseDate": "2026-05-08",
       "rating": "7.7",
-      "votes": 30,
+      "votes": 31,
       "url": "https://www.themoviedb.org/movie/1301421"
-    },
-    {
-      "id": 1304313,
-      "mediaType": "movie",
-      "title": "Lee Cronin's The Mummy",
-      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/lTQoEczVEnkuxHFEGgWYfJB98tL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
-      "releaseDate": "2026-04-17",
-      "rating": "6.7",
-      "votes": 194,
-      "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
       "id": 1336770,
@@ -464,6 +452,18 @@
       "rating": "7.2",
       "votes": 4,
       "url": "https://www.themoviedb.org/movie/1336770"
+    },
+    {
+      "id": 1304313,
+      "mediaType": "movie",
+      "title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/lTQoEczVEnkuxHFEGgWYfJB98tL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
+      "releaseDate": "2026-04-17",
+      "rating": "6.7",
+      "votes": 195,
+      "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
       "id": 1430077,
