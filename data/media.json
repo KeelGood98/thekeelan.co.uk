@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-13T11:14:32.061339+00:00",
+  "updated": "2026-05-13T17:01:46.078172+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/gOggsBCSypNXq0yApYeXe7nnopT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
       "releaseDate": "2026-05-12",
-      "rating": "7.4",
-      "votes": 36,
+      "rating": "8.4",
+      "votes": 95,
       "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.4",
-      "votes": 2691,
+      "votes": 2714,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
@@ -33,10 +33,10 @@
       "title": "Mortal Kombat II",
       "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
       "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tAeiebNAyYC23FjUEkgyUm9SnEo.jpg",
       "releaseDate": "2026-05-06",
-      "rating": "7.2",
-      "votes": 136,
+      "rating": "7.1",
+      "votes": 141,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -47,9 +47,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "7.6",
-      "votes": 661,
+      "rating": "7.5",
+      "votes": 666,
       "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.8",
+      "votes": 474,
+      "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
       "id": 1330021,
@@ -60,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
       "releaseDate": "2026-05-07",
       "rating": "8.4",
-      "votes": 148,
+      "votes": 150,
       "url": "https://www.themoviedb.org/movie/1330021"
     },
     {
@@ -72,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "6.7",
-      "votes": 820,
+      "votes": 822,
       "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
@@ -88,18 +100,6 @@
       "url": "https://www.themoviedb.org/movie/1325734"
     },
     {
-      "id": 1327819,
-      "mediaType": "movie",
-      "title": "Hoppers",
-      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-      "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
-      "releaseDate": "2026-03-04",
-      "rating": "7.9",
-      "votes": 964,
-      "url": "https://www.themoviedb.org/movie/1327819"
-    },
-    {
       "id": 1007757,
       "mediaType": "movie",
       "title": "Swapped",
@@ -108,20 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
       "releaseDate": "2026-05-01",
       "rating": "9.0",
-      "votes": 710,
+      "votes": 724,
       "url": "https://www.themoviedb.org/movie/1007757"
     },
     {
-      "id": 1314481,
+      "id": 1266127,
       "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.8",
-      "votes": 469,
-      "url": "https://www.themoviedb.org/movie/1314481"
+      "title": "Ready or Not 2: Here I Come",
+      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
+      "releaseDate": "2026-03-19",
+      "rating": "7.5",
+      "votes": 624,
+      "url": "https://www.themoviedb.org/movie/1266127"
     }
   ],
   "trendingTv": [
@@ -134,20 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12262,
+      "votes": 12271,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 71915,
-      "mediaType": "tv",
-      "title": "Good Omens",
-      "overview": "Aziraphale, an angel, and Crowley, a demon, join forces in order to prevent Armageddon. They attempt to raise the Antichrist in a balanced and human way, but are they focusing their efforts in the right direction?",
-      "poster": "https://image.tmdb.org/t/p/w500/omgCpyBV5sUT8AkeIcEwdPPgKZC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4YIQAV5R2iGY8fGPNsbe77gUu4.jpg",
-      "releaseDate": "2019-05-31",
-      "rating": "8.0",
-      "votes": 2267,
-      "url": "https://www.themoviedb.org/tv/71915"
     },
     {
       "id": 273240,
@@ -155,11 +143,23 @@
       "title": "Off Campus",
       "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
       "poster": "https://image.tmdb.org/t/p/w500/tcPc5ZMBO4y2BtCJMe3o2nwZb2B.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cdD0InWMH4e6AxceQs93fQRYsfO.jpg",
       "releaseDate": "2026-05-13",
-      "rating": "10.0",
-      "votes": 2,
+      "rating": "7.1",
+      "votes": 5,
       "url": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "id": 71915,
+      "mediaType": "tv",
+      "title": "Good Omens",
+      "overview": "Aziraphale and Crowley, of Heaven and Hell respectively, have grown rather fond of the Earth. So it's terrible news that it's about to end. The armies of Good and Evil are amassing. The Four Horsemen are ready to ride. Everything is going according to the Divine Plan...except that someone seems to have misplaced the Antichrist. Can our heroes find him and stop Armageddon before it's too late?",
+      "poster": "https://image.tmdb.org/t/p/w500/omgCpyBV5sUT8AkeIcEwdPPgKZC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4YIQAV5R2iGY8fGPNsbe77gUu4.jpg",
+      "releaseDate": "2019-05-31",
+      "rating": "8.0",
+      "votes": 2268,
+      "url": "https://www.themoviedb.org/tv/71915"
     },
     {
       "id": 272432,
@@ -167,23 +167,11 @@
       "title": "Born with Luck",
       "overview": "Zhang Yi'ang, a veteran detective, is sent to Sanjiangkou to investigate a case but soon finds himself caught in a web of crime and corruption. While pursuing a powerful criminal network, he unexpectedly receives help from a group of bungling thieves, who inadvertently aid his mission to unravel the truth behind a murder.",
       "poster": "https://image.tmdb.org/t/p/w500/3t7xGceBAsSzWMuDdUpa6xS0x7p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/anhYZV0WFz4Lv2Ldp2KIZdPCKAh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eFcPBI0tEnFRiJaNHQ74ZcSNQCg.jpg",
       "releaseDate": "2026-05-04",
       "rating": "8.8",
       "votes": 6,
       "url": "https://www.themoviedb.org/tv/272432"
-    },
-    {
-      "id": 235930,
-      "mediaType": "tv",
-      "title": "Devil May Cry",
-      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
-      "releaseDate": "2025-04-03",
-      "rating": "8.0",
-      "votes": 331,
-      "url": "https://www.themoviedb.org/tv/235930"
     },
     {
       "id": 85552,
@@ -194,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10587,
+      "votes": 10590,
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
@@ -206,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.3",
-      "votes": 3075,
+      "votes": 3082,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -218,20 +206,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
       "releaseDate": "2025-03-04",
       "rating": "8.1",
-      "votes": 873,
+      "votes": 874,
       "url": "https://www.themoviedb.org/tv/202555"
     },
     {
-      "id": 114922,
+      "id": 235930,
       "mediaType": "tv",
-      "title": "Citadel",
-      "overview": "What if you lost your memory? What if a spy didn't know they were a spy? Years ago, the top agents of Citadel, Mason Kane and Nadia Sinh, had their minds wiped. But, they're called back to action as sinister forces emerge from the past. With the help of spymaster Bernard Orlick, these former lovers must remember the past to save the future.",
-      "poster": "https://image.tmdb.org/t/p/w500/5MHtxPEfmN4b0rHzfEZRcm6v9WI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mce2ZupMnD6fmIT5AcpriP3zNTA.jpg",
-      "releaseDate": "2023-04-27",
-      "rating": "6.8",
-      "votes": 510,
-      "url": "https://www.themoviedb.org/tv/114922"
+      "title": "Devil May Cry",
+      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
+      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
+      "releaseDate": "2025-04-03",
+      "rating": "8.0",
+      "votes": 333,
+      "url": "https://www.themoviedb.org/tv/235930"
     },
     {
       "id": 37854,
@@ -242,8 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5270,
+      "votes": 5272,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 254486,
+      "mediaType": "tv",
+      "title": "Zhan Zhao Adventures",
+      "overview": "Zhan Zhao, a fourth-ranked imperial guard, embarks on a solo investigation after receiving evidence of a cold case. Along the way, he encounters the strong-willed Miss Huo Linglong and the justice-driven Bai Yutang. The three like-minded companions join forces to uncover clues, uphold justice, and capture criminals. Together, they work to expose a dangerous web of power that has infiltrated both the court and the martial world, ultimately restoring peace to the people.",
+      "poster": "https://image.tmdb.org/t/p/w500/jeSvTYUjRtV0xNjEupHpMgrBwsZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aqhB6P6x5wCk4lJqeXvRaD941xM.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "9.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/254486"
     }
   ],
   "upcomingMovies": [
@@ -252,48 +252,12 @@
       "mediaType": "movie",
       "title": "Star Wars: The Mandalorian and Grogu",
       "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/7QujwMB124KqSPbWlLRHBO5wygE.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qSWiY6KAvkapXJWeyNrmDGYWQwr.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
       "releaseDate": "2026-05-22",
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1228710"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-29",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pO7XVtgA6t5JbxY1S8Y4cQEFarR.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
-      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5p6BsJtnPbglYN15MuiUEppPl0f.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
       "id": 454639,
@@ -308,6 +272,42 @@
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "releaseDate": "2026-05-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5p6BsJtnPbglYN15MuiUEppPl0f.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1273221,
+      "mediaType": "movie",
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pO7XVtgA6t5JbxY1S8Y4cQEFarR.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1273221"
+    },
+    {
       "id": 1497970,
       "mediaType": "movie",
       "title": "Tom and Jerry: Forbidden Compass",
@@ -318,18 +318,6 @@
       "rating": "6.6",
       "votes": 39,
       "url": "https://www.themoviedb.org/movie/1497970"
-    },
-    {
-      "id": 1368314,
-      "mediaType": "movie",
-      "title": "Passenger",
-      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sWEvrgZM2phikD1DcUlv9aWm1sn.jpg",
-      "releaseDate": "2026-05-22",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
       "id": 1340206,
@@ -344,16 +332,16 @@
       "url": "https://www.themoviedb.org/movie/1340206"
     },
     {
-      "id": 1276521,
+      "id": 1368314,
       "mediaType": "movie",
-      "title": "Charlie the Wonderdog",
-      "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-      "poster": "https://image.tmdb.org/t/p/w500/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2skPNvhiF3B0pUigNm1L5KLWvrk.jpg",
+      "title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sWEvrgZM2phikD1DcUlv9aWm1sn.jpg",
       "releaseDate": "2026-05-22",
-      "rating": "6.8",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1276521"
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
       "id": 1232569,
@@ -366,6 +354,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1232569"
+    },
+    {
+      "id": 1276521,
+      "mediaType": "movie",
+      "title": "Charlie the Wonderdog",
+      "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
+      "poster": "https://image.tmdb.org/t/p/w500/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2skPNvhiF3B0pUigNm1L5KLWvrk.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "6.8",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/movie/1276521"
     }
   ],
   "nowPlayingMovies": [
@@ -375,10 +375,10 @@
       "title": "Mortal Kombat II",
       "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
       "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qjv21Iu0nHQ0crJpy6KKiW8LX1Y.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.1",
-      "votes": 134,
+      "votes": 139,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 660,
+      "votes": 661,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.8",
-      "votes": 465,
+      "votes": 471,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/e9UvRjJAqn2hLXDfMHU1LFMEKGv.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.8",
-      "votes": 31,
+      "votes": 32,
       "url": "https://www.themoviedb.org/movie/1430077"
     },
     {
