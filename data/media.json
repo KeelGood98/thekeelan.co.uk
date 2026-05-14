@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-14T16:32:01.901092+00:00",
+  "updated": "2026-05-14T21:48:22.819382+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
       "releaseDate": "2026-05-12",
       "rating": "8.6",
-      "votes": 369,
+      "votes": 419,
       "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.5",
-      "votes": 2889,
+      "votes": 2931,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-06",
       "rating": "7.0",
-      "votes": 157,
+      "votes": 158,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -48,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.5",
-      "votes": 687,
+      "votes": 694,
       "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 1330021,
+      "mediaType": "movie",
+      "title": "Remarkably Bright Creatures",
+      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
+      "poster": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
+      "releaseDate": "2026-05-07",
+      "rating": "8.4",
+      "votes": 174,
+      "url": "https://www.themoviedb.org/movie/1330021"
     },
     {
       "id": 1314481,
@@ -60,20 +72,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-04-29",
       "rating": "6.7",
-      "votes": 494,
+      "votes": 503,
       "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1330021,
-      "mediaType": "movie",
-      "title": "Remarkably Bright Creatures",
-      "overview": "Through unlikely bonds formed during night shifts at a local aquarium, Tova, an elderly widow, learns of a life-changing discovery that may bring her joy and wonder once again.",
-      "poster": "https://image.tmdb.org/t/p/w500/9HcEqn3D4J6b2Z0jK54id9nA0fr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cm3TmfEcLhs2FaDEUUSWgpK3VRC.jpg",
-      "releaseDate": "2026-05-07",
-      "rating": "8.4",
-      "votes": 168,
-      "url": "https://www.themoviedb.org/movie/1330021"
     },
     {
       "id": 1226863,
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "6.7",
-      "votes": 831,
+      "votes": 835,
       "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
       "releaseDate": "2026-05-01",
       "rating": "9.0",
-      "votes": 799,
+      "votes": 821,
       "url": "https://www.themoviedb.org/movie/1007757"
     },
     {
@@ -107,8 +107,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oICYZzr1arFtiaPrQfOTYZOOrCy.jpg",
       "releaseDate": "2026-04-16",
-      "rating": "7.3",
-      "votes": 19,
+      "rating": "7.6",
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -120,7 +120,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
       "releaseDate": "2026-03-04",
       "rating": "8.0",
-      "votes": 996,
+      "votes": 1003,
       "url": "https://www.themoviedb.org/movie/1327819"
     }
   ],
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12317,
+      "votes": 12324,
       "url": "https://www.themoviedb.org/tv/76479"
     },
     {
@@ -143,11 +143,47 @@
       "title": "Off Campus",
       "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
       "poster": "https://image.tmdb.org/t/p/w500/tcPc5ZMBO4y2BtCJMe3o2nwZb2B.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3ANXZWhhcqPAh0q6nRZ979TIwxC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cdD0InWMH4e6AxceQs93fQRYsfO.jpg",
       "releaseDate": "2026-05-13",
-      "rating": "8.3",
-      "votes": 20,
+      "rating": "8.8",
+      "votes": 23,
       "url": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.3",
+      "votes": 3111,
+      "url": "https://www.themoviedb.org/tv/124364"
+    },
+    {
+      "id": 85552,
+      "mediaType": "tv",
+      "title": "Euphoria",
+      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
+      "releaseDate": "2019-06-16",
+      "rating": "8.3",
+      "votes": 10606,
+      "url": "https://www.themoviedb.org/tv/85552"
+    },
+    {
+      "id": 202555,
+      "mediaType": "tv",
+      "title": "Daredevil: Born Again",
+      "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
+      "poster": "https://image.tmdb.org/t/p/w500/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
+      "releaseDate": "2025-03-04",
+      "rating": "8.1",
+      "votes": 886,
+      "url": "https://www.themoviedb.org/tv/202555"
     },
     {
       "id": 71915,
@@ -162,6 +198,30 @@
       "url": "https://www.themoviedb.org/tv/71915"
     },
     {
+      "id": 235930,
+      "mediaType": "tv",
+      "title": "Devil May Cry",
+      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
+      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
+      "releaseDate": "2025-04-03",
+      "rating": "8.1",
+      "votes": 347,
+      "url": "https://www.themoviedb.org/tv/235930"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5280,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
       "id": 285807,
       "mediaType": "tv",
       "title": "Nemesis",
@@ -174,76 +234,16 @@
       "url": "https://www.themoviedb.org/tv/285807"
     },
     {
-      "id": 124364,
+      "id": 114922,
       "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.3",
-      "votes": 3108,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 85552,
-      "mediaType": "tv",
-      "title": "Euphoria",
-      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
-      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
-      "releaseDate": "2019-06-16",
-      "rating": "8.3",
-      "votes": 10601,
-      "url": "https://www.themoviedb.org/tv/85552"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5279,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 202555,
-      "mediaType": "tv",
-      "title": "Daredevil: Born Again",
-      "overview": "Matt Murdock, a blind lawyer with heightened abilities, is fighting for justice through his bustling law firm, while former mob boss Wilson Fisk pursues his own political endeavors in New York. When their past identities begin to emerge, both men find themselves on an inevitable collision course.",
-      "poster": "https://image.tmdb.org/t/p/w500/xDUoAsU8lQHOOoRkFiBuarmACDN.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qrTAc0ZtQ859Qu5O8cixJzNJpQs.jpg",
-      "releaseDate": "2025-03-04",
-      "rating": "8.1",
-      "votes": 883,
-      "url": "https://www.themoviedb.org/tv/202555"
-    },
-    {
-      "id": 272432,
-      "mediaType": "tv",
-      "title": "Born with Luck",
-      "overview": "Zhang Yi'ang, a veteran detective, is sent to Sanjiangkou to investigate a case but soon finds himself caught in a web of crime and corruption. While pursuing a powerful criminal network, he unexpectedly receives help from a group of bungling thieves, who inadvertently aid his mission to unravel the truth behind a murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/3t7xGceBAsSzWMuDdUpa6xS0x7p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/eFcPBI0tEnFRiJaNHQ74ZcSNQCg.jpg",
-      "releaseDate": "2026-05-04",
-      "rating": "7.7",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/tv/272432"
-    },
-    {
-      "id": 235930,
-      "mediaType": "tv",
-      "title": "Devil May Cry",
-      "overview": "In this epic battle of good vs. evil, the lines are blurry as hell. But a devilishly handsome demon hunter could be the world's best hope for salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/mX9tqfpjqwreONJHhap7SnSSowe.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
-      "releaseDate": "2025-04-03",
-      "rating": "8.1",
-      "votes": 345,
-      "url": "https://www.themoviedb.org/tv/235930"
+      "title": "Citadel",
+      "overview": "What if you lost your memory? What if a spy didn't know they were a spy? Years ago, the top agents of Citadel, Mason Kane and Nadia Sinh, had their minds wiped. But, they're called back to action as sinister forces emerge from the past. With the help of spymaster Bernard Orlick, these former lovers must remember the past to save the future.",
+      "poster": "https://image.tmdb.org/t/p/w500/5MHtxPEfmN4b0rHzfEZRcm6v9WI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mce2ZupMnD6fmIT5AcpriP3zNTA.jpg",
+      "releaseDate": "2023-04-27",
+      "rating": "6.8",
+      "votes": 511,
+      "url": "https://www.themoviedb.org/tv/114922"
     }
   ],
   "upcomingMovies": [
@@ -265,7 +265,7 @@
       "title": "Masters of the Universe",
       "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
       "poster": "https://image.tmdb.org/t/p/w500/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bK1TTmowTrHXq4SGu5FzqQJh0ip.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
       "releaseDate": "2026-06-03",
       "rating": "0.0",
       "votes": 0,
@@ -320,18 +320,6 @@
       "url": "https://www.themoviedb.org/movie/1497970"
     },
     {
-      "id": 1340206,
-      "mediaType": "movie",
-      "title": "Tuner",
-      "overview": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
-      "poster": "https://image.tmdb.org/t/p/w500/oGZd4xQJBt4mtuBhTdlOalsdqtT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sT5Inhc0aaReSZoufWgfJTQUbKp.jpg",
-      "releaseDate": "2026-05-29",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1340206"
-    },
-    {
       "id": 1368314,
       "mediaType": "movie",
       "title": "Passenger",
@@ -342,6 +330,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1368314"
+    },
+    {
+      "id": 1340206,
+      "mediaType": "movie",
+      "title": "Tuner",
+      "overview": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
+      "poster": "https://image.tmdb.org/t/p/w500/oGZd4xQJBt4mtuBhTdlOalsdqtT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sT5Inhc0aaReSZoufWgfJTQUbKp.jpg",
+      "releaseDate": "2026-05-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1340206"
     },
     {
       "id": 1232569,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
-      "id": 1276521,
+      "id": 1220566,
       "mediaType": "movie",
-      "title": "Charlie the Wonderdog",
-      "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-      "poster": "https://image.tmdb.org/t/p/w500/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2skPNvhiF3B0pUigNm1L5KLWvrk.jpg",
+      "title": "Eagles of the Republic",
+      "overview": "George Fahmy, Egypt's most adored actor, is pressured to star in a film commissioned by the highest authorities. He reluctantly accepts and finds himself thrown into the inner circle of power. Like moth drawn to flame, he begins an affair with the mysterious wife of the general overseeing the project.",
+      "poster": "https://image.tmdb.org/t/p/w500/f9MzpMfbBL4PknhKqoQpIUdskTl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/84DgFoFDppvf3i5MKZzOctx9HFz.jpg",
       "releaseDate": "2026-05-22",
       "rating": "6.8",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1276521"
+      "votes": 39,
+      "url": "https://www.themoviedb.org/movie/1220566"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.0",
-      "votes": 154,
+      "votes": 157,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "7.6",
-      "votes": 683,
+      "rating": "7.5",
+      "votes": 689,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.7",
-      "votes": 491,
+      "votes": 495,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -413,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
       "releaseDate": "2026-05-08",
-      "rating": "7.7",
-      "votes": 39,
+      "rating": "7.6",
+      "votes": 43,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -466,18 +466,6 @@
       "url": "https://www.themoviedb.org/movie/1430077"
     },
     {
-      "id": 1209511,
-      "mediaType": "movie",
-      "title": "Love Insurance Kompany",
-      "overview": "In 2040, an app premised on ensuring romance for all is used widely by the population. When the voice behind the app's AI realizes its misconception to true love, he embarks on a quest to prove that love does not come from a screen.",
-      "poster": "https://image.tmdb.org/t/p/w500/1IIUWMKzNVvI6YJX8BKE6EJ9bVd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/woos7rldBAKG99HmcbNZNpMjwNk.jpg",
-      "releaseDate": "2026-04-10",
-      "rating": "5.0",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1209511"
-    },
-    {
       "id": 1408208,
       "mediaType": "movie",
       "title": "Exit 8",
@@ -488,6 +476,18 @@
       "rating": "6.7",
       "votes": 366,
       "url": "https://www.themoviedb.org/movie/1408208"
+    },
+    {
+      "id": 1480387,
+      "mediaType": "movie",
+      "title": "undertone",
+      "overview": "The host of a popular paranormal podcast becomes haunted by terrifying recordings mysteriously sent her way.",
+      "poster": "https://image.tmdb.org/t/p/w500/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qXxFWyur7jFkg2aQgENcXuyYeHF.jpg",
+      "releaseDate": "2026-04-10",
+      "rating": "6.4",
+      "votes": 138,
+      "url": "https://www.themoviedb.org/movie/1480387"
     }
   ],
   "links": [
