@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-15T19:56:01.615609+00:00",
+  "updated": "2026-05-15T23:14:05.626081+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -46,31 +46,31 @@
     },
     {
       "position": 4,
+      "name": "Aston Villa",
+      "fullName": "Aston Villa FC",
+      "badge": "https://crests.football-data.org/58.png",
+      "played": 37,
+      "won": 18,
+      "drawn": 8,
+      "lost": 11,
+      "goalsFor": 54,
+      "goalsAgainst": 48,
+      "goalDifference": 6,
+      "points": 62
+    },
+    {
+      "position": 5,
       "name": "Liverpool",
       "fullName": "Liverpool FC",
       "badge": "https://crests.football-data.org/64.png",
       "played": 37,
       "won": 17,
-      "drawn": 9,
-      "lost": 11,
-      "goalsFor": 60,
-      "goalsAgainst": 48,
-      "goalDifference": 12,
-      "points": 60
-    },
-    {
-      "position": 5,
-      "name": "Aston Villa",
-      "fullName": "Aston Villa FC",
-      "badge": "https://crests.football-data.org/58.png",
-      "played": 37,
-      "won": 17,
-      "drawn": 9,
-      "lost": 11,
-      "goalsFor": 50,
-      "goalsAgainst": 46,
-      "goalDifference": 4,
-      "points": 60
+      "drawn": 8,
+      "lost": 12,
+      "goalsFor": 62,
+      "goalsAgainst": 52,
+      "goalDifference": 10,
+      "points": 59
     },
     {
       "position": 6,

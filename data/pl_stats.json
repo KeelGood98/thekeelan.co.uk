@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-15T19:56:04.593119+00:00",
+  "updated": "2026-05-15T23:14:10.785614+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -59,6 +59,17 @@
       "penalties": 3
     },
     {
+      "name": "Ollie Watkins",
+      "firstName": "Ollie",
+      "lastName": "Watkins",
+      "nationality": "England",
+      "team": "Aston Villa",
+      "teamBadge": "https://crests.football-data.org/58.png",
+      "goals": 14,
+      "assists": 3,
+      "penalties": 0
+    },
+    {
       "name": "Dominic Calvert-Lewin",
       "firstName": "Dominic",
       "lastName": "Calvert-Lewin",
@@ -101,17 +112,6 @@
       "goals": 12,
       "assists": 0,
       "penalties": 2
-    },
-    {
-      "name": "Ollie Watkins",
-      "firstName": "Ollie",
-      "lastName": "Watkins",
-      "nationality": "England",
-      "team": "Aston Villa",
-      "teamBadge": "https://crests.football-data.org/58.png",
-      "goals": 12,
-      "assists": 2,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -136,7 +136,7 @@
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
-      "goalsFor": 60,
+      "goalsFor": 62,
       "played": 37
     },
     {
@@ -166,14 +166,14 @@
       "played": 36
     },
     {
-      "name": "Aston Villa",
-      "badge": "https://crests.football-data.org/58.png",
-      "goalsAgainst": 46,
-      "played": 37
-    },
-    {
       "name": "Everton",
       "badge": "https://crests.football-data.org/62.png",
+      "goalsAgainst": 46,
+      "played": 36
+    },
+    {
+      "name": "Sunderland",
+      "badge": "https://crests.football-data.org/71.png",
       "goalsAgainst": 46,
       "played": 36
     }
@@ -200,7 +200,7 @@
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
-      "goalDifference": 12,
+      "goalDifference": 10,
       "played": 37
     },
     {
