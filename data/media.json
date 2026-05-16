@@ -1,20 +1,8 @@
 {
-  "updated": "2026-05-16T10:03:49.462173+00:00",
+  "updated": "2026-05-16T15:39:51.720637+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1439930,
-      "mediaType": "movie",
-      "title": "The Punisher: One Last Kill",
-      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
-      "poster": "https://image.tmdb.org/t/p/w500/gOggsBCSypNXq0yApYeXe7nnopT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
-      "releaseDate": "2026-05-12",
-      "rating": "8.6",
-      "votes": 616,
-      "url": "https://www.themoviedb.org/movie/1439930"
-    },
     {
       "id": 687163,
       "mediaType": "movie",
@@ -24,32 +12,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.5",
-      "votes": 3122,
+      "votes": 3136,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
-      "id": 936075,
+      "id": 1439930,
       "mediaType": "movie",
-      "title": "Michael",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
-      "releaseDate": "2026-04-22",
-      "rating": "7.5",
-      "votes": 717,
-      "url": "https://www.themoviedb.org/movie/936075"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oICYZzr1arFtiaPrQfOTYZOOrCy.jpg",
-      "releaseDate": "2026-04-16",
-      "rating": "7.9",
-      "votes": 46,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "poster": "https://image.tmdb.org/t/p/w500/gOggsBCSypNXq0yApYeXe7nnopT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.6",
+      "votes": 635,
+      "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
       "id": 931285,
@@ -60,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-06",
       "rating": "7.0",
-      "votes": 176,
+      "votes": 179,
       "url": "https://www.themoviedb.org/movie/931285"
-    },
-    {
-      "id": 1226863,
-      "mediaType": "movie",
-      "title": "The Super Mario Galaxy Movie",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
-      "releaseDate": "2026-04-01",
-      "rating": "6.7",
-      "votes": 848,
-      "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
       "id": 1330021,
@@ -84,44 +48,80 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bVGHSe47W6oCQL1Q88pvRAet51A.jpg",
       "releaseDate": "2026-05-07",
       "rating": "8.5",
-      "votes": 220,
+      "votes": 222,
       "url": "https://www.themoviedb.org/movie/1330021"
+    },
+    {
+      "id": 1226863,
+      "mediaType": "movie",
+      "title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "releaseDate": "2026-04-01",
+      "rating": "6.7",
+      "votes": 851,
+      "url": "https://www.themoviedb.org/movie/1226863"
+    },
+    {
+      "id": 1327819,
+      "mediaType": "movie",
+      "title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "releaseDate": "2026-03-04",
+      "rating": "8.0",
+      "votes": 1043,
+      "url": "https://www.themoviedb.org/movie/1327819"
     },
     {
       "id": 1007757,
       "mediaType": "movie",
       "title": "Swapped",
       "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat—one that could endanger not only their species, but the entire valley they call home.",
-      "poster": "https://image.tmdb.org/t/p/w500/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/te3zACrsYkS2x3mkjG6htLqhMo4.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/zMwhWailP1WY7sb6AoE6b8ugoy.jpg",
       "releaseDate": "2026-05-01",
       "rating": "9.0",
-      "votes": 946,
+      "votes": 955,
       "url": "https://www.themoviedb.org/movie/1007757"
     },
     {
-      "id": 1314481,
+      "id": 1318447,
       "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.7",
-      "votes": 529,
-      "url": "https://www.themoviedb.org/movie/1314481"
+      "title": "Apex",
+      "overview": "A grieving woman pushing her limits on a solo adventure in the Australian wild is ensnared in a twisted game with a cunning killer who thinks she's prey.",
+      "poster": "https://image.tmdb.org/t/p/w500/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/p8777bPIlyFYcjqP2hU8htoz1RG.jpg",
+      "releaseDate": "2026-04-24",
+      "rating": "6.6",
+      "votes": 998,
+      "url": "https://www.themoviedb.org/movie/1318447"
     },
     {
-      "id": 1325734,
+      "id": 1266127,
       "mediaType": "movie",
-      "title": "The Drama",
-      "overview": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-      "poster": "https://image.tmdb.org/t/p/w500/yPV87cvDabRMTZs6NIbZLOufBLR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b8H1a89qmNxF8rqFGrG93Q9qn52.jpg",
-      "releaseDate": "2026-03-26",
-      "rating": "6.9",
-      "votes": 742,
-      "url": "https://www.themoviedb.org/movie/1325734"
+      "title": "Ready or Not: Here I Come",
+      "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+      "poster": "https://image.tmdb.org/t/p/w500/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9dMp9t0d0nIGhiil8TyqChwiNwA.jpg",
+      "releaseDate": "2026-03-19",
+      "rating": "7.6",
+      "votes": 686,
+      "url": "https://www.themoviedb.org/movie/1266127"
+    },
+    {
+      "id": 1198994,
+      "mediaType": "movie",
+      "title": "Send Help",
+      "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+      "poster": "https://image.tmdb.org/t/p/w500/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBh0OlTY5XSHuFrQ7ylXHniwg9s.jpg",
+      "releaseDate": "2026-01-22",
+      "rating": "7.0",
+      "votes": 1420,
+      "url": "https://www.themoviedb.org/movie/1198994"
     }
   ],
   "trendingTv": [
@@ -134,80 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12355,
+      "votes": 12357,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 308014,
-      "mediaType": "tv",
-      "title": "Berlin and the Lady with an Ermine",
-      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
-      "poster": "https://image.tmdb.org/t/p/w500/kru9Y5uRXdZFcUyeRlcv4bP4hOr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "6.1",
-      "votes": 10,
-      "url": "https://www.themoviedb.org/tv/308014"
-    },
-    {
-      "id": 273240,
-      "mediaType": "tv",
-      "title": "Off Campus",
-      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
-      "poster": "https://image.tmdb.org/t/p/w500/gtoV2udbEnUgkMuCNX8zJrEwm7N.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cdD0InWMH4e6AxceQs93fQRYsfO.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.8",
-      "votes": 55,
-      "url": "https://www.themoviedb.org/tv/273240"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.6",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 259837,
-      "mediaType": "tv",
-      "title": "The WONDERfools",
-      "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
-      "poster": "https://image.tmdb.org/t/p/w500/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "7.3",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/259837"
-    },
-    {
-      "id": 85552,
-      "mediaType": "tv",
-      "title": "Euphoria",
-      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
-      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
-      "releaseDate": "2019-06-16",
-      "rating": "8.3",
-      "votes": 10618,
-      "url": "https://www.themoviedb.org/tv/85552"
-    },
-    {
-      "id": 285807,
-      "mediaType": "tv",
-      "title": "Nemesis",
-      "overview": "A relentless LAPD cop becomes obsessed with taking down the master thief behind a string of daring heists — and only one can come out on top.",
-      "poster": "https://image.tmdb.org/t/p/w500/vqOMdF8XdP0SMZqLoWdfyH4uXyz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pxnJeLSBdUikUOrWdNgrK1HQy2u.jpg",
-      "releaseDate": "2026-05-14",
-      "rating": "5.8",
-      "votes": 19,
-      "url": "https://www.themoviedb.org/tv/285807"
     },
     {
       "id": 124364,
@@ -218,20 +146,68 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.3",
-      "votes": 3135,
+      "votes": 3136,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
-      "id": 71915,
+      "id": 273240,
       "mediaType": "tv",
-      "title": "Good Omens",
-      "overview": "Aziraphale and Crowley, of Heaven and Hell respectively, have grown rather fond of the Earth. So it's terrible news that it's about to end. The armies of Good and Evil are amassing. The Four Horsemen are ready to ride. Everything is going according to the Divine Plan...except that someone seems to have misplaced the Antichrist. Can our heroes find him and stop Armageddon before it's too late?",
-      "poster": "https://image.tmdb.org/t/p/w500/nO68XVx5of8hlBwEOGOkPC8Mveu.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4YIQAV5R2iGY8fGPNsbe77gUu4.jpg",
-      "releaseDate": "2019-05-31",
-      "rating": "8.0",
-      "votes": 2292,
-      "url": "https://www.themoviedb.org/tv/71915"
+      "title": "Off Campus",
+      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+      "poster": "https://image.tmdb.org/t/p/w500/gtoV2udbEnUgkMuCNX8zJrEwm7N.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cdD0InWMH4e6AxceQs93fQRYsfO.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.9",
+      "votes": 62,
+      "url": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "id": 308014,
+      "mediaType": "tv",
+      "title": "Berlin and the Lady with an Ermine",
+      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
+      "poster": "https://image.tmdb.org/t/p/w500/kru9Y5uRXdZFcUyeRlcv4bP4hOr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "7.0",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/tv/308014"
+    },
+    {
+      "id": 259837,
+      "mediaType": "tv",
+      "title": "The WONDERfools",
+      "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
+      "poster": "https://image.tmdb.org/t/p/w500/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/810mXC0xkxXVtoKIPGGVgO9PuLh.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "7.6",
+      "votes": 8,
+      "url": "https://www.themoviedb.org/tv/259837"
+    },
+    {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.1",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/tv/299167"
+    },
+    {
+      "id": 85552,
+      "mediaType": "tv",
+      "title": "Euphoria",
+      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
+      "releaseDate": "2019-06-16",
+      "rating": "8.3",
+      "votes": 10620,
+      "url": "https://www.themoviedb.org/tv/85552"
     },
     {
       "id": 235930,
@@ -242,8 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nLyXXIDMpDHvUgxchezxuhoJ4Ej.jpg",
       "releaseDate": "2025-04-03",
       "rating": "8.1",
-      "votes": 352,
+      "votes": 354,
       "url": "https://www.themoviedb.org/tv/235930"
+    },
+    {
+      "id": 71915,
+      "mediaType": "tv",
+      "title": "Good Omens",
+      "overview": "Aziraphale and Crowley, of Heaven and Hell respectively, have grown rather fond of the Earth. So it's terrible news that it's about to end. The armies of Good and Evil are amassing. The Four Horsemen are ready to ride. Everything is going according to the Divine Plan...except that someone seems to have misplaced the Antichrist. Can our heroes find him and stop Armageddon before it's too late?",
+      "poster": "https://image.tmdb.org/t/p/w500/nO68XVx5of8hlBwEOGOkPC8Mveu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4YIQAV5R2iGY8fGPNsbe77gUu4.jpg",
+      "releaseDate": "2019-05-31",
+      "rating": "8.0",
+      "votes": 2293,
+      "url": "https://www.themoviedb.org/tv/71915"
+    },
+    {
+      "id": 278573,
+      "mediaType": "tv",
+      "title": "Perfect Crown",
+      "overview": "In 21st-century Korea under a constitutional monarchy, a chaebol heiress with everything but status tries to take control of her future after crossing paths with a lonely prince with nothing but his title. Together, bound by a contract marriage, they begin a class-defying romance to rewrite destiny.",
+      "poster": "https://image.tmdb.org/t/p/w500/hpKIZO05WwgAWQlv2VcpqZtg6ap.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6ekykPwvAywJRjFEnUoCFWTO9O3.jpg",
+      "releaseDate": "2026-04-10",
+      "rating": "7.6",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/278573"
     }
   ],
   "upcomingMovies": [
@@ -253,7 +253,7 @@
       "title": "Star Wars: The Mandalorian and Grogu",
       "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
       "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4VrLojD6Gl1HQkcDHAoHQjSDPh9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
       "releaseDate": "2026-05-22",
       "rating": "9.5",
       "votes": 2,
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
-      "id": 1368314,
-      "mediaType": "movie",
-      "title": "Passenger",
-      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/svrAzMTif4OmIjGJzC0W92d5O1o.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hl7FEzMqgpsD0RfwMzskzQoiD1M.jpg",
-      "releaseDate": "2026-05-22",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1368314"
-    },
-    {
       "id": 1497970,
       "mediaType": "movie",
       "title": "Tom and Jerry: Forbidden Compass",
@@ -330,6 +318,18 @@
       "rating": "6.6",
       "votes": 39,
       "url": "https://www.themoviedb.org/movie/1497970"
+    },
+    {
+      "id": 1368314,
+      "mediaType": "movie",
+      "title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/svrAzMTif4OmIjGJzC0W92d5O1o.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hl7FEzMqgpsD0RfwMzskzQoiD1M.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
       "id": 1340206,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
-      "id": 1276521,
+      "id": 1220566,
       "mediaType": "movie",
-      "title": "Charlie the Wonderdog",
-      "overview": "Timid 9-year-old Danny teams up with his beloved family dog Charlie, who gets abducted by aliens and returns with superpowers, to thwart a plan by the neighbor's sinister cat Puddy to destroy humanity.",
-      "poster": "https://image.tmdb.org/t/p/w500/whvkL0wzxgKmVbaPontq9NlVd5z.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2skPNvhiF3B0pUigNm1L5KLWvrk.jpg",
+      "title": "Eagles of the Republic",
+      "overview": "George Fahmy, Egypt's most adored actor, is pressured to star in a film commissioned by the highest authorities. He reluctantly accepts and finds himself thrown into the inner circle of power. Like moth drawn to flame, he begins an affair with the mysterious wife of the general overseeing the project.",
+      "poster": "https://image.tmdb.org/t/p/w500/f9MzpMfbBL4PknhKqoQpIUdskTl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/84DgFoFDppvf3i5MKZzOctx9HFz.jpg",
       "releaseDate": "2026-05-22",
       "rating": "6.8",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1276521"
+      "votes": 39,
+      "url": "https://www.themoviedb.org/movie/1220566"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.0",
-      "votes": 175,
+      "votes": 177,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -386,11 +386,11 @@
       "mediaType": "movie",
       "title": "Michael",
       "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "7.5",
-      "votes": 715,
+      "rating": "7.6",
+      "votes": 720,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -401,8 +401,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
       "releaseDate": "2026-05-08",
-      "rating": "7.7",
-      "votes": 50,
+      "rating": "7.6",
+      "votes": 53,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.7",
-      "votes": 526,
+      "votes": 530,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -423,10 +423,10 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oICYZzr1arFtiaPrQfOTYZOOrCy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zYRadzI5biaAw18KcLgqS53cMdu.jpg",
       "releaseDate": "2026-05-15",
-      "rating": "7.9",
-      "votes": 43,
+      "rating": "8.0",
+      "votes": 49,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-17",
       "rating": "6.7",
-      "votes": 200,
+      "votes": 203,
       "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/s6oUrGMNl8hVh7fn0O8oF2rHwrM.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mWRjVb2Lj9pjOlNcDP7lNvrvSo8.jpg",
       "releaseDate": "2026-05-15",
-      "rating": "6.8",
-      "votes": 14,
+      "rating": "6.9",
+      "votes": 15,
       "url": "https://www.themoviedb.org/movie/1400357"
     },
     {
@@ -473,8 +473,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/2TWIlmhE06ghspeQLEX1VmnEBiE.jpg",
       "releaseDate": "2026-04-10",
-      "rating": "6.4",
-      "votes": 31,
+      "rating": "6.6",
+      "votes": 33,
       "url": "https://www.themoviedb.org/movie/1455079"
     },
     {
