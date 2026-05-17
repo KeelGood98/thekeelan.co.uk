@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T08:34:04.308114+00:00",
+  "updated": "2026-05-17T13:59:42.868696+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -70,6 +70,17 @@
       "penalties": 0
     },
     {
+      "name": "Morgan Gibbs-White",
+      "firstName": "Morgan",
+      "lastName": "Gibbs-White",
+      "nationality": "England",
+      "team": "Nott'm Forest",
+      "teamBadge": "https://crests.football-data.org/351.png",
+      "goals": 14,
+      "assists": 5,
+      "penalties": 1
+    },
+    {
       "name": "Dominic Calvert-Lewin",
       "firstName": "Dominic",
       "lastName": "Calvert-Lewin",
@@ -89,17 +100,6 @@
       "teamBadge": "https://crests.football-data.org/397.png",
       "goals": 13,
       "assists": 1,
-      "penalties": 1
-    },
-    {
-      "name": "Morgan Gibbs-White",
-      "firstName": "Morgan",
-      "lastName": "Gibbs-White",
-      "nationality": "England",
-      "team": "Nott'm Forest",
-      "teamBadge": "https://crests.football-data.org/351.png",
-      "goals": 13,
-      "assists": 5,
       "penalties": 1
     },
     {
@@ -130,8 +130,8 @@
     {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
-      "goalsFor": 63,
-      "played": 36
+      "goalsFor": 66,
+      "played": 37
     },
     {
       "name": "Liverpool",
@@ -194,8 +194,8 @@
     {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
-      "goalDifference": 15,
-      "played": 36
+      "goalDifference": 16,
+      "played": 37
     },
     {
       "name": "Liverpool",
@@ -215,13 +215,13 @@
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 36,
-    "won": 18,
+    "played": 37,
+    "won": 19,
     "drawn": 11,
     "lost": 7,
-    "goalsFor": 63,
-    "goalsAgainst": 48,
-    "goalDifference": 15,
-    "points": 65
+    "goalsFor": 66,
+    "goalsAgainst": 50,
+    "goalDifference": 16,
+    "points": 68
   }
 }

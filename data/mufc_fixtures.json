@@ -1,15 +1,15 @@
 {
-  "updated": "2026-05-17T08:34:01.798777+00:00",
+  "updated": "2026-05-17T13:59:35.356699+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 538152,
-    "date": "Sun 17 May, 12:30",
-    "sortDate": "2026-05-17T12:30:00+01:00",
+    "id": 538156,
+    "date": "Sun 24 May, 16:00",
+    "sortDate": "2026-05-24T16:00:00+01:00",
     "competition": "Premier League",
-    "matchday": 37,
-    "home": "Manchester United",
-    "away": "Nott'm Forest",
+    "matchday": 38,
+    "home": "Brighton",
+    "away": "Manchester United",
     "score": "",
     "halfTimeScore": "",
     "winner": "",
@@ -19,22 +19,6 @@
     "status": "TIMED"
   },
   "recentResults": [
-    {
-      "id": 538085,
-      "date": "Fri 20 Mar, 20:00",
-      "sortDate": "2026-03-20T20:00:00+00:00",
-      "competition": "Premier League",
-      "matchday": 31,
-      "home": "Bournemouth",
-      "away": "Manchester United",
-      "score": "2-2",
-      "halfTimeScore": "0-0",
-      "winner": "Draw",
-      "result": "D",
-      "venue": "TBC",
-      "channel": "",
-      "status": "FINISHED"
-    },
     {
       "id": 538102,
       "date": "Mon 13 Apr, 20:00",
@@ -114,9 +98,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 538152,
       "date": "Sun 17 May, 12:30",
@@ -125,14 +107,16 @@
       "matchday": 37,
       "home": "Manchester United",
       "away": "Nott'm Forest",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "3-2",
+      "halfTimeScore": "1-0",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 538156,
       "date": "Sun 24 May, 16:00",
@@ -152,22 +136,6 @@
   ],
   "fixtures": [
     {
-      "id": 538085,
-      "date": "Fri 20 Mar, 20:00",
-      "sortDate": "2026-03-20T20:00:00+00:00",
-      "competition": "Premier League",
-      "matchday": 31,
-      "home": "Bournemouth",
-      "away": "Manchester United",
-      "score": "2-2",
-      "halfTimeScore": "0-0",
-      "winner": "Draw",
-      "result": "D",
-      "venue": "TBC",
-      "channel": "",
-      "status": "FINISHED"
-    },
-    {
       "id": 538102,
       "date": "Mon 13 Apr, 20:00",
       "sortDate": "2026-04-13T20:00:00+01:00",
@@ -255,13 +223,13 @@
       "matchday": 37,
       "home": "Manchester United",
       "away": "Nott'm Forest",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "3-2",
+      "halfTimeScore": "1-0",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 538156,
