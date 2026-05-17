@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-17T13:59:42.868696+00:00",
+  "updated": "2026-05-17T19:39:04.714937+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -59,6 +59,17 @@
       "penalties": 3
     },
     {
+      "name": "Dominic Calvert-Lewin",
+      "firstName": "Dominic",
+      "lastName": "Calvert-Lewin",
+      "nationality": "England",
+      "team": "Leeds United",
+      "teamBadge": "https://crests.football-data.org/341.png",
+      "goals": 14,
+      "assists": 1,
+      "penalties": 4
+    },
+    {
       "name": "Ollie Watkins",
       "firstName": "Ollie",
       "lastName": "Watkins",
@@ -79,17 +90,6 @@
       "goals": 14,
       "assists": 5,
       "penalties": 1
-    },
-    {
-      "name": "Dominic Calvert-Lewin",
-      "firstName": "Dominic",
-      "lastName": "Calvert-Lewin",
-      "nationality": "England",
-      "team": "Leeds United",
-      "teamBadge": "https://crests.football-data.org/341.png",
-      "goals": 13,
-      "assists": 1,
-      "penalties": 4
     },
     {
       "name": "Danny Welbeck",
@@ -162,20 +162,20 @@
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 42,
-      "played": 36
-    },
-    {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 46,
-      "played": 36
+      "goalsAgainst": 43,
+      "played": 37
     },
     {
       "name": "Sunderland",
       "badge": "https://crests.football-data.org/71.png",
-      "goalsAgainst": 46,
-      "played": 36
+      "goalsAgainst": 47,
+      "played": 37
+    },
+    {
+      "name": "Aston Villa",
+      "badge": "https://crests.football-data.org/58.png",
+      "goalsAgainst": 48,
+      "played": 37
     }
   ],
   "goalDifferenceLeaders": [
@@ -206,8 +206,8 @@
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 10,
-      "played": 36
+      "goalDifference": 9,
+      "played": 37
     }
   ],
   "manUnitedSummary": {
