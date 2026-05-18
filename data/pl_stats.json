@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-18T15:58:05.707128+00:00",
+  "updated": "2026-05-18T20:03:37.741467+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -124,8 +124,8 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 68,
-      "played": 36
+      "goalsFor": 69,
+      "played": 37
     },
     {
       "name": "Manchester United",
@@ -151,7 +151,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 26,
-      "played": 36
+      "played": 37
     },
     {
       "name": "Manchester City",
@@ -180,15 +180,15 @@
   ],
   "goalDifferenceLeaders": [
     {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalDifference": 43,
+      "played": 37
+    },
+    {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalDifference": 43,
-      "played": 36
-    },
-    {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 42,
       "played": 36
     },
     {
