@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-19T15:52:16.934520+00:00",
+  "updated": "2026-05-19T20:05:52.878424+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -21,13 +21,13 @@
       "name": "Manchester City",
       "fullName": "Manchester City FC",
       "badge": "https://crests.football-data.org/65.png",
-      "played": 36,
+      "played": 37,
       "won": 23,
       "drawn": 8,
-      "lost": 5,
+      "lost": 6,
       "goalsFor": 75,
-      "goalsAgainst": 32,
-      "goalDifference": 43,
+      "goalsAgainst": 33,
+      "goalDifference": 42,
       "points": 77
     },
     {
@@ -77,14 +77,14 @@
       "name": "Bournemouth",
       "fullName": "AFC Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
-      "played": 36,
-      "won": 13,
+      "played": 37,
+      "won": 14,
       "drawn": 16,
       "lost": 7,
-      "goalsFor": 56,
+      "goalsFor": 57,
       "goalsAgainst": 52,
-      "goalDifference": 4,
-      "points": 55
+      "goalDifference": 5,
+      "points": 58
     },
     {
       "position": 7,
@@ -102,6 +102,20 @@
     },
     {
       "position": 8,
+      "name": "Chelsea",
+      "fullName": "Chelsea FC",
+      "badge": "https://crests.football-data.org/61.png",
+      "played": 37,
+      "won": 14,
+      "drawn": 10,
+      "lost": 13,
+      "goalsFor": 56,
+      "goalsAgainst": 49,
+      "goalDifference": 7,
+      "points": 52
+    },
+    {
+      "position": 9,
       "name": "Brentford",
       "fullName": "Brentford FC",
       "badge": "https://crests.football-data.org/402.png",
@@ -115,7 +129,7 @@
       "points": 52
     },
     {
-      "position": 9,
+      "position": 10,
       "name": "Sunderland",
       "fullName": "Sunderland AFC",
       "badge": "https://crests.football-data.org/71.png",
@@ -127,20 +141,6 @@
       "goalsAgainst": 47,
       "goalDifference": -7,
       "points": 51
-    },
-    {
-      "position": 10,
-      "name": "Chelsea",
-      "fullName": "Chelsea FC",
-      "badge": "https://crests.football-data.org/61.png",
-      "played": 36,
-      "won": 13,
-      "drawn": 10,
-      "lost": 13,
-      "goalsFor": 55,
-      "goalsAgainst": 49,
-      "goalDifference": 6,
-      "points": 49
     },
     {
       "position": 11,
@@ -231,13 +231,13 @@
       "name": "Tottenham",
       "fullName": "Tottenham Hotspur FC",
       "badge": "https://crests.football-data.org/73.png",
-      "played": 36,
+      "played": 37,
       "won": 9,
       "drawn": 11,
-      "lost": 16,
+      "lost": 17,
       "goalsFor": 46,
-      "goalsAgainst": 55,
-      "goalDifference": -9,
+      "goalsAgainst": 56,
+      "goalDifference": -10,
       "points": 38
     },
     {
