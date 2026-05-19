@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-19T17:29:21.685779+00:00",
+  "updated": "2026-05-19T21:59:22.915147+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cccXiN28CPjcMVhji5LnogF4Njp.jpg",
       "releaseDate": "2026-05-12",
       "rating": "8.5",
-      "votes": 914,
+      "votes": 929,
       "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
@@ -23,8 +23,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lTQoEczVEnkuxHFEGgWYfJB98tL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-15",
-      "rating": "7.3",
-      "votes": 321,
+      "rating": "7.4",
+      "votes": 357,
       "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
@@ -36,56 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.6",
-      "votes": 3618,
+      "votes": 3631,
       "url": "https://www.themoviedb.org/movie/687163"
-    },
-    {
-      "id": 1242332,
-      "mediaType": "movie",
-      "title": "Normal",
-      "overview": "Interim sheriff Ulysses, called to the snowbound town of Normal, MN, uncovers an international criminal conspiracy at the heart of the seemingly quaint whistle-stop when he comes to the aid of a bank-robbing couple caught up in a deadly mess.",
-      "poster": "https://image.tmdb.org/t/p/w500/j5cW7TM0onwp3fQiowXX5ZJLUHR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1nHaO4rTv1E6xVJYIMGP9nmLxE9.jpg",
-      "releaseDate": "2026-04-16",
-      "rating": "7.0",
-      "votes": 34,
-      "url": "https://www.themoviedb.org/movie/1242332"
-    },
-    {
-      "id": 1226863,
-      "mediaType": "movie",
-      "title": "The Super Mario Galaxy Movie",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
-      "releaseDate": "2026-04-01",
-      "rating": "6.8",
-      "votes": 902,
-      "url": "https://www.themoviedb.org/movie/1226863"
-    },
-    {
-      "id": 1102883,
-      "mediaType": "movie",
-      "title": "Mother Mary",
-      "overview": "Long-buried wounds rise to the surface when iconic pop star Mother Mary reunites with her estranged best friend and former costume designer Sam Anselm on the eve of her comeback performance.",
-      "poster": "https://image.tmdb.org/t/p/w500/qMgUI6pxkPtIuoXX4DcJ6X7bdt2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4R47iCjnTgwICFPxAJOxzE99Wzj.jpg",
-      "releaseDate": "2026-04-16",
-      "rating": "5.5",
-      "votes": 30,
-      "url": "https://www.themoviedb.org/movie/1102883"
-    },
-    {
-      "id": 931285,
-      "mediaType": "movie",
-      "title": "Mortal Kombat II",
-      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-      "releaseDate": "2026-05-06",
-      "rating": "7.0",
-      "votes": 211,
-      "url": "https://www.themoviedb.org/movie/931285"
     },
     {
       "id": 1339713,
@@ -96,20 +48,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5kY3Aw2abeqr3YCJB6xourYMoma.jpg",
       "releaseDate": "2026-04-16",
       "rating": "8.1",
-      "votes": 115,
+      "votes": 119,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 1228710,
+      "id": 1226863,
       "mediaType": "movie",
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
-      "releaseDate": "2026-05-20",
-      "rating": "8.0",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1228710"
+      "title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "releaseDate": "2026-04-01",
+      "rating": "7.0",
+      "votes": 974,
+      "url": "https://www.themoviedb.org/movie/1226863"
+    },
+    {
+      "id": 931285,
+      "mediaType": "movie",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "releaseDate": "2026-05-06",
+      "rating": "7.0",
+      "votes": 215,
+      "url": "https://www.themoviedb.org/movie/931285"
+    },
+    {
+      "id": 1242332,
+      "mediaType": "movie",
+      "title": "Normal",
+      "overview": "Interim sheriff Ulysses, called to the snowbound town of Normal, MN, uncovers an international criminal conspiracy at the heart of the seemingly quaint whistle-stop when he comes to the aid of a bank-robbing couple caught up in a deadly mess.",
+      "poster": "https://image.tmdb.org/t/p/w500/j5cW7TM0onwp3fQiowXX5ZJLUHR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y9anLJX0ozvldlM1wgGafFz28QR.jpg",
+      "releaseDate": "2026-04-16",
+      "rating": "6.9",
+      "votes": 38,
+      "url": "https://www.themoviedb.org/movie/1242332"
     },
     {
       "id": 936075,
@@ -120,8 +96,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 773,
+      "votes": 774,
       "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.7",
+      "votes": 595,
+      "url": "https://www.themoviedb.org/movie/1314481"
+    },
+    {
+      "id": 1228710,
+      "mediaType": "movie",
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/vrwVS8vQcmNieHFbNmAfnSoPdUL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4lj7MZtcIDI2FmZXGkFWh0sNCsq.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "8.0",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/movie/1228710"
     }
   ],
   "trendingTv": [
@@ -134,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12401,
+      "votes": 12407,
       "url": "https://www.themoviedb.org/tv/76479"
+    },
+    {
+      "id": 308014,
+      "mediaType": "tv",
+      "title": "Berlin and the Lady with an Ermine",
+      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
+      "poster": "https://image.tmdb.org/t/p/w500/kru9Y5uRXdZFcUyeRlcv4bP4hOr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "8.1",
+      "votes": 51,
+      "url": "https://www.themoviedb.org/tv/308014"
     },
     {
       "id": 273240,
@@ -146,20 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.9",
-      "votes": 128,
+      "votes": 138,
       "url": "https://www.themoviedb.org/tv/273240"
-    },
-    {
-      "id": 308014,
-      "mediaType": "tv",
-      "title": "Berlin and the Lady with an Ermine",
-      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
-      "poster": "https://image.tmdb.org/t/p/w500/kru9Y5uRXdZFcUyeRlcv4bP4hOr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "8.0",
-      "votes": 51,
-      "url": "https://www.themoviedb.org/tv/308014"
     },
     {
       "id": 124364,
@@ -170,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.4",
-      "votes": 3230,
+      "votes": 3233,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10654,
+      "votes": 10655,
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
@@ -194,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.4",
-      "votes": 65,
+      "votes": 66,
       "url": "https://www.themoviedb.org/tv/299167"
     },
     {
@@ -206,7 +206,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y2u7d8evmnTivi3LaVql01Sfea4.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.4",
-      "votes": 49,
+      "votes": 51,
       "url": "https://www.themoviedb.org/tv/259837"
     },
     {
@@ -291,8 +291,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hl7FEzMqgpsD0RfwMzskzQoiD1M.jpg",
       "releaseDate": "2026-05-22",
-      "rating": "10.0",
-      "votes": 1,
+      "rating": "7.0",
+      "votes": 3,
       "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lTQoEczVEnkuxHFEGgWYfJB98tL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-17",
-      "rating": "7.1",
-      "votes": 290,
+      "rating": "7.3",
+      "votes": 322,
       "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5kY3Aw2abeqr3YCJB6xourYMoma.jpg",
       "releaseDate": "2026-05-15",
       "rating": "8.1",
-      "votes": 109,
+      "votes": 115,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "7.0",
-      "votes": 209,
+      "votes": 211,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 771,
+      "votes": 773,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
       "releaseDate": "2026-05-08",
       "rating": "7.7",
-      "votes": 75,
+      "votes": 76,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.7",
-      "votes": 587,
+      "votes": 588,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -449,9 +449,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/s6oUrGMNl8hVh7fn0O8oF2rHwrM.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mWRjVb2Lj9pjOlNcDP7lNvrvSo8.jpg",
       "releaseDate": "2026-05-15",
-      "rating": "6.7",
-      "votes": 21,
+      "rating": "6.8",
+      "votes": 22,
       "url": "https://www.themoviedb.org/movie/1400357"
+    },
+    {
+      "id": 1455079,
+      "mediaType": "movie",
+      "title": "You, Me & Tuscany",
+      "overview": "When a woman crashes at an empty Italian villa, posing as the owner's fiancée, she discovers an unexpected romance that could transform her life.",
+      "poster": "https://image.tmdb.org/t/p/w500/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2TWIlmhE06ghspeQLEX1VmnEBiE.jpg",
+      "releaseDate": "2026-04-10",
+      "rating": "6.7",
+      "votes": 40,
+      "url": "https://www.themoviedb.org/movie/1455079"
     },
     {
       "id": 1480387,
@@ -466,18 +478,6 @@
       "url": "https://www.themoviedb.org/movie/1480387"
     },
     {
-      "id": 1455079,
-      "mediaType": "movie",
-      "title": "You, Me & Tuscany",
-      "overview": "When a woman crashes at an empty Italian villa, posing as the owner's fiancée, she discovers an unexpected romance that could transform her life.",
-      "poster": "https://image.tmdb.org/t/p/w500/mJS0IF7Af3WpPRhSTDT6rGpiLzw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2TWIlmhE06ghspeQLEX1VmnEBiE.jpg",
-      "releaseDate": "2026-04-10",
-      "rating": "6.8",
-      "votes": 39,
-      "url": "https://www.themoviedb.org/movie/1455079"
-    },
-    {
       "id": 1408208,
       "mediaType": "movie",
       "title": "Exit 8",
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3cVrg7tzSf5AgEecYWDOSAzXAeX.jpg",
       "releaseDate": "2026-04-24",
       "rating": "6.7",
-      "votes": 382,
+      "votes": 384,
       "url": "https://www.themoviedb.org/movie/1408208"
     }
   ],
