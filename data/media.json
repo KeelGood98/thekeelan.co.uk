@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-21T22:05:00.001995+00:00",
+  "updated": "2026-05-22T11:30:01.701989+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/69KkxROnZoJdQAulnY5B7Gx6D7Z.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.4",
-      "votes": 54,
+      "votes": 88,
       "url": "https://www.themoviedb.org/movie/1380291"
     },
     {
@@ -24,32 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-15",
       "rating": "7.9",
-      "votes": 643,
+      "votes": 699,
       "url": "https://www.themoviedb.org/movie/1304313"
-    },
-    {
-      "id": 1439930,
-      "mediaType": "movie",
-      "title": "The Punisher: One Last Kill",
-      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
-      "poster": "https://image.tmdb.org/t/p/w500/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
-      "releaseDate": "2026-05-12",
-      "rating": "8.5",
-      "votes": 1004,
-      "url": "https://www.themoviedb.org/movie/1439930"
-    },
-    {
-      "id": 687163,
-      "mediaType": "movie",
-      "title": "Project Hail Mary",
-      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
-      "releaseDate": "2026-03-15",
-      "rating": "8.6",
-      "votes": 3765,
-      "url": "https://www.themoviedb.org/movie/687163"
     },
     {
       "id": 931285,
@@ -60,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-06",
       "rating": "6.9",
-      "votes": 239,
+      "votes": 243,
       "url": "https://www.themoviedb.org/movie/931285"
-    },
-    {
-      "id": 1226863,
-      "mediaType": "movie",
-      "title": "The Super Mario Galaxy Movie",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
-      "releaseDate": "2026-04-01",
-      "rating": "7.5",
-      "votes": 1288,
-      "url": "https://www.themoviedb.org/movie/1226863"
     },
     {
       "id": 1339713,
@@ -84,8 +48,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1pKFDggvtk23zcn1vUcPiKyuHxM.jpg",
       "releaseDate": "2026-04-16",
       "rating": "8.0",
-      "votes": 156,
+      "votes": 169,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1368881,
+      "mediaType": "movie",
+      "title": "Ladies First",
+      "overview": "An arrogant but charismatic ladies' man finds his life of money, power and casual flings upended when he wakes up in a parallel world dominated by women.",
+      "poster": "https://image.tmdb.org/t/p/w500/kjR56Yv17pbjTVBTMjqepvcus4f.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/z1hekwU7a7FUP6XvqDwJjxAbrXJ.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "6.5",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1368881"
+    },
+    {
+      "id": 687163,
+      "mediaType": "movie",
+      "title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+      "releaseDate": "2026-03-15",
+      "rating": "8.6",
+      "votes": 3793,
+      "url": "https://www.themoviedb.org/movie/687163"
+    },
+    {
+      "id": 1226863,
+      "mediaType": "movie",
+      "title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "releaseDate": "2026-04-01",
+      "rating": "7.6",
+      "votes": 1377,
+      "url": "https://www.themoviedb.org/movie/1226863"
+    },
+    {
+      "id": 1439930,
+      "mediaType": "movie",
+      "title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "poster": "https://image.tmdb.org/t/p/w500/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "releaseDate": "2026-05-12",
+      "rating": "8.5",
+      "votes": 1036,
+      "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
       "id": 1228710,
@@ -95,8 +107,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4VrLojD6Gl1HQkcDHAoHQjSDPh9.jpg",
       "releaseDate": "2026-05-19",
-      "rating": "6.4",
-      "votes": 48,
+      "rating": "6.6",
+      "votes": 66,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -107,21 +119,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/g8JqVRu2eC5SGJd9idauTXurMl2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
       "releaseDate": "2026-04-16",
-      "rating": "6.7",
-      "votes": 56,
+      "rating": "6.6",
+      "votes": 60,
       "url": "https://www.themoviedb.org/movie/1242332"
-    },
-    {
-      "id": 936075,
-      "mediaType": "movie",
-      "title": "Michael",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
-      "releaseDate": "2026-04-22",
-      "rating": "7.6",
-      "votes": 794,
-      "url": "https://www.themoviedb.org/movie/936075"
     }
   ],
   "trendingTv": [
@@ -134,20 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12545,
+      "votes": 12570,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.4",
-      "votes": 3264,
-      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 299167,
@@ -157,45 +145,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
       "releaseDate": "2026-05-15",
-      "rating": "9.5",
-      "votes": 76,
+      "rating": "9.4",
+      "votes": 89,
       "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 308014,
-      "mediaType": "tv",
-      "title": "Berlin and the Lady with an Ermine",
-      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
-      "poster": "https://image.tmdb.org/t/p/w500/kru9Y5uRXdZFcUyeRlcv4bP4hOr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "8.3",
-      "votes": 64,
-      "url": "https://www.themoviedb.org/tv/308014"
-    },
-    {
-      "id": 273240,
-      "mediaType": "tv",
-      "title": "Off Campus",
-      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
-      "poster": "https://image.tmdb.org/t/p/w500/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "9.0",
-      "votes": 180,
-      "url": "https://www.themoviedb.org/tv/273240"
-    },
-    {
-      "id": 224941,
-      "mediaType": "tv",
-      "title": "The Boroughs",
-      "overview": "In a seemingly perfect retirement community, a crew of unlikely heroes must stop an otherworldly threat from stealing the one thing they don't have: time.",
-      "poster": "https://image.tmdb.org/t/p/w500/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
-      "releaseDate": "2026-05-21",
-      "rating": "9.0",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/224941"
     },
     {
       "id": 259837,
@@ -206,20 +158,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y2u7d8evmnTivi3LaVql01Sfea4.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.3",
-      "votes": 62,
+      "votes": 70,
       "url": "https://www.themoviedb.org/tv/259837"
     },
     {
-      "id": 85552,
+      "id": 224941,
       "mediaType": "tv",
-      "title": "Euphoria",
-      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
-      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
-      "releaseDate": "2019-06-16",
-      "rating": "8.3",
-      "votes": 10660,
-      "url": "https://www.themoviedb.org/tv/85552"
+      "title": "The Boroughs",
+      "overview": "In a seemingly perfect retirement community, a crew of unlikely heroes must stop an otherworldly threat from stealing the one thing they don't have: time.",
+      "poster": "https://image.tmdb.org/t/p/w500/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
+      "releaseDate": "2026-05-21",
+      "rating": "5.4",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/tv/224941"
+    },
+    {
+      "id": 273240,
+      "mediaType": "tv",
+      "title": "Off Campus",
+      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+      "poster": "https://image.tmdb.org/t/p/w500/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "9.0",
+      "votes": 189,
+      "url": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "id": 308014,
+      "mediaType": "tv",
+      "title": "Berlin and the Lady with an Ermine",
+      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
+      "poster": "https://image.tmdb.org/t/p/w500/sTumew0Q01ZHmFneA9cJRi3QUYC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "8.4",
+      "votes": 67,
+      "url": "https://www.themoviedb.org/tv/308014"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/auyEi4Xho43HFvVQnd42LzqBdiV.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.4",
+      "votes": 3272,
+      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 37854,
@@ -230,20 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5298,
+      "votes": 5300,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 285807,
+      "id": 85552,
       "mediaType": "tv",
-      "title": "Nemesis",
-      "overview": "A relentless LAPD cop becomes obsessed with taking down the master thief behind a string of daring heists — and only one can come out on top.",
-      "poster": "https://image.tmdb.org/t/p/w500/NY7ZwSMw5PjoJdK2CObqiTj7Bm.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pxnJeLSBdUikUOrWdNgrK1HQy2u.jpg",
-      "releaseDate": "2026-05-14",
-      "rating": "6.7",
-      "votes": 39,
-      "url": "https://www.themoviedb.org/tv/285807"
+      "title": "Euphoria",
+      "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "poster": "https://image.tmdb.org/t/p/w500/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
+      "releaseDate": "2019-06-16",
+      "rating": "8.3",
+      "votes": 10664,
+      "url": "https://www.themoviedb.org/tv/85552"
+    },
+    {
+      "id": 290295,
+      "mediaType": "tv",
+      "title": "Mating Season",
+      "overview": "Set in the animal world, the series follows a cast of bears, raccoons, deer, foxes and a host of other horny, lovable forest critters, as they navigate love, sexual relationships and the universal need to hook up and find a partner.",
+      "poster": "https://image.tmdb.org/t/p/w500/dJjPnw3NQHmbGWGUXdlROqtTMuX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zaDTnGcq3F5LocdmHJLP3Mf0kII.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/tv/290295"
     }
   ],
   "upcomingMovies": [
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
-      "rating": "8.5",
-      "votes": 2,
+      "rating": "9.0",
+      "votes": 3,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1340206"
     },
     {
-      "id": 1232569,
-      "mediaType": "movie",
-      "title": "Pinocchio: Unstrung",
-      "overview": "A chilling reimagining of the familiar fable, ‘Pinocchio Unstrung’ unfolds inside an elite London prep school. Influenced by a sinister Cricket (Robert Englund) and created by Geppetto (Richard Brake), Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
-      "poster": "https://image.tmdb.org/t/p/w500/r0hCOPsYHFc7qok51canND9TVoN.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1232569"
-    },
-    {
       "id": 15916,
       "mediaType": "movie",
       "title": "Angel's Egg",
@@ -336,7 +324,7 @@
       "mediaType": "movie",
       "title": "Power Ballad",
       "overview": "When Rick, a past-his-prime wedding singer, meets fading boy-band star Danny during a gig, the two bond over music and a late-night jam session. But when Danny turns one of Rick’s songs into the hit that reignites his career, Rick sets out to reclaim the recognition he believes he deserves - even if it means risking everything he cares about.",
-      "poster": "https://image.tmdb.org/t/p/w500/8wuF3XRcVkUP06iddvb4D0Ql0Et.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/lsDLLagSIyTu0Gi06QjVKDp2LI2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/u1c2DAXhpyAwFK8zljcMc4FFEc3.jpg",
       "releaseDate": "2026-05-29",
       "rating": "0.0",
@@ -366,6 +354,18 @@
       "rating": "7.0",
       "votes": 2,
       "url": "https://www.themoviedb.org/movie/1337592"
+    },
+    {
+      "id": 1509632,
+      "mediaType": "movie",
+      "title": "We're Nothing at All",
+      "overview": "On Valentine’s Day, a double-decker bus explodes in a fiery blast, killing many and leaving charred remains, with evidence pointing to a deliberate act by two passengers, Fai and Ike, a gay couple from troubled backgrounds living on society’s margins. As retired forensic expert Lung Sir investigates, he uncovers their tragic story of abuse, homophobia, and despair, culminating in their decision to end their lives in a suicidal protest against an unjust world, leaving behind a haunting message: “On a beautiful day, we end our unbeautiful lives.”",
+      "poster": "https://image.tmdb.org/t/p/w500/nxriH6UzCvM0yGQCUezHWhkzzR2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xP9YyExJeXo5c5WrjRftm90mQRt.jpg",
+      "releaseDate": "2026-05-29",
+      "rating": "8.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/movie/1509632"
     }
   ],
   "nowPlayingMovies": [
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1q308iixueCU4pFtSYugNOevtNx.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-17",
-      "rating": "7.8",
-      "votes": 615,
+      "rating": "7.9",
+      "votes": 695,
       "url": "https://www.themoviedb.org/movie/1304313"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1pKFDggvtk23zcn1vUcPiKyuHxM.jpg",
       "releaseDate": "2026-05-15",
       "rating": "8.0",
-      "votes": 153,
+      "votes": 165,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "6.9",
-      "votes": 236,
+      "votes": 243,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -410,11 +410,11 @@
       "mediaType": "movie",
       "title": "Michael",
       "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 793,
+      "votes": 795,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/a8uQvrplTkhGJQog6GZ6CqF8An6.jpg",
       "releaseDate": "2026-05-08",
       "rating": "7.7",
-      "votes": 82,
+      "votes": 84,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -434,11 +434,11 @@
       "mediaType": "movie",
       "title": "Normal",
       "overview": "An unassuming substitute sheriff with a troubled past responds to a bank robbery in a small, sleepy town and unknowingly uncovers something far more explosive.",
-      "poster": "https://image.tmdb.org/t/p/w500/j5cW7TM0onwp3fQiowXX5ZJLUHR.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/g8JqVRu2eC5SGJd9idauTXurMl2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
       "releaseDate": "2026-05-15",
       "rating": "6.6",
-      "votes": 55,
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/1242332"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4VrLojD6Gl1HQkcDHAoHQjSDPh9.jpg",
       "releaseDate": "2026-05-22",
-      "rating": "6.4",
-      "votes": 40,
+      "rating": "6.6",
+      "votes": 65,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.6",
-      "votes": 624,
+      "votes": 631,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -474,20 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4R47iCjnTgwICFPxAJOxzE99Wzj.jpg",
       "releaseDate": "2026-04-24",
       "rating": "6.0",
-      "votes": 46,
+      "votes": 52,
       "url": "https://www.themoviedb.org/movie/1102883"
     },
     {
-      "id": 1600771,
+      "id": 1368314,
       "mediaType": "movie",
-      "title": "Aakhri Sawal",
-      "overview": "Vicky, a brilliant but volatile scholar who ignites a national firestorm when he publicly accuses his legendary mentor, Professor Gopal Nadkarni, of institutional bias. What begins as a faculty dispute is quickly hijacked by a sensationalist news anchor and an ambitious political activist, turning a private disagreement into a televised \"intellectual trial\" watched by millions.",
-      "poster": "https://image.tmdb.org/t/p/w500/9CXBZH6sRJpFTMSaY3wj1jx98F4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/akZ9jTTzvBOx3CeTVCo9WyhxL5q.jpg",
+      "title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hl7FEzMqgpsD0RfwMzskzQoiD1M.jpg",
       "releaseDate": "2026-05-22",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1600771"
+      "rating": "6.0",
+      "votes": 10,
+      "url": "https://www.themoviedb.org/movie/1368314"
     }
   ],
   "links": [
