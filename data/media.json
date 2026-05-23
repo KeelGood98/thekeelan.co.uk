@@ -1,8 +1,20 @@
 {
-  "updated": "2026-05-23T10:14:36.787803+00:00",
+  "updated": "2026-05-23T15:46:33.965614+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1304313,
+      "mediaType": "movie",
+      "title": "Lee Cronin's The Mummy",
+      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/uIb9Tvae5haF0XcQBaPyufmxbb0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
+      "releaseDate": "2026-04-15",
+      "rating": "8.0",
+      "votes": 816,
+      "url": "https://www.themoviedb.org/movie/1304313"
+    },
     {
       "id": 1380291,
       "mediaType": "movie",
@@ -12,32 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/69KkxROnZoJdQAulnY5B7Gx6D7Z.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.2",
-      "votes": 136,
+      "votes": 147,
       "url": "https://www.themoviedb.org/movie/1380291"
-    },
-    {
-      "id": 1304313,
-      "mediaType": "movie",
-      "title": "Lee Cronin's The Mummy",
-      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/1q308iixueCU4pFtSYugNOevtNx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
-      "releaseDate": "2026-04-15",
-      "rating": "8.0",
-      "votes": 805,
-      "url": "https://www.themoviedb.org/movie/1304313"
-    },
-    {
-      "id": 931285,
-      "mediaType": "movie",
-      "title": "Mortal Kombat II",
-      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-      "releaseDate": "2026-05-06",
-      "rating": "6.9",
-      "votes": 256,
-      "url": "https://www.themoviedb.org/movie/931285"
     },
     {
       "id": 1339713,
@@ -45,10 +33,10 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1pKFDggvtk23zcn1vUcPiKyuHxM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8nnO9zr2jUH2qH2PysbRQ1TMaye.jpg",
       "releaseDate": "2026-04-16",
       "rating": "7.9",
-      "votes": 194,
+      "votes": 198,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -60,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
       "releaseDate": "2026-04-01",
       "rating": "7.7",
-      "votes": 1489,
+      "votes": 1501,
       "url": "https://www.themoviedb.org/movie/1226863"
+    },
+    {
+      "id": 931285,
+      "mediaType": "movie",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "releaseDate": "2026-05-06",
+      "rating": "6.9",
+      "votes": 260,
+      "url": "https://www.themoviedb.org/movie/931285"
     },
     {
       "id": 687163,
@@ -72,20 +72,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.6",
-      "votes": 3850,
+      "votes": 3856,
       "url": "https://www.themoviedb.org/movie/687163"
-    },
-    {
-      "id": 1439930,
-      "mediaType": "movie",
-      "title": "The Punisher: One Last Kill",
-      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
-      "poster": "https://image.tmdb.org/t/p/w500/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
-      "releaseDate": "2026-05-12",
-      "rating": "8.5",
-      "votes": 1074,
-      "url": "https://www.themoviedb.org/movie/1439930"
     },
     {
       "id": 1228710,
@@ -96,8 +84,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
       "releaseDate": "2026-05-19",
       "rating": "6.6",
-      "votes": 102,
+      "votes": 109,
       "url": "https://www.themoviedb.org/movie/1228710"
+    },
+    {
+      "id": 1439930,
+      "mediaType": "movie",
+      "title": "The Punisher: One Last Kill",
+      "overview": "As Frank Castle searches for meaning beyond revenge, an unexpected force pulls him back into the fight.",
+      "poster": "https://image.tmdb.org/t/p/w500/qQclTgLMDvGBuUBFGHRipxkEwWR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qO55CD8tgVL1T4WKn6zYFFiD6lL.jpg",
+      "releaseDate": "2026-05-12",
+      "rating": "8.5",
+      "votes": 1082,
+      "url": "https://www.themoviedb.org/movie/1439930"
+    },
+    {
+      "id": 1242332,
+      "mediaType": "movie",
+      "title": "Normal",
+      "overview": "An unassuming substitute sheriff with a troubled past responds to a bank robbery in a small, sleepy town and unknowingly uncovers something far more explosive.",
+      "poster": "https://image.tmdb.org/t/p/w500/rsNdDcCKjCZm9RBMAxL3vMUokKU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
+      "releaseDate": "2026-04-16",
+      "rating": "6.5",
+      "votes": 76,
+      "url": "https://www.themoviedb.org/movie/1242332"
     },
     {
       "id": 1368881,
@@ -107,21 +119,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/kjR56Yv17pbjTVBTMjqepvcus4f.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bOy625BjpCskOWnx3tD09MsKVCb.jpg",
       "releaseDate": "2026-05-21",
-      "rating": "5.4",
-      "votes": 29,
+      "rating": "5.2",
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1368881"
-    },
-    {
-      "id": 1242332,
-      "mediaType": "movie",
-      "title": "Normal",
-      "overview": "An unassuming substitute sheriff with a troubled past responds to a bank robbery in a small, sleepy town and unknowingly uncovers something far more explosive.",
-      "poster": "https://image.tmdb.org/t/p/w500/g8JqVRu2eC5SGJd9idauTXurMl2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
-      "releaseDate": "2026-04-16",
-      "rating": "6.5",
-      "votes": 75,
-      "url": "https://www.themoviedb.org/movie/1242332"
     }
   ],
   "trendingTv": [
@@ -134,32 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12606,
+      "votes": 12608,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.4",
-      "votes": 104,
-      "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 308014,
-      "mediaType": "tv",
-      "title": "Berlin and the Lady with an Ermine",
-      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
-      "poster": "https://image.tmdb.org/t/p/w500/sTumew0Q01ZHmFneA9cJRi3QUYC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "8.4",
-      "votes": 74,
-      "url": "https://www.themoviedb.org/tv/308014"
     },
     {
       "id": 124364,
@@ -174,6 +150,18 @@
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ewlmL0nxo2lLqBj69upgp2gjHpV.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.4",
+      "votes": 105,
+      "url": "https://www.themoviedb.org/tv/299167"
+    },
+    {
       "id": 224941,
       "mediaType": "tv",
       "title": "The Boroughs",
@@ -181,21 +169,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
       "releaseDate": "2026-05-21",
-      "rating": "5.9",
-      "votes": 18,
+      "rating": "6.0",
+      "votes": 20,
       "url": "https://www.themoviedb.org/tv/224941"
-    },
-    {
-      "id": 259837,
-      "mediaType": "tv",
-      "title": "The WONDERfools",
-      "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
-      "poster": "https://image.tmdb.org/t/p/w500/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y2u7d8evmnTivi3LaVql01Sfea4.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 78,
-      "url": "https://www.themoviedb.org/tv/259837"
     },
     {
       "id": 273240,
@@ -206,8 +182,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
       "releaseDate": "2026-05-13",
       "rating": "9.1",
-      "votes": 202,
+      "votes": 207,
       "url": "https://www.themoviedb.org/tv/273240"
+    },
+    {
+      "id": 308014,
+      "mediaType": "tv",
+      "title": "Berlin and the Lady with an Ermine",
+      "overview": "Hungry for a new heist, Berlin summons the gang to Seville and turns an ambitious duke into the victim of his own plan: to steal a da Vinci masterpiece.",
+      "poster": "https://image.tmdb.org/t/p/w500/sTumew0Q01ZHmFneA9cJRi3QUYC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ntPgSYKwPg9xKO4VvLJYfInSyZa.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "8.4",
+      "votes": 75,
+      "url": "https://www.themoviedb.org/tv/308014"
+    },
+    {
+      "id": 259837,
+      "mediaType": "tv",
+      "title": "The WONDERfools",
+      "overview": "A goofy group of townies stumbles into superpowers and fights rising evil as doomsday panic grows in this wild, turn-of-the-century action comedy.",
+      "poster": "https://image.tmdb.org/t/p/w500/jj7AYkz2OLRDL1wfJmjTXyWQ5I4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y2u7d8evmnTivi3LaVql01Sfea4.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.2",
+      "votes": 80,
+      "url": "https://www.themoviedb.org/tv/259837"
     },
     {
       "id": 85552,
@@ -222,6 +222,18 @@
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
+      "id": 275966,
+      "mediaType": "tv",
+      "title": "The Heir",
+      "overview": "A tribute ink scandal topples the Li family’s long-standing ink business, leaving their legacy in ruins. Years later, Li Zhen, the determined youngest daughter, sets out to restore her family's name. As she rises in the industry, she joins forces with Luo Wenqian, heir to another fallen clan, to take on a rising rival and face new challenges from foreign markets, fighting to bring Huizhou ink back to its former glory.",
+      "poster": "https://image.tmdb.org/t/p/w500/a4mGijfohlzqLFG2ZQz7QQDHUhu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/68UHE4T9CzlBgI5HuVs5caLeZU7.jpg",
+      "releaseDate": "2026-05-17",
+      "rating": "9.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/275966"
+    },
+    {
       "id": 37854,
       "mediaType": "tv",
       "title": "One Piece",
@@ -232,18 +244,6 @@
       "rating": "8.7",
       "votes": 5302,
       "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 256695,
-      "mediaType": "tv",
-      "title": "Regular Show: The Lost Tapes",
-      "overview": "Familiar duo Mordecai and Rigby navigate mundane park jobs that inevitably spiral into surreal, chaotic disasters.",
-      "poster": "https://image.tmdb.org/t/p/w500/jqY3dj70ffSqKpM8XVUEToOEeLG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Zk5UmvJ634LhA56R18h8RfipFG.jpg",
-      "releaseDate": "2026-05-11",
-      "rating": "9.7",
-      "votes": 76,
-      "url": "https://www.themoviedb.org/tv/256695"
     }
   ],
   "upcomingMovies": [
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
-      "rating": "9.0",
-      "votes": 3,
+      "rating": "9.2",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1340206"
     },
     {
-      "id": 15916,
-      "mediaType": "movie",
-      "title": "Angel's Egg",
-      "overview": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with a boy who is searching for a bird he saw in a dream.",
-      "poster": "https://image.tmdb.org/t/p/w500/dcEUGvckbePFzPKhGXnS9T3kZMG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nZn384qWYugXu6U1N8Ya0Iv0NXE.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.7",
-      "votes": 580,
-      "url": "https://www.themoviedb.org/movie/15916"
-    },
-    {
       "id": 1284016,
       "mediaType": "movie",
       "title": "Power Ballad",
@@ -330,6 +318,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1284016"
+    },
+    {
+      "id": 15916,
+      "mediaType": "movie",
+      "title": "Angel's Egg",
+      "overview": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with a boy who is searching for a bird he saw in a dream.",
+      "poster": "https://image.tmdb.org/t/p/w500/dcEUGvckbePFzPKhGXnS9T3kZMG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nZn384qWYugXu6U1N8Ya0Iv0NXE.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.7",
+      "votes": 580,
+      "url": "https://www.themoviedb.org/movie/15916"
     },
     {
       "id": 1337592,
@@ -378,8 +378,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wMrV8SLne1jHLeYS0lLrA1Tf86P.jpg",
       "releaseDate": "2026-04-17",
       "rating": "8.0",
-      "votes": 803,
+      "votes": 815,
       "url": "https://www.themoviedb.org/movie/1304313"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8nnO9zr2jUH2qH2PysbRQ1TMaye.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "7.9",
+      "votes": 198,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 931285,
@@ -390,20 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
       "releaseDate": "2026-05-07",
       "rating": "6.9",
-      "votes": 256,
+      "votes": 260,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
-      "id": 1339713,
+      "id": 1228710,
       "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1pKFDggvtk23zcn1vUcPiKyuHxM.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "8.0",
-      "votes": 191,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "6.6",
+      "votes": 108,
+      "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
       "id": 936075,
@@ -414,32 +426,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
       "rating": "7.6",
-      "votes": 804,
+      "votes": 809,
       "url": "https://www.themoviedb.org/movie/936075"
-    },
-    {
-      "id": 1228710,
-      "mediaType": "movie",
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4VrLojD6Gl1HQkcDHAoHQjSDPh9.jpg",
-      "releaseDate": "2026-05-22",
-      "rating": "6.6",
-      "votes": 99,
-      "url": "https://www.themoviedb.org/movie/1228710"
-    },
-    {
-      "id": 1600771,
-      "mediaType": "movie",
-      "title": "Aakhri Sawal",
-      "overview": "Vicky, a brilliant but volatile scholar who ignites a national firestorm when he publicly accuses his legendary mentor, Professor Gopal Nadkarni, of institutional bias. What begins as a faculty dispute is quickly hijacked by a sensationalist news anchor and an ambitious political activist, turning a private disagreement into a televised \"intellectual trial\" watched by millions.",
-      "poster": "https://image.tmdb.org/t/p/w500/9CXBZH6sRJpFTMSaY3wj1jx98F4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/akZ9jTTzvBOx3CeTVCo9WyhxL5q.jpg",
-      "releaseDate": "2026-05-22",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1600771"
     },
     {
       "id": 1301421,
@@ -454,15 +442,27 @@
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
+      "id": 1600771,
+      "mediaType": "movie",
+      "title": "Aakhri Sawal",
+      "overview": "Vicky, a brilliant but volatile scholar who ignites a national firestorm when he publicly accuses his legendary mentor, Professor Gopal Nadkarni, of institutional bias. What begins as a faculty dispute is quickly hijacked by a sensationalist news anchor and an ambitious political activist, turning a private disagreement into a televised \"intellectual trial\" watched by millions.",
+      "poster": "https://image.tmdb.org/t/p/w500/9CXBZH6sRJpFTMSaY3wj1jx98F4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/akZ9jTTzvBOx3CeTVCo9WyhxL5q.jpg",
+      "releaseDate": "2026-05-22",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1600771"
+    },
+    {
       "id": 1242332,
       "mediaType": "movie",
       "title": "Normal",
       "overview": "An unassuming substitute sheriff with a troubled past responds to a bank robbery in a small, sleepy town and unknowingly uncovers something far more explosive.",
-      "poster": "https://image.tmdb.org/t/p/w500/g8JqVRu2eC5SGJd9idauTXurMl2.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/rsNdDcCKjCZm9RBMAxL3vMUokKU.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1YU6Hy3x7fUh7dfOzSfjifTp20g.jpg",
       "releaseDate": "2026-05-15",
       "rating": "6.5",
-      "votes": 75,
+      "votes": 76,
       "url": "https://www.themoviedb.org/movie/1242332"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y3fQa7pytlysovXzovpXc1OQlTW.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.6",
-      "votes": 640,
+      "votes": 641,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
