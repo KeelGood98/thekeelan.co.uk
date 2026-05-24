@@ -1,41 +1,10 @@
 {
-  "updated": "2026-05-24T15:21:37.375533+00:00",
+  "updated": "2026-05-24T19:42:19.114585+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
-  "nextMatch": {
-    "id": 538156,
-    "date": "Sun 24 May, 16:00",
-    "sortDate": "2026-05-24T16:00:00+01:00",
-    "competition": "Premier League",
-    "matchday": 38,
-    "home": "Brighton",
-    "away": "Manchester United",
-    "score": "0-0",
-    "halfTimeScore": "",
-    "winner": "Draw",
-    "result": "",
-    "venue": "TBC",
-    "channel": "TBC",
-    "status": "IN_PLAY"
-  },
+  "nextMatch": null,
   "recentResults": [
     {
-      "id": 538102,
-      "date": "Mon 13 Apr, 20:00",
-      "sortDate": "2026-04-13T20:00:00+01:00",
-      "competition": "Premier League",
-      "matchday": 32,
-      "home": "Manchester United",
-      "away": "Leeds United",
-      "score": "1-2",
-      "halfTimeScore": "0-2",
-      "winner": "Leeds United",
-      "result": "L",
-      "venue": "TBC",
-      "channel": "",
-      "status": "FINISHED"
-    },
-    {
       "id": 538108,
       "date": "Sat 18 Apr, 20:00",
       "sortDate": "2026-04-18T20:00:00+01:00",
@@ -114,9 +83,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 538156,
       "date": "Sun 24 May, 16:00",
@@ -125,33 +92,18 @@
       "matchday": 38,
       "home": "Brighton",
       "away": "Manchester United",
-      "score": "0-0",
-      "halfTimeScore": "",
-      "winner": "Draw",
-      "result": "",
+      "score": "0-3",
+      "halfTimeScore": "0-2",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
+      "channel": "",
+      "status": "FINISHED"
     }
   ],
+  "upcomingFixtures": [],
   "fixtures": [
     {
-      "id": 538102,
-      "date": "Mon 13 Apr, 20:00",
-      "sortDate": "2026-04-13T20:00:00+01:00",
-      "competition": "Premier League",
-      "matchday": 32,
-      "home": "Manchester United",
-      "away": "Leeds United",
-      "score": "1-2",
-      "halfTimeScore": "0-2",
-      "winner": "Leeds United",
-      "result": "L",
-      "venue": "TBC",
-      "channel": "",
-      "status": "FINISHED"
-    },
-    {
       "id": 538108,
       "date": "Sat 18 Apr, 20:00",
       "sortDate": "2026-04-18T20:00:00+01:00",
@@ -239,13 +191,13 @@
       "matchday": 38,
       "home": "Brighton",
       "away": "Manchester United",
-      "score": "0-0",
-      "halfTimeScore": "",
-      "winner": "Draw",
-      "result": "",
+      "score": "0-3",
+      "halfTimeScore": "0-2",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
+      "channel": "",
+      "status": "FINISHED"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-24T15:21:39.534020+00:00",
+  "updated": "2026-05-24T19:42:21.689371+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -32,9 +32,20 @@
       "nationality": "Ghana",
       "team": "Manchester City",
       "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 16,
+      "goals": 17,
       "assists": 4,
       "penalties": 1
+    },
+    {
+      "name": "Ollie Watkins",
+      "firstName": "Ollie",
+      "lastName": "Watkins",
+      "nationality": "England",
+      "team": "Aston Villa",
+      "teamBadge": "https://crests.football-data.org/58.png",
+      "goals": 16,
+      "assists": 3,
+      "penalties": 0
     },
     {
       "name": "João Pedro",
@@ -46,6 +57,17 @@
       "goals": 15,
       "assists": 5,
       "penalties": 0
+    },
+    {
+      "name": "Morgan Gibbs-White",
+      "firstName": "Morgan",
+      "lastName": "Gibbs-White",
+      "nationality": "England",
+      "team": "Nott'm Forest",
+      "teamBadge": "https://crests.football-data.org/351.png",
+      "goals": 15,
+      "assists": 5,
+      "penalties": 1
     },
     {
       "name": "Viktor Gyökeres",
@@ -68,28 +90,6 @@
       "goals": 14,
       "assists": 1,
       "penalties": 4
-    },
-    {
-      "name": "Ollie Watkins",
-      "firstName": "Ollie",
-      "lastName": "Watkins",
-      "nationality": "England",
-      "team": "Aston Villa",
-      "teamBadge": "https://crests.football-data.org/58.png",
-      "goals": 14,
-      "assists": 3,
-      "penalties": 0
-    },
-    {
-      "name": "Morgan Gibbs-White",
-      "firstName": "Morgan",
-      "lastName": "Gibbs-White",
-      "nationality": "England",
-      "team": "Nott'm Forest",
-      "teamBadge": "https://crests.football-data.org/351.png",
-      "goals": 14,
-      "assists": 5,
-      "penalties": 1
     },
     {
       "name": "Danny Welbeck",
@@ -118,31 +118,31 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 76,
+      "goalsFor": 77,
       "played": 38
     },
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 69,
+      "goalsFor": 71,
       "played": 38
     },
     {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
-      "goalsFor": 66,
+      "goalsFor": 69,
       "played": 38
     },
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
-      "goalsFor": 62,
+      "goalsFor": 63,
       "played": 38
     },
     {
       "name": "Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsFor": 57,
+      "goalsFor": 58,
       "played": 38
     }
   ],
@@ -150,31 +150,31 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsAgainst": 26,
+      "goalsAgainst": 27,
       "played": 38
     },
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalsAgainst": 33,
+      "goalsAgainst": 35,
       "played": 38
     },
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 43,
+      "goalsAgainst": 46,
       "played": 38
     },
     {
       "name": "Sunderland",
       "badge": "https://crests.football-data.org/71.png",
-      "goalsAgainst": 47,
+      "goalsAgainst": 48,
       "played": 38
     },
     {
       "name": "Aston Villa",
       "badge": "https://crests.football-data.org/58.png",
-      "goalsAgainst": 48,
+      "goalsAgainst": 49,
       "played": 38
     }
   ],
@@ -182,19 +182,19 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 43,
+      "goalDifference": 44,
       "played": 38
     },
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 43,
+      "goalDifference": 42,
       "played": 38
     },
     {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
-      "goalDifference": 16,
+      "goalDifference": 19,
       "played": 38
     },
     {
@@ -204,9 +204,9 @@
       "played": 38
     },
     {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 9,
+      "name": "Aston Villa",
+      "badge": "https://crests.football-data.org/58.png",
+      "goalDifference": 7,
       "played": 38
     }
   ],
@@ -216,12 +216,12 @@
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
     "played": 38,
-    "won": 19,
-    "drawn": 12,
+    "won": 20,
+    "drawn": 11,
     "lost": 7,
-    "goalsFor": 66,
+    "goalsFor": 69,
     "goalsAgainst": 50,
-    "goalDifference": 16,
-    "points": 69
+    "goalDifference": 19,
+    "points": 71
   }
 }
