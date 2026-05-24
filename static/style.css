@@ -642,7 +642,8 @@ th {
   margin: 0 0 0.75rem;
 }
 
-.football-stats-card {
+.football-stats-card,
+.football-vidiprinter-card {
   margin-top: 1rem;
 }
 
@@ -735,6 +736,27 @@ th {
 .summary-grid strong {
   display: block;
   color: var(--text);
+}
+
+.vidiprinter-wrap {
+  overflow: hidden;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.75rem;
+}
+
+.vidiprinter-wrap .fwp-embed {
+  width: 100%;
+  min-height: 420px;
+}
+
+.vidiprinter-wrap iframe {
+  width: 100%;
+  min-height: 420px;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 /* Gaming / Media / Extras */
