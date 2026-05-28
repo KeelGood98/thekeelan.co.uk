@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-28T17:51:07.669003+00:00",
+  "updated": "2026-05-28T22:20:27.740895+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-04-16",
       "rating": "7.9",
-      "votes": 320,
+      "votes": 322,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -23,8 +23,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
-      "rating": "6.1",
-      "votes": 32,
+      "rating": "6.3",
+      "votes": 35,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dd31qJxOarrHyGZwYsCzOjobQzP.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.2",
-      "votes": 339,
+      "votes": 346,
       "url": "https://www.themoviedb.org/movie/1380291"
     },
     {
@@ -48,8 +48,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.6",
-      "votes": 4227,
+      "votes": 4242,
       "url": "https://www.themoviedb.org/movie/687163"
+    },
+    {
+      "id": 1228710,
+      "mediaType": "movie",
+      "title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "6.8",
+      "votes": 287,
+      "url": "https://www.themoviedb.org/movie/1228710"
+    },
+    {
+      "id": 931285,
+      "mediaType": "movie",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "releaseDate": "2026-05-06",
+      "rating": "6.8",
+      "votes": 320,
+      "url": "https://www.themoviedb.org/movie/931285"
+    },
+    {
+      "id": 1368881,
+      "mediaType": "movie",
+      "title": "Ladies First",
+      "overview": "An arrogant but charismatic ladies' man finds his life of money, power and casual flings upended when he wakes up in a parallel world dominated by women.",
+      "poster": "https://image.tmdb.org/t/p/w500/kjR56Yv17pbjTVBTMjqepvcus4f.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bOy625BjpCskOWnx3tD09MsKVCb.jpg",
+      "releaseDate": "2026-05-21",
+      "rating": "5.8",
+      "votes": 158,
+      "url": "https://www.themoviedb.org/movie/1368881"
     },
     {
       "id": 1084244,
@@ -64,64 +100,28 @@
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
-      "id": 1228710,
+      "id": 1273221,
       "mediaType": "movie",
-      "title": "The Mandalorian and Grogu",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7OedxK0BvSKJ0ZWCPRYADViTBx6.jpg",
-      "releaseDate": "2026-05-20",
-      "rating": "6.8",
-      "votes": 282,
-      "url": "https://www.themoviedb.org/movie/1228710"
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
-      "id": 1242265,
+      "id": 1226863,
       "mediaType": "movie",
-      "title": "Fuze",
-      "overview": "An unexploded WWII bomb is discovered on a busy construction site in the centre of London. Chaos ensues as the military and police begin a mass evacuation against a ticking clock.",
-      "poster": "https://image.tmdb.org/t/p/w500/oMFdQE5hMJ9JjhNORegwTo0GKmh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8wIaBCeGv3UhIn5CJOWQGHT1Cif.jpg",
-      "releaseDate": "2026-03-23",
-      "rating": "6.5",
-      "votes": 50,
-      "url": "https://www.themoviedb.org/movie/1242265"
-    },
-    {
-      "id": 931285,
-      "mediaType": "movie",
-      "title": "Mortal Kombat II",
-      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-      "poster": "https://image.tmdb.org/t/p/w500/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-      "releaseDate": "2026-05-06",
-      "rating": "6.8",
-      "votes": 319,
-      "url": "https://www.themoviedb.org/movie/931285"
-    },
-    {
-      "id": 1368881,
-      "mediaType": "movie",
-      "title": "Ladies First",
-      "overview": "An arrogant but charismatic ladies' man finds his life of money, power and casual flings upended when he wakes up in a parallel world dominated by women.",
-      "poster": "https://image.tmdb.org/t/p/w500/kjR56Yv17pbjTVBTMjqepvcus4f.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bOy625BjpCskOWnx3tD09MsKVCb.jpg",
-      "releaseDate": "2026-05-21",
-      "rating": "5.8",
-      "votes": 153,
-      "url": "https://www.themoviedb.org/movie/1368881"
-    },
-    {
-      "id": 1304313,
-      "mediaType": "movie",
-      "title": "Lee Cronin's The Mummy",
-      "overview": "The young daughter of a journalist disappears into the desert without a trace—eight years later, the broken family is shocked when she is returned to them, as what should be a joyful reunion turns into a living nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/uIb9Tvae5haF0XcQBaPyufmxbb0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xugEpZk9YQ0DIz1aFvH5HGkqpZK.jpg",
-      "releaseDate": "2026-04-15",
-      "rating": "8.1",
-      "votes": 1307,
-      "url": "https://www.themoviedb.org/movie/1304313"
+      "title": "The Super Mario Galaxy Movie",
+      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
+      "poster": "https://image.tmdb.org/t/p/w500/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg",
+      "releaseDate": "2026-04-01",
+      "rating": "8.0",
+      "votes": 2012,
+      "url": "https://www.themoviedb.org/movie/1226863"
     }
   ],
   "trendingTv": [
@@ -131,10 +131,10 @@
       "title": "Spider-Noir",
       "overview": "Ben Reilly, an aging and down on his luck private investigator in 1930s New York, is forced to grapple with his past life as the city's one and only superhero.",
       "poster": "https://image.tmdb.org/t/p/w500/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/829po9fyhvZRCRYhZhysOsbOb2k.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mkwVoyP9bFSmfVqU8FJyem52hVR.jpg",
       "releaseDate": "2026-05-25",
-      "rating": "9.0",
-      "votes": 88,
+      "rating": "8.8",
+      "votes": 103,
       "url": "https://www.themoviedb.org/tv/220102"
     },
     {
@@ -146,32 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12735,
+      "votes": 12740,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 273240,
-      "mediaType": "tv",
-      "title": "Off Campus",
-      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
-      "poster": "https://image.tmdb.org/t/p/w500/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "9.1",
-      "votes": 282,
-      "url": "https://www.themoviedb.org/tv/273240"
-    },
-    {
-      "id": 224941,
-      "mediaType": "tv",
-      "title": "The Boroughs",
-      "overview": "In a seemingly perfect retirement community, a crew of unlikely heroes must stop an otherworldly threat from stealing the one thing they don't have: time.",
-      "poster": "https://image.tmdb.org/t/p/w500/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
-      "releaseDate": "2026-05-21",
-      "rating": "7.0",
-      "votes": 80,
-      "url": "https://www.themoviedb.org/tv/224941"
     },
     {
       "id": 85552,
@@ -194,20 +170,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6gN8DYnIEln8v7OhRy61c57w0Xy.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.4",
-      "votes": 3362,
+      "votes": 3363,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
-      "id": 37854,
+      "id": 224941,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5315,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "title": "The Boroughs",
+      "overview": "In a seemingly perfect retirement community, a crew of unlikely heroes must stop an otherworldly threat from stealing the one thing they don't have: time.",
+      "poster": "https://image.tmdb.org/t/p/w500/oKxBWbXmnWFO2Wh1QRTtshdfIRa.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iftYIh1OjJb99EOTHIrDcx59zWb.jpg",
+      "releaseDate": "2026-05-21",
+      "rating": "7.1",
+      "votes": 82,
+      "url": "https://www.themoviedb.org/tv/224941"
+    },
+    {
+      "id": 273240,
+      "mediaType": "tv",
+      "title": "Off Campus",
+      "overview": "Hannah Wells tutors hockey captain Garrett Graham to win over her crush. Their deal becomes real connection as they face their pasts. Friends Logan, Dean, Tucker, and Allie navigate college life and love.",
+      "poster": "https://image.tmdb.org/t/p/w500/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "9.1",
+      "votes": 284,
+      "url": "https://www.themoviedb.org/tv/273240"
     },
     {
       "id": 60625,
@@ -218,32 +206,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zJZfxi8X3XPHAhxXseRugtnNVtt.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 10891,
+      "votes": 10892,
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 218342,
+      "id": 37854,
       "mediaType": "tv",
-      "title": "A Good Girl's Guide to Murder",
-      "overview": "Five years after the death of schoolgirl Andie Bell, Pippa Fitz-Amobi sets out to uncover what really happened to her. Sal Singh, Andie's boyfriend, admitted to the murder before taking his own life, but Pip doesn't believe he's responsible and teams up with Sal's brother Ravi to uncover the truth. If Sal Singh isn't a murderer and the real killer is still out there, how far will they go to keep Pip from finding out the truth?",
-      "poster": "https://image.tmdb.org/t/p/w500/mzkstyDSsTRswCMRvoBD5ULPnIt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8H3KFYBklgxPiGsc8yWNWqGPZ9G.jpg",
-      "releaseDate": "2024-07-10",
-      "rating": "7.4",
-      "votes": 301,
-      "url": "https://www.themoviedb.org/tv/218342"
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5316,
+      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 252372,
+      "id": 299167,
       "mediaType": "tv",
-      "title": "Murder Mindfully",
-      "overview": "When mafia lawyer Björn attends a mindfulness class to find a better work-life balance, he discovers surprising new coping strategies — including murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/rt6SspSLBl5PqWXGstR7HlUM3Nj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rsLZK4xAw1Oun0T5UWfG213qalP.jpg",
-      "releaseDate": "2024-10-31",
-      "rating": "7.6",
-      "votes": 156,
-      "url": "https://www.themoviedb.org/tv/252372"
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.3",
+      "votes": 142,
+      "url": "https://www.themoviedb.org/tv/299167"
+    },
+    {
+      "id": 270476,
+      "mediaType": "tv",
+      "title": "Widow's Bay",
+      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
+      "poster": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/u6XtMg9Ai9siEbEs0UudPS3EaZY.jpg",
+      "releaseDate": "2026-04-28",
+      "rating": "8.2",
+      "votes": 92,
+      "url": "https://www.themoviedb.org/tv/270476"
     }
   ],
   "upcomingMovies": [
