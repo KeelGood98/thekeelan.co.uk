@@ -1,27 +1,27 @@
 {
-  "updated": "2026-05-31T12:18:52.574004+00:00",
+  "updated": "2026-05-31T14:54:28.041484+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-05-31T13:15",
-    "temperature": 18.0,
+    "time": "2026-05-31T15:45",
+    "temperature": 19.0,
     "feelsLike": 16.0,
-    "humidity": 60.0,
+    "humidity": 49.0,
     "precipitation": 0.0,
-    "windSpeed": 11.0,
-    "windGusts": 23.0,
-    "weatherCode": 2,
-    "description": "Partly cloudy",
-    "icon": "⛅"
+    "windSpeed": 12.0,
+    "windGusts": 25.0,
+    "weatherCode": 3,
+    "description": "Overcast",
+    "icon": "☁️"
   },
   "forecast": [
     {
       "date": "2026-05-31",
       "description": "Overcast",
       "icon": "☁️",
-      "maxTemp": 18.0,
+      "maxTemp": 19.0,
       "minTemp": 14.0,
       "rainChance": 51.0,
       "sunrise": "2026-05-31T04:43",
@@ -31,7 +31,7 @@
       "date": "2026-06-01",
       "description": "Slight rain",
       "icon": "🌦️",
-      "maxTemp": 17.0,
+      "maxTemp": 19.0,
       "minTemp": 15.0,
       "rainChance": 92.0,
       "sunrise": "2026-06-01T04:42",
@@ -39,11 +39,11 @@
     },
     {
       "date": "2026-06-02",
-      "description": "Moderate rain",
-      "icon": "🌧️",
+      "description": "Slight rain",
+      "icon": "🌦️",
       "maxTemp": 18.0,
       "minTemp": 14.0,
-      "rainChance": 94.0,
+      "rainChance": 96.0,
       "sunrise": "2026-06-02T04:41",
       "sunset": "2026-06-02T21:26"
     }
