@@ -1,8 +1,20 @@
 {
-  "updated": "2026-06-06T10:32:26.266939+00:00",
+  "updated": "2026-06-06T15:55:29.758462+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "6.8",
+      "votes": 339,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
     {
       "id": 1339713,
       "mediaType": "movie",
@@ -12,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 545,
+      "votes": 555,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "6.7",
-      "votes": 333,
-      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1273221,
@@ -35,33 +35,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "5.8",
-      "votes": 102,
+      "rating": "5.7",
+      "votes": 107,
       "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1430077,
-      "mediaType": "movie",
-      "title": "Hokum",
-      "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/woZX9wZaiX70LbW7bOeNccNTIhp.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "7.0",
-      "votes": 139,
-      "url": "https://www.themoviedb.org/movie/1430077"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.6",
-      "votes": 64,
-      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 1122573,
@@ -72,32 +48,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oBft4BZeoDQzTT9ZGijClr76qvK.jpg",
       "releaseDate": "2026-05-13",
       "rating": "6.6",
-      "votes": 134,
+      "votes": 138,
       "url": "https://www.themoviedb.org/movie/1122573"
+    },
+    {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.6",
+      "votes": 67,
+      "url": "https://www.themoviedb.org/movie/454639"
+    },
+    {
+      "id": 1430077,
+      "mediaType": "movie",
+      "title": "Hokum",
+      "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/woZX9wZaiX70LbW7bOeNccNTIhp.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "7.0",
+      "votes": 145,
+      "url": "https://www.themoviedb.org/movie/1430077"
     },
     {
       "id": 1358005,
       "mediaType": "movie",
       "title": "Office Romance",
       "overview": "Jackie, President and CEO of Air Cruz, runs a tight ship in her business, including a rigid anti-fraternization policy for all her employees. When a new sexy lawyer begins working for her, that policy becomes very tested.",
-      "poster": "https://image.tmdb.org/t/p/w500/f7CbyRbdqzriEfkXAq7kIwphL8O.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/9As3SeWOa3bzCjz3PZ4BKSuabMf.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/erkh3hHfGh06qPQIuFpV0PoQeV8.jpg",
       "releaseDate": "2026-06-04",
       "rating": "6.9",
-      "votes": 23,
+      "votes": 26,
       "url": "https://www.themoviedb.org/movie/1358005"
-    },
-    {
-      "id": 1327819,
-      "mediaType": "movie",
-      "title": "Hoppers",
-      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-      "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
-      "releaseDate": "2026-03-04",
-      "rating": "8.2",
-      "votes": 1404,
-      "url": "https://www.themoviedb.org/movie/1327819"
     },
     {
       "id": 687163,
@@ -108,20 +96,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.7",
-      "votes": 4652,
+      "votes": 4660,
       "url": "https://www.themoviedb.org/movie/687163"
     },
     {
-      "id": 1116201,
+      "id": 1327819,
       "mediaType": "movie",
-      "title": "Iron Lung",
-      "overview": "In a post-apocalyptic future where an event known as \"The Quiet Rapture\" caused all known stars and habitable planets in the universe to disappear, a convict is sent to search an ocean of blood discovered on a desolate moon, using a small submarine nicknamed the \"Iron Lung\".",
-      "poster": "https://image.tmdb.org/t/p/w500/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gqGQ0zADV5FIcgMWtWX8FcGQjFp.jpg",
-      "releaseDate": "2026-01-30",
-      "rating": "7.2",
-      "votes": 214,
-      "url": "https://www.themoviedb.org/movie/1116201"
+      "title": "Hoppers",
+      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+      "poster": "https://image.tmdb.org/t/p/w500/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/u53UYu5XG2hNgWGvs3xGhAVzypl.jpg",
+      "releaseDate": "2026-03-04",
+      "rating": "8.2",
+      "votes": 1407,
+      "url": "https://www.themoviedb.org/movie/1327819"
+    },
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+      "poster": "https://image.tmdb.org/t/p/w500/bGgrr83LC6bVRg9F5UE52i4gpE3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "7.9",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/movie/1275779"
     }
   ],
   "trendingTv": [
@@ -131,10 +131,10 @@
       "title": "Spider-Noir",
       "overview": "Ben Reilly, an aging and down on his luck private investigator in 1930s New York, is forced to grapple with his past life as the city's one and only superhero.",
       "poster": "https://image.tmdb.org/t/p/w500/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mkwVoyP9bFSmfVqU8FJyem52hVR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/reAZlLG6YMkBuxPT1XKuCH97TM1.jpg",
       "releaseDate": "2026-05-25",
       "rating": "8.7",
-      "votes": 389,
+      "votes": 391,
       "url": "https://www.themoviedb.org/tv/220102"
     },
     {
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10816,
+      "votes": 10818,
       "url": "https://www.themoviedb.org/tv/85552"
-    },
-    {
-      "id": 277439,
-      "mediaType": "tv",
-      "title": "Cape Fear",
-      "overview": "A storm is coming for happily married attorneys Anna and Tom Bowden when Max Cady, the notorious killer they are responsible for putting behind bars, is let out of prison and wants revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/64gCOK6NKcXVI2amtVKk3Xx7cbC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cl5Rs0z5Il3KHUJfOtDJs2N8Cb.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "4.9",
-      "votes": 17,
-      "url": "https://www.themoviedb.org/tv/277439"
     },
     {
       "id": 276161,
@@ -169,9 +157,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wsfF3ASiJODTZ9hSlHkEYqJH6oN.jpg",
       "releaseDate": "2026-06-05",
-      "rating": "8.2",
-      "votes": 8,
+      "rating": "8.6",
+      "votes": 10,
       "url": "https://www.themoviedb.org/tv/276161"
+    },
+    {
+      "id": 277439,
+      "mediaType": "tv",
+      "title": "Cape Fear",
+      "overview": "A storm is coming for happily married attorneys Anna and Tom Bowden when Max Cady, the notorious killer they are responsible for putting behind bars, is let out of prison and wants revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/64gCOK6NKcXVI2amtVKk3Xx7cbC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cl5Rs0z5Il3KHUJfOtDJs2N8Cb.jpg",
+      "releaseDate": "2026-06-04",
+      "rating": "4.8",
+      "votes": 19,
+      "url": "https://www.themoviedb.org/tv/277439"
     },
     {
       "id": 124364,
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.4",
-      "votes": 3481,
+      "votes": 3484,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -194,20 +194,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12839,
+      "votes": 12841,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 252107,
-      "mediaType": "tv",
-      "title": "Star City",
-      "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
-      "poster": "https://image.tmdb.org/t/p/w500/jjJZyBCDgyYylGdtctuqEYcO7Lc.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-      "releaseDate": "2026-05-28",
-      "rating": "6.6",
-      "votes": 25,
-      "url": "https://www.themoviedb.org/tv/252107"
     },
     {
       "id": 273240,
@@ -218,20 +206,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/52sp0vPhLOWrZ1QoZIWiapronM.jpg",
       "releaseDate": "2026-05-13",
       "rating": "9.0",
-      "votes": 386,
+      "votes": 388,
       "url": "https://www.themoviedb.org/tv/273240"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5331,
-      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
       "id": 270476,
@@ -244,6 +220,30 @@
       "rating": "8.3",
       "votes": 112,
       "url": "https://www.themoviedb.org/tv/270476"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 10935,
+      "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 252107,
+      "mediaType": "tv",
+      "title": "Star City",
+      "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
+      "poster": "https://image.tmdb.org/t/p/w500/jjJZyBCDgyYylGdtctuqEYcO7Lc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+      "releaseDate": "2026-05-28",
+      "rating": "6.6",
+      "votes": 25,
+      "url": "https://www.themoviedb.org/tv/252107"
     }
   ],
   "upcomingMovies": [
@@ -289,7 +289,7 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2qWVt6JS1mIC2X2awSuuOnAYNbE.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/z4nSdlQYIHcgaqqCnz1hRSGpEhy.jpg",
       "releaseDate": "2026-06-26",
       "rating": "0.0",
       "votes": 0,
@@ -328,7 +328,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/gYxOlYtLvGNrzYm6kQBcY5mqKja.jpg",
       "releaseDate": "2026-07-01",
       "rating": "7.6",
-      "votes": 55,
+      "votes": 56,
       "url": "https://www.themoviedb.org/movie/1154538"
     },
     {
@@ -351,8 +351,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/bmf6spk0WZ10lz4eAK95P1zRB4F.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rS0ewRtB2ugDvbaVUoCXOpBOppM.jpg",
       "releaseDate": "2026-06-19",
-      "rating": "4.1",
-      "votes": 58,
+      "rating": "4.2",
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/1333141"
     },
     {
@@ -375,10 +375,10 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/6X4qFYBsG3bpWDG2XIKqr04kFJa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
       "releaseDate": "2026-05-15",
       "rating": "7.9",
-      "votes": 541,
+      "votes": 545,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -387,10 +387,10 @@
       "title": "Backrooms",
       "overview": "A strange doorway appears in the basement of a furniture showroom.",
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
       "rating": "6.8",
-      "votes": 327,
+      "votes": 334,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -413,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "9.3",
-      "votes": 3,
+      "rating": "7.5",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1057265"
     },
     {
@@ -423,11 +423,23 @@
       "title": "Hokum",
       "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
       "poster": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mKV5nxBslj0cWBl2BT549FApag5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/woZX9wZaiX70LbW7bOeNccNTIhp.jpg",
       "releaseDate": "2026-05-01",
       "rating": "6.9",
-      "votes": 132,
+      "votes": 140,
       "url": "https://www.themoviedb.org/movie/1430077"
+    },
+    {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.7",
+      "votes": 65,
+      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 1228710,
@@ -438,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
       "releaseDate": "2026-05-22",
       "rating": "6.8",
-      "votes": 396,
+      "votes": 397,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -462,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.8",
-      "votes": 95,
+      "votes": 102,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -476,18 +488,6 @@
       "rating": "7.4",
       "votes": 11,
       "url": "https://www.themoviedb.org/movie/1367220"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.6",
-      "votes": 57,
-      "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
   "links": [
