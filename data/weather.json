@@ -1,29 +1,29 @@
 {
-  "updated": "2026-06-07T12:00:46.873635+00:00",
+  "updated": "2026-06-07T14:18:10.954945+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-06-07T13:00",
-    "temperature": 18.0,
-    "feelsLike": 15.0,
-    "humidity": 53.0,
+    "time": "2026-06-07T15:15",
+    "temperature": 20.0,
+    "feelsLike": 16.0,
+    "humidity": 52.0,
     "precipitation": 0.0,
-    "windSpeed": 15.0,
-    "windGusts": 32.0,
-    "weatherCode": 1,
-    "description": "Mainly clear",
-    "icon": "🌤️"
+    "windSpeed": 13.0,
+    "windGusts": 29.0,
+    "weatherCode": 3,
+    "description": "Overcast",
+    "icon": "☁️"
   },
   "forecast": [
     {
       "date": "2026-06-07",
       "description": "Light drizzle",
       "icon": "🌦️",
-      "maxTemp": 19.0,
+      "maxTemp": 20.0,
       "minTemp": 12.0,
-      "rainChance": 80.0,
+      "rainChance": 94.0,
       "sunrise": "2026-06-07T04:37",
       "sunset": "2026-06-07T21:32"
     },
@@ -33,17 +33,17 @@
       "icon": "🌧️",
       "maxTemp": 16.0,
       "minTemp": 12.0,
-      "rainChance": 90.0,
+      "rainChance": 91.0,
       "sunrise": "2026-06-08T04:37",
       "sunset": "2026-06-08T21:33"
     },
     {
       "date": "2026-06-09",
-      "description": "Moderate drizzle",
+      "description": "Slight rain",
       "icon": "🌦️",
       "maxTemp": 15.0,
       "minTemp": 10.0,
-      "rainChance": 98.0,
+      "rainChance": 100.0,
       "sunrise": "2026-06-09T04:36",
       "sunset": "2026-06-09T21:34"
     }
