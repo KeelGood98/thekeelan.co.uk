@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09T11:43:30.276019+00:00",
+  "updated": "2026-06-09T17:11:05.713768+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xBT0oNq6rsTFv4SxG5uGRIEOrq6.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "8.1",
-      "votes": 1283,
+      "rating": "8.2",
+      "votes": 1327,
       "url": "https://www.themoviedb.org/movie/936075"
     },
     {
@@ -21,47 +21,11 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 630,
+      "votes": 634,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 931285,
-      "mediaType": "movie",
-      "title": "Mortal Kombat II",
-      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
-      "poster": "https://image.tmdb.org/t/p/w500/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
-      "releaseDate": "2026-05-06",
-      "rating": "7.6",
-      "votes": 639,
-      "url": "https://www.themoviedb.org/movie/931285"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "6.9",
-      "votes": 420,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "5.7",
-      "votes": 186,
-      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 1275779,
@@ -76,6 +40,42 @@
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
+      "id": 1273221,
+      "mediaType": "movie",
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "5.8",
+      "votes": 188,
+      "url": "https://www.themoviedb.org/movie/1273221"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "6.8",
+      "votes": 426,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 931285,
+      "mediaType": "movie",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "releaseDate": "2026-05-06",
+      "rating": "7.7",
+      "votes": 657,
+      "url": "https://www.themoviedb.org/movie/931285"
+    },
+    {
       "id": 454639,
       "mediaType": "movie",
       "title": "Masters of the Universe",
@@ -84,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.4",
-      "votes": 134,
+      "votes": 138,
       "url": "https://www.themoviedb.org/movie/454639"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wENlYOyR10DZzkICmrGUQQX4Ih5.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
       "id": 1358005,
@@ -95,8 +107,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1HRUTqEVDmJC4L6tp6zd85MI6uH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/erkh3hHfGh06qPQIuFpV0PoQeV8.jpg",
       "releaseDate": "2026-06-04",
-      "rating": "6.8",
-      "votes": 118,
+      "rating": "6.7",
+      "votes": 121,
       "url": "https://www.themoviedb.org/movie/1358005"
     },
     {
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qcIKxhqGMIj8uujsSoSMZWr8QqU.jpg",
       "releaseDate": "2026-05-13",
       "rating": "6.6",
-      "votes": 174,
+      "votes": 175,
       "url": "https://www.themoviedb.org/movie/1122573"
-    },
-    {
-      "id": 1430077,
-      "mediaType": "movie",
-      "title": "Hokum",
-      "overview": "When novelist Ohm Bauman retreats to a remote inn to scatter his parents' ashes, he is consumed by tales of a witch haunting the honeymoon suite. Disturbing visions and a shocking disappearance forces him to confront dark corners of his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/woZX9wZaiX70LbW7bOeNccNTIhp.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.8",
-      "votes": 184,
-      "url": "https://www.themoviedb.org/movie/1430077"
     }
   ],
   "trendingTv": [
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/wd14C18cey46iCj9pedMSM4kXE6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
       "releaseDate": "2026-06-05",
-      "rating": "9.3",
-      "votes": 75,
+      "rating": "9.4",
+      "votes": 80,
       "url": "https://www.themoviedb.org/tv/276161"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mkwVoyP9bFSmfVqU8FJyem52hVR.jpg",
       "releaseDate": "2026-05-25",
       "rating": "8.7",
-      "votes": 449,
+      "votes": 451,
       "url": "https://www.themoviedb.org/tv/220102"
     },
     {
@@ -166,7 +166,7 @@
       "mediaType": "tv",
       "title": "Cape Fear",
       "overview": "A storm is coming for happily married attorneys Anna and Tom Bowden when Max Cady, the notorious killer they are responsible for putting behind bars, is let out of prison and wants revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/2zOhbDmelY5WidqqdhEaVfOcEMp.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/dz7p0quExY3L8R4aPj2QJUVhp74.jpg",
       "releaseDate": "2026-06-04",
       "rating": "5.3",
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
       "releaseDate": "2019-06-16",
       "rating": "8.3",
-      "votes": 10833,
+      "votes": 10834,
       "url": "https://www.themoviedb.org/tv/85552"
     },
     {
@@ -194,20 +194,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
       "releaseDate": "2019-07-25",
       "rating": "8.5",
-      "votes": 12862,
+      "votes": 12863,
       "url": "https://www.themoviedb.org/tv/76479"
-    },
-    {
-      "id": 60625,
-      "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 10945,
-      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
       "id": 273240,
@@ -222,28 +210,40 @@
       "url": "https://www.themoviedb.org/tv/273240"
     },
     {
-      "id": 289147,
+      "id": 296286,
       "mediaType": "tv",
-      "title": "The Ferry Man 10th Anniversary",
-      "overview": "At Mirage City's 444 Convenience Store, Xia Dongqing and Ya join forces with a cryptic Night Watcher to maintain the balance between realms—until a crimson moon exposes a hidden conspiracy. Though peace returns, new anomalies stir in the shadows.",
-      "poster": "https://image.tmdb.org/t/p/w500/9ilVMG2ueA0xrviD0A9WoluAcnF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/a84FbktGASmCKmbvEVBD3U0x3LH.jpg",
-      "releaseDate": "2026-06-02",
-      "rating": "9.5",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/289147"
+      "title": "Smoking Behind the Supermarket with You",
+      "overview": "Meet Sasaki, an overworked, middle-aged office worker. His days are marked only by the passing of more unrewarding corporate drudgery. Smoking helps take the edge off, but other than that, the only bright spot of his day is when he goes to the nearby supermarket and sees Yamada's smiling face. So, one evening after yet another exhausting day, he heads to the supermarket to find he missed Yamada's shift. Dejected, he decides to go find a smoking area but discovers there isn’t one to be found. Just as he’s about to leave, a girl in a biker jacket named Tayama asks him to join her at a secret smoking area!",
+      "poster": "https://image.tmdb.org/t/p/w500/gHVfuuOXPVs0ltFbOZQjxpXtSSH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gkmE41A5ev5M299hLgX3JrWAM16.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/tv/296286"
     },
     {
-      "id": 37854,
+      "id": 60625,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4Mt7WHox67uJ1yErwTBFcV8KWgG.jpg",
-      "releaseDate": "1999-10-20",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
+      "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 5336,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "votes": 10945,
+      "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 280511,
+      "mediaType": "tv",
+      "title": "The Witness",
+      "overview": "With their 2-year-old as the sole witness to her murder, Rachel Nickell's partner fights to protect him amid a flawed investigation.",
+      "poster": "https://image.tmdb.org/t/p/w500/eNIfjYji9m29Xyj4KVDiUy2UmMa.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fvcTpx2JFHzPTv5gf6ytlXhZXFQ.jpg",
+      "releaseDate": "2026-06-04",
+      "rating": "6.5",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/tv/280511"
     }
   ],
   "upcomingMovies": [
@@ -255,21 +255,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/bGgrr83LC6bVRg9F5UE52i4gpE3.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
-      "rating": "8.1",
-      "votes": 8,
+      "rating": "8.2",
+      "votes": 9,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1280738,
-      "mediaType": "movie",
-      "title": "The Furious",
-      "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
       "id": 1084244,
@@ -282,6 +270,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1280738,
+      "mediaType": "movie",
+      "title": "The Furious",
+      "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
       "id": 1295400,
@@ -300,7 +300,7 @@
       "mediaType": "movie",
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/xhei2GX9L2H1eQlrHeFw44VNLd1.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/z4nSdlQYIHcgaqqCnz1hRSGpEhy.jpg",
       "releaseDate": "2026-06-23",
       "rating": "0.0",
@@ -364,7 +364,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ArpTzQZHWh4UVsgUvV6S7WjTq1n.jpg",
       "releaseDate": "1998-01-16",
       "rating": "7.6",
-      "votes": 3571,
+      "votes": 3572,
       "url": "https://www.themoviedb.org/movie/4995"
     }
   ],
@@ -374,11 +374,11 @@
       "mediaType": "movie",
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/d1AMBt6gxy7Yoz8rHqyCQgvoAXw.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4k99kV4R1bbbrsnjR205v91Xbin.jpg",
       "releaseDate": "2026-05-15",
       "rating": "7.9",
-      "votes": 626,
+      "votes": 634,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -389,9 +389,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "6.3",
-      "votes": 21,
+      "rating": "6.1",
+      "votes": 22,
       "url": "https://www.themoviedb.org/movie/1057265"
+    },
+    {
+      "id": 1308553,
+      "mediaType": "movie",
+      "title": "Hai Jawani Toh Ishq Hona Hai",
+      "overview": "When Jass leaves his marriage over conflicting priorities, a new romance abroad is upended by shocking revelations, forcing him to confront love, loyalty, and the true meaning of commitment.",
+      "poster": "https://image.tmdb.org/t/p/w500/vmlJvz6qVzYgei2V74GvnmcuQfW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l5QgEvlfK6eHPM4YPEk7AArXmh8.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "5.1",
+      "votes": 12,
+      "url": "https://www.themoviedb.org/movie/1308553"
     },
     {
       "id": 1228710,
@@ -402,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6zg7A9ICOthNR2TSXlT51KvXrsA.jpg",
       "releaseDate": "2026-05-22",
       "rating": "6.8",
-      "votes": 419,
+      "votes": 421,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -414,20 +426,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.4",
-      "votes": 133,
+      "votes": 138,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 1308553,
+      "id": 1083381,
       "mediaType": "movie",
-      "title": "Hai Jawani Toh Ishq Hona Hai",
-      "overview": "When Jass leaves his marriage over conflicting priorities, a new romance abroad is upended by shocking revelations, forcing him to confront love, loyalty, and the true meaning of commitment.",
-      "poster": "https://image.tmdb.org/t/p/w500/vmlJvz6qVzYgei2V74GvnmcuQfW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/l5QgEvlfK6eHPM4YPEk7AArXmh8.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "5.3",
-      "votes": 11,
-      "url": "https://www.themoviedb.org/movie/1308553"
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
+      "releaseDate": "2026-05-29",
+      "rating": "6.8",
+      "votes": 422,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1430077,
@@ -442,40 +454,16 @@
       "url": "https://www.themoviedb.org/movie/1430077"
     },
     {
-      "id": 1083381,
+      "id": 931285,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-29",
-      "rating": "6.8",
-      "votes": 418,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "5.7",
-      "votes": 186,
-      "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1065834,
-      "mediaType": "movie",
-      "title": "Kattalan",
-      "overview": "Power-hungry forces clash in the Ivory cartel war-a fierce story of control, vengeance, and survival where compassion vanishes and only the ruthless endure.",
-      "poster": "https://image.tmdb.org/t/p/w500/9OA6y2GdbXuJ5PAMMMawNBIkrZA.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5RkZOvu9FC0A8NypE2BL7oKNOTU.jpg",
-      "releaseDate": "2026-05-14",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4EAAwpylq313qrDqpCxulUrXBNF.jpg",
+      "releaseDate": "2026-05-07",
       "rating": "7.6",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/movie/1065834"
+      "votes": 656,
+      "url": "https://www.themoviedb.org/movie/931285"
     },
     {
       "id": 1367220,
@@ -488,6 +476,18 @@
       "rating": "7.6",
       "votes": 12,
       "url": "https://www.themoviedb.org/movie/1367220"
+    },
+    {
+      "id": 1273221,
+      "mediaType": "movie",
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "5.8",
+      "votes": 188,
+      "url": "https://www.themoviedb.org/movie/1273221"
     }
   ],
   "links": [
