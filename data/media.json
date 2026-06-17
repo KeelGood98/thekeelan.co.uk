@@ -1,8 +1,20 @@
 {
-  "updated": "2026-06-17T12:39:10.557060+00:00",
+  "updated": "2026-06-17T17:37:13.717915+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wENlYOyR10DZzkICmrGUQQX4Ih5.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.2",
+      "votes": 22,
+      "url": "https://www.themoviedb.org/movie/1084244"
+    },
     {
       "id": 1477317,
       "mediaType": "movie",
@@ -11,57 +23,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/nLxu237EJAisFCYKK48hN9Plobx.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uWnBAqtQlSTTYUMehyvL9CoZrTq.jpg",
       "releaseDate": "2026-06-17",
-      "rating": "6.0",
-      "votes": 3,
+      "rating": "7.5",
+      "votes": 15,
       "url": "https://www.themoviedb.org/movie/1477317"
-    },
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.2",
-      "votes": 20,
-      "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
-      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "6.8",
-      "votes": 432,
-      "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1318413,
-      "mediaType": "movie",
-      "title": "Pressure",
-      "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
-      "poster": "https://image.tmdb.org/t/p/w500/9RkDrI8V8QJBjhtyRX7y6Qow3aq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
-      "releaseDate": "2026-05-25",
-      "rating": "8.4",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/movie/1318413"
-    },
-    {
-      "id": 936075,
-      "mediaType": "movie",
-      "title": "Michael",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "poster": "https://image.tmdb.org/t/p/w500/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
-      "releaseDate": "2026-04-22",
-      "rating": "8.6",
-      "votes": 2492,
-      "url": "https://www.themoviedb.org/movie/936075"
     },
     {
       "id": 1339713,
@@ -72,8 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 802,
+      "votes": 804,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
+      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "6.8",
+      "votes": 441,
+      "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
       "id": 1083381,
@@ -84,8 +60,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 560,
+      "votes": 564,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 936075,
+      "mediaType": "movie",
+      "title": "Michael",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "poster": "https://image.tmdb.org/t/p/w500/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
+      "releaseDate": "2026-04-22",
+      "rating": "8.6",
+      "votes": 2502,
+      "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1318413,
+      "mediaType": "movie",
+      "title": "Pressure",
+      "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
+      "poster": "https://image.tmdb.org/t/p/w500/gFjEggtrejCN79r6SXRjM269OtG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+      "releaseDate": "2026-05-25",
+      "rating": "8.1",
+      "votes": 34,
+      "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
       "id": 931285,
@@ -96,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/laR2dpcNpbv83jdlRUNAYPPjH90.jpg",
       "releaseDate": "2026-05-06",
       "rating": "8.0",
-      "votes": 1399,
+      "votes": 1406,
       "url": "https://www.themoviedb.org/movie/931285"
     },
     {
@@ -108,23 +120,47 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
       "releaseDate": "2026-06-03",
       "rating": "5.5",
-      "votes": 292,
+      "votes": 293,
       "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1127384,
-      "mediaType": "movie",
-      "title": "Deep Water",
-      "overview": "A group of international passengers on a flight from Los Angeles to Shanghai is forced to make an emergency landing in shark-infested waters. The terrified group is forced to work together and overcome their differences if they hope to escape their sinking plane and the frenzy of sharks drawn to the wreckage.",
-      "poster": "https://image.tmdb.org/t/p/w500/ZWHxL2ETItcZzeVsVfs6gv3SZ7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iYjlQzWbcFIjWe2WifbEPb4kErp.jpg",
-      "releaseDate": "2026-04-30",
-      "rating": "6.6",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/movie/1127384"
     }
   ],
   "trendingTv": [
+    {
+      "id": 270476,
+      "mediaType": "tv",
+      "title": "Widow's Bay",
+      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
+      "poster": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yx0sfeYOoXol2fjT22SXo9YyviI.jpg",
+      "releaseDate": "2026-04-28",
+      "rating": "8.3",
+      "votes": 152,
+      "url": "https://www.themoviedb.org/tv/270476"
+    },
+    {
+      "id": 276161,
+      "mediaType": "tv",
+      "title": "Teach You a Lesson",
+      "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
+      "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "9.5",
+      "votes": 326,
+      "url": "https://www.themoviedb.org/tv/276161"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3664,
+      "url": "https://www.themoviedb.org/tv/124364"
+    },
     {
       "id": 322430,
       "mediaType": "tv",
@@ -136,6 +172,30 @@
       "rating": "6.4",
       "votes": 10,
       "url": "https://www.themoviedb.org/tv/322430"
+    },
+    {
+      "id": 65942,
+      "mediaType": "tv",
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "poster": "https://image.tmdb.org/t/p/w500/5MrRCj7z92YLWMXHeWKp19eJPYv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/x6y59dJBE1o0r4YRsWVQXE2nnlB.jpg",
+      "releaseDate": "2016-04-04",
+      "rating": "7.9",
+      "votes": 655,
+      "url": "https://www.themoviedb.org/tv/65942"
+    },
+    {
+      "id": 260592,
+      "mediaType": "tv",
+      "title": "Every Year After",
+      "overview": "Six summers to fall in love. One moment to fall apart. A week to get it right. A fun, sweeping, romantic story that asks the question, what if your first love actually was your soulmate?",
+      "poster": "https://image.tmdb.org/t/p/w500/nZGf0jnSJNXLf8o7iSzzX8qxHX9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/to5eI3AWbT4spz1K58mIK5HQRbD.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "8.2",
+      "votes": 37,
+      "url": "https://www.themoviedb.org/tv/260592"
     },
     {
       "id": 220102,
@@ -150,100 +210,40 @@
       "url": "https://www.themoviedb.org/tv/220102"
     },
     {
-      "id": 276161,
+      "id": 60625,
       "mediaType": "tv",
-      "title": "Teach You a Lesson",
-      "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
-      "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "9.5",
-      "votes": 321,
-      "url": "https://www.themoviedb.org/tv/276161"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 3663,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 277439,
-      "mediaType": "tv",
-      "title": "Cape Fear",
-      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dz7p0quExY3L8R4aPj2QJUVhp74.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "6.4",
-      "votes": 39,
-      "url": "https://www.themoviedb.org/tv/277439"
-    },
-    {
-      "id": 106449,
-      "mediaType": "tv",
-      "title": "A Record of a Mortal's Journey to Immortality",
-      "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-      "poster": "https://image.tmdb.org/t/p/w500/i6SYuRHPtODpZ8VX9ql21nj0tDq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
-      "releaseDate": "2020-07-25",
-      "rating": "8.4",
-      "votes": 76,
-      "url": "https://www.themoviedb.org/tv/106449"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9In9QgVJx7PlFOAgVHCKKSbo605.jpg",
+      "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 5355,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "votes": 10978,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 94997,
+      "id": 76479,
       "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.3",
-      "votes": 6029,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "title": "The Boys",
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "poster": "https://image.tmdb.org/t/p/w500/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bq28ajZaoMyzEIm6REelqyqtEDZ.jpg",
+      "releaseDate": "2019-07-25",
+      "rating": "8.5",
+      "votes": 12933,
+      "url": "https://www.themoviedb.org/tv/76479"
     },
     {
-      "id": 270476,
+      "id": 117648,
       "mediaType": "tv",
-      "title": "Widow's Bay",
-      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
-      "poster": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yx0sfeYOoXol2fjT22SXo9YyviI.jpg",
-      "releaseDate": "2026-04-28",
-      "rating": "8.3",
-      "votes": 152,
-      "url": "https://www.themoviedb.org/tv/270476"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 272,
-      "url": "https://www.themoviedb.org/tv/299167"
+      "title": "Clarkson's Farm",
+      "overview": "Follow Jeremy Clarkson as he embarks on his latest adventure, farming. The man who on several occasions claims to be allergic to manual labour takes on the most manually labour intensive job there is. What could possibly go wrong?",
+      "poster": "https://image.tmdb.org/t/p/w500/toVhyqMT3ICfahE7Ad8obJvZHpX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i50h4Gz6e9BMGak5l6gg5qfIjcv.jpg",
+      "releaseDate": "2021-06-11",
+      "rating": "8.5",
+      "votes": 414,
+      "url": "https://www.themoviedb.org/tv/117648"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ew3EqF9VLTxmK64OsHT7p7lr4wT.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "8.0",
-      "votes": 35,
+      "rating": "8.1",
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -332,6 +332,18 @@
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
+      "id": 1671548,
+      "mediaType": "movie",
+      "title": "Dear You",
+      "overview": "Grandma Ye Shurou from Chaoshan lived a simple life, enjoying her twilight years. Her grandson, Xiaowei, burdened by debt, secretly traveled to Thailand to find his rumored billionaire grandfather, Zheng Musheng. However, Xiaowei returned with shocking news: his grandfather was long gone, and the person with whom Grandma had exchanged love letters was a complete stranger. As Xiaowei investigated, a love affair hidden for half a century suddenly surfaced, striking Grandma's heart.",
+      "poster": "https://image.tmdb.org/t/p/w500/rjmhzdVS3Ia535pFawju857e2Na.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dzWGnIAjUafpmY57F6vnm44FwWB.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "9.1",
+      "votes": 29,
+      "url": "https://www.themoviedb.org/movie/1671548"
+    },
+    {
       "id": 1612018,
       "mediaType": "movie",
       "title": "Jackass: Best and Last",
@@ -354,18 +366,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/950028"
-    },
-    {
-      "id": 1154538,
-      "mediaType": "movie",
-      "title": "Nirvanna the Band the Show the Movie",
-      "overview": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
-      "poster": "https://image.tmdb.org/t/p/w500/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gYxOlYtLvGNrzYm6kQBcY5mqKja.jpg",
-      "releaseDate": "2026-07-01",
-      "rating": "7.6",
-      "votes": 65,
-      "url": "https://www.themoviedb.org/movie/1154538"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-15",
       "rating": "7.9",
-      "votes": 800,
+      "votes": 803,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.8",
-      "votes": 430,
+      "votes": 435,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 223,
+      "votes": 225,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
@@ -459,10 +459,10 @@
       "title": "Toy Story 5",
       "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
       "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/coyHrYHD2xHhDoYD6o4uwoJ2o7b.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wENlYOyR10DZzkICmrGUQQX4Ih5.jpg",
       "releaseDate": "2026-06-19",
-      "rating": "7.6",
-      "votes": 17,
+      "rating": "7.2",
+      "votes": 22,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
       "rating": "6.9",
-      "votes": 558,
+      "votes": 562,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lj6AaDqDUbzm2XJltFNHeAm2uXN.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.5",
-      "votes": 292,
+      "votes": 293,
       "url": "https://www.themoviedb.org/movie/1273221"
     }
   ],
