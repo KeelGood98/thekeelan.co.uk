@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-19T17:02:27.712271+00:00",
+  "updated": "2026-06-19T21:48:49.248983+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kwq3lxPrBfyyVRRSDSlojwCPzwH.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.3",
-      "votes": 90,
+      "votes": 99,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1451344,
-      "mediaType": "movie",
-      "title": "Husbands in Action",
-      "overview": "A detective teams up with his ex-wife's new husband to chase down her kidnappers. Can this unlikely duo put aside their differences for one wild rescue?",
-      "poster": "https://image.tmdb.org/t/p/w500/ciLsGoyr0B8demTLDbLJmEUOHI5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kEiQORCwEXSeoG4SK0e4sezHboJ.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1451344"
     },
     {
       "id": 1339713,
@@ -36,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 844,
+      "votes": 854,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -48,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 614,
+      "votes": 621,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 614945,
-      "mediaType": "movie",
-      "title": "Voicemails for Isabelle",
-      "overview": "A young woman's hilariously confessional voicemails to her late sister are unknowingly redirected to a stranger, who begins to fall in love from afar.",
-      "poster": "https://image.tmdb.org/t/p/w500/canZTWSxACSnAluir3dCtMxKpA1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
-      "releaseDate": "2026-06-20",
-      "rating": "6.6",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/614945"
     },
     {
       "id": 969681,
@@ -76,18 +52,6 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
-      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "6.7",
-      "votes": 508,
-      "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
       "id": 1477317,
       "mediaType": "movie",
       "title": "Your Fault: London",
@@ -96,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wQOhbCP6H8bO5ddlXDZT207orew.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.6",
-      "votes": 57,
+      "votes": 64,
       "url": "https://www.themoviedb.org/movie/1477317"
     },
     {
@@ -107,9 +71,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/zm0KAbOjlt9eR5y7vDiL2dEOwMl.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
       "releaseDate": "2026-04-22",
-      "rating": "8.6",
-      "votes": 2641,
+      "rating": "8.7",
+      "votes": 2659,
       "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "poster": "https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "6.7",
+      "votes": 517,
+      "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
       "id": 1318413,
@@ -120,11 +96,83 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-05-25",
       "rating": "7.7",
-      "votes": 50,
+      "votes": 53,
       "url": "https://www.themoviedb.org/movie/1318413"
+    },
+    {
+      "id": 931285,
+      "mediaType": "movie",
+      "title": "Mortal Kombat II",
+      "overview": "The fan favorite champions—now joined by Johnny Cage himself—are pitted against one another in the ultimate, no-holds barred, gory battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
+      "poster": "https://image.tmdb.org/t/p/w500/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/laR2dpcNpbv83jdlRUNAYPPjH90.jpg",
+      "releaseDate": "2026-05-06",
+      "rating": "8.0",
+      "votes": 1464,
+      "url": "https://www.themoviedb.org/movie/931285"
+    },
+    {
+      "id": 614945,
+      "mediaType": "movie",
+      "title": "Voicemails for Isabelle",
+      "overview": "A young woman's hilariously confessional voicemails to her late sister are unknowingly redirected to a stranger, who begins to fall in love from afar.",
+      "poster": "https://image.tmdb.org/t/p/w500/canZTWSxACSnAluir3dCtMxKpA1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2WU6Y6aonzD6uAaCmNnEFlesxxJ.jpg",
+      "releaseDate": "2026-06-20",
+      "rating": "7.0",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/614945"
     }
   ],
   "trendingTv": [
+    {
+      "id": 278178,
+      "mediaType": "tv",
+      "title": "I Will Find You",
+      "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
+      "poster": "https://image.tmdb.org/t/p/w500/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2yDDwP48GqL9Fpb6UEgGHyqM63y.jpg",
+      "releaseDate": "2026-06-18",
+      "rating": "8.5",
+      "votes": 22,
+      "url": "https://www.themoviedb.org/tv/278178"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3680,
+      "url": "https://www.themoviedb.org/tv/124364"
+    },
+    {
+      "id": 270476,
+      "mediaType": "tv",
+      "title": "Widow's Bay",
+      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
+      "poster": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/u6XtMg9Ai9siEbEs0UudPS3EaZY.jpg",
+      "releaseDate": "2026-04-28",
+      "rating": "8.2",
+      "votes": 182,
+      "url": "https://www.themoviedb.org/tv/270476"
+    },
+    {
+      "id": 276161,
+      "mediaType": "tv",
+      "title": "Teach You a Lesson",
+      "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
+      "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "9.5",
+      "votes": 378,
+      "url": "https://www.themoviedb.org/tv/276161"
+    },
     {
       "id": 203744,
       "mediaType": "tv",
@@ -138,66 +186,6 @@
       "url": "https://www.themoviedb.org/tv/203744"
     },
     {
-      "id": 278178,
-      "mediaType": "tv",
-      "title": "I Will Find You",
-      "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
-      "poster": "https://image.tmdb.org/t/p/w500/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2yDDwP48GqL9Fpb6UEgGHyqM63y.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "8.3",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/tv/278178"
-    },
-    {
-      "id": 276161,
-      "mediaType": "tv",
-      "title": "Teach You a Lesson",
-      "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
-      "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "9.5",
-      "votes": 370,
-      "url": "https://www.themoviedb.org/tv/276161"
-    },
-    {
-      "id": 270476,
-      "mediaType": "tv",
-      "title": "Widow's Bay",
-      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
-      "poster": "https://image.tmdb.org/t/p/w500/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/u6XtMg9Ai9siEbEs0UudPS3EaZY.jpg",
-      "releaseDate": "2026-04-28",
-      "rating": "8.2",
-      "votes": 181,
-      "url": "https://www.themoviedb.org/tv/270476"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 3679,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 65942,
-      "mediaType": "tv",
-      "title": "Re:ZERO -Starting Life in Another World-",
-      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-      "poster": "https://image.tmdb.org/t/p/w500/5MrRCj7z92YLWMXHeWKp19eJPYv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/x6y59dJBE1o0r4YRsWVQXE2nnlB.jpg",
-      "releaseDate": "2016-04-04",
-      "rating": "7.9",
-      "votes": 660,
-      "url": "https://www.themoviedb.org/tv/65942"
-    },
-    {
       "id": 322430,
       "mediaType": "tv",
       "title": "The Polygamist",
@@ -205,9 +193,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/3VEHSG9ZCWcTGbU2ciiU6iDzemP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hGCQ0tsJMpKjfrnCyYY0kMY2kY1.jpg",
       "releaseDate": "2026-06-12",
-      "rating": "7.4",
-      "votes": 17,
+      "rating": "7.8",
+      "votes": 20,
       "url": "https://www.themoviedb.org/tv/322430"
+    },
+    {
+      "id": 220102,
+      "mediaType": "tv",
+      "title": "Spider-Noir",
+      "overview": "Ben Reilly, an aging and down on his luck private investigator in 1930s New York, is forced to grapple with his past life as the city's one and only superhero.",
+      "poster": "https://image.tmdb.org/t/p/w500/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mkwVoyP9bFSmfVqU8FJyem52hVR.jpg",
+      "releaseDate": "2026-05-25",
+      "rating": "8.5",
+      "votes": 559,
+      "url": "https://www.themoviedb.org/tv/220102"
     },
     {
       "id": 299167,
@@ -218,32 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.4",
-      "votes": 278,
+      "votes": 279,
       "url": "https://www.themoviedb.org/tv/299167"
     },
     {
-      "id": 296285,
+      "id": 94997,
       "mediaType": "tv",
-      "title": "Oasis",
-      "overview": "Oasis is the most luxurious holiday resort in the country — a paradise reserved for the wealthiest families, featuring private beaches, VIP facilities, and impenetrable security. The perfect place to spend the best summer of your life. But everything falls apart when the police storm the resort to investigate a mysterious disappearance. In such an exclusive place, everyone is a suspect — and no one can leave until the culprit is found.",
-      "poster": "https://image.tmdb.org/t/p/w500/vWBtcjETIUd45OoIULEqc6qZxM7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/n4B2dVVScH4L4Scvy7mTboYcfGQ.jpg",
-      "releaseDate": "2026-06-19",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/296285"
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.3",
+      "votes": 6037,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 277439,
+      "id": 65942,
       "mediaType": "tv",
-      "title": "Cape Fear",
-      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dz7p0quExY3L8R4aPj2QJUVhp74.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "6.6",
-      "votes": 44,
-      "url": "https://www.themoviedb.org/tv/277439"
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "poster": "https://image.tmdb.org/t/p/w500/5MrRCj7z92YLWMXHeWKp19eJPYv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/x6y59dJBE1o0r4YRsWVQXE2nnlB.jpg",
+      "releaseDate": "2016-04-04",
+      "rating": "7.9",
+      "votes": 661,
+      "url": "https://www.themoviedb.org/tv/65942"
     }
   ],
   "upcomingMovies": [
