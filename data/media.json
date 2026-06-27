@@ -1,8 +1,20 @@
 {
-  "updated": "2026-06-27T10:35:06.273600+00:00",
+  "updated": "2026-06-27T15:51:28.399920+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1301421,
+      "mediaType": "movie",
+      "title": "The Sheep Detectives",
+      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "poster": "https://image.tmdb.org/t/p/w500/iKy5460GdsoknM8ppmGlJbKxAKa.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
+      "releaseDate": "2026-04-30",
+      "rating": "7.7",
+      "votes": 330,
+      "url": "https://www.themoviedb.org/movie/1301421"
+    },
     {
       "id": 1339713,
       "mediaType": "movie",
@@ -12,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 987,
+      "votes": 988,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1301421,
-      "mediaType": "movie",
-      "title": "The Sheep Detectives",
-      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
-      "poster": "https://image.tmdb.org/t/p/w500/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
-      "releaseDate": "2026-04-30",
-      "rating": "7.7",
-      "votes": 317,
-      "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
       "id": 1084244,
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.5",
-      "votes": 313,
+      "votes": 316,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -48,20 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 734,
+      "votes": 737,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1413976,
-      "mediaType": "movie",
-      "title": "Citizen Vigilante",
-      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
-      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3Ckkdh0VTcFPwpBJ6jMAS3qIkgJ.jpg",
-      "releaseDate": "2026-06-19",
-      "rating": "6.7",
-      "votes": 63,
-      "url": "https://www.themoviedb.org/movie/1413976"
     },
     {
       "id": 1081003,
@@ -72,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vk5IwZNS35wh6rNmqB1ns6XuiyI.jpg",
       "releaseDate": "2026-06-23",
       "rating": "6.2",
-      "votes": 134,
+      "votes": 145,
       "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1413976,
+      "mediaType": "movie",
+      "title": "Citizen Vigilante",
+      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
+      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3Ckkdh0VTcFPwpBJ6jMAS3qIkgJ.jpg",
+      "releaseDate": "2026-06-19",
+      "rating": "6.9",
+      "votes": 69,
+      "url": "https://www.themoviedb.org/movie/1413976"
     },
     {
       "id": 454639,
@@ -84,32 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pSptA1YdHreII6OLAvXbnYytwcz.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.2",
-      "votes": 308,
+      "votes": 310,
       "url": "https://www.themoviedb.org/movie/454639"
-    },
-    {
-      "id": 1340206,
-      "mediaType": "movie",
-      "title": "Tuner",
-      "overview": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.",
-      "poster": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dpHoPHMSMkFZWt44FGkpEZ61Ptd.jpg",
-      "releaseDate": "2026-05-21",
-      "rating": "7.1",
-      "votes": 97,
-      "url": "https://www.themoviedb.org/movie/1340206"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/reZ8NInXjMkkaOpUHcI3Pn7iaRN.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "5.5",
-      "votes": 357,
-      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 936075,
@@ -120,8 +96,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ufSwlnECLoUbBjPrFqEQcWBzHwc.jpg",
       "releaseDate": "2026-04-22",
       "rating": "8.7",
-      "votes": 3021,
+      "votes": 3023,
       "url": "https://www.themoviedb.org/movie/936075"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pclNFoWcWDeoaQ2pwrXPPw1mjs7.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "7.0",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1315772"
     }
   ],
   "trendingTv": [
@@ -134,32 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.3",
-      "votes": 6295,
+      "votes": 6297,
       "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 136315,
-      "mediaType": "tv",
-      "title": "The Bear",
-      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-      "releaseDate": "2022-06-23",
-      "rating": "8.1",
-      "votes": 1754,
-      "url": "https://www.themoviedb.org/tv/136315"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 3786,
-      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 296206,
@@ -174,28 +150,16 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 286360,
+      "id": 136315,
       "mediaType": "tv",
-      "title": "Notes from the Last Row",
-      "overview": "A literature professor discovers a student's talent and offers him writing lessons — but as he sinks into the story, their sessions spiral into chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/paRFCxAJRZOypfgnzYLo6KH5jjO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "9.4",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/tv/286360"
-    },
-    {
-      "id": 106449,
-      "mediaType": "tv",
-      "title": "A Record of a Mortal's Journey to Immortality",
-      "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-      "poster": "https://image.tmdb.org/t/p/w500/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
-      "releaseDate": "2020-07-25",
-      "rating": "8.4",
-      "votes": 79,
-      "url": "https://www.themoviedb.org/tv/106449"
+      "title": "The Bear",
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+      "releaseDate": "2022-06-23",
+      "rating": "8.1",
+      "votes": 1755,
+      "url": "https://www.themoviedb.org/tv/136315"
     },
     {
       "id": 278178,
@@ -206,8 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
       "releaseDate": "2026-06-18",
       "rating": "8.3",
-      "votes": 129,
+      "votes": 133,
       "url": "https://www.themoviedb.org/tv/278178"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3787,
+      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 82452,
@@ -234,16 +210,40 @@
       "url": "https://www.themoviedb.org/tv/219971"
     },
     {
-      "id": 270476,
+      "id": 286360,
       "mediaType": "tv",
-      "title": "Widow's Bay",
-      "overview": "The mayor of a New England town resolves to turn it into the next tourist hot spot, despite local warnings that it's cursed.",
-      "poster": "https://image.tmdb.org/t/p/w500/vKq8XEJKxQTHd2Bm5zZMFPUrke7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/u6XtMg9Ai9siEbEs0UudPS3EaZY.jpg",
-      "releaseDate": "2026-04-28",
-      "rating": "8.2",
-      "votes": 222,
-      "url": "https://www.themoviedb.org/tv/270476"
+      "title": "Notes from the Last Row",
+      "overview": "A literature professor discovers a student's talent and offers him writing lessons — but as he sinks into the story, their sessions spiral into chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/paRFCxAJRZOypfgnzYLo6KH5jjO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "9.4",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/tv/286360"
+    },
+    {
+      "id": 106449,
+      "mediaType": "tv",
+      "title": "A Record of a Mortal's Journey to Immortality",
+      "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
+      "poster": "https://image.tmdb.org/t/p/w500/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
+      "releaseDate": "2020-07-25",
+      "rating": "8.4",
+      "votes": 79,
+      "url": "https://www.themoviedb.org/tv/106449"
+    },
+    {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.3",
+      "votes": 310,
+      "url": "https://www.themoviedb.org/tv/299167"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/pclNFoWcWDeoaQ2pwrXPPw1mjs7.jpg",
       "releaseDate": "2026-07-01",
-      "rating": "6.9",
-      "votes": 11,
+      "rating": "7.0",
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -296,18 +296,6 @@
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
-      "id": 1130948,
-      "mediaType": "movie",
-      "title": "Rosebush Pruning",
-      "overview": "In a Spanish villa, American siblings Jack, Ed, Anna and Robert wallow in isolation and their inherited fortune. When Jack wants to move in with his girlfriend and Ed uncovers the truth about their mother’s death, the fabric of the family begins to unravel.",
-      "poster": "https://image.tmdb.org/t/p/w500/rEn0kHtZAjb44R2Jv0FUBLdFPsY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "7.4",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1130948"
-    },
-    {
       "id": 950028,
       "mediaType": "movie",
       "title": "The Invite",
@@ -318,6 +306,18 @@
       "rating": "8.0",
       "votes": 1,
       "url": "https://www.themoviedb.org/movie/950028"
+    },
+    {
+      "id": 1130948,
+      "mediaType": "movie",
+      "title": "Rosebush Pruning",
+      "overview": "In a Spanish villa, American siblings Jack, Ed, Anna and Robert wallow in isolation and their inherited fortune. When Jack wants to move in with his girlfriend and Ed uncovers the truth about their mother’s death, the fabric of the family begins to unravel.",
+      "poster": "https://image.tmdb.org/t/p/w500/rEn0kHtZAjb44R2Jv0FUBLdFPsY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vcZ3UUVmFNk90DBSrTBlTKCdbbE.jpg",
+      "releaseDate": "2026-07-10",
+      "rating": "7.4",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/movie/1130948"
     },
     {
       "id": 1122030,
