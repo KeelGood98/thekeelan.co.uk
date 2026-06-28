@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28T10:53:20.086738+00:00",
+  "updated": "2026-06-28T15:55:54.088466+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 411,
+      "votes": 419,
       "url": "https://www.themoviedb.org/movie/1301421"
-    },
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vk5IwZNS35wh6rNmqB1ns6XuiyI.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.2",
-      "votes": 180,
-      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1084244,
@@ -36,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.5",
-      "votes": 334,
+      "votes": 336,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -60,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 751,
+      "votes": 755,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vk5IwZNS35wh6rNmqB1ns6XuiyI.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.1",
+      "votes": 182,
+      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1413976,
@@ -71,8 +71,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/3Ckkdh0VTcFPwpBJ6jMAS3qIkgJ.jpg",
       "releaseDate": "2026-06-19",
-      "rating": "7.1",
-      "votes": 89,
+      "rating": "7.2",
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1413976"
     },
     {
@@ -83,33 +83,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "7.2",
-      "votes": 319,
+      "rating": "7.1",
+      "votes": 322,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 969681,
+      "id": 1340206,
       "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1397385,
-      "mediaType": "movie",
-      "title": "Little Brother",
-      "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
-      "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bdwv8Hsu4Bnz8aRbH5MQ9clQ0DG.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "6.4",
-      "votes": 69,
-      "url": "https://www.themoviedb.org/movie/1397385"
+      "title": "Tuner",
+      "overview": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.",
+      "poster": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dpHoPHMSMkFZWt44FGkpEZ61Ptd.jpg",
+      "releaseDate": "2026-05-21",
+      "rating": "7.2",
+      "votes": 105,
+      "url": "https://www.themoviedb.org/movie/1340206"
     },
     {
       "id": 1273221,
@@ -122,6 +110,18 @@
       "rating": "5.5",
       "votes": 363,
       "url": "https://www.themoviedb.org/movie/1273221"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.5",
+      "votes": 21,
+      "url": "https://www.themoviedb.org/movie/1315772"
     }
   ],
   "trendingTv": [
@@ -138,18 +138,6 @@
       "url": "https://www.themoviedb.org/tv/246461"
     },
     {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 3795,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
       "id": 94997,
       "mediaType": "tv",
       "title": "House of the Dragon",
@@ -158,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h37hqVLmCW00ImewLAHT1DadOky.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.3",
-      "votes": 6309,
+      "votes": 6312,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3796,
+      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 136315,
@@ -194,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
       "releaseDate": "2026-06-18",
       "rating": "8.2",
-      "votes": 141,
+      "votes": 142,
       "url": "https://www.themoviedb.org/tv/278178"
     },
     {
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 219971,
+      "id": 276161,
       "mediaType": "tv",
-      "title": "The Agency",
-      "overview": "Covert CIA agent Martian is ordered to abandon his undercover life and return to London Station. When the love he left behind unexpectedly reappears, their romance reignites, pitting his career, his real identity and his mission against his heart while hurling them both into a deadly game of international intrigue and espionage.",
-      "poster": "https://image.tmdb.org/t/p/w500/fDZgOeTiplrl0skvK6IIyejHLQF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9itOpkXcVrJDlGvRDMaLjUdTwrs.jpg",
-      "releaseDate": "2024-12-01",
-      "rating": "7.1",
-      "votes": 227,
-      "url": "https://www.themoviedb.org/tv/219971"
+      "title": "Teach You a Lesson",
+      "overview": "An inspector from the Educational Rights Protection Bureau (ERPB) who is authorized by the government to use physical intervention and unconventional methods to discipline delinquent students and reform the educational system.",
+      "poster": "https://image.tmdb.org/t/p/w500/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vyG93jhmPL7tBIhRtCLa5mdBKob.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "9.5",
+      "votes": 514,
+      "url": "https://www.themoviedb.org/tv/276161"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
-      "rating": "7.0",
-      "votes": 15,
+      "rating": "7.1",
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1JlfUuvvX5xLP2LIDah4JhWUtTx.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/96chPcURxg5thGyLqxO6otyxHFR.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "4.0",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1169516"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6tROOVmV5vRymO2g52aR8kWlfoT.jpg",
       "releaseDate": "2026-06-19",
       "rating": "5.6",
-      "votes": 16,
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1392469"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.5",
-      "votes": 332,
+      "votes": 335,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vk5IwZNS35wh6rNmqB1ns6XuiyI.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.1",
-      "votes": 174,
+      "votes": 181,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4lj7MZtcIDI2FmZXGkFWh0sNCsq.jpg",
       "releaseDate": "2026-05-22",
       "rating": "6.7",
-      "votes": 526,
+      "votes": 527,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-29",
       "rating": "6.9",
-      "votes": 749,
+      "votes": 753,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.2",
-      "votes": 318,
+      "votes": 319,
       "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
