@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-29T17:18:42.351040+00:00",
+  "updated": "2026-06-29T21:58:47.961384+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,35 +9,11 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/u5BkYDM5gfK4wINfoIFMAcEUKhx.jpg",
       "releaseDate": "2026-05-13",
       "rating": "7.9",
-      "votes": 1030,
+      "votes": 1041,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.2",
-      "votes": 219,
-      "url": "https://www.themoviedb.org/movie/1081003"
-    },
-    {
-      "id": 1314481,
-      "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.5",
-      "votes": 843,
-      "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
       "id": 1301421,
@@ -48,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 501,
+      "votes": 510,
       "url": "https://www.themoviedb.org/movie/1301421"
-    },
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/a6H2U7pjibMia41TwyFVd1PVQw3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.5",
-      "votes": 357,
-      "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
       "id": 1083381,
@@ -72,8 +36,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 773,
+      "votes": 779,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.2",
+      "votes": 222,
+      "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/a6H2U7pjibMia41TwyFVd1PVQw3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.5",
+      "votes": 363,
+      "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.5",
+      "votes": 848,
+      "url": "https://www.themoviedb.org/movie/1314481"
+    },
+    {
+      "id": 1413976,
+      "mediaType": "movie",
+      "title": "Citizen Vigilante",
+      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
+      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
+      "releaseDate": "2026-06-19",
+      "rating": "6.9",
+      "votes": 127,
+      "url": "https://www.themoviedb.org/movie/1413976"
     },
     {
       "id": 1315772,
@@ -84,32 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.9",
-      "votes": 30,
+      "votes": 31,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
-      "id": 1413976,
+      "id": 1397385,
       "mediaType": "movie",
-      "title": "Citizen Vigilante",
-      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
-      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
-      "releaseDate": "2026-06-19",
-      "rating": "7.0",
-      "votes": 119,
-      "url": "https://www.themoviedb.org/movie/1413976"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/969681"
+      "title": "Little Brother",
+      "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
+      "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sbQ3laeMPGNcKoeNguC2f7rSxWT.jpg",
+      "releaseDate": "2026-06-18",
+      "rating": "6.2",
+      "votes": 112,
+      "url": "https://www.themoviedb.org/movie/1397385"
     },
     {
       "id": 1340206,
@@ -117,10 +117,10 @@
       "title": "Tuner",
       "overview": "A gifted piano tuner's meticulous skills for tuning pianos lead him to discover an unexpected aptitude for cracking safes, turning his life upside down.",
       "poster": "https://image.tmdb.org/t/p/w500/5OvA3i9wZs5jHu0DCrfmXlzAM67.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dpHoPHMSMkFZWt44FGkpEZ61Ptd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5k0SdQeQV2xEaGBXG1Oc8d05bkL.jpg",
       "releaseDate": "2026-05-21",
       "rating": "7.2",
-      "votes": 112,
+      "votes": 113,
       "url": "https://www.themoviedb.org/movie/1340206"
     }
   ],
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h37hqVLmCW00ImewLAHT1DadOky.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.3",
-      "votes": 6361,
+      "votes": 6373,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3825,
+      "votes": 3832,
       "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 296206,
-      "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "8.1",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 136315,
@@ -170,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
       "releaseDate": "2022-06-23",
       "rating": "8.1",
-      "votes": 1765,
+      "votes": 1767,
       "url": "https://www.themoviedb.org/tv/136315"
     },
     {
@@ -182,20 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
       "releaseDate": "2024-02-22",
       "rating": "7.8",
-      "votes": 1159,
+      "votes": 1160,
       "url": "https://www.themoviedb.org/tv/82452"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5373,
-      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
       "id": 60625,
@@ -210,6 +186,30 @@
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "8.1",
+      "votes": 12,
+      "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
+      "id": 219971,
+      "mediaType": "tv",
+      "title": "The Agency",
+      "overview": "Covert CIA agent Martian is ordered to abandon his undercover life and return to London Station. When the love he left behind unexpectedly reappears, their romance reignites, pitting his career, his real identity and his mission against his heart while hurling them both into a deadly game of international intrigue and espionage.",
+      "poster": "https://image.tmdb.org/t/p/w500/zoLZbm5gtTQurjMxp5VOdHIpMmz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9itOpkXcVrJDlGvRDMaLjUdTwrs.jpg",
+      "releaseDate": "2024-12-01",
+      "rating": "7.1",
+      "votes": 229,
+      "url": "https://www.themoviedb.org/tv/219971"
+    },
+    {
       "id": 278178,
       "mediaType": "tv",
       "title": "I Will Find You",
@@ -218,8 +218,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
       "releaseDate": "2026-06-18",
       "rating": "8.3",
-      "votes": 153,
+      "votes": 155,
       "url": "https://www.themoviedb.org/tv/278178"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5374,
+      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
       "id": 286360,
@@ -229,21 +241,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/paRFCxAJRZOypfgnzYLo6KH5jjO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "8.9",
-      "votes": 11,
+      "rating": "8.8",
+      "votes": 12,
       "url": "https://www.themoviedb.org/tv/286360"
-    },
-    {
-      "id": 65942,
-      "mediaType": "tv",
-      "title": "Re:ZERO -Starting Life in Another World-",
-      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
-      "poster": "https://image.tmdb.org/t/p/w500/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
-      "releaseDate": "2016-04-04",
-      "rating": "7.9",
-      "votes": 668,
-      "url": "https://www.themoviedb.org/tv/65942"
     }
   ],
   "upcomingMovies": [
@@ -320,18 +320,6 @@
       "url": "https://www.themoviedb.org/movie/1130948"
     },
     {
-      "id": 539745,
-      "mediaType": "movie",
-      "title": "Animal Farm",
-      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
-      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "6.4",
-      "votes": 78,
-      "url": "https://www.themoviedb.org/movie/539745"
-    },
-    {
       "id": 1122030,
       "mediaType": "movie",
       "title": "Alpha",
@@ -342,6 +330,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1122030"
+    },
+    {
+      "id": 539745,
+      "mediaType": "movie",
+      "title": "Animal Farm",
+      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
+      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "6.5",
+      "votes": 79,
+      "url": "https://www.themoviedb.org/movie/539745"
     },
     {
       "id": 1154538,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1154538"
     },
     {
-      "id": 80880,
+      "id": 1442396,
       "mediaType": "movie",
-      "title": "Aarya",
-      "overview": "Aarya is a happy-go-lucky young man who goes to college. When he falls in love with Geetha at first sight, he proposes to her - in front of her boyfriend Ajay, who recently also proposed to her. She bluntly refuses, but ...",
-      "poster": "https://image.tmdb.org/t/p/w500/eZbbK3zonsZ8BoHLKbeqLcYmky3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mjXDyqDdbxMpLUorVfjeWCVd7OJ.jpg",
-      "releaseDate": "2026-07-21",
-      "rating": "6.5",
-      "votes": 51,
-      "url": "https://www.themoviedb.org/movie/80880"
+      "title": "Nagabandham",
+      "overview": "A chosen warrior protects a mystical, serpent-bound Himalayan temple from those seeking to steal the power of the Brahma Kamalam, a divine relic.",
+      "poster": "https://image.tmdb.org/t/p/w500/7r4QUxZ454CSIRLWa1vjNyBG5xk.jpg",
+      "backdrop": "",
+      "releaseDate": "2026-07-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1442396"
     }
   ],
   "nowPlayingMovies": [
