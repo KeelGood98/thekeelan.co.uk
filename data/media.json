@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01T11:41:23.064608+00:00",
+  "updated": "2026-07-01T16:57:42.970288+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.1",
-      "votes": 1277,
+      "votes": 1302,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -23,9 +23,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
-      "rating": "9.5",
-      "votes": 6,
+      "rating": "7.3",
+      "votes": 18,
       "url": "https://www.themoviedb.org/movie/1202033"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.9",
+      "votes": 40,
+      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1081003,
@@ -36,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.2",
-      "votes": 263,
+      "votes": 270,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -48,20 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 569,
+      "votes": 573,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
-      "id": 1314481,
+      "id": 1084244,
       "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/p35IoKfBtJDNiWJMO8ZEtIMZSfW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.8",
-      "votes": 997,
-      "url": "https://www.themoviedb.org/movie/1314481"
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.4",
+      "votes": 396,
+      "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
       "id": 1083381,
@@ -76,67 +88,43 @@
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
-      "id": 1084244,
+      "id": 1368337,
       "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.4",
-      "votes": 394,
-      "url": "https://www.themoviedb.org/movie/1084244"
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/krVa7rKCQb4OBfsr2LTJv4rTz5q.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
-      "id": 1413976,
+      "id": 1314481,
       "mediaType": "movie",
-      "title": "Citizen Vigilante",
-      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
-      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
-      "releaseDate": "2026-06-19",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/p35IoKfBtJDNiWJMO8ZEtIMZSfW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
       "rating": "6.8",
-      "votes": 145,
-      "url": "https://www.themoviedb.org/movie/1413976"
+      "votes": 1001,
+      "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
-      "id": 1315772,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.8",
-      "votes": 36,
-      "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1397385,
-      "mediaType": "movie",
-      "title": "Little Brother",
-      "overview": "A tightly wound realtor's picture-perfect life gets an extreme makeover when his lovably chaotic \"little brother\" suddenly reappears.",
-      "poster": "https://image.tmdb.org/t/p/w500/hIJpXb7Xaje2mebN9ylsS7blQzP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bdwv8Hsu4Bnz8aRbH5MQ9clQ0DG.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "6.2",
-      "votes": 132,
-      "url": "https://www.themoviedb.org/movie/1397385"
+      "title": "Moana",
+      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1108427"
     }
   ],
   "trendingTv": [
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.5",
-      "votes": 689,
-      "url": "https://www.themoviedb.org/tv/138502"
-    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -146,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h37hqVLmCW00ImewLAHT1DadOky.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6399,
+      "votes": 6401,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/9Ycz7yYRf9V4jk3YXwcZhFtbNcF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iDnTAeR2WNA62XQG0ivtteDSjd5.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.5",
+      "votes": 690,
+      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
       "id": 124364,
@@ -170,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
       "releaseDate": "2022-06-23",
       "rating": "8.1",
-      "votes": 1771,
+      "votes": 1772,
       "url": "https://www.themoviedb.org/tv/136315"
     },
     {
@@ -186,6 +186,18 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
+      "id": 254420,
+      "mediaType": "tv",
+      "title": "Elle",
+      "overview": "Before Elle Woods was a fish-out-of-water at Harvard, we meet her in 1995 in the tumultuous waters of high school where she encounters tricky friendships, forbidden romance, and questionable fashion choices. In this unexpected chapter of her adolescence, we learn about the experiences that shaped Elle into the iconic young woman we've come to know and love.",
+      "poster": "https://image.tmdb.org/t/p/w500/u0Vj7zhVK0HYxsS3VMzkU37Pebp.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5RpD4vevW4vACPNRXzOcGgZB0mw.jpg",
+      "releaseDate": "2026-07-01",
+      "rating": "10.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/254420"
+    },
+    {
       "id": 82452,
       "mediaType": "tv",
       "title": "Avatar: The Last Airbender",
@@ -194,7 +206,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
       "releaseDate": "2024-02-22",
       "rating": "7.8",
-      "votes": 1171,
+      "votes": 1172,
       "url": "https://www.themoviedb.org/tv/82452"
     },
     {
@@ -210,18 +222,6 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 254420,
-      "mediaType": "tv",
-      "title": "Elle",
-      "overview": "Follow Elle Woods in high school as we learn about the life experiences that shaped her into the iconic young woman we came to know and love in the first Legally Blonde film.",
-      "poster": "https://image.tmdb.org/t/p/w500/u0Vj7zhVK0HYxsS3VMzkU37Pebp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5RpD4vevW4vACPNRXzOcGgZB0mw.jpg",
-      "releaseDate": "2026-07-01",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/254420"
-    },
-    {
       "id": 286360,
       "mediaType": "tv",
       "title": "Notes from the Last Row",
@@ -229,21 +229,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/paRFCxAJRZOypfgnzYLo6KH5jjO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oBJ6dZ6A1tY1O94RmWnJkkQVbLz.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "8.8",
-      "votes": 13,
+      "rating": "8.7",
+      "votes": 15,
       "url": "https://www.themoviedb.org/tv/286360"
     },
     {
-      "id": 60625,
+      "id": 278178,
       "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11031,
-      "url": "https://www.themoviedb.org/tv/60625"
+      "title": "I Will Find You",
+      "overview": "Wrongfully imprisoned for murdering his own son, a father sets out on a desperate rescue mission after learning the boy may still be alive.",
+      "poster": "https://image.tmdb.org/t/p/w500/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/z0R6ToCsMMkLwuQXjzzdd1QCdJv.jpg",
+      "releaseDate": "2026-06-18",
+      "rating": "8.3",
+      "votes": 168,
+      "url": "https://www.themoviedb.org/tv/278178"
     }
   ],
   "upcomingMovies": [
