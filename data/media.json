@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03T16:12:03.039532+00:00",
+  "updated": "2026-07-03T21:42:52.545564+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 1648,
+      "votes": 1681,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -23,33 +23,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
-      "rating": "7.2",
-      "votes": 115,
+      "rating": "7.1",
+      "votes": 137,
       "url": "https://www.themoviedb.org/movie/1202033"
-    },
-    {
-      "id": 1314481,
-      "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.9",
-      "votes": 1106,
-      "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.2",
-      "votes": 320,
-      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1315772,
@@ -60,8 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 63,
+      "votes": 67,
       "url": "https://www.themoviedb.org/movie/1315772"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.9",
+      "votes": 1120,
+      "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
       "id": 1084244,
@@ -72,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 420,
+      "votes": 426,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.3",
+      "votes": 323,
+      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1301421,
@@ -84,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 618,
+      "votes": 623,
       "url": "https://www.themoviedb.org/movie/1301421"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1083381,
@@ -96,32 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 835,
+      "votes": 839,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
-      "id": 1108427,
+      "id": 1413976,
       "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "9.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/movie/1108427"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1368337"
+      "title": "Citizen Vigilante",
+      "overview": "A man takes justice into his own hands, hunting down criminals. His vigilante crusade makes him a social media star but puts him at odds with the local police chief.",
+      "poster": "https://image.tmdb.org/t/p/w500/6LmJD3Wohe0g4U62wgi7RyJqfE4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
+      "releaseDate": "2026-06-19",
+      "rating": "6.6",
+      "votes": 168,
+      "url": "https://www.themoviedb.org/movie/1413976"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2138,
+      "votes": 2141,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6422,
+      "votes": 6424,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -158,20 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3885,
+      "votes": 3894,
       "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 253960,
-      "mediaType": "tv",
-      "title": "Human Vapor",
-      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
-      "releaseDate": "2026-07-02",
-      "rating": "9.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/tv/253960"
     },
     {
       "id": 296206,
@@ -186,28 +174,28 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 299167,
+      "id": 138502,
       "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 345,
-      "url": "https://www.themoviedb.org/tv/299167"
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/yI3skmBTiworOlwAzuD4haCTF60.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.5",
+      "votes": 704,
+      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
-      "id": 322055,
+      "id": 253960,
       "mediaType": "tv",
-      "title": "The Prosecutor's Proposal",
-      "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
-      "releaseDate": "2026-06-25",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/322055"
+      "title": "Human Vapor",
+      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
+      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
+      "releaseDate": "2026-07-02",
+      "rating": "9.0",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/253960"
     },
     {
       "id": 136315,
@@ -218,20 +206,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
       "releaseDate": "2022-06-23",
       "rating": "8.1",
-      "votes": 1778,
+      "votes": 1780,
       "url": "https://www.themoviedb.org/tv/136315"
     },
     {
-      "id": 138502,
+      "id": 299167,
       "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/yI3skmBTiworOlwAzuD4haCTF60.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.5",
-      "votes": 703,
-      "url": "https://www.themoviedb.org/tv/138502"
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.3",
+      "votes": 347,
+      "url": "https://www.themoviedb.org/tv/299167"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11046,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
       "id": 82452,
@@ -242,7 +242,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
       "releaseDate": "2024-02-22",
       "rating": "7.8",
-      "votes": 1185,
+      "votes": 1186,
       "url": "https://www.themoviedb.org/tv/82452"
     }
   ],
@@ -279,8 +279,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "8.5",
-      "votes": 2,
+      "rating": "6.9",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -315,8 +315,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "6.5",
-      "votes": 80,
+      "rating": "6.4",
+      "votes": 81,
       "url": "https://www.themoviedb.org/movie/539745"
     },
     {
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/80880"
     },
     {
-      "id": 1719099,
+      "id": 1339676,
       "mediaType": "movie",
-      "title": "DUMPED",
-      "overview": "As Glenn sits by himself in a park after having his relationship come to an end, his mate Chris appears and takes him on a day out to help get his mind off the whole ordeal.",
-      "poster": "https://image.tmdb.org/t/p/w500/zYXMOMY69oIYqIjeGr9tzAbqQF1.jpg",
-      "backdrop": "",
+      "title": "I, Nobody",
+      "overview": "Rajeevan, an ordinary government employee, witnesses something he was never meant to see and is thrust into the centre of a serious crime. Branded a troublemaker and hunted by the system, he must protect his family while fighting to survive against forces far beyond his control.",
+      "poster": "https://image.tmdb.org/t/p/w500/cCDBsEFFPdTQZtctnpVnhuZ9vss.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3c5ttTlwslCMWwzDfMVCcBzdSRG.jpg",
       "releaseDate": "2026-07-09",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1719099"
+      "url": "https://www.themoviedb.org/movie/1339676"
     }
   ],
   "nowPlayingMovies": [
@@ -374,12 +374,24 @@
       "mediaType": "movie",
       "title": "Disclosure Day",
       "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/7RYO0KTXIJ0rS0LqnCQLxeNR3P3.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 769,
+      "votes": 773,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "releaseDate": "2026-05-29",
+      "rating": "6.9",
+      "votes": 836,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1084244,
@@ -390,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 420,
+      "votes": 422,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1273221,
+      "mediaType": "movie",
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "releaseDate": "2026-06-05",
+      "rating": "5.5",
+      "votes": 398,
+      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 1169516,
@@ -406,39 +430,15 @@
       "url": "https://www.themoviedb.org/movie/1169516"
     },
     {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "releaseDate": "2026-06-05",
-      "rating": "5.4",
-      "votes": 397,
-      "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-29",
-      "rating": "6.9",
-      "votes": 835,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
       "id": 1081003,
       "mediaType": "movie",
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6nlqYWDUpNem3v2bDCxQNSg41aY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "6.3",
-      "votes": 316,
+      "rating": "6.2",
+      "votes": 321,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
-      "rating": "6.7",
-      "votes": 61,
+      "rating": "6.8",
+      "votes": 65,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.0",
-      "votes": 356,
+      "votes": 359,
       "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
