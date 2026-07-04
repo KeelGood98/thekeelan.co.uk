@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T10:35:36.753980+00:00",
+  "updated": "2026-07-04T15:45:29.356449+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 1787,
+      "votes": 1811,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
       "rating": "7.1",
-      "votes": 159,
+      "votes": 166,
       "url": "https://www.themoviedb.org/movie/1202033"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
       "releaseDate": "2026-04-29",
       "rating": "6.9",
-      "votes": 1145,
+      "votes": 1153,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -47,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "6.7",
-      "votes": 73,
+      "rating": "6.6",
+      "votes": 79,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -59,8 +59,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "6.3",
-      "votes": 329,
+      "rating": "6.2",
+      "votes": 336,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.9",
-      "votes": 849,
+      "votes": 854,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 437,
+      "votes": 440,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -96,8 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 641,
+      "votes": 644,
       "url": "https://www.themoviedb.org/movie/1301421"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1413976,
@@ -108,34 +120,22 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
       "releaseDate": "2026-06-19",
       "rating": "6.6",
-      "votes": 172,
+      "votes": 173,
       "url": "https://www.themoviedb.org/movie/1413976"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "7.5",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1108427"
     }
   ],
   "trendingTv": [
     {
-      "id": 125988,
+      "id": 94664,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2154,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+      "releaseDate": "2021-01-11",
+      "rating": "8.6",
+      "votes": 1501,
+      "url": "https://www.themoviedb.org/tv/94664"
     },
     {
       "id": 94997,
@@ -158,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3902,
+      "votes": 3903,
       "url": "https://www.themoviedb.org/tv/124364"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2156,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 296206,
@@ -169,21 +181,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.7",
-      "votes": 15,
+      "rating": "7.3",
+      "votes": 17,
       "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
-      "id": 253960,
-      "mediaType": "tv",
-      "title": "Human Vapor",
-      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
-      "releaseDate": "2026-07-02",
-      "rating": "8.2",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/253960"
     },
     {
       "id": 138502,
@@ -194,32 +194,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
       "releaseDate": "2024-03-20",
       "rating": "8.5",
-      "votes": 706,
+      "votes": 709,
       "url": "https://www.themoviedb.org/tv/138502"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 352,
-      "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 82452,
-      "mediaType": "tv",
-      "title": "Avatar: The Last Airbender",
-      "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-      "poster": "https://image.tmdb.org/t/p/w500/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-      "releaseDate": "2024-02-22",
-      "rating": "7.8",
-      "votes": 1190,
-      "url": "https://www.themoviedb.org/tv/82452"
     },
     {
       "id": 136315,
@@ -234,16 +210,40 @@
       "url": "https://www.themoviedb.org/tv/136315"
     },
     {
-      "id": 106449,
+      "id": 253960,
       "mediaType": "tv",
-      "title": "A Record of a Mortal's Journey to Immortality",
-      "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
-      "poster": "https://image.tmdb.org/t/p/w500/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8NIvQY34tNPc4txNeym2zEYk9ek.jpg",
-      "releaseDate": "2020-07-25",
-      "rating": "8.4",
-      "votes": 81,
-      "url": "https://www.themoviedb.org/tv/106449"
+      "title": "Human Vapor",
+      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
+      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
+      "releaseDate": "2026-07-02",
+      "rating": "8.2",
+      "votes": 6,
+      "url": "https://www.themoviedb.org/tv/253960"
+    },
+    {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.3",
+      "votes": 355,
+      "url": "https://www.themoviedb.org/tv/299167"
+    },
+    {
+      "id": 82452,
+      "mediaType": "tv",
+      "title": "Avatar: The Last Airbender",
+      "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
+      "poster": "https://image.tmdb.org/t/p/w500/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
+      "releaseDate": "2024-02-22",
+      "rating": "7.8",
+      "votes": 1190,
+      "url": "https://www.themoviedb.org/tv/82452"
     }
   ],
   "upcomingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 779,
+      "votes": 782,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
       "rating": "6.9",
-      "votes": 849,
+      "votes": 853,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 437,
+      "votes": 440,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.4",
-      "votes": 401,
+      "votes": 404,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -430,18 +430,6 @@
       "url": "https://www.themoviedb.org/movie/1169516"
     },
     {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-25",
-      "rating": "6.3",
-      "votes": 329,
-      "url": "https://www.themoviedb.org/movie/1081003"
-    },
-    {
       "id": 1315772,
       "mediaType": "movie",
       "title": "Minions & Monsters",
@@ -449,9 +437,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
-      "rating": "6.7",
-      "votes": 71,
+      "rating": "6.6",
+      "votes": 79,
       "url": "https://www.themoviedb.org/movie/1315772"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-25",
+      "rating": "6.2",
+      "votes": 336,
+      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1280738,
@@ -466,6 +466,18 @@
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.0",
+      "votes": 363,
+      "url": "https://www.themoviedb.org/movie/454639"
+    },
+    {
       "id": 1392469,
       "mediaType": "movie",
       "title": "Cocktail 2",
@@ -476,18 +488,6 @@
       "rating": "5.6",
       "votes": 17,
       "url": "https://www.themoviedb.org/movie/1392469"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.0",
-      "votes": 361,
-      "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
   "links": [
