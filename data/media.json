@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-04T15:45:29.356449+00:00",
+  "updated": "2026-07-04T21:38:07.657788+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 1811,
+      "votes": 1833,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -24,56 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
       "rating": "7.1",
-      "votes": 166,
+      "votes": 176,
       "url": "https://www.themoviedb.org/movie/1202033"
-    },
-    {
-      "id": 1314481,
-      "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "6.9",
-      "votes": 1153,
-      "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.6",
-      "votes": 79,
-      "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.2",
-      "votes": 336,
-      "url": "https://www.themoviedb.org/movie/1081003"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "6.9",
-      "votes": 854,
-      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1084244,
@@ -84,19 +36,67 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 440,
+      "votes": 449,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1314481,
+      "mediaType": "movie",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "6.9",
+      "votes": 1158,
+      "url": "https://www.themoviedb.org/movie/1314481"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.3",
+      "votes": 341,
+      "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "6.8",
+      "votes": 858,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.7",
+      "votes": 84,
+      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1301421,
       "mediaType": "movie",
       "title": "The Sheep Detectives",
       "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
-      "poster": "https://image.tmdb.org/t/p/w500/iKy5460GdsoknM8ppmGlJbKxAKa.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 644,
+      "votes": 649,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -126,16 +126,16 @@
   ],
   "trendingTv": [
     {
-      "id": 94664,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-      "releaseDate": "2021-01-11",
-      "rating": "8.6",
-      "votes": 1501,
-      "url": "https://www.themoviedb.org/tv/94664"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2160,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 94997,
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6434,
+      "votes": 6443,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -158,20 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3903,
+      "votes": 3908,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
-      "id": 125988,
+      "id": 94664,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2156,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4n254E5RVKprQbJNV86Kr5WuZaI.jpg",
+      "releaseDate": "2021-01-11",
+      "rating": "8.6",
+      "votes": 1502,
+      "url": "https://www.themoviedb.org/tv/94664"
     },
     {
       "id": 296206,
@@ -181,33 +181,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.3",
-      "votes": 17,
+      "rating": "7.7",
+      "votes": 16,
       "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/yI3skmBTiworOlwAzuD4haCTF60.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.5",
-      "votes": 709,
-      "url": "https://www.themoviedb.org/tv/138502"
-    },
-    {
-      "id": 136315,
-      "mediaType": "tv",
-      "title": "The Bear",
-      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
-      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
-      "releaseDate": "2022-06-23",
-      "rating": "8.1",
-      "votes": 1783,
-      "url": "https://www.themoviedb.org/tv/136315"
     },
     {
       "id": 253960,
@@ -222,6 +198,42 @@
       "url": "https://www.themoviedb.org/tv/253960"
     },
     {
+      "id": 136315,
+      "mediaType": "tv",
+      "title": "The Bear",
+      "overview": "Carmy, a young fine-dining chef, comes home to Chicago to run his family sandwich shop. As he fights to transform the shop and himself, he works alongside a rough-around-the-edges crew that ultimately reveal themselves as his chosen family.",
+      "poster": "https://image.tmdb.org/t/p/w500/eKfVzzEazSIjJMrw9ADa2x8ksLz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aJtG4txtmiRHwAAqENQHZvBs6kY.jpg",
+      "releaseDate": "2022-06-23",
+      "rating": "8.1",
+      "votes": 1784,
+      "url": "https://www.themoviedb.org/tv/136315"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5391,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/yI3skmBTiworOlwAzuD4haCTF60.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.6",
+      "votes": 711,
+      "url": "https://www.themoviedb.org/tv/138502"
+    },
+    {
       "id": 299167,
       "mediaType": "tv",
       "title": "Dutton Ranch",
@@ -230,20 +242,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.3",
-      "votes": 355,
+      "votes": 359,
       "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 82452,
-      "mediaType": "tv",
-      "title": "Avatar: The Last Airbender",
-      "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-      "poster": "https://image.tmdb.org/t/p/w500/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-      "releaseDate": "2024-02-22",
-      "rating": "7.8",
-      "votes": 1190,
-      "url": "https://www.themoviedb.org/tv/82452"
     }
   ],
   "upcomingMovies": [
@@ -253,7 +253,7 @@
       "title": "Spider-Man: Brand New Day",
       "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
       "poster": "https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5glivQffWJkRJttJ5g5LW14kmeC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "0.0",
       "votes": 0,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 782,
+      "votes": 786,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-29",
-      "rating": "6.9",
-      "votes": 853,
+      "rating": "6.8",
+      "votes": 857,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 440,
+      "votes": 446,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.4",
-      "votes": 404,
+      "votes": 409,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
-      "rating": "6.6",
-      "votes": 79,
+      "rating": "6.7",
+      "votes": 84,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "6.2",
-      "votes": 336,
+      "rating": "6.3",
+      "votes": 341,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.0",
-      "votes": 363,
+      "votes": 365,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
