@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05T10:50:17.556423+00:00",
+  "updated": "2026-07-05T15:50:36.434666+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/diOZbaDnB2CIilwd0527AB1qMvW.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 1961,
+      "votes": 1981,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
       "rating": "7.1",
-      "votes": 196,
+      "votes": 203,
       "url": "https://www.themoviedb.org/movie/1202033"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
       "releaseDate": "2026-04-29",
       "rating": "7.0",
-      "votes": 1196,
+      "votes": 1200,
       "url": "https://www.themoviedb.org/movie/1314481"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.8",
-      "votes": 872,
+      "votes": 879,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -60,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 457,
+      "votes": 462,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.7",
+      "votes": 93,
+      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1081003,
@@ -72,20 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.3",
-      "votes": 349,
+      "votes": 354,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
-      "id": 1315772,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/sO3O1szSYuXLwtkobU5TExQ6Wfa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.7",
-      "votes": 90,
-      "url": "https://www.themoviedb.org/movie/1315772"
+      "title": "Moana",
+      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.9",
+      "votes": 6,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1301421,
@@ -96,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t6O6XWelu27BD0OmIDCCufZZT6d.jpg",
       "releaseDate": "2026-04-30",
       "rating": "7.8",
-      "votes": 673,
+      "votes": 683,
       "url": "https://www.themoviedb.org/movie/1301421"
     },
     {
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qJ2KSHJhlFvASBMLbGuP7OFMaFg.jpg",
       "releaseDate": "2026-06-19",
       "rating": "6.6",
-      "votes": 178,
+      "votes": 179,
       "url": "https://www.themoviedb.org/movie/1413976"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1368337"
     }
   ],
   "trendingTv": [
@@ -134,8 +134,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6451,
+      "votes": 6455,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2167,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3918,
+      "url": "https://www.themoviedb.org/tv/124364"
+    },
+    {
+      "id": 253960,
+      "mediaType": "tv",
+      "title": "Human Vapor",
+      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
+      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
+      "releaseDate": "2026-07-02",
+      "rating": "8.5",
+      "votes": 17,
+      "url": "https://www.themoviedb.org/tv/253960"
     },
     {
       "id": 296206,
@@ -150,52 +186,16 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2166,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
       "id": 94664,
       "mediaType": "tv",
       "title": "Mushoku Tensei: Jobless Reincarnation",
       "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
       "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4n254E5RVKprQbJNV86Kr5WuZaI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
       "releaseDate": "2021-01-11",
-      "rating": "8.6",
-      "votes": 1506,
-      "url": "https://www.themoviedb.org/tv/94664"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m7eiSGHFzr584zFmetGqkqaU6BN.jpg",
-      "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3913,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 253960,
-      "mediaType": "tv",
-      "title": "Human Vapor",
-      "overview": "A death on live TV. A culprit who turns to gas. Behind it, a secret project that used and discarded the vulnerable. One detective pursues the dark truth.",
-      "poster": "https://image.tmdb.org/t/p/w500/gSYPd4icODc7QdRA7BK0VqBxBYp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qIMNDToguvTIaVReD8GgeDgfXVr.jpg",
-      "releaseDate": "2026-07-02",
-      "rating": "8.0",
-      "votes": 10,
-      "url": "https://www.themoviedb.org/tv/253960"
+      "votes": 1511,
+      "url": "https://www.themoviedb.org/tv/94664"
     },
     {
       "id": 138502,
@@ -206,8 +206,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vY7Fap4aYz7e4Dk5MwhKdR0GmKR.jpg",
       "releaseDate": "2024-03-20",
       "rating": "8.6",
-      "votes": 712,
+      "votes": 713,
       "url": "https://www.themoviedb.org/tv/138502"
+    },
+    {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.3",
+      "votes": 363,
+      "url": "https://www.themoviedb.org/tv/299167"
     },
     {
       "id": 136315,
@@ -222,28 +234,16 @@
       "url": "https://www.themoviedb.org/tv/136315"
     },
     {
-      "id": 299167,
+      "id": 37854,
       "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 361,
-      "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
-      "id": 82452,
-      "mediaType": "tv",
-      "title": "Avatar: The Last Airbender",
-      "overview": "A young boy known as the Avatar must master the four elemental powers to save a world at war — and fight a ruthless enemy bent on stopping him.",
-      "poster": "https://image.tmdb.org/t/p/w500/lzZpWEaqzP0qVA5nkCc5ASbNcSy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xUB3xFMgsHgPmdWnUWkHTJ03vHa.jpg",
-      "releaseDate": "2024-02-22",
-      "rating": "7.8",
-      "votes": 1198,
-      "url": "https://www.themoviedb.org/tv/82452"
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5391,
+      "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
   "upcomingMovies": [
@@ -316,7 +316,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
       "releaseDate": "2026-07-17",
       "rating": "6.4",
-      "votes": 82,
+      "votes": 83,
       "url": "https://www.themoviedb.org/movie/539745"
     },
     {
