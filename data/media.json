@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-07T11:28:59.288995+00:00",
+  "updated": "2026-07-07T16:58:50.175813+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 2210,
+      "votes": 2223,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -24,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.7",
-      "votes": 79,
+      "votes": 82,
       "url": "https://www.themoviedb.org/movie/1280738"
-    },
-    {
-      "id": 1202033,
-      "mediaType": "movie",
-      "title": "Enola Holmes 3",
-      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
-      "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
-      "releaseDate": "2026-06-30",
-      "rating": "7.0",
-      "votes": 257,
-      "url": "https://www.themoviedb.org/movie/1202033"
     },
     {
       "id": 1108427,
@@ -52,6 +40,18 @@
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
+      "id": 1202033,
+      "mediaType": "movie",
+      "title": "Enola Holmes 3",
+      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
+      "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
+      "releaseDate": "2026-06-30",
+      "rating": "7.0",
+      "votes": 262,
+      "url": "https://www.themoviedb.org/movie/1202033"
+    },
+    {
       "id": 1084244,
       "mediaType": "movie",
       "title": "Toy Story 5",
@@ -60,32 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 502,
+      "votes": 508,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1314481,
-      "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "7.0",
-      "votes": 1278,
-      "url": "https://www.themoviedb.org/movie/1314481"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.4",
-      "votes": 116,
-      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1368337,
@@ -108,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oUozq2XHWifwAVOoS1qHU0qfXqM.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.8",
-      "votes": 916,
+      "votes": 918,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.5",
+      "votes": 118,
+      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1368314,
@@ -120,8 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
       "releaseDate": "2026-05-20",
       "rating": "5.7",
-      "votes": 114,
+      "votes": 117,
       "url": "https://www.themoviedb.org/movie/1368314"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After the loss of her husband, a woman seeks solace with her in-laws. As one by one they transform into deadites, she comes to discover that the vows she took in life - survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "7.7",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/movie/1212763"
     }
   ],
   "trendingTv": [
@@ -134,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6493,
+      "votes": 6492,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 94664,
+      "mediaType": "tv",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+      "releaseDate": "2021-01-11",
+      "rating": "8.5",
+      "votes": 1545,
+      "url": "https://www.themoviedb.org/tv/94664"
     },
     {
       "id": 125988,
@@ -150,18 +162,6 @@
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 94664,
-      "mediaType": "tv",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-      "releaseDate": "2021-01-11",
-      "rating": "8.5",
-      "votes": 1544,
-      "url": "https://www.themoviedb.org/tv/94664"
-    },
-    {
       "id": 253960,
       "mediaType": "tv",
       "title": "Human Vapor",
@@ -174,30 +174,6 @@
       "url": "https://www.themoviedb.org/tv/253960"
     },
     {
-      "id": 296206,
-      "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.3",
-      "votes": 19,
-      "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 377,
-      "url": "https://www.themoviedb.org/tv/299167"
-    },
-    {
       "id": 124364,
       "mediaType": "tv",
       "title": "FROM",
@@ -206,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3937,
+      "votes": 3938,
       "url": "https://www.themoviedb.org/tv/124364"
     },
     {
@@ -234,6 +210,18 @@
       "url": "https://www.themoviedb.org/tv/138502"
     },
     {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.4",
+      "votes": 20,
+      "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
       "id": 60625,
       "mediaType": "tv",
       "title": "Rick and Morty",
@@ -244,6 +232,18 @@
       "rating": "8.7",
       "votes": 11065,
       "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 254420,
+      "mediaType": "tv",
+      "title": "Elle",
+      "overview": "Before Elle Woods was a fish-out-of-water at Harvard, we meet her in 1995 in the tumultuous waters of high school where she encounters tricky friendships, forbidden romance, and questionable fashion choices. In this unexpected chapter of her adolescence, we learn about the experiences that shaped Elle into the iconic young woman we've come to know and love.",
+      "poster": "https://image.tmdb.org/t/p/w500/dpH7Lyrs7z7MlTGgfeibryGnWAv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fcdYPWdwbQynogpa79QLw1ukRvN.jpg",
+      "releaseDate": "2026-07-01",
+      "rating": "8.2",
+      "votes": 26,
+      "url": "https://www.themoviedb.org/tv/254420"
     }
   ],
   "upcomingMovies": [
@@ -279,8 +279,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rQ0f1Y3t9w3DxVxuVydkgqQ2Hji.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "7.3",
-      "votes": 8,
+      "rating": "7.2",
+      "votes": 9,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/80880"
     },
     {
-      "id": 1462322,
+      "id": 1339676,
       "mediaType": "movie",
-      "title": "The Last One for the Road",
-      "overview": "A couple of jovial life-long drunkards run into a shy architecture undergrad, whose way of seeing things will be transformed as the trio wanders from pub to pub in search of a buried treasure.",
-      "poster": "https://image.tmdb.org/t/p/w500/b0oS5FReEJ3rhGzGKY16Qz0Q7w1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/105dMBJGgkM0SzgjV62KzlMDdG8.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "7.5",
-      "votes": 249,
-      "url": "https://www.themoviedb.org/movie/1462322"
+      "title": "I, Nobody",
+      "overview": "Rajeevan, an ordinary government employee, witnesses something he was never meant to see and is thrust into the centre of a serious crime. Branded a troublemaker and hunted by the system, he must protect his family while fighting to survive against forces far beyond his control.",
+      "poster": "https://image.tmdb.org/t/p/w500/cCDBsEFFPdTQZtctnpVnhuZ9vss.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3c5ttTlwslCMWwzDfMVCcBzdSRG.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1339676"
     }
   ],
   "nowPlayingMovies": [
