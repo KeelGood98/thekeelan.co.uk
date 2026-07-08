@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-08T10:47:48.452893+00:00",
+  "updated": "2026-07-08T16:19:03.283698+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 2311,
+      "votes": 2320,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -20,12 +20,24 @@
       "mediaType": "movie",
       "title": "The Furious",
       "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-      "poster": "https://image.tmdb.org/t/p/w500/lwmXob14Bslv1YcVT1VYt3zBfs9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tN0iXjm7qbHnGG4WGrNOGqmTMDt.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.7",
-      "votes": 92,
+      "votes": 94,
       "url": "https://www.themoviedb.org/movie/1280738"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "5.5",
+      "votes": 19,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1202033,
@@ -36,20 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
       "releaseDate": "2026-06-30",
       "rating": "7.0",
-      "votes": 277,
+      "votes": 284,
       "url": "https://www.themoviedb.org/movie/1202033"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "5.6",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1368314,
@@ -60,32 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
       "releaseDate": "2026-05-20",
       "rating": "5.7",
-      "votes": 131,
+      "votes": 133,
       "url": "https://www.themoviedb.org/movie/1368314"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.4",
-      "votes": 124,
-      "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "6.8",
-      "votes": 931,
-      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1368337,
@@ -100,16 +76,16 @@
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
-      "id": 1314481,
+      "id": 1212763,
       "mediaType": "movie",
-      "title": "The Devil Wears Prada 2",
-      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
-      "releaseDate": "2026-04-29",
-      "rating": "7.0",
-      "votes": 1299,
-      "url": "https://www.themoviedb.org/movie/1314481"
+      "title": "Evil Dead Burn",
+      "overview": "After the loss of her husband, a woman seeks solace with her in-laws. As one by one they transform into deadites, she comes to discover that the vows she took in life - survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "7.8",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1084244,
@@ -120,23 +96,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 522,
+      "votes": 524,
       "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "6.8",
+      "votes": 934,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.4",
+      "votes": 125,
+      "url": "https://www.themoviedb.org/movie/1315772"
     }
   ],
   "trendingTv": [
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6503,
-      "url": "https://www.themoviedb.org/tv/94997"
-    },
     {
       "id": 125988,
       "mediaType": "tv",
@@ -146,8 +134,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2183,
+      "votes": 2185,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6504,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.6",
+      "votes": 721,
+      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
       "id": 94664,
@@ -162,16 +174,16 @@
       "url": "https://www.themoviedb.org/tv/94664"
     },
     {
-      "id": 138502,
+      "id": 37854,
       "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.6",
-      "votes": 720,
-      "url": "https://www.themoviedb.org/tv/138502"
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5395,
+      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
       "id": 253960,
@@ -186,18 +198,6 @@
       "url": "https://www.themoviedb.org/tv/253960"
     },
     {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5395,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
       "id": 124364,
       "mediaType": "tv",
       "title": "FROM",
@@ -206,8 +206,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
       "releaseDate": "2022-02-20",
       "rating": "8.5",
-      "votes": 3940,
+      "votes": 3941,
       "url": "https://www.themoviedb.org/tv/124364"
+    },
+    {
+      "id": 258348,
+      "mediaType": "tv",
+      "title": "Clevatess",
+      "overview": "One of the Lords of Dark Beasts, Clevatess’s reign shatters when he revives a hero he personally slayed and adopts an orphaned humanoid baby—the last hope to save a dying world. Now bound together, what fate awaits this unlikely trio?",
+      "poster": "https://image.tmdb.org/t/p/w500/1Pcp1QJS83KY25nTnL2UvJHWUVQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5nmg2cEZxA09VyDvioAuqd5jOW0.jpg",
+      "releaseDate": "2025-07-02",
+      "rating": "8.0",
+      "votes": 84,
+      "url": "https://www.themoviedb.org/tv/258348"
     },
     {
       "id": 299167,
@@ -218,32 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
       "releaseDate": "2026-05-15",
       "rating": "9.3",
-      "votes": 381,
+      "votes": 382,
       "url": "https://www.themoviedb.org/tv/299167"
     },
     {
-      "id": 254420,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "Elle",
-      "overview": "Before Elle Woods was a fish-out-of-water at Harvard, we meet her in 1995 in the tumultuous waters of high school where she encounters tricky friendships, forbidden romance, and questionable fashion choices. In this unexpected chapter of her adolescence, we learn about the experiences that shaped Elle into the iconic young woman we've come to know and love.",
-      "poster": "https://image.tmdb.org/t/p/w500/dpH7Lyrs7z7MlTGgfeibryGnWAv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fcdYPWdwbQynogpa79QLw1ukRvN.jpg",
-      "releaseDate": "2026-07-01",
-      "rating": "8.2",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/tv/254420"
-    },
-    {
-      "id": 60625,
-      "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11071,
-      "url": "https://www.themoviedb.org/tv/60625"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.4",
+      "votes": 22,
+      "url": "https://www.themoviedb.org/tv/296206"
     }
   ],
   "upcomingMovies": [
@@ -308,6 +308,18 @@
       "url": "https://www.themoviedb.org/movie/1215532"
     },
     {
+      "id": 1650856,
+      "mediaType": "movie",
+      "title": "Dastaar",
+      "overview": "A Sikh immigrant rises from newcomer to community leader following a devastating racist attack.",
+      "poster": "https://image.tmdb.org/t/p/w500/3AJff1foTrXplV687A1NAMw7nV4.jpg",
+      "backdrop": "",
+      "releaseDate": "2026-07-17",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1650856"
+    },
+    {
       "id": 80880,
       "mediaType": "movie",
       "title": "Aarya",
@@ -354,18 +366,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1469511"
-    },
-    {
-      "id": 1709896,
-      "mediaType": "movie",
-      "title": "Diamond Made Man Part 2",
-      "overview": "​Diamond Made Man Part 2 :​For the first time in global cinema, the protagonist, Doctor E. Sreehari, pilots the legendary Golden Mecha robot from within, engaging in a colossal, high-stakes battle against the antagonist atop a massive asteroid.  ​Boasting cutting-edge technology, mind-blowing visual effects, and a deeply poignant cosmic romance, 'Diamond Made Man Part 2'is set to hit the silver screen.  Diamond Made Man Part 2 - The Sequel Narrative.  Hero : Doctor E. Sreehari MBBS  Actress : Vasudha  villain : Hayagreeva  Productions : Sampreeth Productions",
-      "poster": "https://image.tmdb.org/t/p/w500/65fio5hZot7DRMidw1Lp0Uz1jLu.jpg",
-      "backdrop": "",
-      "releaseDate": "2026-07-17",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1709896"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 521,
+      "votes": 523,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 824,
+      "votes": 825,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -410,11 +410,11 @@
       "mediaType": "movie",
       "title": "The Furious",
       "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-      "poster": "https://image.tmdb.org/t/p/w500/lwmXob14Bslv1YcVT1VYt3zBfs9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tN0iXjm7qbHnGG4WGrNOGqmTMDt.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.7",
-      "votes": 91,
+      "votes": 94,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.2",
-      "votes": 398,
+      "votes": 399,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -461,8 +461,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "5.3",
-      "votes": 15,
+      "rating": "5.5",
+      "votes": 19,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -473,8 +473,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "7.0",
-      "votes": 378,
+      "rating": "6.9",
+      "votes": 379,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
@@ -485,8 +485,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "8.0",
-      "votes": 5,
+      "rating": "7.8",
+      "votes": 7,
       "url": "https://www.themoviedb.org/movie/1212763"
     }
   ],
