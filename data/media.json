@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09T11:34:02.969586+00:00",
+  "updated": "2026-07-09T17:04:21.769015+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 2421,
+      "votes": 2428,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -20,11 +20,11 @@
       "mediaType": "movie",
       "title": "The Furious",
       "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
-      "poster": "https://image.tmdb.org/t/p/w500/mwRspK4RPa5dSYS4Aul8KyZ1qcW.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
-      "rating": "7.7",
-      "votes": 112,
+      "rating": "7.6",
+      "votes": 114,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -35,21 +35,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-08",
-      "rating": "4.8",
-      "votes": 29,
+      "rating": "4.6",
+      "votes": 32,
       "url": "https://www.themoviedb.org/movie/1108427"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "4.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1212763,
@@ -59,9 +47,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-07",
-      "rating": "7.6",
-      "votes": 16,
+      "rating": "7.5",
+      "votes": 20,
       "url": "https://www.themoviedb.org/movie/1212763"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "5.5",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1368314,
@@ -72,44 +72,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
       "releaseDate": "2026-05-20",
       "rating": "5.7",
-      "votes": 140,
+      "votes": 141,
       "url": "https://www.themoviedb.org/movie/1368314"
-    },
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.4",
-      "votes": 534,
-      "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1202033,
-      "mediaType": "movie",
-      "title": "Enola Holmes 3",
-      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
-      "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
-      "releaseDate": "2026-06-30",
-      "rating": "7.0",
-      "votes": 303,
-      "url": "https://www.themoviedb.org/movie/1202033"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.4",
-      "votes": 131,
-      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1083381,
@@ -120,11 +84,71 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.8",
-      "votes": 947,
+      "votes": 953,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/ovGJ69DW9T0nFCw8uDegqCzu9rh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.4",
+      "votes": 535,
+      "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.4",
+      "votes": 133,
+      "url": "https://www.themoviedb.org/movie/1315772"
+    },
+    {
+      "id": 1202033,
+      "mediaType": "movie",
+      "title": "Enola Holmes 3",
+      "overview": "Adventure follows detective Enola Holmes to Malta, where her plans to tie the knot unravel when Sherlock's disappearance plunges her into a perilous case.",
+      "poster": "https://image.tmdb.org/t/p/w500/7kRYHH9H9PjBFwz1FprbHB2AAjI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jLuGZc84MvPYCQomQg9DI72mstt.jpg",
+      "releaseDate": "2026-06-30",
+      "rating": "7.0",
+      "votes": 306,
+      "url": "https://www.themoviedb.org/movie/1202033"
     }
   ],
   "trendingTv": [
+    {
+      "id": 322055,
+      "mediaType": "tv",
+      "title": "The Prosecutor's Proposal",
+      "overview": "A victim’s son and a killer’s son reunite as a prosecutor and investigator, fighting systemic corruption while becoming each other's salvation.",
+      "poster": "https://image.tmdb.org/t/p/w500/lK6DrnFecG0AsA8O5UqEYOrOArd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/feISh3qoREwIPWbSaLqqumbmh7m.jpg",
+      "releaseDate": "2026-06-25",
+      "rating": "5.0",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/tv/322055"
+    },
+    {
+      "id": 283304,
+      "mediaType": "tv",
+      "title": "Little House on the Prairie",
+      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "8.3",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/283304"
+    },
     {
       "id": 125988,
       "mediaType": "tv",
@@ -134,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2191,
+      "votes": 2193,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -146,32 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6515,
+      "votes": 6518,
       "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 283304,
-      "mediaType": "tv",
-      "title": "Little House on the Prairie",
-      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/283304"
-    },
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.6",
-      "votes": 730,
-      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
       "id": 94664,
@@ -194,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5398,
+      "votes": 5397,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
@@ -205,9 +205,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.4",
-      "votes": 22,
+      "rating": "7.0",
+      "votes": 23,
       "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.6",
+      "votes": 732,
+      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
       "id": 253960,
@@ -220,18 +232,6 @@
       "rating": "7.8",
       "votes": 27,
       "url": "https://www.themoviedb.org/tv/253960"
-    },
-    {
-      "id": 299167,
-      "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.3",
-      "votes": 393,
-      "url": "https://www.themoviedb.org/tv/299167"
     },
     {
       "id": 124364,
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "10.0",
-      "votes": 1,
+      "rating": "5.5",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -332,18 +332,6 @@
       "url": "https://www.themoviedb.org/movie/80880"
     },
     {
-      "id": 1715914,
-      "mediaType": "movie",
-      "title": "Wham! 10 Days in China",
-      "overview": "In 1985, Wham! were the first Western pop group to perform in communist China. George Michael and Andrew Ridgeley’s two concerts in Beijing and Guangzhou introduced live Western pop to Chinese audiences and marked a turning point for the band. For Wham!, the tour was more than music; it was a bold move to capture American attention and launch them into global superstardom, and it worked.",
-      "poster": "https://image.tmdb.org/t/p/w500/fx8ErQNNf1YlvYJAOhwKM4NS3NN.jpg",
-      "backdrop": "",
-      "releaseDate": "2026-07-28",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1715914"
-    },
-    {
       "id": 1713706,
       "mediaType": "movie",
       "title": "Love/Bug",
@@ -354,6 +342,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1713706"
+    },
+    {
+      "id": 1715914,
+      "mediaType": "movie",
+      "title": "Wham! 10 Days in China",
+      "overview": "In 1985, Wham! were the first Western pop group to perform in communist China. George Michael and Andrew Ridgeley’s two concerts in Beijing and Guangzhou introduced live Western pop to Chinese audiences and marked a turning point for the band. For Wham!, the tour was more than music; it was a bold move to capture American attention and launch them into global superstardom, and it worked.",
+      "poster": "https://image.tmdb.org/t/p/w500/fx8ErQNNf1YlvYJAOhwKM4NS3NN.jpg",
+      "backdrop": "",
+      "releaseDate": "2026-07-28",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1715914"
     },
     {
       "id": 1498729,
@@ -374,11 +374,11 @@
       "mediaType": "movie",
       "title": "Toy Story 5",
       "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/wLvUuBF2Yj0JmMGLUdRRVu7LvNB.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ovGJ69DW9T0nFCw8uDegqCzu9rh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 533,
+      "votes": 534,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 831,
+      "votes": 833,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.4",
-      "votes": 428,
+      "votes": 429,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -411,10 +411,10 @@
       "title": "The Furious",
       "overview": "After Wang Wei's daughter is kidnapped by a criminal network and he receives no help from the corrupt police, Wei sets out to find her himself. His only ally is Navin, a relentless journalist whose wife has mysteriously disappeared. Fueled by a furious vengeance, the unlikely duo ruthlessly battle the kidnappers in this explosive martial arts showdown.",
       "poster": "https://image.tmdb.org/t/p/w500/mwRspK4RPa5dSYS4Aul8KyZ1qcW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tN0iXjm7qbHnGG4WGrNOGqmTMDt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.6",
-      "votes": 108,
+      "rating": "7.7",
+      "votes": 112,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -422,11 +422,11 @@
       "mediaType": "movie",
       "title": "Minions & Monsters",
       "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/sO3O1szSYuXLwtkobU5TExQ6Wfa.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 129,
+      "votes": 132,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.2",
-      "votes": 407,
+      "votes": 411,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "5.0",
-      "votes": 28,
+      "rating": "4.7",
+      "votes": 30,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -472,9 +472,9 @@
       "overview": "After the loss of her husband, a woman seeks solace with her in-laws. As one by one they transform into deadites, she comes to discover that the vows she took in life - survive even in death.",
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-      "releaseDate": "2026-07-10",
+      "releaseDate": "2026-07-09",
       "rating": "7.5",
-      "votes": 15,
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.9",
-      "votes": 380,
+      "votes": 382,
       "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
