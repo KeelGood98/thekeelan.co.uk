@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T15:39:37.652597+00:00",
+  "updated": "2026-07-12T21:30:30.602543+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 2707,
+      "votes": 2735,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.5",
-      "votes": 159,
+      "votes": 164,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -33,10 +33,10 @@
       "title": "Moana",
       "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ltaMOWWmKx34SHRhPdiwrosdnmo.jpg",
       "releaseDate": "2026-07-08",
-      "rating": "5.1",
-      "votes": 60,
+      "rating": "5.2",
+      "votes": 65,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.1",
-      "votes": 80,
+      "votes": 85,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
       "releaseDate": "2026-05-20",
       "rating": "6.9",
-      "votes": 297,
+      "votes": 309,
       "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.8",
-      "votes": 993,
+      "votes": 995,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -96,20 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 568,
+      "votes": 577,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.4",
-      "votes": 154,
-      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 969681,
@@ -122,6 +110,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.3",
+      "votes": 158,
+      "url": "https://www.themoviedb.org/movie/1315772"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2227,
+      "votes": 2230,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -146,32 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6550,
+      "votes": 6556,
       "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 94664,
-      "mediaType": "tv",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-      "releaseDate": "2021-01-11",
-      "rating": "8.5",
-      "votes": 1564,
-      "url": "https://www.themoviedb.org/tv/94664"
-    },
-    {
-      "id": 283304,
-      "mediaType": "tv",
-      "title": "Little House on the Prairie",
-      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "5.6",
-      "votes": 26,
-      "url": "https://www.themoviedb.org/tv/283304"
     },
     {
       "id": 37854,
@@ -182,44 +158,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5405,
+      "votes": 5406,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 296206,
+      "id": 94664,
       "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.4",
+      "title": "Mushoku Tensei: Jobless Reincarnation",
+      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
+      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
+      "releaseDate": "2021-01-11",
+      "rating": "8.5",
+      "votes": 1568,
+      "url": "https://www.themoviedb.org/tv/94664"
+    },
+    {
+      "id": 283304,
+      "mediaType": "tv",
+      "title": "Little House on the Prairie",
+      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "5.5",
       "votes": 27,
-      "url": "https://www.themoviedb.org/tv/296206"
+      "url": "https://www.themoviedb.org/tv/283304"
     },
     {
-      "id": 138502,
+      "id": 124364,
       "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.6",
-      "votes": 751,
-      "url": "https://www.themoviedb.org/tv/138502"
-    },
-    {
-      "id": 286709,
-      "mediaType": "tv",
-      "title": "The Westies",
-      "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
-      "poster": "https://image.tmdb.org/t/p/w500/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5JCY0Cf7lBQPMhvBIkcb4mnFGMt.jpg",
-      "releaseDate": "2026-07-12",
-      "rating": "7.0",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/286709"
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3968,
+      "url": "https://www.themoviedb.org/tv/124364"
     },
     {
       "id": 60625,
@@ -230,20 +206,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 11097,
+      "votes": 11099,
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 252107,
+      "id": 286709,
       "mediaType": "tv",
-      "title": "Star City",
-      "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
-      "poster": "https://image.tmdb.org/t/p/w500/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
-      "releaseDate": "2026-05-28",
+      "title": "The Westies",
+      "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
+      "poster": "https://image.tmdb.org/t/p/w500/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5JCY0Cf7lBQPMhvBIkcb4mnFGMt.jpg",
+      "releaseDate": "2026-07-12",
+      "rating": "8.0",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/286709"
+    },
+    {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
       "rating": "7.5",
-      "votes": 48,
-      "url": "https://www.themoviedb.org/tv/252107"
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
+      "id": 299167,
+      "mediaType": "tv",
+      "title": "Dutton Ranch",
+      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
+      "releaseDate": "2026-05-15",
+      "rating": "9.2",
+      "votes": 415,
+      "url": "https://www.themoviedb.org/tv/299167"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "4.5",
-      "votes": 20,
+      "rating": "4.7",
+      "votes": 21,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
