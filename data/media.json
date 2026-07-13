@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12T21:30:30.602543+00:00",
+  "updated": "2026-07-13T11:42:17.620505+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,8 +12,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 2735,
+      "votes": 2843,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6U1Te0p0FK0BOB43hiwGlBKiVY.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "5.3",
+      "votes": 68,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "5.1",
+      "votes": 23,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1280738,
@@ -24,20 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.5",
-      "votes": 164,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1280738"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ltaMOWWmKx34SHRhPdiwrosdnmo.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "5.2",
-      "votes": 65,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1212763,
@@ -47,33 +59,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-07",
-      "rating": "7.1",
-      "votes": 85,
+      "rating": "7.0",
+      "votes": 96,
       "url": "https://www.themoviedb.org/movie/1212763"
-    },
-    {
-      "id": 1368314,
-      "mediaType": "movie",
-      "title": "Passenger",
-      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
-      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
-      "releaseDate": "2026-05-20",
-      "rating": "6.9",
-      "votes": 309,
-      "url": "https://www.themoviedb.org/movie/1368314"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "4.7",
-      "votes": 21,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1083381,
@@ -84,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mCpwRayjXMFzKHbjbzc5JRKfq1O.jpg",
       "releaseDate": "2026-05-27",
       "rating": "6.8",
-      "votes": 995,
+      "votes": 1002,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1368314,
+      "mediaType": "movie",
+      "title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "7.1",
+      "votes": 354,
+      "url": "https://www.themoviedb.org/movie/1368314"
     },
     {
       "id": 1084244,
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 577,
+      "votes": 581,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -119,24 +119,12 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "6.3",
-      "votes": 158,
+      "rating": "6.4",
+      "votes": 162,
       "url": "https://www.themoviedb.org/movie/1315772"
     }
   ],
   "trendingTv": [
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2230,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -146,20 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6556,
+      "votes": 6569,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 37854,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5406,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2235,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 94664,
@@ -170,56 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
       "releaseDate": "2021-01-11",
       "rating": "8.5",
-      "votes": 1568,
+      "votes": 1571,
       "url": "https://www.themoviedb.org/tv/94664"
-    },
-    {
-      "id": 283304,
-      "mediaType": "tv",
-      "title": "Little House on the Prairie",
-      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "5.5",
-      "votes": 27,
-      "url": "https://www.themoviedb.org/tv/283304"
-    },
-    {
-      "id": 124364,
-      "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 3968,
-      "url": "https://www.themoviedb.org/tv/124364"
-    },
-    {
-      "id": 60625,
-      "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11099,
-      "url": "https://www.themoviedb.org/tv/60625"
-    },
-    {
-      "id": 286709,
-      "mediaType": "tv",
-      "title": "The Westies",
-      "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
-      "poster": "https://image.tmdb.org/t/p/w500/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5JCY0Cf7lBQPMhvBIkcb4mnFGMt.jpg",
-      "releaseDate": "2026-07-12",
-      "rating": "8.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/tv/286709"
     },
     {
       "id": 296206,
@@ -234,16 +174,76 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 299167,
+      "id": 60625,
       "mediaType": "tv",
-      "title": "Dutton Ranch",
-      "overview": "Rip Wheeler and Beth Dutton gamble everything on a new life in South Texas, but the promise of building a future far from the ghosts of Yellowstone quickly collides with brutal new realities and a rival ranch that will stop at nothing to protect its empire.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wh5agdl3b7fqC7mSjsCkHx4fMAs.jpg",
-      "releaseDate": "2026-05-15",
-      "rating": "9.2",
-      "votes": 415,
-      "url": "https://www.themoviedb.org/tv/299167"
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11103,
+      "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5407,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 283304,
+      "mediaType": "tv",
+      "title": "Little House on the Prairie",
+      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "5.7",
+      "votes": 30,
+      "url": "https://www.themoviedb.org/tv/283304"
+    },
+    {
+      "id": 286709,
+      "mediaType": "tv",
+      "title": "The Westies",
+      "overview": "As the Javits Center construction project ignites a battle for profit in early 1980s Hell's Kitchen, a generational rift threatens the uneasy peace between violent Irish gang the Westies and the Mafia, and draws FBI heat.",
+      "poster": "https://image.tmdb.org/t/p/w500/6nNxw6SsbEtSpktVEGdoYDqPH7C.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tT2MwxaST3Fx1Dg4u9v82sDrIu.jpg",
+      "releaseDate": "2026-07-12",
+      "rating": "5.9",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/286709"
+    },
+    {
+      "id": 300727,
+      "mediaType": "tv",
+      "title": "The Apartment Job",
+      "overview": "Desperate for cash, a former gang boss teams up with an aspiring lawyer to steal an apartment complex's reserve fund — only to uncover deep corruption.",
+      "poster": "https://image.tmdb.org/t/p/w500/qFxbrHvNq5tn9SCBq3aKPgaGfyO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/stJcZWrpfT2DjY0K261Q2FpxUkS.jpg",
+      "releaseDate": "2026-07-11",
+      "rating": "5.3",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/300727"
+    },
+    {
+      "id": 124364,
+      "mediaType": "tv",
+      "title": "FROM",
+      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
+      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
+      "releaseDate": "2022-02-20",
+      "rating": "8.5",
+      "votes": 3974,
+      "url": "https://www.themoviedb.org/tv/124364"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "4.7",
-      "votes": 21,
+      "rating": "5.1",
+      "votes": 23,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -270,6 +270,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1303331,
+      "mediaType": "movie",
+      "title": "Dhamaal 4",
+      "overview": "The Dhamaal boys are back for another treasure hunt, facing hilarious challenges in their quest for the Treasure of Life.",
+      "poster": "https://image.tmdb.org/t/p/w500/5d7hpbefNiuebl5eqP5cRrckVxs.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/95sjD0dRajtU6SKD6Gq6PtrGoGY.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "3.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1303331"
     },
     {
       "id": 1232569,
@@ -313,7 +325,7 @@
       "title": "Soulm8te",
       "overview": "After a ruthless tech giant acquires his company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to program her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
       "poster": "https://image.tmdb.org/t/p/w500/9ma5UG4RwHgzpZEhpbXTNQ51Tx9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7t6f6VxA2ZXbbZSVctgt7bZG2DI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
       "releaseDate": "2026-08-01",
       "rating": "0.0",
       "votes": 0,
@@ -354,18 +366,6 @@
       "rating": "6.5",
       "votes": 51,
       "url": "https://www.themoviedb.org/movie/80880"
-    },
-    {
-      "id": 1724558,
-      "mediaType": "movie",
-      "title": "Triesverse: Cataclysm",
-      "overview": "Part one of a two-part finale. Daniel Chapman is back, and this time he's brought company. With his rebooted mission to bring the Last Reality to fruition in progress, Izz Fury's newly-formed Reality Warriors must band together to put an end to his deluded antics. The stakes have never been higher - the Triesverse ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/bBWGi59tRE31UUKYHpEdQlFclVU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vuVkkSkCUx8ZQrhnrilP6JZqtkN.jpg",
-      "releaseDate": "2026-08-02",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1724558"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 567,
+      "votes": 581,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/s6ly8laenkHWlIBRkLSfIuEMLC6.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 856,
+      "votes": 866,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -402,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-05",
       "rating": "5.4",
-      "votes": 440,
+      "votes": 446,
       "url": "https://www.themoviedb.org/movie/1273221"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6U1Te0p0FK0BOB43hiwGlBKiVY.jpg",
+      "releaseDate": "2026-07-10",
+      "rating": "5.3",
+      "votes": 68,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1280738,
@@ -414,20 +426,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.5",
-      "votes": 159,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
-      "id": 1108427,
+      "id": 1212763,
       "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "5.1",
-      "votes": 60,
-      "url": "https://www.themoviedb.org/movie/1108427"
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "7.0",
+      "votes": 96,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1315772,
@@ -438,27 +450,15 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xMoXsOgF0hBP7iVj7ZPIrFtTeL3.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 154,
+      "votes": 162,
       "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "7.1",
-      "votes": 80,
-      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1057265,
       "mediaType": "movie",
       "title": "Peddi",
       "overview": "In 1980s rural Andhra Pradesh, a spirited villager unites his community through sports to defend their pride against a powerful rivals.",
-      "poster": "https://image.tmdb.org/t/p/w500/kJAJNNBYlbqAcpTDxBNnaILSMTy.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/wDoZa41ieE80WT5dQfC6QPC9Caf.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oPsRr7AfNLw6XaPuMpvkWK0bIUA.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.1",
@@ -473,21 +473,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "6.2",
-      "votes": 433,
+      "rating": "6.3",
+      "votes": 447,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
-      "id": 1545621,
+      "id": 454639,
       "mediaType": "movie",
-      "title": "Detective Conan: Fallen Angel of the Highway",
-      "overview": "When a string of deadly highway incidents begin, Conan Edogawa's investigations point towards an orchestrated plot rather than mere accidents. As he uncovers a conspiracy involving hidden identities and advanced technology, the case escalates into a high-speed race against time to stop a calculating mastermind before more lives are lost.",
-      "poster": "https://image.tmdb.org/t/p/w500/tqlOfb1ekyVYpDumiL9MsK6uirw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zT5S4GNs8Eu2gIkGORoN6yC1uE2.jpg",
-      "releaseDate": "2026-06-12",
-      "rating": "7.8",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/movie/1545621"
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/3YMd9Ogae4rDKLWuAZFuse9xhc5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "6.9",
+      "votes": 392,
+      "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
   "links": [
