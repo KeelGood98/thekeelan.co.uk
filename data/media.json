@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-16T16:01:44.026821+00:00",
+  "updated": "2026-07-16T21:43:21.345002+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-15",
-      "rating": "6.1",
-      "votes": 92,
+      "rating": "6.5",
+      "votes": 121,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.0",
-      "votes": 1279,
+      "votes": 1303,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -36,8 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 3044,
+      "votes": 3059,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "5.7",
+      "votes": 93,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1280738,
@@ -48,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 194,
+      "votes": 196,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -60,20 +72,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-07",
       "rating": "6.8",
-      "votes": 133,
+      "votes": 138,
       "url": "https://www.themoviedb.org/movie/1212763"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "5.6",
-      "votes": 88,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 969681,
@@ -96,20 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "7.4",
-      "votes": 618,
+      "votes": 620,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.4",
-      "votes": 176,
-      "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
       "id": 1440050,
@@ -122,6 +110,18 @@
       "rating": "7.3",
       "votes": 16,
       "url": "https://www.themoviedb.org/movie/1440050"
+    },
+    {
+      "id": 1368314,
+      "mediaType": "movie",
+      "title": "Passenger",
+      "overview": "After a young couple witnesses a gruesome highway accident, they soon realize they did not leave the crash scene alone, as a demonic presence called the Passenger that won't stop until it claims them both turns their van life adventure into a nightmare.",
+      "poster": "https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3pDfu71mrzSuFYyIfnKEjt8z4BC.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "7.2",
+      "votes": 425,
+      "url": "https://www.themoviedb.org/movie/1368314"
     }
   ],
   "trendingTv": [
@@ -133,21 +133,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
-      "rating": "5.4",
-      "votes": 25,
+      "rating": "5.5",
+      "votes": 26,
       "url": "https://www.themoviedb.org/tv/278624"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2252,
-      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 94997,
@@ -158,20 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6612,
+      "votes": 6623,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 254528,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "The Hawk",
-      "overview": "On the back nine of his career, golf legend Lonnie \"The Hawk\" Hawkins chases one final major — and drags everyone he loves into the chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/klwdBtkpdW1RIqOl0dkSWJ7mtjq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
-      "releaseDate": "2026-07-16",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/254528"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2256,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 37854,
@@ -182,32 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5413,
+      "votes": 5414,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 283304,
+      "id": 254528,
       "mediaType": "tv",
-      "title": "Little House on the Prairie",
-      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
-      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "6.2",
-      "votes": 44,
-      "url": "https://www.themoviedb.org/tv/283304"
-    },
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.6",
-      "votes": 767,
-      "url": "https://www.themoviedb.org/tv/138502"
+      "title": "The Hawk",
+      "overview": "On the back nine of his career, golf legend Lonnie \"The Hawk\" Hawkins chases one final major — and drags everyone he loves into the chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/yxnQQH2E1hfrW4vKOFTAOyFRlpj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
+      "releaseDate": "2026-07-16",
+      "rating": "10.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/254528"
     },
     {
       "id": 60625,
@@ -222,6 +198,42 @@
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
+      "id": 283304,
+      "mediaType": "tv",
+      "title": "Little House on the Prairie",
+      "overview": "The close-knit Ingalls family builds a new life on the Western frontier, where the joys of nature and the struggle for survival are deeply intertwined.",
+      "poster": "https://image.tmdb.org/t/p/w500/oWUGSadxC9vQPOCeHDDVfDezmQC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBieUo3SdItUrXZE16YxbpjwXIe.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "6.2",
+      "votes": 45,
+      "url": "https://www.themoviedb.org/tv/283304"
+    },
+    {
+      "id": 312949,
+      "mediaType": "tv",
+      "title": "Chainsmoker Cat",
+      "overview": "Catgirl Yani struggles to pay her rent and keep a job while feeding her smoking habit. As her loved ones' concerns grow, she must rethink her future.",
+      "poster": "https://image.tmdb.org/t/p/w500/kqeKlSd7o9BCbTraZsDnksRSfxm.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4ei68OmZr0XHnN82OjiV8GBqfyN.jpg",
+      "releaseDate": "2026-07-03",
+      "rating": "8.8",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/312949"
+    },
+    {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.5",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
       "id": 255358,
       "mediaType": "tv",
       "title": "THE GHOST IN THE SHELL",
@@ -232,18 +244,6 @@
       "rating": "9.0",
       "votes": 16,
       "url": "https://www.themoviedb.org/tv/255358"
-    },
-    {
-      "id": 94664,
-      "mediaType": "tv",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-      "releaseDate": "2021-01-11",
-      "rating": "8.5",
-      "votes": 1577,
-      "url": "https://www.themoviedb.org/tv/94664"
     }
   ],
   "upcomingMovies": [
@@ -284,6 +284,18 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
+      "id": 1477712,
+      "mediaType": "movie",
+      "title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1477712"
+    },
+    {
       "id": 1232569,
       "mediaType": "movie",
       "title": "Pinocchio: Unstrung",
@@ -308,16 +320,16 @@
       "url": "https://www.themoviedb.org/movie/1432474"
     },
     {
-      "id": 1477712,
+      "id": 539745,
       "mediaType": "movie",
-      "title": "Ice Cream Man",
-      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
-      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1477712"
+      "title": "Animal Farm",
+      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
+      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "6.5",
+      "votes": 86,
+      "url": "https://www.themoviedb.org/movie/539745"
     },
     {
       "id": 1215532,
@@ -330,18 +342,6 @@
       "rating": "7.4",
       "votes": 8,
       "url": "https://www.themoviedb.org/movie/1215532"
-    },
-    {
-      "id": 539745,
-      "mediaType": "movie",
-      "title": "Animal Farm",
-      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
-      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "6.5",
-      "votes": 86,
-      "url": "https://www.themoviedb.org/movie/539745"
     },
     {
       "id": 1307118,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 616,
+      "votes": 620,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "5.6",
-      "votes": 87,
+      "rating": "5.7",
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/gVczdWWAkBCuwEV1v9cg7ELfdhT.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 882,
+      "votes": 883,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -413,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.5",
-      "votes": 193,
+      "rating": "7.4",
+      "votes": 196,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -423,10 +423,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "6.1",
-      "votes": 82,
+      "rating": "6.4",
+      "votes": 110,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 132,
+      "votes": 137,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 176,
+      "votes": 177,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.2",
-      "votes": 470,
+      "votes": 471,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -483,10 +483,10 @@
       "title": "The Invite",
       "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.6",
-      "votes": 58,
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
