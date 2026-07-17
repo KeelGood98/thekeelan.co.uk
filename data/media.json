@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-17T16:01:10.832698+00:00",
+  "updated": "2026-07-17T21:30:13.934499+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,10 +9,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-15",
-      "rating": "7.0",
-      "votes": 218,
+      "rating": "7.2",
+      "votes": 244,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.0",
-      "votes": 1394,
+      "votes": 1444,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -33,11 +33,23 @@
       "title": "Obsession",
       "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 3107,
+      "votes": 3121,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "6.8",
+      "votes": 143,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1318621,
@@ -47,8 +59,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/tPbMu1LH4YzyvG2a9X5qYERHmIv.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/o6LK4vO1wvPDMvwWxZ79p04hjzC.jpg",
       "releaseDate": "2026-07-16",
-      "rating": "5.2",
-      "votes": 6,
+      "rating": "6.1",
+      "votes": 8,
       "url": "https://www.themoviedb.org/movie/1318621"
     },
     {
@@ -60,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
       "releaseDate": "2026-07-08",
       "rating": "5.8",
-      "votes": 99,
+      "votes": 100,
       "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1058424,
+      "mediaType": "movie",
+      "title": "Hope",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "poster": "https://image.tmdb.org/t/p/w500/1n37BJchWHLiSYQkuFxe5KjB951.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qv2gffpbllYE1Pxz5nhYQmYuht5.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.1",
+      "votes": 8,
+      "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
       "id": 1280738,
@@ -72,20 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 200,
+      "votes": 202,
       "url": "https://www.themoviedb.org/movie/1280738"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-      "releaseDate": "2026-07-07",
-      "rating": "6.8",
-      "votes": 140,
-      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 969681,
@@ -100,53 +112,29 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1468683,
+      "id": 1084244,
       "mediaType": "movie",
-      "title": "Heartstopper Forever",
-      "overview": "It's a new school year for the Truham-Higgs gang. As Nick and Charlie's relationship deepens, their thoughts turn to life after the last bell rings.",
-      "poster": "https://image.tmdb.org/t/p/w500/r4lVJVO1BeBb11cBcXBdbHc9e9k.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vvE7zc2aie3ozZcy5xYbg5QTFrF.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "4.6",
-      "votes": 9,
-      "url": "https://www.themoviedb.org/movie/1468683"
-    },
-    {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/1n37BJchWHLiSYQkuFxe5KjB951.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qv2gffpbllYE1Pxz5nhYQmYuht5.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.1",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1058424"
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.4",
+      "votes": 630,
+      "url": "https://www.themoviedb.org/movie/1084244"
     }
   ],
   "trendingTv": [
-    {
-      "id": 279323,
-      "mediaType": "tv",
-      "title": "The East Palace",
-      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
-      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9LJiiVPSS2DsV9drnA3k3zqMgPW.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "8.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/279323"
-    },
     {
       "id": 278624,
       "mediaType": "tv",
       "title": "Lucky",
       "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
-      "rating": "5.6",
-      "votes": 37,
+      "rating": "5.8",
+      "votes": 40,
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
@@ -158,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2259,
+      "votes": 2261,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -174,16 +162,16 @@
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 296206,
+      "id": 279323,
       "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.5",
-      "votes": 28,
-      "url": "https://www.themoviedb.org/tv/296206"
+      "title": "The East Palace",
+      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9LJiiVPSS2DsV9drnA3k3zqMgPW.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "7.0",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/279323"
     },
     {
       "id": 37854,
@@ -194,8 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5416,
+      "votes": 5417,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11117,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
       "id": 254528,
@@ -210,16 +210,16 @@
       "url": "https://www.themoviedb.org/tv/254528"
     },
     {
-      "id": 288671,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "The Map of Longing",
-      "overview": "Before her death, Lucy creates a game for her sister, Greta, pushing her into a journey of self-discovery — and toward the charming Will Tucker.",
-      "poster": "https://image.tmdb.org/t/p/w500/wcgjZ7koqOYDcKUn6DmnNolqmUS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lDhs7EFH1DaOoRXEaTiNhuYaAbC.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "6.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/288671"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.3",
+      "votes": 30,
+      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 277439,
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/277439"
     },
     {
-      "id": 124364,
+      "id": 252107,
       "mediaType": "tv",
-      "title": "FROM",
-      "overview": "Unravel the mystery of a nightmarish town in middle America that traps all those who enter. As the unwilling residents fight to keep a sense of normalcy and search for a way out, they must also survive the threats of the surrounding forest – including the terrifying creatures that come out when the sun goes down.",
-      "poster": "https://image.tmdb.org/t/p/w500/pRtJagIxpfODzzb0T0NAvZSzErC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xLdw1xdHocKYFFvx7w41NchXMfJ.jpg",
-      "releaseDate": "2022-02-20",
-      "rating": "8.5",
-      "votes": 4006,
-      "url": "https://www.themoviedb.org/tv/124364"
+      "title": "Star City",
+      "overview": "Step into a thrilling chapter inspired by For All Mankind. Same alt-history universe. Different perspective: the Soviet Union's. Go behind the Iron Curtain with the cosmonauts, engineers, and intelligence officers who risked it all in the race for the Moon.",
+      "poster": "https://image.tmdb.org/t/p/w500/b8VtW6IEIyEWYdnJHx8bG8RdAak.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/asROh8ULhbYpB4C7x1Q3iFtcxsB.jpg",
+      "releaseDate": "2026-05-28",
+      "rating": "7.6",
+      "votes": 57,
+      "url": "https://www.themoviedb.org/tv/252107"
     }
   ],
   "upcomingMovies": [
@@ -320,16 +320,16 @@
       "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
-      "id": 1432474,
+      "id": 539745,
       "mediaType": "movie",
-      "title": "Nimrods",
-      "overview": "Three friends journey from Kansas City to Los Angeles, mistakenly believing that their band is opening for Green Day on New Year’s Eve.",
-      "poster": "https://image.tmdb.org/t/p/w500/aebmSpFu1lUV78PtOpqMUn4d82B.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aVRRKTGJnnWvah99gLZaRG0wS17.jpg",
-      "releaseDate": "2026-08-11",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1432474"
+      "title": "Animal Farm",
+      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
+      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "6.5",
+      "votes": 87,
+      "url": "https://www.themoviedb.org/movie/539745"
     },
     {
       "id": 1215532,
@@ -344,31 +344,43 @@
       "url": "https://www.themoviedb.org/movie/1215532"
     },
     {
-      "id": 1713706,
+      "id": 1432474,
       "mediaType": "movie",
-      "title": "Love/Bug",
-      "overview": "A couple, affectionately naming each other Love and Bug, test the limits of their love living with each other for fifteen months.",
-      "poster": "https://image.tmdb.org/t/p/w500/jS9C9zLCTYC1OAy6JfjMvHhyUdU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cRaBSqE8r4RseHRiIkHwSiL4l8T.jpg",
-      "releaseDate": "2026-07-29",
+      "title": "Nimrods",
+      "overview": "Three friends journey from Kansas City to Los Angeles, mistakenly believing that their band is opening for Green Day on New Year’s Eve.",
+      "poster": "https://image.tmdb.org/t/p/w500/aebmSpFu1lUV78PtOpqMUn4d82B.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aVRRKTGJnnWvah99gLZaRG0wS17.jpg",
+      "releaseDate": "2026-08-11",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1713706"
+      "url": "https://www.themoviedb.org/movie/1432474"
     },
     {
-      "id": 539745,
+      "id": 675871,
       "mediaType": "movie",
-      "title": "Animal Farm",
-      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
-      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "6.5",
-      "votes": 87,
-      "url": "https://www.themoviedb.org/movie/539745"
+      "title": "Super Troopers 3",
+      "overview": "When Farva’s wildly over-the-top Indian engagement to Thorny’s sister spirals into chaos, the Super Troopers must navigate Thorny’s schemes to break up the relationship, while trying to crack a pernicious new drug ring  — all to save the day and maybe the wedding itself.",
+      "poster": "https://image.tmdb.org/t/p/w500/eV2Uhn8A93V4ELySlrBGvBuQJLj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oU2H07DQVjGMp2vUgrYzso36v15.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/675871"
     }
   ],
   "nowPlayingMovies": [
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/IRdft2HxHy9joDQMxB1tGFI2qP.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "6.7",
+      "votes": 887,
+      "url": "https://www.themoviedb.org/movie/1275779"
+    },
     {
       "id": 1084244,
       "mediaType": "movie",
@@ -382,18 +394,6 @@
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gVczdWWAkBCuwEV1v9cg7ELfdhT.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "6.7",
-      "votes": 886,
-      "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
       "id": 1108427,
       "mediaType": "movie",
       "title": "Moana",
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.8",
-      "votes": 99,
+      "votes": 100,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.4",
-      "votes": 199,
+      "votes": 201,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -423,17 +423,17 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.0",
-      "votes": 200,
+      "rating": "7.1",
+      "votes": 227,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1212763,
       "mediaType": "movie",
       "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, a woman seeks solace with her in-laws. As they transform into Deadites one by one, she comes to discover that the vows she took in life survive even in death.",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-09",
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.2",
-      "votes": 476,
+      "votes": 477,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.6",
-      "votes": 61,
+      "votes": 62,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
