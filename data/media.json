@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20T16:12:42.024395+00:00",
+  "updated": "2026-07-20T21:47:30.274449+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,11 +9,47 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.8",
-      "votes": 701,
+      "votes": 735,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "7.0",
+      "votes": 1782,
+      "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 3358,
+      "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1273221,
+      "mediaType": "movie",
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "6.1",
+      "votes": 647,
+      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 1003596,
@@ -28,64 +64,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1083381,
+      "id": 1228710,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.0",
-      "votes": 1767,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.3",
-      "votes": 3343,
-      "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "6.0",
-      "votes": 618,
-      "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "5.8",
-      "votes": 117,
-      "url": "https://www.themoviedb.org/movie/1108427"
-    },
-    {
-      "id": 1318621,
-      "mediaType": "movie",
-      "title": "Descendants: Wicked Wonderland",
-      "overview": "Now that the Queen of Hearts is nice and Cinderella is safe, things seem perfect for Red and Chloe… But little do they know that changing the past created a new villain — Maddox Hatter. When Maddox captures the Queen of Hearts, Red and Chloe must work alongside Red’s new sister Pink, Luisa Madrigal’s son Luis, and Maddox’s son Max to save her and Wonderland.",
-      "poster": "https://image.tmdb.org/t/p/w500/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
-      "releaseDate": "2026-07-16",
-      "rating": "7.6",
-      "votes": 62,
-      "url": "https://www.themoviedb.org/movie/1318621"
+      "title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "6.7",
+      "votes": 606,
+      "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
       "id": 969681,
@@ -100,6 +88,30 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
+      "id": 1318621,
+      "mediaType": "movie",
+      "title": "Descendants: Wicked Wonderland",
+      "overview": "Now that the Queen of Hearts is nice and Cinderella is safe, things seem perfect for Red and Chloe… But little do they know that changing the past created a new villain — Maddox Hatter. When Maddox captures the Queen of Hearts, Red and Chloe must work alongside Red’s new sister Pink, Luisa Madrigal’s son Luis, and Maddox’s son Max to save her and Wonderland.",
+      "poster": "https://image.tmdb.org/t/p/w500/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
+      "releaseDate": "2026-07-16",
+      "rating": "7.8",
+      "votes": 63,
+      "url": "https://www.themoviedb.org/movie/1318621"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "5.8",
+      "votes": 119,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
       "id": 1280738,
       "mediaType": "movie",
       "title": "The Furious",
@@ -108,35 +120,11 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 224,
+      "votes": 226,
       "url": "https://www.themoviedb.org/movie/1280738"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
-      "releaseDate": "2026-07-07",
-      "rating": "6.8",
-      "votes": 170,
-      "url": "https://www.themoviedb.org/movie/1212763"
     }
   ],
   "trendingTv": [
-    {
-      "id": 279323,
-      "mediaType": "tv",
-      "title": "The East Palace",
-      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
-      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "8.0",
-      "votes": 21,
-      "url": "https://www.themoviedb.org/tv/279323"
-    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -146,8 +134,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6662,
+      "votes": 6665,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 278624,
+      "mediaType": "tv",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/qo4Hvm3PpSexAqqWqE83CXoAhPc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "6.6",
+      "votes": 60,
+      "url": "https://www.themoviedb.org/tv/278624"
+    },
+    {
+      "id": 279323,
+      "mediaType": "tv",
+      "title": "The East Palace",
+      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rAkYlsLcpMgLD6cycKajVX7C0O.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "8.1",
+      "votes": 24,
+      "url": "https://www.themoviedb.org/tv/279323"
     },
     {
       "id": 125988,
@@ -158,20 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2288,
+      "votes": 2289,
       "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 278624,
-      "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "6.6",
-      "votes": 59,
-      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 37854,
@@ -217,21 +217,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/6XCbqv7t0rYE2U1jzjh52fBxczj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fBVNJL85Q60njpKPD6YaLi6tEsX.jpg",
       "releaseDate": "2026-07-16",
-      "rating": "4.7",
-      "votes": 21,
+      "rating": "4.9",
+      "votes": 22,
       "url": "https://www.themoviedb.org/tv/254528"
     },
     {
-      "id": 289139,
+      "id": 298610,
       "mediaType": "tv",
-      "title": "Overdo",
-      "overview": "In Republican Shanghai, Murong Qingyi, a warlord’s son swapped at birth, endures years of torment. His life changes when Ren Susu saves him, but tragedy strikes her family because of it. Years later, love sparks between them, but Ren Susu fakes her death to save another, leaving Qingyi heartbroken. Three years on, she returns as his future sister-in-law. Love, hate, betrayal, and old wounds resurface. As war looms, the two must defy fate together, but can love survive a nation’s fall?",
-      "poster": "https://image.tmdb.org/t/p/w500/sOh7qrLixexhiWObAKSyh4mAlAR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/24Jiw958Hb7okfxWFedeDkWX8WU.jpg",
-      "releaseDate": "2026-07-19",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/289139"
+      "title": "Spooky in Love",
+      "overview": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
+      "poster": "https://image.tmdb.org/t/p/w500/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/w7Q53AmbEvrbpR2nRE8qBHJcbi2.jpg",
+      "releaseDate": "2026-07-18",
+      "rating": "8.8",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/tv/298610"
     },
     {
       "id": 94664,
@@ -260,30 +260,6 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1235877,
-      "mediaType": "movie",
-      "title": "Jana Nayagan",
-      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1235877"
-    },
-    {
-      "id": 1232569,
-      "mediaType": "movie",
-      "title": "Pinocchio: Unstrung",
-      "overview": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
-      "poster": "https://image.tmdb.org/t/p/w500/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "7.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1232569"
-    },
-    {
       "id": 18491,
       "mediaType": "movie",
       "title": "Neon Genesis Evangelion: The End of Evangelion",
@@ -294,6 +270,18 @@
       "rating": "8.3",
       "votes": 1886,
       "url": "https://www.themoviedb.org/movie/18491"
+    },
+    {
+      "id": 1235877,
+      "mediaType": "movie",
+      "title": "Jana Nayagan",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
       "id": 1477712,
@@ -308,6 +296,18 @@
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
+      "id": 1232569,
+      "mediaType": "movie",
+      "title": "Pinocchio: Unstrung",
+      "overview": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
+      "poster": "https://image.tmdb.org/t/p/w500/sqhfUrPEeAlFf684FsVa8v1GYCD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "7.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/movie/1232569"
+    },
+    {
       "id": 1185806,
       "mediaType": "movie",
       "title": "PAW Patrol: The Dino Movie",
@@ -320,16 +320,16 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
-      "id": 1215532,
+      "id": 539745,
       "mediaType": "movie",
-      "title": "Chickenhare and the Secret of the Groundhog",
-      "overview": "Chickenhare embarks on an epic quest, a mysterious groundhog with the power to reverse time and save his species. His adventure takes a dangerous turn when his group discover they are not the only ones searching for this ancient power.",
-      "poster": "https://image.tmdb.org/t/p/w500/cUCwWxHF1bRfqeY7beZfsvT7WBR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
+      "title": "Animal Farm",
+      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
+      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
       "releaseDate": "2026-07-24",
-      "rating": "7.4",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1215532"
+      "rating": "6.5",
+      "votes": 89,
+      "url": "https://www.themoviedb.org/movie/539745"
     },
     {
       "id": 675871,
@@ -344,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/675871"
     },
     {
+      "id": 1215532,
+      "mediaType": "movie",
+      "title": "Chickenhare and the Secret of the Groundhog",
+      "overview": "Chickenhare embarks on an epic quest, a mysterious groundhog with the power to reverse time and save his species. His adventure takes a dangerous turn when his group discover they are not the only ones searching for this ancient power.",
+      "poster": "https://image.tmdb.org/t/p/w500/cUCwWxHF1bRfqeY7beZfsvT7WBR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "7.4",
+      "votes": 8,
+      "url": "https://www.themoviedb.org/movie/1215532"
+    },
+    {
       "id": 1713706,
       "mediaType": "movie",
       "title": "Love/Bug",
@@ -354,18 +366,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1713706"
-    },
-    {
-      "id": 539745,
-      "mediaType": "movie",
-      "title": "Animal Farm",
-      "overview": "A group of farm animals rise up against their neglectful owner, dreaming of equality and freedom. But as the pigs take control, the revolution turns into tyranny, with truth rewritten and dissent crushed.",
-      "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "6.5",
-      "votes": 89,
-      "url": "https://www.themoviedb.org/movie/539745"
     }
   ],
   "nowPlayingMovies": [
@@ -378,8 +378,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-17",
       "rating": "7.8",
-      "votes": 685,
+      "votes": 720,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "releaseDate": "2026-07-10",
+      "rating": "5.8",
+      "votes": 117,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1275779,
@@ -390,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 904,
+      "votes": 905,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -402,20 +414,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 655,
+      "votes": 659,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "5.8",
-      "votes": 115,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1315772,
@@ -426,20 +426,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 201,
+      "votes": 204,
       "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1280738,
-      "mediaType": "movie",
-      "title": "The Furious",
-      "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
-      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.4",
-      "votes": 222,
-      "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
       "id": 1081003,
@@ -450,8 +438,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.2",
-      "votes": 497,
+      "votes": 498,
       "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1280738,
+      "mediaType": "movie",
+      "title": "The Furious",
+      "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.4",
+      "votes": 226,
+      "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
       "id": 1212763,
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 168,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.8",
-      "votes": 71,
+      "votes": 72,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
