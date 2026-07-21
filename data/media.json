@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-21T16:05:24.675144+00:00",
+  "updated": "2026-07-21T21:43:58.947886+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.9",
-      "votes": 825,
+      "votes": 862,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -20,11 +20,11 @@
       "mediaType": "movie",
       "title": "Disclosure Day",
       "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "poster": "https://image.tmdb.org/t/p/w500/259wnijEJoJLPuZuscxDTqwnypw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/fb4jlgX1q4sdv33t3dYlop5EGiT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
       "releaseDate": "2026-06-10",
       "rating": "6.7",
-      "votes": 917,
+      "votes": 931,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 1853,
+      "votes": 1870,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -44,11 +44,11 @@
       "mediaType": "movie",
       "title": "Scary Movie",
       "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/1KlYdWoOrbL5ux357rW9LC155qw.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/bqOKJrZFR9KpqWE607dw6KOdKCj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.3",
-      "votes": 788,
+      "votes": 811,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -60,20 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 3400,
+      "votes": 3418,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1228710,
-      "mediaType": "movie",
-      "title": "The Mandalorian and Grogu",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
-      "releaseDate": "2026-05-20",
-      "rating": "6.7",
-      "votes": 619,
-      "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
       "id": 969681,
@@ -88,6 +76,18 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
+      "id": 1228710,
+      "mediaType": "movie",
+      "title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "6.7",
+      "votes": 629,
+      "url": "https://www.themoviedb.org/movie/1228710"
+    },
+    {
       "id": 1318621,
       "mediaType": "movie",
       "title": "Descendants: Wicked Wonderland",
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
       "releaseDate": "2026-07-16",
       "rating": "7.8",
-      "votes": 72,
+      "votes": 74,
       "url": "https://www.themoviedb.org/movie/1318621"
     },
     {
@@ -108,23 +108,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
       "releaseDate": "2026-07-08",
       "rating": "5.8",
-      "votes": 125,
+      "votes": 131,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
-      "id": 1284465,
+      "id": 1003596,
       "mediaType": "movie",
-      "title": "The Death of Robin Hood",
-      "overview": "Grappling with his past after a life of crime and murder, Robin Hood finds himself gravely injured after a battle he thought would be his last. In the hands of a mysterious woman, he is offered a chance at salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aM3pduSU53VjcALWOfLWNw8v2TI.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "6.7",
-      "votes": 81,
-      "url": "https://www.themoviedb.org/movie/1284465"
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6KDDoTq8Vq3HuQHULzuvPiCJbMI.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     }
   ],
   "trendingTv": [
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6670,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
     {
       "id": 278624,
       "mediaType": "tv",
@@ -133,8 +145,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
-      "rating": "6.7",
-      "votes": 65,
+      "rating": "6.8",
+      "votes": 66,
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
@@ -145,21 +157,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "8.0",
-      "votes": 29,
+      "rating": "7.9",
+      "votes": 32,
       "url": "https://www.themoviedb.org/tv/279323"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6669,
-      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 125988,
@@ -194,20 +194,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5429,
+      "votes": 5430,
       "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 296206,
-      "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.2",
-      "votes": 37,
-      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 254528,
@@ -222,16 +210,16 @@
       "url": "https://www.themoviedb.org/tv/254528"
     },
     {
-      "id": 298610,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "Spooky in Love",
-      "overview": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
-      "poster": "https://image.tmdb.org/t/p/w500/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/p9tpGftvG18M5y5wsBmPrQpVBsd.jpg",
-      "releaseDate": "2026-07-18",
-      "rating": "9.2",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/298610"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.2",
+      "votes": 37,
+      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 241882,
@@ -241,9 +229,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/uWqEnvpwa2U28QheMdUdEcr4U0M.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jwCXxvbLno5GrGDA9KvQ22uLziM.jpg",
       "releaseDate": "2026-07-15",
-      "rating": "5.0",
-      "votes": 40,
+      "rating": "5.2",
+      "votes": 44,
       "url": "https://www.themoviedb.org/tv/241882"
+    },
+    {
+      "id": 298610,
+      "mediaType": "tv",
+      "title": "Spooky in Love",
+      "overview": "When a ghost-seeing heir and an ace prosecutor learn that a single touch makes them a strangely effective duo, they team up to crack unsolved murders.",
+      "poster": "https://image.tmdb.org/t/p/w500/acVOH8Pr5LEZ7WKZCbzwNuHVr9x.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/p9tpGftvG18M5y5wsBmPrQpVBsd.jpg",
+      "releaseDate": "2026-07-18",
+      "rating": "8.8",
+      "votes": 8,
+      "url": "https://www.themoviedb.org/tv/298610"
     }
   ],
   "upcomingMovies": [
@@ -320,6 +320,18 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
+      "id": 1215532,
+      "mediaType": "movie",
+      "title": "Chickenhare and the Secret of the Groundhog",
+      "overview": "Chickenhare embarks on an epic quest, a mysterious groundhog with the power to reverse time and save his species. His adventure takes a dangerous turn when his group discover they are not the only ones searching for this ancient power.",
+      "poster": "https://image.tmdb.org/t/p/w500/cUCwWxHF1bRfqeY7beZfsvT7WBR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "7.4",
+      "votes": 8,
+      "url": "https://www.themoviedb.org/movie/1215532"
+    },
+    {
       "id": 539745,
       "mediaType": "movie",
       "title": "Animal Farm",
@@ -327,8 +339,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1yl7xmTN2iEyiD3gF8M68lBhR39.jpg",
       "releaseDate": "2026-07-24",
-      "rating": "6.5",
-      "votes": 89,
+      "rating": "6.4",
+      "votes": 91,
       "url": "https://www.themoviedb.org/movie/539745"
     },
     {
@@ -342,18 +354,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/675871"
-    },
-    {
-      "id": 1215532,
-      "mediaType": "movie",
-      "title": "Chickenhare and the Secret of the Groundhog",
-      "overview": "Chickenhare embarks on an epic quest, a mysterious groundhog with the power to reverse time and save his species. His adventure takes a dangerous turn when his group discover they are not the only ones searching for this ancient power.",
-      "poster": "https://image.tmdb.org/t/p/w500/cUCwWxHF1bRfqeY7beZfsvT7WBR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fnuJV4WwxGM8w784lGV7j32JVsG.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "7.4",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1215532"
     },
     {
       "id": 1713706,
