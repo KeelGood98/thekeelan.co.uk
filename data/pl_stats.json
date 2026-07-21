@@ -1,116 +1,116 @@
 {
-  "updated": "2026-07-21T08:47:14.796157+00:00",
+  "updated": "2026-07-21T14:25:28.719143+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [],
   "bestAttacks": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsFor": 0,
-      "played": 0
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsFor": 77,
+      "played": 38
     },
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 0,
-      "played": 0
+      "goalsFor": 71,
+      "played": 38
     },
     {
-      "name": "Aston Villa",
-      "badge": "https://crests.football-data.org/58.png",
-      "goalsFor": 0,
-      "played": 0
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalsFor": 69,
+      "played": 38
     },
     {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 0,
-      "played": 0
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalsFor": 63,
+      "played": 38
     },
     {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsFor": 0,
-      "played": 0
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
+      "goalsFor": 58,
+      "played": 38
     }
   ],
   "bestDefences": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsAgainst": 0,
-      "played": 0
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsAgainst": 0,
-      "played": 0
+      "goalsAgainst": 27,
+      "played": 38
     },
     {
-      "name": "Aston Villa",
-      "badge": "https://crests.football-data.org/58.png",
-      "goalsAgainst": 0,
-      "played": 0
-    },
-    {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalsAgainst": 0,
-      "played": 0
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsAgainst": 35,
+      "played": 38
     },
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 0,
-      "played": 0
+      "goalsAgainst": 46,
+      "played": 38
+    },
+    {
+      "name": "Sunderland",
+      "badge": "https://crests.football-data.org/71.png",
+      "goalsAgainst": 48,
+      "played": 38
+    },
+    {
+      "name": "Aston Villa",
+      "badge": "https://crests.football-data.org/58.png",
+      "goalsAgainst": 49,
+      "played": 38
     }
   ],
   "goalDifferenceLeaders": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalDifference": 0,
-      "played": 0
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 0,
-      "played": 0
+      "goalDifference": 44,
+      "played": 38
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalDifference": 42,
+      "played": 38
+    },
+    {
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalDifference": 19,
+      "played": 38
+    },
+    {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalDifference": 10,
+      "played": 38
     },
     {
       "name": "Aston Villa",
       "badge": "https://crests.football-data.org/58.png",
-      "goalDifference": 0,
-      "played": 0
-    },
-    {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalDifference": 0,
-      "played": 0
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 0,
-      "played": 0
+      "goalDifference": 7,
+      "played": 38
     }
   ],
   "manUnitedSummary": {
-    "position": 1,
+    "position": 3,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 0,
-    "won": 0,
-    "drawn": 0,
-    "lost": 0,
-    "goalsFor": 0,
-    "goalsAgainst": 0,
-    "goalDifference": 0,
-    "points": 0
+    "played": 38,
+    "won": 20,
+    "drawn": 11,
+    "lost": 7,
+    "goalsFor": 69,
+    "goalsAgainst": 50,
+    "goalDifference": 19,
+    "points": 71
   }
 }
