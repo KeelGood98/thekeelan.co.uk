@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-22T10:49:29.874760+00:00",
+  "updated": "2026-07-22T16:05:54.891129+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.9",
-      "votes": 935,
+      "votes": 957,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "7.0",
-      "votes": 1108,
-      "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
       "id": 454639,
@@ -36,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.9",
-      "votes": 416,
+      "votes": 441,
       "url": "https://www.themoviedb.org/movie/454639"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 1910,
-      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1273221,
@@ -60,20 +36,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.4",
-      "votes": 865,
+      "votes": 873,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
-      "id": 1339713,
+      "id": 1275779,
       "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 3454,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "7.0",
+      "votes": 1129,
+      "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "7.1",
+      "votes": 1918,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 969681,
@@ -88,6 +76,18 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 3468,
+      "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
       "id": 1228710,
       "mediaType": "movie",
       "title": "The Mandalorian and Grogu",
@@ -95,8 +95,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
       "releaseDate": "2026-05-20",
-      "rating": "6.9",
-      "votes": 708,
+      "rating": "7.0",
+      "votes": 717,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -107,24 +107,36 @@
       "poster": "https://image.tmdb.org/t/p/w500/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
       "releaseDate": "2026-07-16",
-      "rating": "7.8",
-      "votes": 76,
+      "rating": "7.7",
+      "votes": 78,
       "url": "https://www.themoviedb.org/movie/1318621"
     },
     {
-      "id": 1058424,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/1n37BJchWHLiSYQkuFxe5KjB951.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qv2gffpbllYE1Pxz5nhYQmYuht5.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "7.9",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1058424"
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "5.7",
+      "votes": 132,
+      "url": "https://www.themoviedb.org/movie/1108427"
     }
   ],
   "trendingTv": [
+    {
+      "id": 278624,
+      "mediaType": "tv",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "6.9",
+      "votes": 69,
+      "url": "https://www.themoviedb.org/tv/278624"
+    },
     {
       "id": 215072,
       "mediaType": "tv",
@@ -138,30 +150,6 @@
       "url": "https://www.themoviedb.org/tv/215072"
     },
     {
-      "id": 278624,
-      "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "6.9",
-      "votes": 69,
-      "url": "https://www.themoviedb.org/tv/278624"
-    },
-    {
-      "id": 281281,
-      "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "Following an unprecedented attack on the GIGN, an officer—just as he is leaving the force—will carry out a mission that rivals the intensity of that attack.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
       "id": 279323,
       "mediaType": "tv",
       "title": "The East Palace",
@@ -169,9 +157,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 32,
+      "rating": "8.0",
+      "votes": 35,
       "url": "https://www.themoviedb.org/tv/279323"
+    },
+    {
+      "id": 281281,
+      "mediaType": "tv",
+      "title": "Elite Force",
+      "overview": "Following an unprecedented attack on the GIGN, an officer—just as he is leaving the force—will carry out a mission that rivals the intensity of that attack.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yqavGt058YB6o2SOJunH0ZJYn6h.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "6.8",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/tv/281281"
     },
     {
       "id": 94997,
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6678,
+      "votes": 6679,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -194,8 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2298,
+      "votes": 2299,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11143,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
       "id": 37854,
@@ -222,18 +234,6 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 60625,
-      "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11141,
-      "url": "https://www.themoviedb.org/tv/60625"
-    },
-    {
       "id": 138502,
       "mediaType": "tv",
       "title": "X-Men '97",
@@ -242,7 +242,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
       "releaseDate": "2024-03-20",
       "rating": "8.6",
-      "votes": 783,
+      "votes": 785,
       "url": "https://www.themoviedb.org/tv/138502"
     }
   ],
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-17",
       "rating": "7.9",
-      "votes": 920,
+      "votes": 942,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 671,
+      "votes": 673,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
