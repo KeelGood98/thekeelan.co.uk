@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T16:05:37.627420+00:00",
+  "updated": "2026-07-24T21:43:43.703506+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1207,
+      "votes": 1241,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -24,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.2",
-      "votes": 1434,
+      "votes": 1470,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.4",
-      "votes": 760,
-      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 1273221,
@@ -48,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 992,
+      "votes": 1004,
       "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
-      "releaseDate": "2026-07-28",
-      "rating": "8.9",
-      "votes": 9,
-      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1339713,
@@ -72,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 3566,
+      "votes": 3579,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -84,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2003,
+      "votes": 2015,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.4",
+      "votes": 789,
+      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 1228710,
@@ -96,8 +84,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.1",
-      "votes": 824,
+      "votes": 830,
       "url": "https://www.themoviedb.org/movie/1228710"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "releaseDate": "2026-07-28",
+      "rating": "8.8",
+      "votes": 10,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1318621,
+      "mediaType": "movie",
+      "title": "Descendants: Wicked Wonderland",
+      "overview": "Now that the Queen of Hearts is nice and Cinderella is safe, things seem perfect for Red and Chloe… But little do they know that changing the past created a new villain — Maddox Hatter. When Maddox captures the Queen of Hearts, Red and Chloe must work alongside Red’s new sister Pink, Luisa Madrigal’s son Luis, and Maddox’s son Max to save her and Wonderland.",
+      "poster": "https://image.tmdb.org/t/p/w500/xdhLAADGSse8KCrsDLBuM5b68Cg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/idRLKyu43mRhMWNjzd6FiEromNI.jpg",
+      "releaseDate": "2026-07-16",
+      "rating": "7.7",
+      "votes": 97,
+      "url": "https://www.themoviedb.org/movie/1318621"
     },
     {
       "id": 1361774,
@@ -107,36 +119,12 @@
       "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tJQhL95q63ITeBy5OTGPx51sFks.jpg",
       "releaseDate": "2026-07-23",
-      "rating": "4.5",
-      "votes": 4,
+      "rating": "6.3",
+      "votes": 7,
       "url": "https://www.themoviedb.org/movie/1361774"
-    },
-    {
-      "id": 1659155,
-      "mediaType": "movie",
-      "title": "The Truthers",
-      "overview": "After her mother's sudden death, Ruth returns to her hometown and reunites with her father, whose odd behavior makes her question what really happened.",
-      "poster": "https://image.tmdb.org/t/p/w500/ltuAheARdaUHbaS8lX1ZPrNOXe5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2kQ71k6dq7DVNYuYY9ylNvRFKTv.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "5.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1659155"
     }
   ],
   "trendingTv": [
-    {
-      "id": 287620,
-      "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/iQbTbwmLX5Nh1nlH21YUJPWt3Zo.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "8.8",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/287620"
-    },
     {
       "id": 125988,
       "mediaType": "tv",
@@ -146,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2307,
+      "votes": 2309,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6700,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 279323,
@@ -157,8 +157,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 39,
+      "rating": "8.0",
+      "votes": 40,
       "url": "https://www.themoviedb.org/tv/279323"
     },
     {
@@ -170,44 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
       "rating": "7.1",
-      "votes": 79,
+      "votes": 81,
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
-      "id": 281281,
+      "id": 287620,
       "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
-      "rating": "7.3",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6698,
-      "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 215072,
-      "mediaType": "tv",
-      "title": "A Shop for Killers",
-      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
-      "releaseDate": "2024-01-17",
-      "rating": "8.4",
-      "votes": 183,
-      "url": "https://www.themoviedb.org/tv/215072"
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/iQbTbwmLX5Nh1nlH21YUJPWt3Zo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "8.2",
+      "votes": 6,
+      "url": "https://www.themoviedb.org/tv/287620"
     },
     {
       "id": 296206,
@@ -222,6 +198,42 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
+      "id": 281281,
+      "mediaType": "tv",
+      "title": "Elite Force",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "7.0",
+      "votes": 17,
+      "url": "https://www.themoviedb.org/tv/281281"
+    },
+    {
+      "id": 215072,
+      "mediaType": "tv",
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.4",
+      "votes": 183,
+      "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5BDNWWHweQL0q1fmTv7gmRXfnl4.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11150,
+      "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
       "id": 103516,
       "mediaType": "tv",
       "title": "Star Trek: Strange New Worlds",
@@ -232,18 +244,6 @@
       "rating": "7.9",
       "votes": 781,
       "url": "https://www.themoviedb.org/tv/103516"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5435,
-      "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "9.8",
-      "votes": 7,
+      "rating": "8.9",
+      "votes": 9,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/AfyuI3glMCBDFmNPj9PY6DwbgGp.jpg",
       "releaseDate": "2021-10-17",
       "rating": "8.3",
-      "votes": 1890,
+      "votes": 1891,
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
@@ -296,18 +296,6 @@
       "url": "https://www.themoviedb.org/movie/1146058"
     },
     {
-      "id": 1477712,
-      "mediaType": "movie",
-      "title": "Ice Cream Man",
-      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
-      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1477712"
-    },
-    {
       "id": 1185806,
       "mediaType": "movie",
       "title": "PAW Patrol: The Dino Movie",
@@ -320,16 +308,16 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
-      "id": 1432474,
+      "id": 1477712,
       "mediaType": "movie",
-      "title": "Nimrods",
-      "overview": "Three friends journey from Kansas City to Los Angeles, mistakenly believing that their band is opening for Green Day on New Year’s Eve.",
-      "poster": "https://image.tmdb.org/t/p/w500/bKxQrc3FvQVtz8pi4ELb51CHOS3.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nwkfCcHIqzo5H4rsG4ug5AVdGZM.jpg",
-      "releaseDate": "2026-08-11",
+      "title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
+      "releaseDate": "2026-08-07",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1432474"
+      "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
       "id": 675871,
@@ -344,6 +332,30 @@
       "url": "https://www.themoviedb.org/movie/675871"
     },
     {
+      "id": 1432474,
+      "mediaType": "movie",
+      "title": "Nimrods",
+      "overview": "Three friends journey from Kansas City to Los Angeles, mistakenly believing that their band is opening for Green Day on New Year’s Eve.",
+      "poster": "https://image.tmdb.org/t/p/w500/bKxQrc3FvQVtz8pi4ELb51CHOS3.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nwkfCcHIqzo5H4rsG4ug5AVdGZM.jpg",
+      "releaseDate": "2026-08-11",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1432474"
+    },
+    {
+      "id": 1280015,
+      "mediaType": "movie",
+      "title": "Sunny Dancer",
+      "overview": "Ivy is a teenager in remission from cancer, whose mum and dad insist she attend Children Run Free Camp, a summer retreat for young adults affected by cancer. However, as Ivy is reluctantly dragged through camp experience, she discovers new feelings with new friends.",
+      "poster": "https://image.tmdb.org/t/p/w500/d7yOPcBc099HHhmZGS9eMzMruAL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hRsl1RMijpUCtLH3nZzRMnTjFYl.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1280015"
+    },
+    {
       "id": 1517206,
       "mediaType": "movie",
       "title": "Bouchra",
@@ -354,18 +366,6 @@
       "rating": "5.8",
       "votes": 2,
       "url": "https://www.themoviedb.org/movie/1517206"
-    },
-    {
-      "id": 1329016,
-      "mediaType": "movie",
-      "title": "Tony",
-      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-      "poster": "https://image.tmdb.org/t/p/w500/z39nccQLIc9LnhJOusvN03KvMpb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1329016"
     }
   ],
   "nowPlayingMovies": [
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 1181,
+      "rating": "8.0",
+      "votes": 1209,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -387,7 +387,7 @@
       "title": "Moana",
       "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mMkJq4dkQwfDieB9wRC9yPxDWv9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/76WFQTmh4gsqYpWTejxuEu5Iu69.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.9",
       "votes": 138,
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.1",
-      "votes": 513,
+      "votes": 515,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 685,
+      "votes": 688,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "9.8",
-      "votes": 7,
+      "rating": "8.9",
+      "votes": 9,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.4",
-      "votes": 238,
+      "votes": 239,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -462,8 +462,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 190,
+      "votes": 192,
       "url": "https://www.themoviedb.org/movie/1212763"
+    },
+    {
+      "id": 1235877,
+      "mediaType": "movie",
+      "title": "Jana Nayagan",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "10.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
       "id": 1227241,
@@ -476,18 +488,6 @@
       "rating": "7.0",
       "votes": 9,
       "url": "https://www.themoviedb.org/movie/1227241"
-    },
-    {
-      "id": 950028,
-      "mediaType": "movie",
-      "title": "The Invite",
-      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places.",
-      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
-      "releaseDate": "2026-07-03",
-      "rating": "7.8",
-      "votes": 86,
-      "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
   "links": [
