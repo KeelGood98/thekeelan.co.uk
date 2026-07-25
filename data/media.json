@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T10:15:01.336838+00:00",
+  "updated": "2026-07-25T15:44:57.360050+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.9",
-      "votes": 1293,
+      "votes": 1322,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.2",
-      "votes": 1548,
+      "votes": 1560,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1034,
+      "votes": 1040,
       "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 3604,
-      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 454639,
@@ -59,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
-      "rating": "7.4",
-      "votes": 863,
+      "rating": "7.3",
+      "votes": 880,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
@@ -72,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.2",
-      "votes": 843,
+      "votes": 846,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -84,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2037,
+      "votes": 2042,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 3610,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 969681,
@@ -95,9 +95,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-28",
-      "rating": "8.8",
-      "votes": 10,
+      "rating": "9.0",
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 980431,
+      "mediaType": "movie",
+      "title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8kJrpxyQAs0PHmuC53TLNK51ogP.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "9.3",
+      "votes": 29,
+      "url": "https://www.themoviedb.org/movie/980431"
     },
     {
       "id": 1361774,
@@ -107,35 +119,23 @@
       "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tJQhL95q63ITeBy5OTGPx51sFks.jpg",
       "releaseDate": "2026-07-23",
-      "rating": "6.5",
-      "votes": 11,
+      "rating": "6.3",
+      "votes": 15,
       "url": "https://www.themoviedb.org/movie/1361774"
-    },
-    {
-      "id": 1003596,
-      "mediaType": "movie",
-      "title": "Avengers: Doomsday",
-      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6KDDoTq8Vq3HuQHULzuvPiCJbMI.jpg",
-      "releaseDate": "2026-12-16",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1003596"
     }
   ],
   "trendingTv": [
     {
-      "id": 94997,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6703,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "TBC",
+      "rating": "7.5",
+      "votes": 39,
+      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 125988,
@@ -150,16 +150,16 @@
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 287620,
+      "id": 94997,
       "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "8.3",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/287620"
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6703,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 279323,
@@ -174,42 +174,6 @@
       "url": "https://www.themoviedb.org/tv/279323"
     },
     {
-      "id": 215072,
-      "mediaType": "tv",
-      "title": "A Shop for Killers",
-      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
-      "releaseDate": "2024-01-17",
-      "rating": "8.4",
-      "votes": 183,
-      "url": "https://www.themoviedb.org/tv/215072"
-    },
-    {
-      "id": 281281,
-      "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
-      "rating": "6.8",
-      "votes": 19,
-      "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
-      "id": 296206,
-      "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.3",
-      "votes": 39,
-      "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
       "id": 278624,
       "mediaType": "tv",
       "title": "Lucky",
@@ -222,16 +186,40 @@
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
-      "id": 103516,
+      "id": 281281,
       "mediaType": "tv",
-      "title": "Star Trek: Strange New Worlds",
-      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-      "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
-      "releaseDate": "2022-05-05",
-      "rating": "7.9",
-      "votes": 781,
-      "url": "https://www.themoviedb.org/tv/103516"
+      "title": "Elite Force",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "6.6",
+      "votes": 20,
+      "url": "https://www.themoviedb.org/tv/281281"
+    },
+    {
+      "id": 215072,
+      "mediaType": "tv",
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.4",
+      "votes": 184,
+      "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 287620,
+      "mediaType": "tv",
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "8.9",
+      "votes": 9,
+      "url": "https://www.themoviedb.org/tv/287620"
     },
     {
       "id": 37854,
@@ -242,8 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5436,
+      "votes": 5438,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 103516,
+      "mediaType": "tv",
+      "title": "Star Trek: Strange New Worlds",
+      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+      "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+      "releaseDate": "2022-05-05",
+      "rating": "7.9",
+      "votes": 781,
+      "url": "https://www.themoviedb.org/tv/103516"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "8.8",
-      "votes": 10,
+      "rating": "9.0",
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -284,18 +284,6 @@
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
-      "id": 1146058,
-      "mediaType": "movie",
-      "title": "The Pout-Pout Fish",
-      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
-      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "5.1",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1146058"
-    },
-    {
       "id": 1185806,
       "mediaType": "movie",
       "title": "PAW Patrol: The Dino Movie",
@@ -306,6 +294,18 @@
       "rating": "3.5",
       "votes": 2,
       "url": "https://www.themoviedb.org/movie/1185806"
+    },
+    {
+      "id": 1146058,
+      "mediaType": "movie",
+      "title": "The Pout-Pout Fish",
+      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
+      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "5.1",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1146058"
     },
     {
       "id": 1477712,
@@ -320,18 +320,6 @@
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
-      "id": 675871,
-      "mediaType": "movie",
-      "title": "Super Troopers 3",
-      "overview": "When Farva’s wildly over-the-top Indian engagement to Thorny’s sister spirals into chaos, the Super Troopers must navigate Thorny’s schemes to break up the relationship, while trying to crack a pernicious new drug ring  — all to save the day and maybe the wedding itself.",
-      "poster": "https://image.tmdb.org/t/p/w500/eV2Uhn8A93V4ELySlrBGvBuQJLj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oU2H07DQVjGMp2vUgrYzso36v15.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/675871"
-    },
-    {
       "id": 1432474,
       "mediaType": "movie",
       "title": "Nimrods",
@@ -342,6 +330,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1432474"
+    },
+    {
+      "id": 675871,
+      "mediaType": "movie",
+      "title": "Super Troopers 3",
+      "overview": "When Farva’s wildly over-the-top Indian engagement to Thorny’s sister spirals into chaos, the Super Troopers must navigate Thorny’s schemes to break up the relationship, while trying to crack a pernicious new drug ring  — all to save the day and maybe the wedding itself.",
+      "poster": "https://image.tmdb.org/t/p/w500/eV2Uhn8A93V4ELySlrBGvBuQJLj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oU2H07DQVjGMp2vUgrYzso36v15.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/675871"
     },
     {
       "id": 1280015,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 1281,
+      "votes": 1300,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -387,10 +387,10 @@
       "title": "Moana",
       "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/76WFQTmh4gsqYpWTejxuEu5Iu69.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.9",
-      "votes": 139,
+      "votes": 138,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 224,
+      "votes": 223,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -413,7 +413,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "6.2",
+      "rating": "6.1",
       "votes": 518,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 693,
+      "votes": 692,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "8.8",
-      "votes": 10,
+      "rating": "9.0",
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1AVF2fAevpfi2HP6AEpptG1kg8R.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.3",
-      "votes": 243,
+      "votes": 245,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 195,
+      "votes": 196,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -482,8 +482,8 @@
       "mediaType": "movie",
       "title": "Maa Inti Bangaram",
       "overview": "Through both her moments of fear and bravery, a woman discovers that embracing her vulnerabilities is as vital to her inner strength as facing challenges head-on.",
-      "poster": "https://image.tmdb.org/t/p/w500/v8JvcEmBfszcvEzwlB8FN1aPVaK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lAbxmPvGfdNshyrtXAtj0EZon2z.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/OPwNfFyYCj76OjKZ3NZsJzWx7u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2pA5fvLPZGYR5OukwiRCeliHvNM.jpg",
       "releaseDate": "2026-06-18",
       "rating": "7.0",
       "votes": 9,
