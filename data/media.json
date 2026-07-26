@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26T10:20:57.827710+00:00",
+  "updated": "2026-07-26T15:44:07.953255+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1415,
+      "votes": 1443,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -24,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.3",
-      "votes": 1681,
+      "votes": 1699,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "6.5",
-      "votes": 1108,
-      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 454639,
@@ -48,20 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1006,
+      "votes": 1022,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 1339713,
+      "id": 1273221,
       "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 3669,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "6.5",
+      "votes": 1112,
+      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 1228710,
@@ -72,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.2",
-      "votes": 889,
+      "votes": 894,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -84,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2088,
+      "votes": 2097,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/diOZbaDnB2CIilwd0527AB1qMvW.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 3680,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 969681,
@@ -117,25 +117,25 @@
       "title": "Avatar Aang: The Last Airbender",
       "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture.",
       "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yQe50s6d8DYiFZ6P0cyRSNhTVCz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/11kSpoQwxoBT4KQfgBMCsRPFYKW.jpg",
       "releaseDate": "2026-07-24",
-      "rating": "9.3",
-      "votes": 107,
+      "rating": "9.4",
+      "votes": 120,
       "url": "https://www.themoviedb.org/movie/980431"
     }
   ],
   "trendingTv": [
     {
-      "id": 296206,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.6",
-      "votes": 49,
-      "url": "https://www.themoviedb.org/tv/296206"
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2188,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 125988,
@@ -146,32 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2318,
+      "votes": 2319,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 30984,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2187,
-      "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 279323,
-      "mediaType": "tv",
-      "title": "The East Palace",
-      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
-      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "8.1",
-      "votes": 43,
-      "url": "https://www.themoviedb.org/tv/279323"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.6",
+      "votes": 53,
+      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 94997,
@@ -193,21 +181,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
       "releaseDate": "2026-07-22",
-      "rating": "6.9",
-      "votes": 24,
+      "rating": "7.0",
+      "votes": 25,
       "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
-      "id": 215072,
-      "mediaType": "tv",
-      "title": "A Shop for Killers",
-      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
-      "releaseDate": "2024-01-17",
-      "rating": "8.4",
-      "votes": 185,
-      "url": "https://www.themoviedb.org/tv/215072"
     },
     {
       "id": 287620,
@@ -234,16 +210,40 @@
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
-      "id": 103516,
+      "id": 215072,
       "mediaType": "tv",
-      "title": "Star Trek: Strange New Worlds",
-      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-      "poster": "https://image.tmdb.org/t/p/w500/w6KapI2JvrCkOPmQhkwYPJNjqeo.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
-      "releaseDate": "2022-05-05",
-      "rating": "7.9",
-      "votes": 784,
-      "url": "https://www.themoviedb.org/tv/103516"
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.4",
+      "votes": 185,
+      "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5441,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 279323,
+      "mediaType": "tv",
+      "title": "The East Palace",
+      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "8.1",
+      "votes": 43,
+      "url": "https://www.themoviedb.org/tv/279323"
     }
   ],
   "upcomingMovies": [
