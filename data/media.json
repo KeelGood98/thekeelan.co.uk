@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-25T21:34:04.318033+00:00",
+  "updated": "2026-07-26T10:20:57.827710+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1354,
+      "votes": 1415,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -23,21 +23,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
-      "rating": "7.2",
-      "votes": 1584,
+      "rating": "7.3",
+      "votes": 1681,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1228710,
-      "mediaType": "movie",
-      "title": "The Mandalorian and Grogu",
-      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
-      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
-      "releaseDate": "2026-05-20",
-      "rating": "7.2",
-      "votes": 858,
-      "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
       "id": 1273221,
@@ -48,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1055,
+      "votes": 1108,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -60,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 913,
+      "votes": 1006,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
@@ -72,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 3620,
+      "votes": 3669,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1228710,
+      "mediaType": "movie",
+      "title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "7.2",
+      "votes": 889,
+      "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
       "id": 1083381,
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2aA8iPlMCks3k131ymFBAY6FL0b.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2053,
+      "votes": 2088,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -96,46 +96,46 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-28",
       "rating": "9.0",
-      "votes": 11,
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6KDDoTq8Vq3HuQHULzuvPiCJbMI.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
       "id": 980431,
       "mediaType": "movie",
       "title": "Avatar Aang: The Last Airbender",
-      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture.",
       "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3C55GoBfkDYKRFSYcyOJjEirhHK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yQe50s6d8DYiFZ6P0cyRSNhTVCz.jpg",
       "releaseDate": "2026-07-24",
-      "rating": "9.2",
-      "votes": 51,
+      "rating": "9.3",
+      "votes": 107,
       "url": "https://www.themoviedb.org/movie/980431"
-    },
-    {
-      "id": 1361774,
-      "mediaType": "movie",
-      "title": "The Dink",
-      "overview": "Desperate to save a struggling country club and earn his father's respect, a washed-up tennis pro is compelled to break a sacred vow and do the unthinkable: play pickleball.",
-      "poster": "https://image.tmdb.org/t/p/w500/8dq7vaUkXPqwqKxBFW4qJNBWeop.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tJQhL95q63ITeBy5OTGPx51sFks.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "6.4",
-      "votes": 20,
-      "url": "https://www.themoviedb.org/movie/1361774"
     }
   ],
   "trendingTv": [
     {
-      "id": 30984,
+      "id": 296206,
       "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2185,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.6",
+      "votes": 49,
+      "url": "https://www.themoviedb.org/tv/296206"
     },
     {
       "id": 125988,
@@ -146,32 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2315,
+      "votes": 2318,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 296206,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/jruaZAm1KjkFRhgRcdF8tqakhpH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.5",
-      "votes": 43,
-      "url": "https://www.themoviedb.org/tv/296206"
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2187,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
-      "id": 281281,
+      "id": 279323,
       "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
-      "rating": "6.8",
-      "votes": 22,
-      "url": "https://www.themoviedb.org/tv/281281"
+      "title": "The East Palace",
+      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
+      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
+      "releaseDate": "2026-07-17",
+      "rating": "8.1",
+      "votes": 43,
+      "url": "https://www.themoviedb.org/tv/279323"
     },
     {
       "id": 94997,
@@ -182,8 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6705,
+      "votes": 6716,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 281281,
+      "mediaType": "tv",
+      "title": "Elite Force",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "6.9",
+      "votes": 24,
+      "url": "https://www.themoviedb.org/tv/281281"
     },
     {
       "id": 215072,
@@ -194,8 +206,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
       "releaseDate": "2024-01-17",
       "rating": "8.4",
-      "votes": 184,
+      "votes": 185,
       "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 287620,
+      "mediaType": "tv",
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "8.8",
+      "votes": 19,
+      "url": "https://www.themoviedb.org/tv/287620"
     },
     {
       "id": 278624,
@@ -205,21 +229,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
-      "rating": "7.1",
-      "votes": 82,
+      "rating": "7.2",
+      "votes": 85,
       "url": "https://www.themoviedb.org/tv/278624"
-    },
-    {
-      "id": 279323,
-      "mediaType": "tv",
-      "title": "The East Palace",
-      "overview": "A man who walks the spirit world and a court lady who hears the dead enter the East Palace by the king's orders — can they unravel its dark secrets?",
-      "poster": "https://image.tmdb.org/t/p/w500/yfYohBszGqoAW8oM0qydOtJ4kPh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8PHBAdPyfIwS5W6cfKLhItEb875.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "8.0",
-      "votes": 41,
-      "url": "https://www.themoviedb.org/tv/279323"
     },
     {
       "id": 103516,
@@ -230,20 +242,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
       "releaseDate": "2022-05-05",
       "rating": "7.9",
-      "votes": 781,
+      "votes": 784,
       "url": "https://www.themoviedb.org/tv/103516"
-    },
-    {
-      "id": 287620,
-      "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "9.1",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/287620"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
       "rating": "9.0",
-      "votes": 11,
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -264,7 +264,7 @@
       "mediaType": "movie",
       "title": "The End of Oak Street",
       "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
-      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/3SifFCwwFzXdU1Ew0nA4Z92Bs15.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "0.0",
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/AfyuI3glMCBDFmNPj9PY6DwbgGp.jpg",
       "releaseDate": "2021-10-17",
       "rating": "8.3",
-      "votes": 1893,
+      "votes": 1894,
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
@@ -375,10 +375,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 1346,
+      "rating": "8.0",
+      "votes": 1409,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.9",
-      "votes": 138,
+      "votes": 141,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -399,10 +399,10 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wj1CsxIx5Y7a2jFuW7p5MqVJoTx.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.1",
-      "votes": 518,
+      "votes": 522,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 225,
+      "votes": 232,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 693,
+      "votes": 697,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6Q21yptoOCUq4ErwVncesLPVplb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "9.0",
-      "votes": 11,
+      "rating": "0.0",
+      "votes": 0,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -446,11 +446,11 @@
       "mediaType": "movie",
       "title": "The Furious",
       "overview": "After a criminal network kidnaps Wang Wei's daughter and the corrupt police refuse to assist him, Wei sets out on his own to locate her. Navin, a tenacious journalist whose wife has mysteriously vanished, is his only ally. In this explosive martial arts showdown, the unlikely duo fights the kidnappers ruthlessly driven by a furious vengeance.",
-      "poster": "https://image.tmdb.org/t/p/w500/lfkoAlwZK8U9dNOp14gYa3xQmeW.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/zP19YO60jwEsfKd5Qf1UvA5uJu8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.4",
-      "votes": 248,
+      "rating": "7.3",
+      "votes": 249,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -461,8 +461,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
       "releaseDate": "2026-07-23",
-      "rating": "7.5",
-      "votes": 4,
+      "rating": "6.4",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 196,
+      "votes": 199,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
