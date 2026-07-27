@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27T11:56:22.467138+00:00",
+  "updated": "2026-07-27T16:48:25.701051+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,10 +9,10 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "6.2",
-      "votes": 552,
+      "rating": "6.3",
+      "votes": 575,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1541,
+      "votes": 1558,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 1821,
+      "votes": 1831,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -52,18 +52,6 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1273221,
-      "mediaType": "movie",
-      "title": "Scary Movie",
-      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
-      "poster": "https://image.tmdb.org/t/p/w500/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "6.5",
-      "votes": 1162,
-      "url": "https://www.themoviedb.org/movie/1273221"
-    },
-    {
       "id": 1339713,
       "mediaType": "movie",
       "title": "Obsession",
@@ -72,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 3753,
+      "votes": 3758,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -84,20 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1137,
+      "votes": 1142,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 1083381,
+      "id": 1273221,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2146,
-      "url": "https://www.themoviedb.org/movie/1083381"
+      "title": "Scary Movie",
+      "overview": "Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer's crosshairs and no horror movie IP is safe.",
+      "poster": "https://image.tmdb.org/t/p/w500/znHT8peERZRWG1ME3r0Db0EV8k8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "6.5",
+      "votes": 1165,
+      "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
       "id": 1228710,
@@ -108,8 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.3",
-      "votes": 940,
+      "votes": 942,
       "url": "https://www.themoviedb.org/movie/1228710"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "7.1",
+      "votes": 2150,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 980431,
@@ -120,7 +120,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 253,
+      "votes": 258,
       "url": "https://www.themoviedb.org/movie/980431"
     }
   ],
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6742,
+      "votes": 6748,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/iFOkrSrJRwE27PwbyQeYLlMJXzw.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 11170,
+      "votes": 11172,
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
@@ -169,21 +169,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.8",
-      "votes": 58,
+      "rating": "7.7",
+      "votes": 57,
       "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
-      "id": 194583,
-      "mediaType": "tv",
-      "title": "The Walking Dead: Dead City",
-      "overview": "Maggie and Negan travel to post-apocalyptic Manhattan - long ago cut off from the mainland. The crumbling city is filled with the dead and denizens who have made it a world full of anarchy, danger, beauty, and terror.",
-      "poster": "https://image.tmdb.org/t/p/w500/wq3vuQzQgbS83zX3malAFWMsSwX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vV5LKWmuysEe5wsuZJGbdiL5XJ2.jpg",
-      "releaseDate": "2023-06-18",
-      "rating": "7.9",
-      "votes": 751,
-      "url": "https://www.themoviedb.org/tv/194583"
     },
     {
       "id": 125988,
@@ -194,20 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2326,
+      "votes": 2327,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 37854,
+      "id": 194583,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5443,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "title": "The Walking Dead: Dead City",
+      "overview": "Maggie and Negan travel to post-apocalyptic Manhattan - long ago cut off from the mainland. The crumbling city is filled with the dead and denizens who have made it a world full of anarchy, danger, beauty, and terror.",
+      "poster": "https://image.tmdb.org/t/p/w500/wq3vuQzQgbS83zX3malAFWMsSwX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/siYv4AKB7BBCWjFle5zqbARYFS2.jpg",
+      "releaseDate": "2023-06-18",
+      "rating": "7.9",
+      "votes": 751,
+      "url": "https://www.themoviedb.org/tv/194583"
     },
     {
       "id": 281281,
@@ -217,8 +205,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
       "releaseDate": "2026-07-22",
-      "rating": "7.1",
-      "votes": 26,
+      "rating": "7.0",
+      "votes": 27,
       "url": "https://www.themoviedb.org/tv/281281"
     },
     {
@@ -229,8 +217,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yoTP91XZZjSvE2gZgGvwNxVW96w.jpg",
       "releaseDate": "2026-07-26",
-      "rating": "5.0",
-      "votes": 4,
+      "rating": "6.0",
+      "votes": 5,
       "url": "https://www.themoviedb.org/tv/296756"
     },
     {
@@ -242,8 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
       "releaseDate": "2026-07-23",
       "rating": "9.2",
-      "votes": 27,
+      "votes": 28,
       "url": "https://www.themoviedb.org/tv/287620"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5444,
+      "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
   "upcomingMovies": [
@@ -375,10 +375,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m3Pom6pbD51bBv3syz8NMHda3fz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 1534,
+      "votes": 1560,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -399,10 +399,10 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8CIgg0gCHIYz0jrx5IcZEOy047J.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "6.2",
-      "votes": 550,
+      "rating": "6.3",
+      "votes": 580,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -411,10 +411,10 @@
       "title": "Toy Story 5",
       "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
       "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4D1pdB27uph7J8HQzNf8QvvH9bn.jpg",
       "releaseDate": "2026-06-19",
       "rating": "7.4",
-      "votes": 705,
+      "votes": 708,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 234,
+      "votes": 235,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
       "rating": "9.1",
-      "votes": 15,
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -474,20 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 206,
+      "votes": 207,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
-      "id": 1227241,
+      "id": 1408170,
       "mediaType": "movie",
-      "title": "Maa Inti Bangaram",
-      "overview": "Through both her moments of fear and bravery, a woman discovers that embracing her vulnerabilities is as vital to her inner strength as facing challenges head-on.",
-      "poster": "https://image.tmdb.org/t/p/w500/OPwNfFyYCj76OjKZ3NZsJzWx7u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2pA5fvLPZGYR5OukwiRCeliHvNM.jpg",
-      "releaseDate": "2026-06-18",
-      "rating": "7.0",
-      "votes": 9,
-      "url": "https://www.themoviedb.org/movie/1227241"
+      "title": "Lenin",
+      "overview": "Young, urban-raised Lenin's peaceful romance with Bharathi inadvertently sparks a violent, large-scale village conflict.",
+      "poster": "https://image.tmdb.org/t/p/w500/rAHQviBq8Fxi20hNtHPGLnr4L0f.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jniLnTgiByfdrRvb9UUlCQy4mfo.jpg",
+      "releaseDate": "2026-07-10",
+      "rating": "7.7",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/movie/1408170"
     }
   ],
   "links": [
