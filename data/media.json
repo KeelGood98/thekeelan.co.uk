@@ -1,20 +1,8 @@
 {
-  "updated": "2026-07-27T16:48:25.701051+00:00",
+  "updated": "2026-07-27T21:46:21.152713+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.3",
-      "votes": 575,
-      "url": "https://www.themoviedb.org/movie/1081003"
-    },
     {
       "id": 1368337,
       "mediaType": "movie",
@@ -24,8 +12,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1558,
+      "votes": 1577,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cbyslfazMuDUGt4W6QcO3cKq8xj.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.3",
+      "votes": 612,
+      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1275779,
@@ -33,11 +33,35 @@
       "title": "Disclosure Day",
       "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
       "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pW4Ah1A6SgZNQNmf5AgiIYPzFHF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 1831,
+      "votes": 1849,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.3",
+      "votes": 1157,
+      "url": "https://www.themoviedb.org/movie/454639"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 3772,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 969681,
@@ -52,30 +76,6 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r013C8Me2bZ0pUi0OWJRh0h7MzT.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.3",
-      "votes": 3758,
-      "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.3",
-      "votes": 1142,
-      "url": "https://www.themoviedb.org/movie/454639"
-    },
-    {
       "id": 1273221,
       "mediaType": "movie",
       "title": "Scary Movie",
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1165,
+      "votes": 1178,
       "url": "https://www.themoviedb.org/movie/1273221"
     },
     {
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ysLlsAxwgNSxBWHCgTKJrmjxpRQ.jpg",
       "releaseDate": "2026-05-20",
       "rating": "7.3",
-      "votes": 942,
+      "votes": 949,
       "url": "https://www.themoviedb.org/movie/1228710"
     },
     {
@@ -108,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2150,
+      "votes": 2157,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -120,7 +120,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 258,
+      "votes": 272,
       "url": "https://www.themoviedb.org/movie/980431"
     }
   ],
@@ -134,8 +134,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6748,
+      "votes": 6751,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2329,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 281281,
+      "mediaType": "tv",
+      "title": "Elite Force",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "7.1",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/281281"
     },
     {
       "id": 60625,
@@ -146,20 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/iFOkrSrJRwE27PwbyQeYLlMJXzw.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 11172,
+      "votes": 11173,
       "url": "https://www.themoviedb.org/tv/60625"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2190,
-      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 296206,
@@ -174,52 +186,16 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
-      "id": 125988,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2327,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 194583,
-      "mediaType": "tv",
-      "title": "The Walking Dead: Dead City",
-      "overview": "Maggie and Negan travel to post-apocalyptic Manhattan - long ago cut off from the mainland. The crumbling city is filled with the dead and denizens who have made it a world full of anarchy, danger, beauty, and terror.",
-      "poster": "https://image.tmdb.org/t/p/w500/wq3vuQzQgbS83zX3malAFWMsSwX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/siYv4AKB7BBCWjFle5zqbARYFS2.jpg",
-      "releaseDate": "2023-06-18",
-      "rating": "7.9",
-      "votes": 751,
-      "url": "https://www.themoviedb.org/tv/194583"
-    },
-    {
-      "id": 281281,
-      "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
-      "rating": "7.0",
-      "votes": 27,
-      "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
-      "id": 296756,
-      "mediaType": "tv",
-      "title": "President Curtis",
-      "overview": "Follow the Commander-in-Chief and his eccentric staff as they tackle the kind of crises that Rick Sanchez could never be bothered with - from interdimensional diplomacy to paranormal investigations and unexplained phenomena.",
-      "poster": "https://image.tmdb.org/t/p/w500/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yoTP91XZZjSvE2gZgGvwNxVW96w.jpg",
-      "releaseDate": "2026-07-26",
-      "rating": "6.0",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/tv/296756"
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2190,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 287620,
@@ -230,7 +206,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
       "releaseDate": "2026-07-23",
       "rating": "9.2",
-      "votes": 28,
+      "votes": 29,
       "url": "https://www.themoviedb.org/tv/287620"
     },
     {
@@ -244,6 +220,30 @@
       "rating": "8.7",
       "votes": 5444,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 215072,
+      "mediaType": "tv",
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.3",
+      "votes": 187,
+      "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 278624,
+      "mediaType": "tv",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.2",
+      "votes": 88,
+      "url": "https://www.themoviedb.org/tv/278624"
     }
   ],
   "upcomingMovies": [
@@ -320,6 +320,18 @@
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
+      "id": 1280015,
+      "mediaType": "movie",
+      "title": "Sunny Dancer",
+      "overview": "Ivy is a teenager in remission from cancer, whose mum and dad insist she attend Children Run Free Camp, a summer retreat for young adults affected by cancer. However, as Ivy is reluctantly dragged through camp experience, she discovers new feelings with new friends.",
+      "poster": "https://image.tmdb.org/t/p/w500/d7yOPcBc099HHhmZGS9eMzMruAL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hRsl1RMijpUCtLH3nZzRMnTjFYl.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1280015"
+    },
+    {
       "id": 1432474,
       "mediaType": "movie",
       "title": "Nimrods",
@@ -344,28 +356,16 @@
       "url": "https://www.themoviedb.org/movie/675871"
     },
     {
-      "id": 1280015,
+      "id": 1329016,
       "mediaType": "movie",
-      "title": "Sunny Dancer",
-      "overview": "Ivy is a teenager in remission from cancer, whose mum and dad insist she attend Children Run Free Camp, a summer retreat for young adults affected by cancer. However, as Ivy is reluctantly dragged through camp experience, she discovers new feelings with new friends.",
-      "poster": "https://image.tmdb.org/t/p/w500/d7yOPcBc099HHhmZGS9eMzMruAL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hRsl1RMijpUCtLH3nZzRMnTjFYl.jpg",
+      "title": "Tony",
+      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
+      "poster": "https://image.tmdb.org/t/p/w500/z39nccQLIc9LnhJOusvN03KvMpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
       "releaseDate": "2026-08-14",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1280015"
-    },
-    {
-      "id": 1517206,
-      "mediaType": "movie",
-      "title": "Bouchra",
-      "overview": "Wrestling with writer’s block for her first film, Bouchra, a queer Moroccan jackal living in NYC, starts having difficult yet overdue phone calls with her mother in Casablanca that begin influencing the project. Balancing the precarity of working as an artist, the rift in her cultural identity and an array of romantic interests, Bouchra’s emotional reckoning becomes her path to expression.",
-      "poster": "https://image.tmdb.org/t/p/w500/thPiuhUxUcDy0PkadWrlYiPl8CL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lKOgf8asURej6737imZpGxM5VcL.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "5.8",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1517206"
+      "url": "https://www.themoviedb.org/movie/1329016"
     }
   ],
   "nowPlayingMovies": [
