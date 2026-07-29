@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29T11:07:14.635842+00:00",
+  "updated": "2026-07-29T16:07:56.001182+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-28",
-      "rating": "7.6",
-      "votes": 41,
+      "rating": "7.7",
+      "votes": 50,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 1712,
+      "votes": 1729,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1481343,
+      "mediaType": "movie",
+      "title": "The Devil's Mouth",
+      "overview": "Five college friends set off to explore the Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water… fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads, and every wrong turn becomes a fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/w8z3ThhLehGPJuAShostzeKxJvK.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "6.0",
+      "votes": 12,
+      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 1081003,
@@ -36,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 936,
+      "votes": 945,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -48,20 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 1961,
+      "votes": 1963,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1481343,
-      "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "Five college friends set off to explore the Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water… fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads, and every wrong turn becomes a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/w8z3ThhLehGPJuAShostzeKxJvK.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "8.7",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 1339713,
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 3860,
+      "votes": 3868,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1262,
+      "votes": 1269,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2217,
+      "votes": 2222,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -108,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 385,
+      "votes": 388,
       "url": "https://www.themoviedb.org/movie/980431"
     },
     {
@@ -120,22 +120,22 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1228,
+      "votes": 1229,
       "url": "https://www.themoviedb.org/movie/1273221"
     }
   ],
   "trendingTv": [
     {
-      "id": 278624,
+      "id": 215072,
       "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.2",
-      "votes": 92,
-      "url": "https://www.themoviedb.org/tv/278624"
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.4",
+      "votes": 186,
+      "url": "https://www.themoviedb.org/tv/215072"
     },
     {
       "id": 94997,
@@ -150,64 +150,16 @@
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 215072,
+      "id": 278624,
       "mediaType": "tv",
-      "title": "A Shop for Killers",
-      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
-      "releaseDate": "2024-01-17",
-      "rating": "8.3",
-      "votes": 187,
-      "url": "https://www.themoviedb.org/tv/215072"
-    },
-    {
-      "id": 60625,
-      "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11185,
-      "url": "https://www.themoviedb.org/tv/60625"
-    },
-    {
-      "id": 296206,
-      "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.8",
-      "votes": 60,
-      "url": "https://www.themoviedb.org/tv/296206"
-    },
-    {
-      "id": 281281,
-      "mediaType": "tv",
-      "title": "Elite Force",
-      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
-      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
-      "releaseDate": "2026-07-22",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
       "rating": "7.2",
-      "votes": 34,
-      "url": "https://www.themoviedb.org/tv/281281"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2338,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "votes": 93,
+      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 30984,
@@ -220,6 +172,54 @@
       "rating": "8.4",
       "votes": 2194,
       "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2339,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.7",
+      "votes": 61,
+      "url": "https://www.themoviedb.org/tv/296206"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11187,
+      "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 281281,
+      "mediaType": "tv",
+      "title": "Elite Force",
+      "overview": "After an unprecedented attack on his unit, a high-ranking officer set to leave the field leads a perilous mission that forces him to confront his past.",
+      "poster": "https://image.tmdb.org/t/p/w500/ymjYmuHG4Af93fcoF0NKwx9Rovb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tMpfa73LmKpeZ3Fix1QmFGIUrKI.jpg",
+      "releaseDate": "2026-07-22",
+      "rating": "7.1",
+      "votes": 35,
+      "url": "https://www.themoviedb.org/tv/281281"
     },
     {
       "id": 37854,
@@ -241,8 +241,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
       "releaseDate": "2026-07-23",
-      "rating": "9.2",
-      "votes": 36,
+      "rating": "9.3",
+      "votes": 38,
       "url": "https://www.themoviedb.org/tv/287620"
     }
   ],
@@ -348,7 +348,7 @@
       "mediaType": "movie",
       "title": "Mutiny",
       "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/pVMxkaViouALWwc1EdZBaiZJTxJ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
       "releaseDate": "2026-08-21",
       "rating": "0.0",
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 1692,
+      "votes": 1721,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -386,11 +386,11 @@
       "mediaType": "movie",
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/moejGxR2haap29d9NQ7qe8x4eGj.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.7",
-      "votes": 910,
+      "votes": 939,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -402,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.9",
-      "votes": 151,
+      "votes": 152,
       "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.6",
+      "votes": 42,
+      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1315772,
@@ -416,18 +428,6 @@
       "rating": "6.4",
       "votes": 239,
       "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kbvNLChuMl2nyAzPZvqkD8hZGZn.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.8",
-      "votes": 36,
-      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1280738,
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 217,
+      "votes": 218,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
