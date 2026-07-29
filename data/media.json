@@ -1,8 +1,20 @@
 {
-  "updated": "2026-07-29T16:07:56.001182+00:00",
+  "updated": "2026-07-29T21:33:25.391151+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.7",
+      "votes": 976,
+      "url": "https://www.themoviedb.org/movie/1081003"
+    },
     {
       "id": 969681,
       "mediaType": "movie",
@@ -11,8 +23,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-28",
-      "rating": "7.7",
-      "votes": 50,
+      "rating": "7.8",
+      "votes": 84,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -23,33 +35,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 1729,
+      "rating": "7.9",
+      "votes": 1758,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1481343,
-      "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "Five college friends set off to explore the Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water… fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads, and every wrong turn becomes a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/w8z3ThhLehGPJuAShostzeKxJvK.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "6.0",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/movie/1481343"
-    },
-    {
-      "id": 1081003,
-      "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.7",
-      "votes": 945,
-      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1275779,
@@ -60,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 1963,
+      "votes": 1981,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -72,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 3868,
+      "votes": 3879,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -84,20 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1269,
+      "votes": 1282,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 1083381,
+      "id": 1481343,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2222,
-      "url": "https://www.themoviedb.org/movie/1083381"
+      "title": "The Devil's Mouth",
+      "overview": "Five friends explore The Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water... fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads and every wrong turn becomes a fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/w8z3ThhLehGPJuAShostzeKxJvK.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "6.0",
+      "votes": 23,
+      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 980431,
@@ -108,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 388,
+      "votes": 399,
       "url": "https://www.themoviedb.org/movie/980431"
     },
     {
@@ -120,23 +108,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1229,
+      "votes": 1239,
       "url": "https://www.themoviedb.org/movie/1273221"
+    },
+    {
+      "id": 1228710,
+      "mediaType": "movie",
+      "title": "The Mandalorian and Grogu",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "poster": "https://image.tmdb.org/t/p/w500/7GV5rrUJf0BRUhoh2cyFoeNthlQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/MJcERawyqGqJdPsOBc0C449hQ9.jpg",
+      "releaseDate": "2026-05-20",
+      "rating": "7.4",
+      "votes": 997,
+      "url": "https://www.themoviedb.org/movie/1228710"
     }
   ],
   "trendingTv": [
-    {
-      "id": 215072,
-      "mediaType": "tv",
-      "title": "A Shop for Killers",
-      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
-      "releaseDate": "2024-01-17",
-      "rating": "8.4",
-      "votes": 186,
-      "url": "https://www.themoviedb.org/tv/215072"
-    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -146,20 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6771,
+      "votes": 6772,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 278624,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.2",
-      "votes": 93,
-      "url": "https://www.themoviedb.org/tv/278624"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2340,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 30984,
@@ -174,16 +162,16 @@
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
-      "id": 125988,
+      "id": 278624,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2339,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.2",
+      "votes": 94,
+      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 296206,
@@ -193,8 +181,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
       "releaseDate": "2026-06-26",
-      "rating": "7.7",
-      "votes": 61,
+      "rating": "7.8",
+      "votes": 64,
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
@@ -206,8 +194,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 11187,
+      "votes": 11189,
       "url": "https://www.themoviedb.org/tv/60625"
+    },
+    {
+      "id": 215072,
+      "mediaType": "tv",
+      "title": "A Shop for Killers",
+      "overview": "A niece who lost her parents and grew up in the hands of an uncle who runs a shopping mall faces a new truth after her uncle's sudden death.",
+      "poster": "https://image.tmdb.org/t/p/w500/7yUY1HUyQuybbvkAAhLzQ7x1l9g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
+      "releaseDate": "2024-01-17",
+      "rating": "8.4",
+      "votes": 187,
+      "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 287620,
+      "mediaType": "tv",
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "9.2",
+      "votes": 39,
+      "url": "https://www.themoviedb.org/tv/287620"
     },
     {
       "id": 281281,
@@ -232,18 +244,6 @@
       "rating": "8.7",
       "votes": 5445,
       "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 287620,
-      "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/bvH9g6TXhQaTG1WhU7hbfXM8LNP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2ngdvUiEKW8Q37ta8BBdydE2cuq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "9.3",
-      "votes": 38,
-      "url": "https://www.themoviedb.org/tv/287620"
     }
   ],
   "upcomingMovies": [
@@ -304,20 +304,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/AfyuI3glMCBDFmNPj9PY6DwbgGp.jpg",
       "releaseDate": "2021-10-17",
       "rating": "8.3",
-      "votes": 1896,
+      "votes": 1897,
       "url": "https://www.themoviedb.org/movie/18491"
-    },
-    {
-      "id": 16859,
-      "mediaType": "movie",
-      "title": "Kiki's Delivery Service",
-      "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
-      "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
-      "releaseDate": "1991-07-19",
-      "rating": "7.8",
-      "votes": 4644,
-      "url": "https://www.themoviedb.org/movie/16859"
     },
     {
       "id": 1146058,
@@ -332,16 +320,16 @@
       "url": "https://www.themoviedb.org/movie/1146058"
     },
     {
-      "id": 1477712,
+      "id": 16859,
       "mediaType": "movie",
-      "title": "Ice Cream Man",
-      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
-      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1477712"
+      "title": "Kiki's Delivery Service",
+      "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+      "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
+      "releaseDate": "1991-07-19",
+      "rating": "7.8",
+      "votes": 4644,
+      "url": "https://www.themoviedb.org/movie/16859"
     },
     {
       "id": 1288445,
@@ -354,6 +342,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1477712,
+      "mediaType": "movie",
+      "title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
       "id": 1204680,
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "8.0",
-      "votes": 1721,
+      "rating": "7.9",
+      "votes": 1763,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -387,10 +387,10 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.7",
-      "votes": 939,
+      "votes": 978,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -413,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "7.6",
-      "votes": 42,
+      "rating": "7.8",
+      "votes": 87,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.8",
-      "votes": 97,
+      "votes": 98,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
