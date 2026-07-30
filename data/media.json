@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30T16:13:17.777068+00:00",
+  "updated": "2026-07-30T21:47:24.726392+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 184,
+      "votes": 225,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "7.9",
-      "votes": 1811,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1081003,
@@ -36,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1065,
+      "votes": 1088,
       "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "7.9",
+      "votes": 1828,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1339713,
@@ -47,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
-      "rating": "8.3",
-      "votes": 3911,
+      "rating": "8.2",
+      "votes": 3925,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -60,32 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2015,
+      "votes": 2022,
       "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1481343,
-      "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "Five friends explore The Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water... fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads and every wrong turn becomes a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pLyaH6k69OJHnONSmN3R7Peh6HE.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "6.2",
-      "votes": 85,
-      "url": "https://www.themoviedb.org/movie/1481343"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.3",
-      "votes": 1315,
-      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 1083381,
@@ -96,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2273,
+      "votes": 2280,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 454639,
+      "mediaType": "movie",
+      "title": "Masters of the Universe",
+      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/piV2OnzTZCyGBP9JCjlHIgKGlfo.jpg",
+      "releaseDate": "2026-06-03",
+      "rating": "7.3",
+      "votes": 1325,
+      "url": "https://www.themoviedb.org/movie/454639"
     },
     {
       "id": 980431,
@@ -108,8 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 442,
+      "votes": 455,
       "url": "https://www.themoviedb.org/movie/980431"
+    },
+    {
+      "id": 1481343,
+      "mediaType": "movie",
+      "title": "The Devil's Mouth",
+      "overview": "Five friends explore The Devil's Mouth cave system in Thailand for one last adventure before life in the real world begins. But they soon discover that something is hunting them under the water... fast, silent, and deadly. In the suffocating darkness, trust erodes, panic spreads and every wrong turn becomes a fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hwnTaa6eT7c5xxOiJL2NhcVt8qX.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "6.5",
+      "votes": 110,
+      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 1273221,
@@ -120,34 +120,22 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xWBiXclrRmTggQHMRsIn84YHavs.jpg",
       "releaseDate": "2026-06-03",
       "rating": "6.5",
-      "votes": 1267,
+      "votes": 1276,
       "url": "https://www.themoviedb.org/movie/1273221"
     }
   ],
   "trendingTv": [
     {
-      "id": 271016,
+      "id": 94997,
       "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/snExrS3rICUXDsiG7jUV7K6Q0wj.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/271016"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 2194,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "votes": 6779,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 125988,
@@ -174,16 +162,16 @@
       "url": "https://www.themoviedb.org/tv/103516"
     },
     {
-      "id": 94997,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 6777,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "votes": 2194,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 278624,
@@ -193,8 +181,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
-      "rating": "7.1",
-      "votes": 96,
+      "rating": "7.2",
+      "votes": 98,
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
@@ -210,18 +198,6 @@
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 287620,
-      "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/txj8ujTZwGUjpCdhCsQBnTlh4aS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4pIuF2YdMahumBvddLDmzA74nTW.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "9.2",
-      "votes": 39,
-      "url": "https://www.themoviedb.org/tv/287620"
-    },
-    {
       "id": 296206,
       "mediaType": "tv",
       "title": "Agent Kim Reactivated",
@@ -234,6 +210,18 @@
       "url": "https://www.themoviedb.org/tv/296206"
     },
     {
+      "id": 287620,
+      "mediaType": "tv",
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/txj8ujTZwGUjpCdhCsQBnTlh4aS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4pIuF2YdMahumBvddLDmzA74nTW.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "9.2",
+      "votes": 39,
+      "url": "https://www.themoviedb.org/tv/287620"
+    },
+    {
       "id": 215072,
       "mediaType": "tv",
       "title": "A Shop for Killers",
@@ -242,23 +230,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
       "releaseDate": "2024-01-17",
       "rating": "8.4",
-      "votes": 189,
+      "votes": 190,
       "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5445,
+      "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
   "upcomingMovies": [
-    {
-      "id": 1541560,
-      "mediaType": "movie",
-      "title": "Stop! That! Train!",
-      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
-      "poster": "https://image.tmdb.org/t/p/w500/w90dGS6D2lVO4aO5rdQ8QECrUGY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v92U09IUqaNbZnnThWKtGPmB3Mb.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "5.1",
-      "votes": 33,
-      "url": "https://www.themoviedb.org/movie/1541560"
-    },
     {
       "id": 1101383,
       "mediaType": "movie",
@@ -272,16 +260,16 @@
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
-      "id": 1167307,
+      "id": 1541560,
       "mediaType": "movie",
-      "title": "David",
-      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mZ6J2g6HCV2gj3iuCdSxcyBXq9c.jpg",
+      "title": "Stop! That! Train!",
+      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
+      "poster": "https://image.tmdb.org/t/p/w500/w90dGS6D2lVO4aO5rdQ8QECrUGY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v92U09IUqaNbZnnThWKtGPmB3Mb.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "8.0",
-      "votes": 169,
-      "url": "https://www.themoviedb.org/movie/1167307"
+      "rating": "5.1",
+      "votes": 33,
+      "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
       "id": 1185806,
@@ -308,28 +296,16 @@
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
-      "id": 1146058,
+      "id": 1167307,
       "mediaType": "movie",
-      "title": "The Pout-Pout Fish",
-      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
-      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "5.1",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1146058"
-    },
-    {
-      "id": 16859,
-      "mediaType": "movie",
-      "title": "Kiki's Delivery Service",
-      "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
-      "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
-      "releaseDate": "1991-07-19",
-      "rating": "7.8",
-      "votes": 4645,
-      "url": "https://www.themoviedb.org/movie/16859"
+      "title": "David",
+      "overview": "From the songs of his mother’s heart to the whispers of a faithful God, David’s story begins in quiet devotion. When the giant Goliath rises to terrorize a nation, a young shepherd armed with only a sling, a few stones, and unshakable faith steps forward. Pursued by power and driven by purpose, his journey tests the limits of loyalty, love, and courage—culminating in a battle not just for a crown, but for the soul of a kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mZ6J2g6HCV2gj3iuCdSxcyBXq9c.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "8.0",
+      "votes": 169,
+      "url": "https://www.themoviedb.org/movie/1167307"
     },
     {
       "id": 1288445,
@@ -366,6 +342,30 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1204680"
+    },
+    {
+      "id": 1146058,
+      "mediaType": "movie",
+      "title": "The Pout-Pout Fish",
+      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
+      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "5.1",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1146058"
+    },
+    {
+      "id": 16859,
+      "mediaType": "movie",
+      "title": "Kiki's Delivery Service",
+      "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+      "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
+      "releaseDate": "1991-07-19",
+      "rating": "7.8",
+      "votes": 4646,
+      "url": "https://www.themoviedb.org/movie/16859"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "7.9",
-      "votes": 1804,
+      "votes": 1816,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 164,
+      "votes": 194,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -399,10 +399,10 @@
       "title": "Supergirl",
       "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
       "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.7",
-      "votes": 1053,
+      "votes": 1074,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 241,
+      "votes": 242,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "6.8",
-      "votes": 220,
+      "votes": 222,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.8",
-      "votes": 99,
+      "votes": 101,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
