@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-01T11:33:15.088867+00:00",
+  "updated": "2026-08-01T13:50:15.850332+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-08-01T12:30",
-    "temperature": 18.0,
+    "time": "2026-08-01T14:45",
+    "temperature": 19.0,
     "feelsLike": 15.0,
-    "humidity": 52.0,
+    "humidity": 47.0,
     "precipitation": 0.0,
-    "windSpeed": 10.0,
-    "windGusts": 22.0,
+    "windSpeed": 11.0,
+    "windGusts": 24.0,
     "weatherCode": 3,
     "description": "Overcast",
     "icon": "☁️"
@@ -19,8 +19,8 @@
   "forecast": [
     {
       "date": "2026-08-01",
-      "description": "Overcast",
-      "icon": "☁️",
+      "description": "Light drizzle",
+      "icon": "🌦️",
       "maxTemp": 19.0,
       "minTemp": 13.0,
       "rainChance": 25.0,
@@ -41,7 +41,7 @@
       "date": "2026-08-03",
       "description": "Light drizzle",
       "icon": "🌦️",
-      "maxTemp": 24.0,
+      "maxTemp": 27.0,
       "minTemp": 15.0,
       "rainChance": 36.0,
       "sunrise": "2026-08-03T05:24",
