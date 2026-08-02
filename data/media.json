@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T15:43:11.381497+00:00",
+  "updated": "2026-08-02T21:34:13.489658+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 624,
+      "votes": 679,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -23,8 +23,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "6.8",
-      "votes": 1364,
+      "rating": "6.7",
+      "votes": 1395,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -35,8 +35,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
-      "rating": "7.9",
-      "votes": 2032,
+      "rating": "8.0",
+      "votes": 2071,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 4072,
+      "votes": 4099,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -60,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2187,
+      "votes": 2216,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 980431,
+      "mediaType": "movie",
+      "title": "Avatar Aang: The Last Airbender",
+      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
+      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/p7MklBlRr0eRAxJSOnuV4rO08z4.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "9.3",
+      "votes": 588,
+      "url": "https://www.themoviedb.org/movie/980431"
     },
     {
       "id": 1481343,
@@ -72,20 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hwnTaa6eT7c5xxOiJL2NhcVt8qX.jpg",
       "releaseDate": "2026-07-29",
       "rating": "6.7",
-      "votes": 309,
+      "votes": 330,
       "url": "https://www.themoviedb.org/movie/1481343"
-    },
-    {
-      "id": 980431,
-      "mediaType": "movie",
-      "title": "Avatar Aang: The Last Airbender",
-      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/p7MklBlRr0eRAxJSOnuV4rO08z4.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "9.4",
-      "votes": 570,
-      "url": "https://www.themoviedb.org/movie/980431"
     },
     {
       "id": 1083381,
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2405,
+      "votes": 2423,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -108,33 +108,45 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1462,
+      "votes": 1489,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 687163,
+      "id": 1314481,
       "mediaType": "movie",
-      "title": "Project Hail Mary",
-      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-      "releaseDate": "2026-03-15",
-      "rating": "8.7",
-      "votes": 6681,
-      "url": "https://www.themoviedb.org/movie/687163"
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/fCAURTUx3YfsJ8k9I0UamjSILiR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
+      "rating": "7.1",
+      "votes": 1854,
+      "url": "https://www.themoviedb.org/movie/1314481"
     }
   ],
   "trendingTv": [
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2361,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
     {
       "id": 113962,
       "mediaType": "tv",
       "title": "Lioness",
       "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
       "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r0Zg70jpcDAD7IMDhVqajSnG9vb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3Udwq6W7y4AIsuJDXV2YwowZ1gQ.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.0",
-      "votes": 1264,
+      "votes": 1266,
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
@@ -158,32 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6796,
+      "votes": 6802,
       "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2357,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 271016,
-      "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/snExrS3rICUXDsiG7jUV7K6Q0wj.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "8.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/271016"
     },
     {
       "id": 37854,
@@ -206,20 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
       "releaseDate": "2013-12-02",
       "rating": "8.7",
-      "votes": 11211,
+      "votes": 11213,
       "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 296206,
+      "id": 271016,
       "mediaType": "tv",
-      "title": "Agent Kim Reactivated",
-      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
-      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
-      "releaseDate": "2026-06-26",
-      "rating": "7.6",
-      "votes": 68,
-      "url": "https://www.themoviedb.org/tv/296206"
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/snExrS3rICUXDsiG7jUV7K6Q0wj.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "8.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/271016"
     },
     {
       "id": 278624,
@@ -234,16 +222,28 @@
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
-      "id": 287620,
+      "id": 277439,
       "mediaType": "tv",
-      "title": "Stuart Fails to Save the Universe",
-      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/txj8ujTZwGUjpCdhCsQBnTlh4aS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sIiSvtFwmOQKTnUaTNMuRmCpzoq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "9.3",
-      "votes": 60,
-      "url": "https://www.themoviedb.org/tv/287620"
+      "title": "Cape Fear",
+      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
+      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/maOzDEEudq82nN9lRTumrGo9MvJ.jpg",
+      "releaseDate": "2026-06-04",
+      "rating": "7.2",
+      "votes": 106,
+      "url": "https://www.themoviedb.org/tv/277439"
+    },
+    {
+      "id": 296206,
+      "mediaType": "tv",
+      "title": "Agent Kim Reactivated",
+      "overview": "When an unassuming dad's daughter goes missing, he dusts off his old black-ops skills to track her down — only to attract the wrong kind of attention.",
+      "poster": "https://image.tmdb.org/t/p/w500/mxa7YxVln3Rwnd2Va82PoclTznj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1LJLlmWP74zv9yXKEXm7g9p10O.jpg",
+      "releaseDate": "2026-06-26",
+      "rating": "7.6",
+      "votes": 69,
+      "url": "https://www.themoviedb.org/tv/296206"
     }
   ],
   "upcomingMovies": [
@@ -272,18 +272,6 @@
       "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
-      "id": 1185806,
-      "mediaType": "movie",
-      "title": "PAW Patrol: The Dino Movie",
-      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
-      "poster": "https://image.tmdb.org/t/p/w500/cxXSF4aY5N2cOGwaga5OnpPFHzk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/upNeU9FNGAvdhnoThvv64Z0MWKn.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "3.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1185806"
-    },
-    {
       "id": 1167307,
       "mediaType": "movie",
       "title": "David",
@@ -294,6 +282,18 @@
       "rating": "8.0",
       "votes": 169,
       "url": "https://www.themoviedb.org/movie/1167307"
+    },
+    {
+      "id": 1185806,
+      "mediaType": "movie",
+      "title": "PAW Patrol: The Dino Movie",
+      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
+      "poster": "https://image.tmdb.org/t/p/w500/cxXSF4aY5N2cOGwaga5OnpPFHzk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/upNeU9FNGAvdhnoThvv64Z0MWKn.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "5.7",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
       "id": 1477712,
@@ -316,20 +316,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/AfyuI3glMCBDFmNPj9PY6DwbgGp.jpg",
       "releaseDate": "2021-10-17",
       "rating": "8.3",
-      "votes": 1901,
+      "votes": 1902,
       "url": "https://www.themoviedb.org/movie/18491"
-    },
-    {
-      "id": 1291595,
-      "mediaType": "movie",
-      "title": "Insidious: Out of the Further",
-      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
       "id": 1146058,
@@ -356,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
+      "id": 1291595,
+      "mediaType": "movie",
+      "title": "Insidious: Out of the Further",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1291595"
+    },
+    {
       "id": 1204680,
       "mediaType": "movie",
       "title": "Coyote vs. Acme",
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 618,
+      "votes": 662,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 2030,
+      "rating": "8.0",
+      "votes": 2063,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.8",
-      "votes": 1358,
+      "votes": 1379,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -413,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "5.9",
-      "votes": 159,
+      "rating": "5.8",
+      "votes": 160,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 248,
+      "votes": 251,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -438,8 +438,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.3",
-      "votes": 279,
+      "votes": 283,
       "url": "https://www.themoviedb.org/movie/1280738"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "6.8",
+      "votes": 225,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1235877,
@@ -454,16 +466,16 @@
       "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
-      "id": 1212763,
+      "id": 950028,
       "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "6.8",
-      "votes": 223,
-      "url": "https://www.themoviedb.org/movie/1212763"
+      "title": "The Invite",
+      "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
+      "releaseDate": "2026-07-03",
+      "rating": "7.8",
+      "votes": 105,
+      "url": "https://www.themoviedb.org/movie/950028"
     },
     {
       "id": 1408170,
@@ -476,18 +488,6 @@
       "rating": "6.2",
       "votes": 4,
       "url": "https://www.themoviedb.org/movie/1408170"
-    },
-    {
-      "id": 950028,
-      "mediaType": "movie",
-      "title": "The Invite",
-      "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
-      "releaseDate": "2026-07-03",
-      "rating": "7.8",
-      "votes": 105,
-      "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
   "links": [
