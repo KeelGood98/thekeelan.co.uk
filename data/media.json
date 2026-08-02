@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-02T10:19:14.990964+00:00",
+  "updated": "2026-08-02T15:43:11.381497+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 609,
+      "votes": 624,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.8",
-      "votes": 1352,
+      "votes": 1364,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.9",
-      "votes": 2024,
+      "votes": 2032,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1481343,
-      "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hwnTaa6eT7c5xxOiJL2NhcVt8qX.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "6.7",
-      "votes": 304,
-      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 1339713,
@@ -60,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.3",
-      "votes": 4070,
+      "votes": 4072,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2180,
+      "votes": 2187,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1481343,
+      "mediaType": "movie",
+      "title": "The Devil's Mouth",
+      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hwnTaa6eT7c5xxOiJL2NhcVt8qX.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "6.7",
+      "votes": 309,
+      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 980431,
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/p7MklBlRr0eRAxJSOnuV4rO08z4.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.4",
-      "votes": 569,
+      "votes": 570,
       "url": "https://www.themoviedb.org/movie/980431"
     },
     {
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2399,
+      "votes": 2405,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -108,20 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/eQySd26OW7UmCuaeBOL7qy6foMn.jpg",
       "releaseDate": "2026-06-03",
       "rating": "7.3",
-      "votes": 1457,
+      "votes": 1462,
       "url": "https://www.themoviedb.org/movie/454639"
     },
     {
-      "id": 1564614,
+      "id": 687163,
       "mediaType": "movie",
-      "title": "Leviticus",
-      "overview": "Two teenage boys must escape a violent entity that takes the form of the person they desire most — each other.",
-      "poster": "https://image.tmdb.org/t/p/w500/gnAsZvBygplNpp8PtjoTEYv3VPB.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "6.3",
-      "votes": 85,
-      "url": "https://www.themoviedb.org/movie/1564614"
+      "title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "releaseDate": "2026-03-15",
+      "rating": "8.7",
+      "votes": 6681,
+      "url": "https://www.themoviedb.org/movie/687163"
     }
   ],
   "trendingTv": [
@@ -134,32 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r0Zg70jpcDAD7IMDhVqajSnG9vb.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.0",
-      "votes": 1263,
+      "votes": 1264,
       "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2356,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 271016,
-      "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/snExrS3rICUXDsiG7jUV7K6Q0wj.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "9.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/271016"
     },
     {
       "id": 30984,
@@ -182,20 +158,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6794,
+      "votes": 6796,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 60625,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11209,
-      "url": "https://www.themoviedb.org/tv/60625"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2357,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 271016,
+      "mediaType": "tv",
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/snExrS3rICUXDsiG7jUV7K6Q0wj.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "8.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/271016"
     },
     {
       "id": 37854,
@@ -206,8 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5449,
+      "votes": 5450,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 60625,
+      "mediaType": "tv",
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i4PpW1XyRlBuSNSIBRIIwSjEpjl.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11211,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
       "id": 296206,
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
-      "id": 277439,
+      "id": 287620,
       "mediaType": "tv",
-      "title": "Cape Fear",
-      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/maOzDEEudq82nN9lRTumrGo9MvJ.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "7.2",
-      "votes": 103,
-      "url": "https://www.themoviedb.org/tv/277439"
+      "title": "Stuart Fails to Save the Universe",
+      "overview": "After accidentally creating a new multiverse, comic book store owner Stuart Bloom must locate a quantum-interference device to restore reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/txj8ujTZwGUjpCdhCsQBnTlh4aS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sIiSvtFwmOQKTnUaTNMuRmCpzoq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "9.3",
+      "votes": 60,
+      "url": "https://www.themoviedb.org/tv/287620"
     }
   ],
   "upcomingMovies": [
@@ -296,6 +296,18 @@
       "url": "https://www.themoviedb.org/movie/1167307"
     },
     {
+      "id": 1477712,
+      "mediaType": "movie",
+      "title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/giekwhdwa8SFtfPi0mOn5uvkXJ0.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1477712"
+    },
+    {
       "id": 18491,
       "mediaType": "movie",
       "title": "Neon Genesis Evangelion: The End of Evangelion",
@@ -308,16 +320,16 @@
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
-      "id": 1477712,
+      "id": 1291595,
       "mediaType": "movie",
-      "title": "Ice Cream Man",
-      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
-      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/giekwhdwa8SFtfPi0mOn5uvkXJ0.jpg",
-      "releaseDate": "2026-08-07",
+      "title": "Insidious: Out of the Further",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+      "releaseDate": "2026-08-21",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1477712"
+      "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
       "id": 1146058,
@@ -354,18 +366,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1204680"
-    },
-    {
-      "id": 1291595,
-      "mediaType": "movie",
-      "title": "Insidious: Out of the Further",
-      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1291595"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 582,
+      "votes": 618,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -387,10 +387,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tYuC9kUwqhpDQ3pv1kLMqyMF1Jw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-17",
       "rating": "7.9",
-      "votes": 2008,
+      "votes": 2030,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.8",
-      "votes": 1331,
+      "votes": 1358,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 246,
+      "votes": 248,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.3",
-      "votes": 276,
+      "votes": 279,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -473,8 +473,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rAHQviBq8Fxi20hNtHPGLnr4L0f.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jniLnTgiByfdrRvb9UUlCQy4mfo.jpg",
       "releaseDate": "2026-07-10",
-      "rating": "7.7",
-      "votes": 3,
+      "rating": "6.2",
+      "votes": 4,
       "url": "https://www.themoviedb.org/movie/1408170"
     },
     {
