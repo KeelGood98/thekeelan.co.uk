@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T16:29:29.107792+00:00",
+  "updated": "2026-08-04T21:53:31.389512+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 874,
+      "votes": 895,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
-      "releaseDate": "2026-07-07",
-      "rating": "6.9",
-      "votes": 233,
-      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1368337,
@@ -36,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2166,
+      "votes": 2193,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -48,8 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1507,
+      "votes": 1516,
       "url": "https://www.themoviedb.org/movie/1081003"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "7.2",
+      "votes": 285,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1339713,
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4205,
+      "votes": 4220,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -71,8 +71,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/se8LfmZYFiNerF6U7zMUKePV0vE.jpg",
       "releaseDate": "2026-07-29",
-      "rating": "6.6",
-      "votes": 420,
+      "rating": "6.5",
+      "votes": 426,
       "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
@@ -84,20 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2332,
+      "votes": 2341,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
-      "id": 980431,
+      "id": 1083381,
       "mediaType": "movie",
-      "title": "Avatar Aang: The Last Airbender",
-      "overview": "Avatar Aang, the world's last Airbender, learns of an ancient power that could save his culture from extinction. With the help of his friends, he embarks on a global quest to find it before it falls into the wrong hands and threatens to upend the peace they sacrificed everything to achieve.",
-      "poster": "https://image.tmdb.org/t/p/w500/3sgnSfNT27Bx5O5ukr7B26mhEQq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qPNG2riEQLBknaa20RhUCr8QtWA.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "9.3",
-      "votes": 645,
-      "url": "https://www.themoviedb.org/movie/980431"
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "7.1",
+      "votes": 2493,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1307118,
@@ -108,35 +108,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
       "releaseDate": "2026-07-31",
       "rating": "6.5",
-      "votes": 40,
+      "votes": 43,
       "url": "https://www.themoviedb.org/movie/1307118"
     },
     {
-      "id": 1083381,
+      "id": 1314481,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
-      "releaseDate": "2026-05-27",
+      "title": "The Devil Wears Prada 2",
+      "overview": "Andy Sachs returns to Runway as Miranda Priestly navigates a new media landscape and Runway's position within. The duo reconnect with former assistant Emily Charlton, now the head of a luxury brand that possesses funding which could ensure Runway's survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/Af907x5h9W1wVis8XrSd7ynTWuy.jpg",
+      "releaseDate": "2026-04-29",
       "rating": "7.1",
-      "votes": 2485,
-      "url": "https://www.themoviedb.org/movie/1083381"
+      "votes": 1901,
+      "url": "https://www.themoviedb.org/movie/1314481"
     }
   ],
   "trendingTv": [
-    {
-      "id": 615,
-      "mediaType": "tv",
-      "title": "Futurama",
-      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-      "releaseDate": "1999-03-28",
-      "rating": "8.4",
-      "votes": 3822,
-      "url": "https://www.themoviedb.org/tv/615"
-    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -146,20 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6829,
+      "votes": 6830,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 113962,
+      "id": 615,
       "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.0",
-      "votes": 1283,
-      "url": "https://www.themoviedb.org/tv/113962"
+      "title": "Futurama",
+      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
+      "releaseDate": "1999-03-28",
+      "rating": "8.4",
+      "votes": 3823,
+      "url": "https://www.themoviedb.org/tv/615"
     },
     {
       "id": 125988,
@@ -170,20 +158,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2369,
+      "votes": 2372,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 271016,
+      "id": 113962,
       "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "8.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/271016"
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.0",
+      "votes": 1285,
+      "url": "https://www.themoviedb.org/tv/113962"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.3",
+      "votes": 2475,
+      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 30984,
@@ -198,6 +198,30 @@
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
+      "id": 287238,
+      "mediaType": "tv",
+      "title": "Furious",
+      "overview": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
+      "poster": "https://image.tmdb.org/t/p/w500/xnxxrEKtBaIcI1ewq50pLkOMU6u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
+      "releaseDate": "2026-07-27",
+      "rating": "6.7",
+      "votes": 29,
+      "url": "https://www.themoviedb.org/tv/287238"
+    },
+    {
+      "id": 271016,
+      "mediaType": "tv",
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "8.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/271016"
+    },
+    {
       "id": 37854,
       "mediaType": "tv",
       "title": "One Piece",
@@ -210,40 +234,16 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 60625,
+      "id": 278624,
       "mediaType": "tv",
-      "title": "Rick and Morty",
-      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iFOkrSrJRwE27PwbyQeYLlMJXzw.jpg",
-      "releaseDate": "2013-12-02",
-      "rating": "8.7",
-      "votes": 11223,
-      "url": "https://www.themoviedb.org/tv/60625"
-    },
-    {
-      "id": 287238,
-      "mediaType": "tv",
-      "title": "Furious",
-      "overview": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
-      "poster": "https://image.tmdb.org/t/p/w500/xnxxrEKtBaIcI1ewq50pLkOMU6u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
-      "releaseDate": "2026-07-27",
-      "rating": "6.7",
-      "votes": 28,
-      "url": "https://www.themoviedb.org/tv/287238"
-    },
-    {
-      "id": 296756,
-      "mediaType": "tv",
-      "title": "President Curtis",
-      "overview": "Follow the Commander-in-Chief and his eccentric staff as they tackle the kind of crises that Rick Sanchez could never be bothered with - from interdimensional diplomacy to paranormal investigations and unexplained phenomena.",
-      "poster": "https://image.tmdb.org/t/p/w500/lc9riW73Oee2pBxi1UrDPgyQjEr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yoTP91XZZjSvE2gZgGvwNxVW96w.jpg",
-      "releaseDate": "2026-07-26",
-      "rating": "5.2",
-      "votes": 18,
-      "url": "https://www.themoviedb.org/tv/296756"
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.3",
+      "votes": 110,
+      "url": "https://www.themoviedb.org/tv/278624"
     }
   ],
   "upcomingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 853,
+      "votes": 876,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2153,
+      "votes": 2169,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.7",
-      "votes": 1500,
+      "votes": 1510,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
       "rating": "5.8",
-      "votes": 165,
+      "votes": 166,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-07-01",
       "rating": "6.4",
-      "votes": 253,
+      "votes": 258,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9XwQphZxNJgGASfjL58mhIkJJpf.jpg",
       "releaseDate": "2026-06-26",
       "rating": "7.3",
-      "votes": 285,
+      "votes": 286,
       "url": "https://www.themoviedb.org/movie/1280738"
     },
     {
@@ -446,11 +446,11 @@
       "mediaType": "movie",
       "title": "Evil Dead Burn",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
-      "rating": "6.8",
-      "votes": 226,
+      "rating": "7.0",
+      "votes": 244,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -473,8 +473,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
-      "rating": "7.8",
-      "votes": 113,
+      "rating": "7.7",
+      "votes": 114,
       "url": "https://www.themoviedb.org/movie/950028"
     },
     {
