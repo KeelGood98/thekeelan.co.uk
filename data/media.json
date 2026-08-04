@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-04T11:07:46.442983+00:00",
+  "updated": "2026-08-04T16:29:29.107792+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 854,
+      "votes": 874,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -23,8 +23,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ztadKzIIR0ERYqpHteaPFtk7inP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-07",
-      "rating": "6.8",
-      "votes": 226,
+      "rating": "6.9",
+      "votes": 233,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2154,
+      "votes": 2166,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1500,
+      "votes": 1507,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4195,
+      "votes": 4205,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/se8LfmZYFiNerF6U7zMUKePV0vE.jpg",
       "releaseDate": "2026-07-29",
       "rating": "6.6",
-      "votes": 411,
+      "votes": 420,
       "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
@@ -84,7 +84,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2324,
+      "votes": 2332,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
@@ -96,8 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qPNG2riEQLBknaa20RhUCr8QtWA.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.3",
-      "votes": 642,
+      "votes": 645,
       "url": "https://www.themoviedb.org/movie/980431"
+    },
+    {
+      "id": 1307118,
+      "mediaType": "movie",
+      "title": "Soulm8te",
+      "overview": "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
+      "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
+      "releaseDate": "2026-07-31",
+      "rating": "6.5",
+      "votes": 40,
+      "url": "https://www.themoviedb.org/movie/1307118"
     },
     {
       "id": 1083381,
@@ -108,23 +120,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wjwMC7u3xWKkrronolBqsIy4L0L.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2480,
+      "votes": 2485,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 454639,
-      "mediaType": "movie",
-      "title": "Masters of the Universe",
-      "overview": "After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and embrace his true destiny as He-Man — the most powerful man in the universe.",
-      "poster": "https://image.tmdb.org/t/p/w500/oRuyGUHdoaQxWP3SDfafGkStxTC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yQIdU11DYQQp0neGtGtGxbGfRer.jpg",
-      "releaseDate": "2026-06-03",
-      "rating": "7.3",
-      "votes": 1546,
-      "url": "https://www.themoviedb.org/movie/454639"
     }
   ],
   "trendingTv": [
+    {
+      "id": 615,
+      "mediaType": "tv",
+      "title": "Futurama",
+      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
+      "releaseDate": "1999-03-28",
+      "rating": "8.4",
+      "votes": 3822,
+      "url": "https://www.themoviedb.org/tv/615"
+    },
     {
       "id": 94997,
       "mediaType": "tv",
@@ -138,18 +150,6 @@
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 271016,
-      "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "8.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/271016"
-    },
-    {
       "id": 113962,
       "mediaType": "tv",
       "title": "Lioness",
@@ -158,20 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.0",
-      "votes": 1282,
+      "votes": 1283,
       "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 615,
-      "mediaType": "tv",
-      "title": "Futurama",
-      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-      "releaseDate": "1999-03-28",
-      "rating": "8.4",
-      "votes": 3820,
-      "url": "https://www.themoviedb.org/tv/615"
     },
     {
       "id": 125988,
@@ -182,8 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2368,
+      "votes": 2369,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 271016,
+      "mediaType": "tv",
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "8.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/271016"
     },
     {
       "id": 30984,
@@ -210,28 +210,28 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 278624,
+      "id": 60625,
       "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.3",
-      "votes": 108,
-      "url": "https://www.themoviedb.org/tv/278624"
+      "title": "Rick and Morty",
+      "overview": "Follows a sociopathic genius scientist who drags his inherently timid grandson on adventures across the universe.",
+      "poster": "https://image.tmdb.org/t/p/w500/owhkU6KRqdXoUQpjV8uyZGPtX58.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iFOkrSrJRwE27PwbyQeYLlMJXzw.jpg",
+      "releaseDate": "2013-12-02",
+      "rating": "8.7",
+      "votes": 11223,
+      "url": "https://www.themoviedb.org/tv/60625"
     },
     {
-      "id": 277439,
+      "id": 287238,
       "mediaType": "tv",
-      "title": "Cape Fear",
-      "overview": "When convicted murderer Max Cady is released from prison, he begins infiltrating the family of the married attorneys who helped put him behind bars.",
-      "poster": "https://image.tmdb.org/t/p/w500/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cl5Rs0z5Il3KHUJfOtDJs2N8Cb.jpg",
-      "releaseDate": "2026-06-04",
-      "rating": "7.1",
-      "votes": 113,
-      "url": "https://www.themoviedb.org/tv/277439"
+      "title": "Furious",
+      "overview": "FBI agent Alice Black is on the hunt for a mysterious and calculating female serial killer. Both walk their own paths toward justice, and as their lives start to intertwine, the line between right and wrong begins to blur.",
+      "poster": "https://image.tmdb.org/t/p/w500/xnxxrEKtBaIcI1ewq50pLkOMU6u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
+      "releaseDate": "2026-07-27",
+      "rating": "6.7",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/tv/287238"
     },
     {
       "id": 296756,
@@ -315,8 +315,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/bESlrLOrsQ9gKzaGQGHXKOyIUtX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mZ6J2g6HCV2gj3iuCdSxcyBXq9c.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "8.0",
-      "votes": 171,
+      "rating": "7.9",
+      "votes": 172,
       "url": "https://www.themoviedb.org/movie/1167307"
     },
     {
@@ -332,18 +332,6 @@
       "url": "https://www.themoviedb.org/movie/18491"
     },
     {
-      "id": 1146058,
-      "mediaType": "movie",
-      "title": "The Pout-Pout Fish",
-      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
-      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "5.1",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1146058"
-    },
-    {
       "id": 1288445,
       "mediaType": "movie",
       "title": "Mutiny",
@@ -356,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
+      "id": 1146058,
+      "mediaType": "movie",
+      "title": "The Pout-Pout Fish",
+      "overview": "Living on a rundown shipwreck, Mr. Fish one day discovers a hyperactive young sea dragon Pip – who had mistaken his home for a junkyard – pilfering his belongings. The heated argument that ensues leaves both their houses in ruin. But there is hope! Embarking on a seemingly impossible quest in search of the mythical 'Shimmer' to grant them a wish, there’s only one problem: someone else is on the hunt...",
+      "poster": "https://image.tmdb.org/t/p/w500/fcDXgGL14qL46It1XOozEjX5Jws.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6qQQhhF87Rm1z2TYhXAmoPiEHME.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "5.1",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1146058"
+    },
+    {
       "id": 16859,
       "mediaType": "movie",
       "title": "Kiki's Delivery Service",
@@ -364,7 +364,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
       "releaseDate": "1991-07-19",
       "rating": "7.8",
-      "votes": 4650,
+      "votes": 4651,
       "url": "https://www.themoviedb.org/movie/16859"
     }
   ],
@@ -375,10 +375,10 @@
       "title": "Spider-Man: Brand New Day",
       "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b0LviwKbDto7Qq0D4DzGoVHpF4C.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 834,
+      "votes": 853,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-17",
-      "rating": "7.9",
-      "votes": 2139,
+      "rating": "8.0",
+      "votes": 2153,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-25",
       "rating": "6.7",
-      "votes": 1481,
+      "votes": 1500,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
