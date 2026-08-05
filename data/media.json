@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-05T11:04:09.971158+00:00",
+  "updated": "2026-08-05T16:19:11.458859+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-28",
       "rating": "8.0",
-      "votes": 947,
+      "votes": 962,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2215,
+      "votes": 2229,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.7",
-      "votes": 433,
+      "votes": 447,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1539,
+      "votes": 1548,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4245,
+      "votes": 4252,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/se8LfmZYFiNerF6U7zMUKePV0vE.jpg",
       "releaseDate": "2026-07-29",
       "rating": "6.5",
-      "votes": 447,
+      "votes": 453,
       "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
@@ -84,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2382,
+      "votes": 2389,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1083381,
+      "mediaType": "movie",
+      "title": "Backrooms",
+      "overview": "A strange doorway appears in the basement of a furniture showroom.",
+      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
+      "releaseDate": "2026-05-27",
+      "rating": "7.1",
+      "votes": 2521,
+      "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
       "id": 1307118,
@@ -108,47 +120,11 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ezbrL1dMymKQZw7mDEWa2ZTzN7d.jpg",
       "releaseDate": "2026-07-24",
       "rating": "9.3",
-      "votes": 664,
+      "votes": 668,
       "url": "https://www.themoviedb.org/movie/980431"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2515,
-      "url": "https://www.themoviedb.org/movie/1083381"
     }
   ],
   "trendingTv": [
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.3",
-      "votes": 2478,
-      "url": "https://www.themoviedb.org/tv/97546"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6832,
-      "url": "https://www.themoviedb.org/tv/94997"
-    },
     {
       "id": 289324,
       "mediaType": "tv",
@@ -162,16 +138,40 @@
       "url": "https://www.themoviedb.org/tv/289324"
     },
     {
-      "id": 278624,
+      "id": 97546,
       "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.4",
-      "votes": 112,
-      "url": "https://www.themoviedb.org/tv/278624"
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.3",
+      "votes": 2483,
+      "url": "https://www.themoviedb.org/tv/97546"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6835,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 283297,
+      "mediaType": "tv",
+      "title": "Sterling Point",
+      "overview": "Annie along with her twin brother were raised in New York by their single dad before they find out that their estranged grandfather left them an island on a lake in his will.",
+      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "4.0",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/283297"
     },
     {
       "id": 113962,
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.0",
-      "votes": 1290,
+      "votes": 1293,
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
@@ -193,21 +193,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
       "releaseDate": "2026-07-30",
-      "rating": "6.0",
-      "votes": 3,
+      "rating": "6.2",
+      "votes": 4,
       "url": "https://www.themoviedb.org/tv/271016"
     },
     {
-      "id": 30984,
+      "id": 207333,
       "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2202,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "title": "One Hundred Years of Solitude",
+      "overview": "In the mythical town Macondo, seven generations of the Buendía family navigate love, oblivion and the inescapability of their past — and their fate.",
+      "poster": "https://image.tmdb.org/t/p/w500/fvEhTiNg2ICs0wXTGKuKoIGhLGe.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
+      "releaseDate": "2024-12-11",
+      "rating": "7.9",
+      "votes": 219,
+      "url": "https://www.themoviedb.org/tv/207333"
+    },
+    {
+      "id": 278624,
+      "mediaType": "tv",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.3",
+      "votes": 115,
+      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 615,
@@ -222,28 +234,16 @@
       "url": "https://www.themoviedb.org/tv/615"
     },
     {
-      "id": 283297,
+      "id": 125988,
       "mediaType": "tv",
-      "title": "Sterling Point",
-      "overview": "Annie along with her twin brother were raised in New York by their single dad before they find out that their estranged grandfather left them an island on a lake in his will.",
-      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/283297"
-    },
-    {
-      "id": 207333,
-      "mediaType": "tv",
-      "title": "One Hundred Years of Solitude",
-      "overview": "In the mythical town Macondo, seven generations of the Buendía family navigate love, oblivion and the inescapability of their past — and their fate.",
-      "poster": "https://image.tmdb.org/t/p/w500/fvEhTiNg2ICs0wXTGKuKoIGhLGe.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
-      "releaseDate": "2024-12-11",
-      "rating": "7.9",
-      "votes": 218,
-      "url": "https://www.themoviedb.org/tv/207333"
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2376,
+      "url": "https://www.themoviedb.org/tv/125988"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jDvxsBemt2Iyslg7qn2WMzgxz23.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 397,
+      "votes": 401,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -344,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
+      "id": 1291595,
+      "mediaType": "movie",
+      "title": "Insidious: Out of the Further",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1291595"
+    },
+    {
       "id": 1146058,
       "mediaType": "movie",
       "title": "The Pout-Pout Fish",
@@ -354,18 +366,6 @@
       "rating": "5.1",
       "votes": 15,
       "url": "https://www.themoviedb.org/movie/1146058"
-    },
-    {
-      "id": 16859,
-      "mediaType": "movie",
-      "title": "Kiki's Delivery Service",
-      "overview": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
-      "poster": "https://image.tmdb.org/t/p/w500/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8bbezmHxayJ74TEKt6l6QZYUOCi.jpg",
-      "releaseDate": "1991-07-19",
-      "rating": "7.8",
-      "votes": 4652,
-      "url": "https://www.themoviedb.org/movie/16859"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.0",
-      "votes": 935,
+      "votes": 949,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2209,
+      "votes": 2217,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.7",
-      "votes": 410,
+      "votes": 438,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -478,16 +478,16 @@
       "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
-      "id": 1185806,
+      "id": 1477712,
       "mediaType": "movie",
-      "title": "PAW Patrol: The Dino Movie",
-      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
-      "poster": "https://image.tmdb.org/t/p/w500/cxXSF4aY5N2cOGwaga5OnpPFHzk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/upNeU9FNGAvdhnoThvv64Z0MWKn.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.0",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1185806"
+      "title": "Ice Cream Man",
+      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
+      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
+      "releaseDate": "2026-08-04",
+      "rating": "3.2",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/movie/1477712"
     }
   ],
   "links": [
