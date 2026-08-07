@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-07T09:38:59.779829+00:00",
+  "updated": "2026-08-07T15:33:16.649577+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1133,
+      "votes": 1152,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -21,11 +21,23 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sSIzzVhhLfgLKVBcAUv0X6cLYz9.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2317,
+      "votes": 2329,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1284041,
+      "mediaType": "movie",
+      "title": "The Last House",
+      "overview": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
+      "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
+      "releaseDate": "2026-08-06",
+      "rating": "6.7",
+      "votes": 11,
+      "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
       "id": 1212763,
@@ -36,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.9",
-      "votes": 640,
+      "votes": 644,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -48,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4352,
+      "votes": 4359,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -60,20 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.8",
-      "votes": 1618,
+      "votes": 1622,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
-      "id": 1284041,
+      "id": 1263532,
       "mediaType": "movie",
-      "title": "The Last House",
-      "overview": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
-      "poster": "https://image.tmdb.org/t/p/w500/tz3Afb8yxSrYmbfHGGRsJ6HvwRO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1RhfevWmWCVHtEqxWBEjPOC5KG1.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "5.0",
+      "title": "Beast Race",
+      "overview": "Inspired by the illegal universe of the Brazilian animal lottery, a fearless young man must win a deadly race to save his sister in a dystopian future where each animal in the game is now represented by a runner vying for a prize.",
+      "poster": "https://image.tmdb.org/t/p/w500/mwmfEqWXZG6HmAUuN5SjO8s7UNV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1zhpeLzqEi8bmaBiMZUg0D13eDt.jpg",
+      "releaseDate": "2026-03-17",
+      "rating": "9.0",
       "votes": 1,
-      "url": "https://www.themoviedb.org/movie/1284041"
+      "url": "https://www.themoviedb.org/movie/1263532"
     },
     {
       "id": 1307118,
@@ -84,32 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
       "releaseDate": "2026-07-31",
       "rating": "6.6",
-      "votes": 58,
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/1307118"
-    },
-    {
-      "id": 1275779,
-      "mediaType": "movie",
-      "title": "Disclosure Day",
-      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
-      "releaseDate": "2026-06-10",
-      "rating": "7.4",
-      "votes": 2455,
-      "url": "https://www.themoviedb.org/movie/1275779"
-    },
-    {
-      "id": 1481343,
-      "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/se8LfmZYFiNerF6U7zMUKePV0vE.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "6.5",
-      "votes": 481,
-      "url": "https://www.themoviedb.org/movie/1481343"
     },
     {
       "id": 1083381,
@@ -120,8 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2565,
+      "votes": 2568,
       "url": "https://www.themoviedb.org/movie/1083381"
+    },
+    {
+      "id": 1275779,
+      "mediaType": "movie",
+      "title": "Disclosure Day",
+      "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+      "poster": "https://image.tmdb.org/t/p/w500/AnJ8IQJI23hNpYXVNaythu061Ru.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
+      "releaseDate": "2026-06-10",
+      "rating": "7.4",
+      "votes": 2460,
+      "url": "https://www.themoviedb.org/movie/1275779"
     }
   ],
   "trendingTv": [
@@ -134,32 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2383,
+      "votes": 2384,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
-      "id": 298168,
+      "id": 291496,
       "mediaType": "tv",
-      "title": "The Shards",
-      "overview": "17-year-old Bret Easton Ellis is in his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
-      "poster": "https://image.tmdb.org/t/p/w500/wP0GdqwVu2g1y3q1KzBXuSrdTvX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vTzfZ55Qp1GP3uKGSMlsLEYrn6.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "8.2",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/tv/298168"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6855,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "title": "Our Sticky Love",
+      "overview": "An ambitious prosecutor loses her memory and moves in with a boxing coach who claims to be her boyfriend. Can this sticky situation turn into real love?",
+      "poster": "https://image.tmdb.org/t/p/w500/tSZ4aFpTGc8Oj52SuzPUUZ7WKL0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mp2AFsWsuyxCzenJh3DTKw7z4jG.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "6.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/291496"
     },
     {
       "id": 97546,
@@ -170,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
       "releaseDate": "2020-08-14",
       "rating": "8.3",
-      "votes": 2499,
+      "votes": 2503,
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
@@ -186,18 +174,6 @@
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
-      "id": 289324,
-      "mediaType": "tv",
-      "title": "Star Wars: Visions Presents - The Ninth Jedi",
-      "overview": "Kara and her ragtag Jedi crew seek out to find worthy Jedi to fight against an increasingly powerful warlord.",
-      "poster": "https://image.tmdb.org/t/p/w500/AthqHRKJFOIbLa459I3D5yHdrQL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8ln6DSOJKJUSt1IETsfHkFj6rMY.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.0",
-      "votes": 10,
-      "url": "https://www.themoviedb.org/tv/289324"
-    },
-    {
       "id": 271016,
       "mediaType": "tv",
       "title": "Mystic Nine",
@@ -210,6 +186,42 @@
       "url": "https://www.themoviedb.org/tv/271016"
     },
     {
+      "id": 300480,
+      "mediaType": "tv",
+      "title": "Ricky Gervais Alley Cats",
+      "overview": "Outrageous misadventures run wild as feral cats cause chaos on the streets in this no-holds-barred animated comedy from Ricky Gervais.",
+      "poster": "https://image.tmdb.org/t/p/w500/mWC77mH2Nv7KMP8vGzwwCVkhsWu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/w7yWr1UM413lOAPt2XS7TVALWrg.jpg",
+      "releaseDate": "2026-08-07",
+      "rating": "7.5",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/tv/300480"
+    },
+    {
+      "id": 298168,
+      "mediaType": "tv",
+      "title": "The Shards",
+      "overview": "17-year-old Bret Easton Ellis is in his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
+      "poster": "https://image.tmdb.org/t/p/w500/wP0GdqwVu2g1y3q1KzBXuSrdTvX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vTzfZ55Qp1GP3uKGSMlsLEYrn6.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.7",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/tv/298168"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6857,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
       "id": 615,
       "mediaType": "tv",
       "title": "Futurama",
@@ -218,32 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
       "releaseDate": "1999-03-28",
       "rating": "8.4",
-      "votes": 3829,
+      "votes": 3830,
       "url": "https://www.themoviedb.org/tv/615"
     },
     {
-      "id": 37854,
+      "id": 289324,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5464,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 203744,
-      "mediaType": "tv",
-      "title": "Sugar",
-      "overview": "John Sugar is a dashing private eye navigating the dark corners of sunny LA. Though he sees only the good in humanity, Sugar is haunted by a secret too dangerous to expose.",
-      "poster": "https://image.tmdb.org/t/p/w500/tLmwLYiI7EpPbhgmdeivNGY0xw7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1TD4RxJsHkFbkJtWgoVRzQf9STd.jpg",
-      "releaseDate": "2024-04-04",
-      "rating": "7.1",
-      "votes": 347,
-      "url": "https://www.themoviedb.org/tv/203744"
+      "title": "Star Wars: Visions Presents - The Ninth Jedi",
+      "overview": "Kara and her ragtag Jedi crew seek out to find worthy Jedi to fight against an increasingly powerful warlord.",
+      "poster": "https://image.tmdb.org/t/p/w500/AthqHRKJFOIbLa459I3D5yHdrQL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8ln6DSOJKJUSt1IETsfHkFj6rMY.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.0",
+      "votes": 10,
+      "url": "https://www.themoviedb.org/tv/289324"
     }
   ],
   "upcomingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1123,
+      "votes": 1143,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2313,
+      "votes": 2324,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -422,11 +422,11 @@
       "mediaType": "movie",
       "title": "Evil Dead Burn",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/7JFVcU1uzv9zCfyMzLrsU04t8BU.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 627,
+      "votes": 642,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
       "releaseDate": "2026-08-04",
       "rating": "5.9",
-      "votes": 16,
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
