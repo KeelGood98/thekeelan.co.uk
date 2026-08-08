@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-08T15:01:54.047668+00:00",
+  "updated": "2026-08-08T21:03:35.650771+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1254,
+      "votes": 1291,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2397,
+      "votes": 2422,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -35,8 +35,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
       "releaseDate": "2026-08-06",
-      "rating": "6.0",
-      "votes": 84,
+      "rating": "6.1",
+      "votes": 119,
       "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.9",
-      "votes": 727,
+      "votes": 743,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4401,
+      "votes": 4412,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1666,
+      "votes": 1678,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -84,20 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2585,
+      "votes": 2591,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1307118,
-      "mediaType": "movie",
-      "title": "Soulm8te",
-      "overview": "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
-      "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
-      "releaseDate": "2026-07-31",
-      "rating": "6.5",
-      "votes": 73,
-      "url": "https://www.themoviedb.org/movie/1307118"
     },
     {
       "id": 1275779,
@@ -108,35 +96,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2501,
+      "votes": 2519,
       "url": "https://www.themoviedb.org/movie/1275779"
     },
     {
-      "id": 1481343,
+      "id": 1307118,
       "mediaType": "movie",
-      "title": "The Devil's Mouth",
-      "overview": "A group of college friends' Thailand adventure turns deadly when they become trapped in submerged caves with a dangerous predator. As oxygen runs low, past conflicts emerge in their desperate fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lH8k9uCWYn2b2gsYleqYBDPbWa8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/se8LfmZYFiNerF6U7zMUKePV0vE.jpg",
-      "releaseDate": "2026-07-29",
+      "title": "Soulm8te",
+      "overview": "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
+      "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebcOSaZLxdCMHDjJJQzx5PiEyzl.jpg",
+      "releaseDate": "2026-07-31",
       "rating": "6.5",
-      "votes": 500,
-      "url": "https://www.themoviedb.org/movie/1481343"
+      "votes": 74,
+      "url": "https://www.themoviedb.org/movie/1307118"
+    },
+    {
+      "id": 687163,
+      "mediaType": "movie",
+      "title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "releaseDate": "2026-03-15",
+      "rating": "8.7",
+      "votes": 6851,
+      "url": "https://www.themoviedb.org/movie/687163"
     }
   ],
   "trendingTv": [
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.3",
-      "votes": 2505,
-      "url": "https://www.themoviedb.org/tv/97546"
-    },
     {
       "id": 125988,
       "mediaType": "tv",
@@ -146,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2387,
+      "votes": 2388,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -158,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/etj8E2o0Bud0HkONVQPjyCkIvpv.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6865,
+      "votes": 6867,
       "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.3",
+      "votes": 2506,
+      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 289324,
@@ -174,18 +174,6 @@
       "url": "https://www.themoviedb.org/tv/289324"
     },
     {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.0",
-      "votes": 1304,
-      "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
       "id": 615,
       "mediaType": "tv",
       "title": "Futurama",
@@ -198,16 +186,16 @@
       "url": "https://www.themoviedb.org/tv/615"
     },
     {
-      "id": 283297,
+      "id": 113962,
       "mediaType": "tv",
-      "title": "Sterling Point",
-      "overview": "After discovering she's inherited a remote island in Canada from the estranged grandfather she was never allowed to meet, 17-year-old Annie Jacobson decides to investigate, pulling her into a world of buried secrets, unexpected sisterhood, and the complicated family history she was never meant to find.",
-      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.4",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/283297"
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.0",
+      "votes": 1306,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 298168,
@@ -220,6 +208,18 @@
       "rating": "8.2",
       "votes": 12,
       "url": "https://www.themoviedb.org/tv/298168"
+    },
+    {
+      "id": 283297,
+      "mediaType": "tv",
+      "title": "Sterling Point",
+      "overview": "After discovering she's inherited a remote island in Canada from the estranged grandfather she was never allowed to meet, 17-year-old Annie Jacobson decides to investigate, pulling her into a world of buried secrets, unexpected sisterhood, and the complicated family history she was never meant to find.",
+      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.4",
+      "votes": 14,
+      "url": "https://www.themoviedb.org/tv/283297"
     },
     {
       "id": 30984,
@@ -288,11 +288,11 @@
       "mediaType": "movie",
       "title": "Stop! That! Train!",
       "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
-      "poster": "https://image.tmdb.org/t/p/w500/w90dGS6D2lVO4aO5rdQ8QECrUGY.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ldSRlTcMflx8kjio6pEZADcyhfm.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/p9f6ePFZZ7oF2Z9lMIw5Hgrnbme.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2qycL8CyXvOkEzrs77i5lm7Cj3W.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "5.2",
-      "votes": 37,
+      "rating": "5.3",
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
@@ -318,6 +318,18 @@
       "rating": "7.2",
       "votes": 11,
       "url": "https://www.themoviedb.org/movie/1240889"
+    },
+    {
+      "id": 1408162,
+      "mediaType": "movie",
+      "title": "Vishwanath & Sons",
+      "overview": "Sanjay Vishwanath is an acclaimed professional handgunner in his 40s with a major stake in fame and wealth. When he comes across a woman named Maddy in her 20s, their dynamic poses many issues that they must come to terms with.",
+      "poster": "https://image.tmdb.org/t/p/w500/dot8WKCoew5RtrzldAJhqPaF0nQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gwjl5ZaW15ZcXPowkYoiDZXGZtH.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
       "id": 1291595,
@@ -354,18 +366,6 @@
       "rating": "6.1",
       "votes": 14,
       "url": "https://www.themoviedb.org/movie/1288059"
-    },
-    {
-      "id": 1204680,
-      "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/qTDRp8d1vzsFekTEgPC7X0jRRKE.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/AbQYEHieBJsMheLFKM02rFu0xnc.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1204680"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1242,
+      "votes": 1262,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2386,
+      "votes": 2406,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-10",
       "rating": "6.0",
-      "votes": 175,
+      "votes": 176,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 721,
+      "votes": 733,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -437,21 +437,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
       "releaseDate": "2026-08-04",
-      "rating": "5.6",
-      "votes": 25,
+      "rating": "5.5",
+      "votes": 27,
       "url": "https://www.themoviedb.org/movie/1477712"
-    },
-    {
-      "id": 1235877,
-      "mediaType": "movie",
-      "title": "Jana Nayagan",
-      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "5.1",
-      "votes": 11,
-      "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
       "id": 1185806,
@@ -466,16 +454,16 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
-      "id": 950028,
+      "id": 1235877,
       "mediaType": "movie",
-      "title": "The Invite",
-      "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
-      "releaseDate": "2026-07-03",
-      "rating": "7.7",
-      "votes": 121,
-      "url": "https://www.themoviedb.org/movie/950028"
+      "title": "Jana Nayagan",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "5.1",
+      "votes": 11,
+      "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
       "id": 1408170,
@@ -488,6 +476,18 @@
       "rating": "6.4",
       "votes": 5,
       "url": "https://www.themoviedb.org/movie/1408170"
+    },
+    {
+      "id": 950028,
+      "mediaType": "movie",
+      "title": "The Invite",
+      "overview": "Joe and Angela’s marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
+      "releaseDate": "2026-07-03",
+      "rating": "7.7",
+      "votes": 121,
+      "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
   "links": [
