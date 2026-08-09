@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09T15:04:33.342877+00:00",
+  "updated": "2026-08-09T21:06:11.622279+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1357,
+      "votes": 1393,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2468,
+      "votes": 2494,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.6",
-      "votes": 209,
+      "votes": 252,
       "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
@@ -45,10 +45,10 @@
       "title": "Evil Dead Burn",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
       "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.9",
-      "votes": 814,
+      "votes": 825,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4452,
+      "votes": 4467,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4X2YSe8PaYbsBqX3TDmmIU4vOju.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1708,
+      "votes": 1715,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -84,20 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 2609,
+      "votes": 2618,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1307118,
-      "mediaType": "movie",
-      "title": "Soulm8te",
-      "overview": "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
-      "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7t6f6VxA2ZXbbZSVctgt7bZG2DI.jpg",
-      "releaseDate": "2026-07-31",
-      "rating": "6.5",
-      "votes": 78,
-      "url": "https://www.themoviedb.org/movie/1307118"
     },
     {
       "id": 1275779,
@@ -108,8 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/flxau5Iu7bChQHsESqvGZ3FQRaI.jpg",
       "releaseDate": "2026-06-10",
       "rating": "7.4",
-      "votes": 2552,
+      "votes": 2570,
       "url": "https://www.themoviedb.org/movie/1275779"
+    },
+    {
+      "id": 1307118,
+      "mediaType": "movie",
+      "title": "Soulm8te",
+      "overview": "After a ruthless tech giant acquires a small robotics company, a grieving engineer is tasked with testing their new AI companion. But when he attempts to reprogram her to be a truly sentient soulmate, she develops needs of her own—unleashing a relentless spree of precision-engineered mayhem.",
+      "poster": "https://image.tmdb.org/t/p/w500/bNErActDctl6cdUGw9pnjSCmyhQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7t6f6VxA2ZXbbZSVctgt7bZG2DI.jpg",
+      "releaseDate": "2026-07-31",
+      "rating": "6.5",
+      "votes": 80,
+      "url": "https://www.themoviedb.org/movie/1307118"
     },
     {
       "id": 687163,
@@ -120,11 +120,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
       "releaseDate": "2026-03-15",
       "rating": "8.7",
-      "votes": 6879,
+      "votes": 6891,
       "url": "https://www.themoviedb.org/movie/687163"
     }
   ],
   "trendingTv": [
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2394,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
     {
       "id": 113962,
       "mediaType": "tv",
@@ -134,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.0",
-      "votes": 1306,
+      "votes": 1309,
       "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6875,
-      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 97546,
@@ -162,6 +162,18 @@
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6877,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
       "id": 289324,
       "mediaType": "tv",
       "title": "Star Wars: Visions Presents - The Ninth Jedi",
@@ -170,8 +182,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8ln6DSOJKJUSt1IETsfHkFj6rMY.jpg",
       "releaseDate": "2026-08-05",
       "rating": "7.2",
-      "votes": 13,
+      "votes": 14,
       "url": "https://www.themoviedb.org/tv/289324"
+    },
+    {
+      "id": 207333,
+      "mediaType": "tv",
+      "title": "One Hundred Years of Solitude",
+      "overview": "In the mythical town Macondo, seven generations of the Buendía family navigate love, oblivion and the inescapability of their past — and their fate.",
+      "poster": "https://image.tmdb.org/t/p/w500/9zrvktj9JYQwQxZD4lAySfcYlmI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5mcc7J07f680Q88xeLClf5SIZtt.jpg",
+      "releaseDate": "2024-12-11",
+      "rating": "8.0",
+      "votes": 226,
+      "url": "https://www.themoviedb.org/tv/207333"
+    },
+    {
+      "id": 283297,
+      "mediaType": "tv",
+      "title": "Sterling Point",
+      "overview": "After discovering she's inherited a remote island in Canada from the estranged grandfather she was never allowed to meet, 17-year-old Annie Jacobson decides to investigate, pulling her into a world of buried secrets, unexpected sisterhood, and the complicated family history she was never meant to find.",
+      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.8",
+      "votes": 20,
+      "url": "https://www.themoviedb.org/tv/283297"
     },
     {
       "id": 615,
@@ -182,8 +218,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
       "releaseDate": "1999-03-28",
       "rating": "8.4",
-      "votes": 3833,
+      "votes": 3834,
       "url": "https://www.themoviedb.org/tv/615"
+    },
+    {
+      "id": 298168,
+      "mediaType": "tv",
+      "title": "The Shards",
+      "overview": "17-year-old Bret Easton Ellis is in his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
+      "poster": "https://image.tmdb.org/t/p/w500/wP0GdqwVu2g1y3q1KzBXuSrdTvX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vTzfZ55Qp1GP3uKGSMlsLEYrn6.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.8",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/tv/298168"
     },
     {
       "id": 30984,
@@ -196,54 +244,6 @@
       "rating": "8.4",
       "votes": 2208,
       "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2391,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 271016,
-      "mediaType": "tv",
-      "title": "Mystic Nine",
-      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
-      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
-      "releaseDate": "2026-07-30",
-      "rating": "6.2",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/271016"
-    },
-    {
-      "id": 298168,
-      "mediaType": "tv",
-      "title": "The Shards",
-      "overview": "17-year-old Bret Easton Ellis is in his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
-      "poster": "https://image.tmdb.org/t/p/w500/wP0GdqwVu2g1y3q1KzBXuSrdTvX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vTzfZ55Qp1GP3uKGSMlsLEYrn6.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.6",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/298168"
-    },
-    {
-      "id": 283297,
-      "mediaType": "tv",
-      "title": "Sterling Point",
-      "overview": "After discovering she's inherited a remote island in Canada from the estranged grandfather she was never allowed to meet, 17-year-old Annie Jacobson decides to investigate, pulling her into a world of buried secrets, unexpected sisterhood, and the complicated family history she was never meant to find.",
-      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.4",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/283297"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jDvxsBemt2Iyslg7qn2WMzgxz23.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 441,
+      "votes": 443,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -272,16 +272,16 @@
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
-      "id": 1633056,
+      "id": 1433367,
       "mediaType": "movie",
-      "title": "All Wishes Come True!",
-      "overview": "Eight grassroot mortals use their street smarts and hilarious schemes to defy powerful gods, earning their title as the \"Eight Immortals.\"",
-      "poster": "https://image.tmdb.org/t/p/w500/wJ9FLxq3Q6D4ve8TUepYsr0PL3p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lMK3FnMfQ9O3DiC7hi4J2XBzNf.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "8.1",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1633056"
+      "title": "One Night Only",
+      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+      "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "7.1",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
       "id": 1240889,
@@ -296,28 +296,52 @@
       "url": "https://www.themoviedb.org/movie/1240889"
     },
     {
+      "id": 1633056,
+      "mediaType": "movie",
+      "title": "All Wishes Come True!",
+      "overview": "Eight grassroot mortals use their street smarts and hilarious schemes to defy powerful gods, earning their title as the \"Eight Immortals.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/wJ9FLxq3Q6D4ve8TUepYsr0PL3p.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lMK3FnMfQ9O3DiC7hi4J2XBzNf.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "8.1",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1633056"
+    },
+    {
+      "id": 1329016,
+      "mediaType": "movie",
+      "title": "Tony",
+      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
+      "poster": "https://image.tmdb.org/t/p/w500/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "8.0",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/movie/1329016"
+    },
+    {
       "id": 1541560,
       "mediaType": "movie",
       "title": "Stop! That! Train!",
       "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
-      "poster": "https://image.tmdb.org/t/p/w500/p9f6ePFZZ7oF2Z9lMIw5Hgrnbme.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2qycL8CyXvOkEzrs77i5lm7Cj3W.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/7t69fo096Ddre1fEmCitxTdQ89v.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
       "releaseDate": "2026-08-21",
       "rating": "5.3",
       "votes": 38,
       "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
-      "id": 1433367,
+      "id": 1408162,
       "mediaType": "movie",
-      "title": "One Night Only",
-      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-      "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "7.1",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1433367"
+      "title": "Vishwanath & Sons",
+      "overview": "Sanjay Vishwanath is an acclaimed professional handgunner in his 40s with a major stake in fame and wealth. When he comes across a woman named Maddy in her 20s, their dynamic poses many issues that they must come to terms with.",
+      "poster": "https://image.tmdb.org/t/p/w500/adDZVEQZnMJ380zPOmVj6vBWHgk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gwjl5ZaW15ZcXPowkYoiDZXGZtH.jpg",
+      "releaseDate": "2026-08-14",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
       "id": 1291595,
@@ -342,30 +366,6 @@
       "rating": "8.0",
       "votes": 175,
       "url": "https://www.themoviedb.org/movie/1167307"
-    },
-    {
-      "id": 1408162,
-      "mediaType": "movie",
-      "title": "Vishwanath & Sons",
-      "overview": "Sanjay Vishwanath is an acclaimed professional handgunner in his 40s with a major stake in fame and wealth. When he comes across a woman named Maddy in her 20s, their dynamic poses many issues that they must come to terms with.",
-      "poster": "https://image.tmdb.org/t/p/w500/adDZVEQZnMJ380zPOmVj6vBWHgk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gwjl5ZaW15ZcXPowkYoiDZXGZtH.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1408162"
-    },
-    {
-      "id": 1288059,
-      "mediaType": "movie",
-      "title": "I Want Your Sex",
-      "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rcBpmEIdSTMnt5Rn4BQeHF4SIL5.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "6.1",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/movie/1288059"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1342,
+      "votes": 1388,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,20 +390,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2456,
+      "votes": 2491,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "6.0",
-      "votes": 184,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1212763,
@@ -411,10 +399,10 @@
       "title": "Evil Dead Burn",
       "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
       "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/A5Tz6ogGt4VV8NESG9oWVct5bo1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/biwEwIkjZhMUfXzz59bpeDzwYB6.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 809,
+      "votes": 824,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -430,6 +418,18 @@
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-10",
+      "rating": "6.1",
+      "votes": 185,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
       "id": 1477712,
       "mediaType": "movie",
       "title": "Ice Cream Man",
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
       "releaseDate": "2026-08-04",
-      "rating": "5.3",
-      "votes": 29,
+      "rating": "5.2",
+      "votes": 30,
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
@@ -454,18 +454,6 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
-      "id": 1235877,
-      "mediaType": "movie",
-      "title": "Jana Nayagan",
-      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "5.1",
-      "votes": 11,
-      "url": "https://www.themoviedb.org/movie/1235877"
-    },
-    {
       "id": 1408170,
       "mediaType": "movie",
       "title": "Lenin",
@@ -478,6 +466,18 @@
       "url": "https://www.themoviedb.org/movie/1408170"
     },
     {
+      "id": 1235877,
+      "mediaType": "movie",
+      "title": "Jana Nayagan",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "5.1",
+      "votes": 11,
+      "url": "https://www.themoviedb.org/movie/1235877"
+    },
+    {
       "id": 950028,
       "mediaType": "movie",
       "title": "The Invite",
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kLA1GqiOEyVgXxgNqLoCr7bYcqu.jpg",
       "releaseDate": "2026-07-03",
       "rating": "7.7",
-      "votes": 123,
+      "votes": 124,
       "url": "https://www.themoviedb.org/movie/950028"
     }
   ],
