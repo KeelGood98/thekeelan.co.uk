@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13T09:45:19.123818+00:00",
+  "updated": "2026-08-13T15:36:08.498752+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1613,
+      "votes": 1625,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2675,
+      "votes": 2683,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,32 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.9",
-      "votes": 516,
+      "votes": 521,
       "url": "https://www.themoviedb.org/movie/1284041"
-    },
-    {
-      "id": 1315772,
-      "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "7.2",
-      "votes": 481,
-      "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 950028,
-      "mediaType": "movie",
-      "title": "The Invite",
-      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
-      "releaseDate": "2026-06-25",
-      "rating": "7.5",
-      "votes": 171,
-      "url": "https://www.themoviedb.org/movie/950028"
     },
     {
       "id": 1101383,
@@ -72,8 +48,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "7.0",
-      "votes": 43,
+      "votes": 44,
       "url": "https://www.themoviedb.org/movie/1101383"
+    },
+    {
+      "id": 1315772,
+      "mediaType": "movie",
+      "title": "Minions & Monsters",
+      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
+      "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "7.2",
+      "votes": 488,
+      "url": "https://www.themoviedb.org/movie/1315772"
+    },
+    {
+      "id": 950028,
+      "mediaType": "movie",
+      "title": "The Invite",
+      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+      "releaseDate": "2026-06-25",
+      "rating": "7.4",
+      "votes": 172,
+      "url": "https://www.themoviedb.org/movie/950028"
     },
     {
       "id": 1339713,
@@ -84,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4602,
+      "votes": 4605,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1081003,
+      "mediaType": "movie",
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.7",
+      "votes": 1801,
+      "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
       "id": 1212763,
@@ -96,47 +108,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.9",
-      "votes": 993,
+      "votes": 998,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
-      "id": 1081003,
+      "id": 687163,
       "mediaType": "movie",
-      "title": "Supergirl",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/1QCWdqzTfh2x9UylVpspIU6QTuM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "6.8",
-      "votes": 1798,
-      "url": "https://www.themoviedb.org/movie/1081003"
-    },
-    {
-      "id": 1083381,
-      "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2709,
-      "url": "https://www.themoviedb.org/movie/1083381"
+      "title": "Project Hail Mary",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
+      "releaseDate": "2026-03-15",
+      "rating": "8.7",
+      "votes": 6988,
+      "url": "https://www.themoviedb.org/movie/687163"
     }
   ],
   "trendingTv": [
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6934,
-      "url": "https://www.themoviedb.org/tv/94997"
-    },
     {
       "id": 108978,
       "mediaType": "tv",
@@ -146,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3020,
+      "votes": 3024,
       "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6937,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
       "id": 97546,
@@ -174,6 +174,30 @@
       "url": "https://www.themoviedb.org/tv/298168"
     },
     {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2409,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.7",
+      "votes": 835,
+      "url": "https://www.themoviedb.org/tv/138502"
+    },
+    {
       "id": 215072,
       "mediaType": "tv",
       "title": "A Shop for Killers",
@@ -184,30 +208,6 @@
       "rating": "8.4",
       "votes": 209,
       "url": "https://www.themoviedb.org/tv/215072"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2408,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.0",
-      "votes": 1332,
-      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 283297,
@@ -222,28 +222,28 @@
       "url": "https://www.themoviedb.org/tv/283297"
     },
     {
-      "id": 291496,
+      "id": 113962,
       "mediaType": "tv",
-      "title": "Our Sticky Love",
-      "overview": "An ambitious prosecutor loses her memory and moves in with a boxing coach who claims to be her boyfriend. Can this sticky situation turn into real love?",
-      "poster": "https://image.tmdb.org/t/p/w500/tSZ4aFpTGc8Oj52SuzPUUZ7WKL0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mp2AFsWsuyxCzenJh3DTKw7z4jG.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "8.4",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/tv/291496"
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.0",
+      "votes": 1332,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
-      "id": 138502,
+      "id": 309798,
       "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.7",
-      "votes": 835,
-      "url": "https://www.themoviedb.org/tv/138502"
+      "title": "My Brilliant Career",
+      "overview": "Restless, razor-sharp, and refusing to conform, Sybylla is dead set on writing her own story in an era that expects her to find a man and settle down.",
+      "poster": "https://image.tmdb.org/t/p/w500/fhpa8B6USatHybK04XBbPAB6Mlz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5ErhLuuVrxlNa2JiRzXfo0U10uZ.jpg",
+      "releaseDate": "2026-08-13",
+      "rating": "5.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/309798"
     }
   ],
   "upcomingMovies": [
@@ -252,11 +252,11 @@
       "mediaType": "movie",
       "title": "Colony",
       "overview": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
-      "poster": "https://image.tmdb.org/t/p/w500/wC69brhk65GvrgNQdqLRUqtneUH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cOKATn8lOcvVnOqqV5oYWaI9z2Z.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/tN799oUR0f1gUKDYdMNrDaY7I51.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jDvxsBemt2Iyslg7qn2WMzgxz23.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 468,
+      "votes": 473,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 202,
+      "votes": 203,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.7",
-      "votes": 281,
+      "votes": 286,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -315,8 +315,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
       "releaseDate": "2026-08-28",
-      "rating": "6.9",
-      "votes": 21,
+      "rating": "6.8",
+      "votes": 22,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
@@ -336,7 +336,7 @@
       "mediaType": "movie",
       "title": "Coyote vs. Acme",
       "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qTDRp8d1vzsFekTEgPC7X0jRRKE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/AbQYEHieBJsMheLFKM02rFu0xnc.jpg",
       "releaseDate": "2026-08-21",
       "rating": "0.0",
@@ -352,7 +352,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.8",
-      "votes": 277,
+      "votes": 279,
       "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1611,
+      "votes": 1621,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2670,
+      "votes": 2681,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 993,
+      "votes": 994,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "7.0",
-      "votes": 42,
+      "votes": 43,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
       "releaseDate": "2026-08-04",
       "rating": "5.1",
-      "votes": 37,
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1477712"
     },
     {
@@ -485,8 +485,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "7.5",
-      "votes": 10,
+      "rating": "7.6",
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/1329016"
     }
   ],
