@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14T21:00:34.362025+00:00",
+  "updated": "2026-08-15T09:02:01.163251+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1697,
+      "votes": 1734,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2729,
+      "votes": 2743,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.9",
-      "votes": 596,
+      "votes": 634,
       "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
       "rating": "7.3",
-      "votes": 546,
+      "votes": 566,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "6.9",
-      "votes": 79,
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -71,8 +71,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
       "releaseDate": "2026-06-25",
-      "rating": "7.5",
-      "votes": 192,
+      "rating": "7.4",
+      "votes": 207,
       "url": "https://www.themoviedb.org/movie/950028"
     },
     {
@@ -84,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4639,
+      "votes": 4659,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/bh2OuKvq19jBHsloUVCfPSZZw81.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
       "id": 1081003,
@@ -96,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1824,
+      "votes": 1832,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.9",
-      "votes": 1032,
+      "votes": 1049,
       "url": "https://www.themoviedb.org/movie/1212763"
-    },
-    {
-      "id": 1493400,
-      "mediaType": "movie",
-      "title": "Camp Rock 3",
-      "overview": "When Connect 3 loses their opening act for a major reunion tour, they return to their beloved Camp Rock to discover the next big thing. As campers vie for the chance to open for their favorite band, tensions rise and friendships are tested - leading to unexpected alliances, revelations, and romances.",
-      "poster": "https://image.tmdb.org/t/p/w500/8wI9KByZtzBMWOzDFjxHPSOAuOH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIU5tUicaKXKKOmziCdstBCiG1z.jpg",
-      "releaseDate": "2026-08-13",
-      "rating": "7.1",
-      "votes": 9,
-      "url": "https://www.themoviedb.org/movie/1493400"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3038,
+      "votes": 3045,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6951,
+      "votes": 6955,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2419,
+      "votes": 2421,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -170,20 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
       "releaseDate": "2020-08-14",
       "rating": "8.4",
-      "votes": 2534,
+      "votes": 2537,
       "url": "https://www.themoviedb.org/tv/97546"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.0",
-      "votes": 1336,
-      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 215072,
@@ -194,20 +182,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
       "releaseDate": "2024-01-17",
       "rating": "8.4",
-      "votes": 215,
+      "votes": 217,
       "url": "https://www.themoviedb.org/tv/215072"
-    },
-    {
-      "id": 278624,
-      "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.4",
-      "votes": 137,
-      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 37854,
@@ -218,20 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.8",
-      "votes": 5475,
+      "votes": 5476,
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 283297,
+      "id": 113962,
       "mediaType": "tv",
-      "title": "Sterling Point",
-      "overview": "After discovering she's inherited a remote island in Canada from the estranged grandfather she was never allowed to meet, 17-year-old Annie Jacobson decides to investigate, pulling her into a world of buried secrets, unexpected sisterhood, and the complicated family history she was never meant to find.",
-      "poster": "https://image.tmdb.org/t/p/w500/cThLWEGs6BEqY0QZMbU4FAeWwPT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ebLym6w04CzYJBLZScB1rrzm6uY.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.9",
-      "votes": 51,
-      "url": "https://www.themoviedb.org/tv/283297"
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1341,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 138502,
@@ -242,8 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
       "releaseDate": "2024-03-20",
       "rating": "8.7",
-      "votes": 843,
+      "votes": 845,
       "url": "https://www.themoviedb.org/tv/138502"
+    },
+    {
+      "id": 30984,
+      "mediaType": "tv",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2214,
+      "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 271016,
+      "mediaType": "tv",
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "6.8",
+      "votes": 6,
+      "url": "https://www.themoviedb.org/tv/271016"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jDvxsBemt2Iyslg7qn2WMzgxz23.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 479,
+      "votes": 495,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 207,
+      "votes": 210,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.8",
-      "votes": 298,
+      "votes": 306,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
-      "id": 1240889,
-      "mediaType": "movie",
-      "title": "Teenage Sex and Death at Camp Miasma",
-      "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "7.5",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1240889"
-    },
-    {
       "id": 1433367,
       "mediaType": "movie",
       "title": "One Night Only",
@@ -328,8 +316,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.8",
-      "votes": 23,
+      "votes": 26,
       "url": "https://www.themoviedb.org/movie/1433367"
+    },
+    {
+      "id": 1240889,
+      "mediaType": "movie",
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "7.5",
+      "votes": 18,
+      "url": "https://www.themoviedb.org/movie/1240889"
     },
     {
       "id": 1204680,
@@ -352,7 +352,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.8",
-      "votes": 281,
+      "votes": 285,
       "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1688,
+      "votes": 1734,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2725,
+      "votes": 2743,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 1030,
+      "votes": 1049,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -425,8 +425,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "7.0",
-      "votes": 76,
+      "rating": "6.9",
+      "votes": 94,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
       "releaseDate": "2026-08-05",
-      "rating": "7.4",
-      "votes": 24,
+      "rating": "7.2",
+      "votes": 26,
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
       "releaseDate": "2026-07-23",
       "rating": "5.5",
-      "votes": 13,
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
@@ -478,16 +478,16 @@
       "url": "https://www.themoviedb.org/movie/1408170"
     },
     {
-      "id": 1329016,
+      "id": 1444466,
       "mediaType": "movie",
-      "title": "Tony",
-      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-      "poster": "https://image.tmdb.org/t/p/w500/3WN0JWwRI7oGH7Ni2R6poVWej05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bOqTOVkHAL4z87P0Opf6q5mIeRy.jpg",
+      "title": "Awarapan 2",
+      "overview": "Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.",
+      "poster": "https://image.tmdb.org/t/p/w500/lD3J6zTbWkVtPYuSUuuBwpuKMCO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sJBASJrAnbpDeQNGwbLRLx5s1nS.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "7.6",
-      "votes": 11,
-      "url": "https://www.themoviedb.org/movie/1329016"
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1444466"
     }
   ],
   "links": [
