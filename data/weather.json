@@ -1,17 +1,17 @@
 {
-  "updated": "2026-08-15T16:37:25.242058+00:00",
+  "updated": "2026-08-15T17:32:06.763683+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-08-15T17:30",
-    "temperature": 21.0,
+    "time": "2026-08-15T18:30",
+    "temperature": 20.0,
     "feelsLike": 19.0,
-    "humidity": 44.0,
+    "humidity": 45.0,
     "precipitation": 0.0,
-    "windSpeed": 7.0,
-    "windGusts": 17.0,
+    "windSpeed": 6.0,
+    "windGusts": 15.0,
     "weatherCode": 2,
     "description": "Partly cloudy",
     "icon": "⛅"
