@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15T20:57:15.393411+00:00",
+  "updated": "2026-08-16T09:01:01.564637+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1761,
+      "votes": 1787,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2771,
+      "votes": 2790,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -35,8 +35,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
-      "rating": "7.3",
-      "votes": 596,
+      "rating": "7.4",
+      "votes": 635,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -45,10 +45,10 @@
       "title": "The Last House",
       "overview": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
       "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2mPmccLg8QCD4ZF6v8kSsUijPPW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1RhfevWmWCVHtEqxWBEjPOC5KG1.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.9",
-      "votes": 655,
+      "votes": 695,
       "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
@@ -60,20 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "6.8",
-      "votes": 115,
+      "votes": 129,
       "url": "https://www.themoviedb.org/movie/1101383"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 4673,
-      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 950028,
@@ -84,8 +72,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
       "releaseDate": "2026-06-25",
       "rating": "7.4",
-      "votes": 219,
+      "votes": 229,
       "url": "https://www.themoviedb.org/movie/950028"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 4711,
+      "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1493400,
+      "mediaType": "movie",
+      "title": "Camp Rock 3",
+      "overview": "When Connect 3 loses their opening act for a major reunion tour, they return to their beloved Camp Rock to discover the next big thing. As campers vie for the chance to open for their favorite band, tensions rise and friendships are tested - leading to unexpected alliances, revelations, and romances.",
+      "poster": "https://image.tmdb.org/t/p/w500/rS7byWK9cfPfdLeFNlRIaJxH9mN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tpRYtzeEl1Vc7vYr5unWs7qBNMW.jpg",
+      "releaseDate": "2026-08-13",
+      "rating": "5.9",
+      "votes": 40,
+      "url": "https://www.themoviedb.org/movie/1493400"
     },
     {
       "id": 1081003,
@@ -96,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
       "releaseDate": "2026-06-24",
       "rating": "6.7",
-      "votes": 1853,
+      "votes": 1869,
       "url": "https://www.themoviedb.org/movie/1081003"
     },
     {
@@ -110,18 +122,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1003596"
-    },
-    {
-      "id": 687163,
-      "mediaType": "movie",
-      "title": "Project Hail Mary",
-      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-      "releaseDate": "2026-03-15",
-      "rating": "8.7",
-      "votes": 7056,
-      "url": "https://www.themoviedb.org/movie/687163"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3050,
+      "votes": 3060,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6960,
+      "votes": 6963,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -158,80 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2424,
+      "votes": 2429,
       "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 615,
-      "mediaType": "tv",
-      "title": "Futurama",
-      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-      "releaseDate": "1999-03-28",
-      "rating": "8.4",
-      "votes": 3848,
-      "url": "https://www.themoviedb.org/tv/615"
-    },
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2538,
-      "url": "https://www.themoviedb.org/tv/97546"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2214,
-      "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.7",
-      "votes": 845,
-      "url": "https://www.themoviedb.org/tv/138502"
-    },
-    {
-      "id": 291496,
-      "mediaType": "tv",
-      "title": "Our Sticky Love",
-      "overview": "An ambitious prosecutor loses her memory and moves in with a boxing coach who claims to be her boyfriend. Can this sticky situation turn into real love?",
-      "poster": "https://image.tmdb.org/t/p/w500/tSZ4aFpTGc8Oj52SuzPUUZ7WKL0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mp2AFsWsuyxCzenJh3DTKw7z4jG.jpg",
-      "releaseDate": "2026-08-07",
-      "rating": "8.3",
-      "votes": 37,
-      "url": "https://www.themoviedb.org/tv/291496"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.0",
-      "votes": 1343,
-      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 215072,
@@ -244,6 +172,78 @@
       "rating": "8.4",
       "votes": 217,
       "url": "https://www.themoviedb.org/tv/215072"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3KLmx6nLaiYe07kSwuWdpTEHJgE.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2541,
+      "url": "https://www.themoviedb.org/tv/97546"
+    },
+    {
+      "id": 138502,
+      "mediaType": "tv",
+      "title": "X-Men '97",
+      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
+      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
+      "releaseDate": "2024-03-20",
+      "rating": "8.7",
+      "votes": 848,
+      "url": "https://www.themoviedb.org/tv/138502"
+    },
+    {
+      "id": 95350,
+      "mediaType": "tv",
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/rb94rKVIzLyfWufIN7WqLvadBDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eYvhRHD06mNUJAfAMyRVwtxIWQx.jpg",
+      "releaseDate": "2026-08-16",
+      "rating": "6.5",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 113962,
+      "mediaType": "tv",
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1349,
+      "url": "https://www.themoviedb.org/tv/113962"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.8",
+      "votes": 5478,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 271016,
+      "mediaType": "tv",
+      "title": "Mystic Nine",
+      "overview": "Mystic Nine follows Zhang Qishan as he joins forces with Wu Laogou, alongside Huo Xiangu and the other members of the Mystic Nine, when turmoil returns to Changsha. The mysterious disappearance of Unit 401 uncovers a century-old secret. Faced with life-and-death choices, bound by brotherhood, responsibility to their sects, and devotion to their country, they risk everything to protect their home and overcome the crisis.",
+      "poster": "https://image.tmdb.org/t/p/w500/Q9u5ZSrthOuwkULV41VUqE8vRV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/paF9IoqXN3inVb5eR9rxElbpYyb.jpg",
+      "releaseDate": "2026-07-30",
+      "rating": "6.8",
+      "votes": 6,
+      "url": "https://www.themoviedb.org/tv/271016"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jDvxsBemt2Iyslg7qn2WMzgxz23.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 496,
+      "votes": 506,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 211,
+      "votes": 216,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.8",
-      "votes": 309,
+      "votes": 321,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -304,7 +304,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
       "releaseDate": "2026-08-21",
       "rating": "5.3",
-      "votes": 41,
+      "votes": 42,
       "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
@@ -316,7 +316,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.8",
-      "votes": 26,
+      "votes": 27,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
@@ -327,8 +327,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "7.5",
-      "votes": 18,
+      "rating": "7.3",
+      "votes": 20,
       "url": "https://www.themoviedb.org/movie/1240889"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1750,
+      "votes": 1778,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2761,
+      "votes": 2782,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-09",
       "rating": "7.9",
-      "votes": 1058,
+      "votes": 1073,
       "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
@@ -425,8 +425,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "6.9",
-      "votes": 108,
+      "rating": "6.8",
+      "votes": 124,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vEMiPLEXfzF9NUzUkROtyDVZ4Ln.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sd0RKOpnqESIWxU3sZwZhBsgAHl.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "9.5",
-      "votes": 4,
+      "rating": "8.8",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
       "releaseDate": "2026-08-05",
       "rating": "7.1",
-      "votes": 27,
+      "votes": 29,
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
