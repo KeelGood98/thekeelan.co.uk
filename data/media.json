@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T14:58:40.176097+00:00",
+  "updated": "2026-08-17T21:00:26.487621+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1831,
+      "votes": 1849,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -21,10 +21,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2842,
+      "votes": 2857,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
       "rating": "7.5",
-      "votes": 690,
+      "votes": 702,
       "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1101383,
-      "mediaType": "movie",
-      "title": "The End of Oak Street",
-      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
-      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-      "releaseDate": "2026-08-12",
-      "rating": "6.8",
-      "votes": 176,
-      "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
       "id": 950028,
@@ -60,32 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bs32Ds4L8VADGjBVasSK1ASU7OW.jpg",
       "releaseDate": "2026-06-25",
       "rating": "7.4",
-      "votes": 252,
+      "votes": 256,
       "url": "https://www.themoviedb.org/movie/950028"
     },
     {
-      "id": 1284041,
+      "id": 1101383,
       "mediaType": "movie",
-      "title": "The Last House",
-      "overview": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
-      "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1RhfevWmWCVHtEqxWBEjPOC5KG1.jpg",
-      "releaseDate": "2026-08-06",
-      "rating": "6.9",
-      "votes": 775,
-      "url": "https://www.themoviedb.org/movie/1284041"
-    },
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.4",
-      "votes": 832,
-      "url": "https://www.themoviedb.org/movie/1084244"
+      "title": "The End of Oak Street",
+      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
+      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+      "releaseDate": "2026-08-12",
+      "rating": "6.7",
+      "votes": 192,
+      "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
       "id": 1339713,
@@ -96,8 +72,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 4766,
+      "votes": 4778,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.4",
+      "votes": 835,
+      "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1284041,
+      "mediaType": "movie",
+      "title": "The Last House",
+      "overview": "A family suddenly sealed inside their home must work together to survive against dwindling resources and the ominous threat keeping them trapped.",
+      "poster": "https://image.tmdb.org/t/p/w500/6JU7E8Vv2M11egkctWVOScxWR75.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1RhfevWmWCVHtEqxWBEjPOC5KG1.jpg",
+      "releaseDate": "2026-08-06",
+      "rating": "6.9",
+      "votes": 794,
+      "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
       "id": 1003596,
@@ -112,16 +112,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 687163,
+      "id": 1493400,
       "mediaType": "movie",
-      "title": "Project Hail Mary",
-      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-      "poster": "https://image.tmdb.org/t/p/w500/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8Tfys3mDZVp4tNoH2ktm06a0Tau.jpg",
-      "releaseDate": "2026-03-15",
-      "rating": "8.7",
-      "votes": 7113,
-      "url": "https://www.themoviedb.org/movie/687163"
+      "title": "Camp Rock 3",
+      "overview": "When Connect 3 loses their opening act for a major reunion tour, they return to their beloved Camp Rock to discover the next big thing. As campers vie for the chance to open for their favorite band, tensions rise and friendships are tested - leading to unexpected alliances, revelations, and romances.",
+      "poster": "https://image.tmdb.org/t/p/w500/rS7byWK9cfPfdLeFNlRIaJxH9mN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vJb3fniB8E0JnSMr1tDyIsb6gPi.jpg",
+      "releaseDate": "2026-08-13",
+      "rating": "6.1",
+      "votes": 49,
+      "url": "https://www.themoviedb.org/movie/1493400"
     }
   ],
   "trendingTv": [
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rb94rKVIzLyfWufIN7WqLvadBDH.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
-      "rating": "7.5",
-      "votes": 50,
+      "rating": "7.8",
+      "votes": 59,
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3074,
+      "votes": 3075,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 6970,
+      "votes": 6975,
       "url": "https://www.themoviedb.org/tv/94997"
     },
     {
@@ -170,8 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2440,
+      "votes": 2444,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gEQkOMmnJcoh9Hh1vk7fpVYnksR.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2551,
+      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 113962,
@@ -186,30 +198,6 @@
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.8",
-      "votes": 5482,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gEQkOMmnJcoh9Hh1vk7fpVYnksR.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2547,
-      "url": "https://www.themoviedb.org/tv/97546"
-    },
-    {
       "id": 138502,
       "mediaType": "tv",
       "title": "X-Men '97",
@@ -222,6 +210,18 @@
       "url": "https://www.themoviedb.org/tv/138502"
     },
     {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.8",
+      "votes": 5482,
+      "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
       "id": 215072,
       "mediaType": "tv",
       "title": "A Shop for Killers",
@@ -230,20 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mWVeYmtCfA3zvSeZtW5bN2Khe01.jpg",
       "releaseDate": "2024-01-17",
       "rating": "8.4",
-      "votes": 218,
+      "votes": 219,
       "url": "https://www.themoviedb.org/tv/215072"
     },
     {
-      "id": 615,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "Futurama",
-      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-      "releaseDate": "1999-03-28",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 3852,
-      "url": "https://www.themoviedb.org/tv/615"
+      "votes": 2220,
+      "url": "https://www.themoviedb.org/tv/30984"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 519,
+      "votes": 521,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 218,
+      "votes": 220,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -279,9 +279,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/gnAsZvBygplNpp8PtjoTEYv3VPB.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
-      "rating": "6.9",
-      "votes": 351,
+      "rating": "6.8",
+      "votes": 354,
       "url": "https://www.themoviedb.org/movie/1564614"
+    },
+    {
+      "id": 1541560,
+      "mediaType": "movie",
+      "title": "Stop! That! Train!",
+      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
+      "poster": "https://image.tmdb.org/t/p/w500/7t69fo096Ddre1fEmCitxTdQ89v.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "5.3",
+      "votes": 42,
+      "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
       "id": 1101412,
@@ -296,16 +308,16 @@
       "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
-      "id": 1541560,
+      "id": 1433367,
       "mediaType": "movie",
-      "title": "Stop! That! Train!",
-      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
-      "poster": "https://image.tmdb.org/t/p/w500/7t69fo096Ddre1fEmCitxTdQ89v.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "5.3",
-      "votes": 42,
-      "url": "https://www.themoviedb.org/movie/1541560"
+      "title": "One Night Only",
+      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+      "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "6.8",
+      "votes": 27,
+      "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
       "id": 1240889,
@@ -332,24 +344,12 @@
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
-      "id": 1433367,
-      "mediaType": "movie",
-      "title": "One Night Only",
-      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-      "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "6.8",
-      "votes": 27,
-      "url": "https://www.themoviedb.org/movie/1433367"
-    },
-    {
       "id": 1204680,
       "mediaType": "movie",
       "title": "Coyote vs. Acme",
       "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
       "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/AbQYEHieBJsMheLFKM02rFu0xnc.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/155LhAj1BYgDM8mhWLViL3pjp1a.jpg",
       "releaseDate": "2026-08-21",
       "rating": "0.0",
       "votes": 0,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1831,
+      "votes": 1840,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -387,10 +387,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2839,
+      "votes": 2850,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -399,23 +399,11 @@
       "title": "The End of Oak Street",
       "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
       "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wnR8pwWtoL3TFwP41mLCt91ReCt.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.8",
-      "votes": 174,
+      "votes": 179,
       "url": "https://www.themoviedb.org/movie/1101383"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "7.9",
-      "votes": 1132,
-      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1108427,
@@ -428,6 +416,18 @@
       "rating": "6.1",
       "votes": 197,
       "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
+      "releaseDate": "2026-07-09",
+      "rating": "7.9",
+      "votes": 1136,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
       "id": 1408162,
