@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-18T13:10:26.356495+00:00",
+  "updated": "2026-08-18T18:58:38.095788+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
@@ -102,8 +102,8 @@
     },
     {
       "id": 560600,
-      "date": "Sat 10 Oct, 01:00",
-      "sortDate": "2026-10-10T01:00:00+01:00",
+      "date": "Sat 10 Oct, 17:30",
+      "sortDate": "2026-10-10T17:30:00+01:00",
       "competition": "Premier League",
       "matchday": 6,
       "home": "Manchester United",
@@ -114,12 +114,12 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     },
     {
       "id": 560605,
-      "date": "Sat 17 Oct, 01:00",
-      "sortDate": "2026-10-17T01:00:00+01:00",
+      "date": "Sun 18 Oct, 14:00",
+      "sortDate": "2026-10-18T14:00:00+01:00",
       "competition": "Premier League",
       "matchday": 7,
       "home": "Leeds United",
@@ -130,12 +130,12 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     },
     {
       "id": 560615,
-      "date": "Sat 24 Oct, 01:00",
-      "sortDate": "2026-10-24T01:00:00+01:00",
+      "date": "Sun 25 Oct, 14:00",
+      "sortDate": "2026-10-25T14:00:00+00:00",
       "competition": "Premier League",
       "matchday": 8,
       "home": "Manchester United",
@@ -146,7 +146,7 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     }
   ],
   "fixtures": [
@@ -232,8 +232,8 @@
     },
     {
       "id": 560600,
-      "date": "Sat 10 Oct, 01:00",
-      "sortDate": "2026-10-10T01:00:00+01:00",
+      "date": "Sat 10 Oct, 17:30",
+      "sortDate": "2026-10-10T17:30:00+01:00",
       "competition": "Premier League",
       "matchday": 6,
       "home": "Manchester United",
@@ -244,12 +244,12 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     },
     {
       "id": 560605,
-      "date": "Sat 17 Oct, 01:00",
-      "sortDate": "2026-10-17T01:00:00+01:00",
+      "date": "Sun 18 Oct, 14:00",
+      "sortDate": "2026-10-18T14:00:00+01:00",
       "competition": "Premier League",
       "matchday": 7,
       "home": "Leeds United",
@@ -260,12 +260,12 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     },
     {
       "id": 560615,
-      "date": "Sat 24 Oct, 01:00",
-      "sortDate": "2026-10-24T01:00:00+01:00",
+      "date": "Sun 25 Oct, 14:00",
+      "sortDate": "2026-10-25T14:00:00+00:00",
       "competition": "Premier League",
       "matchday": 8,
       "home": "Manchester United",
@@ -276,7 +276,7 @@
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "SCHEDULED"
+      "status": "TIMED"
     }
   ]
 }
