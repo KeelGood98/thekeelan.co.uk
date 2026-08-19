@@ -1,30 +1,18 @@
 {
-  "updated": "2026-08-18T20:58:14.733638+00:00",
+  "updated": "2026-08-19T09:14:51.140396+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "7.5",
-      "votes": 914,
-      "url": "https://www.themoviedb.org/movie/1084244"
-    },
     {
       "id": 969681,
       "mediaType": "movie",
       "title": "Spider-Man: Brand New Day",
       "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1885,
+      "votes": 1901,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -36,8 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 2902,
+      "votes": 2926,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "7.8",
+      "votes": 1047,
+      "url": "https://www.themoviedb.org/movie/1084244"
+    },
+    {
+      "id": 1101383,
+      "mediaType": "movie",
+      "title": "The End of Oak Street",
+      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
+      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+      "releaseDate": "2026-08-12",
+      "rating": "6.6",
+      "votes": 235,
+      "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
       "id": 1315772,
@@ -48,32 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
       "rating": "7.5",
-      "votes": 726,
+      "votes": 741,
       "url": "https://www.themoviedb.org/movie/1315772"
-    },
-    {
-      "id": 1101383,
-      "mediaType": "movie",
-      "title": "The End of Oak Street",
-      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
-      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-      "releaseDate": "2026-08-12",
-      "rating": "6.7",
-      "votes": 219,
-      "url": "https://www.themoviedb.org/movie/1101383"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 4810,
-      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 950028,
@@ -84,8 +72,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
       "releaseDate": "2026-06-25",
       "rating": "7.4",
-      "votes": 266,
+      "votes": 269,
       "url": "https://www.themoviedb.org/movie/950028"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 4822,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 1003596,
@@ -108,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1RhfevWmWCVHtEqxWBEjPOC5KG1.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.9",
-      "votes": 846,
+      "votes": 866,
       "url": "https://www.themoviedb.org/movie/1284041"
     },
     {
@@ -119,8 +119,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/dgTKahWonzVLeN8Lm22WR2S7D0A.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yzdMGn8IRHSGuV8AIzw19wkRU2W.jpg",
       "releaseDate": "2026-08-13",
-      "rating": "7.1",
-      "votes": 32,
+      "rating": "7.0",
+      "votes": 34,
       "url": "https://www.themoviedb.org/movie/1504358"
     }
   ],
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
-      "rating": "8.0",
-      "votes": 89,
+      "rating": "8.2",
+      "votes": 98,
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
@@ -146,55 +146,19 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3083,
+      "votes": 3089,
       "url": "https://www.themoviedb.org/tv/108978"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 6985,
-      "url": "https://www.themoviedb.org/tv/94997"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2448,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1370,
-      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 278624,
       "mediaType": "tv",
       "title": "Lucky",
       "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hOJqvvhRnSsAEqMaCUuzfdYJajG.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qdobPy3No4Fi3dCzcIDP9n8AjcO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
       "releaseDate": "2026-07-14",
       "rating": "7.3",
-      "votes": 148,
+      "votes": 150,
       "url": "https://www.themoviedb.org/tv/278624"
     },
     {
@@ -206,8 +170,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
       "releaseDate": "2020-08-14",
       "rating": "8.4",
-      "votes": 2559,
+      "votes": 2560,
       "url": "https://www.themoviedb.org/tv/97546"
+    },
+    {
+      "id": 94997,
+      "mediaType": "tv",
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 6990,
+      "url": "https://www.themoviedb.org/tv/94997"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2453,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 113962,
+      "mediaType": "tv",
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1372,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 30984,
@@ -218,20 +218,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
       "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 2224,
+      "votes": 2225,
       "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 138502,
-      "mediaType": "tv",
-      "title": "X-Men '97",
-      "overview": "The X-Men, a band of mutants who use their uncanny gifts to protect a world that hates and fears them, are challenged like never before, forced to face a dangerous and unexpected new future.",
-      "poster": "https://image.tmdb.org/t/p/w500/2HKBc5UiFw8JrruHq8S1Y7TnlW0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg",
-      "releaseDate": "2024-03-20",
-      "rating": "8.7",
-      "votes": 850,
-      "url": "https://www.themoviedb.org/tv/138502"
     },
     {
       "id": 37854,
@@ -242,8 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.8",
-      "votes": 5485,
+      "votes": 5489,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 65942,
+      "mediaType": "tv",
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "poster": "https://image.tmdb.org/t/p/w500/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+      "releaseDate": "2016-04-04",
+      "rating": "8.1",
+      "votes": 756,
+      "url": "https://www.themoviedb.org/tv/65942"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 530,
+      "votes": 537,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 226,
+      "votes": 227,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,20 +280,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.8",
-      "votes": 367,
+      "votes": 376,
       "url": "https://www.themoviedb.org/movie/1564614"
-    },
-    {
-      "id": 1541560,
-      "mediaType": "movie",
-      "title": "Stop! That! Train!",
-      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
-      "poster": "https://image.tmdb.org/t/p/w500/7t69fo096Ddre1fEmCitxTdQ89v.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "5.3",
-      "votes": 42,
-      "url": "https://www.themoviedb.org/movie/1541560"
     },
     {
       "id": 1433367,
@@ -304,44 +292,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.8",
-      "votes": 29,
+      "votes": 30,
       "url": "https://www.themoviedb.org/movie/1433367"
-    },
-    {
-      "id": 1240889,
-      "mediaType": "movie",
-      "title": "Teenage Sex and Death at Camp Miasma",
-      "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "7.2",
-      "votes": 24,
-      "url": "https://www.themoviedb.org/movie/1240889"
-    },
-    {
-      "id": 1288445,
-      "mediaType": "movie",
-      "title": "Mutiny",
-      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "9.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 1291595,
-      "mediaType": "movie",
-      "title": "Insidious: Out of the Further",
-      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "5.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
       "id": 1101412,
@@ -356,16 +308,64 @@
       "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
-      "id": 1204680,
+      "id": 1318413,
       "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/155LhAj1BYgDM8mhWLViL3pjp1a.jpg",
-      "releaseDate": "2026-08-21",
+      "title": "Pressure",
+      "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
+      "poster": "https://image.tmdb.org/t/p/w500/gFjEggtrejCN79r6SXRjM269OtG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "7.8",
+      "votes": 304,
+      "url": "https://www.themoviedb.org/movie/1318413"
+    },
+    {
+      "id": 1384216,
+      "mediaType": "movie",
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/A7i16oDi03qrKep5pBfuTWNUTb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
+      "releaseDate": "2026-08-26",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1204680"
+      "url": "https://www.themoviedb.org/movie/1384216"
+    },
+    {
+      "id": 1476682,
+      "mediaType": "movie",
+      "title": "Gail Daughtry and the Celebrity Sex Pass",
+      "overview": "Small-town Kansas hairdresser Gail Daughtry's fiancé uses his 'celebrity sex pass' on Jennifer Aniston, prompting Gail to travel to LA with her friend Otto to find her own pass, Jon Hamm, to even the score.",
+      "poster": "https://image.tmdb.org/t/p/w500/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vfcqksiJMpzFJ8Y1cVbSAH6J6rY.jpg",
+      "releaseDate": "2026-09-04",
+      "rating": "6.5",
+      "votes": 21,
+      "url": "https://www.themoviedb.org/movie/1476682"
+    },
+    {
+      "id": 1288059,
+      "mediaType": "movie",
+      "title": "I Want Your Sex",
+      "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
+      "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xKPKNJI93LO2QPlIMLM8mthlCPi.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "6.1",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/movie/1288059"
+    },
+    {
+      "id": 1213243,
+      "mediaType": "movie",
+      "title": "Toxic: A Fairy Tale for Grown-ups",
+      "overview": "As Portuguese rule crumbles in Goa, Raya rises through betrayal and bloodshed to claim the city’s underworld, only to learn that power always demands a price.",
+      "poster": "https://image.tmdb.org/t/p/w500/tZ8eSBXbza96vzCYeVTG9RBJ78E.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tBRSSfgqOAq7YlG8udcoJIBm2FG.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1213243"
     }
   ],
   "nowPlayingMovies": [
@@ -375,10 +375,10 @@
       "title": "Spider-Man: Brand New Day",
       "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
       "poster": "https://image.tmdb.org/t/p/w500/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 1885,
+      "votes": 1896,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r57L2UBLPKcHdZQYg8tagv9XqK2.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 2902,
+      "votes": 2908,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -401,33 +401,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "6.7",
-      "votes": 219,
+      "rating": "6.6",
+      "votes": 228,
       "url": "https://www.themoviedb.org/movie/1101383"
-    },
-    {
-      "id": 1212763,
-      "mediaType": "movie",
-      "title": "Evil Dead Burn",
-      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
-      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
-      "releaseDate": "2026-07-09",
-      "rating": "7.9",
-      "votes": 1160,
-      "url": "https://www.themoviedb.org/movie/1212763"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-10",
-      "rating": "6.0",
-      "votes": 199,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1408162,
@@ -437,8 +413,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/adDZVEQZnMJ380zPOmVj6vBWHgk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sd0RKOpnqESIWxU3sZwZhBsgAHl.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "8.7",
-      "votes": 6,
+      "rating": "8.4",
+      "votes": 7,
       "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
@@ -454,6 +430,30 @@
       "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
+      "id": 1288445,
+      "mediaType": "movie",
+      "title": "Mutiny",
+      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/pVMxkaViouALWwc1EdZBaiZJTxJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jUdV706J4d3nUEbfimqVnGZqTbW.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "9.8",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1541560,
+      "mediaType": "movie",
+      "title": "Stop! That! Train!",
+      "overview": "Best friends and train stewardesses Tess and DeeDee trade their dreary shifts on the Stank Rail for the glitzy Glamazonian Express. However, when a catastrophic Stormaganza threatens to crash the high-speed train into Celebration, Florida, the duo in coach must join forces with the snobby first-class attendants, a hot but dimwitted co-conductor, and fabulous US President Judy Gagwell to save the day.",
+      "poster": "https://image.tmdb.org/t/p/w500/7t69fo096Ddre1fEmCitxTdQ89v.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/erNAhcSYrDMXQqAU1TVthYyFA71.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "5.3",
+      "votes": 42,
+      "url": "https://www.themoviedb.org/movie/1541560"
+    },
+    {
       "id": 1235877,
       "mediaType": "movie",
       "title": "Jana Nayagan",
@@ -466,28 +466,28 @@
       "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
-      "id": 1477712,
+      "id": 1291595,
       "mediaType": "movie",
-      "title": "Ice Cream Man",
-      "overview": "An idyllic summer town descends into madness when an ice cream man serves kids sweet delights with horrifying results.",
-      "poster": "https://image.tmdb.org/t/p/w500/c987gxFjXqYOxZEZKcTkS1ONTWH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/75pK9Dj1CheZFItgld9TVvb2P4x.jpg",
-      "releaseDate": "2026-08-04",
-      "rating": "5.0",
-      "votes": 40,
-      "url": "https://www.themoviedb.org/movie/1477712"
+      "title": "Insidious: Out of the Further",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "5.5",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
-      "id": 1444466,
+      "id": 1240889,
       "mediaType": "movie",
-      "title": "Awarapan 2",
-      "overview": "Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.",
-      "poster": "https://image.tmdb.org/t/p/w500/lGQmw5eQJBZnytviCftSBOVlihw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sJBASJrAnbpDeQNGwbLRLx5s1nS.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1444466"
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "overview": "After years of slapdash sequels and waning fandom, the Camp Miasma slasher franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original's star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "7.2",
+      "votes": 24,
+      "url": "https://www.themoviedb.org/movie/1240889"
     }
   ],
   "links": [
