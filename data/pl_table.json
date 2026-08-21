@@ -1,9 +1,23 @@
 {
-  "updated": "2026-08-21T18:58:23.028400+00:00",
+  "updated": "2026-08-21T22:43:57.837248+00:00",
   "source": "football-data.org",
   "teams": [
     {
       "position": 1,
+      "name": "Arsenal",
+      "fullName": "Arsenal FC",
+      "badge": "https://crests.football-data.org/57.png",
+      "played": 1,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalsFor": 3,
+      "goalsAgainst": 0,
+      "goalDifference": 3,
+      "points": 3
+    },
+    {
+      "position": 2,
       "name": "Bournemouth",
       "fullName": "AFC Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
@@ -17,21 +31,7 @@
       "points": 0
     },
     {
-      "position": 1,
-      "name": "Arsenal",
-      "fullName": "Arsenal FC",
-      "badge": "https://crests.football-data.org/57.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0
-    },
-    {
-      "position": 1,
+      "position": 2,
       "name": "Aston Villa",
       "fullName": "Aston Villa FC",
       "badge": "https://crests.football-data.org/58.png",
@@ -45,7 +45,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Brentford",
       "fullName": "Brentford FC",
       "badge": "https://crests.football-data.org/402.png",
@@ -59,7 +59,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Brighton",
       "fullName": "Brighton & Hove Albion FC",
       "badge": "https://crests.football-data.org/397.png",
@@ -73,7 +73,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Chelsea",
       "fullName": "Chelsea FC",
       "badge": "https://crests.football-data.org/61.png",
@@ -87,21 +87,7 @@
       "points": 0
     },
     {
-      "position": 1,
-      "name": "Coventry City",
-      "fullName": "Coventry City FC",
-      "badge": "https://crests.football-data.org/1076.png",
-      "played": 0,
-      "won": 0,
-      "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0
-    },
-    {
-      "position": 1,
+      "position": 2,
       "name": "Crystal Palace",
       "fullName": "Crystal Palace FC",
       "badge": "https://crests.football-data.org/354.png",
@@ -115,7 +101,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Everton",
       "fullName": "Everton FC",
       "badge": "https://crests.football-data.org/62.png",
@@ -129,7 +115,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Fulham",
       "fullName": "Fulham FC",
       "badge": "https://crests.football-data.org/63.png",
@@ -143,7 +129,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Hull City",
       "fullName": "Hull City AFC",
       "badge": "https://crests.football-data.org/322.png",
@@ -157,7 +143,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Ipswich Town",
       "fullName": "Ipswich Town FC",
       "badge": "https://crests.football-data.org/349.png",
@@ -171,7 +157,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Leeds United",
       "fullName": "Leeds United FC",
       "badge": "https://crests.football-data.org/341.png",
@@ -185,7 +171,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Liverpool",
       "fullName": "Liverpool FC",
       "badge": "https://crests.football-data.org/64.png",
@@ -199,7 +185,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Manchester City",
       "fullName": "Manchester City FC",
       "badge": "https://crests.football-data.org/65.png",
@@ -213,7 +199,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Manchester United",
       "fullName": "Manchester United FC",
       "badge": "https://crests.football-data.org/66.png",
@@ -227,7 +213,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Newcastle",
       "fullName": "Newcastle United FC",
       "badge": "https://crests.football-data.org/67.png",
@@ -241,7 +227,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Nott'm Forest",
       "fullName": "Nottingham Forest FC",
       "badge": "https://crests.football-data.org/351.png",
@@ -255,7 +241,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Sunderland",
       "fullName": "Sunderland AFC",
       "badge": "https://crests.football-data.org/71.png",
@@ -269,7 +255,7 @@
       "points": 0
     },
     {
-      "position": 1,
+      "position": 2,
       "name": "Tottenham",
       "fullName": "Tottenham Hotspur FC",
       "badge": "https://crests.football-data.org/73.png",
@@ -280,6 +266,20 @@
       "goalsFor": 0,
       "goalsAgainst": 0,
       "goalDifference": 0,
+      "points": 0
+    },
+    {
+      "position": 20,
+      "name": "Coventry City",
+      "fullName": "Coventry City FC",
+      "badge": "https://crests.football-data.org/1076.png",
+      "played": 1,
+      "won": 0,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 0,
+      "goalsAgainst": 3,
+      "goalDifference": -3,
       "points": 0
     }
   ]

@@ -1,18 +1,52 @@
 {
-  "updated": "2026-08-21T18:58:25.276381+00:00",
+  "updated": "2026-08-21T22:43:59.818655+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
-  "topScorers": [],
-  "bestAttacks": [
+  "topScorers": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsFor": 0,
-      "played": 0
+      "name": "Kai Havertz",
+      "firstName": "Kai",
+      "lastName": "Havertz",
+      "nationality": "Germany",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
     },
+    {
+      "name": "Bukayo Saka",
+      "firstName": "Bukayo",
+      "lastName": "Saka",
+      "nationality": "England",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Martin Ødegaard",
+      "firstName": "Martin",
+      "lastName": "Ødegaard",
+      "nationality": "Norway",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    }
+  ],
+  "bestAttacks": [
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
+      "goalsFor": 3,
+      "played": 1
+    },
+    {
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
       "goalsFor": 0,
       "played": 0
     },
@@ -37,14 +71,14 @@
   ],
   "bestDefences": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsAgainst": 0,
-      "played": 0
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 0,
+      "played": 1
+    },
+    {
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
       "goalsAgainst": 0,
       "played": 0
     },
@@ -69,14 +103,14 @@
   ],
   "goalDifferenceLeaders": [
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalDifference": 0,
-      "played": 0
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
+      "goalDifference": 3,
+      "played": 1
+    },
+    {
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
       "goalDifference": 0,
       "played": 0
     },
@@ -100,7 +134,7 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 1,
+    "position": 2,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
