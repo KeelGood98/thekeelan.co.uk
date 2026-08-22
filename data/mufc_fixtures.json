@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T07:01:27.593482+00:00",
+  "updated": "2026-08-22T13:02:24.395450+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
@@ -10,13 +10,13 @@
     "matchday": 1,
     "home": "Hull City",
     "away": "Manchester United",
-    "score": "",
-    "halfTimeScore": "",
-    "winner": "",
+    "score": "2-0",
+    "halfTimeScore": "2-0",
+    "winner": "Hull City",
     "result": "",
     "venue": "TBC",
     "channel": "TBC",
-    "status": "TIMED"
+    "status": "IN_PLAY"
   },
   "recentResults": [],
   "upcomingFixtures": [
@@ -28,13 +28,13 @@
       "matchday": 1,
       "home": "Hull City",
       "away": "Manchester United",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
+      "score": "2-0",
+      "halfTimeScore": "2-0",
+      "winner": "Hull City",
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "TIMED"
+      "status": "IN_PLAY"
     },
     {
       "id": 560553,
@@ -158,13 +158,13 @@
       "matchday": 1,
       "home": "Hull City",
       "away": "Manchester United",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
+      "score": "2-0",
+      "halfTimeScore": "2-0",
+      "winner": "Hull City",
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "TIMED"
+      "status": "IN_PLAY"
     },
     {
       "id": 560553,

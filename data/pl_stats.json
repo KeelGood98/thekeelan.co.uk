@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T07:01:28.902864+00:00",
+  "updated": "2026-08-22T13:02:24.682188+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -35,6 +35,28 @@
       "goals": 1,
       "assists": 0,
       "penalties": 0
+    },
+    {
+      "name": "Semi Ajayi",
+      "firstName": "Semi",
+      "lastName": "Ajayi",
+      "nationality": "Nigeria",
+      "team": "Hull City",
+      "teamBadge": "https://crests.football-data.org/322.png",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Nobel Mendy",
+      "firstName": "Nobel",
+      "lastName": "Mendy",
+      "nationality": "Senegal",
+      "team": "Hull City",
+      "teamBadge": "https://crests.football-data.org/322.png",
+      "goals": 1,
+      "assists": 0,
+      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -42,6 +64,12 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsFor": 3,
+      "played": 1
+    },
+    {
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
+      "goalsFor": 2,
       "played": 1
     },
     {
@@ -59,12 +87,6 @@
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 0,
-      "played": 0
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
       "goalsFor": 0,
       "played": 0
     }
@@ -77,6 +99,12 @@
       "played": 1
     },
     {
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
+      "goalsAgainst": 0,
+      "played": 1
+    },
+    {
       "name": "Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
       "goalsAgainst": 0,
@@ -93,12 +121,6 @@
       "badge": "https://crests.football-data.org/402.png",
       "goalsAgainst": 0,
       "played": 0
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 0,
-      "played": 0
     }
   ],
   "goalDifferenceLeaders": [
@@ -106,6 +128,12 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalDifference": 3,
+      "played": 1
+    },
+    {
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
+      "goalDifference": 2,
       "played": 1
     },
     {
@@ -125,26 +153,20 @@
       "badge": "https://crests.football-data.org/402.png",
       "goalDifference": 0,
       "played": 0
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 0,
-      "played": 0
     }
   ],
   "manUnitedSummary": {
-    "position": 2,
+    "position": 19,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 0,
+    "played": 1,
     "won": 0,
     "drawn": 0,
-    "lost": 0,
+    "lost": 1,
     "goalsFor": 0,
-    "goalsAgainst": 0,
-    "goalDifference": 0,
+    "goalsAgainst": 2,
+    "goalDifference": -2,
     "points": 0
   }
 }
