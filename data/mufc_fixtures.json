@@ -1,25 +1,24 @@
 {
-  "updated": "2026-08-22T13:02:24.395450+00:00",
+  "updated": "2026-08-22T18:50:33.841997+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 560543,
-    "date": "Sat 22 Aug, 12:30",
-    "sortDate": "2026-08-22T12:30:00+01:00",
+    "id": 560553,
+    "date": "Sun 30 Aug, 16:30",
+    "sortDate": "2026-08-30T16:30:00+01:00",
     "competition": "Premier League",
-    "matchday": 1,
-    "home": "Hull City",
-    "away": "Manchester United",
-    "score": "2-0",
-    "halfTimeScore": "2-0",
-    "winner": "Hull City",
+    "matchday": 2,
+    "home": "Manchester United",
+    "away": "Ipswich Town",
+    "score": "",
+    "halfTimeScore": "",
+    "winner": "",
     "result": "",
     "venue": "TBC",
     "channel": "TBC",
-    "status": "IN_PLAY"
+    "status": "TIMED"
   },
-  "recentResults": [],
-  "upcomingFixtures": [
+  "recentResults": [
     {
       "id": 560543,
       "date": "Sat 22 Aug, 12:30",
@@ -31,11 +30,13 @@
       "score": "2-0",
       "halfTimeScore": "2-0",
       "winner": "Hull City",
-      "result": "",
+      "result": "L",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 560553,
       "date": "Sun 30 Aug, 16:30",
@@ -140,6 +141,22 @@
       "matchday": 8,
       "home": "Manchester United",
       "away": "Bournemouth",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560626,
+      "date": "Sat 31 Oct, 12:30",
+      "sortDate": "2026-10-31T12:30:00+00:00",
+      "competition": "Premier League",
+      "matchday": 9,
+      "home": "Chelsea",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
@@ -161,10 +178,10 @@
       "score": "2-0",
       "halfTimeScore": "2-0",
       "winner": "Hull City",
-      "result": "",
+      "result": "L",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 560553,
@@ -270,6 +287,22 @@
       "matchday": 8,
       "home": "Manchester United",
       "away": "Bournemouth",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560626,
+      "date": "Sat 31 Oct, 12:30",
+      "sortDate": "2026-10-31T12:30:00+00:00",
+      "competition": "Premier League",
+      "matchday": 9,
+      "home": "Chelsea",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
