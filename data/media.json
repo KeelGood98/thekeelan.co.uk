@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-22T20:57:54.650522+00:00",
+  "updated": "2026-08-23T09:01:41.231436+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
       "releaseDate": "2026-06-17",
       "rating": "8.1",
-      "votes": 1370,
+      "votes": 1436,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -20,11 +20,11 @@
       "mediaType": "movie",
       "title": "Mutiny",
       "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/lsYSWqj6i2iyUDJoLA2cazFJYlC.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/pVMxkaViouALWwc1EdZBaiZJTxJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/frG3IO5kCrnyXDt1q9x4JtToSw3.jpg",
       "releaseDate": "2026-08-19",
-      "rating": "6.7",
-      "votes": 95,
+      "rating": "6.8",
+      "votes": 103,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2051,
+      "votes": 2070,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 4924,
-      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 1368337,
@@ -60,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3067,
+      "votes": 3083,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 4953,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 1315772,
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
       "rating": "7.5",
-      "votes": 793,
+      "votes": 805,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
@@ -83,8 +83,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-19",
-      "rating": "6.6",
-      "votes": 30,
+      "rating": "6.7",
+      "votes": 38,
       "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
@@ -96,20 +96,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "6.4",
-      "votes": 304,
+      "votes": 309,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
-      "id": 1083381,
+      "id": 950028,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2896,
-      "url": "https://www.themoviedb.org/movie/1083381"
+      "title": "The Invite",
+      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "poster": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+      "releaseDate": "2026-06-25",
+      "rating": "7.4",
+      "votes": 307,
+      "url": "https://www.themoviedb.org/movie/950028"
     },
     {
       "id": 1003596,
@@ -134,20 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.2",
-      "votes": 136,
+      "votes": 140,
       "url": "https://www.themoviedb.org/tv/95350"
-    },
-    {
-      "id": 108978,
-      "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3108,
-      "url": "https://www.themoviedb.org/tv/108978"
     },
     {
       "id": 125988,
@@ -158,8 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2478,
+      "votes": 2480,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 108978,
+      "mediaType": "tv",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3112,
+      "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 278624,
+      "mediaType": "tv",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.2",
+      "votes": 200,
+      "url": "https://www.themoviedb.org/tv/278624"
     },
     {
       "id": 30984,
@@ -170,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
       "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 2227,
+      "votes": 2231,
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
@@ -182,32 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fjJ0aqDeDXFzmFXXJ4CF3ryB19b.jpg",
       "releaseDate": "2020-04-15",
       "rating": "8.2",
-      "votes": 1240,
+      "votes": 1241,
       "url": "https://www.themoviedb.org/tv/100757"
     },
     {
-      "id": 278624,
+      "id": 113962,
       "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.2",
-      "votes": 197,
-      "url": "https://www.themoviedb.org/tv/278624"
-    },
-    {
-      "id": 94997,
-      "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 7016,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1390,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 97546,
@@ -222,28 +222,28 @@
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
-      "id": 113962,
+      "id": 94997,
       "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1389,
-      "url": "https://www.themoviedb.org/tv/113962"
+      "title": "House of the Dragon",
+      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
+      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
+      "releaseDate": "2022-08-21",
+      "rating": "8.4",
+      "votes": 7020,
+      "url": "https://www.themoviedb.org/tv/94997"
     },
     {
-      "id": 615,
+      "id": 37854,
       "mediaType": "tv",
-      "title": "Futurama",
-      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
-      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
-      "releaseDate": "1999-03-28",
-      "rating": "8.4",
-      "votes": 3862,
-      "url": "https://www.themoviedb.org/tv/615"
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.8",
+      "votes": 5496,
+      "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 573,
+      "votes": 578,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 238,
+      "votes": 242,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.7",
-      "votes": 402,
+      "votes": 410,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -304,7 +304,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.8",
-      "votes": 36,
+      "votes": 37,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
@@ -328,7 +328,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.8",
-      "votes": 312,
+      "votes": 313,
       "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
@@ -339,8 +339,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xKPKNJI93LO2QPlIMLM8mthlCPi.jpg",
       "releaseDate": "2026-08-28",
-      "rating": "6.2",
-      "votes": 17,
+      "rating": "6.1",
+      "votes": 18,
       "url": "https://www.themoviedb.org/movie/1288059"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2033,
+      "votes": 2058,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-17",
       "rating": "8.0",
-      "votes": 3052,
+      "votes": 3077,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/frG3IO5kCrnyXDt1q9x4JtToSw3.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.7",
-      "votes": 83,
+      "votes": 100,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.4",
-      "votes": 299,
+      "votes": 306,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -425,8 +425,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "6.6",
-      "votes": 27,
+      "rating": "6.7",
+      "votes": 33,
       "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
@@ -449,8 +449,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/r0hCOPsYHFc7qok51canND9TVoN.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
       "releaseDate": "2026-07-24",
-      "rating": "7.1",
-      "votes": 33,
+      "rating": "7.3",
+      "votes": 39,
       "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
@@ -461,9 +461,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
       "releaseDate": "2026-08-05",
-      "rating": "7.0",
-      "votes": 34,
+      "rating": "7.1",
+      "votes": 35,
       "url": "https://www.themoviedb.org/movie/1185806"
+    },
+    {
+      "id": 1235877,
+      "mediaType": "movie",
+      "title": "Jana Nayagan",
+      "overview": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v3lNH2gCojWYXVuXcT9FZLBxcSq.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "5.6",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/movie/1235877"
     },
     {
       "id": 1240889,
@@ -473,21 +485,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/5Cz1EJOKpZ8hqvBNZYF9C2zTB2T.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "6.8",
-      "votes": 40,
+      "rating": "6.7",
+      "votes": 41,
       "url": "https://www.themoviedb.org/movie/1240889"
-    },
-    {
-      "id": 1444466,
-      "mediaType": "movie",
-      "title": "Awarapan 2",
-      "overview": "Shivam returns to the crime world, where his path forward demands redemption, love, and sacrifice. As relationships deepen and conflicts intensify, every choice tests his resolve and shapes his destiny.",
-      "poster": "https://image.tmdb.org/t/p/w500/lD3J6zTbWkVtPYuSUuuBwpuKMCO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sJBASJrAnbpDeQNGwbLRLx5s1nS.jpg",
-      "releaseDate": "2026-08-14",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1444466"
     }
   ],
   "links": [
