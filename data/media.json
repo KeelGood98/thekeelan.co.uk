@@ -1,8 +1,20 @@
 {
-  "updated": "2026-08-26T09:22:59.423935+00:00",
+  "updated": "2026-08-26T16:04:00.186417+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1516698,
+      "mediaType": "movie",
+      "title": "The Last Sunrise",
+      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
+      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tvY4QPyopLVaRkPVOQb3Y1dyy7f.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "9.7",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/movie/1516698"
+    },
     {
       "id": 1288445,
       "mediaType": "movie",
@@ -12,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.5",
-      "votes": 170,
+      "votes": 172,
       "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 1516698,
-      "mediaType": "movie",
-      "title": "The Last Sunrise",
-      "overview": "Ry, a college student with a chronic illness escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
-      "poster": "https://image.tmdb.org/t/p/w500/pego3yEZ5SuGvRjESKAguL4Wu7M.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5lB7yPaRhJHQ9dx7AnvPUi0GZDU.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/movie/1516698"
     },
     {
       "id": 969681,
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2162,
+      "votes": 2175,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1084244,
-      "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "8.2",
-      "votes": 1644,
-      "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
       "id": 1368337,
@@ -60,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3197,
+      "votes": 3204,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1084244,
+      "mediaType": "movie",
+      "title": "Toy Story 5",
+      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
+      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
+      "releaseDate": "2026-06-17",
+      "rating": "8.2",
+      "votes": 1645,
+      "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
       "id": 1339713,
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5053,
+      "votes": 5058,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -96,47 +96,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c4U96GrPRfnNrS01mBtqnocvlLJ.jpg",
       "releaseDate": "2026-08-21",
       "rating": "8.5",
-      "votes": 157,
+      "votes": 162,
       "url": "https://www.themoviedb.org/movie/1621552"
     },
     {
-      "id": 1315772,
+      "id": 1212763,
       "mediaType": "movie",
-      "title": "Minions & Monsters",
-      "overview": "This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created.",
-      "poster": "https://image.tmdb.org/t/p/w500/4LwvU9SZc8QQzW1X1FAPhNbXnEU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
-      "releaseDate": "2026-06-24",
-      "rating": "7.6",
-      "votes": 864,
-      "url": "https://www.themoviedb.org/movie/1315772"
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "7.8",
+      "votes": 1283,
+      "url": "https://www.themoviedb.org/movie/1212763"
     },
     {
-      "id": 1101383,
+      "id": 1384216,
       "mediaType": "movie",
-      "title": "The End of Oak Street",
-      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
-      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
-      "releaseDate": "2026-08-12",
-      "rating": "6.4",
-      "votes": 361,
-      "url": "https://www.themoviedb.org/movie/1101383"
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/yQBfTOqJdS4SMayBIcaXw2JUnI9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "6.9",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/movie/1384216"
     }
   ],
   "trendingTv": [
-    {
-      "id": 95350,
-      "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.2",
-      "votes": 173,
-      "url": "https://www.themoviedb.org/tv/95350"
-    },
     {
       "id": 108978,
       "mediaType": "tv",
@@ -146,20 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3129,
+      "votes": 3133,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
-      "id": 125988,
+      "id": 95350,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+      "releaseDate": "2026-08-16",
       "rating": "8.2",
-      "votes": 2498,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "votes": 174,
+      "url": "https://www.themoviedb.org/tv/95350"
     },
     {
       "id": 97546,
@@ -184,6 +172,18 @@
       "rating": "8.4",
       "votes": 2239,
       "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2500,
+      "url": "https://www.themoviedb.org/tv/125988"
     },
     {
       "id": 100757,
@@ -218,7 +218,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.1",
-      "votes": 1411,
+      "votes": 1412,
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 94997,
+      "id": 299952,
       "mediaType": "tv",
-      "title": "House of the Dragon",
-      "overview": "The Targaryen dynasty is at the absolute apex of its power, with more than 15 dragons under their yoke. Most empires crumble from such heights. In the case of the Targaryens, their slow fall begins when King Viserys breaks with a century of tradition by naming his daughter Rhaenyra heir to the Iron Throne. But when Viserys later fathers a son, the court is shocked when Rhaenyra retains her status as his heir, and seeds of division sow friction across the realm.",
-      "poster": "https://image.tmdb.org/t/p/w500/7V0Ebks0GgpKvQ7QbLAIdX5dos4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
-      "releaseDate": "2022-08-21",
-      "rating": "8.4",
-      "votes": 7034,
-      "url": "https://www.themoviedb.org/tv/94997"
+      "title": "The Early Spring",
+      "overview": "New to Beijing, Shang Zhitao crosses paths with Luan Nian, a true creative genius. Bold and open-hearted, she grows stronger step by step and gradually breaks through the defenses around Luan's guarded heart. Drawn to each other, they find themselves caught in an intense, on-again, off-again relationship in the urban jungle. To love is to summon all your courage and leave no regrets, to heal each other, and to grow together. But when love and her career pull her in different directions, she puts her career first. When she has come into her own and he has learned to soften his sharp edges, they finally stand as equals, ready to write a new ending together...",
+      "poster": "https://image.tmdb.org/t/p/w500/lGFngmJWMO4HTPcI0sUGKBAFqMe.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/d7aATTaFwreVu0eSdVc3k9Yqlvv.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "8.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/299952"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 247,
+      "votes": 248,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -296,18 +296,6 @@
       "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
-      "id": 1302904,
-      "mediaType": "movie",
-      "title": "Practical Magic 2",
-      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1302904"
-    },
-    {
       "id": 1423191,
       "mediaType": "movie",
       "title": "Resident Evil",
@@ -318,6 +306,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1302904,
+      "mediaType": "movie",
+      "title": "Practical Magic 2",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
       "id": 1263337,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2153,
+      "votes": 2175,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/aAnTt6KpmbbHbd6xH3FQFlppZjc.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "6.6",
-      "votes": 170,
+      "rating": "6.5",
+      "votes": 173,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -402,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 604,
+      "votes": 610,
       "url": "https://www.themoviedb.org/movie/1375646"
+    },
+    {
+      "id": 1232569,
+      "mediaType": "movie",
+      "title": "Pinocchio: Unstrung",
+      "overview": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
+      "poster": "https://image.tmdb.org/t/p/w500/eUJXk3bTvLBi5Zcb0BCedZU7lVL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
+      "releaseDate": "2026-07-24",
+      "rating": "6.9",
+      "votes": 57,
+      "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
       "id": 1101383,
@@ -414,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.4",
-      "votes": 358,
+      "votes": 364,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -426,20 +438,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.6",
-      "votes": 62,
+      "votes": 66,
       "url": "https://www.themoviedb.org/movie/1291595"
-    },
-    {
-      "id": 1232569,
-      "mediaType": "movie",
-      "title": "Pinocchio: Unstrung",
-      "overview": "Influenced by a sinister Cricket and created by Geppetto, Pinocchio launches a violent crusade to carve himself into a real boy like his brother James, one piece at a time.",
-      "poster": "https://image.tmdb.org/t/p/w500/eUJXk3bTvLBi5Zcb0BCedZU7lVL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
-      "releaseDate": "2026-07-24",
-      "rating": "7.0",
-      "votes": 56,
-      "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
       "id": 1408162,
@@ -454,6 +454,30 @@
       "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
+      "id": 1384216,
+      "mediaType": "movie",
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "6.9",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/movie/1384216"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "7.8",
+      "votes": 12,
+      "url": "https://www.themoviedb.org/movie/1204680"
+    },
+    {
       "id": 1235877,
       "mediaType": "movie",
       "title": "Jana Nayagan",
@@ -464,30 +488,6 @@
       "rating": "5.6",
       "votes": 16,
       "url": "https://www.themoviedb.org/movie/1235877"
-    },
-    {
-      "id": 1185806,
-      "mediaType": "movie",
-      "title": "PAW Patrol: The Dino Movie",
-      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
-      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.1",
-      "votes": 40,
-      "url": "https://www.themoviedb.org/movie/1185806"
-    },
-    {
-      "id": 1341138,
-      "mediaType": "movie",
-      "title": "Spa Weekend",
-      "overview": "Four lifelong friends realize that somewhere between careers, relationships, families, and everyday responsibilities, they’ve forgotten how to take care of themselves and each other. Burned out and overdue for a break, the women escape to a luxury spa retreat for an unforgettable weekend dedicated to fun, laughter, and a lot of really bad decisions.",
-      "poster": "https://image.tmdb.org/t/p/w500/i3I19SbOyz6AIl0cSYdyVJRucMr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ftFf9sfJq69xJ0AuiaIuDKBtfzg.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "6.7",
-      "votes": 18,
-      "url": "https://www.themoviedb.org/movie/1341138"
     }
   ],
   "links": [
