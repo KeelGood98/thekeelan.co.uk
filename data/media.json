@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-25T21:00:50.710437+00:00",
+  "updated": "2026-08-26T09:22:59.423935+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,9 +11,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/aAnTt6KpmbbHbd6xH3FQFlppZjc.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-19",
-      "rating": "6.6",
-      "votes": 166,
+      "rating": "6.5",
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1516698,
+      "mediaType": "movie",
+      "title": "The Last Sunrise",
+      "overview": "Ry, a college student with a chronic illness escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
+      "poster": "https://image.tmdb.org/t/p/w500/pego3yEZ5SuGvRjESKAguL4Wu7M.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5lB7yPaRhJHQ9dx7AnvPUi0GZDU.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "10.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1516698"
     },
     {
       "id": 969681,
@@ -24,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2146,
+      "votes": 2162,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -36,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
       "releaseDate": "2026-06-17",
       "rating": "8.2",
-      "votes": 1608,
+      "votes": 1644,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -48,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3185,
+      "votes": 3197,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -60,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5035,
+      "votes": 5053,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -72,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.6",
-      "votes": 61,
+      "votes": 66,
       "url": "https://www.themoviedb.org/movie/1291595"
+    },
+    {
+      "id": 1621552,
+      "mediaType": "movie",
+      "title": "Facing El Chapo",
+      "overview": "Two Mexican officers must survive the final hours of their shift after crossing a ruthless cartel boss.",
+      "poster": "https://image.tmdb.org/t/p/w500/alpf5v4UqSFawPmG9RX03Or4BDk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c4U96GrPRfnNrS01mBtqnocvlLJ.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "8.5",
+      "votes": 157,
+      "url": "https://www.themoviedb.org/movie/1621552"
     },
     {
       "id": 1315772,
@@ -84,44 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kkcwhgSFd81QDlXo8ytrpHPQjhy.jpg",
       "releaseDate": "2026-06-24",
       "rating": "7.6",
-      "votes": 856,
+      "votes": 864,
       "url": "https://www.themoviedb.org/movie/1315772"
     },
     {
-      "id": 1083381,
+      "id": 1101383,
       "mediaType": "movie",
-      "title": "Backrooms",
-      "overview": "A strange doorway appears in the basement of a furniture showroom.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
-      "releaseDate": "2026-05-27",
-      "rating": "7.1",
-      "votes": 2952,
-      "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1621552,
-      "mediaType": "movie",
-      "title": "Facing El Chapo",
-      "overview": "Two Mexican officers must survive the final hours of their shift after crossing a ruthless cartel boss.",
-      "poster": "https://image.tmdb.org/t/p/w500/alpf5v4UqSFawPmG9RX03Or4BDk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c4U96GrPRfnNrS01mBtqnocvlLJ.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "8.1",
-      "votes": 111,
-      "url": "https://www.themoviedb.org/movie/1621552"
-    },
-    {
-      "id": 1003596,
-      "mediaType": "movie",
-      "title": "Avengers: Doomsday",
-      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
-      "releaseDate": "2026-12-16",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1003596"
+      "title": "The End of Oak Street",
+      "overview": "After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, the Platt family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings.",
+      "poster": "https://image.tmdb.org/t/p/w500/fYXqpgPmHMphSF2W30GbTeJVIa5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
+      "releaseDate": "2026-08-12",
+      "rating": "6.4",
+      "votes": 361,
+      "url": "https://www.themoviedb.org/movie/1101383"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.2",
-      "votes": 170,
+      "votes": 173,
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3125,
+      "votes": 3129,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -158,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2495,
+      "votes": 2498,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2589,
+      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 30984,
@@ -170,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
       "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 2237,
+      "votes": 2239,
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
@@ -182,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fjJ0aqDeDXFzmFXXJ4CF3ryB19b.jpg",
       "releaseDate": "2020-04-15",
       "rating": "8.2",
-      "votes": 1245,
+      "votes": 1244,
       "url": "https://www.themoviedb.org/tv/100757"
     },
     {
@@ -206,7 +218,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.1",
-      "votes": 1410,
+      "votes": 1411,
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
@@ -222,18 +234,6 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2587,
-      "url": "https://www.themoviedb.org/tv/97546"
-    },
-    {
       "id": 94997,
       "mediaType": "tv",
       "title": "House of the Dragon",
@@ -242,23 +242,11 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/577eXC8wFQT0eUrJcgznSiFPRmk.jpg",
       "releaseDate": "2022-08-21",
       "rating": "8.4",
-      "votes": 7032,
+      "votes": 7034,
       "url": "https://www.themoviedb.org/tv/94997"
     }
   ],
   "upcomingMovies": [
-    {
-      "id": 1375646,
-      "mediaType": "movie",
-      "title": "Colony",
-      "overview": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
-      "poster": "https://image.tmdb.org/t/p/w500/tN799oUR0f1gUKDYdMNrDaY7I51.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "8.1",
-      "votes": 600,
-      "url": "https://www.themoviedb.org/movie/1375646"
-    },
     {
       "id": 1284465,
       "mediaType": "movie",
@@ -268,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 248,
+      "votes": 247,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -280,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.7",
-      "votes": 423,
+      "votes": 427,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -292,32 +280,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/g4wdPZlhVioK69H8Q0o9Id5QhNs.jpg",
       "releaseDate": "2026-09-09",
       "rating": "10.0",
-      "votes": 1,
+      "votes": 2,
       "url": "https://www.themoviedb.org/movie/1101412"
-    },
-    {
-      "id": 1433367,
-      "mediaType": "movie",
-      "title": "One Night Only",
-      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-      "poster": "https://image.tmdb.org/t/p/w500/9LGEqZvzI7Tsosf8srwEY48rZsD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mfgNUnFB25BNIwe9iPJ17cUN64S.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "6.9",
-      "votes": 40,
-      "url": "https://www.themoviedb.org/movie/1433367"
-    },
-    {
-      "id": 1384216,
-      "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "7.2",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/movie/1384216"
     },
     {
       "id": 1318413,
@@ -328,32 +292,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.8",
-      "votes": 315,
+      "votes": 318,
       "url": "https://www.themoviedb.org/movie/1318413"
-    },
-    {
-      "id": 1288059,
-      "mediaType": "movie",
-      "title": "I Want Your Sex",
-      "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xKPKNJI93LO2QPlIMLM8mthlCPi.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "5.8",
-      "votes": 19,
-      "url": "https://www.themoviedb.org/movie/1288059"
-    },
-    {
-      "id": 1213243,
-      "mediaType": "movie",
-      "title": "Toxic: A Fairy Tale for Grown-ups",
-      "overview": "A powerful drug cartel pulls the strings behind a facade of sun-soaked beaches as a gritty, violent underworld power struggle emerges during the crumbling of Portuguese colonial rule.",
-      "poster": "https://image.tmdb.org/t/p/w500/tZ8eSBXbza96vzCYeVTG9RBJ78E.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6y5Y8l6mAc1FzU0rovUMVtbl4NE.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1213243"
     },
     {
       "id": 1302904,
@@ -366,6 +306,66 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1302904"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Bryan, a medical courier, unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/guq5cJ43v0qcMtLqrYHe5P9fgFM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mRM28tIIm8y0gKy9GKYGwotxuPM.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1263337,
+      "mediaType": "movie",
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1377237,
+      "mediaType": "movie",
+      "title": "Runner",
+      "overview": "A former soldier and his unlikely partner become the targets of a ruthless cartel while racing to complete a critical medical delivery and save the life of a little girl.",
+      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aKiB08Yn4PrnARl3eMzhke7OdcR.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1377237"
+    },
+    {
+      "id": 1476682,
+      "mediaType": "movie",
+      "title": "Gail Daughtry and the Celebrity Sex Pass",
+      "overview": "Small-town Kansas hairdresser Gail Daughtry's fiancé uses his 'celebrity sex pass' on Jennifer Aniston, prompting Gail to travel to LA with her friend Otto to find her own pass, Jon Hamm, to even the score.",
+      "poster": "https://image.tmdb.org/t/p/w500/98T4bnMjJs71WOVZoeY8edZhfgZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vfcqksiJMpzFJ8Y1cVbSAH6J6rY.jpg",
+      "releaseDate": "2026-09-04",
+      "rating": "6.6",
+      "votes": 24,
+      "url": "https://www.themoviedb.org/movie/1476682"
+    },
+    {
+      "id": 1404684,
+      "mediaType": "movie",
+      "title": "Just an Illusion",
+      "overview": "In 1985 suburban Paris, 12-year-old Vincent lives with his distant older brother and quarrelling parents. Amid laughter and unease, he navigates friendship and first love, while beginning to confront the adult world.",
+      "poster": "https://image.tmdb.org/t/p/w500/eWPq3wSvJEMakESTXzaBECUNBYr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l1fhfzNclQcp4oBz550KMY0CTre.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "7.4",
+      "votes": 189,
+      "url": "https://www.themoviedb.org/movie/1404684"
     }
   ],
   "nowPlayingMovies": [
@@ -378,20 +378,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2138,
+      "votes": 2153,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
-      "releaseDate": "2026-07-17",
-      "rating": "8.0",
-      "votes": 3179,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1288445,
@@ -402,8 +390,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.6",
-      "votes": 164,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1375646,
+      "mediaType": "movie",
+      "title": "Colony",
+      "overview": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
+      "poster": "https://image.tmdb.org/t/p/w500/tN799oUR0f1gUKDYdMNrDaY7I51.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/84FEpVVbSKYvKXDZJDZXOKBxCEm.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "8.1",
+      "votes": 604,
+      "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
       "id": 1101383,
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.4",
-      "votes": 352,
+      "votes": 358,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.6",
-      "votes": 58,
+      "votes": 62,
       "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dNKFETDDujxm2PUN873Jwiw5VML.jpg",
       "releaseDate": "2026-07-24",
       "rating": "7.0",
-      "votes": 51,
+      "votes": 56,
       "url": "https://www.themoviedb.org/movie/1232569"
     },
     {
@@ -470,7 +470,7 @@
       "mediaType": "movie",
       "title": "PAW Patrol: The Dino Movie",
       "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
-      "poster": "https://image.tmdb.org/t/p/w500/uXT1Uwze8N1TcgqUIsYCqaEPKea.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
       "releaseDate": "2026-08-05",
       "rating": "7.1",
@@ -485,8 +485,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/i3I19SbOyz6AIl0cSYdyVJRucMr.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ftFf9sfJq69xJ0AuiaIuDKBtfzg.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "7.0",
-      "votes": 17,
+      "rating": "6.7",
+      "votes": 18,
       "url": "https://www.themoviedb.org/movie/1341138"
     }
   ],
