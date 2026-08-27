@@ -1,20 +1,8 @@
 {
-  "updated": "2026-08-26T16:04:00.186417+00:00",
+  "updated": "2026-08-27T00:04:35.240174+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1516698,
-      "mediaType": "movie",
-      "title": "The Last Sunrise",
-      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
-      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tvY4QPyopLVaRkPVOQb3Y1dyy7f.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "9.7",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/movie/1516698"
-    },
     {
       "id": 1288445,
       "mediaType": "movie",
@@ -24,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.5",
-      "votes": 172,
+      "votes": 175,
       "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.9",
-      "votes": 2175,
-      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1368337,
@@ -48,8 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3204,
+      "votes": 3217,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7iwUUcKURMT7aKfCwMy6YnGtchD.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.9",
+      "votes": 2186,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1516698,
+      "mediaType": "movie",
+      "title": "The Last Sunrise",
+      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
+      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5lB7yPaRhJHQ9dx7AnvPUi0GZDU.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "8.2",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/movie/1516698"
     },
     {
       "id": 1084244,
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
       "releaseDate": "2026-06-17",
       "rating": "8.2",
-      "votes": 1645,
+      "votes": 1658,
       "url": "https://www.themoviedb.org/movie/1084244"
     },
     {
@@ -72,7 +72,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5058,
+      "votes": 5072,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
@@ -84,20 +84,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.6",
-      "votes": 66,
+      "votes": 68,
       "url": "https://www.themoviedb.org/movie/1291595"
     },
     {
-      "id": 1621552,
+      "id": 1384216,
       "mediaType": "movie",
-      "title": "Facing El Chapo",
-      "overview": "Two Mexican officers must survive the final hours of their shift after crossing a ruthless cartel boss.",
-      "poster": "https://image.tmdb.org/t/p/w500/alpf5v4UqSFawPmG9RX03Or4BDk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c4U96GrPRfnNrS01mBtqnocvlLJ.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "8.5",
-      "votes": 162,
-      "url": "https://www.themoviedb.org/movie/1621552"
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "7.5",
+      "votes": 26,
+      "url": "https://www.themoviedb.org/movie/1384216"
+    },
+    {
+      "id": 87513,
+      "mediaType": "movie",
+      "title": "Motor City",
+      "overview": "In 1970s Detroit, John Miller falls for a local gangster's girl and lands in prison for a crime he didn't commit. With his life ruined, Miller plots revenge against the man who took his girl away.",
+      "poster": "https://image.tmdb.org/t/p/w500/cWAVzTWm9xdc8skHH7h1vreUtcD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l7asYmqOad01F2u0oCMM8nQjoEP.jpg",
+      "releaseDate": "2026-07-23",
+      "rating": "6.8",
+      "votes": 44,
+      "url": "https://www.themoviedb.org/movie/87513"
     },
     {
       "id": 1212763,
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
       "releaseDate": "2026-07-07",
       "rating": "7.8",
-      "votes": 1283,
+      "votes": 1288,
       "url": "https://www.themoviedb.org/movie/1212763"
-    },
-    {
-      "id": 1384216,
-      "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/yQBfTOqJdS4SMayBIcaXw2JUnI9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "6.9",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/movie/1384216"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3133,
+      "votes": 3143,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -146,8 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.2",
-      "votes": 174,
+      "votes": 178,
       "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2501,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 30984,
+      "mediaType": "tv",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2242,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 97546,
@@ -162,30 +186,6 @@
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2239,
-      "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2500,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
       "id": 100757,
       "mediaType": "tv",
       "title": "Outer Banks",
@@ -194,32 +194,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fjJ0aqDeDXFzmFXXJ4CF3ryB19b.jpg",
       "releaseDate": "2020-04-15",
       "rating": "8.2",
-      "votes": 1244,
+      "votes": 1245,
       "url": "https://www.themoviedb.org/tv/100757"
-    },
-    {
-      "id": 278624,
-      "mediaType": "tv",
-      "title": "Lucky",
-      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
-      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
-      "releaseDate": "2026-07-14",
-      "rating": "7.3",
-      "votes": 211,
-      "url": "https://www.themoviedb.org/tv/278624"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1412,
-      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 37854,
@@ -234,16 +210,40 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 299952,
+      "id": 278624,
       "mediaType": "tv",
-      "title": "The Early Spring",
-      "overview": "New to Beijing, Shang Zhitao crosses paths with Luan Nian, a true creative genius. Bold and open-hearted, she grows stronger step by step and gradually breaks through the defenses around Luan's guarded heart. Drawn to each other, they find themselves caught in an intense, on-again, off-again relationship in the urban jungle. To love is to summon all your courage and leave no regrets, to heal each other, and to grow together. But when love and her career pull her in different directions, she puts her career first. When she has come into her own and he has learned to soften his sharp edges, they finally stand as equals, ready to write a new ending together...",
-      "poster": "https://image.tmdb.org/t/p/w500/lGFngmJWMO4HTPcI0sUGKBAFqMe.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/d7aATTaFwreVu0eSdVc3k9Yqlvv.jpg",
-      "releaseDate": "2026-08-26",
+      "title": "Lucky",
+      "overview": "When a multi-million-dollar heist goes sideways, con artist Lucky is forced to go on the run. Pursued by both the FBI and a ruthless crime boss, Lucky must fight for her life—and a way out.",
+      "poster": "https://image.tmdb.org/t/p/w500/xsrkiXg8EuNNtbPtbmvCxg95gK7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hKXMOOvQwXiL01hfYG5nrkH0tEP.jpg",
+      "releaseDate": "2026-07-14",
+      "rating": "7.3",
+      "votes": 211,
+      "url": "https://www.themoviedb.org/tv/278624"
+    },
+    {
+      "id": 456,
+      "mediaType": "tv",
+      "title": "The Simpsons",
+      "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+      "poster": "https://image.tmdb.org/t/p/w500/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jIArNHIekrCSVgdMbKPAXpPY03Y.jpg",
+      "releaseDate": "1989-12-17",
       "rating": "8.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/299952"
+      "votes": 10961,
+      "url": "https://www.themoviedb.org/tv/456"
+    },
+    {
+      "id": 113962,
+      "mediaType": "tv",
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1416,
+      "url": "https://www.themoviedb.org/tv/113962"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.3",
-      "votes": 248,
+      "votes": 250,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
-      "id": 1302904,
-      "mediaType": "movie",
-      "title": "Practical Magic 2",
-      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yDgYYuz8jDQCRJbHC3XM7IIGoeR.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1302904"
-    },
-    {
       "id": 1263337,
       "mediaType": "movie",
       "title": "Heart of the Beast",
@@ -330,6 +318,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1302904,
+      "mediaType": "movie",
+      "title": "Practical Magic 2",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wE6syT1vv6W24iLGfhR4kQHnIDN.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
       "id": 1377237,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1476682"
     },
     {
-      "id": 1404684,
+      "id": 1187326,
       "mediaType": "movie",
-      "title": "Just an Illusion",
-      "overview": "In 1985 suburban Paris, 12-year-old Vincent lives with his distant older brother and quarrelling parents. Amid laughter and unease, he navigates friendship and first love, while beginning to confront the adult world.",
-      "poster": "https://image.tmdb.org/t/p/w500/eWPq3wSvJEMakESTXzaBECUNBYr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/l1fhfzNclQcp4oBz550KMY0CTre.jpg",
+      "title": "Tad and The Magic Lamp",
+      "overview": "Tadeo, his girlfriend Sara, and his friends Momia, Jeff, and Belzoni embark on an adventure after Tadeo accidentally unleashes an ancient spell.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdDxZgNmRYgDuweY8899buyVqlr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oG5kozJWLzevTrAPovtdnhCFo21.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "7.4",
-      "votes": 189,
-      "url": "https://www.themoviedb.org/movie/1404684"
+      "rating": "2.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1187326"
     }
   ],
   "nowPlayingMovies": [
