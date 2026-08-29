@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-29T13:59:42.800706+00:00",
+  "updated": "2026-08-29T17:53:25.313732+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uauoVKKCkNA9iWjgJCL8TdSfLf5.jpg",
       "releaseDate": "2026-08-27",
       "rating": "6.2",
-      "votes": 44,
+      "votes": 53,
       "url": "https://www.themoviedb.org/movie/860508"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pq1Mhdt9LbkQM5TOjuVZpcczbf.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.9",
-      "votes": 2246,
-      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1368337,
@@ -36,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3283,
+      "votes": 3291,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pq1Mhdt9LbkQM5TOjuVZpcczbf.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.9",
+      "votes": 2249,
+      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1288445,
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.4",
-      "votes": 214,
+      "votes": 216,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -60,32 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8sSKdEmlmqF4kJUd28SqthXC4yZ.jpg",
       "releaseDate": "2026-06-17",
       "rating": "8.3",
-      "votes": 1741,
+      "votes": 1745,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1516698,
-      "mediaType": "movie",
-      "title": "The Last Sunrise",
-      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
-      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zFCWfU2ViMIm38G1W8UsnSpqmWn.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "7.2",
-      "votes": 43,
-      "url": "https://www.themoviedb.org/movie/1516698"
-    },
-    {
-      "id": 1384216,
-      "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "7.2",
-      "votes": 79,
-      "url": "https://www.themoviedb.org/movie/1384216"
     },
     {
       "id": 1339713,
@@ -96,8 +72,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5119,
+      "votes": 5128,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1212763,
+      "mediaType": "movie",
+      "title": "Evil Dead Burn",
+      "overview": "After her husband's abrupt death, Alice seeks solace with his remaining family — descendants of a leading researcher on demonic possession. As her in-laws transform one by one into creatures that feed on fear, she comes to discover that the vows she took in life survive even in death.",
+      "poster": "https://image.tmdb.org/t/p/w500/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0jkkpcN81QqSl8DMLScBCXyUH9.jpg",
+      "releaseDate": "2026-07-07",
+      "rating": "7.8",
+      "votes": 1328,
+      "url": "https://www.themoviedb.org/movie/1212763"
+    },
+    {
+      "id": 1516698,
+      "mediaType": "movie",
+      "title": "The Last Sunrise",
+      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
+      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zFCWfU2ViMIm38G1W8UsnSpqmWn.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "7.3",
+      "votes": 44,
+      "url": "https://www.themoviedb.org/movie/1516698"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
+      "releaseDate": "2026-08-20",
+      "rating": "8.0",
+      "votes": 29,
+      "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
       "id": 1083381,
@@ -108,59 +120,11 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 3004,
+      "votes": 3010,
       "url": "https://www.themoviedb.org/movie/1083381"
-    },
-    {
-      "id": 1204680,
-      "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
-      "releaseDate": "2026-08-20",
-      "rating": "7.9",
-      "votes": 28,
-      "url": "https://www.themoviedb.org/movie/1204680"
     }
   ],
   "trendingTv": [
-    {
-      "id": 95350,
-      "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.2",
-      "votes": 182,
-      "url": "https://www.themoviedb.org/tv/95350"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2513,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 108978,
-      "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3162,
-      "url": "https://www.themoviedb.org/tv/108978"
-    },
     {
       "id": 30984,
       "mediaType": "tv",
@@ -174,6 +138,30 @@
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2514,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 95350,
+      "mediaType": "tv",
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+      "releaseDate": "2026-08-16",
+      "rating": "8.2",
+      "votes": 182,
+      "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
       "id": 196322,
       "mediaType": "tv",
       "title": "Dark Matter",
@@ -182,8 +170,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lcyaTfX6KEMpWNnzPoGPKp7LwwC.jpg",
       "releaseDate": "2024-05-07",
       "rating": "7.8",
-      "votes": 734,
+      "votes": 736,
       "url": "https://www.themoviedb.org/tv/196322"
+    },
+    {
+      "id": 108978,
+      "mediaType": "tv",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3165,
+      "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 305644,
+      "mediaType": "tv",
+      "title": "Four Hands, Two Sonatas",
+      "overview": "When two young pianists from completely different worlds meet at an elite music high school, the melodies of their lives become intimately intertwined.",
+      "poster": "https://image.tmdb.org/t/p/w500/a7p6htiJKx68USDAcilJ5rzKAWB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fYL4I6cezb06BHhQlrNjNhy7jhf.jpg",
+      "releaseDate": "2026-08-29",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/tv/305644"
+    },
+    {
+      "id": 290193,
+      "mediaType": "tv",
+      "title": "Mousetrap",
+      "overview": "A reclusive writer wakes to find his identity stolen — and must ally with a ruthless loan shark to reclaim his life from a man known as \"The Rat.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "9.0",
+      "votes": 9,
+      "url": "https://www.themoviedb.org/tv/290193"
     },
     {
       "id": 97546,
@@ -198,40 +222,16 @@
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
-      "id": 290193,
+      "id": 260458,
       "mediaType": "tv",
-      "title": "Mousetrap",
-      "overview": "A reclusive writer wakes to find his identity stolen — and must ally with a ruthless loan shark to reclaim his life from a man known as \"The Rat.\"",
-      "poster": "https://image.tmdb.org/t/p/w500/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bYtQiIibQzvMeXvLMKVcZ5DlT31.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "9.0",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/tv/290193"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1430,
-      "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 298168,
-      "mediaType": "tv",
-      "title": "The Shards",
-      "overview": "17-year-old Bret Easton Ellis is in his final year at the elite Buckley prep school. Upending his world is the arrival of a mysterious new student, Robert Mallory, whose unsettling presence coincides with the activities of a serial killer known as The Trawler.",
-      "poster": "https://image.tmdb.org/t/p/w500/wP0GdqwVu2g1y3q1KzBXuSrdTvX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/AhzF2bkYYybcCT4PnqpoagRGBWJ.jpg",
-      "releaseDate": "2026-08-05",
-      "rating": "7.7",
-      "votes": 41,
-      "url": "https://www.themoviedb.org/tv/298168"
+      "title": "Adults",
+      "overview": "A group of twenty-somethings in New York trying to be good people, despite being neither \"good\" nor \"people\" yet.",
+      "poster": "https://image.tmdb.org/t/p/w500/oJUoRlVXGl3MJb62Ugi1G08GPbx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6skot5l7gcJd6hO6qlKDGGY6LBJ.jpg",
+      "releaseDate": "2025-05-28",
+      "rating": "5.9",
+      "votes": 77,
+      "url": "https://www.themoviedb.org/tv/260458"
     },
     {
       "id": 37854,
@@ -242,7 +242,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.8",
-      "votes": 5502,
+      "votes": 5505,
       "url": "https://www.themoviedb.org/tv/37854"
     }
   ],
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7y8zWGEjs7tresw4Hzkkf4TdkcL.jpg",
       "releaseDate": "2026-09-04",
       "rating": "6.7",
-      "votes": 440,
+      "votes": 442,
       "url": "https://www.themoviedb.org/movie/1564614"
     },
     {
@@ -284,16 +284,16 @@
       "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
-      "id": 1423191,
+      "id": 1318413,
       "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Bryan, a medical courier, unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/guq5cJ43v0qcMtLqrYHe5P9fgFM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mRM28tIIm8y0gKy9GKYGwotxuPM.jpg",
-      "releaseDate": "2026-09-18",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1423191"
+      "title": "Pressure",
+      "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
+      "poster": "https://image.tmdb.org/t/p/w500/gFjEggtrejCN79r6SXRjM269OtG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "7.8",
+      "votes": 326,
+      "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
       "id": 1263337,
@@ -308,16 +308,16 @@
       "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
-      "id": 1318413,
+      "id": 1423191,
       "mediaType": "movie",
-      "title": "Pressure",
-      "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
-      "poster": "https://image.tmdb.org/t/p/w500/gFjEggtrejCN79r6SXRjM269OtG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "7.8",
-      "votes": 326,
-      "url": "https://www.themoviedb.org/movie/1318413"
+      "title": "Resident Evil",
+      "overview": "Bryan, a medical courier, unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/guq5cJ43v0qcMtLqrYHe5P9fgFM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mRM28tIIm8y0gKy9GKYGwotxuPM.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
       "id": 1302904,
@@ -332,18 +332,6 @@
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
-      "id": 37797,
-      "mediaType": "movie",
-      "title": "Whisper of the Heart",
-      "overview": "Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: \"Seiji Amasawa.\"",
-      "poster": "https://image.tmdb.org/t/p/w500/5FROLD8zpWFs9ja7aYho1uOMJHg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rphor0XQcYO4CQoQ6auaQm3UPap.jpg",
-      "releaseDate": "1996-11-22",
-      "rating": "7.9",
-      "votes": 2335,
-      "url": "https://www.themoviedb.org/movie/37797"
-    },
-    {
       "id": 1377237,
       "mediaType": "movie",
       "title": "Runner",
@@ -356,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
+      "id": 37797,
+      "mediaType": "movie",
+      "title": "Whisper of the Heart",
+      "overview": "Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: \"Seiji Amasawa.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/5FROLD8zpWFs9ja7aYho1uOMJHg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rphor0XQcYO4CQoQ6auaQm3UPap.jpg",
+      "releaseDate": "1996-11-22",
+      "rating": "7.9",
+      "votes": 2337,
+      "url": "https://www.themoviedb.org/movie/37797"
+    },
+    {
       "id": 1187326,
       "mediaType": "movie",
       "title": "Tad and The Magic Lamp",
@@ -363,8 +363,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/AdDxZgNmRYgDuweY8899buyVqlr.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oG5kozJWLzevTrAPovtdnhCFo21.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "2.0",
-      "votes": 1,
+      "rating": "4.0",
+      "votes": 2,
       "url": "https://www.themoviedb.org/movie/1187326"
     }
   ],
