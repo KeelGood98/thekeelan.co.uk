@@ -1,29 +1,29 @@
 {
-  "updated": "2026-08-29T08:59:38.162648+00:00",
+  "updated": "2026-08-29T14:26:07.879194+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-08-29T09:45",
+    "time": "2026-08-29T15:15",
     "temperature": 18.0,
-    "feelsLike": 18.0,
-    "humidity": 78.0,
-    "precipitation": 0.0,
-    "windSpeed": 4.0,
-    "windGusts": 10.0,
-    "weatherCode": 3,
-    "description": "Overcast",
-    "icon": "☁️"
+    "feelsLike": 19.0,
+    "humidity": 84.0,
+    "precipitation": 0.1,
+    "windSpeed": 7.0,
+    "windGusts": 14.0,
+    "weatherCode": 51,
+    "description": "Light drizzle",
+    "icon": "🌦️"
   },
   "forecast": [
     {
       "date": "2026-08-29",
-      "description": "Moderate rain",
-      "icon": "🌧️",
+      "description": "Light drizzle",
+      "icon": "🌦️",
       "maxTemp": 19.0,
       "minTemp": 15.0,
-      "rainChance": 98.0,
+      "rainChance": 91.0,
       "sunrise": "2026-08-29T06:09",
       "sunset": "2026-08-29T20:04"
     },
@@ -31,7 +31,7 @@
       "date": "2026-08-30",
       "description": "Moderate rain showers",
       "icon": "🌧️",
-      "maxTemp": 22.0,
+      "maxTemp": 21.0,
       "minTemp": 15.0,
       "rainChance": 100.0,
       "sunrise": "2026-08-30T06:11",
@@ -39,11 +39,11 @@
     },
     {
       "date": "2026-08-31",
-      "description": "Overcast",
-      "icon": "☁️",
+      "description": "Moderate drizzle",
+      "icon": "🌦️",
       "maxTemp": 20.0,
       "minTemp": 14.0,
-      "rainChance": 62.0,
+      "rainChance": 71.0,
       "sunrise": "2026-08-31T06:13",
       "sunset": "2026-08-31T19:59"
     }
