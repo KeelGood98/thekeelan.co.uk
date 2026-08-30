@@ -1,8 +1,19 @@
 {
-  "updated": "2026-08-30T16:44:07.740644+00:00",
+  "updated": "2026-08-30T21:10:32.555857+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
+    {
+      "name": "Bruno Fernandes",
+      "firstName": "",
+      "lastName": "Bruno Fernandes",
+      "nationality": "Portugal",
+      "team": "Manchester United",
+      "teamBadge": "https://crests.football-data.org/66.png",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 1
+    },
     {
       "name": "Jack Hinshelwood",
       "firstName": "Jack",
@@ -101,17 +112,6 @@
       "goals": 1,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Semi Ajayi",
-      "firstName": "Semi",
-      "lastName": "Ajayi",
-      "nationality": "Nigeria",
-      "team": "Hull City",
-      "teamBadge": "https://crests.football-data.org/322.png",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -134,14 +134,14 @@
       "played": 2
     },
     {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 4,
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalsFor": 5,
       "played": 2
     },
     {
-      "name": "Newcastle",
-      "badge": "https://crests.football-data.org/67.png",
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
       "goalsFor": 4,
       "played": 2
     }
@@ -211,17 +211,17 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 15,
+    "position": 10,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
     "played": 2,
-    "won": 0,
-    "drawn": 1,
+    "won": 1,
+    "drawn": 0,
     "lost": 1,
-    "goalsFor": 1,
-    "goalsAgainst": 3,
-    "goalDifference": -2,
-    "points": 1
+    "goalsFor": 5,
+    "goalsAgainst": 4,
+    "goalDifference": 1,
+    "points": 3
   }
 }

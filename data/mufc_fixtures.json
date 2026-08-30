@@ -1,22 +1,22 @@
 {
-  "updated": "2026-08-30T16:44:07.322849+00:00",
+  "updated": "2026-08-30T21:10:31.931221+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 560553,
-    "date": "Sun 30 Aug, 16:30",
-    "sortDate": "2026-08-30T16:30:00+01:00",
+    "id": 560567,
+    "date": "Sun 06 Sep, 14:00",
+    "sortDate": "2026-09-06T14:00:00+01:00",
     "competition": "Premier League",
-    "matchday": 2,
-    "home": "Manchester United",
-    "away": "Ipswich Town",
-    "score": "1-1",
-    "halfTimeScore": "1-1",
-    "winner": "Draw",
+    "matchday": 3,
+    "home": "Everton",
+    "away": "Manchester United",
+    "score": "",
+    "halfTimeScore": "",
+    "winner": "",
     "result": "",
     "venue": "TBC",
     "channel": "TBC",
-    "status": "IN_PLAY"
+    "status": "TIMED"
   },
   "recentResults": [
     {
@@ -34,9 +34,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 560553,
       "date": "Sun 30 Aug, 16:30",
@@ -45,14 +43,16 @@
       "matchday": 2,
       "home": "Manchester United",
       "away": "Ipswich Town",
-      "score": "1-1",
+      "score": "5-2",
       "halfTimeScore": "1-1",
-      "winner": "Draw",
-      "result": "",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 560567,
       "date": "Sun 06 Sep, 14:00",
@@ -157,6 +157,22 @@
       "matchday": 9,
       "home": "Chelsea",
       "away": "Manchester United",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560639,
+      "date": "Sat 07 Nov, 15:00",
+      "sortDate": "2026-11-07T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 10,
+      "home": "Manchester United",
+      "away": "Aston Villa",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
@@ -191,13 +207,13 @@
       "matchday": 2,
       "home": "Manchester United",
       "away": "Ipswich Town",
-      "score": "1-1",
+      "score": "5-2",
       "halfTimeScore": "1-1",
-      "winner": "Draw",
-      "result": "",
+      "winner": "Manchester United",
+      "result": "W",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 560567,
@@ -303,6 +319,22 @@
       "matchday": 9,
       "home": "Chelsea",
       "away": "Manchester United",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560639,
+      "date": "Sat 07 Nov, 15:00",
+      "sortDate": "2026-11-07T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 10,
+      "home": "Manchester United",
+      "away": "Aston Villa",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
