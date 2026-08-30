@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-30T11:58:10.487532+00:00",
+  "updated": "2026-08-30T16:44:07.322849+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
@@ -10,13 +10,13 @@
     "matchday": 2,
     "home": "Manchester United",
     "away": "Ipswich Town",
-    "score": "",
-    "halfTimeScore": "",
-    "winner": "",
+    "score": "1-1",
+    "halfTimeScore": "1-1",
+    "winner": "Draw",
     "result": "",
     "venue": "TBC",
     "channel": "TBC",
-    "status": "TIMED"
+    "status": "IN_PLAY"
   },
   "recentResults": [
     {
@@ -45,13 +45,13 @@
       "matchday": 2,
       "home": "Manchester United",
       "away": "Ipswich Town",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
+      "score": "1-1",
+      "halfTimeScore": "1-1",
+      "winner": "Draw",
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "TIMED"
+      "status": "IN_PLAY"
     },
     {
       "id": 560567,
@@ -191,13 +191,13 @@
       "matchday": 2,
       "home": "Manchester United",
       "away": "Ipswich Town",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
+      "score": "1-1",
+      "halfTimeScore": "1-1",
+      "winner": "Draw",
       "result": "",
       "venue": "TBC",
       "channel": "TBC",
-      "status": "TIMED"
+      "status": "IN_PLAY"
     },
     {
       "id": 560567,
