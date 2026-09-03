@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T12:59:33.567322+00:00",
+  "updated": "2026-09-03T18:03:16.213833+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,44 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ziXF8wIBguHNCeplNthUlDTCZP8.jpg",
       "releaseDate": "2026-09-03",
       "rating": "5.8",
-      "votes": 54,
+      "votes": 61,
       "url": "https://www.themoviedb.org/movie/1386315"
-    },
-    {
-      "id": 1204680,
-      "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
-      "releaseDate": "2026-08-20",
-      "rating": "7.8",
-      "votes": 103,
-      "url": "https://www.themoviedb.org/movie/1204680"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 3420,
-      "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.9",
-      "votes": 2381,
-      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 860508,
@@ -60,8 +24,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSJJQeAp9GBFmiKusysTRG6jQjt.jpg",
       "releaseDate": "2026-08-27",
       "rating": "6.6",
-      "votes": 320,
+      "votes": 323,
       "url": "https://www.themoviedb.org/movie/860508"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 3426,
+      "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.9",
+      "votes": 2388,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
+      "releaseDate": "2026-08-20",
+      "rating": "7.8",
+      "votes": 107,
+      "url": "https://www.themoviedb.org/movie/1204680"
+    },
+    {
+      "id": 1339713,
+      "mediaType": "movie",
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 5259,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
       "id": 1506560,
@@ -71,33 +83,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/16oqRrWVzQm6qdGfBxvziZ2UiMT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6yT5O0g8ZXNOm9I5IXLZonZRBgx.jpg",
       "releaseDate": "2026-09-03",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "5.5",
+      "votes": 2,
       "url": "https://www.themoviedb.org/movie/1506560"
-    },
-    {
-      "id": 1288445,
-      "mediaType": "movie",
-      "title": "Mutiny",
-      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
-      "releaseDate": "2026-08-19",
-      "rating": "6.3",
-      "votes": 261,
-      "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 1516698,
-      "mediaType": "movie",
-      "title": "The Last Sunrise",
-      "overview": "Ry, a college student with a chronic illness, escapes to Mallorca for the summer with her mother, where she unexpectedly falls for a local and begins to embrace living in the moment. But as her condition worsens and long-hidden family secrets come to light, everything she has found before summer's end is threatened.",
-      "poster": "https://image.tmdb.org/t/p/w500/3PWJqDfygN0YNNjWsDUOXclCp3h.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zFCWfU2ViMIm38G1W8UsnSpqmWn.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "6.6",
-      "votes": 95,
-      "url": "https://www.themoviedb.org/movie/1516698"
     },
     {
       "id": 1083381,
@@ -108,46 +96,46 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 3101,
+      "votes": 3104,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
-      "id": 1384216,
+      "id": 1423191,
       "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "6.7",
-      "votes": 170,
-      "url": "https://www.themoviedb.org/movie/1384216"
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/qku2uWSoJ9amQV5MWo1Eek29iji.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ddfXMkaPViSrg0P5aoYGFMc58x2.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1480574,
+      "mediaType": "movie",
+      "title": "Just Play Dead",
+      "overview": "A criminal mastermind plans to fake his death for insurance money while framing his wife's lover. His wife plots to kill him for real and take it all. Both race to outmanoeuvre each other in a deadly battle of wits.",
+      "poster": "https://image.tmdb.org/t/p/w500/e0WaDBrrBAMcq2stAXCR7rXEsiw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lBWfbmUj9Jw0EM1OYtDXr0B5FPW.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "6.8",
+      "votes": 21,
+      "url": "https://www.themoviedb.org/movie/1480574"
     }
   ],
   "trendingTv": [
     {
-      "id": 95350,
+      "id": 236235,
       "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.3",
-      "votes": 244,
-      "url": "https://www.themoviedb.org/tv/95350"
-    },
-    {
-      "id": 290193,
-      "mediaType": "tv",
-      "title": "Mousetrap",
-      "overview": "A reclusive writer wakes to find his identity stolen — and must ally with a ruthless loan shark to reclaim his life from a man known as \"The Rat.\"",
-      "poster": "https://image.tmdb.org/t/p/w500/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3bHz9dYSZ5XDxY0zDaBpYgUOhE2.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "7.5",
-      "votes": 24,
-      "url": "https://www.themoviedb.org/tv/290193"
+      "title": "The Gentlemen",
+      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
+      "poster": "https://image.tmdb.org/t/p/w500/8sQ0oDunlRpesa5vIO6UPhbJNxC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
+      "releaseDate": "2024-03-07",
+      "rating": "7.8",
+      "votes": 856,
+      "url": "https://www.themoviedb.org/tv/236235"
     },
     {
       "id": 125988,
@@ -158,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2550,
+      "votes": 2552,
       "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 95350,
+      "mediaType": "tv",
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+      "releaseDate": "2026-08-16",
+      "rating": "8.3",
+      "votes": 246,
+      "url": "https://www.themoviedb.org/tv/95350"
     },
     {
       "id": 108978,
@@ -170,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3205,
+      "votes": 3206,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
@@ -186,40 +186,16 @@
       "url": "https://www.themoviedb.org/tv/196322"
     },
     {
-      "id": 236235,
+      "id": 247168,
       "mediaType": "tv",
-      "title": "The Gentlemen",
-      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "poster": "https://image.tmdb.org/t/p/w500/tw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
-      "releaseDate": "2024-03-07",
-      "rating": "7.8",
-      "votes": 855,
-      "url": "https://www.themoviedb.org/tv/236235"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1453,
-      "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2256,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "title": "Chad Powers",
+      "overview": "Eight years after an unforgivable mistake nukes his promising college football career, hotshot quarterback Russ Holliday tries to resurrect his dreams by disguising himself as Chad Powers - a talented oddball who walks on to the struggling South Georgia Catfish.",
+      "poster": "https://image.tmdb.org/t/p/w500/wgMS8irQKfMrR6mJhKtK6vbxDTC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r7uH0Wa7rzHyK83XQpxRZVH76u7.jpg",
+      "releaseDate": "2025-09-30",
+      "rating": "8.0",
+      "votes": 107,
+      "url": "https://www.themoviedb.org/tv/247168"
     },
     {
       "id": 97546,
@@ -234,6 +210,18 @@
       "url": "https://www.themoviedb.org/tv/97546"
     },
     {
+      "id": 30984,
+      "mediaType": "tv",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2256,
+      "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
       "id": 287238,
       "mediaType": "tv",
       "title": "Furious",
@@ -244,6 +232,18 @@
       "rating": "7.2",
       "votes": 90,
       "url": "https://www.themoviedb.org/tv/287238"
+    },
+    {
+      "id": 103516,
+      "mediaType": "tv",
+      "title": "Star Trek: Strange New Worlds",
+      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+      "poster": "https://image.tmdb.org/t/p/w500/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+      "releaseDate": "2022-05-05",
+      "rating": "7.9",
+      "votes": 831,
+      "url": "https://www.themoviedb.org/tv/103516"
     }
   ],
   "upcomingMovies": [
@@ -279,21 +279,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
       "releaseDate": "2026-09-25",
-      "rating": "8.2",
-      "votes": 24,
+      "rating": "8.3",
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1469342,
-      "mediaType": "movie",
-      "title": "Her Private Hell",
-      "overview": "When a mysterious mist engulfs a futuristic metropolis, unleashing a deadly and elusive entity, a troubled young woman searches for her father. Her quest collides with an American GI on a harrowing odyssey to rescue his daughter from Hell.",
-      "poster": "https://image.tmdb.org/t/p/w500/1gNVzTlpNLaX8sm9Wocl5rLgldU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hS4FcOM5y71FurkBQgDLTBxmWZh.jpg",
-      "releaseDate": "2026-09-25",
-      "rating": "5.1",
-      "votes": 55,
-      "url": "https://www.themoviedb.org/movie/1469342"
     },
     {
       "id": 1318413,
@@ -320,6 +308,18 @@
       "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
+      "id": 1469342,
+      "mediaType": "movie",
+      "title": "Her Private Hell",
+      "overview": "When a mysterious mist engulfs a futuristic metropolis, unleashing a deadly and elusive entity, a troubled young woman searches for her father. Her quest collides with an American GI on a harrowing odyssey to rescue his daughter from Hell.",
+      "poster": "https://image.tmdb.org/t/p/w500/1gNVzTlpNLaX8sm9Wocl5rLgldU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hS4FcOM5y71FurkBQgDLTBxmWZh.jpg",
+      "releaseDate": "2026-09-25",
+      "rating": "5.1",
+      "votes": 55,
+      "url": "https://www.themoviedb.org/movie/1469342"
+    },
+    {
       "id": 1302904,
       "mediaType": "movie",
       "title": "Practical Magic 2",
@@ -327,15 +327,15 @@
       "poster": "https://image.tmdb.org/t/p/w500/7jCV8dkRFK3DGJ4dTqlvrMTFPwZ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "4.0",
+      "votes": 1,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
       "id": 1377237,
       "mediaType": "movie",
       "title": "Runner",
-      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "overview": "A former soldier and his unlikely partner become the targets of a ruthless cartel while racing to complete a critical medical delivery and save the life of a little girl.",
       "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/iXR79oKsLHwLno9jdzxxeFP21sy.jpg",
       "releaseDate": "2026-09-11",
@@ -362,7 +362,7 @@
       "overview": "Experience the meteoric rise of Oasis through rare footage and untold stories as the band reunites for Oasis Live '25, chronicling their journey from Manchester streets to global rock stardom.",
       "poster": "https://image.tmdb.org/t/p/w500/nuNfPuFZKtkrglYnz2F9weQm3Ng.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/7Ud7QIJo21odjCaev6V4md9sK16.jpg",
-      "releaseDate": "2026-09-11",
+      "releaseDate": "2026-09-09",
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1447853"
@@ -375,10 +375,10 @@
       "title": "Spider-Man: Brand New Day",
       "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
       "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vjMvFSmGUxEtqVdaZgvFee9XkZl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2378,
+      "votes": 2388,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -389,21 +389,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "6.3",
-      "votes": 260,
+      "rating": "6.4",
+      "votes": 263,
       "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 1213243,
-      "mediaType": "movie",
-      "title": "Toxic: A Fairy Tale for Grown-ups",
-      "overview": "A powerful drug cartel pulls the strings behind a facade of sun-soaked beaches as a gritty, violent underworld power struggle emerges during the crumbling of Portuguese colonial rule.",
-      "poster": "https://image.tmdb.org/t/p/w500/5RTd3YCLWbEhbe9OXRuNX3pbT5U.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tBRSSfgqOAq7YlG8udcoJIBm2FG.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "7.7",
-      "votes": 57,
-      "url": "https://www.themoviedb.org/movie/1213243"
     },
     {
       "id": 1204680,
@@ -414,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.8",
-      "votes": 102,
+      "votes": 107,
       "url": "https://www.themoviedb.org/movie/1204680"
+    },
+    {
+      "id": 1213243,
+      "mediaType": "movie",
+      "title": "Toxic: A Fairy Tale for Grown-ups",
+      "overview": "A powerful drug cartel pulls the strings behind a facade of sun-soaked beaches as a gritty, violent underworld power struggle emerges during the crumbling of Portuguese colonial rule.",
+      "poster": "https://image.tmdb.org/t/p/w500/oiIPU4lvnI0Ag2K9cyAi44eCaoE.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tBRSSfgqOAq7YlG8udcoJIBm2FG.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "7.7",
+      "votes": 60,
+      "url": "https://www.themoviedb.org/movie/1213243"
     },
     {
       "id": 1375646,
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 666,
+      "votes": 668,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -450,8 +450,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
       "releaseDate": "2026-08-26",
       "rating": "6.7",
-      "votes": 170,
+      "votes": 174,
       "url": "https://www.themoviedb.org/movie/1384216"
+    },
+    {
+      "id": 1288059,
+      "mediaType": "movie",
+      "title": "I Want Your Sex",
+      "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
+      "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/34z9eBtEBv6QoroLuUA55cU3e8Q.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "6.2",
+      "votes": 37,
+      "url": "https://www.themoviedb.org/movie/1288059"
     },
     {
       "id": 1101383,
@@ -462,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.3",
-      "votes": 430,
+      "votes": 434,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -474,20 +486,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hD8y787ciNWQ2bn396YrSsOIzdN.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.6",
-      "votes": 97,
+      "votes": 100,
       "url": "https://www.themoviedb.org/movie/1291595"
-    },
-    {
-      "id": 1288059,
-      "mediaType": "movie",
-      "title": "I Want Your Sex",
-      "overview": "When fresh-faced Elliot lands an exciting job for renowned artist, icon and provocateur Erika Tracy, his fantasies come true as Erika taps him to become her sexual muse. But Elliot soon finds himself out of his depth as Erika takes him on a journey more profound than he ever could have imagined, into a world of sex, obsession, power, betrayal and murder.",
-      "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/34z9eBtEBv6QoroLuUA55cU3e8Q.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "6.3",
-      "votes": 34,
-      "url": "https://www.themoviedb.org/movie/1288059"
     }
   ],
   "links": [
