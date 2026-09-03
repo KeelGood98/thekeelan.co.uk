@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03T18:03:16.213833+00:00",
+  "updated": "2026-09-03T22:48:21.531918+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ziXF8wIBguHNCeplNthUlDTCZP8.jpg",
       "releaseDate": "2026-09-03",
       "rating": "5.8",
-      "votes": 61,
+      "votes": 96,
       "url": "https://www.themoviedb.org/movie/1386315"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSJJQeAp9GBFmiKusysTRG6jQjt.jpg",
       "releaseDate": "2026-08-27",
       "rating": "6.6",
-      "votes": 323,
+      "votes": 336,
       "url": "https://www.themoviedb.org/movie/860508"
     },
     {
@@ -33,10 +33,10 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3426,
+      "votes": 3432,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -48,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2388,
+      "votes": 2393,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -56,11 +56,11 @@
       "mediaType": "movie",
       "title": "Coyote vs. Acme",
       "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
       "releaseDate": "2026-08-20",
       "rating": "7.8",
-      "votes": 107,
+      "votes": 116,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -72,20 +72,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5259,
+      "votes": 5262,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 1506560,
+      "id": 1288445,
       "mediaType": "movie",
-      "title": "Clash of the Thundermans",
-      "overview": "When Chloe develops a destructive new superpower, the Hero League orders her to an elite boarding school for superheroes to learn control of her abilities. Faced with the prospect of sending Chloe away for years, the Thundermans split apart, with Phoebe, Barb and Billy taking her into hiding. Max, Hank, and Nora track their rogue family members, until the two factions face off against each other in a full-on battle for the Thundermans’ future.",
-      "poster": "https://image.tmdb.org/t/p/w500/16oqRrWVzQm6qdGfBxvziZ2UiMT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6yT5O0g8ZXNOm9I5IXLZonZRBgx.jpg",
-      "releaseDate": "2026-09-03",
-      "rating": "5.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/movie/1506560"
+      "title": "Mutiny",
+      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
+      "releaseDate": "2026-08-19",
+      "rating": "6.4",
+      "votes": 263,
+      "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1384216,
+      "mediaType": "movie",
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yhCHnkidQdR3lksbdyFxduRXFPK.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "6.7",
+      "votes": 180,
+      "url": "https://www.themoviedb.org/movie/1384216"
     },
     {
       "id": 1083381,
@@ -96,46 +108,34 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 3104,
+      "votes": 3105,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
-      "id": 1423191,
+      "id": 1081003,
       "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/qku2uWSoJ9amQV5MWo1Eek29iji.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ddfXMkaPViSrg0P5aoYGFMc58x2.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1480574,
-      "mediaType": "movie",
-      "title": "Just Play Dead",
-      "overview": "A criminal mastermind plans to fake his death for insurance money while framing his wife's lover. His wife plots to kill him for real and take it all. Both race to outmanoeuvre each other in a deadly battle of wits.",
-      "poster": "https://image.tmdb.org/t/p/w500/e0WaDBrrBAMcq2stAXCR7rXEsiw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lBWfbmUj9Jw0EM1OYtDXr0B5FPW.jpg",
-      "releaseDate": "2026-08-28",
-      "rating": "6.8",
-      "votes": 21,
-      "url": "https://www.themoviedb.org/movie/1480574"
+      "title": "Supergirl",
+      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/uhzRnTW4DM13UQBvZP3eVNzQTuz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/54KIfdTEzOliHDKx0OkzYGqAICx.jpg",
+      "releaseDate": "2026-06-24",
+      "rating": "6.7",
+      "votes": 2136,
+      "url": "https://www.themoviedb.org/movie/1081003"
     }
   ],
   "trendingTv": [
     {
-      "id": 236235,
+      "id": 95350,
       "mediaType": "tv",
-      "title": "The Gentlemen",
-      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "poster": "https://image.tmdb.org/t/p/w500/8sQ0oDunlRpesa5vIO6UPhbJNxC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
-      "releaseDate": "2024-03-07",
-      "rating": "7.8",
-      "votes": 856,
-      "url": "https://www.themoviedb.org/tv/236235"
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
+      "releaseDate": "2026-08-16",
+      "rating": "8.3",
+      "votes": 249,
+      "url": "https://www.themoviedb.org/tv/95350"
     },
     {
       "id": 125988,
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2552,
+      "votes": 2556,
       "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 95350,
-      "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.3",
-      "votes": 246,
-      "url": "https://www.themoviedb.org/tv/95350"
     },
     {
       "id": 108978,
@@ -170,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3206,
+      "votes": 3208,
       "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 236235,
+      "mediaType": "tv",
+      "title": "The Gentlemen",
+      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
+      "poster": "https://image.tmdb.org/t/p/w500/8sQ0oDunlRpesa5vIO6UPhbJNxC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
+      "releaseDate": "2024-03-07",
+      "rating": "7.8",
+      "votes": 858,
+      "url": "https://www.themoviedb.org/tv/236235"
     },
     {
       "id": 196322,
@@ -182,32 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dpIRAaLAbjFNGQ4YeqGlEVhhtkM.jpg",
       "releaseDate": "2024-05-07",
       "rating": "7.8",
-      "votes": 751,
+      "votes": 753,
       "url": "https://www.themoviedb.org/tv/196322"
     },
     {
-      "id": 247168,
+      "id": 290193,
       "mediaType": "tv",
-      "title": "Chad Powers",
-      "overview": "Eight years after an unforgivable mistake nukes his promising college football career, hotshot quarterback Russ Holliday tries to resurrect his dreams by disguising himself as Chad Powers - a talented oddball who walks on to the struggling South Georgia Catfish.",
-      "poster": "https://image.tmdb.org/t/p/w500/wgMS8irQKfMrR6mJhKtK6vbxDTC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r7uH0Wa7rzHyK83XQpxRZVH76u7.jpg",
-      "releaseDate": "2025-09-30",
-      "rating": "8.0",
-      "votes": 107,
-      "url": "https://www.themoviedb.org/tv/247168"
-    },
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2613,
-      "url": "https://www.themoviedb.org/tv/97546"
+      "title": "Mousetrap",
+      "overview": "A reclusive writer wakes to find his identity stolen — and must ally with a ruthless loan shark to reclaim his life from a man known as \"The Rat.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/2mwgHfOyrFrmvozjFoEXHRdfGhv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3bHz9dYSZ5XDxY0zDaBpYgUOhE2.jpg",
+      "releaseDate": "2026-08-28",
+      "rating": "7.5",
+      "votes": 24,
+      "url": "https://www.themoviedb.org/tv/290193"
     },
     {
       "id": 30984,
@@ -222,6 +210,30 @@
       "url": "https://www.themoviedb.org/tv/30984"
     },
     {
+      "id": 247168,
+      "mediaType": "tv",
+      "title": "Chad Powers",
+      "overview": "Eight years after an unforgivable mistake nukes his promising college football career, hotshot quarterback Russ Holliday tries to resurrect his dreams by disguising himself as Chad Powers - a talented oddball who walks on to the struggling South Georgia Catfish.",
+      "poster": "https://image.tmdb.org/t/p/w500/buPiLEtOQ7kJrRh9FsXucjkZeJn.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r7uH0Wa7rzHyK83XQpxRZVH76u7.jpg",
+      "releaseDate": "2025-09-30",
+      "rating": "8.0",
+      "votes": 108,
+      "url": "https://www.themoviedb.org/tv/247168"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2615,
+      "url": "https://www.themoviedb.org/tv/97546"
+    },
+    {
       "id": 287238,
       "mediaType": "tv",
       "title": "Furious",
@@ -230,20 +242,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/iAOPgUlh7inOebFrUFHAjnFRCGS.jpg",
       "releaseDate": "2026-07-27",
       "rating": "7.2",
-      "votes": 90,
+      "votes": 91,
       "url": "https://www.themoviedb.org/tv/287238"
-    },
-    {
-      "id": 103516,
-      "mediaType": "tv",
-      "title": "Star Trek: Strange New Worlds",
-      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-      "poster": "https://image.tmdb.org/t/p/w500/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
-      "releaseDate": "2022-05-05",
-      "rating": "7.9",
-      "votes": 831,
-      "url": "https://www.themoviedb.org/tv/103516"
     }
   ],
   "upcomingMovies": [
@@ -277,7 +277,7 @@
       "title": "Hope",
       "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
       "poster": "https://image.tmdb.org/t/p/w500/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
       "releaseDate": "2026-09-25",
       "rating": "8.3",
       "votes": 25,
@@ -324,11 +324,11 @@
       "mediaType": "movie",
       "title": "Practical Magic 2",
       "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/7jCV8dkRFK3DGJ4dTqlvrMTFPwZ.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/mAm9YMk1VPGhPTh7N9R00xvVmGj.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "4.0",
-      "votes": 1,
+      "rating": "3.5",
+      "votes": 2,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
