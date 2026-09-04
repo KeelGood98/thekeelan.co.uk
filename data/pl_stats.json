@@ -1,8 +1,19 @@
 {
-  "updated": "2026-09-04T16:25:18.257732+00:00",
+  "updated": "2026-09-04T20:48:05.750654+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
+    {
+      "name": "Alexander Isak",
+      "firstName": "Alexander",
+      "lastName": "Isak",
+      "nationality": "Sweden",
+      "team": "Liverpool",
+      "teamBadge": "https://crests.football-data.org/64.png",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "Bruno Fernandes",
       "firstName": "",
@@ -101,17 +112,6 @@
       "goals": 1,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Martin Ødegaard",
-      "firstName": "Martin",
-      "lastName": "Ødegaard",
-      "nationality": "Norway",
-      "team": "Arsenal",
-      "teamBadge": "https://crests.football-data.org/57.png",
-      "goals": 1,
-      "assists": 0,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -134,15 +134,15 @@
       "played": 2
     },
     {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalsFor": 6,
+      "played": 3
+    },
+    {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
       "goalsFor": 5,
-      "played": 2
-    },
-    {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 4,
       "played": 2
     }
   ],
@@ -211,7 +211,7 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 10,
+    "position": 11,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
