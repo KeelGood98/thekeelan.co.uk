@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-05T15:17:51.959041+00:00",
+  "updated": "2026-09-05T20:26:06.960664+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -43,6 +43,17 @@
       "nationality": "England",
       "team": "Arsenal",
       "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Vitaly Janelt",
+      "firstName": "Vitaly",
+      "lastName": "Janelt",
+      "nationality": "Germany",
+      "team": "Brentford",
+      "teamBadge": "https://crests.football-data.org/402.png",
       "goals": 2,
       "assists": 0,
       "penalties": 0
@@ -101,20 +112,15 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Cole Palmer",
-      "firstName": "Cole",
-      "lastName": "Palmer",
-      "nationality": "England",
-      "team": "Chelsea",
-      "teamBadge": "https://crests.football-data.org/61.png",
-      "goals": 2,
-      "assists": 1,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
+    {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalsFor": 8,
+      "played": 3
+    },
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
@@ -126,12 +132,6 @@
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 7,
       "played": 2
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsFor": 7,
-      "played": 3
     },
     {
       "name": "Liverpool",
@@ -148,34 +148,34 @@
   ],
   "bestDefences": [
     {
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
+      "goalsAgainst": 0,
+      "played": 3
+    },
+    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 0,
       "played": 2
     },
     {
-      "name": "Hull City",
-      "badge": "https://crests.football-data.org/322.png",
-      "goalsAgainst": 0,
+      "name": "Everton",
+      "badge": "https://crests.football-data.org/62.png",
+      "goalsAgainst": 1,
       "played": 2
     },
     {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
-      "goalsAgainst": 1,
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsAgainst": 2,
       "played": 3
     },
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
-      "goalsAgainst": 1,
+      "goalsAgainst": 2,
       "played": 3
-    },
-    {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 1,
-      "played": 2
     }
   ],
   "goalDifferenceLeaders": [
@@ -195,7 +195,7 @@
       "name": "Hull City",
       "badge": "https://crests.football-data.org/322.png",
       "goalDifference": 3,
-      "played": 2
+      "played": 3
     },
     {
       "name": "Brentford",
@@ -204,9 +204,9 @@
       "played": 3
     },
     {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
-      "goalDifference": 2,
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalDifference": 3,
       "played": 3
     }
   ],
