@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T15:30:48.139261+00:00",
+  "updated": "2026-09-06T20:27:17.783170+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -37,10 +37,32 @@
       "penalties": 1
     },
     {
+      "name": "Kai Havertz",
+      "firstName": "Kai",
+      "lastName": "Havertz",
+      "nationality": "Germany",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Bukayo Saka",
       "firstName": "Bukayo",
       "lastName": "Saka",
       "nationality": "England",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 2,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Martin Ødegaard",
+      "firstName": "Martin",
+      "lastName": "Ødegaard",
+      "nationality": "Norway",
       "team": "Arsenal",
       "teamBadge": "https://crests.football-data.org/57.png",
       "goals": 2,
@@ -90,31 +112,15 @@
       "goals": 2,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "João Pedro",
-      "firstName": "",
-      "lastName": "João Pedro",
-      "nationality": "Brazil",
-      "team": "Chelsea",
-      "teamBadge": "https://crests.football-data.org/61.png",
-      "goals": 2,
-      "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Joshua King",
-      "firstName": "Joshua",
-      "lastName": "King",
-      "nationality": "England",
-      "team": "Fulham",
-      "teamBadge": "https://crests.football-data.org/63.png",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
+    {
+      "name": "Chelsea",
+      "badge": "https://crests.football-data.org/61.png",
+      "goalsFor": 8,
+      "played": 3
+    },
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
@@ -128,35 +134,29 @@
       "played": 3
     },
     {
-      "name": "Chelsea",
-      "badge": "https://crests.football-data.org/61.png",
-      "goalsFor": 7,
-      "played": 3
-    },
-    {
       "name": "Manchester United",
       "badge": "https://crests.football-data.org/66.png",
       "goalsFor": 7,
       "played": 3
     },
     {
-      "name": "Liverpool",
-      "badge": "https://crests.football-data.org/64.png",
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
       "goalsFor": 6,
       "played": 3
     }
   ],
   "bestDefences": [
     {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
       "goalsAgainst": 0,
       "played": 3
     },
     {
-      "name": "Hull City",
-      "badge": "https://crests.football-data.org/322.png",
-      "goalsAgainst": 0,
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 1,
       "played": 3
     },
     {
@@ -188,7 +188,7 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 4,
+      "goalDifference": 5,
       "played": 3
     },
     {
