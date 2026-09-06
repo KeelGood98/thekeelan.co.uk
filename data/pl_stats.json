@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T11:01:59.141757+00:00",
+  "updated": "2026-09-06T15:30:48.139261+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -131,39 +131,33 @@
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 7,
-      "played": 2
+      "played": 3
+    },
+    {
+      "name": "Manchester United",
+      "badge": "https://crests.football-data.org/66.png",
+      "goalsFor": 7,
+      "played": 3
     },
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
       "goalsFor": 6,
       "played": 3
-    },
-    {
-      "name": "Newcastle",
-      "badge": "https://crests.football-data.org/67.png",
-      "goalsFor": 6,
-      "played": 3
     }
   ],
   "bestDefences": [
+    {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 0,
+      "played": 3
+    },
     {
       "name": "Hull City",
       "badge": "https://crests.football-data.org/322.png",
       "goalsAgainst": 0,
       "played": 3
-    },
-    {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalsAgainst": 0,
-      "played": 2
-    },
-    {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 1,
-      "played": 2
     },
     {
       "name": "Manchester City",
@@ -174,6 +168,12 @@
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
+      "goalsAgainst": 2,
+      "played": 3
+    },
+    {
+      "name": "Leeds United",
+      "badge": "https://crests.football-data.org/341.png",
       "goalsAgainst": 2,
       "played": 3
     }
@@ -189,7 +189,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalDifference": 4,
-      "played": 2
+      "played": 3
     },
     {
       "name": "Hull City",
@@ -211,17 +211,17 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 12,
+    "position": 11,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 2,
+    "played": 3,
     "won": 1,
-    "drawn": 0,
+    "drawn": 1,
     "lost": 1,
-    "goalsFor": 5,
-    "goalsAgainst": 4,
+    "goalsFor": 7,
+    "goalsAgainst": 6,
     "goalDifference": 1,
-    "points": 3
+    "points": 4
   }
 }

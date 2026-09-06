@@ -1,15 +1,15 @@
 {
-  "updated": "2026-09-06T11:01:58.513277+00:00",
+  "updated": "2026-09-06T15:30:47.267776+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 560567,
-    "date": "Sun 06 Sep, 14:00",
-    "sortDate": "2026-09-06T14:00:00+01:00",
+    "id": 560580,
+    "date": "Sun 13 Sep, 16:30",
+    "sortDate": "2026-09-13T16:30:00+01:00",
     "competition": "Premier League",
-    "matchday": 3,
-    "home": "Everton",
-    "away": "Manchester United",
+    "matchday": 4,
+    "home": "Manchester United",
+    "away": "Manchester City",
     "score": "",
     "halfTimeScore": "",
     "winner": "",
@@ -50,9 +50,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 560567,
       "date": "Sun 06 Sep, 14:00",
@@ -61,14 +59,16 @@
       "matchday": 3,
       "home": "Everton",
       "away": "Manchester United",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "2-2",
+      "halfTimeScore": "0-0",
+      "winner": "Draw",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 560580,
       "date": "Sun 13 Sep, 16:30",
@@ -173,6 +173,22 @@
       "matchday": 10,
       "home": "Manchester United",
       "away": "Aston Villa",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560645,
+      "date": "Sat 21 Nov, 15:00",
+      "sortDate": "2026-11-21T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 11,
+      "home": "Liverpool",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
@@ -223,13 +239,13 @@
       "matchday": 3,
       "home": "Everton",
       "away": "Manchester United",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "2-2",
+      "halfTimeScore": "0-0",
+      "winner": "Draw",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 560580,
@@ -335,6 +351,22 @@
       "matchday": 10,
       "home": "Manchester United",
       "away": "Aston Villa",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560645,
+      "date": "Sat 21 Nov, 15:00",
+      "sortDate": "2026-11-21T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 11,
+      "home": "Liverpool",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
