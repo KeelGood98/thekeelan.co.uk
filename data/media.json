@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06T22:20:06.466036+00:00",
+  "updated": "2026-09-07T14:26:17.306140+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,32 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ziXF8wIBguHNCeplNthUlDTCZP8.jpg",
       "releaseDate": "2026-09-03",
       "rating": "6.7",
-      "votes": 273,
+      "votes": 303,
       "url": "https://www.themoviedb.org/movie/1386315"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.9",
-      "votes": 2468,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1204680,
-      "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
-      "releaseDate": "2026-08-20",
-      "rating": "7.6",
-      "votes": 181,
-      "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
       "id": 1368337,
@@ -48,20 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3514,
+      "votes": 3527,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
-      "id": 860508,
+      "id": 969681,
       "mediaType": "movie",
-      "title": "The Whisper Man",
-      "overview": "When his young son vanishes, a widower enlists help from his estranged father, a retired detective who put away the serial killer now linked to the case.",
-      "poster": "https://image.tmdb.org/t/p/w500/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xSJJQeAp9GBFmiKusysTRG6jQjt.jpg",
-      "releaseDate": "2026-08-27",
-      "rating": "6.8",
-      "votes": 475,
-      "url": "https://www.themoviedb.org/movie/860508"
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.9",
+      "votes": 2486,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
+      "releaseDate": "2026-08-20",
+      "rating": "7.6",
+      "votes": 195,
+      "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
       "id": 1339713,
@@ -72,8 +60,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5335,
+      "votes": 5350,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "6.2",
+      "votes": 264,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 860508,
+      "mediaType": "movie",
+      "title": "The Whisper Man",
+      "overview": "When his young son vanishes, a widower enlists help from his estranged father, a retired detective who put away the serial killer now linked to the case.",
+      "poster": "https://image.tmdb.org/t/p/w500/6UqflU8Qqkz7Dq4swJPqs0ZJjY4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xSJJQeAp9GBFmiKusysTRG6jQjt.jpg",
+      "releaseDate": "2026-08-27",
+      "rating": "6.8",
+      "votes": 497,
+      "url": "https://www.themoviedb.org/movie/860508"
     },
     {
       "id": 1137844,
@@ -81,10 +93,10 @@
       "title": "Mayday",
       "overview": "When a U.S. Navy pilot on a top-secret mission during the Cold War gets trapped behind enemy lines, his only chance at survival is to form an alliance with an eccentric ex-KGB agent.",
       "poster": "https://image.tmdb.org/t/p/w500/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5N456LS26jNCKYMcJWbEeDsvKWf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4gyx49ibwQslyrwuUS1c58PJEEd.jpg",
       "releaseDate": "2026-09-03",
-      "rating": "7.9",
-      "votes": 202,
+      "rating": "8.0",
+      "votes": 256,
       "url": "https://www.themoviedb.org/movie/1137844"
     },
     {
@@ -96,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dqmMWNWfLnExDRpMtIMqI97GQFR.jpg",
       "releaseDate": "2026-05-27",
       "rating": "7.1",
-      "votes": 3146,
+      "votes": 3159,
       "url": "https://www.themoviedb.org/movie/1083381"
     },
     {
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.4",
-      "votes": 306,
+      "votes": 310,
       "url": "https://www.themoviedb.org/movie/1288445"
-    },
-    {
-      "id": 1514026,
-      "mediaType": "movie",
-      "title": "Buddy",
-      "overview": "A magical, singing orange unicorn holds his cast hostage in a surreal TV-show dimension, as he becomes more and more demented.",
-      "poster": "https://image.tmdb.org/t/p/w500/6Lh4ZlsAISFQFVfLZ90sE9ycVnN.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
-      "releaseDate": "2026-08-27",
-      "rating": "8.3",
-      "votes": 35,
-      "url": "https://www.themoviedb.org/movie/1514026"
     }
   ],
   "trendingTv": [
@@ -131,10 +131,10 @@
       "title": "Silo",
       "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
       "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
       "releaseDate": "2023-05-04",
       "rating": "8.2",
-      "votes": 2592,
+      "votes": 2596,
       "url": "https://www.themoviedb.org/tv/125988"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mdbWfpbWhvxgG3k5MHpo90UgAUe.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.3",
-      "votes": 269,
+      "votes": 279,
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
@@ -158,20 +158,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
       "releaseDate": "2024-03-07",
       "rating": "7.8",
-      "votes": 878,
+      "votes": 879,
       "url": "https://www.themoviedb.org/tv/236235"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2261,
-      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 108978,
@@ -182,20 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3229,
+      "votes": 3234,
       "url": "https://www.themoviedb.org/tv/108978"
     },
     {
-      "id": 113962,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.1",
-      "votes": 1468,
-      "url": "https://www.themoviedb.org/tv/113962"
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2262,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 37854,
@@ -206,8 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
       "releaseDate": "1999-10-20",
       "rating": "8.7",
-      "votes": 5524,
+      "votes": 5527,
       "url": "https://www.themoviedb.org/tv/37854"
+    },
+    {
+      "id": 113962,
+      "mediaType": "tv",
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.1",
+      "votes": 1474,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 196322,
@@ -222,6 +222,18 @@
       "url": "https://www.themoviedb.org/tv/196322"
     },
     {
+      "id": 615,
+      "mediaType": "tv",
+      "title": "Futurama",
+      "overview": "The adventures of a late-20th-century New York City pizza delivery boy, Philip J. Fry, who, after being unwittingly cryogenically frozen for one thousand years, finds employment at Planet Express, an interplanetary delivery company in the retro-futuristic 31st century.",
+      "poster": "https://image.tmdb.org/t/p/w500/eM8bbTn8C8vUwwS6upzzm7gX31u.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4xKG4S1IyLIglHbCYGJDsptgQNh.jpg",
+      "releaseDate": "1999-03-28",
+      "rating": "8.4",
+      "votes": 3883,
+      "url": "https://www.themoviedb.org/tv/615"
+    },
+    {
       "id": 329471,
       "mediaType": "tv",
       "title": "The Grand Tour",
@@ -232,18 +244,6 @@
       "rating": "9.6",
       "votes": 5,
       "url": "https://www.themoviedb.org/tv/329471"
-    },
-    {
-      "id": 247168,
-      "mediaType": "tv",
-      "title": "Chad Powers",
-      "overview": "Eight years after an unforgivable mistake nukes his promising college football career, hotshot quarterback Russ Holliday tries to resurrect his dreams by disguising himself as Chad Powers - a talented oddball who walks on to the struggling South Georgia Catfish.",
-      "poster": "https://image.tmdb.org/t/p/w500/aXetUcD4wfalCj90QmT6kSvwO6D.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RxRq55gx2AnAglTA5Jj7rIxX8I.jpg",
-      "releaseDate": "2025-09-30",
-      "rating": "8.0",
-      "votes": 114,
-      "url": "https://www.themoviedb.org/tv/247168"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/sY65bOZcjQqO6VdpOXLN5VcW61e.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yQXU4rgJ5LVCzn16SeIg34T35lV.jpg",
       "releaseDate": "2026-09-09",
-      "rating": "6.6",
-      "votes": 18,
+      "rating": "6.8",
+      "votes": 19,
       "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
@@ -291,8 +291,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "9.4",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
@@ -303,8 +303,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/7jCV8dkRFK3DGJ4dTqlvrMTFPwZ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "6.2",
-      "votes": 7,
+      "rating": "6.7",
+      "votes": 8,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
@@ -316,7 +316,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/apfyLCPVFttB8oXcsLJ7q0NSFLx.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.8",
-      "votes": 345,
+      "votes": 346,
       "url": "https://www.themoviedb.org/movie/1318413"
     },
     {
@@ -352,7 +352,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rphor0XQcYO4CQoQ6auaQm3UPap.jpg",
       "releaseDate": "1996-11-22",
       "rating": "7.9",
-      "votes": 2346,
+      "votes": 2347,
       "url": "https://www.themoviedb.org/movie/37797"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2466,
+      "votes": 2483,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -387,10 +387,10 @@
       "title": "Coyote vs. Acme",
       "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
       "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.6",
-      "votes": 176,
+      "votes": 194,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qDa0fqDqIBCovRp975RvtGPcuN3.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.4",
-      "votes": 297,
+      "votes": 307,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -411,10 +411,10 @@
       "title": "Colony",
       "overview": "Professor Se-jeong is thrust into a bloody nightmare when a rapidly mutating virus is released during a biotech conference causing authorities to seal the facility. Trapped inside with no escape, Se-jeong along with a small group of survivors must fight to stay alive while the infected undergo horrific transformations.",
       "poster": "https://image.tmdb.org/t/p/w500/tN799oUR0f1gUKDYdMNrDaY7I51.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qBZd6U5yDI922M2d2lACM1uhK4W.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 696,
+      "votes": 705,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-02",
       "rating": "6.2",
-      "votes": 280,
+      "votes": 281,
       "url": "https://www.themoviedb.org/movie/1284465"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
       "releaseDate": "2026-08-26",
       "rating": "6.7",
-      "votes": 212,
+      "votes": 216,
       "url": "https://www.themoviedb.org/movie/1384216"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.4",
-      "votes": 449,
+      "votes": 451,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -485,8 +485,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/pR7SIX3AwqdoD96OI44oLG98e7g.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/34z9eBtEBv6QoroLuUA55cU3e8Q.jpg",
       "releaseDate": "2026-08-28",
-      "rating": "6.2",
-      "votes": 52,
+      "rating": "6.1",
+      "votes": 55,
       "url": "https://www.themoviedb.org/movie/1288059"
     }
   ],
