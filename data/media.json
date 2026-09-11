@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-11T13:00:02.012236+00:00",
+  "updated": "2026-09-11T17:53:59.831933+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dmwb15BCkqjoXA9dXIsoY2Hn10F.jpg",
       "releaseDate": "2026-07-08",
       "rating": "6.9",
-      "votes": 474,
+      "votes": 479,
       "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
@@ -24,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2575,
+      "votes": 2582,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 3601,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1137844,
@@ -35,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4gyx49ibwQslyrwuUS1c58PJEEd.jpg",
       "releaseDate": "2026-09-03",
-      "rating": "7.8",
-      "votes": 393,
+      "rating": "7.9",
+      "votes": 400,
       "url": "https://www.themoviedb.org/movie/1137844"
     },
     {
@@ -48,20 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jzBWExXacS33rMQ2zLBrqIVweyG.jpg",
       "releaseDate": "2026-09-03",
       "rating": "6.7",
-      "votes": 376,
+      "votes": 379,
       "url": "https://www.themoviedb.org/movie/1386315"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 3596,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1302904,
@@ -71,8 +71,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-09",
-      "rating": "6.2",
-      "votes": 21,
+      "rating": "6.3",
+      "votes": 23,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
@@ -84,20 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5424,
+      "votes": 5427,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 1204680,
+      "id": 1288445,
       "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
-      "releaseDate": "2026-08-20",
-      "rating": "7.6",
-      "votes": 293,
-      "url": "https://www.themoviedb.org/movie/1204680"
+      "title": "Mutiny",
+      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+      "releaseDate": "2026-08-19",
+      "rating": "6.5",
+      "votes": 355,
+      "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
       "id": 1433367,
@@ -108,23 +108,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bpll0oy6gHwLvypfFNfT2QI4VkT.jpg",
       "releaseDate": "2026-08-06",
       "rating": "6.8",
-      "votes": 92,
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
-      "id": 1084244,
+      "id": 1440098,
       "mediaType": "movie",
-      "title": "Toy Story 5",
-      "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
-      "poster": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
-      "releaseDate": "2026-06-17",
-      "rating": "8.4",
-      "votes": 2073,
-      "url": "https://www.themoviedb.org/movie/1084244"
+      "title": "Drawn Together",
+      "overview": "Marfil Cortés, a daughter of a wealthy Spanish businessman, is kidnapped and released, leading her father to hire Sebastian Moore as a bodyguard. Despite initial clashes, they form an irremediable attraction, navigating a world where no one is who they say they are.",
+      "poster": "https://image.tmdb.org/t/p/w500/6rpvddXbaQPOi0fB2HKWbZ3uUSg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i65y7cMae36K0giN0GRaMjAHUru.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "6.5",
+      "votes": 35,
+      "url": "https://www.themoviedb.org/movie/1440098"
     }
   ],
   "trendingTv": [
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2639,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
     {
       "id": 95350,
       "mediaType": "tv",
@@ -134,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.3",
-      "votes": 308,
+      "votes": 309,
       "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 108978,
+      "mediaType": "tv",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3270,
+      "url": "https://www.themoviedb.org/tv/108978"
     },
     {
       "id": 236235,
@@ -158,20 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mKOINOeqqXPpuGnf6DHDK4o02uR.jpg",
       "releaseDate": "2024-05-07",
       "rating": "7.8",
-      "votes": 765,
+      "votes": 767,
       "url": "https://www.themoviedb.org/tv/196322"
     },
     {
-      "id": 108978,
+      "id": 258230,
       "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3267,
-      "url": "https://www.themoviedb.org/tv/108978"
+      "title": "Last Seen",
+      "overview": "When emergency dispatcher Ian Ridley receives a frantic call from a teenager he believes could be his long-missing daughter, he stops at nothing to find her.",
+      "poster": "https://image.tmdb.org/t/p/w500/vozJZjHv0Yyv4PjoOxF5tVMUGFI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kgaQnDdDaPqvGN7i8LLz1aWJdjP.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "8.9",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/258230"
     },
     {
       "id": 300507,
@@ -182,68 +206,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lmtTtOjsIBxwKD7LsAD5eeyhq1g.jpg",
       "releaseDate": "2026-09-10",
       "rating": "7.8",
-      "votes": 6,
+      "votes": 10,
       "url": "https://www.themoviedb.org/tv/300507"
     },
     {
-      "id": 125988,
+      "id": 246473,
       "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2636,
-      "url": "https://www.themoviedb.org/tv/125988"
+      "title": "Made in Korea",
+      "overview": "In 1970s South Korea, follow two men on opposite sides of power — one driven by ambition, the other by justice. As their worlds collide, greed, loyalty, and survival intertwine in a battle that will shape a nation.",
+      "poster": "https://image.tmdb.org/t/p/w500/cyBg9FJ2AmTWEGktA43gMo4t0Vj.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3GmRS3efCTp6jumogKOxYBrV5mO.jpg",
+      "releaseDate": "2025-12-24",
+      "rating": "8.1",
+      "votes": 34,
+      "url": "https://www.themoviedb.org/tv/246473"
     },
     {
-      "id": 294636,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "The Ordinary Jackpot",
-      "overview": "An ordinary office worker wins the lottery – the amount isn't enough for him to quit his job, but it's enough to give him a new outlook on life.",
-      "poster": "https://image.tmdb.org/t/p/w500/mkHMNq0PUHDVn3w5QPM2hcnOdVb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2vN1SjkpXT6oCBxeE9GOK5NVS2b.jpg",
-      "releaseDate": "2026-09-10",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.3",
+      "votes": 2266,
+      "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 282326,
+      "mediaType": "tv",
+      "title": "Against the Current",
+      "overview": "Shen Jialan, once a nobleman's granddaughter, falls from grace after her family is falsely accused of treason. Abandoned by her fiancé Lin Jinqi, she is forced to assume a servant's identity in his household. Despite hardships, she refuses to bow to fate. With resilience and wit, she rises above class barriers, wins Lin Jinqi's heart, earns the family's respect, and ultimately clears her family's name.",
+      "poster": "https://image.tmdb.org/t/p/w500/wZTgC4VopxiKqk8ZNsJu3E5nBBS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mZSewqVlY4F2F2Axm7hiG6KBOBp.jpg",
+      "releaseDate": "2026-09-11",
       "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/294636"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5530,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 325755,
-      "mediaType": "tv",
-      "title": "The Perfect Lie",
-      "overview": "When one of their own is killed in a house fire, four picture-perfect couples are forced to question everything they thought they knew about each other.",
-      "poster": "https://image.tmdb.org/t/p/w500/a8qjbVX7lo1v7m5Awzhx7Ptk8gO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vYO9OkYHSNfYuqz6VMS4aCCfRb8.jpg",
-      "releaseDate": "2026-09-10",
-      "rating": "7.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/tv/325755"
-    },
-    {
-      "id": 103516,
-      "mediaType": "tv",
-      "title": "Star Trek: Strange New Worlds",
-      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-      "poster": "https://image.tmdb.org/t/p/w500/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
-      "releaseDate": "2022-05-05",
-      "rating": "7.9",
-      "votes": 843,
-      "url": "https://www.themoviedb.org/tv/103516"
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/282326"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/o1UvmHqE2fh0Z62wls5bdrNtBN2.jpg",
       "releaseDate": "2026-09-25",
       "rating": "8.1",
-      "votes": 36,
+      "votes": 37,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -284,18 +284,6 @@
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
-      "id": 1263337,
-      "mediaType": "movie",
-      "title": "Heart of the Beast",
-      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-      "releaseDate": "2026-09-23",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1263337"
-    },
-    {
       "id": 1248832,
       "mediaType": "movie",
       "title": "Digger",
@@ -306,6 +294,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1248832"
+    },
+    {
+      "id": 1263337,
+      "mediaType": "movie",
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
       "id": 1469342,
@@ -344,18 +344,6 @@
       "url": "https://www.themoviedb.org/movie/1433583"
     },
     {
-      "id": 37797,
-      "mediaType": "movie",
-      "title": "Whisper of the Heart",
-      "overview": "Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: \"Seiji Amasawa.\"",
-      "poster": "https://image.tmdb.org/t/p/w500/5FROLD8zpWFs9ja7aYho1uOMJHg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rphor0XQcYO4CQoQ6auaQm3UPap.jpg",
-      "releaseDate": "1996-11-22",
-      "rating": "7.9",
-      "votes": 2349,
-      "url": "https://www.themoviedb.org/movie/37797"
-    },
-    {
       "id": 1283515,
       "mediaType": "movie",
       "title": "Verity",
@@ -366,6 +354,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1283515"
+    },
+    {
+      "id": 1198654,
+      "mediaType": "movie",
+      "title": "Bad Apples",
+      "overview": "A struggling primary school teacher begins to make some questionable decisions after one of her students is injured.",
+      "poster": "https://image.tmdb.org/t/p/w500/60BxAjKM20ABTSYnWZcJ8ExiVNL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/A5sGEzVMjvbgh5ZniaHBXAxppKQ.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "7.4",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/movie/1198654"
     }
   ],
   "nowPlayingMovies": [
@@ -374,11 +374,11 @@
       "mediaType": "movie",
       "title": "Coyote vs. Acme",
       "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/orkLtdgMGiO9rTVMqJ1kKwrnup1.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.6",
-      "votes": 291,
+      "votes": 300,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.4",
-      "votes": 350,
+      "votes": 357,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 747,
+      "votes": 750,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -413,21 +413,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/oiIPU4lvnI0Ag2K9cyAi44eCaoE.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tBRSSfgqOAq7YlG8udcoJIBm2FG.jpg",
       "releaseDate": "2026-08-26",
-      "rating": "7.9",
-      "votes": 71,
+      "rating": "8.0",
+      "votes": 72,
       "url": "https://www.themoviedb.org/movie/1213243"
-    },
-    {
-      "id": 1101412,
-      "mediaType": "movie",
-      "title": "Fall 2: Deadpoint",
-      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yQXU4rgJ5LVCzn16SeIg34T35lV.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "6.8",
-      "votes": 24,
-      "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
       "id": 1433367,
@@ -438,20 +426,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bpll0oy6gHwLvypfFNfT2QI4VkT.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.8",
-      "votes": 91,
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
-      "id": 1284465,
+      "id": 1101412,
       "mediaType": "movie",
-      "title": "The Death of Robin Hood",
-      "overview": "Grappling with his past after a life of crime and murder, Robin Hood finds himself gravely injured after a battle he thought would be his last. In the hands of a mysterious woman, he is offered a chance at salvation.",
-      "poster": "https://image.tmdb.org/t/p/w500/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
-      "releaseDate": "2026-09-02",
-      "rating": "6.2",
-      "votes": 294,
-      "url": "https://www.themoviedb.org/movie/1284465"
+      "title": "Fall 2: Deadpoint",
+      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "6.8",
+      "votes": 25,
+      "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
       "id": 1101383,
@@ -466,6 +454,18 @@
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
+      "id": 1284465,
+      "mediaType": "movie",
+      "title": "The Death of Robin Hood",
+      "overview": "Grappling with his past after a life of crime and murder, Robin Hood finds himself gravely injured after a battle he thought would be his last. In the hands of a mysterious woman, he is offered a chance at salvation.",
+      "poster": "https://image.tmdb.org/t/p/w500/13MmRwmG5NmaMfU8qNrtgGXisiD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
+      "releaseDate": "2026-09-02",
+      "rating": "6.2",
+      "votes": 295,
+      "url": "https://www.themoviedb.org/movie/1284465"
+    },
+    {
       "id": 1302904,
       "mediaType": "movie",
       "title": "Practical Magic 2",
@@ -473,21 +473,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "6.4",
-      "votes": 20,
+      "rating": "6.3",
+      "votes": 23,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
-      "id": 1384216,
+      "id": 1185806,
       "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/A7i16oDi03qrKep5pBfuTWNUTb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/quAHqi4zBrB5fIfHvgrqiG4xzAC.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "6.6",
-      "votes": 240,
-      "url": "https://www.themoviedb.org/movie/1384216"
+      "title": "PAW Patrol: The Dino Movie",
+      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
+      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.0",
+      "votes": 51,
+      "url": "https://www.themoviedb.org/movie/1185806"
     }
   ],
   "links": [
