@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-12T15:34:50.846666+00:00",
+  "updated": "2026-09-12T20:37:08.955417+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -128,6 +128,12 @@
       "played": 3
     },
     {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsFor": 7,
+      "played": 4
+    },
+    {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsFor": 7,
@@ -138,12 +144,6 @@
       "badge": "https://crests.football-data.org/402.png",
       "goalsFor": 7,
       "played": 4
-    },
-    {
-      "name": "Manchester United",
-      "badge": "https://crests.football-data.org/66.png",
-      "goalsFor": 7,
-      "played": 3
     }
   ],
   "bestDefences": [
@@ -151,7 +151,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 1,
-      "played": 3
+      "played": 4
     },
     {
       "name": "Manchester City",
@@ -175,19 +175,19 @@
       "name": "Everton",
       "badge": "https://crests.football-data.org/62.png",
       "goalsAgainst": 3,
-      "played": 3
+      "played": 4
     }
   ],
   "goalDifferenceLeaders": [
     {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 5,
-      "played": 3
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
+      "goalDifference": 6,
+      "played": 4
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
       "goalDifference": 5,
       "played": 3
     },
