@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T16:23:19.733398+00:00",
+  "updated": "2026-09-13T20:53:28.774033+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -22,13 +22,13 @@
       "fullName": "Manchester City FC",
       "badge": "https://crests.football-data.org/65.png",
       "played": 4,
-      "won": 3,
-      "drawn": 1,
+      "won": 4,
+      "drawn": 0,
       "lost": 0,
-      "goalsFor": 7,
+      "goalsFor": 8,
       "goalsAgainst": 2,
-      "goalDifference": 5,
-      "points": 10
+      "goalDifference": 6,
+      "points": 12
     },
     {
       "position": 3,
@@ -144,20 +144,6 @@
     },
     {
       "position": 11,
-      "name": "Manchester United",
-      "fullName": "Manchester United FC",
-      "badge": "https://crests.football-data.org/66.png",
-      "played": 4,
-      "won": 1,
-      "drawn": 2,
-      "lost": 1,
-      "goalsFor": 7,
-      "goalsAgainst": 6,
-      "goalDifference": 1,
-      "points": 5
-    },
-    {
-      "position": 12,
       "name": "Leeds United",
       "fullName": "Leeds United FC",
       "badge": "https://crests.football-data.org/341.png",
@@ -171,7 +157,7 @@
       "points": 5
     },
     {
-      "position": 13,
+      "position": 12,
       "name": "Nott'm Forest",
       "fullName": "Nottingham Forest FC",
       "badge": "https://crests.football-data.org/351.png",
@@ -183,6 +169,20 @@
       "goalsAgainst": 4,
       "goalDifference": 0,
       "points": 5
+    },
+    {
+      "position": 13,
+      "name": "Manchester United",
+      "fullName": "Manchester United FC",
+      "badge": "https://crests.football-data.org/66.png",
+      "played": 4,
+      "won": 1,
+      "drawn": 1,
+      "lost": 2,
+      "goalsFor": 7,
+      "goalsAgainst": 7,
+      "goalDifference": 0,
+      "points": 4
     },
     {
       "position": 14,

@@ -1,8 +1,19 @@
 {
-  "updated": "2026-09-13T16:23:22.134670+00:00",
+  "updated": "2026-09-13T20:53:30.678367+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
+    {
+      "name": "Erling Haaland",
+      "firstName": "Erling",
+      "lastName": "Haaland",
+      "nationality": "Norway",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 4,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "Bukayo Saka",
       "firstName": "Bukayo",
@@ -45,17 +56,6 @@
       "teamBadge": "https://crests.football-data.org/61.png",
       "goals": 3,
       "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Erling Haaland",
-      "firstName": "Erling",
-      "lastName": "Haaland",
-      "nationality": "Norway",
-      "team": "Manchester City",
-      "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 3,
-      "assists": 0,
       "penalties": 0
     },
     {
@@ -136,7 +136,7 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 7,
+      "goalsFor": 8,
       "played": 4
     },
     {
@@ -194,7 +194,7 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 5,
+      "goalDifference": 6,
       "played": 4
     },
     {
@@ -211,17 +211,17 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 11,
+    "position": 13,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
     "played": 4,
     "won": 1,
-    "drawn": 2,
-    "lost": 1,
+    "drawn": 1,
+    "lost": 2,
     "goalsFor": 7,
-    "goalsAgainst": 6,
-    "goalDifference": 1,
-    "points": 5
+    "goalsAgainst": 7,
+    "goalDifference": 0,
+    "points": 4
   }
 }
