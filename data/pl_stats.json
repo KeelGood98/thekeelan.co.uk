@@ -1,8 +1,19 @@
 {
-  "updated": "2026-09-12T20:37:08.955417+00:00",
+  "updated": "2026-09-13T00:01:43.232989+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
+    {
+      "name": "Bukayo Saka",
+      "firstName": "Bukayo",
+      "lastName": "Saka",
+      "nationality": "England",
+      "team": "Arsenal",
+      "teamBadge": "https://crests.football-data.org/57.png",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 1
+    },
     {
       "name": "Marcus Tavernier",
       "firstName": "Marcus",
@@ -92,17 +103,6 @@
       "penalties": 0
     },
     {
-      "name": "Bukayo Saka",
-      "firstName": "Bukayo",
-      "lastName": "Saka",
-      "nationality": "England",
-      "team": "Arsenal",
-      "teamBadge": "https://crests.football-data.org/57.png",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
       "name": "Martin Ødegaard",
       "firstName": "Martin",
       "lastName": "Ødegaard",
@@ -122,16 +122,16 @@
       "played": 4
     },
     {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsFor": 8,
+      "played": 4
+    },
+    {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
       "goalsFor": 8,
       "played": 3
-    },
-    {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 7,
-      "played": 4
     },
     {
       "name": "Manchester City",
@@ -182,7 +182,7 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 6,
+      "goalDifference": 7,
       "played": 4
     },
     {
