@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T13:27:26.550061+00:00",
+  "updated": "2026-09-13T17:38:14.512521+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
       "releaseDate": "2026-07-08",
       "rating": "7.1",
-      "votes": 565,
+      "votes": 567,
       "url": "https://www.themoviedb.org/movie/1108427"
-    },
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 3652,
-      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1137844,
@@ -36,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/g7Ccid5kuD7A8hXWlsQiNfwOxaD.jpg",
       "releaseDate": "2026-09-03",
       "rating": "7.9",
-      "votes": 510,
+      "votes": 515,
       "url": "https://www.themoviedb.org/movie/1137844"
     },
     {
@@ -48,56 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.8",
-      "votes": 2639,
+      "votes": 2645,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1185806,
+      "id": 1368337,
       "mediaType": "movie",
-      "title": "PAW Patrol: The Dino Movie",
-      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
-      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
-      "releaseDate": "2026-07-23",
-      "rating": "7.3",
-      "votes": 83,
-      "url": "https://www.themoviedb.org/movie/1185806"
-    },
-    {
-      "id": 1433367,
-      "mediaType": "movie",
-      "title": "One Night Only",
-      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-      "poster": "https://image.tmdb.org/t/p/w500/46q8z1TbbVcF8uhRHsvt5s0h2SH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bpll0oy6gHwLvypfFNfT2QI4VkT.jpg",
-      "releaseDate": "2026-08-06",
-      "rating": "6.7",
-      "votes": 115,
-      "url": "https://www.themoviedb.org/movie/1433367"
-    },
-    {
-      "id": 1386315,
-      "mediaType": "movie",
-      "title": "The Runner",
-      "overview": "Maia Marten, a brilliant London lawyer, has her life shattered by a single call on her morning run: her son has been taken. To get him back, she must keep running, obey every ruthless command, and trust no one-each second a test of how far a mother will go to save her child.",
-      "poster": "https://image.tmdb.org/t/p/w500/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jzBWExXacS33rMQ2zLBrqIVweyG.jpg",
-      "releaseDate": "2026-09-03",
-      "rating": "6.7",
-      "votes": 419,
-      "url": "https://www.themoviedb.org/movie/1386315"
-    },
-    {
-      "id": 1302904,
-      "mediaType": "movie",
-      "title": "Practical Magic 2",
-      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "6.4",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/movie/1302904"
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 3656,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1339713,
@@ -108,8 +60,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5465,
+      "votes": 5467,
       "url": "https://www.themoviedb.org/movie/1339713"
+    },
+    {
+      "id": 1433367,
+      "mediaType": "movie",
+      "title": "One Night Only",
+      "overview": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+      "poster": "https://image.tmdb.org/t/p/w500/46q8z1TbbVcF8uhRHsvt5s0h2SH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bpll0oy6gHwLvypfFNfT2QI4VkT.jpg",
+      "releaseDate": "2026-08-06",
+      "rating": "6.7",
+      "votes": 116,
+      "url": "https://www.themoviedb.org/movie/1433367"
+    },
+    {
+      "id": 1302904,
+      "mediaType": "movie",
+      "title": "Practical Magic 2",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "6.3",
+      "votes": 32,
+      "url": "https://www.themoviedb.org/movie/1302904"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/vhv7lBWYM0DUuNU2a0V7Rhq21dD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
+      "releaseDate": "2026-08-20",
+      "rating": "7.6",
+      "votes": 346,
+      "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
       "id": 1288445,
@@ -120,23 +108,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
       "releaseDate": "2026-08-19",
       "rating": "6.4",
-      "votes": 374,
+      "votes": 378,
       "url": "https://www.themoviedb.org/movie/1288445"
+    },
+    {
+      "id": 1386315,
+      "mediaType": "movie",
+      "title": "The Runner",
+      "overview": "Maia Marten, a brilliant London lawyer, has her life shattered by a single call on her morning run: her son has been taken. To get him back, she must keep running, obey every ruthless command, and trust no one-each second a test of how far a mother will go to save her child.",
+      "poster": "https://image.tmdb.org/t/p/w500/uxCaBoYXsDC4A0SqTm3SISj0OwK.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jzBWExXacS33rMQ2zLBrqIVweyG.jpg",
+      "releaseDate": "2026-09-03",
+      "rating": "6.7",
+      "votes": 421,
+      "url": "https://www.themoviedb.org/movie/1386315"
     }
   ],
   "trendingTv": [
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2647,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
     {
       "id": 95350,
       "mediaType": "tv",
@@ -148,42 +136,6 @@
       "rating": "8.3",
       "votes": 317,
       "url": "https://www.themoviedb.org/tv/95350"
-    },
-    {
-      "id": 108978,
-      "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3287,
-      "url": "https://www.themoviedb.org/tv/108978"
-    },
-    {
-      "id": 236235,
-      "mediaType": "tv",
-      "title": "The Gentlemen",
-      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
-      "poster": "https://image.tmdb.org/t/p/w500/tw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
-      "releaseDate": "2024-03-07",
-      "rating": "7.9",
-      "votes": 910,
-      "url": "https://www.themoviedb.org/tv/236235"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2268,
-      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 113962,
@@ -198,16 +150,64 @@
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
-      "id": 294095,
+      "id": 108978,
       "mediaType": "tv",
-      "title": "A Bona Fide Killer",
-      "overview": "A seemingly ordinary working mother secretly lives as a legendary sniper who delivers justice where the law fails. After returning from a three-year hiatus, she must balance protecting her family with eliminating dangerous criminals, all while a determined journalist and a relentless detective close in on her hidden identity.",
-      "poster": "https://image.tmdb.org/t/p/w500/e9ziA4Y6md4Ytr62r5y9vRdv4ll.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9AqsMJxuq7NEYJX4Q1vSfKb5CG.jpg",
-      "releaseDate": "2026-07-31",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m5CggjJuFc08QCuKz54znHP6spJ.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3289,
+      "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 125988,
+      "mediaType": "tv",
+      "title": "Silo",
+      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
+      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uTWhbLc7Bj4qNSdW3ZvZKL8cOHv.jpg",
+      "releaseDate": "2023-05-04",
+      "rating": "8.2",
+      "votes": 2650,
+      "url": "https://www.themoviedb.org/tv/125988"
+    },
+    {
+      "id": 30984,
+      "mediaType": "tv",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
       "rating": "8.4",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/tv/294095"
+      "votes": 2268,
+      "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 236235,
+      "mediaType": "tv",
+      "title": "The Gentlemen",
+      "overview": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire — and its proprietors aren't going anywhere.",
+      "poster": "https://image.tmdb.org/t/p/w500/tw3tzfXaSpmUZIB8ZNqNEGzMBCy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yG1wltFmkX5c5ocACKfpX0tp3SY.jpg",
+      "releaseDate": "2024-03-07",
+      "rating": "7.9",
+      "votes": 910,
+      "url": "https://www.themoviedb.org/tv/236235"
+    },
+    {
+      "id": 37854,
+      "mediaType": "tv",
+      "title": "One Piece",
+      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
+      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
+      "releaseDate": "1999-10-20",
+      "rating": "8.7",
+      "votes": 5534,
+      "url": "https://www.themoviedb.org/tv/37854"
     },
     {
       "id": 258230,
@@ -230,20 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/572uSrnXM5uPVYMVqsxfNA41cT8.jpg",
       "releaseDate": "2024-05-07",
       "rating": "7.8",
-      "votes": 773,
+      "votes": 772,
       "url": "https://www.themoviedb.org/tv/196322"
     },
     {
-      "id": 37854,
+      "id": 97546,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2rmK7mnchw9Xr3XdiTFSxTTLXqv.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.7",
-      "votes": 5534,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2646,
+      "url": "https://www.themoviedb.org/tv/97546"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
       "releaseDate": "2026-09-25",
       "rating": "7.8",
-      "votes": 48,
+      "votes": 50,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -308,18 +308,6 @@
       "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
-      "id": 1469342,
-      "mediaType": "movie",
-      "title": "Her Private Hell",
-      "overview": "When a mysterious mist engulfs a futuristic metropolis, unleashing a deadly and elusive entity, a troubled young woman searches for her father. Her quest collides with an American GI on a harrowing odyssey to rescue his daughter from Hell.",
-      "poster": "https://image.tmdb.org/t/p/w500/1gNVzTlpNLaX8sm9Wocl5rLgldU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hS4FcOM5y71FurkBQgDLTBxmWZh.jpg",
-      "releaseDate": "2026-09-25",
-      "rating": "5.1",
-      "votes": 59,
-      "url": "https://www.themoviedb.org/movie/1469342"
-    },
-    {
       "id": 1397485,
       "mediaType": "movie",
       "title": "Girls Like Girls",
@@ -330,6 +318,30 @@
       "rating": "7.6",
       "votes": 59,
       "url": "https://www.themoviedb.org/movie/1397485"
+    },
+    {
+      "id": 37797,
+      "mediaType": "movie",
+      "title": "Whisper of the Heart",
+      "overview": "Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: \"Seiji Amasawa.\"",
+      "poster": "https://image.tmdb.org/t/p/w500/5FROLD8zpWFs9ja7aYho1uOMJHg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rphor0XQcYO4CQoQ6auaQm3UPap.jpg",
+      "releaseDate": "1996-11-22",
+      "rating": "7.9",
+      "votes": 2349,
+      "url": "https://www.themoviedb.org/movie/37797"
+    },
+    {
+      "id": 1469342,
+      "mediaType": "movie",
+      "title": "Her Private Hell",
+      "overview": "When a mysterious mist engulfs a futuristic metropolis, unleashing a deadly and elusive entity, a troubled young woman searches for her father. Her quest collides with an American GI on a harrowing odyssey to rescue his daughter from Hell.",
+      "poster": "https://image.tmdb.org/t/p/w500/1gNVzTlpNLaX8sm9Wocl5rLgldU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hS4FcOM5y71FurkBQgDLTBxmWZh.jpg",
+      "releaseDate": "2026-09-25",
+      "rating": "5.1",
+      "votes": 59,
+      "url": "https://www.themoviedb.org/movie/1469342"
     },
     {
       "id": 1283515,
@@ -354,18 +366,6 @@
       "rating": "7.5",
       "votes": 2,
       "url": "https://www.themoviedb.org/movie/1433583"
-    },
-    {
-      "id": 1553969,
-      "mediaType": "movie",
-      "title": "Sheep in the Box",
-      "overview": "In the near future, architect Otone Komoto is married to Kensuke, who runs a construction company. The married couple decide to welcome a humanoid robot into their home as their son.",
-      "poster": "https://image.tmdb.org/t/p/w500/sxAwnj01pLfDBTA4WobJtJw7y9q.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iZCdWpGqKQaAdhysW8gYPTdCP6A.jpg",
-      "releaseDate": "2026-09-25",
-      "rating": "6.4",
-      "votes": 21,
-      "url": "https://www.themoviedb.org/movie/1553969"
     }
   ],
   "nowPlayingMovies": [
@@ -378,20 +378,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/l9mFW9HQnAZ4r1ChZJHoOT3jaal.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.6",
-      "votes": 334,
+      "votes": 343,
       "url": "https://www.themoviedb.org/movie/1204680"
-    },
-    {
-      "id": 1288445,
-      "mediaType": "movie",
-      "title": "Mutiny",
-      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
-      "releaseDate": "2026-08-21",
-      "rating": "6.4",
-      "votes": 373,
-      "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
       "id": 1375646,
@@ -402,15 +390,27 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 772,
+      "votes": 773,
       "url": "https://www.themoviedb.org/movie/1375646"
+    },
+    {
+      "id": 1288445,
+      "mediaType": "movie",
+      "title": "Mutiny",
+      "overview": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/pu2VxGlpGwffOx292w18b1tv96j.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
+      "releaseDate": "2026-08-21",
+      "rating": "6.4",
+      "votes": 377,
+      "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
       "id": 1408162,
       "mediaType": "movie",
       "title": "Vishwanath & Sons",
       "overview": "A celebrated Olympian shooter travels to America looking for a donor to help his sick child — but unexpected romance complicates his search.",
-      "poster": "https://image.tmdb.org/t/p/w500/mLsvCffzpxxDwC7yVLJSLLjgzoq.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/adDZVEQZnMJ380zPOmVj6vBWHgk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nfNaAiiILjYRc2CKkId1ZfPTtlh.jpg",
       "releaseDate": "2026-08-14",
       "rating": "7.3",
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.4",
-      "votes": 478,
+      "votes": 479,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bpll0oy6gHwLvypfFNfT2QI4VkT.jpg",
       "releaseDate": "2026-08-28",
       "rating": "6.7",
-      "votes": 112,
+      "votes": 116,
       "url": "https://www.themoviedb.org/movie/1433367"
     },
     {
@@ -450,8 +450,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
       "rating": "6.3",
-      "votes": 30,
+      "votes": 32,
       "url": "https://www.themoviedb.org/movie/1302904"
+    },
+    {
+      "id": 1185806,
+      "mediaType": "movie",
+      "title": "PAW Patrol: The Dino Movie",
+      "overview": "The Paw Patrol lands on a mysterious dinosaur island after a storm, where they meet Rex, a stranded pup. When Humdinger's reckless mining triggers a volcano, the team faces their biggest rescue mission yet to save the island.",
+      "poster": "https://image.tmdb.org/t/p/w500/qnin56Syy5rbG7KCaxWY7SPuy6p.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6TSxLmwT7j1ugtKi8NyMmdzWAGj.jpg",
+      "releaseDate": "2026-08-05",
+      "rating": "7.3",
+      "votes": 83,
+      "url": "https://www.themoviedb.org/movie/1185806"
     },
     {
       "id": 1101412,
@@ -466,18 +478,6 @@
       "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
-      "id": 1213243,
-      "mediaType": "movie",
-      "title": "Toxic: A Fairy Tale for Grown-ups",
-      "overview": "A powerful drug cartel pulls the strings behind a facade of sun-soaked beaches as a gritty, violent underworld power struggle emerges during the crumbling of Portuguese colonial rule.",
-      "poster": "https://image.tmdb.org/t/p/w500/oiIPU4lvnI0Ag2K9cyAi44eCaoE.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tBRSSfgqOAq7YlG8udcoJIBm2FG.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "8.0",
-      "votes": 73,
-      "url": "https://www.themoviedb.org/movie/1213243"
-    },
-    {
       "id": 1284465,
       "mediaType": "movie",
       "title": "The Death of Robin Hood",
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-02",
       "rating": "6.2",
-      "votes": 297,
+      "votes": 298,
       "url": "https://www.themoviedb.org/movie/1284465"
     }
   ],
