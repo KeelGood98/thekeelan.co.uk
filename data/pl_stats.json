@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-13T11:57:56.220286+00:00",
+  "updated": "2026-09-13T16:23:22.134670+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -116,6 +116,12 @@
   ],
   "bestAttacks": [
     {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalsFor": 13,
+      "played": 4
+    },
+    {
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 10,
@@ -128,16 +134,10 @@
       "played": 4
     },
     {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsFor": 8,
-      "played": 3
-    },
-    {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsFor": 7,
-      "played": 3
+      "played": 4
     },
     {
       "name": "Brentford",
@@ -157,7 +157,7 @@
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsAgainst": 2,
-      "played": 3
+      "played": 4
     },
     {
       "name": "Hull City",
@@ -180,6 +180,12 @@
   ],
   "goalDifferenceLeaders": [
     {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalDifference": 8,
+      "played": 4
+    },
+    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalDifference": 7,
@@ -189,7 +195,7 @@
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalDifference": 5,
-      "played": 3
+      "played": 4
     },
     {
       "name": "Hull City",
@@ -202,26 +208,20 @@
       "badge": "https://crests.football-data.org/402.png",
       "goalDifference": 3,
       "played": 4
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 3,
-      "played": 3
     }
   ],
   "manUnitedSummary": {
-    "position": 13,
+    "position": 11,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 3,
+    "played": 4,
     "won": 1,
-    "drawn": 1,
+    "drawn": 2,
     "lost": 1,
     "goalsFor": 7,
     "goalsAgainst": 6,
     "goalDifference": 1,
-    "points": 4
+    "points": 5
   }
 }
