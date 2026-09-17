@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T13:46:11.317798+00:00",
+  "updated": "2026-09-17T18:31:59.665517+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "6.9",
-      "votes": 973,
+      "votes": 985,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -23,21 +23,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
       "releaseDate": "2026-09-16",
-      "rating": "8.2",
-      "votes": 23,
+      "rating": "8.1",
+      "votes": 26,
       "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1108427,
-      "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "7.3",
-      "votes": 662,
-      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 969681,
@@ -48,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.8",
-      "votes": 2732,
+      "votes": 2736,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
@@ -60,8 +48,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3751,
+      "votes": 3755,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.3",
+      "votes": 663,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1302904,
+      "mediaType": "movie",
+      "title": "Practical Magic 2",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "6.1",
+      "votes": 58,
+      "url": "https://www.themoviedb.org/movie/1302904"
+    },
+    {
+      "id": 1124142,
+      "mediaType": "movie",
+      "title": "The Rivals of Amziah King",
+      "overview": "Deep within the backwoods of rural Oklahoma, charismatic and musically gifted Amziah King herds a bluegrass-playing band of misfits while overseeing the premier honey-making operation in town. When Amziah’s estranged foster daughter unexpectedly returns, Amziah leaps at the possibility to renew connection and create a family business. But the honey game is ruthless, and Amziah’s rivals threaten to destroy everything he has built.",
+      "poster": "https://image.tmdb.org/t/p/w500/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nBSlvQrDX60rmngwcxMeMq33I9m.jpg",
+      "releaseDate": "2026-08-13",
+      "rating": "6.8",
+      "votes": 54,
+      "url": "https://www.themoviedb.org/movie/1124142"
+    },
+    {
+      "id": 1137844,
+      "mediaType": "movie",
+      "title": "Mayday",
+      "overview": "When a U.S. Navy pilot on a top-secret mission during the Cold War gets trapped behind enemy lines, his only chance at survival is to form an alliance with an eccentric ex-KGB agent.",
+      "poster": "https://image.tmdb.org/t/p/w500/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g7Ccid5kuD7A8hXWlsQiNfwOxaD.jpg",
+      "releaseDate": "2026-09-03",
+      "rating": "8.0",
+      "votes": 647,
+      "url": "https://www.themoviedb.org/movie/1137844"
     },
     {
       "id": 1204680,
@@ -72,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
       "releaseDate": "2026-08-20",
       "rating": "7.5",
-      "votes": 427,
+      "votes": 428,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -84,47 +120,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.4",
-      "votes": 66,
+      "votes": 67,
       "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1302904,
-      "mediaType": "movie",
-      "title": "Practical Magic 2",
-      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "6.1",
-      "votes": 56,
-      "url": "https://www.themoviedb.org/movie/1302904"
-    },
-    {
-      "id": 1137844,
-      "mediaType": "movie",
-      "title": "Mayday",
-      "overview": "When a U.S. Navy pilot on a top-secret mission during the Cold War gets trapped behind enemy lines, his only chance at survival is to form an alliance with an eccentric ex-KGB agent.",
-      "poster": "https://image.tmdb.org/t/p/w500/hVXjX1jLZ1ljFSNGXpjJfbTUOa7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g7Ccid5kuD7A8hXWlsQiNfwOxaD.jpg",
-      "releaseDate": "2026-09-03",
-      "rating": "8.0",
-      "votes": 646,
-      "url": "https://www.themoviedb.org/movie/1137844"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 5556,
-      "url": "https://www.themoviedb.org/movie/1339713"
     }
   ],
   "trendingTv": [
+    {
+      "id": 299939,
+      "mediaType": "tv",
+      "title": "Monster: The Lizzie Borden Story",
+      "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+      "poster": "https://image.tmdb.org/t/p/w500/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3JVjgaqfX5MhxxHKpGWz05QV7Dz.jpg",
+      "releaseDate": "2026-09-17",
+      "rating": "8.7",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/299939"
+    },
     {
       "id": 108978,
       "mediaType": "tv",
@@ -134,8 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3331,
+      "votes": 3333,
       "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 273207,
+      "mediaType": "tv",
+      "title": "Neagley",
+      "overview": "Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "7.5",
+      "votes": 30,
+      "url": "https://www.themoviedb.org/tv/273207"
+    },
+    {
+      "id": 2190,
+      "mediaType": "tv",
+      "title": "South Park",
+      "overview": "Follow the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+      "poster": "https://image.tmdb.org/t/p/w500/1CGwZCFX2qerXaXQJJUB3qUvxq7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+      "releaseDate": "1997-08-13",
+      "rating": "8.3",
+      "votes": 5145,
+      "url": "https://www.themoviedb.org/tv/2190"
     },
     {
       "id": 95350,
@@ -150,28 +186,40 @@
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
-      "id": 273207,
+      "id": 224263,
       "mediaType": "tv",
-      "title": "Neagley",
-      "overview": "Frances Neagley is a private investigator in Chicago and former military colleague of Jack Reacher in the Army's 110th Special Investigations Unit. When she learns that a beloved friend from her past has been killed in a suspicious accident, she becomes hell-bent on justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/1m6CxPAuGv2oHc1ahERrcVWnk2J.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.2",
-      "votes": 26,
-      "url": "https://www.themoviedb.org/tv/273207"
+      "title": "Stranger Things: Tales from '85",
+      "overview": "Winter. Hawkins. 1985. Welcome back to a town crawling with secrets, where beloved heroes are facing fresh mysteries... and an all-new breed of strange.",
+      "poster": "https://image.tmdb.org/t/p/w500/xyVpiSZNA2fYJUuuagkqiSHJqjr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2KlBiHRfaC1JVOxxRxsRmegnc5O.jpg",
+      "releaseDate": "2026-04-23",
+      "rating": "7.6",
+      "votes": 108,
+      "url": "https://www.themoviedb.org/tv/224263"
     },
     {
-      "id": 299939,
+      "id": 103516,
       "mediaType": "tv",
-      "title": "Monster: The Lizzie Borden Story",
-      "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
-      "poster": "https://image.tmdb.org/t/p/w500/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3JVjgaqfX5MhxxHKpGWz05QV7Dz.jpg",
-      "releaseDate": "2026-09-17",
-      "rating": "8.3",
+      "title": "Star Trek: Strange New Worlds",
+      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
+      "poster": "https://image.tmdb.org/t/p/w500/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
+      "releaseDate": "2022-05-05",
+      "rating": "7.9",
+      "votes": 846,
+      "url": "https://www.themoviedb.org/tv/103516"
+    },
+    {
+      "id": 332401,
+      "mediaType": "tv",
+      "title": "City of Blood",
+      "overview": "Berlin — a city-state on the brink. While a privileged few live beneath a climate-controlled dome, those outside struggle to survive in a world ravaged by heat, corruption, and crime. After years apart, sisters Bea and Phoebe are reunited and uncover a dark secret: Vampires are determined to seize political power — and blood has become the city's new currency.",
+      "poster": "https://image.tmdb.org/t/p/w500/Njr0Rlb4CobAfrGE8NVffYDGqx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/icPBB9V5IX1hggtNs1fvskP2lsi.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "10.0",
       "votes": 3,
-      "url": "https://www.themoviedb.org/tv/299939"
+      "url": "https://www.themoviedb.org/tv/332401"
     },
     {
       "id": 95480,
@@ -186,18 +234,6 @@
       "url": "https://www.themoviedb.org/tv/95480"
     },
     {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.2",
-      "votes": 1557,
-      "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
       "id": 37854,
       "mediaType": "tv",
       "title": "One Piece",
@@ -208,42 +244,6 @@
       "rating": "8.7",
       "votes": 5542,
       "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/abeH7n5pcuQcwYcTxG6DTZvXLP1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.4",
-      "votes": 848,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
-      "id": 125988,
-      "mediaType": "tv",
-      "title": "Silo",
-      "overview": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "poster": "https://image.tmdb.org/t/p/w500/gMYZZvnkVNTqSVnVCphWbPXwWwb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fQGrzO0Iwo7CO4b2zVdJLkcnhwK.jpg",
-      "releaseDate": "2023-05-04",
-      "rating": "8.2",
-      "votes": 2680,
-      "url": "https://www.themoviedb.org/tv/125988"
-    },
-    {
-      "id": 103516,
-      "mediaType": "tv",
-      "title": "Star Trek: Strange New Worlds",
-      "overview": "Follow Captain Christopher Pike, Science Officer Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy.",
-      "poster": "https://image.tmdb.org/t/p/w500/97TTJuqiSMfU0DuXx1B4NG5QNP7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fZJs6xgU9dqIg9phIXjZAZOInzy.jpg",
-      "releaseDate": "2022-05-05",
-      "rating": "7.9",
-      "votes": 846,
-      "url": "https://www.themoviedb.org/tv/103516"
     }
   ],
   "upcomingMovies": [
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
       "releaseDate": "2026-08-21",
-      "rating": "7.6",
-      "votes": 420,
+      "rating": "7.5",
+      "votes": 427,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-14",
       "rating": "6.9",
-      "votes": 953,
+      "votes": 974,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/e2QAGrEmbpmZpMymDRkDisJkvg9.jpg",
       "releaseDate": "2026-08-21",
       "rating": "6.4",
-      "votes": 407,
+      "votes": 408,
       "url": "https://www.themoviedb.org/movie/1288445"
     },
     {
@@ -425,8 +425,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
       "releaseDate": "2026-09-18",
-      "rating": "8.2",
-      "votes": 22,
+      "rating": "8.1",
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mLsvCffzpxxDwC7yVLJSLLjgzoq.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/nfNaAiiILjYRc2CKkId1ZfPTtlh.jpg",
       "releaseDate": "2026-08-14",
-      "rating": "7.3",
-      "votes": 22,
+      "rating": "7.1",
+      "votes": 24,
       "url": "https://www.themoviedb.org/movie/1408162"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nUcauJ000dFBYkgGpxyxJ5aWEH2.jpg",
       "releaseDate": "2026-09-11",
       "rating": "6.1",
-      "votes": 52,
+      "votes": 57,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
