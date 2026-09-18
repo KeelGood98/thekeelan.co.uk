@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T13:08:40.961240+00:00",
+  "updated": "2026-09-18T17:51:55.207893+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/1CIaRYKf3zg2Xyce1CSfCMg2Vfw.jpg",
       "releaseDate": "2026-09-16",
-      "rating": "7.7",
-      "votes": 57,
+      "rating": "7.6",
+      "votes": 74,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -24,20 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "6.9",
-      "votes": 1052,
+      "votes": 1064,
       "url": "https://www.themoviedb.org/movie/1101383"
     },
     {
-      "id": 1108427,
+      "id": 1240889,
       "mediaType": "movie",
-      "title": "Moana",
-      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
-      "poster": "https://image.tmdb.org/t/p/w500/s20ZqOKFqGVWOUtDz9XurwwBoF1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
-      "releaseDate": "2026-07-08",
-      "rating": "7.3",
-      "votes": 678,
-      "url": "https://www.themoviedb.org/movie/1108427"
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "overview": "After years of slapdash sequels, the Camp Miasma franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original’s star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
+      "poster": "https://image.tmdb.org/t/p/w500/nLsFnXifieSTqSeWxjXSS8RvaUZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+      "releaseDate": "2026-08-06",
+      "rating": "6.7",
+      "votes": 109,
+      "url": "https://www.themoviedb.org/movie/1240889"
+    },
+    {
+      "id": 1641629,
+      "mediaType": "movie",
+      "title": "You+Me – Against the World",
+      "overview": "Alma Lancaster, 18, leads a seemingly perfect life in a wealthy family, who believe she is studying law. In secret, she pursues her true dream — cinema. On campus, she meets 20-year-old Vadim Arcadi, a rebellious and magnetic solitaire with a troubled past. Forced to collaborate on a student film, they compete, get closer and start to fall in love – in spite of themselves. But someone is watching them. A mysterious figure begins to send anonymous threats, determined to separate them and expose secrets that could destroy Alma and Vadim.",
+      "poster": "https://image.tmdb.org/t/p/w500/bAbBNVplg7h79sm94OyHeKk8Phz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nkEhDomjmPHJSA4Tx8pxv0NlKEy.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "5.0",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/movie/1641629"
     },
     {
       "id": 1368337,
@@ -48,56 +60,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3763,
+      "votes": 3773,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
-      "id": 1339713,
+      "id": 969681,
       "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rZfmzpixLKLR3Hg2u0WgC7XLFl8.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 5567,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "7.8",
+      "votes": 2751,
+      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1204680,
+      "id": 1451944,
       "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
-      "releaseDate": "2026-08-20",
-      "rating": "7.5",
-      "votes": 432,
-      "url": "https://www.themoviedb.org/movie/1204680"
-    },
-    {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/1n37BJchWHLiSYQkuFxe5KjB951.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "7.4",
-      "votes": 70,
-      "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1124142,
-      "mediaType": "movie",
-      "title": "The Rivals of Amziah King",
-      "overview": "Deep within the backwoods of rural Oklahoma, charismatic and musically gifted Amziah King herds a bluegrass-playing band of misfits while overseeing the premier honey-making operation in town. When Amziah’s estranged foster daughter unexpectedly returns, Amziah leaps at the possibility to renew connection and create a family business. But the honey game is ruthless, and Amziah’s rivals threaten to destroy everything he has built.",
-      "poster": "https://image.tmdb.org/t/p/w500/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nBSlvQrDX60rmngwcxMeMq33I9m.jpg",
-      "releaseDate": "2026-08-13",
-      "rating": "6.8",
-      "votes": 59,
-      "url": "https://www.themoviedb.org/movie/1124142"
+      "title": "Lust Stories 3",
+      "overview": "Through four bite-sized yet emotionally resonant films, the anthology once again explores lust, love, relationships, and repressed desire, offering fresh perspectives on intimacy, longing, and human connection in all their complexity.",
+      "poster": "https://image.tmdb.org/t/p/w500/1GBe4TeCeXa1ENg0rv2JH8cH0ry.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ygMNjFOBuLVoInEoPzqPU2U0pfg.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1451944"
     },
     {
       "id": 1228834,
@@ -112,16 +100,28 @@
       "url": "https://www.themoviedb.org/movie/1228834"
     },
     {
-      "id": 969681,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "7.8",
-      "votes": 2744,
-      "url": "https://www.themoviedb.org/movie/969681"
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/s20ZqOKFqGVWOUtDz9XurwwBoF1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.3",
+      "votes": 685,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
+      "releaseDate": "2026-08-20",
+      "rating": "7.5",
+      "votes": 436,
+      "url": "https://www.themoviedb.org/movie/1204680"
     }
   ],
   "trendingTv": [
@@ -130,24 +130,12 @@
       "mediaType": "tv",
       "title": "The Scandal",
       "overview": "In Joseon, a secret proposal ignites hidden desires in a gifted noblewoman, a famed lover and an unsuspecting lady caught in their dangerous game.",
-      "poster": "https://image.tmdb.org/t/p/w500/1LhnmB6EzppbPefmCwJtsCdLGJ4.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/pJsIzlTjmx07ilwEkl0cglrMVa1.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uc1p1PEbEMpdIHqnU9TESNC6Jhp.jpg",
       "releaseDate": "2026-09-18",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "6.0",
+      "votes": 1,
       "url": "https://www.themoviedb.org/tv/275102"
-    },
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.4",
-      "votes": 849,
-      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 299939,
@@ -162,6 +150,18 @@
       "url": "https://www.themoviedb.org/tv/299939"
     },
     {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tQqbbxBAdW2ql8vbOqMOJbtSQ7O.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.4",
+      "votes": 850,
+      "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
       "id": 273207,
       "mediaType": "tv",
       "title": "Neagley",
@@ -169,8 +169,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lKOPmO0ah17ogQ9hWg7lSd40kIr.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg",
       "releaseDate": "2026-09-16",
-      "rating": "7.9",
-      "votes": 45,
+      "rating": "7.8",
+      "votes": 49,
       "url": "https://www.themoviedb.org/tv/273207"
     },
     {
@@ -182,8 +182,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
       "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 3341,
+      "votes": 3346,
       "url": "https://www.themoviedb.org/tv/108978"
+    },
+    {
+      "id": 196322,
+      "mediaType": "tv",
+      "title": "Dark Matter",
+      "overview": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
+      "poster": "https://image.tmdb.org/t/p/w500/2DPmTlv8F0V1TQBPmlsGOVOhtWk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iBc82qaA05ntzSnrVndw8scv4Bn.jpg",
+      "releaseDate": "2024-05-07",
+      "rating": "7.8",
+      "votes": 778,
+      "url": "https://www.themoviedb.org/tv/196322"
+    },
+    {
+      "id": 113962,
+      "mediaType": "tv",
+      "title": "Lioness",
+      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
+      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
+      "releaseDate": "2023-07-23",
+      "rating": "8.2",
+      "votes": 1563,
+      "url": "https://www.themoviedb.org/tv/113962"
     },
     {
       "id": 95350,
@@ -198,6 +222,18 @@
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
+      "id": 332401,
+      "mediaType": "tv",
+      "title": "City of Blood",
+      "overview": "Berlin — a city-state on the brink. While a privileged few live beneath a climate-controlled dome, those outside struggle to survive in a world ravaged by heat, corruption, and crime. After years apart, sisters Bea and Phoebe are reunited and uncover a dark secret: Vampires are determined to seize political power — and blood has become the city's new currency.",
+      "poster": "https://image.tmdb.org/t/p/w500/Njr0Rlb4CobAfrGE8NVffYDGqx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/icPBB9V5IX1hggtNs1fvskP2lsi.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "8.6",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/tv/332401"
+    },
+    {
       "id": 95480,
       "mediaType": "tv",
       "title": "Slow Horses",
@@ -208,42 +244,6 @@
       "rating": "8.0",
       "votes": 982,
       "url": "https://www.themoviedb.org/tv/95480"
-    },
-    {
-      "id": 113962,
-      "mediaType": "tv",
-      "title": "Lioness",
-      "overview": "Cruz Manuelos, a rough-around-the-edges but passionate young Marine, is recruited to join the CIA's Lioness Engagement Team to help bring down a terrorist organization from within. Joe, the station chief of the Lioness program, is tasked with training, managing and leading her female undercover operatives.",
-      "poster": "https://image.tmdb.org/t/p/w500/rzpHPSEgPTpRs8EHbygwsOw7jC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4NBYDOnEjAzyuP7CMkD5s7fs44K.jpg",
-      "releaseDate": "2023-07-23",
-      "rating": "8.2",
-      "votes": 1560,
-      "url": "https://www.themoviedb.org/tv/113962"
-    },
-    {
-      "id": 332401,
-      "mediaType": "tv",
-      "title": "City of Blood",
-      "overview": "Berlin — a city-state on the brink. While a privileged few live beneath a climate-controlled dome, those outside struggle to survive in a world ravaged by heat, corruption, and crime. After years apart, sisters Bea and Phoebe are reunited and uncover a dark secret: Vampires are determined to seize political power — and blood has become the city's new currency.",
-      "poster": "https://image.tmdb.org/t/p/w500/Njr0Rlb4CobAfrGE8NVffYDGqx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/icPBB9V5IX1hggtNs1fvskP2lsi.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "10.0",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/332401"
-    },
-    {
-      "id": 196322,
-      "mediaType": "tv",
-      "title": "Dark Matter",
-      "overview": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
-      "poster": "https://image.tmdb.org/t/p/w500/2DPmTlv8F0V1TQBPmlsGOVOhtWk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hQkomlkdnGgh52YqG1nhUeQxr5E.jpg",
-      "releaseDate": "2024-05-07",
-      "rating": "7.8",
-      "votes": 778,
-      "url": "https://www.themoviedb.org/tv/196322"
     }
   ],
   "upcomingMovies": [
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hrCTKrc3Tz2wbPOt5rcrlAhqF11.jpg",
       "releaseDate": "2026-09-25",
       "rating": "7.4",
-      "votes": 70,
+      "votes": 73,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
       "releaseDate": "2019-04-25",
       "rating": "8.2",
-      "votes": 28676,
+      "votes": 28680,
       "url": "https://www.themoviedb.org/movie/299534"
     },
     {
@@ -351,8 +351,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/8i5iZV50CoEtmDCFM7RSxCkpE8h.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/zLeq2fbHU6UdA7mhsYnIULORTgq.jpg",
       "releaseDate": "2026-10-02",
-      "rating": "7.6",
-      "votes": 4,
+      "rating": "6.9",
+      "votes": 6,
       "url": "https://www.themoviedb.org/movie/1433583"
     },
     {
