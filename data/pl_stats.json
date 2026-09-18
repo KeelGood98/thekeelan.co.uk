@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T16:28:21.626004+00:00",
+  "updated": "2026-09-18T20:57:11.952953+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -125,7 +125,13 @@
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 10,
-      "played": 4
+      "played": 5
+    },
+    {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalsFor": 9,
+      "played": 5
     },
     {
       "name": "Arsenal",
@@ -137,12 +143,6 @@
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsFor": 8,
-      "played": 4
-    },
-    {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
-      "goalsFor": 7,
       "played": 4
     }
   ],
@@ -198,15 +198,15 @@
       "played": 4
     },
     {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalDifference": 5,
+      "played": 5
+    },
+    {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalDifference": 4,
-      "played": 4
-    },
-    {
-      "name": "Hull City",
-      "badge": "https://crests.football-data.org/322.png",
-      "goalDifference": 3,
       "played": 4
     }
   ],

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T16:28:20.076977+00:00",
+  "updated": "2026-09-18T20:57:10.306939+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -32,6 +32,20 @@
     },
     {
       "position": 3,
+      "name": "Brentford",
+      "fullName": "Brentford FC",
+      "badge": "https://crests.football-data.org/402.png",
+      "played": 5,
+      "won": 2,
+      "drawn": 3,
+      "lost": 0,
+      "goalsFor": 9,
+      "goalsAgainst": 4,
+      "goalDifference": 5,
+      "points": 9
+    },
+    {
+      "position": 4,
       "name": "Leeds United",
       "fullName": "Leeds United FC",
       "badge": "https://crests.football-data.org/341.png",
@@ -45,7 +59,7 @@
       "points": 8
     },
     {
-      "position": 4,
+      "position": 5,
       "name": "Hull City",
       "fullName": "Hull City AFC",
       "badge": "https://crests.football-data.org/322.png",
@@ -59,7 +73,7 @@
       "points": 8
     },
     {
-      "position": 5,
+      "position": 6,
       "name": "Brighton",
       "fullName": "Brighton & Hove Albion FC",
       "badge": "https://crests.football-data.org/397.png",
@@ -73,32 +87,18 @@
       "points": 7
     },
     {
-      "position": 6,
+      "position": 7,
       "name": "Chelsea",
       "fullName": "Chelsea FC",
       "badge": "https://crests.football-data.org/61.png",
-      "played": 4,
+      "played": 5,
       "won": 2,
       "drawn": 1,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 10,
-      "goalsAgainst": 9,
-      "goalDifference": 1,
+      "goalsAgainst": 11,
+      "goalDifference": -1,
       "points": 7
-    },
-    {
-      "position": 7,
-      "name": "Brentford",
-      "fullName": "Brentford FC",
-      "badge": "https://crests.football-data.org/402.png",
-      "played": 4,
-      "won": 1,
-      "drawn": 3,
-      "lost": 0,
-      "goalsFor": 7,
-      "goalsAgainst": 4,
-      "goalDifference": 3,
-      "points": 6
     },
     {
       "position": 8,
