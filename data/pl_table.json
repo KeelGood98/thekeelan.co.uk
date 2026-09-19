@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-19T15:55:24.607414+00:00",
+  "updated": "2026-09-19T20:45:18.638371+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -161,13 +161,13 @@
       "name": "Nott'm Forest",
       "fullName": "Nottingham Forest FC",
       "badge": "https://crests.football-data.org/351.png",
-      "played": 4,
+      "played": 5,
       "won": 1,
       "drawn": 2,
-      "lost": 1,
+      "lost": 2,
       "goalsFor": 4,
-      "goalsAgainst": 4,
-      "goalDifference": 0,
+      "goalsAgainst": 5,
+      "goalDifference": -1,
       "points": 5
     },
     {
@@ -242,6 +242,20 @@
     },
     {
       "position": 18,
+      "name": "Coventry City",
+      "fullName": "Coventry City FC",
+      "badge": "https://crests.football-data.org/1076.png",
+      "played": 5,
+      "won": 1,
+      "drawn": 0,
+      "lost": 4,
+      "goalsFor": 1,
+      "goalsAgainst": 10,
+      "goalDifference": -9,
+      "points": 3
+    },
+    {
+      "position": 19,
       "name": "Tottenham",
       "fullName": "Tottenham Hotspur FC",
       "badge": "https://crests.football-data.org/73.png",
@@ -255,7 +269,7 @@
       "points": 2
     },
     {
-      "position": 19,
+      "position": 20,
       "name": "Fulham",
       "fullName": "Fulham FC",
       "badge": "https://crests.football-data.org/63.png",
@@ -267,20 +281,6 @@
       "goalsAgainst": 7,
       "goalDifference": -3,
       "points": 1
-    },
-    {
-      "position": 20,
-      "name": "Coventry City",
-      "fullName": "Coventry City FC",
-      "badge": "https://crests.football-data.org/1076.png",
-      "played": 4,
-      "won": 0,
-      "drawn": 0,
-      "lost": 4,
-      "goalsFor": 0,
-      "goalsAgainst": 10,
-      "goalDifference": -10,
-      "points": 0
     }
   ]
 }
