@@ -1,22 +1,22 @@
 {
-  "updated": "2026-09-20T16:11:35.832548+00:00",
+  "updated": "2026-09-20T20:52:39.699037+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 560583,
-    "date": "Sun 20 Sep, 16:30",
-    "sortDate": "2026-09-20T16:30:00+01:00",
+    "id": 560600,
+    "date": "Sat 10 Oct, 17:30",
+    "sortDate": "2026-10-10T17:30:00+01:00",
     "competition": "Premier League",
-    "matchday": 5,
-    "home": "Fulham",
-    "away": "Manchester United",
-    "score": "0-0",
+    "matchday": 6,
+    "home": "Manchester United",
+    "away": "Tottenham",
+    "score": "",
     "halfTimeScore": "",
-    "winner": "Draw",
+    "winner": "",
     "result": "",
     "venue": "TBC",
     "channel": "TBC",
-    "status": "IN_PLAY"
+    "status": "TIMED"
   },
   "recentResults": [
     {
@@ -82,9 +82,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 560583,
       "date": "Sun 20 Sep, 16:30",
@@ -93,14 +91,16 @@
       "matchday": 5,
       "home": "Fulham",
       "away": "Manchester United",
-      "score": "0-0",
-      "halfTimeScore": "",
+      "score": "1-1",
+      "halfTimeScore": "0-0",
       "winner": "Draw",
-      "result": "",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 560600,
       "date": "Sat 10 Oct, 17:30",
@@ -205,6 +205,22 @@
       "matchday": 12,
       "home": "Manchester United",
       "away": "Brentford",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560670,
+      "date": "Wed 02 Dec, 20:00",
+      "sortDate": "2026-12-02T20:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 13,
+      "home": "Newcastle",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
@@ -287,13 +303,13 @@
       "matchday": 5,
       "home": "Fulham",
       "away": "Manchester United",
-      "score": "0-0",
-      "halfTimeScore": "",
+      "score": "1-1",
+      "halfTimeScore": "0-0",
       "winner": "Draw",
-      "result": "",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "IN_PLAY"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 560600,
@@ -399,6 +415,22 @@
       "matchday": 12,
       "home": "Manchester United",
       "away": "Brentford",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560670,
+      "date": "Wed 02 Dec, 20:00",
+      "sortDate": "2026-12-02T20:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 13,
+      "home": "Newcastle",
+      "away": "Manchester United",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
