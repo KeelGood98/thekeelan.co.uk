@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T11:30:30.409931+00:00",
+  "updated": "2026-09-20T16:11:36.951062+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -10,6 +10,17 @@
       "nationality": "Norway",
       "team": "Manchester City",
       "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 5,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "Alexander Isak",
+      "firstName": "Alexander",
+      "lastName": "Isak",
+      "nationality": "Sweden",
+      "team": "Liverpool",
+      "teamBadge": "https://crests.football-data.org/64.png",
       "goals": 4,
       "assists": 0,
       "penalties": 0
@@ -59,14 +70,14 @@
       "penalties": 0
     },
     {
-      "name": "Alexander Isak",
-      "firstName": "Alexander",
-      "lastName": "Isak",
-      "nationality": "Sweden",
-      "team": "Liverpool",
-      "teamBadge": "https://crests.football-data.org/64.png",
+      "name": "Rayan Cherki",
+      "firstName": "Rayan",
+      "lastName": "Cherki",
+      "nationality": "France",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
       "goals": 3,
-      "assists": 0,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -101,17 +112,6 @@
       "goals": 3,
       "assists": 1,
       "penalties": 1
-    },
-    {
-      "name": "Kai Havertz",
-      "firstName": "Kai",
-      "lastName": "Havertz",
-      "nationality": "Germany",
-      "team": "Arsenal",
-      "teamBadge": "https://crests.football-data.org/57.png",
-      "goals": 2,
-      "assists": 0,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -119,6 +119,12 @@
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
       "goalsFor": 16,
+      "played": 5
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsFor": 13,
       "played": 5
     },
     {
@@ -138,32 +144,20 @@
       "badge": "https://crests.football-data.org/67.png",
       "goalsFor": 9,
       "played": 5
-    },
-    {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 8,
-      "played": 4
     }
   ],
   "bestDefences": [
     {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalsAgainst": 2,
-      "played": 4
+      "name": "Leeds United",
+      "badge": "https://crests.football-data.org/341.png",
+      "goalsAgainst": 3,
+      "played": 5
     },
     {
       "name": "Everton",
       "badge": "https://crests.football-data.org/62.png",
       "goalsAgainst": 3,
       "played": 5
-    },
-    {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
-      "goalsAgainst": 3,
-      "played": 4
     },
     {
       "name": "Arsenal",
@@ -174,6 +168,12 @@
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
+      "goalsAgainst": 4,
+      "played": 5
+    },
+    {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
       "goalsAgainst": 4,
       "played": 5
     }
@@ -188,8 +188,8 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 6,
-      "played": 4
+      "goalDifference": 8,
+      "played": 5
     },
     {
       "name": "Brentford",
@@ -207,21 +207,21 @@
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalDifference": 4,
-      "played": 4
+      "played": 5
     }
   ],
   "manUnitedSummary": {
-    "position": 13,
+    "position": 12,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 4,
+    "played": 5,
     "won": 1,
-    "drawn": 1,
+    "drawn": 2,
     "lost": 2,
     "goalsFor": 7,
     "goalsAgainst": 7,
     "goalDifference": 0,
-    "points": 4
+    "points": 5
   }
 }
