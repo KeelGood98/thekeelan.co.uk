@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-23T18:37:14.207742+00:00",
+  "updated": "2026-09-23T23:08:20.597742+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.3",
-      "votes": 359,
+      "votes": 379,
       "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1032863,
-      "mediaType": "movie",
-      "title": "The Love Hypothesis",
-      "overview": "Olive Smith, a biology PhD candidate, and Dr. Adam Carlsen, a hotshot professor and well-known tyrant, enter into a fake relationship, seeing each of their carefully calculated theories on love get thrown into chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
-      "releaseDate": "2026-09-23",
-      "rating": "8.8",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1032863"
     },
     {
       "id": 1101383,
@@ -36,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b9q9VmbXDvJmTziRqkwdEmFdwhr.jpg",
       "releaseDate": "2026-08-12",
       "rating": "7.0",
-      "votes": 1445,
+      "votes": 1457,
       "url": "https://www.themoviedb.org/movie/1101383"
+    },
+    {
+      "id": 1032863,
+      "mediaType": "movie",
+      "title": "The Love Hypothesis",
+      "overview": "Olive Smith, a biology PhD candidate, and Dr. Adam Carlsen, a hotshot professor and well-known tyrant, enter into a fake relationship, seeing each of their carefully calculated theories on love get thrown into chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c8hvRzN5nijvp1VcSs8nqHly1bK.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "8.4",
+      "votes": 34,
+      "url": "https://www.themoviedb.org/movie/1032863"
     },
     {
       "id": 1084244,
@@ -48,32 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qjTqY5coNiz6sVtPng40IzltsoN.jpg",
       "releaseDate": "2026-06-17",
       "rating": "8.4",
-      "votes": 2250,
+      "votes": 2255,
       "url": "https://www.themoviedb.org/movie/1084244"
-    },
-    {
-      "id": 1263337,
-      "mediaType": "movie",
-      "title": "Heart of the Beast",
-      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
-      "releaseDate": "2026-09-19",
-      "rating": "7.9",
-      "votes": 22,
-      "url": "https://www.themoviedb.org/movie/1263337"
-    },
-    {
-      "id": 1607127,
-      "mediaType": "movie",
-      "title": "One Last Shot",
-      "overview": "Seasoned Navy SEAL Jake Harris is called back into action when the world is threatened by a former comrade. To track down and prevent the mastermind from extracting the nuclear codes, Harris must lead his team into enemy territory against a brutal barrage of mercenaries, deadly traps, and a reckoning with his own checkered past.",
-      "poster": "https://image.tmdb.org/t/p/w500/niQ4NBh2jqAf1hDZP5m6ReWFAb7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8giIQcHpxgsPVP6c7aQtHl3txuh.jpg",
-      "releaseDate": "2026-09-22",
-      "rating": "7.6",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1607127"
     },
     {
       "id": 969681,
@@ -84,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg",
       "releaseDate": "2026-07-29",
       "rating": "7.9",
-      "votes": 2844,
+      "votes": 2849,
       "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1263337,
+      "mediaType": "movie",
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-19",
+      "rating": "7.7",
+      "votes": 25,
+      "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
       "id": 1368337,
@@ -96,8 +84,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/iuylzRSllrGn7YB322kwKoOVMcq.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 3876,
+      "votes": 3878,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1240889,
+      "mediaType": "movie",
+      "title": "Teenage Sex and Death at Camp Miasma",
+      "overview": "After years of slapdash sequels, the Camp Miasma franchise is handed over to an enthusiastic young director for resurrection. But when she visits the original’s star, a now-reclusive actress shrouded in mystery, the two women fall into a blood-soaked world of desire, fear, and delirium.",
+      "poster": "https://image.tmdb.org/t/p/w500/6Q6Zo6GNXMLP600OJSh6MhW21um.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/d1n2ySWSanU34eEsluRjfrjRq52.jpg",
+      "releaseDate": "2026-08-06",
+      "rating": "6.4",
+      "votes": 171,
+      "url": "https://www.themoviedb.org/movie/1240889"
     },
     {
       "id": 1248832,
@@ -107,21 +107,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/b7PtCwsuMw84REQq15nmQgT9UXN.jpg",
       "releaseDate": "2026-09-30",
-      "rating": "8.0",
-      "votes": 1,
+      "rating": "9.0",
+      "votes": 2,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
-      "id": 1465063,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Forgotten Island",
-      "overview": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
-      "poster": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
-      "releaseDate": "2026-09-10",
-      "rating": "7.6",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/movie/1465063"
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.4",
+      "votes": 754,
+      "url": "https://www.themoviedb.org/movie/1108427"
     }
   ],
   "trendingTv": [
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
       "releaseDate": "2026-09-17",
-      "rating": "6.9",
-      "votes": 81,
+      "rating": "6.8",
+      "votes": 83,
       "url": "https://www.themoviedb.org/tv/299939"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uYOYLFQ4q7asuhdiKXCqGaeAQUH.jpg",
       "releaseDate": "2026-09-16",
       "rating": "8.1",
-      "votes": 114,
+      "votes": 117,
       "url": "https://www.themoviedb.org/tv/273207"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.4",
-      "votes": 884,
+      "votes": 886,
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
@@ -170,8 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.2",
-      "votes": 414,
+      "votes": 415,
       "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 108978,
+      "mediaType": "tv",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3390,
+      "url": "https://www.themoviedb.org/tv/108978"
     },
     {
       "id": 113962,
@@ -182,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mU7l9UaEItxHbg2YBNs0sHjoFVY.jpg",
       "releaseDate": "2023-07-23",
       "rating": "8.2",
-      "votes": 1611,
+      "votes": 1615,
       "url": "https://www.themoviedb.org/tv/113962"
     },
     {
@@ -198,28 +210,28 @@
       "url": "https://www.themoviedb.org/tv/275102"
     },
     {
-      "id": 97546,
+      "id": 95480,
       "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2681,
-      "url": "https://www.themoviedb.org/tv/97546"
+      "title": "Slow Horses",
+      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xpSxYoqTyz0Fb8Wn2S3bp0NIqVc.jpg",
+      "releaseDate": "2022-04-01",
+      "rating": "8.0",
+      "votes": 995,
+      "url": "https://www.themoviedb.org/tv/95480"
     },
     {
-      "id": 108978,
+      "id": 2190,
       "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3390,
-      "url": "https://www.themoviedb.org/tv/108978"
+      "title": "South Park",
+      "overview": "Follow the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+      "poster": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+      "releaseDate": "1997-08-13",
+      "rating": "8.3",
+      "votes": 5160,
+      "url": "https://www.themoviedb.org/tv/2190"
     },
     {
       "id": 232018,
@@ -232,18 +244,6 @@
       "rating": "7.0",
       "votes": 124,
       "url": "https://www.themoviedb.org/tv/232018"
-    },
-    {
-      "id": 246473,
-      "mediaType": "tv",
-      "title": "Made in Korea",
-      "overview": "In 1970s South Korea, follow two men on opposite sides of power — one driven by ambition, the other by justice. As their worlds collide, greed, loyalty, and survival intertwine in a battle that will shape a nation.",
-      "poster": "https://image.tmdb.org/t/p/w500/cyBg9FJ2AmTWEGktA43gMo4t0Vj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3GmRS3efCTp6jumogKOxYBrV5mO.jpg",
-      "releaseDate": "2025-12-24",
-      "rating": "8.2",
-      "votes": 36,
-      "url": "https://www.themoviedb.org/tv/246473"
     }
   ],
   "upcomingMovies": [
