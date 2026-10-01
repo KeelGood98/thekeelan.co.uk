@@ -1,8 +1,20 @@
 {
-  "updated": "2026-09-30T15:16:59.195073+00:00",
+  "updated": "2026-10-01T00:09:59.734230+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1248832,
+      "mediaType": "movie",
+      "title": "Digger",
+      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
+      "releaseDate": "2026-09-28",
+      "rating": "7.3",
+      "votes": 22,
+      "url": "https://www.themoviedb.org/movie/1248832"
+    },
     {
       "id": 1423191,
       "mediaType": "movie",
@@ -12,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.3",
-      "votes": 621,
+      "votes": 629,
       "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1248832,
-      "mediaType": "movie",
-      "title": "Digger",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
-      "releaseDate": "2026-09-28",
-      "rating": "7.4",
-      "votes": 17,
-      "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
       "id": 1377237,
@@ -36,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
       "releaseDate": "2026-09-07",
       "rating": "8.1",
-      "votes": 178,
+      "votes": 193,
       "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
@@ -44,11 +44,11 @@
       "mediaType": "movie",
       "title": "UNABOMBER",
       "overview": "Follow Ted Kaczynski's transformation from Harvard prodigy into the infamous Unabomber. Subjected to controversial psychological experiments by Professor Henry Murray, Kaczynski's troubled past resurfaces decades later when his manhunt, led by FBI agent Joanne Miller, brings to light the chilling consequences of ambition and isolation.",
-      "poster": "https://image.tmdb.org/t/p/w500/yXbG3BjBlu79tIknvqOF5Pnkw1V.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
       "releaseDate": "2026-09-25",
-      "rating": "6.8",
-      "votes": 213,
+      "rating": "6.7",
+      "votes": 222,
       "url": "https://www.themoviedb.org/movie/1492640"
     },
     {
@@ -59,9 +59,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
       "releaseDate": "2026-09-10",
-      "rating": "7.5",
-      "votes": 34,
+      "rating": "7.7",
+      "votes": 60,
       "url": "https://www.themoviedb.org/movie/977942"
+    },
+    {
+      "id": 1204680,
+      "mediaType": "movie",
+      "title": "Coyote vs. Acme",
+      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+      "poster": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
+      "releaseDate": "2026-08-17",
+      "rating": "7.6",
+      "votes": 586,
+      "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
       "id": 1283515,
@@ -71,33 +83,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
       "releaseDate": "2026-09-30",
-      "rating": "7.7",
-      "votes": 5,
+      "rating": "7.0",
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
-      "id": 1032863,
+      "id": 1375441,
       "mediaType": "movie",
-      "title": "The Love Hypothesis",
-      "overview": "Olive Smith, a biology PhD candidate, and Dr. Adam Carlsen, a hotshot professor and well-known tyrant, enter into a fake relationship, seeing each of their carefully calculated theories on love get thrown into chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+      "title": "Primetime",
+      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history, turning an undercover investigation into one of the most controversial cultural phenomena of the decade.",
+      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
       "releaseDate": "2026-09-23",
-      "rating": "8.1",
-      "votes": 375,
-      "url": "https://www.themoviedb.org/movie/1032863"
-    },
-    {
-      "id": 1339713,
-      "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 5841,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "rating": "7.1",
+      "votes": 67,
+      "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
       "id": 1263337,
@@ -108,20 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
       "releaseDate": "2026-09-19",
       "rating": "7.6",
-      "votes": 149,
+      "votes": 156,
       "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
-      "id": 1003596,
+      "id": 1032863,
       "mediaType": "movie",
-      "title": "Avengers: Doomsday",
-      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
-      "releaseDate": "2026-12-15",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1003596"
+      "title": "The Love Hypothesis",
+      "overview": "Olive Smith, a biology PhD candidate, and Dr. Adam Carlsen, a hotshot professor and well-known tyrant, enter into a fake relationship, seeing each of their carefully calculated theories on love get thrown into chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o7Oy9Gbx1CCyaweL8xUhtMW4Puq.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "8.1",
+      "votes": 381,
+      "url": "https://www.themoviedb.org/movie/1032863"
     }
   ],
   "trendingTv": [
@@ -134,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wJjnJbVUwPz0GADAgpFt9nWtzUu.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.4",
-      "votes": 475,
+      "votes": 476,
       "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 97546,
+      "mediaType": "tv",
+      "title": "Ted Lasso",
+      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
+      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
+      "releaseDate": "2020-08-14",
+      "rating": "8.4",
+      "votes": 2702,
+      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 247718,
@@ -146,32 +158,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.5",
-      "votes": 935,
+      "votes": 936,
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
-      "id": 94664,
+      "id": 1413,
       "mediaType": "tv",
-      "title": "Mushoku Tensei: Jobless Reincarnation",
-      "overview": "When a 34-year-old underachiever gets run over by a truck, his story doesn't end there. Reincarnated in a new world as an infant, Rudy will seize every opportunity to live the life he's always wanted. Armed with new friends, some freshly acquired magical abilities, and the courage to do the things he's always dreamed of, he's embarking on an epic adventure—with all of his past experience intact!",
-      "poster": "https://image.tmdb.org/t/p/w500/gLKOYIMyKlUHW0SVdskhgf9C0yy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j9fRIimor0AMFJR9kjZubXcABzZ.jpg",
-      "releaseDate": "2021-01-11",
-      "rating": "8.4",
-      "votes": 1751,
-      "url": "https://www.themoviedb.org/tv/94664"
+      "title": "American Horror Story",
+      "overview": "An anthology horror drama series centering on different characters and locations, including a house with a murderous past, an asylum, a witch coven, a freak show, a hotel, a farmhouse in Roanoke, a cult, the apocalypse and a summer camp.",
+      "poster": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5G4Bnc4Q0YUK1bwLEUYmIsmm2Ib.jpg",
+      "releaseDate": "2011-10-05",
+      "rating": "8.1",
+      "votes": 6199,
+      "url": "https://www.themoviedb.org/tv/1413"
     },
     {
-      "id": 299939,
+      "id": 65942,
       "mediaType": "tv",
-      "title": "Monster: The Lizzie Borden Story",
-      "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
-      "poster": "https://image.tmdb.org/t/p/w500/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
-      "releaseDate": "2026-09-17",
-      "rating": "7.1",
-      "votes": 132,
-      "url": "https://www.themoviedb.org/tv/299939"
+      "title": "Re:ZERO -Starting Life in Another World-",
+      "overview": "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+      "poster": "https://image.tmdb.org/t/p/w500/oHqYrPAsIiTD5m4DuxumV4er8BU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7ZruEnSnHD6Jx5mF0hBt1E306Vt.jpg",
+      "releaseDate": "2016-04-04",
+      "rating": "8.1",
+      "votes": 793,
+      "url": "https://www.themoviedb.org/tv/65942"
     },
     {
       "id": 37854,
@@ -186,16 +198,16 @@
       "url": "https://www.themoviedb.org/tv/37854"
     },
     {
-      "id": 108978,
+      "id": 456,
       "mediaType": "tv",
-      "title": "Reacher",
-      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
-      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
-      "releaseDate": "2022-02-03",
-      "rating": "8.1",
-      "votes": 3432,
-      "url": "https://www.themoviedb.org/tv/108978"
+      "title": "The Simpsons",
+      "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+      "poster": "https://image.tmdb.org/t/p/w500/tf0CUEynk6GfmrlHIQKQ5mfFP5P.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qcSHGC5BfoqBoP99PzDIERYG5Qm.jpg",
+      "releaseDate": "1989-12-17",
+      "rating": "8.0",
+      "votes": 11041,
+      "url": "https://www.themoviedb.org/tv/456"
     },
     {
       "id": 250203,
@@ -205,45 +217,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/aLE7R8QZPpTiWZS48PS22i2OWbl.jpg",
       "releaseDate": "2026-09-22",
-      "rating": "8.7",
-      "votes": 10,
+      "rating": "8.4",
+      "votes": 11,
       "url": "https://www.themoviedb.org/tv/250203"
     },
     {
-      "id": 1413,
+      "id": 299939,
       "mediaType": "tv",
-      "title": "American Horror Story",
-      "overview": "An anthology horror drama series centering on different characters and locations, including a house with a murderous past, an asylum, a witch coven, a freak show, a hotel, a farmhouse in Roanoke, a cult, the apocalypse and a summer camp.",
-      "poster": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5G4Bnc4Q0YUK1bwLEUYmIsmm2Ib.jpg",
-      "releaseDate": "2011-10-05",
+      "title": "Monster: The Lizzie Borden Story",
+      "overview": "Trapped in a cruel Victorian-era household, Lizzie Borden kills her parents in a gory ax murder that shocks the nation.",
+      "poster": "https://image.tmdb.org/t/p/w500/57XScX1aYtKi1LvHYFQLPUxVhTG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gaew60NXUxok3Vmls7gkAT7lYW0.jpg",
+      "releaseDate": "2026-09-17",
+      "rating": "7.0",
+      "votes": 134,
+      "url": "https://www.themoviedb.org/tv/299939"
+    },
+    {
+      "id": 108978,
+      "mediaType": "tv",
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
       "rating": "8.1",
-      "votes": 6198,
-      "url": "https://www.themoviedb.org/tv/1413"
-    },
-    {
-      "id": 282326,
-      "mediaType": "tv",
-      "title": "Against the Current",
-      "overview": "Shen Jialan, once a nobleman's granddaughter, falls from grace after her family is falsely accused of treason. Abandoned by her fiancé Lin Jinqi, she is forced to assume a servant's identity in his household. Despite hardships, she refuses to bow to fate. With resilience and wit, she rises above class barriers, wins Lin Jinqi's heart, earns the family's respect, and ultimately clears her family's name.",
-      "poster": "https://image.tmdb.org/t/p/w500/euBlF64efQmsl2y54LeNmLQPNob.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mZSewqVlY4F2F2Axm7hiG6KBOBp.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "6.2",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/tv/282326"
-    },
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2700,
-      "url": "https://www.themoviedb.org/tv/97546"
+      "votes": 3434,
+      "url": "https://www.themoviedb.org/tv/108978"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
       "releaseDate": "2026-10-09",
-      "rating": "7.5",
-      "votes": 33,
+      "rating": "7.6",
+      "votes": 37,
       "url": "https://www.themoviedb.org/movie/977942"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
       "releaseDate": "2026-10-04",
       "rating": "8.2",
-      "votes": 35,
+      "votes": 36,
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
@@ -301,7 +301,7 @@
       "title": "Clayface",
       "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
       "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1A7s8zG4PF6YoJrncrTO6N4r0Sx.jpg",
       "releaseDate": "2026-10-23",
       "rating": "0.0",
       "votes": 0,
@@ -336,7 +336,7 @@
       "mediaType": "movie",
       "title": "The Social Reckoning",
       "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/hDe0OryfBINwmZDRtQjnh6UKUJf.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/2RmNbvlv9jDrLGDDkdYZDifKGCm.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ycqTwRV7jUxjMospXxKTVS74nft.jpg",
       "releaseDate": "2026-10-09",
       "rating": "0.0",
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-18",
       "rating": "7.3",
-      "votes": 619,
+      "votes": 622,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -390,8 +390,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7GOW6jod9lLurW5utokAatxg7ql.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.6",
-      "votes": 577,
+      "votes": 582,
       "url": "https://www.themoviedb.org/movie/1204680"
+    },
+    {
+      "id": 1377237,
+      "mediaType": "movie",
+      "title": "Runner",
+      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "8.1",
+      "votes": 181,
+      "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
       "id": 1375646,
@@ -402,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 968,
+      "votes": 972,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -414,20 +426,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
       "releaseDate": "2026-09-23",
       "rating": "7.6",
-      "votes": 147,
+      "votes": 150,
       "url": "https://www.themoviedb.org/movie/1263337"
-    },
-    {
-      "id": 1377237,
-      "mediaType": "movie",
-      "title": "Runner",
-      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "8.2",
-      "votes": 175,
-      "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
       "id": 1248832,
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/4A3r1AjJg9Wa6ms3MGOScetCY0o.jpg",
       "releaseDate": "2026-10-02",
-      "rating": "7.3",
-      "votes": 16,
+      "rating": "7.4",
+      "votes": 18,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
       "releaseDate": "2019-04-25",
       "rating": "8.2",
-      "votes": 28857,
+      "votes": 28859,
       "url": "https://www.themoviedb.org/movie/299534"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
       "releaseDate": "2026-10-04",
       "rating": "8.2",
-      "votes": 35,
+      "votes": 36,
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lh3BDkmWJh998n4fQcHYcVi7dpm.jpg",
       "releaseDate": "2026-09-02",
       "rating": "6.7",
-      "votes": 468,
+      "votes": 469,
       "url": "https://www.themoviedb.org/movie/1284465"
     }
   ],
