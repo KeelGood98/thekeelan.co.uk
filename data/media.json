@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04T14:21:20.282572+00:00",
+  "updated": "2026-10-04T18:20:56.523450+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,44 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
       "releaseDate": "2026-09-28",
       "rating": "7.4",
-      "votes": 114,
+      "votes": 119,
       "url": "https://www.themoviedb.org/movie/1248832"
-    },
-    {
-      "id": 977942,
-      "mediaType": "movie",
-      "title": "The Uprising",
-      "overview": "As war and plague devastate 14th-century England, a humble peasant ignites a rebellion, uniting an army of commoners to defy the King’s might in a desperate fight for justice and survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
-      "releaseDate": "2026-09-10",
-      "rating": "7.9",
-      "votes": 179,
-      "url": "https://www.themoviedb.org/movie/977942"
-    },
-    {
-      "id": 1377237,
-      "mediaType": "movie",
-      "title": "Runner",
-      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
-      "releaseDate": "2026-09-07",
-      "rating": "8.3",
-      "votes": 335,
-      "url": "https://www.themoviedb.org/movie/1377237"
-    },
-    {
-      "id": 1283515,
-      "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh is hired by Jeremy Crawford to ghostwrite novels for his bestselling author wife Verity, who is unable to finish following an accident. Lowen gradually uncovers Verity's disturbing truths while residing at the Crawfords' home to work.",
-      "poster": "https://image.tmdb.org/t/p/w500/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
-      "releaseDate": "2026-09-30",
-      "rating": "6.7",
-      "votes": 70,
-      "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
       "id": 1423191,
@@ -60,20 +24,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.3",
-      "votes": 723,
+      "votes": 728,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
-      "id": 1492640,
+      "id": 1283515,
       "mediaType": "movie",
-      "title": "UNABOMBER",
-      "overview": "Follow Ted Kaczynski's transformation from Harvard prodigy into the infamous Unabomber. Subjected to controversial psychological experiments by Professor Henry Murray, Kaczynski's troubled past resurfaces decades later when his manhunt, led by FBI agent Joanne Miller, brings to light the chilling consequences of ambition and isolation.",
-      "poster": "https://image.tmdb.org/t/p/w500/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
-      "releaseDate": "2026-09-25",
+      "title": "Verity",
+      "overview": "Lowen Ashleigh is hired by Jeremy Crawford to ghostwrite novels for his bestselling author wife Verity, who is unable to finish following an accident. Lowen gradually uncovers Verity's disturbing truths while residing at the Crawfords' home to work.",
+      "poster": "https://image.tmdb.org/t/p/w500/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+      "releaseDate": "2026-09-30",
       "rating": "6.6",
-      "votes": 318,
-      "url": "https://www.themoviedb.org/movie/1492640"
+      "votes": 72,
+      "url": "https://www.themoviedb.org/movie/1283515"
+    },
+    {
+      "id": 1377237,
+      "mediaType": "movie",
+      "title": "Runner",
+      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
+      "releaseDate": "2026-09-07",
+      "rating": "8.3",
+      "votes": 341,
+      "url": "https://www.themoviedb.org/movie/1377237"
+    },
+    {
+      "id": 977942,
+      "mediaType": "movie",
+      "title": "The Uprising",
+      "overview": "As war and plague devastate 14th-century England, a humble peasant ignites a rebellion, uniting an army of commoners to defy the King’s might in a desperate fight for justice and survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
+      "releaseDate": "2026-09-10",
+      "rating": "7.9",
+      "votes": 181,
+      "url": "https://www.themoviedb.org/movie/977942"
+    },
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
       "id": 969681,
@@ -88,16 +88,16 @@
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1204680,
+      "id": 1492640,
       "mediaType": "movie",
-      "title": "Coyote vs. Acme",
-      "overview": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-      "poster": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
-      "releaseDate": "2026-08-17",
-      "rating": "7.5",
-      "votes": 654,
-      "url": "https://www.themoviedb.org/movie/1204680"
+      "title": "UNABOMBER",
+      "overview": "Follow Ted Kaczynski's transformation from Harvard prodigy into the infamous Unabomber. Subjected to controversial psychological experiments by Professor Henry Murray, Kaczynski's troubled past resurfaces decades later when his manhunt, led by FBI agent Joanne Miller, brings to light the chilling consequences of ambition and isolation.",
+      "poster": "https://image.tmdb.org/t/p/w500/39aMkR8Y5vhCG9dTkjiqRl8AVqp.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/58D9nalUYW5L5K0guw7hcpsEJBH.jpg",
+      "releaseDate": "2026-09-25",
+      "rating": "6.6",
+      "votes": 328,
+      "url": "https://www.themoviedb.org/movie/1492640"
     },
     {
       "id": 1339713,
@@ -108,20 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 5919,
+      "votes": 5921,
       "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 1003596,
+      "id": 1458857,
       "mediaType": "movie",
-      "title": "Avengers: Doomsday",
-      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
-      "releaseDate": "2026-12-16",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1003596"
+      "title": "Doing Life",
+      "overview": "A single mother and an incarcerated man forge an unlikely bond through heartfelt letters, unlocking a door to redemption, hope and love against all odds.",
+      "poster": "https://image.tmdb.org/t/p/w500/5nZVjsCk5tWyyhLGt5U2TxsR85w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nDScZ6YR2nfNCeK5bmJ1ujb355b.jpg",
+      "releaseDate": "2026-10-02",
+      "rating": "6.5",
+      "votes": 42,
+      "url": "https://www.themoviedb.org/movie/1458857"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
       "releaseDate": "2026-10-01",
       "rating": "7.8",
-      "votes": 27,
+      "votes": 28,
       "url": "https://www.themoviedb.org/tv/258165"
     },
     {
@@ -150,6 +150,54 @@
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
+      "id": 207347,
+      "mediaType": "tv",
+      "title": "Blue Box",
+      "overview": "Taiki Inomata loves badminton, but he has a long way to go before he can reach nationals. When Taiki sees upperclassman Chinatsu Kano practicing her heart out on the girls’ basketball team, he falls for her hard. After an unexpected turn of events brings the two closer together, sports might not be the first thing on their minds anymore!",
+      "poster": "https://image.tmdb.org/t/p/w500/sN3TuYevEPWxZhwcp6I2PJRW1jl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8p39Ud6ZKMixBQ7R4frg2o3idzc.jpg",
+      "releaseDate": "2024-10-03",
+      "rating": "7.8",
+      "votes": 103,
+      "url": "https://www.themoviedb.org/tv/207347"
+    },
+    {
+      "id": 284558,
+      "mediaType": "tv",
+      "title": "Kill Jackie",
+      "overview": "Jackie Price has been living a wealthy, luxurious life for the past 20 years after escaping a dangerous past as an international cocaine dealer. But just as life begins to feel a little boring, she discovers that The Seven Demons, a group of the world’s most terrifying hitmen, have been hired to kill her.",
+      "poster": "https://image.tmdb.org/t/p/w500/xECrN4jpKMhTOxUbnCdiKo7QWdL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/twc2YYBXTjdv52TShVumB1voT3Q.jpg",
+      "releaseDate": "2026-10-02",
+      "rating": "7.0",
+      "votes": 14,
+      "url": "https://www.themoviedb.org/tv/284558"
+    },
+    {
+      "id": 298505,
+      "mediaType": "tv",
+      "title": "Coven Academy",
+      "overview": "A coven protects their magic school from a dark fate.",
+      "poster": "https://image.tmdb.org/t/p/w500/f4R4YGeMQrXEu6jm3oAbSPeGC3M.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mGFtH5pUXDd4hSXUfl8HnHlRWJV.jpg",
+      "releaseDate": "2026-10-01",
+      "rating": "7.1",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/tv/298505"
+    },
+    {
+      "id": 73223,
+      "mediaType": "tv",
+      "title": "Black Clover",
+      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "poster": "https://image.tmdb.org/t/p/w500/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
+      "releaseDate": "2017-10-03",
+      "rating": "8.5",
+      "votes": 2214,
+      "url": "https://www.themoviedb.org/tv/73223"
+    },
+    {
       "id": 247718,
       "mediaType": "tv",
       "title": "MobLand",
@@ -162,28 +210,16 @@
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
-      "id": 298505,
+      "id": 108978,
       "mediaType": "tv",
-      "title": "Coven Academy",
-      "overview": "A coven protects their magic school from a dark fate.",
-      "poster": "https://image.tmdb.org/t/p/w500/f4R4YGeMQrXEu6jm3oAbSPeGC3M.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mGFtH5pUXDd4hSXUfl8HnHlRWJV.jpg",
-      "releaseDate": "2026-10-01",
-      "rating": "7.5",
-      "votes": 13,
-      "url": "https://www.themoviedb.org/tv/298505"
-    },
-    {
-      "id": 284558,
-      "mediaType": "tv",
-      "title": "Kill Jackie",
-      "overview": "Jackie Price has been living a wealthy, luxurious life for the past 20 years after escaping a dangerous past as an international cocaine dealer. But just as life begins to feel a little boring, she discovers that The Seven Demons, a group of the world’s most terrifying hitmen, have been hired to kill her.",
-      "poster": "https://image.tmdb.org/t/p/w500/vvMpr6wO4EMtA7lqftffTel5c1R.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4OJPcAAFAC9TvV75c9hjZVFgbjQ.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "7.0",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/284558"
+      "title": "Reacher",
+      "overview": "Jack Reacher, a veteran military police investigator, has just recently entered civilian life. Reacher is a drifter, carrying no phone and the barest of essentials as he travels the country and explores the nation he once served.",
+      "poster": "https://image.tmdb.org/t/p/w500/f1VCQIG2iCyOookdgOzwtUpwWC0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pF0qkRsrHkdYadPWY9AMeFZfcwk.jpg",
+      "releaseDate": "2022-02-03",
+      "rating": "8.1",
+      "votes": 3449,
+      "url": "https://www.themoviedb.org/tv/108978"
     },
     {
       "id": 2190,
@@ -208,42 +244,6 @@
       "rating": "8.4",
       "votes": 1764,
       "url": "https://www.themoviedb.org/tv/94664"
-    },
-    {
-      "id": 73223,
-      "mediaType": "tv",
-      "title": "Black Clover",
-      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
-      "poster": "https://image.tmdb.org/t/p/w500/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
-      "releaseDate": "2017-10-03",
-      "rating": "8.5",
-      "votes": 2211,
-      "url": "https://www.themoviedb.org/tv/73223"
-    },
-    {
-      "id": 207347,
-      "mediaType": "tv",
-      "title": "Blue Box",
-      "overview": "Taiki Inomata loves badminton, but he has a long way to go before he can reach nationals. When Taiki sees upperclassman Chinatsu Kano practicing her heart out on the girls’ basketball team, he falls for her hard. After an unexpected turn of events brings the two closer together, sports might not be the first thing on their minds anymore!",
-      "poster": "https://image.tmdb.org/t/p/w500/sN3TuYevEPWxZhwcp6I2PJRW1jl.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8p39Ud6ZKMixBQ7R4frg2o3idzc.jpg",
-      "releaseDate": "2024-10-03",
-      "rating": "7.8",
-      "votes": 103,
-      "url": "https://www.themoviedb.org/tv/207347"
-    },
-    {
-      "id": 220542,
-      "mediaType": "tv",
-      "title": "The Apothecary Diaries",
-      "overview": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!",
-      "poster": "https://image.tmdb.org/t/p/w500/sJZcy8QsOPuRPiCfoCWVB3r9Ohg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
-      "releaseDate": "2023-10-22",
-      "rating": "8.6",
-      "votes": 652,
-      "url": "https://www.themoviedb.org/tv/220542"
     }
   ],
   "upcomingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-18",
       "rating": "7.3",
-      "votes": 712,
+      "votes": 726,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/viZqGq9TNvQ5uXSD4ahg2RpRONT.jpg",
       "releaseDate": "2026-08-21",
       "rating": "7.5",
-      "votes": 650,
+      "votes": 655,
       "url": "https://www.themoviedb.org/movie/1204680"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2c9zNZJL0ZdagD6JbmU3hH4hovs.jpg",
       "releaseDate": "2026-09-11",
       "rating": "8.3",
-      "votes": 332,
+      "votes": 338,
       "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
       "releaseDate": "2026-10-02",
       "rating": "7.4",
-      "votes": 111,
+      "votes": 118,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hpBGCnzOvdtQoMyE48gvwp2y5yx.jpg",
       "releaseDate": "2026-08-28",
       "rating": "8.1",
-      "votes": 1034,
+      "votes": 1035,
       "url": "https://www.themoviedb.org/movie/1375646"
     },
     {
@@ -438,8 +438,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
       "releaseDate": "2026-09-23",
       "rating": "7.5",
-      "votes": 196,
+      "votes": 198,
       "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1283515,
+      "mediaType": "movie",
+      "title": "Verity",
+      "overview": "Lowen Ashleigh is hired by Jeremy Crawford to ghostwrite novels for his bestselling author wife Verity, who is unable to finish following an accident. Lowen gradually uncovers Verity's disturbing truths while residing at the Crawfords' home to work.",
+      "poster": "https://image.tmdb.org/t/p/w500/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+      "releaseDate": "2026-10-02",
+      "rating": "6.6",
+      "votes": 72,
+      "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
       "id": 1538457,
@@ -454,18 +466,6 @@
       "url": "https://www.themoviedb.org/movie/1538457"
     },
     {
-      "id": 1283515,
-      "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh is hired by Jeremy Crawford to ghostwrite novels for his bestselling author wife Verity, who is unable to finish following an accident. Lowen gradually uncovers Verity's disturbing truths while residing at the Crawfords' home to work.",
-      "poster": "https://image.tmdb.org/t/p/w500/dGSsPovyUW5XVekXcy7F2GyhTEh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "6.6",
-      "votes": 68,
-      "url": "https://www.themoviedb.org/movie/1283515"
-    },
-    {
       "id": 299534,
       "mediaType": "movie",
       "title": "Avengers: Endgame",
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
       "releaseDate": "2019-04-25",
       "rating": "8.2",
-      "votes": 28890,
+      "votes": 28894,
       "url": "https://www.themoviedb.org/movie/299534"
     },
     {
