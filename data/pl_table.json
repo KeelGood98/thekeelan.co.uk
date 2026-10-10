@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T22:42:06.823613+00:00",
+  "updated": "2026-10-10T12:38:15.748993+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -21,14 +21,14 @@
       "name": "Arsenal",
       "fullName": "Arsenal FC",
       "badge": "https://crests.football-data.org/57.png",
-      "played": 5,
+      "played": 6,
       "won": 4,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 1,
       "goalsFor": 8,
       "goalsAgainst": 4,
       "goalDifference": 4,
-      "points": 12
+      "points": 13
     },
     {
       "position": 3,
@@ -46,6 +46,20 @@
     },
     {
       "position": 4,
+      "name": "Leeds United",
+      "fullName": "Leeds United FC",
+      "badge": "https://crests.football-data.org/341.png",
+      "played": 6,
+      "won": 2,
+      "drawn": 4,
+      "lost": 0,
+      "goalsFor": 7,
+      "goalsAgainst": 3,
+      "goalDifference": 4,
+      "points": 10
+    },
+    {
+      "position": 5,
       "name": "Brentford",
       "fullName": "Brentford FC",
       "badge": "https://crests.football-data.org/402.png",
@@ -56,20 +70,6 @@
       "goalsFor": 10,
       "goalsAgainst": 4,
       "goalDifference": 6,
-      "points": 9
-    },
-    {
-      "position": 5,
-      "name": "Leeds United",
-      "fullName": "Leeds United FC",
-      "badge": "https://crests.football-data.org/341.png",
-      "played": 5,
-      "won": 2,
-      "drawn": 3,
-      "lost": 0,
-      "goalsFor": 7,
-      "goalsAgainst": 3,
-      "goalDifference": 4,
       "points": 9
     },
     {
