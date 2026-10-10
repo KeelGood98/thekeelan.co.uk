@@ -1,15 +1,15 @@
 {
-  "updated": "2026-10-10T12:38:16.531674+00:00",
+  "updated": "2026-10-10T21:48:38.759307+00:00",
   "source": "football-data.org",
   "team": "Manchester United",
   "nextMatch": {
-    "id": 560600,
-    "date": "Sat 10 Oct, 17:30",
-    "sortDate": "2026-10-10T17:30:00+01:00",
+    "id": 560605,
+    "date": "Sun 18 Oct, 14:00",
+    "sortDate": "2026-10-18T14:00:00+01:00",
     "competition": "Premier League",
-    "matchday": 6,
-    "home": "Manchester United",
-    "away": "Tottenham",
+    "matchday": 7,
+    "home": "Leeds United",
+    "away": "Manchester United",
     "score": "",
     "halfTimeScore": "",
     "winner": "",
@@ -98,9 +98,7 @@
       "venue": "TBC",
       "channel": "",
       "status": "FINISHED"
-    }
-  ],
-  "upcomingFixtures": [
+    },
     {
       "id": 560600,
       "date": "Sat 10 Oct, 17:30",
@@ -109,14 +107,16 @@
       "matchday": 6,
       "home": "Manchester United",
       "away": "Tottenham",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "1-1",
+      "halfTimeScore": "0-0",
+      "winner": "Draw",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
-    },
+      "channel": "",
+      "status": "FINISHED"
+    }
+  ],
+  "upcomingFixtures": [
     {
       "id": 560605,
       "date": "Sun 18 Oct, 14:00",
@@ -221,6 +221,22 @@
       "matchday": 13,
       "home": "Newcastle",
       "away": "Manchester United",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560673,
+      "date": "Sat 05 Dec, 15:00",
+      "sortDate": "2026-12-05T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 14,
+      "home": "Manchester United",
+      "away": "Coventry City",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
@@ -319,13 +335,13 @@
       "matchday": 6,
       "home": "Manchester United",
       "away": "Tottenham",
-      "score": "",
-      "halfTimeScore": "",
-      "winner": "",
-      "result": "",
+      "score": "1-1",
+      "halfTimeScore": "0-0",
+      "winner": "Draw",
+      "result": "D",
       "venue": "TBC",
-      "channel": "TBC",
-      "status": "TIMED"
+      "channel": "",
+      "status": "FINISHED"
     },
     {
       "id": 560605,
@@ -431,6 +447,22 @@
       "matchday": 13,
       "home": "Newcastle",
       "away": "Manchester United",
+      "score": "",
+      "halfTimeScore": "",
+      "winner": "",
+      "result": "",
+      "venue": "TBC",
+      "channel": "TBC",
+      "status": "TIMED"
+    },
+    {
+      "id": 560673,
+      "date": "Sat 05 Dec, 15:00",
+      "sortDate": "2026-12-05T15:00:00+00:00",
+      "competition": "Premier League",
+      "matchday": 14,
+      "home": "Manchester United",
+      "away": "Coventry City",
       "score": "",
       "halfTimeScore": "",
       "winner": "",
