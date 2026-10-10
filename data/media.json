@@ -1,8 +1,20 @@
 {
-  "updated": "2026-10-10T14:43:24.805942+00:00",
+  "updated": "2026-10-10T18:53:13.697633+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1148365,
+      "mediaType": "movie",
+      "title": "Matchbox the Movie",
+      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
+      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
+      "releaseDate": "2026-10-05",
+      "rating": "7.6",
+      "votes": 99,
+      "url": "https://www.themoviedb.org/movie/1148365"
+    },
     {
       "id": 969681,
       "mediaType": "movie",
@@ -12,44 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.4",
-      "votes": 4728,
+      "votes": 4759,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1148365,
-      "mediaType": "movie",
-      "title": "Matchbox the Movie",
-      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
-      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
-      "releaseDate": "2026-10-05",
-      "rating": "7.7",
-      "votes": 88,
-      "url": "https://www.themoviedb.org/movie/1148365"
-    },
-    {
-      "id": 1291595,
-      "mediaType": "movie",
-      "title": "Insidious: Out of the Further",
-      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, the purgatorial realm of lost souls at the heart of the Insidious universe. When something evil comes after her, Gemma discovers an ability that changes everything: she doesn't just enter The Further, she can bring what lives there back to the real world. Once the demons realize her power, our world becomes their playground.",
-      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
-      "releaseDate": "2026-08-19",
-      "rating": "7.6",
-      "votes": 495,
-      "url": "https://www.themoviedb.org/movie/1291595"
-    },
-    {
-      "id": 1236045,
-      "mediaType": "movie",
-      "title": "Animals",
-      "overview": "When the son of an L.A. mayoral candidate is kidnapped, he and his wife have a few hours to come up with the ransom payment. With most of their money spent on his political campaign, they have to get their hands dirty and expose a side of their lives they never intended to see the light of day.",
-      "poster": "https://image.tmdb.org/t/p/w500/cyltXU1lAGhRFBuHQIMWBAPj8fI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tzoarEu7TsG959upiELyYPm5kO9.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "7.2",
-      "votes": 84,
-      "url": "https://www.themoviedb.org/movie/1236045"
     },
     {
       "id": 1101412,
@@ -60,8 +36,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
       "releaseDate": "2026-09-01",
       "rating": "7.2",
-      "votes": 311,
+      "votes": 317,
       "url": "https://www.themoviedb.org/movie/1101412"
+    },
+    {
+      "id": 1291595,
+      "mediaType": "movie",
+      "title": "Insidious: Out of the Further",
+      "overview": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, the purgatorial realm of lost souls at the heart of the Insidious universe. When something evil comes after her, Gemma discovers an ability that changes everything: she doesn't just enter The Further, she can bring what lives there back to the real world. Once the demons realize her power, our world becomes their playground.",
+      "poster": "https://image.tmdb.org/t/p/w500/4tTrW9dXCByS5wt2pXVWb58zNjz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/p40lmrdI4blcAPZQMTPaiy5v5Ym.jpg",
+      "releaseDate": "2026-08-19",
+      "rating": "7.6",
+      "votes": 504,
+      "url": "https://www.themoviedb.org/movie/1291595"
+    },
+    {
+      "id": 1236045,
+      "mediaType": "movie",
+      "title": "Animals",
+      "overview": "When the son of an L.A. mayoral candidate is kidnapped, he and his wife have a few hours to come up with the ransom payment. With most of their money spent on his political campaign, they have to get their hands dirty and expose a side of their lives they never intended to see the light of day.",
+      "poster": "https://image.tmdb.org/t/p/w500/cyltXU1lAGhRFBuHQIMWBAPj8fI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tzoarEu7TsG959upiELyYPm5kO9.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "7.1",
+      "votes": 96,
+      "url": "https://www.themoviedb.org/movie/1236045"
     },
     {
       "id": 1248832,
@@ -72,59 +72,71 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u3EtxdmZeiliW98c5Oegk5LIGZa.jpg",
       "releaseDate": "2026-09-28",
       "rating": "7.5",
-      "votes": 272,
+      "votes": 275,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
-      "id": 1400837,
+      "id": 1377237,
       "mediaType": "movie",
-      "title": "Other Mommy",
-      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.2",
-      "votes": 40,
-      "url": "https://www.themoviedb.org/movie/1400837"
+      "title": "Runner",
+      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iXR79oKsLHwLno9jdzxxeFP21sy.jpg",
+      "releaseDate": "2026-09-07",
+      "rating": "8.3",
+      "votes": 454,
+      "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
-      "id": 1423191,
+      "id": 1339713,
       "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.3",
-      "votes": 836,
-      "url": "https://www.themoviedb.org/movie/1423191"
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 6019,
+      "url": "https://www.themoviedb.org/movie/1339713"
     },
     {
-      "id": 1284046,
+      "id": 1003596,
       "mediaType": "movie",
-      "title": "Onslaught",
-      "overview": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
-      "poster": "https://image.tmdb.org/t/p/w500/cOGtvhc6Ij9KvzM6jZsfQyg0B0O.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/pmPXXniQlb4EdYY0gVZO90rf54F.jpg",
-      "releaseDate": "2026-09-02",
-      "rating": "5.7",
-      "votes": 79,
-      "url": "https://www.themoviedb.org/movie/1284046"
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1458857,
+      "id": 977942,
       "mediaType": "movie",
-      "title": "Doing Life",
-      "overview": "A single mother and an incarcerated man forge an unlikely bond through heartfelt letters, unlocking a door to redemption, hope and love against all odds.",
-      "poster": "https://image.tmdb.org/t/p/w500/5nZVjsCk5tWyyhLGt5U2TxsR85w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nDScZ6YR2nfNCeK5bmJ1ujb355b.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "7.7",
-      "votes": 81,
-      "url": "https://www.themoviedb.org/movie/1458857"
+      "title": "The Uprising",
+      "overview": "As war and plague devastate 14th-century England, a humble peasant ignites a rebellion, uniting an army of commoners to defy the King’s might in a desperate fight for justice and survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/7TUl15TOsIvndKlgMWTtLgtEzZP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y0reRTsewsPh0ePtgvDeLIsb5Wk.jpg",
+      "releaseDate": "2026-09-10",
+      "rating": "7.9",
+      "votes": 271,
+      "url": "https://www.themoviedb.org/movie/977942"
     }
   ],
   "trendingTv": [
+    {
+      "id": 288673,
+      "mediaType": "tv",
+      "title": "Carrie",
+      "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
+      "poster": "https://image.tmdb.org/t/p/w500/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "8.4",
+      "votes": 115,
+      "url": "https://www.themoviedb.org/tv/288673"
+    },
     {
       "id": 95350,
       "mediaType": "tv",
@@ -138,30 +150,6 @@
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
-      "id": 288673,
-      "mediaType": "tv",
-      "title": "Carrie",
-      "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
-      "poster": "https://image.tmdb.org/t/p/w500/eXjk4W4robXs7l1YXwaXMv4f2qb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "8.4",
-      "votes": 110,
-      "url": "https://www.themoviedb.org/tv/288673"
-    },
-    {
-      "id": 123542,
-      "mediaType": "tv",
-      "title": "LINK CLICK",
-      "overview": "Using superpowers to enter their clientele’s photos one by one, Cheng Xiaoshi and Lu Guang take their work seriously at “Time Photo Studio,” a small photography shop set in the backdrop of a modern metropolis. Each job can be full of danger, but nothing is more important than fulfilling every order, no matter the scale…or peril involved!",
-      "poster": "https://image.tmdb.org/t/p/w500/wo9jwu5qMvXzhW2cyy5E6hOVs92.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/w3agwUSMpJ4X9t1jGrDtqqRPjDQ.jpg",
-      "releaseDate": "2021-04-30",
-      "rating": "8.2",
-      "votes": 132,
-      "url": "https://www.themoviedb.org/tv/123542"
-    },
-    {
       "id": 285322,
       "mediaType": "tv",
       "title": "Below",
@@ -170,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
       "releaseDate": "2026-10-08",
       "rating": "7.4",
-      "votes": 44,
+      "votes": 47,
       "url": "https://www.themoviedb.org/tv/285322"
+    },
+    {
+      "id": 293607,
+      "mediaType": "tv",
+      "title": "100 Days of Deception",
+      "overview": "Hoping for freedom, Gyeongseong's top pickpocket infiltrates the Japanese colonial government to steal secrets — only to fall for her target's son.",
+      "poster": "https://image.tmdb.org/t/p/w500/bZHEU42QynnMrHUWK1Hhvj2cdPA.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3SvKCITqMtjgPIhFBjRc4yTAc4H.jpg",
+      "releaseDate": "2026-10-10",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/tv/293607"
     },
     {
       "id": 293610,
@@ -186,52 +186,16 @@
       "url": "https://www.themoviedb.org/tv/293610"
     },
     {
-      "id": 258165,
-      "mediaType": "tv",
-      "title": "East of Eden",
-      "overview": "In the early 1900s, a fiercely independent woman drives a rift between two brothers, igniting a saga that unfolds across two generations.",
-      "poster": "https://image.tmdb.org/t/p/w500/axdUor6gLMTrrB1UF4Qfy0TTSyX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/70RZX7kNjA0Qjn6HigB1oMvFJ8R.jpg",
-      "releaseDate": "2026-10-01",
-      "rating": "8.0",
-      "votes": 54,
-      "url": "https://www.themoviedb.org/tv/258165"
-    },
-    {
-      "id": 220542,
-      "mediaType": "tv",
-      "title": "The Apothecary Diaries",
-      "overview": "Maomao lived a peaceful life with her apothecary father. Until one day, she's sold as a lowly servant to the emperor's palace. But she wasn't meant for a compliant life among royalty. So when imperial heirs fall ill, she decides to step in and find a cure! This catches the eye of Jinshi, a handsome palace official who promotes her. Now, she's making a name for herself solving medical mysteries!",
-      "poster": "https://image.tmdb.org/t/p/w500/sJZcy8QsOPuRPiCfoCWVB3r9Ohg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
-      "releaseDate": "2023-10-22",
-      "rating": "8.7",
-      "votes": 663,
-      "url": "https://www.themoviedb.org/tv/220542"
-    },
-    {
       "id": 73223,
       "mediaType": "tv",
       "title": "Black Clover",
       "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
       "poster": "https://image.tmdb.org/t/p/w500/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oUsm3pq6rUga7lVGQFS3g84etVE.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
       "releaseDate": "2017-10-03",
       "rating": "8.5",
       "votes": 2230,
       "url": "https://www.themoviedb.org/tv/73223"
-    },
-    {
-      "id": 97546,
-      "mediaType": "tv",
-      "title": "Ted Lasso",
-      "overview": "Ted Lasso, an American football coach, moves to England when he's hired to manage a soccer team—despite having no experience. With cynical players and a doubtful town, will he get them to see the Ted Lasso Way?",
-      "poster": "https://image.tmdb.org/t/p/w500/uRHsiw1wLxPHFXkkv4Ix1s0O6f4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nE94ejEbzNCU48bW1oju0dqBONz.jpg",
-      "releaseDate": "2020-08-14",
-      "rating": "8.4",
-      "votes": 2735,
-      "url": "https://www.themoviedb.org/tv/97546"
     },
     {
       "id": 284833,
@@ -241,9 +205,45 @@
       "poster": "https://image.tmdb.org/t/p/w500/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
       "releaseDate": "2026-10-09",
-      "rating": "8.9",
-      "votes": 25,
+      "rating": "8.7",
+      "votes": 30,
       "url": "https://www.themoviedb.org/tv/284833"
+    },
+    {
+      "id": 123542,
+      "mediaType": "tv",
+      "title": "LINK CLICK",
+      "overview": "Using superpowers to enter their clientele’s photos one by one, Cheng Xiaoshi and Lu Guang take their work seriously at “Time Photo Studio,” a small photography shop set in the backdrop of a modern metropolis. Each job can be full of danger, but nothing is more important than fulfilling every order, no matter the scale…or peril involved!",
+      "poster": "https://image.tmdb.org/t/p/w500/wo9jwu5qMvXzhW2cyy5E6hOVs92.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/w3agwUSMpJ4X9t1jGrDtqqRPjDQ.jpg",
+      "releaseDate": "2021-04-30",
+      "rating": "8.2",
+      "votes": 132,
+      "url": "https://www.themoviedb.org/tv/123542"
+    },
+    {
+      "id": 289423,
+      "mediaType": "tv",
+      "title": "Take Charge of My Heart",
+      "overview": "A corporate heir with an artificial heart meets a woman who's literally electric. They strike a deal that makes his heart beat — in more ways than one.",
+      "poster": "https://image.tmdb.org/t/p/w500/ecRrKGXfflZmDZBD4irdkybClT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rN9xHDp83kZ3cOr82JR1b4rFIFk.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "6.3",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/289423"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.5",
+      "votes": 1003,
+      "url": "https://www.themoviedb.org/tv/247718"
     }
   ],
   "upcomingMovies": [
@@ -344,6 +344,18 @@
       "url": "https://www.themoviedb.org/movie/1234139"
     },
     {
+      "id": 51739,
+      "mediaType": "movie",
+      "title": "Arrietty",
+      "overview": "14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items \"borrowed\" from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.",
+      "poster": "https://image.tmdb.org/t/p/w500/3lSRaSjDp2nkXMQkzzjpRi3035O.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7Z7WVzJsSReG8B0CaPk0bvWD7tK.jpg",
+      "releaseDate": "2011-07-29",
+      "rating": "7.7",
+      "votes": 3298,
+      "url": "https://www.themoviedb.org/movie/51739"
+    },
+    {
       "id": 1755291,
       "mediaType": "movie",
       "title": "NAZA",
@@ -352,20 +364,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/7EzH0dlEN9OZWWBXBWwT5PbMNUz.jpg",
       "releaseDate": "2026-10-16",
       "rating": "8.1",
-      "votes": 57,
+      "votes": 58,
       "url": "https://www.themoviedb.org/movie/1755291"
-    },
-    {
-      "id": 1572116,
-      "mediaType": "movie",
-      "title": "Monster Mia",
-      "overview": "12-year-old Mia and her scruffy pet rat Quentin are sent to the mysterious Rotwood Academy after one too many problems at school. The new school gives her the creeps, and Mia needs to figure a way out before the students realize she isn't a monster like them! But the vice principal Van Vlad hosts a particular dislike for humans, and Mia is scared he has seen through her act...",
-      "poster": "https://image.tmdb.org/t/p/w500/rEIgF9W6OXJiHpM1fXLVVMqQlfF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/n6P7q23qH4w0XIdDfvG7Hk7GhSZ.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "9.5",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/movie/1572116"
     }
   ],
   "nowPlayingMovies": [
