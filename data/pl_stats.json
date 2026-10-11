@@ -1,8 +1,19 @@
 {
-  "updated": "2026-10-11T12:57:43.157672+00:00",
+  "updated": "2026-10-11T22:02:17.802306+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
+    {
+      "name": "Erling Haaland",
+      "firstName": "Erling",
+      "lastName": "Haaland",
+      "nationality": "Norway",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 6,
+      "assists": 0,
+      "penalties": 0
+    },
     {
       "name": "João Pedro",
       "firstName": "",
@@ -15,17 +26,6 @@
       "penalties": 0
     },
     {
-      "name": "Erling Haaland",
-      "firstName": "Erling",
-      "lastName": "Haaland",
-      "nationality": "Norway",
-      "team": "Manchester City",
-      "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 5,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
       "name": "Morgan Rogers",
       "firstName": "Morgan",
       "lastName": "Rogers",
@@ -34,6 +34,17 @@
       "teamBadge": "https://crests.football-data.org/61.png",
       "goals": 4,
       "assists": 1,
+      "penalties": 0
+    },
+    {
+      "name": "Rayan Cherki",
+      "firstName": "Rayan",
+      "lastName": "Cherki",
+      "nationality": "France",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 4,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -59,6 +70,17 @@
       "penalties": 1
     },
     {
+      "name": "Thierno Barry",
+      "firstName": "Thierno",
+      "lastName": "Barry",
+      "nationality": "France",
+      "team": "Everton",
+      "teamBadge": "https://crests.football-data.org/62.png",
+      "goals": 3,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Marcus Tavernier",
       "firstName": "Marcus",
       "lastName": "Tavernier",
@@ -67,17 +89,6 @@
       "teamBadge": "https://crests.football-data.org/bournemouth.png",
       "goals": 3,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Rayan Cherki",
-      "firstName": "Rayan",
-      "lastName": "Cherki",
-      "nationality": "France",
-      "team": "Manchester City",
-      "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 3,
-      "assists": 2,
       "penalties": 0
     },
     {
@@ -101,17 +112,6 @@
       "goals": 3,
       "assists": 0,
       "penalties": 0
-    },
-    {
-      "name": "Bruno Fernandes",
-      "firstName": "",
-      "lastName": "Bruno Fernandes",
-      "nationality": "Portugal",
-      "team": "Manchester United",
-      "teamBadge": "https://crests.football-data.org/66.png",
-      "goals": 3,
-      "assists": 1,
-      "penalties": 1
     }
   ],
   "bestAttacks": [
@@ -122,16 +122,16 @@
       "played": 6
     },
     {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsFor": 16,
+      "played": 6
+    },
+    {
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 15,
       "played": 6
-    },
-    {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 13,
-      "played": 5
     },
     {
       "name": "Brentford",
@@ -148,32 +148,32 @@
   ],
   "bestDefences": [
     {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 3,
-      "played": 5
-    },
-    {
-      "name": "Liverpool",
-      "badge": "https://crests.football-data.org/64.png",
-      "goalsAgainst": 4,
-      "played": 5
-    },
-    {
-      "name": "Hull City",
-      "badge": "https://crests.football-data.org/322.png",
-      "goalsAgainst": 4,
-      "played": 5
-    },
-    {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsAgainst": 5,
-      "played": 5
+      "played": 6
     },
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 5,
+      "played": 6
+    },
+    {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalsAgainst": 5,
+      "played": 6
+    },
+    {
+      "name": "Everton",
+      "badge": "https://crests.football-data.org/62.png",
+      "goalsAgainst": 5,
+      "played": 6
+    },
+    {
+      "name": "Leeds United",
+      "badge": "https://crests.football-data.org/341.png",
       "goalsAgainst": 5,
       "played": 6
     }
@@ -188,8 +188,8 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 8,
-      "played": 5
+      "goalDifference": 11,
+      "played": 6
     },
     {
       "name": "Brentford",
@@ -204,14 +204,14 @@
       "played": 6
     },
     {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
+      "name": "Everton",
+      "badge": "https://crests.football-data.org/62.png",
       "goalDifference": 3,
       "played": 6
     }
   ],
   "manUnitedSummary": {
-    "position": 12,
+    "position": 13,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
