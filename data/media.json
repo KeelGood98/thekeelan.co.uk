@@ -1,8 +1,20 @@
 {
-  "updated": "2026-10-15T13:40:45.024161+00:00",
+  "updated": "2026-10-15T18:38:14.557027+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1381078,
+      "mediaType": "movie",
+      "title": "Love of Your Life",
+      "overview": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
+      "poster": "https://image.tmdb.org/t/p/w500/gOaRyRpilYPEsVLEPHOH9eHNw5E.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uE4qESNLo6jQrKjnUiNE42hrn1Z.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "6.5",
+      "votes": 28,
+      "url": "https://www.themoviedb.org/movie/1381078"
+    },
     {
       "id": 1236045,
       "mediaType": "movie",
@@ -12,8 +24,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tzoarEu7TsG959upiELyYPm5kO9.jpg",
       "releaseDate": "2026-10-09",
       "rating": "7.2",
-      "votes": 361,
+      "votes": 366,
       "url": "https://www.themoviedb.org/movie/1236045"
+    },
+    {
+      "id": 1400837,
+      "mediaType": "movie",
+      "title": "Other Mommy",
+      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "6.0",
+      "votes": 116,
+      "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
       "id": 1148365,
@@ -24,7 +48,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/y6RIuwuxLG3Nsb37KUj5yatnTIp.jpg",
       "releaseDate": "2026-10-05",
       "rating": "7.9",
-      "votes": 314,
+      "votes": 322,
       "url": "https://www.themoviedb.org/movie/1148365"
     },
     {
@@ -36,68 +60,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 5463,
+      "votes": 5483,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1153576,
-      "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "6.6",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1153576"
-    },
-    {
-      "id": 1302904,
-      "mediaType": "movie",
-      "title": "Practical Magic 2",
-      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "6.4",
-      "votes": 158,
-      "url": "https://www.themoviedb.org/movie/1302904"
-    },
-    {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "7.2",
-      "votes": 171,
-      "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1400837,
-      "mediaType": "movie",
-      "title": "Other Mommy",
-      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.0",
-      "votes": 113,
-      "url": "https://www.themoviedb.org/movie/1400837"
-    },
-    {
-      "id": 1255833,
-      "mediaType": "movie",
-      "title": "Whalefall",
-      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-      "releaseDate": "2026-10-14",
-      "rating": "7.8",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1255833"
     },
     {
       "id": 1423191,
@@ -108,20 +72,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.3",
-      "votes": 940,
+      "votes": 943,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
-      "id": 1248832,
+      "id": 1400940,
       "mediaType": "movie",
-      "title": "Digger",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
-      "releaseDate": "2026-09-28",
-      "rating": "7.5",
-      "votes": 363,
-      "url": "https://www.themoviedb.org/movie/1248832"
+      "title": "Clayface",
+      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
+      "releaseDate": "2026-10-21",
+      "rating": "8.2",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1283515,
+      "mediaType": "movie",
+      "title": "Verity",
+      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
+      "releaseDate": "2026-09-30",
+      "rating": "6.4",
+      "votes": 203,
+      "url": "https://www.themoviedb.org/movie/1283515"
+    },
+    {
+      "id": 1058424,
+      "mediaType": "movie",
+      "title": "Hope",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "poster": "https://image.tmdb.org/t/p/w500/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "7.1",
+      "votes": 178,
+      "url": "https://www.themoviedb.org/movie/1058424"
+    },
+    {
+      "id": 1302904,
+      "mediaType": "movie",
+      "title": "Practical Magic 2",
+      "overview": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+      "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "6.4",
+      "votes": 162,
+      "url": "https://www.themoviedb.org/movie/1302904"
     }
   ],
   "trendingTv": [
@@ -145,8 +145,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
-      "rating": "9.0",
-      "votes": 61,
+      "rating": "9.1",
+      "votes": 65,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -157,45 +157,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
       "releaseDate": "2026-10-07",
-      "rating": "8.5",
-      "votes": 264,
+      "rating": "8.4",
+      "votes": 270,
       "url": "https://www.themoviedb.org/tv/288673"
-    },
-    {
-      "id": 285322,
-      "mediaType": "tv",
-      "title": "Below",
-      "overview": "When a mysterious sea creature terrorizes a small Newfoundland town, a hard-bitten fisherman and his family fight to protect their close-knit community.",
-      "poster": "https://image.tmdb.org/t/p/w500/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
-      "releaseDate": "2026-10-08",
-      "rating": "7.2",
-      "votes": 118,
-      "url": "https://www.themoviedb.org/tv/285322"
-    },
-    {
-      "id": 213562,
-      "mediaType": "tv",
-      "title": "Crystal Lake",
-      "overview": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
-      "poster": "https://image.tmdb.org/t/p/w500/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sDZHicP6MT1Fo0ywpQhpeNVticJ.jpg",
-      "releaseDate": "2026-10-15",
-      "rating": "5.5",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/213562"
-    },
-    {
-      "id": 95350,
-      "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.3",
-      "votes": 747,
-      "url": "https://www.themoviedb.org/tv/95350"
     },
     {
       "id": 312359,
@@ -206,8 +170,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
       "releaseDate": "2026-10-11",
       "rating": "9.8",
-      "votes": 174,
+      "votes": 175,
       "url": "https://www.themoviedb.org/tv/312359"
+    },
+    {
+      "id": 285322,
+      "mediaType": "tv",
+      "title": "Below",
+      "overview": "When a mysterious sea creature terrorizes a small Newfoundland town, a hard-bitten fisherman and his family fight to protect their close-knit community.",
+      "poster": "https://image.tmdb.org/t/p/w500/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "releaseDate": "2026-10-08",
+      "rating": "7.2",
+      "votes": 125,
+      "url": "https://www.themoviedb.org/tv/285322"
+    },
+    {
+      "id": 95480,
+      "mediaType": "tv",
+      "title": "Slow Horses",
+      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "releaseDate": "2022-04-01",
+      "rating": "8.1",
+      "votes": 1046,
+      "url": "https://www.themoviedb.org/tv/95480"
+    },
+    {
+      "id": 95350,
+      "mediaType": "tv",
+      "title": "Lanterns",
+      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
+      "poster": "https://image.tmdb.org/t/p/w500/gpC7h43xPMEV3goYMQShfJbTtLq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
+      "releaseDate": "2026-08-16",
+      "rating": "8.3",
+      "votes": 748,
+      "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 73223,
+      "mediaType": "tv",
+      "title": "Black Clover",
+      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "poster": "https://image.tmdb.org/t/p/w500/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
+      "releaseDate": "2017-10-03",
+      "rating": "8.5",
+      "votes": 2238,
+      "url": "https://www.themoviedb.org/tv/73223"
     },
     {
       "id": 284833,
@@ -218,20 +230,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
       "releaseDate": "2026-10-09",
       "rating": "8.9",
-      "votes": 62,
+      "votes": 64,
       "url": "https://www.themoviedb.org/tv/284833"
-    },
-    {
-      "id": 293610,
-      "mediaType": "tv",
-      "title": "Doctor X: Mafia in White",
-      "overview": "In a hospital dominated by ego and corruption, an enigmatic but brilliant surgeon arrives — taking on seemingly impossible cases amid fierce opposition.",
-      "poster": "https://image.tmdb.org/t/p/w500/nDDVzQfv95PGwj9nV2fJvUrkcvU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mDYIV71RL3mkaW8IfSGNthuVB7l.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "8.9",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/tv/293610"
     },
     {
       "id": 293607,
@@ -378,20 +378,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-18",
       "rating": "7.3",
-      "votes": 937,
+      "votes": 941,
       "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1101412,
-      "mediaType": "movie",
-      "title": "Fall 2: Deadpoint",
-      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "7.3",
-      "votes": 537,
-      "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
       "id": 1377237,
@@ -402,8 +390,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
       "releaseDate": "2026-09-11",
       "rating": "8.3",
-      "votes": 560,
+      "votes": 562,
       "url": "https://www.themoviedb.org/movie/1377237"
+    },
+    {
+      "id": 1101412,
+      "mediaType": "movie",
+      "title": "Fall 2: Deadpoint",
+      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
+      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yBDxqDB29kpH9VojTytjGWBgmdJ.jpg",
+      "releaseDate": "2026-09-09",
+      "rating": "7.3",
+      "votes": 538,
+      "url": "https://www.themoviedb.org/movie/1101412"
     },
     {
       "id": 1058424,
@@ -411,10 +411,10 @@
       "title": "Hope",
       "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
       "poster": "https://image.tmdb.org/t/p/w500/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xBcKnWJHodUpvzUVIWTuNMnvEwl.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
       "releaseDate": "2026-09-25",
-      "rating": "7.2",
-      "votes": 166,
+      "rating": "7.1",
+      "votes": 178,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "6.0",
-      "votes": 110,
+      "votes": 113,
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ogwQOLbCfncjvBhFb5l0OmQH8KC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
       "releaseDate": "2026-09-11",
-      "rating": "6.3",
-      "votes": 157,
+      "rating": "6.4",
+      "votes": 162,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
@@ -450,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
       "releaseDate": "2026-10-02",
       "rating": "7.5",
-      "votes": 361,
+      "votes": 367,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
@@ -466,28 +466,28 @@
       "url": "https://www.themoviedb.org/movie/977942"
     },
     {
-      "id": 299534,
+      "id": 1153576,
       "mediaType": "movie",
-      "title": "Avengers: Endgame",
-      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
-      "poster": "https://image.tmdb.org/t/p/w500/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
-      "releaseDate": "2019-04-25",
-      "rating": "8.2",
-      "votes": 29005,
-      "url": "https://www.themoviedb.org/movie/299534"
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.6",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
-      "id": 1283515,
+      "id": 1263337,
       "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "6.4",
-      "votes": 200,
-      "url": "https://www.themoviedb.org/movie/1283515"
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.4",
+      "votes": 295,
+      "url": "https://www.themoviedb.org/movie/1263337"
     }
   ],
   "links": [
