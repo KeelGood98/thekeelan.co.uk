@@ -1,19 +1,31 @@
 {
-  "updated": "2026-10-15T18:38:14.557027+00:00",
+  "updated": "2026-10-15T23:16:51.844095+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
     {
-      "id": 1381078,
+      "id": 1148365,
       "mediaType": "movie",
-      "title": "Love of Your Life",
-      "overview": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
-      "poster": "https://image.tmdb.org/t/p/w500/gOaRyRpilYPEsVLEPHOH9eHNw5E.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uE4qESNLo6jQrKjnUiNE42hrn1Z.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.5",
-      "votes": 28,
-      "url": "https://www.themoviedb.org/movie/1381078"
+      "title": "Matchbox the Movie",
+      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
+      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/y6RIuwuxLG3Nsb37KUj5yatnTIp.jpg",
+      "releaseDate": "2026-10-05",
+      "rating": "7.9",
+      "votes": 326,
+      "url": "https://www.themoviedb.org/movie/1148365"
+    },
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "6.4",
+      "votes": 23,
+      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 1236045,
@@ -24,32 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tzoarEu7TsG959upiELyYPm5kO9.jpg",
       "releaseDate": "2026-10-09",
       "rating": "7.2",
-      "votes": 366,
+      "votes": 374,
       "url": "https://www.themoviedb.org/movie/1236045"
-    },
-    {
-      "id": 1400837,
-      "mediaType": "movie",
-      "title": "Other Mommy",
-      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.0",
-      "votes": 116,
-      "url": "https://www.themoviedb.org/movie/1400837"
-    },
-    {
-      "id": 1148365,
-      "mediaType": "movie",
-      "title": "Matchbox the Movie",
-      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
-      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y6RIuwuxLG3Nsb37KUj5yatnTIp.jpg",
-      "releaseDate": "2026-10-05",
-      "rating": "7.9",
-      "votes": 322,
-      "url": "https://www.themoviedb.org/movie/1148365"
     },
     {
       "id": 969681,
@@ -60,44 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 5483,
+      "votes": 5495,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1423191,
-      "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.3",
-      "votes": 943,
-      "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1400940,
-      "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
-      "releaseDate": "2026-10-21",
-      "rating": "8.2",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1283515,
-      "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3BoHXmGAfC2qO4wnCpMYV0BzpHD.jpg",
-      "releaseDate": "2026-09-30",
-      "rating": "6.4",
-      "votes": 203,
-      "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
       "id": 1058424,
@@ -108,8 +60,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
       "releaseDate": "2026-07-15",
       "rating": "7.1",
-      "votes": 178,
+      "votes": 184,
       "url": "https://www.themoviedb.org/movie/1058424"
+    },
+    {
+      "id": 1255833,
+      "mediaType": "movie",
+      "title": "Whalefall",
+      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
+      "releaseDate": "2026-10-14",
+      "rating": "7.5",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/1255833"
     },
     {
       "id": 1302904,
@@ -120,8 +84,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
       "releaseDate": "2026-09-09",
       "rating": "6.4",
-      "votes": 162,
+      "votes": 166,
       "url": "https://www.themoviedb.org/movie/1302904"
+    },
+    {
+      "id": 1400940,
+      "mediaType": "movie",
+      "title": "Clayface",
+      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
+      "releaseDate": "2026-10-21",
+      "rating": "8.7",
+      "votes": 5,
+      "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "7.3",
+      "votes": 949,
+      "url": "https://www.themoviedb.org/movie/1423191"
     }
   ],
   "trendingTv": [
@@ -146,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "9.1",
-      "votes": 65,
+      "votes": 67,
       "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 213562,
+      "mediaType": "tv",
+      "title": "Crystal Lake",
+      "overview": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
+      "poster": "https://image.tmdb.org/t/p/w500/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5z5yynwihKGkupR2bXIWxO1IZVZ.jpg",
+      "releaseDate": "2026-10-15",
+      "rating": "6.1",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/213562"
     },
     {
       "id": 288673,
@@ -158,20 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
       "releaseDate": "2026-10-07",
       "rating": "8.4",
-      "votes": 270,
+      "votes": 277,
       "url": "https://www.themoviedb.org/tv/288673"
-    },
-    {
-      "id": 312359,
-      "mediaType": "tv",
-      "title": "Dragon Ball Super: Beerus",
-      "overview": "When Beerus, the God of Destruction, awakens in search of a worthy rival, Goku and his friends face an epic battle to stop him from destroying Earth.\n\nRemastered and re-edited version of Dragon Ball Super.",
-      "poster": "https://image.tmdb.org/t/p/w500/AojgldgsOlzZV8ahyOzaiAjJWvV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
-      "releaseDate": "2026-10-11",
-      "rating": "9.8",
-      "votes": 175,
-      "url": "https://www.themoviedb.org/tv/312359"
     },
     {
       "id": 285322,
@@ -182,20 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
       "releaseDate": "2026-10-08",
       "rating": "7.2",
-      "votes": 125,
+      "votes": 129,
       "url": "https://www.themoviedb.org/tv/285322"
     },
     {
-      "id": 95480,
+      "id": 203857,
       "mediaType": "tv",
-      "title": "Slow Horses",
-      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
-      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
-      "releaseDate": "2022-04-01",
-      "rating": "8.1",
-      "votes": 1046,
-      "url": "https://www.themoviedb.org/tv/95480"
+      "title": "The Diplomat",
+      "overview": "Amid an international crisis, a US diplomat contends with her high-profile job as ambassador to the UK and her strained marriage to a political star.",
+      "poster": "https://image.tmdb.org/t/p/w500/cOKXV0FalCYixNmZYCfHXgyQ0VX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hzznrBI07C2chXivlLYvEmQESP7.jpg",
+      "releaseDate": "2023-04-20",
+      "rating": "7.6",
+      "votes": 492,
+      "url": "https://www.themoviedb.org/tv/203857"
     },
     {
       "id": 95350,
@@ -206,44 +206,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
       "releaseDate": "2026-08-16",
       "rating": "8.3",
-      "votes": 748,
+      "votes": 749,
       "url": "https://www.themoviedb.org/tv/95350"
     },
     {
-      "id": 73223,
+      "id": 312359,
       "mediaType": "tv",
-      "title": "Black Clover",
-      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
-      "poster": "https://image.tmdb.org/t/p/w500/kaMisKeOoTBPxPkbC3OW7Wgt6ON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
-      "releaseDate": "2017-10-03",
-      "rating": "8.5",
-      "votes": 2238,
-      "url": "https://www.themoviedb.org/tv/73223"
+      "title": "Dragon Ball Super: Beerus",
+      "overview": "When Beerus, the God of Destruction, awakens in search of a worthy rival, Goku and his friends face an epic battle to stop him from destroying Earth.\n\nRemastered and re-edited version of Dragon Ball Super.",
+      "poster": "https://image.tmdb.org/t/p/w500/AojgldgsOlzZV8ahyOzaiAjJWvV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8phLVFEXOe02JgFmH9ldn3j4tXW.jpg",
+      "releaseDate": "2026-10-11",
+      "rating": "9.8",
+      "votes": 177,
+      "url": "https://www.themoviedb.org/tv/312359"
     },
     {
-      "id": 284833,
+      "id": 333101,
       "mediaType": "tv",
-      "title": "Avatar: Seven Havens",
-      "overview": "In a world shattered by a devastating cataclysm, a young Earthbender discovers she's the new Avatar after Korra. But in this dangerous era, that title marks her as humanity's destroyer, not its savior. Hunted by both human and spirit enemies, she and her long-lost twin must uncover their mysterious origins and save the Seven Havens before civilization's last strongholds collapse.",
-      "poster": "https://image.tmdb.org/t/p/w500/u62d0BPqsdv2TUDifcMmoePbHPL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/t2KFGH07Al4XuIZLHRlF1Hj9IJB.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "8.9",
-      "votes": 64,
-      "url": "https://www.themoviedb.org/tv/284833"
+      "title": "Treasure Island",
+      "overview": "Young Jim Hawkins and his mother Bess come into possession of a legendary pirate’s treasure map and are drawn into a deadly voyage across the Atlantic, where Jim is forced to navigate mutiny, violence and betrayal, leaving him forever changed.",
+      "poster": "https://image.tmdb.org/t/p/w500/xZQ5ABJF1iLjGq9xR4MthpgQEFF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cv102XnL9r7M9jFr0hsMeqzpAWW.jpg",
+      "releaseDate": "2026-10-11",
+      "rating": "6.3",
+      "votes": 23,
+      "url": "https://www.themoviedb.org/tv/333101"
     },
     {
-      "id": 293607,
+      "id": 2190,
       "mediaType": "tv",
-      "title": "100 Days of Deception",
-      "overview": "Hoping for freedom, Gyeongseong's top pickpocket infiltrates the Japanese colonial government to steal secrets — only to fall for her target's son.",
-      "poster": "https://image.tmdb.org/t/p/w500/bZHEU42QynnMrHUWK1Hhvj2cdPA.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3SvKCITqMtjgPIhFBjRc4yTAc4H.jpg",
-      "releaseDate": "2026-10-10",
-      "rating": "9.0",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/293607"
+      "title": "South Park",
+      "overview": "Follow the misadventures of four irreverent grade-schoolers in the quiet, dysfunctional town of South Park, Colorado.",
+      "poster": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3UviYOlhn8EgXMBuiT6MnUuo1w9.jpg",
+      "releaseDate": "1997-08-13",
+      "rating": "8.3",
+      "votes": 5198,
+      "url": "https://www.themoviedb.org/tv/2190"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6QgJQrClh9ej357yzLWgCxrjAmJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yj6bku4UhatfkcV22Q4DY1ynj04.jpg",
       "releaseDate": "2026-10-23",
-      "rating": "5.9",
-      "votes": 45,
+      "rating": "5.8",
+      "votes": 46,
       "url": "https://www.themoviedb.org/movie/1491920"
     },
     {
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.9",
-      "votes": 123,
+      "votes": 132,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -279,8 +279,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/kVtOcoUJ68chBD2tmERkdWz7lK5.jpg",
       "releaseDate": "2026-10-23",
-      "rating": "8.2",
-      "votes": 3,
+      "rating": "8.7",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
@@ -292,7 +292,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.4",
-      "votes": 69,
+      "votes": 71,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
