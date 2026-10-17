@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-17T10:50:38.311629+00:00",
+  "updated": "2026-10-17T15:40:06.777402+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -10,7 +10,7 @@
       "nationality": "Norway",
       "team": "Manchester City",
       "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 6,
+      "goals": 8,
       "assists": 0,
       "penalties": 0
     },
@@ -23,6 +23,17 @@
       "teamBadge": "https://crests.football-data.org/61.png",
       "goals": 5,
       "assists": 3,
+      "penalties": 0
+    },
+    {
+      "name": "Alexander Isak",
+      "firstName": "Alexander",
+      "lastName": "Isak",
+      "nationality": "Sweden",
+      "team": "Liverpool",
+      "teamBadge": "https://crests.football-data.org/64.png",
+      "goals": 5,
+      "assists": 0,
       "penalties": 0
     },
     {
@@ -45,17 +56,6 @@
       "teamBadge": "https://crests.football-data.org/65.png",
       "goals": 4,
       "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Alexander Isak",
-      "firstName": "Alexander",
-      "lastName": "Isak",
-      "nationality": "Sweden",
-      "team": "Liverpool",
-      "teamBadge": "https://crests.football-data.org/64.png",
-      "goals": 4,
-      "assists": 0,
       "penalties": 0
     },
     {
@@ -92,6 +92,17 @@
       "penalties": 0
     },
     {
+      "name": "Pedro Neto",
+      "firstName": "",
+      "lastName": "Pedro Neto",
+      "nationality": "Portugal",
+      "team": "Chelsea",
+      "teamBadge": "https://crests.football-data.org/61.png",
+      "goals": 3,
+      "assists": 1,
+      "penalties": 0
+    },
+    {
       "name": "Pascal Groß",
       "firstName": "Pascal",
       "lastName": "Groß",
@@ -101,20 +112,15 @@
       "goals": 3,
       "assists": 4,
       "penalties": 1
-    },
-    {
-      "name": "Kevin Schade",
-      "firstName": "Kevin",
-      "lastName": "Schade",
-      "nationality": "Germany",
-      "team": "Brentford",
-      "teamBadge": "https://crests.football-data.org/402.png",
-      "goals": 3,
-      "assists": 0,
-      "penalties": 0
     }
   ],
   "bestAttacks": [
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsFor": 18,
+      "played": 7
+    },
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
@@ -122,22 +128,16 @@
       "played": 6
     },
     {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 16,
-      "played": 6
-    },
-    {
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
-      "goalsFor": 15,
-      "played": 6
+      "goalsFor": 17,
+      "played": 7
     },
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 12,
-      "played": 6
+      "goalsFor": 13,
+      "played": 7
     },
     {
       "name": "Arsenal",
@@ -148,12 +148,6 @@
   ],
   "bestDefences": [
     {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalsAgainst": 5,
-      "played": 6
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 5,
@@ -166,16 +160,22 @@
       "played": 6
     },
     {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 5,
-      "played": 6
-    },
-    {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalsAgainst": 5,
       "played": 6
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalsAgainst": 6,
+      "played": 7
+    },
+    {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalsAgainst": 6,
+      "played": 7
     }
   ],
   "goalDifferenceLeaders": [
@@ -188,14 +188,14 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 11,
-      "played": 6
+      "goalDifference": 12,
+      "played": 7
     },
     {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
-      "goalDifference": 6,
-      "played": 6
+      "goalDifference": 7,
+      "played": 7
     },
     {
       "name": "Arsenal",
@@ -204,10 +204,10 @@
       "played": 6
     },
     {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalDifference": 3,
-      "played": 6
+      "name": "Chelsea",
+      "badge": "https://crests.football-data.org/61.png",
+      "goalDifference": 4,
+      "played": 7
     }
   ],
   "manUnitedSummary": {
