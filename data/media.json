@@ -1,8 +1,32 @@
 {
-  "updated": "2026-10-17T12:23:59.295255+00:00",
+  "updated": "2026-10-17T17:31:53.704512+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1561726,
+      "mediaType": "movie",
+      "title": "Masterplan",
+      "overview": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
+      "poster": "https://image.tmdb.org/t/p/w500/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "7.0",
+      "votes": 30,
+      "url": "https://www.themoviedb.org/movie/1561726"
+    },
+    {
+      "id": 1058424,
+      "mediaType": "movie",
+      "title": "Hope",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "poster": "https://image.tmdb.org/t/p/w500/qW1m7bcsRb2lo8xG2v0p4mARyH8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "6.9",
+      "votes": 222,
+      "url": "https://www.themoviedb.org/movie/1058424"
+    },
     {
       "id": 1288069,
       "mediaType": "movie",
@@ -16,30 +40,6 @@
       "url": "https://www.themoviedb.org/movie/1288069"
     },
     {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/qW1m7bcsRb2lo8xG2v0p4mARyH8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "6.9",
-      "votes": 220,
-      "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1561726,
-      "mediaType": "movie",
-      "title": "Masterplan",
-      "overview": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
-      "poster": "https://image.tmdb.org/t/p/w500/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "7.0",
-      "votes": 24,
-      "url": "https://www.themoviedb.org/movie/1561726"
-    },
-    {
       "id": 969681,
       "mediaType": "movie",
       "title": "Spider-Man: Brand New Day",
@@ -48,20 +48,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 5593,
+      "votes": 5605,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1148365,
-      "mediaType": "movie",
-      "title": "Matchbox the Movie",
-      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
-      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
-      "releaseDate": "2026-10-05",
-      "rating": "7.9",
-      "votes": 362,
-      "url": "https://www.themoviedb.org/movie/1148365"
     },
     {
       "id": 1236045,
@@ -72,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/tzoarEu7TsG959upiELyYPm5kO9.jpg",
       "releaseDate": "2026-10-09",
       "rating": "7.1",
-      "votes": 413,
+      "votes": 422,
       "url": "https://www.themoviedb.org/movie/1236045"
     },
     {
@@ -80,12 +68,24 @@
       "mediaType": "movie",
       "title": "Street Fighter",
       "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/8nP4lF51Ea861YfHEEqhZBLYv3e.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
       "releaseDate": "2026-10-13",
-      "rating": "6.2",
-      "votes": 49,
+      "rating": "6.3",
+      "votes": 52,
       "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
+      "id": 1148365,
+      "mediaType": "movie",
+      "title": "Matchbox the Movie",
+      "overview": "When a group of former childhood friends reconnect, their reunion takes a wild turn as they stumble upon a dangerous international plot—and must save the world.",
+      "poster": "https://image.tmdb.org/t/p/w500/lFKA4GMz36dImEy3DQPdPF7G4V9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jdJsnhHfkIi3J7jwfiCFT4gXNx5.jpg",
+      "releaseDate": "2026-10-05",
+      "rating": "7.8",
+      "votes": 365,
+      "url": "https://www.themoviedb.org/movie/1148365"
     },
     {
       "id": 1302904,
@@ -96,7 +96,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
       "releaseDate": "2026-09-09",
       "rating": "6.8",
-      "votes": 200,
+      "votes": 204,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
@@ -108,7 +108,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
       "releaseDate": "2026-10-14",
       "rating": "7.1",
-      "votes": 32,
+      "votes": 33,
       "url": "https://www.themoviedb.org/movie/1255833"
     },
     {
@@ -120,11 +120,35 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mqYqKvrKTgMvK50VtEDZlYFsnHz.jpg",
       "releaseDate": "2026-10-07",
       "rating": "6.8",
-      "votes": 51,
+      "votes": 55,
       "url": "https://www.themoviedb.org/movie/1381078"
     }
   ],
   "trendingTv": [
+    {
+      "id": 213562,
+      "mediaType": "tv",
+      "title": "Crystal Lake",
+      "overview": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
+      "poster": "https://image.tmdb.org/t/p/w500/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
+      "releaseDate": "2026-10-15",
+      "rating": "8.2",
+      "votes": 53,
+      "url": "https://www.themoviedb.org/tv/213562"
+    },
+    {
+      "id": 213375,
+      "mediaType": "tv",
+      "title": "VisionQuest",
+      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+      "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "9.0",
+      "votes": 83,
+      "url": "https://www.themoviedb.org/tv/213375"
+    },
     {
       "id": 123542,
       "mediaType": "tv",
@@ -138,30 +162,6 @@
       "url": "https://www.themoviedb.org/tv/123542"
     },
     {
-      "id": 213375,
-      "mediaType": "tv",
-      "title": "VisionQuest",
-      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-      "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "9.0",
-      "votes": 81,
-      "url": "https://www.themoviedb.org/tv/213375"
-    },
-    {
-      "id": 213562,
-      "mediaType": "tv",
-      "title": "Crystal Lake",
-      "overview": "Single mother Pam Voorhees has been unable to shake her grief after her young, sickly son Jason tragically drowned in the town lake almost a year before. When two strangers arrive at Pam's door digging into her past, a disturbing chain of events is set into motion, leaving the townspeople of Crystal Lake wondering: just who is Pam Voorhees?",
-      "poster": "https://image.tmdb.org/t/p/w500/sIj9WcA1LkcjGbYjrbfV3pGegbF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3qbNgNqMFrEEhIl43UKD9oxCkOw.jpg",
-      "releaseDate": "2026-10-15",
-      "rating": "8.2",
-      "votes": 49,
-      "url": "https://www.themoviedb.org/tv/213562"
-    },
-    {
       "id": 288673,
       "mediaType": "tv",
       "title": "Carrie",
@@ -170,68 +170,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
       "releaseDate": "2026-10-07",
       "rating": "8.3",
-      "votes": 311,
+      "votes": 317,
       "url": "https://www.themoviedb.org/tv/288673"
-    },
-    {
-      "id": 37854,
-      "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.8",
-      "votes": 5597,
-      "url": "https://www.themoviedb.org/tv/37854"
-    },
-    {
-      "id": 285322,
-      "mediaType": "tv",
-      "title": "Below",
-      "overview": "When a mysterious sea creature terrorizes a small Newfoundland town, a hard-bitten fisherman and his family fight to protect their close-knit community.",
-      "poster": "https://image.tmdb.org/t/p/w500/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
-      "releaseDate": "2026-10-08",
-      "rating": "7.3",
-      "votes": 146,
-      "url": "https://www.themoviedb.org/tv/285322"
-    },
-    {
-      "id": 153312,
-      "mediaType": "tv",
-      "title": "Tulsa King",
-      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
-      "poster": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
-      "releaseDate": "2022-11-13",
-      "rating": "8.3",
-      "votes": 2831,
-      "url": "https://www.themoviedb.org/tv/153312"
-    },
-    {
-      "id": 203857,
-      "mediaType": "tv",
-      "title": "The Diplomat",
-      "overview": "Amid an international crisis, a US diplomat contends with her high-profile job as ambassador to the UK and her strained marriage to a political star.",
-      "poster": "https://image.tmdb.org/t/p/w500/cUy0ZYme43lop08nOtbQLWL0dX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
-      "releaseDate": "2023-04-20",
-      "rating": "7.6",
-      "votes": 494,
-      "url": "https://www.themoviedb.org/tv/203857"
-    },
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.5",
-      "votes": 1045,
-      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 95350,
@@ -244,20 +184,80 @@
       "rating": "8.2",
       "votes": 761,
       "url": "https://www.themoviedb.org/tv/95350"
+    },
+    {
+      "id": 285322,
+      "mediaType": "tv",
+      "title": "Below",
+      "overview": "When a mysterious sea creature terrorizes a small Newfoundland town, a hard-bitten fisherman and his family fight to protect their close-knit community.",
+      "poster": "https://image.tmdb.org/t/p/w500/vgLqqhMUbljp585qPp1EFCyJtcz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cn0feYcDvVzVjUDoXa1O8sRgzz.jpg",
+      "releaseDate": "2026-10-08",
+      "rating": "7.3",
+      "votes": 149,
+      "url": "https://www.themoviedb.org/tv/285322"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.5",
+      "votes": 1044,
+      "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "id": 153312,
+      "mediaType": "tv",
+      "title": "Tulsa King",
+      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+      "poster": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+      "releaseDate": "2022-11-13",
+      "rating": "8.3",
+      "votes": 2835,
+      "url": "https://www.themoviedb.org/tv/153312"
+    },
+    {
+      "id": 300146,
+      "mediaType": "tv",
+      "title": "Where the Mask Ends",
+      "overview": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
+      "poster": "https://image.tmdb.org/t/p/w500/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/YndvGwqwroUDVltBWmnOuTvJke.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "9.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/300146"
+    },
+    {
+      "id": 203857,
+      "mediaType": "tv",
+      "title": "The Diplomat",
+      "overview": "Amid an international crisis, a US diplomat contends with her high-profile job as ambassador to the UK and her strained marriage to a political star.",
+      "poster": "https://image.tmdb.org/t/p/w500/cUy0ZYme43lop08nOtbQLWL0dX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v6f9FUDDQfGIv8MLRQwlL0zvRjI.jpg",
+      "releaseDate": "2023-04-20",
+      "rating": "7.6",
+      "votes": 494,
+      "url": "https://www.themoviedb.org/tv/203857"
     }
   ],
   "upcomingMovies": [
     {
-      "id": 1491920,
+      "id": 1375441,
       "mediaType": "movie",
-      "title": "Kung Fu Soccer",
-      "overview": "Dismissed as underdogs before they even step onto the pitch, the Emei Women's Football Team enters the prestigious Supreme Invincible Cup determined to prove everyone wrong. Led by captain Shuangshuang, star striker Yulong, and mentor Xu Feng, the team combines martial arts mastery with football skill in a thrilling quest for victory. Against mounting challenges and impossible odds, they fight to make their mark and chase their championship dream.",
-      "poster": "https://image.tmdb.org/t/p/w500/6QgJQrClh9ej357yzLWgCxrjAmJ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yj6bku4UhatfkcV22Q4DY1ynj04.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "5.8",
-      "votes": 46,
-      "url": "https://www.themoviedb.org/movie/1491920"
+      "title": "Primetime",
+      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
+      "releaseDate": "2026-10-28",
+      "rating": "6.8",
+      "votes": 140,
+      "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
       "id": 1400940,
@@ -272,28 +272,16 @@
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
-      "id": 1375441,
+      "id": 1491920,
       "mediaType": "movie",
-      "title": "Primetime",
-      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-      "releaseDate": "2026-10-28",
-      "rating": "6.9",
-      "votes": 137,
-      "url": "https://www.themoviedb.org/movie/1375441"
-    },
-    {
-      "id": 1422041,
-      "mediaType": "movie",
-      "title": "La bola negra",
-      "overview": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
-      "poster": "https://image.tmdb.org/t/p/w500/jT5SR5qc9KvVg7HUEmjMWEUYMce.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-      "releaseDate": "2026-11-06",
-      "rating": "8.4",
-      "votes": 74,
-      "url": "https://www.themoviedb.org/movie/1422041"
+      "title": "Kung Fu Soccer",
+      "overview": "Dismissed as underdogs before they even step onto the pitch, the Emei Women's Football Team enters the prestigious Supreme Invincible Cup determined to prove everyone wrong. Led by captain Shuangshuang, star striker Yulong, and mentor Xu Feng, the team combines martial arts mastery with football skill in a thrilling quest for victory. Against mounting challenges and impossible odds, they fight to make their mark and chase their championship dream.",
+      "poster": "https://image.tmdb.org/t/p/w500/6QgJQrClh9ej357yzLWgCxrjAmJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yj6bku4UhatfkcV22Q4DY1ynj04.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "5.8",
+      "votes": 47,
+      "url": "https://www.themoviedb.org/movie/1491920"
     },
     {
       "id": 1572116,
@@ -308,30 +296,6 @@
       "url": "https://www.themoviedb.org/movie/1572116"
     },
     {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1381071"
-    },
-    {
-      "id": 1483525,
-      "mediaType": "movie",
-      "title": "Possible Love",
-      "overview": "A laid-off worker and his wife cross paths with a documentary filmmaker and her spouse and confront their hidden desires.",
-      "poster": "https://image.tmdb.org/t/p/w500/dLz9yHeLw4x4sD0WTSNi7HuK2ke.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kPbyLj2OyjojqvR1jfK1VvXzabg.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "8.0",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/movie/1483525"
-    },
-    {
       "id": 1376400,
       "mediaType": "movie",
       "title": "Crawlers",
@@ -342,6 +306,30 @@
       "rating": "5.9",
       "votes": 8,
       "url": "https://www.themoviedb.org/movie/1376400"
+    },
+    {
+      "id": 1422041,
+      "mediaType": "movie",
+      "title": "La bola negra",
+      "overview": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
+      "poster": "https://image.tmdb.org/t/p/w500/jT5SR5qc9KvVg7HUEmjMWEUYMce.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
+      "releaseDate": "2026-11-06",
+      "rating": "8.3",
+      "votes": 75,
+      "url": "https://www.themoviedb.org/movie/1422041"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 791523,
@@ -366,6 +354,18 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/656908"
+    },
+    {
+      "id": 1483525,
+      "mediaType": "movie",
+      "title": "Possible Love",
+      "overview": "A laid-off worker and his wife cross paths with a documentary filmmaker and her spouse and confront their hidden desires.",
+      "poster": "https://image.tmdb.org/t/p/w500/dLz9yHeLw4x4sD0WTSNi7HuK2ke.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/kPbyLj2OyjojqvR1jfK1VvXzabg.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "8.0",
+      "votes": 4,
+      "url": "https://www.themoviedb.org/movie/1483525"
     }
   ],
   "nowPlayingMovies": [
@@ -382,18 +382,6 @@
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
-      "id": 1377237,
-      "mediaType": "movie",
-      "title": "Runner",
-      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "8.3",
-      "votes": 589,
-      "url": "https://www.themoviedb.org/movie/1377237"
-    },
-    {
       "id": 1058424,
       "mediaType": "movie",
       "title": "Hope",
@@ -402,8 +390,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ujUwzNV8ZkOzZonvhhHsc9KOKDf.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.9",
-      "votes": 215,
+      "votes": 220,
       "url": "https://www.themoviedb.org/movie/1058424"
+    },
+    {
+      "id": 1377237,
+      "mediaType": "movie",
+      "title": "Runner",
+      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
+      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
+      "releaseDate": "2026-09-11",
+      "rating": "8.3",
+      "votes": 590,
+      "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
       "id": 1101412,
@@ -414,8 +414,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
       "releaseDate": "2026-09-09",
       "rating": "7.3",
-      "votes": 559,
+      "votes": 560,
       "url": "https://www.themoviedb.org/movie/1101412"
+    },
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.2",
+      "votes": 49,
+      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 1302904,
@@ -426,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oIglj0Jy9duG4LnrRUpH8n001Pk.jpg",
       "releaseDate": "2026-09-11",
       "rating": "6.8",
-      "votes": 199,
+      "votes": 200,
       "url": "https://www.themoviedb.org/movie/1302904"
     },
     {
@@ -440,18 +452,6 @@
       "rating": "5.9",
       "votes": 127,
       "url": "https://www.themoviedb.org/movie/1400837"
-    },
-    {
-      "id": 1153576,
-      "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.2",
-      "votes": 46,
-      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 977942,
@@ -478,16 +478,16 @@
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
-      "id": 299534,
+      "id": 1263337,
       "mediaType": "movie",
-      "title": "Avengers: Endgame",
-      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
-      "poster": "https://image.tmdb.org/t/p/w500/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
-      "releaseDate": "2019-04-25",
-      "rating": "8.2",
-      "votes": 29017,
-      "url": "https://www.themoviedb.org/movie/299534"
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.4",
+      "votes": 304,
+      "url": "https://www.themoviedb.org/movie/1263337"
     }
   ],
   "links": [
