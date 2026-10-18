@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T15:55:07.793798+00:00",
+  "updated": "2026-10-18T20:49:34.404767+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -18,6 +18,20 @@
     },
     {
       "position": 2,
+      "name": "Arsenal",
+      "fullName": "Arsenal FC",
+      "badge": "https://crests.football-data.org/57.png",
+      "played": 7,
+      "won": 6,
+      "drawn": 0,
+      "lost": 1,
+      "goalsFor": 11,
+      "goalsAgainst": 5,
+      "goalDifference": 6,
+      "points": 18
+    },
+    {
+      "position": 3,
       "name": "Brighton",
       "fullName": "Brighton & Hove Albion FC",
       "badge": "https://crests.football-data.org/397.png",
@@ -28,20 +42,6 @@
       "goalsFor": 23,
       "goalsAgainst": 5,
       "goalDifference": 18,
-      "points": 16
-    },
-    {
-      "position": 3,
-      "name": "Arsenal",
-      "fullName": "Arsenal FC",
-      "badge": "https://crests.football-data.org/57.png",
-      "played": 7,
-      "won": 5,
-      "drawn": 1,
-      "lost": 1,
-      "goalsFor": 10,
-      "goalsAgainst": 5,
-      "goalDifference": 5,
       "points": 16
     },
     {
@@ -200,20 +200,6 @@
     },
     {
       "position": 15,
-      "name": "Nott'm Forest",
-      "fullName": "Nottingham Forest FC",
-      "badge": "https://crests.football-data.org/351.png",
-      "played": 7,
-      "won": 1,
-      "drawn": 3,
-      "lost": 3,
-      "goalsFor": 5,
-      "goalsAgainst": 8,
-      "goalDifference": -3,
-      "points": 6
-    },
-    {
-      "position": 16,
       "name": "Bournemouth",
       "fullName": "AFC Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
@@ -227,7 +213,7 @@
       "points": 6
     },
     {
-      "position": 17,
+      "position": 16,
       "name": "Coventry City",
       "fullName": "Coventry City FC",
       "badge": "https://crests.football-data.org/1076.png",
@@ -241,7 +227,7 @@
       "points": 6
     },
     {
-      "position": 18,
+      "position": 17,
       "name": "Fulham",
       "fullName": "Fulham FC",
       "badge": "https://crests.football-data.org/63.png",
@@ -252,6 +238,20 @@
       "goalsFor": 7,
       "goalsAgainst": 10,
       "goalDifference": -3,
+      "points": 5
+    },
+    {
+      "position": 18,
+      "name": "Nott'm Forest",
+      "fullName": "Nottingham Forest FC",
+      "badge": "https://crests.football-data.org/351.png",
+      "played": 7,
+      "won": 1,
+      "drawn": 2,
+      "lost": 4,
+      "goalsFor": 5,
+      "goalsAgainst": 9,
+      "goalDifference": -4,
       "points": 5
     },
     {
