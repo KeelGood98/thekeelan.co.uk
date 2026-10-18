@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T11:14:48.583923+00:00",
+  "updated": "2026-10-18T15:55:10.043248+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -37,6 +37,17 @@
       "penalties": 0
     },
     {
+      "name": "Marcus Tavernier",
+      "firstName": "Marcus",
+      "lastName": "Tavernier",
+      "nationality": "England",
+      "team": "Bournemouth",
+      "teamBadge": "https://crests.football-data.org/bournemouth.png",
+      "goals": 4,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Morgan Rogers",
       "firstName": "Morgan",
       "lastName": "Rogers",
@@ -56,6 +67,17 @@
       "teamBadge": "https://crests.football-data.org/65.png",
       "goals": 4,
       "assists": 2,
+      "penalties": 0
+    },
+    {
+      "name": "Bryan Mbeumo",
+      "firstName": "Bryan",
+      "lastName": "Mbeumo",
+      "nationality": "Cameroon",
+      "team": "Manchester United",
+      "teamBadge": "https://crests.football-data.org/66.png",
+      "goals": 4,
+      "assists": 0,
       "penalties": 0
     },
     {
@@ -81,51 +103,29 @@
       "penalties": 0
     },
     {
-      "name": "Marcus Tavernier",
-      "firstName": "Marcus",
-      "lastName": "Tavernier",
+      "name": "Jack Hinshelwood",
+      "firstName": "Jack",
+      "lastName": "Hinshelwood",
       "nationality": "England",
-      "team": "Bournemouth",
-      "teamBadge": "https://crests.football-data.org/bournemouth.png",
-      "goals": 3,
-      "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Pedro Neto",
-      "firstName": "",
-      "lastName": "Pedro Neto",
-      "nationality": "Portugal",
-      "team": "Chelsea",
-      "teamBadge": "https://crests.football-data.org/61.png",
-      "goals": 3,
-      "assists": 1,
-      "penalties": 0
-    },
-    {
-      "name": "Pascal Groß",
-      "firstName": "Pascal",
-      "lastName": "Groß",
-      "nationality": "Germany",
       "team": "Brighton",
       "teamBadge": "https://crests.football-data.org/397.png",
       "goals": 3,
-      "assists": 4,
-      "penalties": 1
+      "assists": 0,
+      "penalties": 0
     }
   ],
   "bestAttacks": [
+    {
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
+      "goalsFor": 23,
+      "played": 7
+    },
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalsFor": 19,
       "played": 7
-    },
-    {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsFor": 18,
-      "played": 6
     },
     {
       "name": "Chelsea",
@@ -148,22 +148,22 @@
   ],
   "bestDefences": [
     {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalsAgainst": 5,
-      "played": 6
-    },
-    {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
       "goalsAgainst": 5,
-      "played": 6
+      "played": 7
+    },
+    {
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsAgainst": 5,
+      "played": 7
     },
     {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
-      "goalsAgainst": 5,
-      "played": 6
+      "goalsAgainst": 6,
+      "played": 7
     },
     {
       "name": "Manchester City",
@@ -182,8 +182,8 @@
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 13,
-      "played": 6
+      "goalDifference": 18,
+      "played": 7
     },
     {
       "name": "Manchester City",
@@ -195,7 +195,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalDifference": 5,
-      "played": 6
+      "played": 7
     },
     {
       "name": "Brentford",
@@ -211,17 +211,17 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 14,
+    "position": 13,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 6,
+    "played": 7,
     "won": 1,
-    "drawn": 3,
+    "drawn": 4,
     "lost": 2,
-    "goalsFor": 9,
-    "goalsAgainst": 9,
+    "goalsFor": 10,
+    "goalsAgainst": 10,
     "goalDifference": 0,
-    "points": 6
+    "points": 7
   }
 }
