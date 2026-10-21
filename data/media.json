@@ -1,20 +1,8 @@
 {
-  "updated": "2026-10-20T23:23:20.210154+00:00",
+  "updated": "2026-10-21T14:06:24.441898+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1288069,
-      "mediaType": "movie",
-      "title": "Tenzing",
-      "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
-      "poster": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "8.3",
-      "votes": 112,
-      "url": "https://www.themoviedb.org/movie/1288069"
-    },
     {
       "id": 1058424,
       "mediaType": "movie",
@@ -24,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-07-15",
       "rating": "6.9",
-      "votes": 285,
+      "votes": 291,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -36,20 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
       "releaseDate": "2026-10-16",
       "rating": "7.1",
-      "votes": 117,
+      "votes": 121,
       "url": "https://www.themoviedb.org/movie/1561726"
     },
     {
-      "id": 1153576,
+      "id": 1400940,
       "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "6.3",
-      "votes": 122,
-      "url": "https://www.themoviedb.org/movie/1153576"
+      "title": "Clayface",
+      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+      "releaseDate": "2026-10-19",
+      "rating": "7.2",
+      "votes": 26,
+      "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1288069,
+      "mediaType": "movie",
+      "title": "Tenzing",
+      "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
+      "poster": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "8.4",
+      "votes": 121,
+      "url": "https://www.themoviedb.org/movie/1288069"
     },
     {
       "id": 969681,
@@ -60,20 +60,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 5852,
+      "votes": 5885,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1400940,
+      "id": 1153576,
       "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "8.2",
-      "votes": 18,
-      "url": "https://www.themoviedb.org/movie/1400940"
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "6.2",
+      "votes": 128,
+      "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
+      "id": 1255833,
+      "mediaType": "movie",
+      "title": "Whalefall",
+      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
+      "releaseDate": "2026-10-14",
+      "rating": "6.5",
+      "votes": 73,
+      "url": "https://www.themoviedb.org/movie/1255833"
+    },
+    {
+      "id": 1381078,
+      "mediaType": "movie",
+      "title": "Love of Your Life",
+      "overview": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
+      "poster": "https://image.tmdb.org/t/p/w500/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4hneB0UFKOZAGJHqJ3VhDcG72uH.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "6.8",
+      "votes": 111,
+      "url": "https://www.themoviedb.org/movie/1381078"
+    },
+    {
+      "id": 1108427,
+      "mediaType": "movie",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.5",
+      "votes": 934,
+      "url": "https://www.themoviedb.org/movie/1108427"
     },
     {
       "id": 1514026,
@@ -84,44 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
       "releaseDate": "2026-08-27",
       "rating": "7.1",
-      "votes": 153,
+      "votes": 156,
       "url": "https://www.themoviedb.org/movie/1514026"
-    },
-    {
-      "id": 1284186,
-      "mediaType": "movie",
-      "title": "Sacrifice",
-      "overview": "During a star-studded charity gala brimming with celebrities, billionaires, and empty speeches, a movie star in the midst of an existential crisis is taken hostage by a radical warrior and her devoted followers. As the night descends into chaos, both an inward journey and an outward adventure ensue, where the line between performance and belief, salvation and sacrifice, begins to blur.",
-      "poster": "https://image.tmdb.org/t/p/w500/SGH7mlgfDyGgRCi2At62Ljg3zV.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oAUf1pvGlafCZVlEuPt1JyONHR1.jpg",
-      "releaseDate": "2026-04-09",
-      "rating": "5.0",
-      "votes": 61,
-      "url": "https://www.themoviedb.org/movie/1284186"
-    },
-    {
-      "id": 1255833,
-      "mediaType": "movie",
-      "title": "Whalefall",
-      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
-      "releaseDate": "2026-10-14",
-      "rating": "6.6",
-      "votes": 67,
-      "url": "https://www.themoviedb.org/movie/1255833"
-    },
-    {
-      "id": 1381078,
-      "mediaType": "movie",
-      "title": "Love of Your Life",
-      "overview": "After a chance encounter sparks a sweeping romance, Maya's future is suddenly upended, sending her on an unexpected journey to love and live again.",
-      "poster": "https://image.tmdb.org/t/p/w500/dL3Tcv4FU2K85bgnGRBgLjFSrLr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/f1jZDs4dJoFXxazmpBKGmId2hFU.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.8",
-      "votes": 109,
-      "url": "https://www.themoviedb.org/movie/1381078"
     }
   ],
   "trendingTv": [
@@ -134,20 +134,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/w3agwUSMpJ4X9t1jGrDtqqRPjDQ.jpg",
       "releaseDate": "2021-04-30",
       "rating": "8.0",
-      "votes": 144,
+      "votes": 148,
       "url": "https://www.themoviedb.org/tv/123542"
-    },
-    {
-      "id": 105248,
-      "mediaType": "tv",
-      "title": "Cyberpunk: Edgerunners",
-      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "poster": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
-      "releaseDate": "2022-09-13",
-      "rating": "8.5",
-      "votes": 2037,
-      "url": "https://www.themoviedb.org/tv/105248"
     },
     {
       "id": 213375,
@@ -158,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.8",
-      "votes": 118,
+      "votes": 134,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -169,9 +157,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/3ENhExiD2fcjk5FX0AcAXcvLu9N.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
       "releaseDate": "2026-10-15",
-      "rating": "8.5",
-      "votes": 150,
+      "rating": "8.6",
+      "votes": 169,
       "url": "https://www.themoviedb.org/tv/213562"
+    },
+    {
+      "id": 105248,
+      "mediaType": "tv",
+      "title": "Cyberpunk: Edgerunners",
+      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "poster": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
+      "releaseDate": "2022-09-13",
+      "rating": "8.5",
+      "votes": 2051,
+      "url": "https://www.themoviedb.org/tv/105248"
+    },
+    {
+      "id": 120911,
+      "mediaType": "tv",
+      "title": "The Terminal List",
+      "overview": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military's command structure, Reece applies the lessons he's learned from nearly two decades of warfare to hunt down the people responsible.",
+      "poster": "https://image.tmdb.org/t/p/w500/xyFAzP7RKK8cARCSalIZ9A9T0jV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/eqLwFXX0R7U0crdgQcj0Rxjb9uc.jpg",
+      "releaseDate": "2022-06-30",
+      "rating": "8.0",
+      "votes": 1248,
+      "url": "https://www.themoviedb.org/tv/120911"
     },
     {
       "id": 288673,
@@ -182,44 +194,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
       "releaseDate": "2026-10-07",
       "rating": "8.3",
-      "votes": 389,
+      "votes": 395,
       "url": "https://www.themoviedb.org/tv/288673"
     },
     {
-      "id": 275139,
+      "id": 300146,
       "mediaType": "tv",
-      "title": "Phony",
-      "overview": "After waking up from a freak car accident, Sonny discovers that his mother has been replaced by an impostor.",
-      "poster": "https://image.tmdb.org/t/p/w500/iCyQc8cSSHkxUHbkvzbC77owALt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kVf3qP9DHfiW7H9ZzFmE1XrNpJ4.jpg",
-      "releaseDate": "2026-10-20",
-      "rating": "7.0",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/275139"
+      "title": "Where the Mask Ends",
+      "overview": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
+      "poster": "https://image.tmdb.org/t/p/w500/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/YndvGwqwroUDVltBWmnOuTvJke.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "9.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/tv/300146"
     },
     {
-      "id": 37854,
+      "id": 95480,
       "mediaType": "tv",
-      "title": "One Piece",
-      "overview": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous \"One Piece\" behind. Whoever claims the \"One Piece\" will be named the new King of the Pirates.\n\nMonkey D. Luffy, a boy who consumed a \"Devil Fruit,\" decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevy of skilled fighters and thieves to help him along the way.\n\nLuffy will do anything to get the One Piece and become King of the Pirates!",
-      "poster": "https://image.tmdb.org/t/p/w500/dB4EDhre2dsC2kxYDavyKWqLQwi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v38qp4bySLTXYu3MF8r5GD51FN3.jpg",
-      "releaseDate": "1999-10-20",
-      "rating": "8.8",
-      "votes": 5604,
-      "url": "https://www.themoviedb.org/tv/37854"
+      "title": "Slow Horses",
+      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "releaseDate": "2022-04-01",
+      "rating": "8.1",
+      "votes": 1061,
+      "url": "https://www.themoviedb.org/tv/95480"
     },
     {
-      "id": 247718,
+      "id": 30984,
       "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.5",
-      "votes": 1060,
-      "url": "https://www.themoviedb.org/tv/247718"
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2305,
+      "url": "https://www.themoviedb.org/tv/30984"
     },
     {
       "id": 153312,
@@ -230,20 +242,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
       "releaseDate": "2022-11-13",
       "rating": "8.3",
-      "votes": 2842,
+      "votes": 2846,
       "url": "https://www.themoviedb.org/tv/153312"
-    },
-    {
-      "id": 95350,
-      "mediaType": "tv",
-      "title": "Lanterns",
-      "overview": "Two intergalactic cops, new recruit John Stewart and Lantern legend Hal Jordan, are drawn into a dark, Earth-based mystery as they investigate a murder in the American heartland.",
-      "poster": "https://image.tmdb.org/t/p/w500/rb94rKVIzLyfWufIN7WqLvadBDH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg",
-      "releaseDate": "2026-08-16",
-      "rating": "8.2",
-      "votes": 789,
-      "url": "https://www.themoviedb.org/tv/95350"
     }
   ],
   "upcomingMovies": [
@@ -260,18 +260,6 @@
       "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
-      "id": 858035,
-      "mediaType": "movie",
-      "title": "Klara and the Sun",
-      "overview": "An Artificial Friend named Klara finds a deep bond with a troubled young girl, bringing light and hope to a grieving family through her unwavering devotion and innocent wonder.",
-      "poster": "https://image.tmdb.org/t/p/w500/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/movie/858035"
-    },
-    {
       "id": 1422041,
       "mediaType": "movie",
       "title": "La bola negra",
@@ -284,18 +272,6 @@
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
-      "id": 1400940,
-      "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "8.2",
-      "votes": 18,
-      "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
       "id": 1375441,
       "mediaType": "movie",
       "title": "Primetime",
@@ -304,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1tJz8e1G21nEuzHlX771MNBRJvM.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.8",
-      "votes": 185,
+      "votes": 187,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -318,18 +294,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/891621"
-    },
-    {
-      "id": 1491920,
-      "mediaType": "movie",
-      "title": "Kung Fu Soccer",
-      "overview": "Dismissed as underdogs before they even step onto the pitch, the Emei Women's Football Team enters the prestigious Supreme Invincible Cup determined to prove everyone wrong. Led by captain Shuangshuang, star striker Yulong, and mentor Xu Feng, the team combines martial arts mastery with football skill in a thrilling quest for victory. Against mounting challenges and impossible odds, they fight to make their mark and chase their championship dream.",
-      "poster": "https://image.tmdb.org/t/p/w500/kTf9kJ3QMQqYs6wNdYJeVtwIZ2Z.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/J1UgJwRxDQS92kw75KgeVFZMHf.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "5.8",
-      "votes": 48,
-      "url": "https://www.themoviedb.org/movie/1491920"
     },
     {
       "id": 1376400,
@@ -356,16 +320,52 @@
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
-      "id": 1572116,
+      "id": 1227877,
       "mediaType": "movie",
-      "title": "Monster Mia",
-      "overview": "12-year-old Mia and her scruffy pet rat Quentin are sent to the mysterious Rotwood Academy after one too many problems at school. The new school gives her the creeps, and Mia needs to figure a way out before the students realize she isn't a monster like them! But the vice principal Van Vlad hosts a particular dislike for humans, and Mia is scared he has seen through her act...",
-      "poster": "https://image.tmdb.org/t/p/w500/yQAczp5MMJs9neodhcm3spv9xtv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/n6P7q23qH4w0XIdDfvG7Hk7GhSZ.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "8.9",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/movie/1572116"
+      "title": "I Love Boosters",
+      "overview": "A group of shoplifters take aim at a cutthroat fashion maven by stealing from her stores and reselling them at a lower price — what they call 'fashion-forward philanthropy'.",
+      "poster": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fBZ9cWUI1yB9Fcs2eoYZ4mmMUmI.jpg",
+      "releaseDate": "2026-10-30",
+      "rating": "6.3",
+      "votes": 124,
+      "url": "https://www.themoviedb.org/movie/1227877"
+    },
+    {
+      "id": 1195803,
+      "mediaType": "movie",
+      "title": "Wicker",
+      "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
+      "releaseDate": "2026-10-30",
+      "rating": "1.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/1195803"
+    },
+    {
+      "id": 1567605,
+      "mediaType": "movie",
+      "title": "Ebenezer",
+      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+      "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bG8uwYAq5Y9bPDaoxq2eHjopA9T.jpg",
+      "releaseDate": "2026-11-13",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1567605"
+    },
+    {
+      "id": 31767,
+      "mediaType": "movie",
+      "title": "The Devils",
+      "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of a sexually obsessed nun’s witchcraft accusations, which corrupt church and state officials are all too happy to exploit.​​​​​​​​​​​​​​​​",
+      "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8ApwSMdd9QehKjvW3fOmKVrnZXv.jpg",
+      "releaseDate": "1971-07-25",
+      "rating": "7.5",
+      "votes": 470,
+      "url": "https://www.themoviedb.org/movie/31767"
     }
   ],
   "nowPlayingMovies": [
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
-      "rating": "6.3",
-      "votes": 122,
+      "rating": "6.2",
+      "votes": 126,
       "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
@@ -390,8 +390,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.9",
-      "votes": 286,
+      "votes": 288,
       "url": "https://www.themoviedb.org/movie/1058424"
+    },
+    {
+      "id": 1255833,
+      "mediaType": "movie",
+      "title": "Whalefall",
+      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.5",
+      "votes": 68,
+      "url": "https://www.themoviedb.org/movie/1255833"
     },
     {
       "id": 1400837,
@@ -402,44 +414,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "5.9",
-      "votes": 138,
+      "votes": 141,
       "url": "https://www.themoviedb.org/movie/1400837"
-    },
-    {
-      "id": 1255833,
-      "mediaType": "movie",
-      "title": "Whalefall",
-      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hBoY4pwszgeBEXLZ53WDTyLIMhr.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.6",
-      "votes": 67,
-      "url": "https://www.themoviedb.org/movie/1255833"
-    },
-    {
-      "id": 1101412,
-      "mediaType": "movie",
-      "title": "Fall 2: Deadpoint",
-      "overview": "On a perilous climb across Thailand's Mount Kwan, two climbers become trapped thousands of feet above the ground, where vertigo-inducing heights, sheer exposure, and impossible odds turn every moment into a fight for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/fgSm5ylwiXbIHn8UbUXDjk9RRu4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nGau0KBOaRILSK5MqFcuTfv7GMl.jpg",
-      "releaseDate": "2026-09-09",
-      "rating": "7.3",
-      "votes": 603,
-      "url": "https://www.themoviedb.org/movie/1101412"
-    },
-    {
-      "id": 1377237,
-      "mediaType": "movie",
-      "title": "Runner",
-      "overview": "A former soldier is thrown into a brutal race against time when a critical medical delivery makes him and his unlikely partner the targets of a ruthless cartel. As the mission spirals into a deadly manhunt, every detour, delay, and bullet pushes them closer to failure. With betrayal closing in from every side, they must survive the chase and deliver their cargo to save the life of a little girl.",
-      "poster": "https://image.tmdb.org/t/p/w500/yBKMAIj7clP42UkFejhGDBBoTpb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/npXZNWjOEYrqdMDPQ11SGBrXqAG.jpg",
-      "releaseDate": "2026-09-11",
-      "rating": "8.3",
-      "votes": 678,
-      "url": "https://www.themoviedb.org/movie/1377237"
     },
     {
       "id": 1423191,
@@ -450,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-18",
       "rating": "7.3",
-      "votes": 1005,
+      "votes": 1009,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -459,7 +435,7 @@
       "title": "Sense and Sensibility",
       "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
       "poster": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nrLVr8C2pkbOGwXKay2xrxvlHmh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/YpzEwCpoOdFD2itSYf3pbVGTXH.jpg",
       "releaseDate": "2026-09-25",
       "rating": "7.3",
       "votes": 42,
@@ -474,7 +450,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/b7t3r39Oll5qPxBKzLZ8eHMBD7l.jpg",
       "releaseDate": "2026-10-02",
       "rating": "7.5",
-      "votes": 433,
+      "votes": 434,
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
@@ -485,9 +461,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
       "releaseDate": "2026-10-09",
-      "rating": "6.9",
-      "votes": 119,
+      "rating": "7.0",
+      "votes": 120,
       "url": "https://www.themoviedb.org/movie/1281331"
+    },
+    {
+      "id": 1234139,
+      "mediaType": "movie",
+      "title": "Jailer 2",
+      "overview": "When a dangerous syndicate expands its reach to threaten his family's peace, retired jailer Tiger Muthuvel Pandian goes undercover as a driver. Operating from the shadows, he takes on ruthless new enemies to protect his home.",
+      "poster": "https://image.tmdb.org/t/p/w500/upwdEyhhYZ7pT2hD535fr2MGfpx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zpHTOdRl7GEPqFsDGqsN6Hi9Ylt.jpg",
+      "releaseDate": "2026-10-14",
+      "rating": "8.0",
+      "votes": 9,
+      "url": "https://www.themoviedb.org/movie/1234139"
+    },
+    {
+      "id": 858035,
+      "mediaType": "movie",
+      "title": "Klara and the Sun",
+      "overview": "An Artificial Friend named Klara finds a deep bond with a troubled young girl, bringing light and hope to a grieving family through her unwavering devotion and innocent wonder.",
+      "poster": "https://image.tmdb.org/t/p/w500/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/s4E7NDJCOG3wqc5psv2RLr9QfUm.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "10.0",
+      "votes": 1,
+      "url": "https://www.themoviedb.org/movie/858035"
     }
   ],
   "links": [
