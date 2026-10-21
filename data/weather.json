@@ -1,20 +1,20 @@
 {
-  "updated": "2026-10-21T18:34:09.422011+00:00",
+  "updated": "2026-10-21T22:17:18.399619+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-10-21T19:30",
+    "time": "2026-10-21T23:15",
     "temperature": 9.0,
-    "feelsLike": 4.0,
-    "humidity": 72.0,
+    "feelsLike": 5.0,
+    "humidity": 69.0,
     "precipitation": 0.0,
-    "windSpeed": 16.0,
-    "windGusts": 34.0,
-    "weatherCode": 3,
-    "description": "Overcast",
-    "icon": "☁️"
+    "windSpeed": 9.0,
+    "windGusts": 19.0,
+    "weatherCode": 2,
+    "description": "Partly cloudy",
+    "icon": "⛅"
   },
   "forecast": [
     {
@@ -29,9 +29,9 @@
     },
     {
       "date": "2026-10-22",
-      "description": "Light drizzle",
+      "description": "Slight rain",
       "icon": "🌦️",
-      "maxTemp": 10.0,
+      "maxTemp": 11.0,
       "minTemp": 7.0,
       "rainChance": 26.0,
       "sunrise": "2026-10-22T07:46",
