@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22T18:47:23.606598+00:00",
+  "updated": "2026-10-22T23:35:35.322905+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,8 +12,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 46,
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1561726,
+      "mediaType": "movie",
+      "title": "Masterplan",
+      "overview": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
+      "poster": "https://image.tmdb.org/t/p/w500/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "7.0",
+      "votes": 139,
+      "url": "https://www.themoviedb.org/movie/1561726"
     },
     {
       "id": 1058424,
@@ -24,55 +36,19 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-07-15",
       "rating": "6.9",
-      "votes": 296,
+      "votes": 297,
       "url": "https://www.themoviedb.org/movie/1058424"
-    },
-    {
-      "id": 1561726,
-      "mediaType": "movie",
-      "title": "Masterplan",
-      "overview": "When a legendary thief sets his sights on the Mona Lisa, he recruits two young strangers to help him before revealing they are long-lost siblings… and oh yes, by the way, he is their father. Thrown into a chaotic reunion they never asked for, this new family must learn to work together — and try not to kill each other — if they want any chance at pulling off the heist of the century.",
-      "poster": "https://image.tmdb.org/t/p/w500/5xmXVd7nCK3tAo34XkO58SxUCip.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dgUDj84BWtW6EZzee8BkgKnjDhh.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.9",
-      "votes": 135,
-      "url": "https://www.themoviedb.org/movie/1561726"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "8.5",
-      "votes": 5944,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1153576,
-      "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "6.3",
-      "votes": 147,
-      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 1288069,
       "mediaType": "movie",
       "title": "Tenzing",
       "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
-      "poster": "https://image.tmdb.org/t/p/w500/a3G0yDUDoEJwzmHeIIrZmUCx8bW.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
       "releaseDate": "2026-10-09",
-      "rating": "8.4",
-      "votes": 135,
+      "rating": "8.3",
+      "votes": 140,
       "url": "https://www.themoviedb.org/movie/1288069"
     },
     {
@@ -84,8 +60,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dNCK3daKbOi6IHSsM9O2Nwyd91Y.jpg",
       "releaseDate": "2026-09-10",
       "rating": "6.5",
-      "votes": 66,
+      "votes": 69,
       "url": "https://www.themoviedb.org/movie/1198654"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "8.5",
+      "votes": 5962,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "6.3",
+      "votes": 150,
+      "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
+      "id": 1514026,
+      "mediaType": "movie",
+      "title": "Buddy",
+      "overview": "A magical, singing orange unicorn holds his cast hostage in a surreal TV-show dimension, as he becomes more and more demented.",
+      "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ytoLEl5yDaxB8AtZ52uKWjaQ9ql.jpg",
+      "releaseDate": "2026-08-27",
+      "rating": "7.1",
+      "votes": 163,
+      "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
       "id": 1255833,
@@ -95,8 +107,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
       "releaseDate": "2026-10-14",
-      "rating": "6.5",
-      "votes": 85,
+      "rating": "6.6",
+      "votes": 89,
       "url": "https://www.themoviedb.org/movie/1255833"
     },
     {
@@ -108,20 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
       "releaseDate": "2026-05-13",
       "rating": "8.2",
-      "votes": 6258,
+      "votes": 6261,
       "url": "https://www.themoviedb.org/movie/1339713"
-    },
-    {
-      "id": 1380417,
-      "mediaType": "movie",
-      "title": "By Any Means",
-      "overview": "In 1960s Mississippi, a young Black FBI agent is forced to partner with a notorious mafia hitman to investigate a wave of brutal civil rights murders.",
-      "poster": "https://image.tmdb.org/t/p/w500/hxTjCfEmZJFAPW8h5S3tDQNaBi8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1jANqIbqrWJZb8GM5Kb3L6U8iHi.jpg",
-      "releaseDate": "2026-09-02",
-      "rating": "6.6",
-      "votes": 57,
-      "url": "https://www.themoviedb.org/movie/1380417"
     }
   ],
   "trendingTv": [
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
       "releaseDate": "2023-10-22",
       "rating": "8.7",
-      "votes": 680,
+      "votes": 681,
       "url": "https://www.themoviedb.org/tv/220542"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
       "releaseDate": "2026-10-15",
       "rating": "8.6",
-      "votes": 198,
+      "votes": 204,
       "url": "https://www.themoviedb.org/tv/213562"
     },
     {
@@ -170,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
       "releaseDate": "2022-09-13",
       "rating": "8.5",
-      "votes": 2063,
+      "votes": 2066,
       "url": "https://www.themoviedb.org/tv/105248"
     },
     {
@@ -181,21 +181,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
-      "rating": "8.7",
-      "votes": 153,
+      "rating": "8.8",
+      "votes": 156,
       "url": "https://www.themoviedb.org/tv/213375"
-    },
-    {
-      "id": 300146,
-      "mediaType": "tv",
-      "title": "Where the Mask Ends",
-      "overview": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
-      "poster": "https://image.tmdb.org/t/p/w500/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/YndvGwqwroUDVltBWmnOuTvJke.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "7.2",
-      "votes": 4,
-      "url": "https://www.themoviedb.org/tv/300146"
     },
     {
       "id": 120911,
@@ -206,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/98mdtfkJ77vVikylIbOQYfJvxpJ.jpg",
       "releaseDate": "2022-06-30",
       "rating": "8.0",
-      "votes": 1257,
+      "votes": 1258,
       "url": "https://www.themoviedb.org/tv/120911"
     },
     {
@@ -215,35 +203,47 @@
       "title": "Carrie",
       "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
       "poster": "https://image.tmdb.org/t/p/w500/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5Zwl8JqCAgsljpqsZzczBCc4cuy.jpg",
       "releaseDate": "2026-10-07",
       "rating": "8.3",
-      "votes": 415,
+      "votes": 417,
       "url": "https://www.themoviedb.org/tv/288673"
     },
     {
-      "id": 96677,
+      "id": 153312,
       "mediaType": "tv",
-      "title": "Lupin",
-      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
-      "releaseDate": "2021-01-08",
-      "rating": "7.7",
-      "votes": 2696,
-      "url": "https://www.themoviedb.org/tv/96677"
+      "title": "Tulsa King",
+      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+      "poster": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+      "releaseDate": "2022-11-13",
+      "rating": "8.3",
+      "votes": 2851,
+      "url": "https://www.themoviedb.org/tv/153312"
     },
     {
-      "id": 30984,
+      "id": 247718,
       "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.3",
-      "votes": 2306,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.5",
+      "votes": 1070,
+      "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "id": 95480,
+      "mediaType": "tv",
+      "title": "Slow Horses",
+      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "releaseDate": "2022-04-01",
+      "rating": "8.1",
+      "votes": 1067,
+      "url": "https://www.themoviedb.org/tv/95480"
     }
   ],
   "upcomingMovies": [
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/1tJz8e1G21nEuzHlX771MNBRJvM.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.9",
-      "votes": 198,
+      "votes": 200,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -279,8 +279,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ayJsUQ4bEG6yY0UB6lMboiaDfYE.jpg",
       "releaseDate": "2026-10-30",
-      "rating": "5.5",
-      "votes": 14,
+      "rating": "5.8",
+      "votes": 16,
       "url": "https://www.themoviedb.org/movie/1376400"
     },
     {
@@ -327,8 +327,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/xVh1ypMoVkMf5IB7y3hnRplJ14c.jpg",
       "releaseDate": "2026-10-30",
-      "rating": "6.2",
-      "votes": 4,
+      "rating": "6.3",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1195803"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.9",
-      "votes": 296,
+      "votes": 297,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -390,32 +390,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.3",
-      "votes": 146,
+      "votes": 149,
       "url": "https://www.themoviedb.org/movie/1153576"
-    },
-    {
-      "id": 1255833,
-      "mediaType": "movie",
-      "title": "Whalefall",
-      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.5",
-      "votes": 83,
-      "url": "https://www.themoviedb.org/movie/1255833"
-    },
-    {
-      "id": 1281331,
-      "mediaType": "movie",
-      "title": "The Social Reckoning",
-      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "7.0",
-      "votes": 123,
-      "url": "https://www.themoviedb.org/movie/1281331"
     },
     {
       "id": 1400837,
@@ -426,8 +402,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "5.9",
-      "votes": 146,
+      "votes": 147,
       "url": "https://www.themoviedb.org/movie/1400837"
+    },
+    {
+      "id": 1255833,
+      "mediaType": "movie",
+      "title": "Whalefall",
+      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
+      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.6",
+      "votes": 89,
+      "url": "https://www.themoviedb.org/movie/1255833"
+    },
+    {
+      "id": 1400940,
+      "mediaType": "movie",
+      "title": "Clayface",
+      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
+      "releaseDate": "2026-10-19",
+      "rating": "7.4",
+      "votes": 51,
+      "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "7.3",
+      "votes": 1028,
+      "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
       "id": 1248832,
@@ -442,28 +454,16 @@
       "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
-      "id": 1400940,
+      "id": 1281331,
       "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "7.4",
-      "votes": 43,
-      "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1423191,
-      "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-      "releaseDate": "2026-09-18",
-      "rating": "7.3",
-      "votes": 1022,
-      "url": "https://www.themoviedb.org/movie/1423191"
+      "title": "The Social Reckoning",
+      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+      "poster": "https://image.tmdb.org/t/p/w500/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "7.0",
+      "votes": 123,
+      "url": "https://www.themoviedb.org/movie/1281331"
     },
     {
       "id": 1503762,
