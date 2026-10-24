@@ -1,20 +1,8 @@
 {
-  "updated": "2026-10-24T12:54:57.819606+00:00",
+  "updated": "2026-10-24T17:34:56.210712+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "6.8",
-      "votes": 315,
-      "url": "https://www.themoviedb.org/movie/1058424"
-    },
     {
       "id": 1400940,
       "mediaType": "movie",
@@ -24,20 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.6",
-      "votes": 119,
+      "votes": 122,
       "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1288069,
-      "mediaType": "movie",
-      "title": "Tenzing",
-      "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
-      "poster": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "8.3",
-      "votes": 157,
-      "url": "https://www.themoviedb.org/movie/1288069"
     },
     {
       "id": 1561726,
@@ -60,32 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 6029,
+      "votes": 6037,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1380417,
+      "id": 1058424,
       "mediaType": "movie",
-      "title": "By Any Means",
-      "overview": "In 1960s Mississippi, a young Black FBI agent is forced to partner with a notorious mafia hitman to investigate a wave of brutal civil rights murders.",
-      "poster": "https://image.tmdb.org/t/p/w500/85CvGoeXAcSSWy6So2DRD8ItJAN.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1jANqIbqrWJZb8GM5Kb3L6U8iHi.jpg",
-      "releaseDate": "2026-09-02",
-      "rating": "6.6",
-      "votes": 71,
-      "url": "https://www.themoviedb.org/movie/1380417"
-    },
-    {
-      "id": 1255833,
-      "mediaType": "movie",
-      "title": "Whalefall",
-      "overview": "Following the death of his father, Jay Gardiner goes diving off the central Coast of California in search of his remains, but is swallowed by a massive sperm whale. While trapped inside its belly with only one hour of oxygen left, Jay comes to realize that the hard-earned lessons his father imparted may be the key to his escape.",
-      "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
-      "releaseDate": "2026-10-14",
-      "rating": "6.6",
-      "votes": 96,
-      "url": "https://www.themoviedb.org/movie/1255833"
+      "title": "Hope",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "poster": "https://image.tmdb.org/t/p/w500/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "6.8",
+      "votes": 319,
+      "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
       "id": 1198654,
@@ -96,8 +60,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dNCK3daKbOi6IHSsM9O2Nwyd91Y.jpg",
       "releaseDate": "2026-09-10",
       "rating": "6.8",
-      "votes": 83,
+      "votes": 84,
       "url": "https://www.themoviedb.org/movie/1198654"
+    },
+    {
+      "id": 1288069,
+      "mediaType": "movie",
+      "title": "Tenzing",
+      "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
+      "poster": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6GXqVvL20Y0MpyVP30WoI2NPK69.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "8.2",
+      "votes": 163,
+      "url": "https://www.themoviedb.org/movie/1288069"
+    },
+    {
+      "id": 1422041,
+      "mediaType": "movie",
+      "title": "La bola negra",
+      "overview": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
+      "poster": "https://image.tmdb.org/t/p/w500/jT5SR5qc9KvVg7HUEmjMWEUYMce.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
+      "releaseDate": "2026-09-25",
+      "rating": "8.2",
+      "votes": 106,
+      "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
       "id": 1153576,
@@ -108,20 +96,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-13",
       "rating": "6.4",
-      "votes": 164,
+      "votes": 167,
       "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
-      "id": 1170608,
+      "id": 1108427,
       "mediaType": "movie",
-      "title": "Dune: Part Three",
-      "overview": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
-      "poster": "https://image.tmdb.org/t/p/w500/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
-      "releaseDate": "2026-12-15",
+      "title": "Moana",
+      "overview": "Teenage Moana answers the Ocean's call and, for the first time, voyages beyond the reef of her island of Motunui with infamous demigod Maui on an unforgettable journey to restore prosperity to her people.",
+      "poster": "https://image.tmdb.org/t/p/w500/gaet1xQ2nxrG0V1Ep9T20ZMNEIC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c6BPbkO5Npt1OdwttAxCFo06wtH.jpg",
+      "releaseDate": "2026-07-08",
+      "rating": "7.5",
+      "votes": 963,
+      "url": "https://www.themoviedb.org/movie/1108427"
+    },
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
+      "releaseDate": "2026-12-16",
       "rating": "0.0",
       "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1170608"
+      "url": "https://www.themoviedb.org/movie/1003596"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/gffVOVZ2Y9cmVIZ26Gt9ByMGCYH.jpg",
       "releaseDate": "2023-10-22",
       "rating": "8.7",
-      "votes": 685,
+      "votes": 686,
       "url": "https://www.themoviedb.org/tv/220542"
     },
     {
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/w3agwUSMpJ4X9t1jGrDtqqRPjDQ.jpg",
       "releaseDate": "2021-04-30",
       "rating": "8.0",
-      "votes": 149,
+      "votes": 150,
       "url": "https://www.themoviedb.org/tv/123542"
-    },
-    {
-      "id": 105248,
-      "mediaType": "tv",
-      "title": "Cyberpunk: Edgerunners",
-      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-      "poster": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3UbHGmu9vIMSC5uNfnGt7DjetqT.jpg",
-      "releaseDate": "2022-09-13",
-      "rating": "8.5",
-      "votes": 2079,
-      "url": "https://www.themoviedb.org/tv/105248"
     },
     {
       "id": 96677,
@@ -170,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
       "releaseDate": "2021-01-08",
       "rating": "7.7",
-      "votes": 2706,
+      "votes": 2707,
       "url": "https://www.themoviedb.org/tv/96677"
+    },
+    {
+      "id": 105248,
+      "mediaType": "tv",
+      "title": "Cyberpunk: Edgerunners",
+      "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
+      "poster": "https://image.tmdb.org/t/p/w500/v3JuB15WybKmxDeT1hWdK3j6eSJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4NmCfWHzytiKM3riCMcbVYBJhlB.jpg",
+      "releaseDate": "2022-09-13",
+      "rating": "8.5",
+      "votes": 2079,
+      "url": "https://www.themoviedb.org/tv/105248"
     },
     {
       "id": 120911,
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/98mdtfkJ77vVikylIbOQYfJvxpJ.jpg",
       "releaseDate": "2022-06-30",
       "rating": "8.0",
-      "votes": 1265,
+      "votes": 1266,
       "url": "https://www.themoviedb.org/tv/120911"
     },
     {
@@ -194,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
       "releaseDate": "2026-10-15",
       "rating": "8.6",
-      "votes": 232,
+      "votes": 235,
       "url": "https://www.themoviedb.org/tv/213562"
     },
     {
@@ -206,7 +206,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.7",
-      "votes": 169,
+      "votes": 171,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -218,7 +218,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
       "releaseDate": "2026-10-07",
       "rating": "8.3",
-      "votes": 439,
+      "votes": 441,
       "url": "https://www.themoviedb.org/tv/288673"
     },
     {
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
-      "id": 300146,
+      "id": 153312,
       "mediaType": "tv",
-      "title": "Where the Mask Ends",
-      "overview": "An ambitious street urchin seizes the chance to impersonate a noblewoman and becomes a warlord's bride, but when her comatose husband awakens, she must navigate deadly schemes, win his heart through cunning, and uncover her royal heritage to triumph over rivals and rise from gutter to glory.",
-      "poster": "https://image.tmdb.org/t/p/w500/cE9Og0lCCRCP2RArarzJXmu6xEB.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/YndvGwqwroUDVltBWmnOuTvJke.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "8.2",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/tv/300146"
+      "title": "Tulsa King",
+      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+      "poster": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+      "releaseDate": "2022-11-13",
+      "rating": "8.3",
+      "votes": 2857,
+      "url": "https://www.themoviedb.org/tv/153312"
     }
   ],
   "upcomingMovies": [
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.9",
-      "votes": 208,
+      "votes": 209,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -276,11 +276,11 @@
       "mediaType": "movie",
       "title": "La bola negra",
       "overview": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
-      "poster": "https://image.tmdb.org/t/p/w500/rAG97wRYka5eXXJW7qSFTMTLfVX.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/jT5SR5qc9KvVg7HUEmjMWEUYMce.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
-      "rating": "8.2",
-      "votes": 101,
+      "rating": "8.3",
+      "votes": 103,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -292,7 +292,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ayJsUQ4bEG6yY0UB6lMboiaDfYE.jpg",
       "releaseDate": "2026-10-30",
       "rating": "6.0",
-      "votes": 24,
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1376400"
     },
     {
@@ -336,8 +336,8 @@
       "mediaType": "movie",
       "title": "Ramayana: Rise of a Legend",
       "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-      "poster": "https://image.tmdb.org/t/p/w500/f3yZZw7zIsWo6m9xJStfjDauIZX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/hX94xNPYwazKOVGGqL1GiwMSNuY.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/f5Lq2ndFETM1V5RNmFhpl2FKrHL.jpg",
       "releaseDate": "2026-11-06",
       "rating": "0.0",
       "votes": 0,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1227877"
     },
     {
-      "id": 31767,
+      "id": 1567605,
       "mediaType": "movie",
-      "title": "The Devils",
-      "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
-      "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8ApwSMdd9QehKjvW3fOmKVrnZXv.jpg",
-      "releaseDate": "1971-07-25",
-      "rating": "7.5",
-      "votes": 477,
-      "url": "https://www.themoviedb.org/movie/31767"
+      "title": "Ebenezer",
+      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+      "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bG8uwYAq5Y9bPDaoxq2eHjopA9T.jpg",
+      "releaseDate": "2026-11-13",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1567605"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.8",
-      "votes": 314,
+      "votes": 319,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.4",
-      "votes": 163,
+      "votes": 167,
       "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
@@ -402,8 +402,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.6",
-      "votes": 119,
+      "votes": 125,
       "url": "https://www.themoviedb.org/movie/1400940"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+      "releaseDate": "2026-09-18",
+      "rating": "7.3",
+      "votes": 1044,
+      "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
       "id": 1400837,
@@ -425,33 +437,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/vjTYUTgh9nO88i6HZ4YPRhiFL05.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
       "releaseDate": "2026-10-16",
-      "rating": "6.6",
-      "votes": 96,
+      "rating": "6.5",
+      "votes": 101,
       "url": "https://www.themoviedb.org/movie/1255833"
-    },
-    {
-      "id": 1423191,
-      "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-      "releaseDate": "2026-09-18",
-      "rating": "7.3",
-      "votes": 1042,
-      "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1248832,
-      "mediaType": "movie",
-      "title": "Digger",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "7.5",
-      "votes": 451,
-      "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
       "id": 1281331,
@@ -466,6 +454,18 @@
       "url": "https://www.themoviedb.org/movie/1281331"
     },
     {
+      "id": 1248832,
+      "mediaType": "movie",
+      "title": "Digger",
+      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
+      "releaseDate": "2026-10-02",
+      "rating": "7.5",
+      "votes": 452,
+      "url": "https://www.themoviedb.org/movie/1248832"
+    },
+    {
       "id": 1503762,
       "mediaType": "movie",
       "title": "Sense and Sensibility",
@@ -474,20 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nrLVr8C2pkbOGwXKay2xrxvlHmh.jpg",
       "releaseDate": "2026-09-25",
       "rating": "7.2",
-      "votes": 53,
+      "votes": 54,
       "url": "https://www.themoviedb.org/movie/1503762"
     },
     {
-      "id": 1234139,
+      "id": 1263337,
       "mediaType": "movie",
-      "title": "Jailer 2",
-      "overview": "When a dangerous syndicate expands its reach to threaten his family's peace, retired jailer Tiger Muthuvel Pandian goes undercover as a driver. Operating from the shadows, he takes on ruthless new enemies to protect his home.",
-      "poster": "https://image.tmdb.org/t/p/w500/upwdEyhhYZ7pT2hD535fr2MGfpx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zpHTOdRl7GEPqFsDGqsN6Hi9Ylt.jpg",
-      "releaseDate": "2026-10-14",
-      "rating": "8.1",
-      "votes": 15,
-      "url": "https://www.themoviedb.org/movie/1234139"
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.4",
+      "votes": 326,
+      "url": "https://www.themoviedb.org/movie/1263337"
     }
   ],
   "links": [
