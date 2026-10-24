@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T16:00:31.484030+00:00",
+  "updated": "2026-10-24T20:54:18.925870+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -49,13 +49,13 @@
       "name": "Chelsea",
       "fullName": "Chelsea FC",
       "badge": "https://crests.football-data.org/61.png",
-      "played": 7,
+      "played": 8,
       "won": 4,
       "drawn": 1,
-      "lost": 2,
+      "lost": 3,
       "goalsFor": 17,
-      "goalsAgainst": 13,
-      "goalDifference": 4,
+      "goalsAgainst": 15,
+      "goalDifference": 2,
       "points": 13
     },
     {
@@ -158,6 +158,20 @@
     },
     {
       "position": 12,
+      "name": "Tottenham",
+      "fullName": "Tottenham Hotspur FC",
+      "badge": "https://crests.football-data.org/73.png",
+      "played": 8,
+      "won": 2,
+      "drawn": 3,
+      "lost": 3,
+      "goalsFor": 8,
+      "goalsAgainst": 10,
+      "goalDifference": -2,
+      "points": 9
+    },
+    {
+      "position": 13,
       "name": "Fulham",
       "fullName": "Fulham FC",
       "badge": "https://crests.football-data.org/63.png",
@@ -171,7 +185,7 @@
       "points": 8
     },
     {
-      "position": 13,
+      "position": 14,
       "name": "Newcastle",
       "fullName": "Newcastle United FC",
       "badge": "https://crests.football-data.org/67.png",
@@ -185,7 +199,7 @@
       "points": 8
     },
     {
-      "position": 14,
+      "position": 15,
       "name": "Manchester United",
       "fullName": "Manchester United FC",
       "badge": "https://crests.football-data.org/66.png",
@@ -199,7 +213,7 @@
       "points": 7
     },
     {
-      "position": 15,
+      "position": 16,
       "name": "Crystal Palace",
       "fullName": "Crystal Palace FC",
       "badge": "https://crests.football-data.org/354.png",
@@ -213,7 +227,7 @@
       "points": 7
     },
     {
-      "position": 16,
+      "position": 17,
       "name": "Bournemouth",
       "fullName": "AFC Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
@@ -227,7 +241,7 @@
       "points": 6
     },
     {
-      "position": 17,
+      "position": 18,
       "name": "Nott'm Forest",
       "fullName": "Nottingham Forest FC",
       "badge": "https://crests.football-data.org/351.png",
@@ -235,20 +249,6 @@
       "won": 1,
       "drawn": 3,
       "lost": 4,
-      "goalsFor": 6,
-      "goalsAgainst": 10,
-      "goalDifference": -4,
-      "points": 6
-    },
-    {
-      "position": 17,
-      "name": "Tottenham",
-      "fullName": "Tottenham Hotspur FC",
-      "badge": "https://crests.football-data.org/73.png",
-      "played": 7,
-      "won": 1,
-      "drawn": 3,
-      "lost": 3,
       "goalsFor": 6,
       "goalsAgainst": 10,
       "goalDifference": -4,
