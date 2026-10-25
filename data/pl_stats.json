@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T11:38:53.495462+00:00",
+  "updated": "2026-10-25T16:28:40.268228+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -15,24 +15,13 @@
       "penalties": 0
     },
     {
-      "name": "João Pedro",
-      "firstName": "",
-      "lastName": "João Pedro",
-      "nationality": "Brazil",
-      "team": "Chelsea",
-      "teamBadge": "https://crests.football-data.org/61.png",
-      "goals": 5,
-      "assists": 3,
-      "penalties": 0
-    },
-    {
       "name": "Alexander Isak",
       "firstName": "Alexander",
       "lastName": "Isak",
       "nationality": "Sweden",
       "team": "Liverpool",
       "teamBadge": "https://crests.football-data.org/64.png",
-      "goals": 5,
+      "goals": 6,
       "assists": 0,
       "penalties": 0
     },
@@ -43,8 +32,19 @@
       "nationality": "England",
       "team": "Bournemouth",
       "teamBadge": "https://crests.football-data.org/bournemouth.png",
-      "goals": 4,
+      "goals": 5,
       "assists": 0,
+      "penalties": 0
+    },
+    {
+      "name": "João Pedro",
+      "firstName": "",
+      "lastName": "João Pedro",
+      "nationality": "Brazil",
+      "team": "Chelsea",
+      "teamBadge": "https://crests.football-data.org/61.png",
+      "goals": 5,
+      "assists": 3,
       "penalties": 0
     },
     {
@@ -119,7 +119,7 @@
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
       "goalsFor": 23,
-      "played": 7
+      "played": 8
     },
     {
       "name": "Manchester City",
@@ -134,16 +134,16 @@
       "played": 8
     },
     {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalsFor": 14,
+      "played": 8
+    },
+    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsFor": 13,
       "played": 8
-    },
-    {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 13,
-      "played": 7
     }
   ],
   "bestDefences": [
@@ -154,36 +154,36 @@
       "played": 8
     },
     {
-      "name": "Brighton",
-      "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 5,
-      "played": 7
-    },
-    {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalsAgainst": 6,
       "played": 7
     },
     {
-      "name": "Hull City",
-      "badge": "https://crests.football-data.org/322.png",
+      "name": "Brighton",
+      "badge": "https://crests.football-data.org/397.png",
       "goalsAgainst": 7,
-      "played": 7
+      "played": 8
     },
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
       "goalsAgainst": 8,
-      "played": 7
+      "played": 8
+    },
+    {
+      "name": "Hull City",
+      "badge": "https://crests.football-data.org/322.png",
+      "goalsAgainst": 8,
+      "played": 8
     }
   ],
   "goalDifferenceLeaders": [
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 18,
-      "played": 7
+      "goalDifference": 16,
+      "played": 8
     },
     {
       "name": "Manchester City",
@@ -201,27 +201,27 @@
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
       "goalDifference": 5,
-      "played": 7
+      "played": 8
     },
     {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
       "goalDifference": 3,
-      "played": 7
+      "played": 8
     }
   ],
   "manUnitedSummary": {
-    "position": 15,
+    "position": 16,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 7,
+    "played": 8,
     "won": 1,
     "drawn": 4,
-    "lost": 2,
+    "lost": 3,
     "goalsFor": 10,
-    "goalsAgainst": 10,
-    "goalDifference": 0,
+    "goalsAgainst": 13,
+    "goalDifference": -3,
     "points": 7
   }
 }
