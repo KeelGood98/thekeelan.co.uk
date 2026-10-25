@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T16:28:38.043442+00:00",
+  "updated": "2026-10-25T20:55:07.001954+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -88,6 +88,20 @@
     },
     {
       "position": 7,
+      "name": "Leeds United",
+      "fullName": "Leeds United FC",
+      "badge": "https://crests.football-data.org/341.png",
+      "played": 8,
+      "won": 2,
+      "drawn": 5,
+      "lost": 1,
+      "goalsFor": 9,
+      "goalsAgainst": 6,
+      "goalDifference": 3,
+      "points": 11
+    },
+    {
+      "position": 8,
       "name": "Newcastle",
       "fullName": "Newcastle United FC",
       "badge": "https://crests.football-data.org/67.png",
@@ -101,7 +115,7 @@
       "points": 11
     },
     {
-      "position": 8,
+      "position": 9,
       "name": "Aston Villa",
       "fullName": "Aston Villa FC",
       "badge": "https://crests.football-data.org/58.png",
@@ -113,20 +127,6 @@
       "goalsAgainst": 12,
       "goalDifference": -3,
       "points": 11
-    },
-    {
-      "position": 9,
-      "name": "Leeds United",
-      "fullName": "Leeds United FC",
-      "badge": "https://crests.football-data.org/341.png",
-      "played": 7,
-      "won": 2,
-      "drawn": 4,
-      "lost": 1,
-      "goalsFor": 9,
-      "goalsAgainst": 6,
-      "goalDifference": 3,
-      "points": 10
     },
     {
       "position": 10,
@@ -273,14 +273,14 @@
       "name": "Sunderland",
       "fullName": "Sunderland AFC",
       "badge": "https://crests.football-data.org/71.png",
-      "played": 7,
+      "played": 8,
       "won": 1,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 5,
       "goalsFor": 6,
       "goalsAgainst": 14,
       "goalDifference": -8,
-      "points": 4
+      "points": 5
     }
   ]
 }
