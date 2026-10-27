@@ -1,8 +1,32 @@
 {
-  "updated": "2026-10-27T14:53:52.572386+00:00",
+  "updated": "2026-10-27T23:59:26.007418+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1283515,
+      "mediaType": "movie",
+      "title": "Verity",
+      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zrGI2Lm89fgR5ntysKLmEPgNrdV.jpg",
+      "releaseDate": "2026-09-30",
+      "rating": "6.4",
+      "votes": 263,
+      "url": "https://www.themoviedb.org/movie/1283515"
+    },
+    {
+      "id": 1384216,
+      "mediaType": "movie",
+      "title": "The Dog Stars",
+      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+      "poster": "https://image.tmdb.org/t/p/w500/A7i16oDi03qrKep5pBfuTWNUTb.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
+      "releaseDate": "2026-08-26",
+      "rating": "6.6",
+      "votes": 352,
+      "url": "https://www.themoviedb.org/movie/1384216"
+    },
     {
       "id": 1400940,
       "mediaType": "movie",
@@ -12,56 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.5",
-      "votes": 217,
+      "votes": 227,
       "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1283515,
-      "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/zPHfsaiMZT1HNz1ZS55iyLKZkFG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9qxyrJfjk577ym5WD6HCDmunoyO.jpg",
-      "releaseDate": "2026-09-30",
-      "rating": "6.4",
-      "votes": 254,
-      "url": "https://www.themoviedb.org/movie/1283515"
-    },
-    {
-      "id": 1384216,
-      "mediaType": "movie",
-      "title": "The Dog Stars",
-      "overview": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he’s flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-      "poster": "https://image.tmdb.org/t/p/w500/5O616X9vmRzQdB68PHzBewPittd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/joVtII9prX3MC4a2LfoKsiMWET3.jpg",
-      "releaseDate": "2026-08-26",
-      "rating": "6.6",
-      "votes": 337,
-      "url": "https://www.themoviedb.org/movie/1384216"
-    },
-    {
-      "id": 791523,
-      "mediaType": "movie",
-      "title": "Wildwood",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "8.6",
-      "votes": 71,
-      "url": "https://www.themoviedb.org/movie/791523"
-    },
-    {
-      "id": 1058424,
-      "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "6.8",
-      "votes": 353,
-      "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
       "id": 1465063,
@@ -72,8 +48,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
       "releaseDate": "2026-09-10",
       "rating": "7.6",
-      "votes": 95,
+      "votes": 101,
       "url": "https://www.themoviedb.org/movie/1465063"
+    },
+    {
+      "id": 791523,
+      "mediaType": "movie",
+      "title": "Wildwood",
+      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
+      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
+      "releaseDate": "2026-10-19",
+      "rating": "8.6",
+      "votes": 84,
+      "url": "https://www.themoviedb.org/movie/791523"
+    },
+    {
+      "id": 1170608,
+      "mediaType": "movie",
+      "title": "Dune: Part Three",
+      "overview": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
+      "poster": "https://image.tmdb.org/t/p/w500/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
+      "releaseDate": "2026-12-15",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1170608"
     },
     {
       "id": 969681,
@@ -84,20 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 6221,
+      "votes": 6240,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1376400,
-      "mediaType": "movie",
-      "title": "Crawlers",
-      "overview": "Tenants at Paradiso Palms apartments fight a deadly spider invasion while the cunning building manager might be their only hope for survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/lNXeEpg4yLSRwXwOeR5lbPgwbqL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ayJsUQ4bEG6yY0UB6lMboiaDfYE.jpg",
-      "releaseDate": "2026-09-24",
-      "rating": "6.1",
-      "votes": 32,
-      "url": "https://www.themoviedb.org/movie/1376400"
     },
     {
       "id": 1003596,
@@ -105,26 +93,50 @@
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
       "poster": "https://image.tmdb.org/t/p/w500/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1339713,
+      "id": 1058424,
       "mediaType": "movie",
-      "title": "Obsession",
-      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
-      "releaseDate": "2026-05-13",
-      "rating": "8.2",
-      "votes": 6377,
-      "url": "https://www.themoviedb.org/movie/1339713"
+      "title": "Hope",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "poster": "https://image.tmdb.org/t/p/w500/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "6.8",
+      "votes": 362,
+      "url": "https://www.themoviedb.org/movie/1058424"
+    },
+    {
+      "id": 1503762,
+      "mediaType": "movie",
+      "title": "Sense and Sensibility",
+      "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
+      "poster": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tIcONOFK9D3F89ETK8DBS1hIwVF.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.3",
+      "votes": 78,
+      "url": "https://www.themoviedb.org/movie/1503762"
     }
   ],
   "trendingTv": [
+    {
+      "id": 96677,
+      "mediaType": "tv",
+      "title": "Lupin",
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
+      "releaseDate": "2021-01-08",
+      "rating": "7.7",
+      "votes": 2735,
+      "url": "https://www.themoviedb.org/tv/96677"
+    },
     {
       "id": 220542,
       "mediaType": "tv",
@@ -138,18 +150,6 @@
       "url": "https://www.themoviedb.org/tv/220542"
     },
     {
-      "id": 96677,
-      "mediaType": "tv",
-      "title": "Lupin",
-      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aY7zv2pfk9H0QxaaL3PBjvalbKQ.jpg",
-      "releaseDate": "2021-01-08",
-      "rating": "7.7",
-      "votes": 2734,
-      "url": "https://www.themoviedb.org/tv/96677"
-    },
-    {
       "id": 105248,
       "mediaType": "tv",
       "title": "Cyberpunk: Edgerunners",
@@ -158,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4NmCfWHzytiKM3riCMcbVYBJhlB.jpg",
       "releaseDate": "2022-09-13",
       "rating": "8.5",
-      "votes": 2096,
+      "votes": 2098,
       "url": "https://www.themoviedb.org/tv/105248"
+    },
+    {
+      "id": 213375,
+      "mediaType": "tv",
+      "title": "VisionQuest",
+      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+      "poster": "https://image.tmdb.org/t/p/w500/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "8.6",
+      "votes": 188,
+      "url": "https://www.themoviedb.org/tv/213375"
     },
     {
       "id": 120911,
@@ -170,68 +182,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2qS2LGqsAyT1NEDeIj24Hp2IR10.jpg",
       "releaseDate": "2022-06-30",
       "rating": "8.0",
-      "votes": 1284,
+      "votes": 1285,
       "url": "https://www.themoviedb.org/tv/120911"
-    },
-    {
-      "id": 213375,
-      "mediaType": "tv",
-      "title": "VisionQuest",
-      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-      "poster": "https://image.tmdb.org/t/p/w500/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "8.7",
-      "votes": 185,
-      "url": "https://www.themoviedb.org/tv/213375"
-    },
-    {
-      "id": 30984,
-      "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2318,
-      "url": "https://www.themoviedb.org/tv/30984"
-    },
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.6",
-      "votes": 1107,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
-      "id": 288673,
-      "mediaType": "tv",
-      "title": "Carrie",
-      "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
-      "poster": "https://image.tmdb.org/t/p/w500/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "8.3",
-      "votes": 479,
-      "url": "https://www.themoviedb.org/tv/288673"
-    },
-    {
-      "id": 95480,
-      "mediaType": "tv",
-      "title": "Slow Horses",
-      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
-      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
-      "releaseDate": "2022-04-01",
-      "rating": "8.1",
-      "votes": 1082,
-      "url": "https://www.themoviedb.org/tv/95480"
     },
     {
       "id": 213562,
@@ -242,8 +194,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wxiBsKFEOOFK8eQStWOykNORlXY.jpg",
       "releaseDate": "2026-10-15",
       "rating": "8.7",
-      "votes": 266,
+      "votes": 267,
       "url": "https://www.themoviedb.org/tv/213562"
+    },
+    {
+      "id": 30984,
+      "mediaType": "tv",
+      "title": "Bleach",
+      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
+      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
+      "releaseDate": "2004-10-05",
+      "rating": "8.4",
+      "votes": 2320,
+      "url": "https://www.themoviedb.org/tv/30984"
+    },
+    {
+      "id": 288673,
+      "mediaType": "tv",
+      "title": "Carrie",
+      "overview": "After her father's sudden, untimely death thrusts her into the unforgiving ecosystem of public high school, Carrie is forced to navigate a viral bullying scandal that tears through her community, the relentless pressure and casual cruelty of the social‑media age, and the awakening of mysterious telekinetic powers that rise alongside her adolescence.",
+      "poster": "https://image.tmdb.org/t/p/w500/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9yCJtipMeDe8uAdSJKvw8BnYfRz.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "8.3",
+      "votes": 485,
+      "url": "https://www.themoviedb.org/tv/288673"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.6",
+      "votes": 1110,
+      "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "id": 95480,
+      "mediaType": "tv",
+      "title": "Slow Horses",
+      "overview": "Follow a dysfunctional team of MI5 agents—and their obnoxious boss, the notorious Jackson Lamb—as they navigate the espionage world's smoke and mirrors to defend England from sinister forces.",
+      "poster": "https://image.tmdb.org/t/p/w500/AdYr4DjOgXvDUMwu6vEhZy1Rnxk.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gPQppUnLx9vqPDLz3WwZ2HJsNbt.jpg",
+      "releaseDate": "2022-04-01",
+      "rating": "8.1",
+      "votes": 1084,
+      "url": "https://www.themoviedb.org/tv/95480"
     }
   ],
   "upcomingMovies": [
@@ -260,18 +260,6 @@
       "url": "https://www.themoviedb.org/movie/1195803"
     },
     {
-      "id": 1375441,
-      "mediaType": "movie",
-      "title": "Primetime",
-      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
-      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
-      "releaseDate": "2026-10-28",
-      "rating": "6.8",
-      "votes": 226,
-      "url": "https://www.themoviedb.org/movie/1375441"
-    },
-    {
       "id": 1422041,
       "mediaType": "movie",
       "title": "La bola negra",
@@ -282,6 +270,18 @@
       "rating": "8.1",
       "votes": 123,
       "url": "https://www.themoviedb.org/movie/1422041"
+    },
+    {
+      "id": 1375441,
+      "mediaType": "movie",
+      "title": "Primetime",
+      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+      "poster": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
+      "releaseDate": "2026-10-28",
+      "rating": "6.8",
+      "votes": 228,
+      "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
       "id": 1376400,
@@ -296,18 +296,6 @@
       "url": "https://www.themoviedb.org/movie/1376400"
     },
     {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1381071"
-    },
-    {
       "id": 1401459,
       "mediaType": "movie",
       "title": "Fjord",
@@ -318,6 +306,18 @@
       "rating": "7.2",
       "votes": 94,
       "url": "https://www.themoviedb.org/movie/1401459"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 656908,
@@ -356,16 +356,16 @@
       "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
-      "id": 1227877,
+      "id": 31767,
       "mediaType": "movie",
-      "title": "I Love Boosters",
-      "overview": "A group of shoplifters take aim at a cutthroat fashion maven by stealing from her stores and reselling them at a lower price — what they call 'fashion-forward philanthropy'.",
-      "poster": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fBZ9cWUI1yB9Fcs2eoYZ4mmMUmI.jpg",
-      "releaseDate": "2026-10-30",
-      "rating": "6.3",
-      "votes": 127,
-      "url": "https://www.themoviedb.org/movie/1227877"
+      "title": "The Devils",
+      "overview": "In 1634 France, charismatic Father Urbain Grandier becomes the target of sexually depraved Sister Jeanne's accusations of witchcraft, which corrupt officials of church and state are all too happy to exploit.​​​​​​​​​​​​​​​​",
+      "poster": "https://image.tmdb.org/t/p/w500/y1k7eiOFc6fzm8XeTa1kNGx6JIs.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8ApwSMdd9QehKjvW3fOmKVrnZXv.jpg",
+      "releaseDate": "1971-07-25",
+      "rating": "7.5",
+      "votes": 481,
+      "url": "https://www.themoviedb.org/movie/31767"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qqHFLg90IUSoTmSMpKOOW5RyqN3.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.8",
-      "votes": 351,
+      "votes": 356,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
-      "rating": "7.4",
-      "votes": 214,
+      "rating": "7.5",
+      "votes": 220,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vqNSvCFknXObgqn7nOFrJVEeGht.jpg",
       "releaseDate": "2026-09-18",
       "rating": "7.3",
-      "votes": 1079,
+      "votes": 1081,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.4",
-      "votes": 184,
+      "votes": 185,
       "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
@@ -426,20 +426,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
       "releaseDate": "2026-10-23",
       "rating": "8.6",
-      "votes": 71,
+      "votes": 73,
       "url": "https://www.themoviedb.org/movie/791523"
-    },
-    {
-      "id": 1248832,
-      "mediaType": "movie",
-      "title": "Digger",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
-      "releaseDate": "2026-10-02",
-      "rating": "7.5",
-      "votes": 473,
-      "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
       "id": 1400837,
@@ -454,18 +442,6 @@
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
-      "id": 1281331,
-      "mediaType": "movie",
-      "title": "The Social Reckoning",
-      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/7jK6NuxVg1XuEV7UdNa6KO03IgZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "7.0",
-      "votes": 130,
-      "url": "https://www.themoviedb.org/movie/1281331"
-    },
-    {
       "id": 1255833,
       "mediaType": "movie",
       "title": "Whalefall",
@@ -474,8 +450,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/shW2jHkQLZVv4Fko2rJDqTGU0gx.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.6",
-      "votes": 119,
+      "votes": 121,
       "url": "https://www.themoviedb.org/movie/1255833"
+    },
+    {
+      "id": 1248832,
+      "mediaType": "movie",
+      "title": "Digger",
+      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vC5IxhgO6cVmw9O4QgkraRzfHvh.jpg",
+      "releaseDate": "2026-10-02",
+      "rating": "7.5",
+      "votes": 473,
+      "url": "https://www.themoviedb.org/movie/1248832"
     },
     {
       "id": 1263337,
@@ -486,8 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bicMU6xVD5deVyKP2azpyx7xkmH.jpg",
       "releaseDate": "2026-09-23",
       "rating": "7.3",
-      "votes": 351,
+      "votes": 353,
       "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 299534,
+      "mediaType": "movie",
+      "title": "Avengers: Endgame",
+      "overview": "After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
+      "poster": "https://image.tmdb.org/t/p/w500/bR8ISy1O9XQxqiy0fQFw2BX72RQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg",
+      "releaseDate": "2019-04-25",
+      "rating": "8.2",
+      "votes": 29137,
+      "url": "https://www.themoviedb.org/movie/299534"
     }
   ],
   "links": [
