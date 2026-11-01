@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T13:31:22.694848+00:00",
+  "updated": "2026-11-01T22:06:31.659371+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -103,15 +103,15 @@
       "penalties": 0
     },
     {
-      "name": "Bukayo Saka",
-      "firstName": "Bukayo",
-      "lastName": "Saka",
-      "nationality": "England",
+      "name": "Kai Havertz",
+      "firstName": "Kai",
+      "lastName": "Havertz",
+      "nationality": "Germany",
       "team": "Arsenal",
       "teamBadge": "https://crests.football-data.org/57.png",
       "goals": 3,
       "assists": 0,
-      "penalties": 1
+      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -140,8 +140,8 @@
       "played": 9
     },
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
       "goalsFor": 14,
       "played": 9
     }
@@ -151,7 +151,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 5,
-      "played": 8
+      "played": 9
     },
     {
       "name": "Brighton",
@@ -160,15 +160,15 @@
       "played": 9
     },
     {
-      "name": "Liverpool",
-      "badge": "https://crests.football-data.org/64.png",
-      "goalsAgainst": 8,
-      "played": 8
-    },
-    {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalsAgainst": 8,
+      "played": 9
+    },
+    {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalsAgainst": 9,
       "played": 9
     },
     {
@@ -194,8 +194,8 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 8,
-      "played": 8
+      "goalDifference": 9,
+      "played": 9
     },
     {
       "name": "Brentford",
