@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:05:42.433661+00:00",
+  "updated": "2026-11-03T01:01:36.051473+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -70,6 +70,17 @@
       "penalties": 0
     },
     {
+      "name": "Thierno Barry",
+      "firstName": "Thierno",
+      "lastName": "Barry",
+      "nationality": "France",
+      "team": "Everton",
+      "teamBadge": "https://crests.football-data.org/62.png",
+      "goals": 4,
+      "assists": 0,
+      "penalties": 0
+    },
+    {
       "name": "Rayan Cherki",
       "firstName": "Rayan",
       "lastName": "Cherki",
@@ -100,17 +111,6 @@
       "teamBadge": "https://crests.football-data.org/bournemouth.png",
       "goals": 4,
       "assists": 4,
-      "penalties": 0
-    },
-    {
-      "name": "Kai Havertz",
-      "firstName": "Kai",
-      "lastName": "Havertz",
-      "nationality": "Germany",
-      "team": "Arsenal",
-      "teamBadge": "https://crests.football-data.org/57.png",
-      "goals": 3,
-      "assists": 0,
       "penalties": 0
     }
   ],
