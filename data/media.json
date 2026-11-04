@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T16:30:24.691708+00:00",
+  "updated": "2026-11-04T00:53:12.891004+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -11,8 +11,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
-      "rating": "7.3",
-      "votes": 1219,
+      "rating": "7.4",
+      "votes": 1364,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/4E5RVsSUG1A4Adwbqupu5w6kofZ.jpg",
       "releaseDate": "2026-09-23",
       "rating": "6.8",
-      "votes": 271,
+      "votes": 280,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -35,8 +35,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
       "releaseDate": "2026-09-30",
-      "rating": "6.9",
-      "votes": 573,
+      "rating": "7.0",
+      "votes": 585,
       "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
@@ -47,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/wXln4DUrwcyjcFPwgQxFPYTlG1Z.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/o3XwuDUj0n8qnK91p6q8LKfr6rj.jpg",
       "releaseDate": "2026-10-09",
-      "rating": "6.2",
-      "votes": 87,
+      "rating": "6.1",
+      "votes": 96,
       "url": "https://www.themoviedb.org/movie/1507696"
     },
     {
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3k7GzxOdLZkN3eZsuhLi2eRzkXO.jpg",
       "releaseDate": "2026-08-26",
       "rating": "7.2",
-      "votes": 857,
+      "votes": 863,
       "url": "https://www.themoviedb.org/movie/1384216"
     },
     {
@@ -72,20 +72,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 356,
+      "votes": 367,
       "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "9.5",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 791523,
@@ -96,15 +84,27 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
       "releaseDate": "2026-10-19",
       "rating": "8.5",
-      "votes": 166,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/791523"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.9",
+      "votes": 9,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1003596,
       "mediaType": "movie",
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/9jlZ59UALLLOE279HMT19rP9XQs.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
@@ -112,41 +112,29 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1058424,
+      "id": 1339713,
       "mediaType": "movie",
-      "title": "Hope",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "poster": "https://image.tmdb.org/t/p/w500/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/j96rurZqmBjyY37Fncl3IB0qJNe.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "6.8",
-      "votes": 455,
-      "url": "https://www.themoviedb.org/movie/1058424"
+      "title": "Obsession",
+      "overview": "After breaking the mysterious \"One Wish Willow\" to win his crush's heart, a hopeless romantic finds himself getting exactly what he asked for but soon discovers that some desires come at a dark, sinister price.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5lTZyuBTNOfawsfPT8Q0cIg6qAF.jpg",
+      "releaseDate": "2026-05-13",
+      "rating": "8.2",
+      "votes": 6492,
+      "url": "https://www.themoviedb.org/movie/1339713"
     }
   ],
   "trendingTv": [
-    {
-      "id": 279246,
-      "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/3x6c9ybt0762idyzIifUZeTD5MZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1ptukf8gx19U1HcBv3aRzzlXuyJ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/tv/279246"
-    },
     {
       "id": 289517,
       "mediaType": "tv",
       "title": "Dead-End Job",
       "overview": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
-      "poster": "https://image.tmdb.org/t/p/w500/s9b0UgT2360iKTTSM4AEKirgsYC.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/agNYOaXhshj35EMjzVZLGRZUlx6.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/cyH2fZUjIJjLmgpF3tgA5CSGz4L.jpg",
       "releaseDate": "2026-10-30",
-      "rating": "7.4",
-      "votes": 33,
+      "rating": "7.5",
+      "votes": 36,
       "url": "https://www.themoviedb.org/tv/289517"
     },
     {
@@ -162,18 +150,6 @@
       "url": "https://www.themoviedb.org/tv/96677"
     },
     {
-      "id": 314271,
-      "mediaType": "tv",
-      "title": "Bass X Machina",
-      "overview": "In a steampunk West overrun by outlaws, machines and supernatural forces, a father is forced to become judge, jury and executioner to protect his family.",
-      "poster": "https://image.tmdb.org/t/p/w500/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gpp6NcgfSrxKDivWskRxLp9UadU.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "7.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/314271"
-    },
-    {
       "id": 213375,
       "mediaType": "tv",
       "title": "VisionQuest",
@@ -182,8 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/58v1KFe3rxvHrYM1hLH5ScpwqNR.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.6",
-      "votes": 243,
+      "votes": 249,
       "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 279246,
+      "mediaType": "tv",
+      "title": "The Remarried Empress",
+      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/3x6c9ybt0762idyzIifUZeTD5MZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "7.0",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/279246"
     },
     {
       "id": 292741,
@@ -210,6 +198,18 @@
       "url": "https://www.themoviedb.org/tv/259909"
     },
     {
+      "id": 314271,
+      "mediaType": "tv",
+      "title": "Bass X Machina",
+      "overview": "In a steampunk West overrun by outlaws, machines and supernatural forces, a father is forced to become judge, jury and executioner to protect his family.",
+      "poster": "https://image.tmdb.org/t/p/w500/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gpp6NcgfSrxKDivWskRxLp9UadU.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.3",
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/314271"
+    },
+    {
       "id": 247718,
       "mediaType": "tv",
       "title": "MobLand",
@@ -218,20 +218,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.6",
-      "votes": 1158,
+      "votes": 1160,
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
-      "id": 30984,
+      "id": 120911,
       "mediaType": "tv",
-      "title": "Bleach",
-      "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-      "poster": "https://image.tmdb.org/t/p/w500/2EewmxXe72ogD0EaWM8gqa0ccIw.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o0NsbcIvsllg6CJX0FBFY8wWbsn.jpg",
-      "releaseDate": "2004-10-05",
-      "rating": "8.4",
-      "votes": 2331,
-      "url": "https://www.themoviedb.org/tv/30984"
+      "title": "The Terminal List",
+      "overview": "Navy SEAL Commander James Reece turns to vengeance as he investigates the mysterious forces behind the murder of his entire platoon. Free from the military's command structure, Reece applies the lessons he's learned from nearly two decades of warfare to hunt down the people responsible.",
+      "poster": "https://image.tmdb.org/t/p/w500/xyFAzP7RKK8cARCSalIZ9A9T0jV.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2qS2LGqsAyT1NEDeIj24Hp2IR10.jpg",
+      "releaseDate": "2022-06-30",
+      "rating": "8.0",
+      "votes": 1322,
+      "url": "https://www.themoviedb.org/tv/120911"
     },
     {
       "id": 81723,
@@ -256,7 +256,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.1",
-      "votes": 168,
+      "votes": 170,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -282,6 +282,18 @@
       "rating": "7.0",
       "votes": 5,
       "url": "https://www.themoviedb.org/movie/1084409"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "9.5",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1300968,
@@ -316,7 +328,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/jiFLiatBtBALlAzV5R72gzspBad.jpg",
       "releaseDate": "2026-11-20",
       "rating": "7.3",
-      "votes": 9,
+      "votes": 11,
       "url": "https://www.themoviedb.org/movie/1437396"
     },
     {
@@ -327,21 +339,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/cK6xaYrb498y2rmMRSZmRKaCXKL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bkhPaFOiqc9GeLMdf1D44KbozRH.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "8.0",
-      "votes": 2,
+      "rating": "5.7",
+      "votes": 3,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
-      "id": 1381071,
+      "id": 891621,
       "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "9.5",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/movie/1381071"
+      "title": "Wild Horse Nine",
+      "overview": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone’s trip to this remote paradise sideways.",
+      "poster": "https://image.tmdb.org/t/p/w500/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b17UWf3LqHgKolQkXckne32qv0.jpg",
+      "releaseDate": "2026-11-04",
+      "rating": "9.0",
+      "votes": 17,
+      "url": "https://www.themoviedb.org/movie/891621"
     },
     {
       "id": 1567605,
@@ -354,18 +366,6 @@
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1567605"
-    },
-    {
-      "id": 891621,
-      "mediaType": "movie",
-      "title": "Wild Horse Nine",
-      "overview": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone’s trip to this remote paradise sideways.",
-      "poster": "https://image.tmdb.org/t/p/w500/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/b17UWf3LqHgKolQkXckne32qv0.jpg",
-      "releaseDate": "2026-11-04",
-      "rating": "8.9",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/891621"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
       "releaseDate": "2026-10-23",
       "rating": "8.5",
-      "votes": 166,
+      "votes": 169,
       "url": "https://www.themoviedb.org/movie/791523"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/j96rurZqmBjyY37Fncl3IB0qJNe.jpg",
       "releaseDate": "2026-09-25",
       "rating": "6.8",
-      "votes": 455,
+      "votes": 461,
       "url": "https://www.themoviedb.org/movie/1058424"
     },
     {
@@ -401,8 +401,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
       "releaseDate": "2026-10-02",
-      "rating": "6.9",
-      "votes": 574,
+      "rating": "7.0",
+      "votes": 585,
       "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 356,
+      "votes": 367,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
@@ -426,7 +426,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
       "releaseDate": "2026-10-04",
       "rating": "8.0",
-      "votes": 201,
+      "votes": 202,
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
@@ -437,8 +437,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hJcGJLi34zE4RhzsiDR6f7pw50K.jpg",
       "releaseDate": "2026-10-23",
-      "rating": "5.7",
-      "votes": 129,
+      "rating": "5.8",
+      "votes": 135,
       "url": "https://www.themoviedb.org/movie/1727734"
     },
     {
@@ -447,10 +447,10 @@
       "title": "Sense and Sensibility",
       "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
       "poster": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tIcONOFK9D3F89ETK8DBS1hIwVF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rv6dwE4SXAT5f00Ks8YL2kFvnLA.jpg",
       "releaseDate": "2026-09-25",
       "rating": "7.2",
-      "votes": 129,
+      "votes": 131,
       "url": "https://www.themoviedb.org/movie/1503762"
     },
     {
