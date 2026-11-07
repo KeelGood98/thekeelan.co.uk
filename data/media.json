@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T16:16:02.282966+00:00",
+  "updated": "2026-11-07T00:18:57.634902+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.5",
-      "votes": 1627,
+      "votes": 1646,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -24,20 +24,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kpqsljPQtWqPKJBTAEtoXtQZ9Ko.jpg",
       "releaseDate": "2026-09-19",
       "rating": "7.3",
-      "votes": 390,
+      "votes": 415,
       "url": "https://www.themoviedb.org/movie/1263337"
-    },
-    {
-      "id": 1483525,
-      "mediaType": "movie",
-      "title": "Possible Love",
-      "overview": "A laid-off worker and his wife cross paths with a documentary filmmaker and her spouse and confront their hidden desires.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9RKhjTv0DQJ1UtmDS7GkDYoKQHH.jpg",
-      "releaseDate": "2026-09-23",
-      "rating": "7.7",
-      "votes": 13,
-      "url": "https://www.themoviedb.org/movie/1483525"
     },
     {
       "id": 1375441,
@@ -48,7 +36,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-09-23",
       "rating": "6.8",
-      "votes": 324,
+      "votes": 335,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -59,9 +47,45 @@
       "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "8.0",
-      "votes": 42,
+      "rating": "8.1",
+      "votes": 49,
       "url": "https://www.themoviedb.org/movie/1381071"
+    },
+    {
+      "id": 1294189,
+      "mediaType": "movie",
+      "title": "The Mongoose",
+      "overview": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
+      "poster": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/byuwrUG1nkGv8a2lGkBmD7pULo6.jpg",
+      "releaseDate": "2026-10-29",
+      "rating": "5.8",
+      "votes": 60,
+      "url": "https://www.themoviedb.org/movie/1294189"
+    },
+    {
+      "id": 1483525,
+      "mediaType": "movie",
+      "title": "Possible Love",
+      "overview": "A laid-off worker and his wife cross paths with a documentary filmmaker and her spouse and confront their hidden desires.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/k0BY5D4Ya6NHhsvNYMmaabpvUtS.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.3",
+      "votes": 17,
+      "url": "https://www.themoviedb.org/movie/1483525"
+    },
+    {
+      "id": 1283515,
+      "mediaType": "movie",
+      "title": "Verity",
+      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
+      "releaseDate": "2026-09-30",
+      "rating": "7.0",
+      "votes": 612,
+      "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
       "id": 1792170,
@@ -71,33 +95,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/5MBdRdiGv3AKzZDGbni88xc6JFi.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "7.7",
+      "rating": "7.1",
       "votes": 12,
       "url": "https://www.themoviedb.org/movie/1792170"
-    },
-    {
-      "id": 1294189,
-      "mediaType": "movie",
-      "title": "The Mongoose",
-      "overview": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
-      "poster": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
-      "releaseDate": "2026-10-29",
-      "rating": "6.0",
-      "votes": 53,
-      "url": "https://www.themoviedb.org/movie/1294189"
-    },
-    {
-      "id": 1507696,
-      "mediaType": "movie",
-      "title": "Apocalypse Z: New World",
-      "overview": "The Canary Islands have become Europe’s last refuge following the outbreak of the TSJ virus. When a special mission sets out for the mainland in search of vital supplies, Roberto joins the team with questionable intentions. The dangerous operation turns into a desperate race for survival, and Roberto and his companions find themselves caught between hordes of infected and divided loyalties.",
-      "poster": "https://image.tmdb.org/t/p/w500/wXln4DUrwcyjcFPwgQxFPYTlG1Z.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/o3XwuDUj0n8qnK91p6q8LKfr6rj.jpg",
-      "releaseDate": "2026-10-09",
-      "rating": "6.1",
-      "votes": 126,
-      "url": "https://www.themoviedb.org/movie/1507696"
     },
     {
       "id": 1400940,
@@ -108,47 +108,23 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 398,
+      "votes": 399,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
-      "id": 656908,
+      "id": 1003596,
       "mediaType": "movie",
-      "title": "Ramayana: Rise of a Legend",
-      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-      "poster": "https://image.tmdb.org/t/p/w500/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
-      "releaseDate": "2026-11-05",
-      "rating": "6.6",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/656908"
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/9jlZ59UALLLOE279HMT19rP9XQs.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
     }
   ],
   "trendingTv": [
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.6",
-      "votes": 1169,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
-      "id": 303044,
-      "mediaType": "tv",
-      "title": "Campus Drivers",
-      "overview": "Lois has everything going for her: she's been accepted into the prestigious Belrose University alongside her lifelong love, Max. Lane, on the other hand, lives by his own rules. Creator of Campus Drivers, the hottest app on campus, he is as famous for his devastating smile as for his inability to commit. Their paths were never supposed to cross. Until the night when Lois, heartbroken, shows up on his doorstep. An unexpected cohabitation. Two worlds colliding. And an attraction impossible to ignore. But some encounters change everything… even awakening buried wounds. And when love arrives uninvited, nothing is certain anymore.",
-      "poster": "https://image.tmdb.org/t/p/w500/yxlAJqniqx5Qn2CVCDB97FDhQx7.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oaWJm4brEMSWBmQIB73DFxsU683.jpg",
-      "releaseDate": "2026-11-06",
-      "rating": "8.5",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/303044"
-    },
     {
       "id": 225385,
       "mediaType": "tv",
@@ -158,20 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uyL0MH8gtDlChQKpfpkVoUP41VY.jpg",
       "releaseDate": "2024-12-05",
       "rating": "7.0",
-      "votes": 468,
+      "votes": 471,
       "url": "https://www.themoviedb.org/tv/225385"
     },
     {
-      "id": 213375,
+      "id": 247718,
       "mediaType": "tv",
-      "title": "VisionQuest",
-      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-      "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
-      "releaseDate": "2026-10-13",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
       "rating": "8.6",
-      "votes": 268,
-      "url": "https://www.themoviedb.org/tv/213375"
+      "votes": 1170,
+      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 259909,
@@ -182,20 +158,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
       "releaseDate": "2025-07-13",
       "rating": "8.6",
-      "votes": 730,
+      "votes": 731,
       "url": "https://www.themoviedb.org/tv/259909"
     },
     {
-      "id": 289517,
+      "id": 279246,
       "mediaType": "tv",
-      "title": "Dead-End Job",
-      "overview": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
-      "poster": "https://image.tmdb.org/t/p/w500/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gWedDgBsZkuOho2qe3q2sTQmbpO.jpg",
-      "releaseDate": "2026-10-30",
-      "rating": "7.7",
-      "votes": 52,
-      "url": "https://www.themoviedb.org/tv/289517"
+      "title": "The Remarried Empress",
+      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1ptukf8gx19U1HcBv3aRzzlXuyJ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.6",
+      "votes": 14,
+      "url": "https://www.themoviedb.org/tv/279246"
     },
     {
       "id": 292741,
@@ -210,16 +186,40 @@
       "url": "https://www.themoviedb.org/tv/292741"
     },
     {
-      "id": 279246,
+      "id": 213375,
       "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1ptukf8gx19U1HcBv3aRzzlXuyJ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "8.3",
-      "votes": 11,
-      "url": "https://www.themoviedb.org/tv/279246"
+      "title": "VisionQuest",
+      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+      "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "8.6",
+      "votes": 268,
+      "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 96677,
+      "mediaType": "tv",
+      "title": "Lupin",
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
+      "releaseDate": "2021-01-08",
+      "rating": "7.7",
+      "votes": 2780,
+      "url": "https://www.themoviedb.org/tv/96677"
+    },
+    {
+      "id": 289517,
+      "mediaType": "tv",
+      "title": "Dead-End Job",
+      "overview": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
+      "poster": "https://image.tmdb.org/t/p/w500/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gWedDgBsZkuOho2qe3q2sTQmbpO.jpg",
+      "releaseDate": "2026-10-30",
+      "rating": "7.7",
+      "votes": 53,
+      "url": "https://www.themoviedb.org/tv/289517"
     },
     {
       "id": 258989,
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/258989"
     },
     {
-      "id": 96677,
+      "id": 153312,
       "mediaType": "tv",
-      "title": "Lupin",
-      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
-      "releaseDate": "2021-01-08",
-      "rating": "7.7",
-      "votes": 2779,
-      "url": "https://www.themoviedb.org/tv/96677"
+      "title": "Tulsa King",
+      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+      "poster": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
+      "releaseDate": "2022-11-13",
+      "rating": "8.3",
+      "votes": 2917,
+      "url": "https://www.themoviedb.org/tv/153312"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "7.0",
-      "votes": 249,
+      "rating": "6.9",
+      "votes": 252,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "6.6",
-      "votes": 8,
+      "rating": "7.2",
+      "votes": 10,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.9",
-      "votes": 90,
+      "votes": 91,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -291,8 +291,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jiFLiatBtBALlAzV5R72gzspBad.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.3",
-      "votes": 25,
+      "rating": "7.1",
+      "votes": 31,
       "url": "https://www.themoviedb.org/movie/1437396"
     },
     {
@@ -327,8 +327,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mfpjOQ6hsvMUIFyzWglwerbpgFS.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.5",
-      "votes": 6,
+      "rating": "7.4",
+      "votes": 7,
       "url": "https://www.themoviedb.org/movie/1084409"
     },
     {
@@ -347,7 +347,7 @@
       "id": 1567605,
       "mediaType": "movie",
       "title": "Ebenezer",
-      "overview": "An elderly miser named Sonny O’dell embarks on a supernatural journey across Jaywick after visits from the ghost of his former business partner Sani and the Spirits of Primetime Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
       "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
       "releaseDate": "2026-11-13",
@@ -360,7 +360,7 @@
       "mediaType": "movie",
       "title": "Hexed",
       "overview": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-      "poster": "https://image.tmdb.org/t/p/w500/3zxrelHqoPJwOP4oj4Wq1cNOUdG.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/nhbgwTVrx9YgAZWJXu0Etc0OJ76.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wZ9Me7OndzgBOEAa8nSBNPu3Sl4.jpg",
       "releaseDate": "2026-11-27",
       "rating": "0.0",
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
       "releaseDate": "2026-10-23",
       "rating": "8.5",
-      "votes": 198,
+      "votes": 202,
       "url": "https://www.themoviedb.org/movie/791523"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
       "releaseDate": "2026-10-02",
       "rating": "7.0",
-      "votes": 607,
+      "votes": 613,
       "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
@@ -402,20 +402,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.1",
-      "votes": 183,
+      "votes": 186,
       "url": "https://www.themoviedb.org/movie/1422041"
-    },
-    {
-      "id": 1400940,
-      "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "7.4",
-      "votes": 397,
-      "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
       "id": 1375441,
@@ -426,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.8",
-      "votes": 321,
+      "votes": 336,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -437,9 +425,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
-      "rating": "8.0",
-      "votes": 41,
+      "rating": "8.1",
+      "votes": 50,
       "url": "https://www.themoviedb.org/movie/1381071"
+    },
+    {
+      "id": 1400940,
+      "mediaType": "movie",
+      "title": "Clayface",
+      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
+      "poster": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
+      "releaseDate": "2026-10-19",
+      "rating": "7.4",
+      "votes": 399,
+      "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
       "id": 1465063,
@@ -459,10 +459,10 @@
       "title": "Ali G: Who Iz I?",
       "overview": "After twenty years spent \"chillin', tokin' and bonin'\", Ali G is shocked to discover that his long-term girlfriend, Julie, is 8 months pregnant. Faced with an extra mouth to feed, he gets off his batty and heads to America to reclaim his former glory… but soon encounters adversaries who will ultimately threaten his and his child's very existence.",
       "poster": "https://image.tmdb.org/t/p/w500/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hJcGJLi34zE4RhzsiDR6f7pw50K.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h7gas4rrcaSitLgF2ODry3Wz9KZ.jpg",
       "releaseDate": "2026-10-23",
-      "rating": "5.8",
-      "votes": 145,
+      "rating": "5.7",
+      "votes": 150,
       "url": "https://www.themoviedb.org/movie/1727734"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "5.8",
-      "votes": 193,
+      "votes": 194,
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.3",
-      "votes": 218,
+      "votes": 219,
       "url": "https://www.themoviedb.org/movie/1153576"
     }
   ],
