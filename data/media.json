@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T00:18:57.634902+00:00",
+  "updated": "2026-11-07T15:07:18.852382+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.5",
-      "votes": 1646,
+      "votes": 1668,
       "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
@@ -24,8 +24,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/kpqsljPQtWqPKJBTAEtoXtQZ9Ko.jpg",
       "releaseDate": "2026-09-19",
       "rating": "7.3",
-      "votes": 415,
+      "votes": 435,
       "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bulFtfy3oBQtCnAMSi7g6DSSds3.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 4367,
+      "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1792170,
+      "mediaType": "movie",
+      "title": "Model Citizen",
+      "overview": "With his memories gone and his past a blur, ex-cop Steven Bay seeks treatment for his amnesia while working on an isolated farm. Instead, he's met with rising hostility, strange surveillance, and instincts he can’t fully control. When the pressure becomes unbearable, Bay begins a desperate hunt for the truth behind his fractured reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/5MBdRdiGv3AKzZDGbni88xc6JFi.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "7.0",
+      "votes": 14,
+      "url": "https://www.themoviedb.org/movie/1792170"
     },
     {
       "id": 1375441,
@@ -36,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-09-23",
       "rating": "6.8",
-      "votes": 335,
+      "votes": 345,
       "url": "https://www.themoviedb.org/movie/1375441"
     },
     {
@@ -47,21 +71,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "8.1",
-      "votes": 49,
+      "rating": "8.2",
+      "votes": 61,
       "url": "https://www.themoviedb.org/movie/1381071"
-    },
-    {
-      "id": 1294189,
-      "mediaType": "movie",
-      "title": "The Mongoose",
-      "overview": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
-      "poster": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/byuwrUG1nkGv8a2lGkBmD7pULo6.jpg",
-      "releaseDate": "2026-10-29",
-      "rating": "5.8",
-      "votes": 60,
-      "url": "https://www.themoviedb.org/movie/1294189"
     },
     {
       "id": 1483525,
@@ -71,57 +83,45 @@
       "poster": "https://image.tmdb.org/t/p/w500/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/k0BY5D4Ya6NHhsvNYMmaabpvUtS.jpg",
       "releaseDate": "2026-09-23",
-      "rating": "7.3",
-      "votes": 17,
+      "rating": "7.5",
+      "votes": 20,
       "url": "https://www.themoviedb.org/movie/1483525"
     },
     {
-      "id": 1283515,
+      "id": 1294189,
       "mediaType": "movie",
-      "title": "Verity",
-      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
-      "releaseDate": "2026-09-30",
-      "rating": "7.0",
-      "votes": 612,
-      "url": "https://www.themoviedb.org/movie/1283515"
+      "title": "The Mongoose",
+      "overview": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
+      "poster": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
+      "releaseDate": "2026-10-29",
+      "rating": "5.9",
+      "votes": 63,
+      "url": "https://www.themoviedb.org/movie/1294189"
     },
     {
-      "id": 1792170,
+      "id": 1507696,
       "mediaType": "movie",
-      "title": "Model Citizen",
-      "overview": "With his memories gone and his past a blur, ex-cop Steven Bay seeks treatment for his amnesia while working on an isolated farm. Instead, he's met with rising hostility, strange surveillance, and instincts he can’t fully control. When the pressure becomes unbearable, Bay begins a desperate hunt for the truth behind his fractured reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/5MBdRdiGv3AKzZDGbni88xc6JFi.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "7.1",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/movie/1792170"
+      "title": "Apocalypse Z: New World",
+      "overview": "The Canary Islands have become Europe’s last refuge following the outbreak of the TSJ virus. When a special mission sets out for the mainland in search of vital supplies, Roberto joins the team with questionable intentions. The dangerous operation turns into a desperate race for survival, and Roberto and his companions find themselves caught between hordes of infected and divided loyalties.",
+      "poster": "https://image.tmdb.org/t/p/w500/wXln4DUrwcyjcFPwgQxFPYTlG1Z.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/o3XwuDUj0n8qnK91p6q8LKfr6rj.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "6.1",
+      "votes": 138,
+      "url": "https://www.themoviedb.org/movie/1507696"
     },
     {
-      "id": 1400940,
+      "id": 656908,
       "mediaType": "movie",
-      "title": "Clayface",
-      "overview": "Matt Hagen's meteoric rise from Gotham street kid to Hollywood leading man is tragically cut short when a local crime boss's actions leave him horribly disfigured. Abandoned by his team and with nothing left, Matt seeks out a cutting edge treatment that miraculously returns him to his former self… but also unexpectedly affects his grip on reality, spiraling him down a destructive path of all-consuming revenge.",
-      "poster": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "7.4",
-      "votes": 399,
-      "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1003596,
-      "mediaType": "movie",
-      "title": "Avengers: Doomsday",
-      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/9jlZ59UALLLOE279HMT19rP9XQs.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
-      "releaseDate": "2026-12-16",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1003596"
+      "title": "Ramayana: Rise of a Legend",
+      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
+      "poster": "https://image.tmdb.org/t/p/w500/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
+      "releaseDate": "2026-11-05",
+      "rating": "7.6",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/movie/656908"
     }
   ],
   "trendingTv": [
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/uyL0MH8gtDlChQKpfpkVoUP41VY.jpg",
       "releaseDate": "2024-12-05",
-      "rating": "7.0",
-      "votes": 471,
+      "rating": "7.1",
+      "votes": 472,
       "url": "https://www.themoviedb.org/tv/225385"
     },
     {
@@ -146,44 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.6",
-      "votes": 1170,
+      "votes": 1171,
       "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
-      "id": 259909,
-      "mediaType": "tv",
-      "title": "Dexter: Resurrection",
-      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
-      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
-      "releaseDate": "2025-07-13",
-      "rating": "8.6",
-      "votes": 731,
-      "url": "https://www.themoviedb.org/tv/259909"
-    },
-    {
-      "id": 279246,
-      "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1ptukf8gx19U1HcBv3aRzzlXuyJ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "8.6",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/279246"
-    },
-    {
-      "id": 292741,
-      "mediaType": "tv",
-      "title": "Nocturne",
-      "overview": "When a victim of notorious serial killer Jurek Walter unexpectedly turns up alive, detective Jonah Lynn races against time to find the one person still missing, while his protégé Saga Bauer goes undercover to get answers from the killer himself.",
-      "poster": "https://image.tmdb.org/t/p/w500/nyvXVcPnHEwVmqCdzjjCsu1jqhm.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/614k6C9doThoMe6GyH0nTnGgLXt.jpg",
-      "releaseDate": "2026-10-29",
-      "rating": "7.7",
-      "votes": 35,
-      "url": "https://www.themoviedb.org/tv/292741"
     },
     {
       "id": 213375,
@@ -198,16 +162,16 @@
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
-      "id": 96677,
+      "id": 279246,
       "mediaType": "tv",
-      "title": "Lupin",
-      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
-      "releaseDate": "2021-01-08",
-      "rating": "7.7",
-      "votes": 2780,
-      "url": "https://www.themoviedb.org/tv/96677"
+      "title": "The Remarried Empress",
+      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/1ptukf8gx19U1HcBv3aRzzlXuyJ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.2",
+      "votes": 16,
+      "url": "https://www.themoviedb.org/tv/279246"
     },
     {
       "id": 289517,
@@ -217,9 +181,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/gWedDgBsZkuOho2qe3q2sTQmbpO.jpg",
       "releaseDate": "2026-10-30",
-      "rating": "7.7",
-      "votes": 53,
+      "rating": "7.6",
+      "votes": 54,
       "url": "https://www.themoviedb.org/tv/289517"
+    },
+    {
+      "id": 259909,
+      "mediaType": "tv",
+      "title": "Dexter: Resurrection",
+      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
+      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
+      "releaseDate": "2025-07-13",
+      "rating": "8.6",
+      "votes": 733,
+      "url": "https://www.themoviedb.org/tv/259909"
     },
     {
       "id": 258989,
@@ -234,16 +210,40 @@
       "url": "https://www.themoviedb.org/tv/258989"
     },
     {
-      "id": 153312,
+      "id": 292741,
       "mediaType": "tv",
-      "title": "Tulsa King",
-      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
-      "poster": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
-      "releaseDate": "2022-11-13",
-      "rating": "8.3",
-      "votes": 2917,
-      "url": "https://www.themoviedb.org/tv/153312"
+      "title": "Nocturne",
+      "overview": "When a victim of notorious serial killer Jurek Walter unexpectedly turns up alive, detective Jonah Lynn races against time to find the one person still missing, while his protégé Saga Bauer goes undercover to get answers from the killer himself.",
+      "poster": "https://image.tmdb.org/t/p/w500/nyvXVcPnHEwVmqCdzjjCsu1jqhm.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/614k6C9doThoMe6GyH0nTnGgLXt.jpg",
+      "releaseDate": "2026-10-29",
+      "rating": "7.7",
+      "votes": 35,
+      "url": "https://www.themoviedb.org/tv/292741"
+    },
+    {
+      "id": 96677,
+      "mediaType": "tv",
+      "title": "Lupin",
+      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
+      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
+      "releaseDate": "2021-01-08",
+      "rating": "7.7",
+      "votes": 2780,
+      "url": "https://www.themoviedb.org/tv/96677"
+    },
+    {
+      "id": 303044,
+      "mediaType": "tv",
+      "title": "Campus Drivers",
+      "overview": "Lois arrives in Belrose with Max, the love of her life. Lane, the creator of Campus Drivers, the hottest app on campus, is known for never getting attached. Their paths were never meant to cross. But some encounters change everything, reopening old wounds. And when love appears unexpectedly, nothing is certain anymore.",
+      "poster": "https://image.tmdb.org/t/p/w500/br6TrAPctmobu6QM730sBEC18eH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oaWJm4brEMSWBmQIB73DFxsU683.jpg",
+      "releaseDate": "2026-11-06",
+      "rating": "7.8",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/303044"
     }
   ],
   "upcomingMovies": [
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.2",
-      "votes": 10,
+      "rating": "7.5",
+      "votes": 14,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.9",
-      "votes": 91,
+      "votes": 93,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -291,7 +291,7 @@
       "poster": "https://image.tmdb.org/t/p/w500/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/jiFLiatBtBALlAzV5R72gzspBad.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.1",
+      "rating": "7.0",
       "votes": 31,
       "url": "https://www.themoviedb.org/movie/1437396"
     },
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
       "releaseDate": "2026-10-23",
       "rating": "8.5",
-      "votes": 202,
+      "votes": 208,
       "url": "https://www.themoviedb.org/movie/791523"
     },
     {
@@ -394,6 +394,18 @@
       "url": "https://www.themoviedb.org/movie/1283515"
     },
     {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-05",
+      "rating": "8.2",
+      "votes": 61,
+      "url": "https://www.themoviedb.org/movie/1381071"
+    },
+    {
       "id": 1422041,
       "mediaType": "movie",
       "title": "LA BOLA NEGRA",
@@ -402,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.1",
-      "votes": 186,
+      "votes": 188,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -414,20 +426,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.8",
-      "votes": 336,
+      "votes": 346,
       "url": "https://www.themoviedb.org/movie/1375441"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-05",
-      "rating": "8.1",
-      "votes": 50,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1400940,
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 399,
+      "votes": 400,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
@@ -452,18 +452,6 @@
       "rating": "8.0",
       "votes": 213,
       "url": "https://www.themoviedb.org/movie/1465063"
-    },
-    {
-      "id": 1727734,
-      "mediaType": "movie",
-      "title": "Ali G: Who Iz I?",
-      "overview": "After twenty years spent \"chillin', tokin' and bonin'\", Ali G is shocked to discover that his long-term girlfriend, Julie, is 8 months pregnant. Faced with an extra mouth to feed, he gets off his batty and heads to America to reclaim his former glory… but soon encounters adversaries who will ultimately threaten his and his child's very existence.",
-      "poster": "https://image.tmdb.org/t/p/w500/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h7gas4rrcaSitLgF2ODry3Wz9KZ.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "5.7",
-      "votes": 150,
-      "url": "https://www.themoviedb.org/movie/1727734"
     },
     {
       "id": 1400837,
@@ -486,8 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/qRN8eqYwG6HPSy0i3fKzuLrUOhp.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.3",
-      "votes": 219,
+      "votes": 220,
       "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
+      "id": 1727734,
+      "mediaType": "movie",
+      "title": "Ali G: Who Iz I?",
+      "overview": "After twenty years spent \"chillin', tokin' and bonin'\", Ali G is shocked to discover that his long-term girlfriend, Julie, is 8 months pregnant. Faced with an extra mouth to feed, he gets off his batty and heads to America to reclaim his former glory… but soon encounters adversaries who will ultimately threaten his and his child's very existence.",
+      "poster": "https://image.tmdb.org/t/p/w500/uTyVxPeWX8Ai30IQoyDDQONNcq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h7gas4rrcaSitLgF2ODry3Wz9KZ.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "5.7",
+      "votes": 155,
+      "url": "https://www.themoviedb.org/movie/1727734"
     }
   ],
   "links": [
