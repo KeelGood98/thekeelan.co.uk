@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T13:10:50.603661+00:00",
+  "updated": "2026-11-07T21:55:28.922859+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -70,6 +70,17 @@
       "penalties": 0
     },
     {
+      "name": "Rayan Cherki",
+      "firstName": "Rayan",
+      "lastName": "Cherki",
+      "nationality": "France",
+      "team": "Manchester City",
+      "teamBadge": "https://crests.football-data.org/65.png",
+      "goals": 5,
+      "assists": 2,
+      "penalties": 0
+    },
+    {
       "name": "Nicolas Jackson",
       "firstName": "Nicolas",
       "lastName": "Jackson",
@@ -78,17 +89,6 @@
       "teamBadge": "https://crests.football-data.org/58.png",
       "goals": 5,
       "assists": 0,
-      "penalties": 0
-    },
-    {
-      "name": "Rayan Cherki",
-      "firstName": "Rayan",
-      "lastName": "Cherki",
-      "nationality": "France",
-      "team": "Manchester City",
-      "teamBadge": "https://crests.football-data.org/65.png",
-      "goals": 4,
-      "assists": 2,
       "penalties": 0
     },
     {
@@ -124,8 +124,8 @@
     {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
-      "goalsFor": 20,
-      "played": 9
+      "goalsFor": 21,
+      "played": 10
     },
     {
       "name": "Chelsea",
@@ -142,8 +142,8 @@
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 14,
-      "played": 9
+      "goalsFor": 15,
+      "played": 10
     }
   ],
   "bestDefences": [
@@ -151,7 +151,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalsAgainst": 5,
-      "played": 9
+      "played": 10
     },
     {
       "name": "Brighton",
@@ -186,16 +186,16 @@
       "played": 9
     },
     {
-      "name": "Manchester City",
-      "badge": "https://crests.football-data.org/65.png",
-      "goalDifference": 10,
-      "played": 9
-    },
-    {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalDifference": 9,
-      "played": 9
+      "goalDifference": 10,
+      "played": 10
+    },
+    {
+      "name": "Manchester City",
+      "badge": "https://crests.football-data.org/65.png",
+      "goalDifference": 8,
+      "played": 10
     },
     {
       "name": "Brentford",
@@ -211,7 +211,7 @@
     }
   ],
   "manUnitedSummary": {
-    "position": 17,
+    "position": 18,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
