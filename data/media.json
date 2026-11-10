@@ -1,20 +1,8 @@
 {
-  "updated": "2026-11-10T02:54:42.682423+00:00",
+  "updated": "2026-11-10T16:35:50.297206+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1423191,
-      "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.5",
-      "votes": 1936,
-      "url": "https://www.themoviedb.org/movie/1423191"
-    },
     {
       "id": 1368337,
       "mediaType": "movie",
@@ -24,7 +12,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/iDiTY1wA35YWzTmXLTtqaxtN6tc.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 4503,
+      "votes": 4530,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -35,9 +23,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/5MBdRdiGv3AKzZDGbni88xc6JFi.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "6.5",
-      "votes": 22,
+      "rating": "6.3",
+      "votes": 26,
       "url": "https://www.themoviedb.org/movie/1792170"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "7.5",
+      "votes": 1974,
+      "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1400837,
+      "mediaType": "movie",
+      "title": "Other Mommy",
+      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "5.8",
+      "votes": 204,
+      "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
       "id": 1263337,
@@ -45,10 +57,10 @@
       "title": "Heart of the Beast",
       "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
       "poster": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/kpqsljPQtWqPKJBTAEtoXtQZ9Ko.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6uVRPFflyJpo8Cx872olmlGTWla.jpg",
       "releaseDate": "2026-09-19",
       "rating": "7.3",
-      "votes": 540,
+      "votes": 558,
       "url": "https://www.themoviedb.org/movie/1263337"
     },
     {
@@ -60,8 +72,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-03",
       "rating": "8.0",
-      "votes": 122,
+      "votes": 126,
       "url": "https://www.themoviedb.org/movie/1381071"
+    },
+    {
+      "id": 1483525,
+      "mediaType": "movie",
+      "title": "Possible Love",
+      "overview": "Working-class An Mi Ok and Choi Ho Seok, who have been together since middle school and are the parents of a taciturn 10-year-old, are still reckoning with the fallout from Ho Seok’s firing from his factory job after a violently suppressed labor union strike. The well-off Lee Ye Ji, a documentary filmmaker, with her businessman husband, Sang-woo, has decided to make a movie about job layoffs and wants to make Mi-Ok and Ho-Seok her main camera subjects.",
+      "poster": "https://image.tmdb.org/t/p/w500/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/k0BY5D4Ya6NHhsvNYMmaabpvUtS.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.6",
+      "votes": 47,
+      "url": "https://www.themoviedb.org/movie/1483525"
+    },
+    {
+      "id": 656908,
+      "mediaType": "movie",
+      "title": "Ramayana: Rise of a Legend",
+      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
+      "poster": "https://image.tmdb.org/t/p/w500/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/prbMZ3DPf8taS6JYQd6igPnm2mA.jpg",
+      "releaseDate": "2026-11-05",
+      "rating": "7.5",
+      "votes": 30,
+      "url": "https://www.themoviedb.org/movie/656908"
     },
     {
       "id": 1375441,
@@ -72,20 +108,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-09-23",
       "rating": "6.8",
-      "votes": 398,
+      "votes": 406,
       "url": "https://www.themoviedb.org/movie/1375441"
-    },
-    {
-      "id": 656908,
-      "mediaType": "movie",
-      "title": "Ramayana: Rise of a Legend",
-      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-      "poster": "https://image.tmdb.org/t/p/w500/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
-      "releaseDate": "2026-11-05",
-      "rating": "7.7",
-      "votes": 28,
-      "url": "https://www.themoviedb.org/movie/656908"
     },
     {
       "id": 1294189,
@@ -95,36 +119,24 @@
       "poster": "https://image.tmdb.org/t/p/w500/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bySCyjQXNPgsnLTlgJpSMnRazPD.jpg",
       "releaseDate": "2026-10-29",
-      "rating": "5.6",
-      "votes": 98,
+      "rating": "5.7",
+      "votes": 100,
       "url": "https://www.themoviedb.org/movie/1294189"
-    },
-    {
-      "id": 1483525,
-      "mediaType": "movie",
-      "title": "Possible Love",
-      "overview": "Working-class An Mi Ok and Choi Ho Seok, who have been together since middle school and are the parents of a taciturn 10-year-old, are still reckoning with the fallout from Ho Seok’s firing from his factory job after a violently suppressed labor union strike. The well-off Lee Ye Ji, a documentary filmmaker, with her businessman husband, Sang-woo, has decided to make a movie about job layoffs and wants to make Mi-Ok and Ho-Seok her main camera subjects.",
-      "poster": "https://image.tmdb.org/t/p/w500/1ERGPNiKtnEcsvJS1ywsmqmcIDO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/k0BY5D4Ya6NHhsvNYMmaabpvUtS.jpg",
-      "releaseDate": "2026-09-23",
-      "rating": "7.4",
-      "votes": 48,
-      "url": "https://www.themoviedb.org/movie/1483525"
-    },
-    {
-      "id": 791523,
-      "mediaType": "movie",
-      "title": "Wildwood",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-      "releaseDate": "2026-10-19",
-      "rating": "8.5",
-      "votes": 242,
-      "url": "https://www.themoviedb.org/movie/791523"
     }
   ],
   "trendingTv": [
+    {
+      "id": 1489,
+      "mediaType": "tv",
+      "title": "Jimmy Kimmel Live!",
+      "overview": "Jimmy Kimmel Live! is an American late-night talk show, created and hosted by Jimmy Kimmel and broadcast on ABC.",
+      "poster": "https://image.tmdb.org/t/p/w500/bGB6bEbG4qL22C1SFupkdAxYC9i.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/taqVKvEmMlI2hs2g364fXWzv0ia.jpg",
+      "releaseDate": "2003-01-26",
+      "rating": "5.3",
+      "votes": 223,
+      "url": "https://www.themoviedb.org/tv/1489"
+    },
     {
       "id": 213375,
       "mediaType": "tv",
@@ -134,8 +146,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.6",
-      "votes": 289,
+      "votes": 292,
       "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.6",
+      "votes": 1196,
+      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 225385,
@@ -150,18 +174,6 @@
       "url": "https://www.themoviedb.org/tv/225385"
     },
     {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.6",
-      "votes": 1191,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
       "id": 279246,
       "mediaType": "tv",
       "title": "The Remarried Empress",
@@ -169,9 +181,57 @@
       "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "7.8",
-      "votes": 30,
+      "rating": "8.0",
+      "votes": 33,
       "url": "https://www.themoviedb.org/tv/279246"
+    },
+    {
+      "id": 84773,
+      "mediaType": "tv",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+      "poster": "https://image.tmdb.org/t/p/w500/bMXWXKM9ydUmMTNvDnYo9QtCBRt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/achmETPRJZc9QVXsMPgHwYEyNar.jpg",
+      "releaseDate": "2022-09-01",
+      "rating": "7.2",
+      "votes": 4018,
+      "url": "https://www.themoviedb.org/tv/84773"
+    },
+    {
+      "id": 259909,
+      "mediaType": "tv",
+      "title": "Dexter: Resurrection",
+      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
+      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
+      "releaseDate": "2025-07-13",
+      "rating": "8.6",
+      "votes": 747,
+      "url": "https://www.themoviedb.org/tv/259909"
+    },
+    {
+      "id": 303044,
+      "mediaType": "tv",
+      "title": "Campus Drivers",
+      "overview": "Lois arrives in Belrose with Max, the love of her life. Lane, the creator of Campus Drivers, the hottest app on campus, is known for never getting attached. Their paths were never meant to cross. But some encounters change everything, reopening old wounds. And when love appears unexpectedly, nothing is certain anymore.",
+      "poster": "https://image.tmdb.org/t/p/w500/1vqJ8kNCz91C2fUpXSma7oAWCc5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oaWJm4brEMSWBmQIB73DFxsU683.jpg",
+      "releaseDate": "2026-11-06",
+      "rating": "8.1",
+      "votes": 21,
+      "url": "https://www.themoviedb.org/tv/303044"
+    },
+    {
+      "id": 289517,
+      "mediaType": "tv",
+      "title": "Dead-End Job",
+      "overview": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
+      "poster": "https://image.tmdb.org/t/p/w500/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/gWedDgBsZkuOho2qe3q2sTQmbpO.jpg",
+      "releaseDate": "2026-10-30",
+      "rating": "7.5",
+      "votes": 76,
+      "url": "https://www.themoviedb.org/tv/289517"
     },
     {
       "id": 258989,
@@ -184,66 +244,6 @@
       "rating": "5.0",
       "votes": 16,
       "url": "https://www.themoviedb.org/tv/258989"
-    },
-    {
-      "id": 259909,
-      "mediaType": "tv",
-      "title": "Dexter: Resurrection",
-      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
-      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
-      "releaseDate": "2025-07-13",
-      "rating": "8.6",
-      "votes": 741,
-      "url": "https://www.themoviedb.org/tv/259909"
-    },
-    {
-      "id": 1489,
-      "mediaType": "tv",
-      "title": "Jimmy Kimmel Live!",
-      "overview": "Jimmy Kimmel Live! is an American late-night talk show, created and hosted by Jimmy Kimmel and broadcast on ABC.",
-      "poster": "https://image.tmdb.org/t/p/w500/bGB6bEbG4qL22C1SFupkdAxYC9i.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/taqVKvEmMlI2hs2g364fXWzv0ia.jpg",
-      "releaseDate": "2003-01-26",
-      "rating": "5.3",
-      "votes": 221,
-      "url": "https://www.themoviedb.org/tv/1489"
-    },
-    {
-      "id": 303044,
-      "mediaType": "tv",
-      "title": "Campus Drivers",
-      "overview": "Lois arrives in Belrose with Max, the love of her life. Lane, the creator of Campus Drivers, the hottest app on campus, is known for never getting attached. Their paths were never meant to cross. But some encounters change everything, reopening old wounds. And when love appears unexpectedly, nothing is certain anymore.",
-      "poster": "https://image.tmdb.org/t/p/w500/1vqJ8kNCz91C2fUpXSma7oAWCc5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oaWJm4brEMSWBmQIB73DFxsU683.jpg",
-      "releaseDate": "2026-11-06",
-      "rating": "8.1",
-      "votes": 20,
-      "url": "https://www.themoviedb.org/tv/303044"
-    },
-    {
-      "id": 289517,
-      "mediaType": "tv",
-      "title": "Dead-End Job",
-      "overview": "Drowning in debt, a young man takes lucrative part-time jobs from a mysterious agency — only to find his hustle for more money turning nightmarish.",
-      "poster": "https://image.tmdb.org/t/p/w500/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/gWedDgBsZkuOho2qe3q2sTQmbpO.jpg",
-      "releaseDate": "2026-10-30",
-      "rating": "7.5",
-      "votes": 73,
-      "url": "https://www.themoviedb.org/tv/289517"
-    },
-    {
-      "id": 96677,
-      "mediaType": "tv",
-      "title": "Lupin",
-      "overview": "Inspired by the adventures of Arsène Lupin, gentleman thief Assane Diop sets out to avenge his father for an injustice inflicted by a wealthy family.",
-      "poster": "https://image.tmdb.org/t/p/w500/h6Z2oogE4mJk2uffdtIlLhb0EHx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/jgAZYiuRV37pCxmhx8NTdhE36RL.jpg",
-      "releaseDate": "2021-01-08",
-      "rating": "7.7",
-      "votes": 2783,
-      "url": "https://www.themoviedb.org/tv/96677"
     }
   ],
   "upcomingMovies": [
@@ -253,10 +253,10 @@
       "title": "Ramayana: Rise of a Legend",
       "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
       "poster": "https://image.tmdb.org/t/p/w500/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/prbMZ3DPf8taS6JYQd6igPnm2mA.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.8",
-      "votes": 27,
+      "rating": "7.5",
+      "votes": 30,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "6.9",
-      "votes": 261,
+      "rating": "6.8",
+      "votes": 263,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
@@ -279,9 +279,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "9.0",
-      "votes": 3,
+      "rating": "9.4",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1562642"
+    },
+    {
+      "id": 1765072,
+      "mediaType": "movie",
+      "title": "You Can See Everything",
+      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+      "poster": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "8.9",
+      "votes": 102,
+      "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
       "id": 1437396,
@@ -292,32 +304,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/45Mbs6dmn2W0hvuyxXPDkKREHpP.jpg",
       "releaseDate": "2026-11-20",
       "rating": "6.7",
-      "votes": 48,
+      "votes": 51,
       "url": "https://www.themoviedb.org/movie/1437396"
-    },
-    {
-      "id": 1765072,
-      "mediaType": "movie",
-      "title": "You Can See Everything",
-      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-      "poster": "https://image.tmdb.org/t/p/w500/qhFWz1BsEMg5rcs6TAstmGQggMT.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "8.9",
-      "votes": 102,
-      "url": "https://www.themoviedb.org/movie/1765072"
-    },
-    {
-      "id": 1300968,
-      "mediaType": "movie",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
       "id": 1567605,
@@ -325,11 +313,35 @@
       "title": "Ebenezer",
       "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
       "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oveb9ughaDh4GkjmVHvSgFnEzlM.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/bF6nvHAt2jU7PnkOI4cnaUF2DZn.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "8.2",
-      "votes": 4,
+      "rating": "8.6",
+      "votes": 5,
       "url": "https://www.themoviedb.org/movie/1567605"
+    },
+    {
+      "id": 1300968,
+      "mediaType": "movie",
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+      "poster": "https://image.tmdb.org/t/p/w500/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1300968"
+    },
+    {
+      "id": 1401459,
+      "mediaType": "movie",
+      "title": "Fjord",
+      "overview": "Following the deaths of Mihai's parents, Mihai and Lisbet Gheorghiu leave their life behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbet's family. There, they grow close to their neighbors, the Halbergs, whose warmth gives them hope for a fresh start. But the fragile peace begins to unravel when the Gheorghiu family’s young daughter, Elia, arrives at school covered in bruises.",
+      "poster": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
+      "releaseDate": "2026-11-13",
+      "rating": "7.2",
+      "votes": 102,
+      "url": "https://www.themoviedb.org/movie/1401459"
     },
     {
       "id": 1084409,
@@ -339,21 +351,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/mfpjOQ6hsvMUIFyzWglwerbpgFS.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.4",
-      "votes": 7,
+      "rating": "6.8",
+      "votes": 8,
       "url": "https://www.themoviedb.org/movie/1084409"
-    },
-    {
-      "id": 1401459,
-      "mediaType": "movie",
-      "title": "Fjord",
-      "overview": "Following the deaths of Mihai's parents, Mihai and Lisbet Gheorghiu leave their life behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbet's family. There, they grow close to their neighbors, the Halbergs, whose warmth gives them hope for a fresh start. But the fragile peace begins to unravel when the Gheorghiu family’s young daughter, Elia, arrives at school covered in bruises.",
-      "poster": "https://image.tmdb.org/t/p/w500/rhKlzjAJCEKUjxEk1qwr4bgbXlG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/iPVAMaI0W4lr7Rl56m0H388eR5.jpg",
-      "releaseDate": "2026-11-13",
-      "rating": "7.2",
-      "votes": 102,
-      "url": "https://www.themoviedb.org/movie/1401459"
     },
     {
       "id": 1538497,
@@ -377,8 +377,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
-      "rating": "7.9",
-      "votes": 114,
+      "rating": "8.0",
+      "votes": 126,
       "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
@@ -390,20 +390,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/cKetrF2dAnQ0AMV5i4BMOs41I5P.jpg",
       "releaseDate": "2026-10-02",
       "rating": "7.0",
-      "votes": 651,
+      "votes": 655,
       "url": "https://www.themoviedb.org/movie/1283515"
-    },
-    {
-      "id": 791523,
-      "mediaType": "movie",
-      "title": "Wildwood",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "8.5",
-      "votes": 237,
-      "url": "https://www.themoviedb.org/movie/791523"
     },
     {
       "id": 1422041,
@@ -414,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.0",
-      "votes": 199,
+      "votes": 204,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -426,8 +414,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sEsMwSDUWGIx9EfNxzM6KzVSsSQ.jpg",
       "releaseDate": "2026-10-28",
       "rating": "6.8",
-      "votes": 394,
+      "votes": 401,
       "url": "https://www.themoviedb.org/movie/1375441"
+    },
+    {
+      "id": 791523,
+      "mediaType": "movie",
+      "title": "Wildwood",
+      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
+      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "8.5",
+      "votes": 242,
+      "url": "https://www.themoviedb.org/movie/791523"
     },
     {
       "id": 1400940,
@@ -438,20 +438,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uL4cIrNi2uaUnWIOQQ28EVnkETG.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 409,
+      "votes": 416,
       "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1465063,
-      "mediaType": "movie",
-      "title": "Forgotten Island",
-      "overview": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
-      "poster": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
-      "releaseDate": "2026-10-04",
-      "rating": "8.0",
-      "votes": 230,
-      "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
       "id": 891621,
@@ -462,8 +450,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3uLA0ujne91bkzFStZICCYeqhnt.jpg",
       "releaseDate": "2026-11-04",
       "rating": "8.1",
-      "votes": 104,
+      "votes": 121,
       "url": "https://www.themoviedb.org/movie/891621"
+    },
+    {
+      "id": 1465063,
+      "mediaType": "movie",
+      "title": "Forgotten Island",
+      "overview": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
+      "poster": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/cNICUho5uiAGkfCAQq1ihyaMla4.jpg",
+      "releaseDate": "2026-10-04",
+      "rating": "8.0",
+      "votes": 241,
+      "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
       "id": 1400837,
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "5.8",
-      "votes": 201,
+      "votes": 203,
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
