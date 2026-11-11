@@ -1,51 +1,51 @@
 {
-  "updated": "2026-11-10T23:13:55.160018+00:00",
+  "updated": "2026-11-11T06:03:22.201771+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-11-10T23:00",
-    "temperature": 7.0,
-    "feelsLike": 4.0,
-    "humidity": 79.0,
+    "time": "2026-11-11T06:00",
+    "temperature": 6.0,
+    "feelsLike": 3.0,
+    "humidity": 90.0,
     "precipitation": 0.0,
-    "windSpeed": 6.0,
-    "windGusts": 14.0,
+    "windSpeed": 5.0,
+    "windGusts": 11.0,
     "weatherCode": 3,
     "description": "Overcast",
     "icon": "☁️"
   },
   "forecast": [
     {
-      "date": "2026-11-10",
-      "description": "Overcast",
-      "icon": "☁️",
-      "maxTemp": 9.0,
-      "minTemp": 4.0,
-      "rainChance": 0.0,
-      "sunrise": "2026-11-10T07:23",
-      "sunset": "2026-11-10T16:16"
-    },
-    {
       "date": "2026-11-11",
       "description": "Overcast",
       "icon": "☁️",
-      "maxTemp": 10.0,
-      "minTemp": 6.0,
+      "maxTemp": 9.0,
+      "minTemp": 5.0,
       "rainChance": 0.0,
       "sunrise": "2026-11-11T07:25",
       "sunset": "2026-11-11T16:14"
     },
     {
       "date": "2026-11-12",
-      "description": "Overcast",
-      "icon": "☁️",
-      "maxTemp": 7.0,
+      "description": "Mainly clear",
+      "icon": "🌤️",
+      "maxTemp": 8.0,
       "minTemp": 2.0,
       "rainChance": 0.0,
       "sunrise": "2026-11-12T07:27",
       "sunset": "2026-11-12T16:12"
+    },
+    {
+      "date": "2026-11-13",
+      "description": "Overcast",
+      "icon": "☁️",
+      "maxTemp": 6.0,
+      "minTemp": 2.0,
+      "rainChance": 0.0,
+      "sunrise": "2026-11-13T07:29",
+      "sunset": "2026-11-13T16:11"
     }
   ]
 }
