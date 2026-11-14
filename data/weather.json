@@ -1,20 +1,20 @@
 {
-  "updated": "2026-11-14T03:08:39.104421+00:00",
+  "updated": "2026-11-14T17:00:52.147694+00:00",
   "source": "Open-Meteo",
   "location": "Leeds",
   "latitude": 53.8008,
   "longitude": -1.5491,
   "current": {
-    "time": "2026-11-14T03:00",
-    "temperature": 4.0,
-    "feelsLike": 1.0,
-    "humidity": 80.0,
+    "time": "2026-11-14T17:00",
+    "temperature": 7.0,
+    "feelsLike": 4.0,
+    "humidity": 73.0,
     "precipitation": 0.0,
-    "windSpeed": 2.0,
-    "windGusts": 5.0,
-    "weatherCode": 3,
-    "description": "Overcast",
-    "icon": "☁️"
+    "windSpeed": 5.0,
+    "windGusts": 10.0,
+    "weatherCode": 0,
+    "description": "Clear sky",
+    "icon": "☀️"
   },
   "forecast": [
     {
@@ -22,16 +22,16 @@
       "description": "Overcast",
       "icon": "☁️",
       "maxTemp": 9.0,
-      "minTemp": 3.0,
+      "minTemp": 4.0,
       "rainChance": 0.0,
       "sunrise": "2026-11-14T07:31",
       "sunset": "2026-11-14T16:09"
     },
     {
       "date": "2026-11-15",
-      "description": "Moderate drizzle",
+      "description": "Light drizzle",
       "icon": "🌦️",
-      "maxTemp": 6.0,
+      "maxTemp": 7.0,
       "minTemp": 2.0,
       "rainChance": 89.0,
       "sunrise": "2026-11-15T07:33",
@@ -39,10 +39,10 @@
     },
     {
       "date": "2026-11-16",
-      "description": "Light drizzle",
-      "icon": "🌦️",
+      "description": "Dense drizzle",
+      "icon": "🌧️",
       "maxTemp": 6.0,
-      "minTemp": 2.0,
+      "minTemp": 1.0,
       "rainChance": 33.0,
       "sunrise": "2026-11-16T07:34",
       "sunset": "2026-11-16T16:06"
