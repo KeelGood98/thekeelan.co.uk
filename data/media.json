@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T15:19:47.195857+00:00",
+  "updated": "2026-11-15T00:16:20.455513+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -12,56 +12,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/twiVn9oFXOVR0uoYgawyEBlnFu8.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 4805,
+      "votes": 4838,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1400837,
-      "mediaType": "movie",
-      "title": "Other Mommy",
-      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "6.3",
-      "votes": 377,
-      "url": "https://www.themoviedb.org/movie/1400837"
-    },
-    {
-      "id": 1263337,
-      "mediaType": "movie",
-      "title": "Heart of the Beast",
-      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
-      "poster": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6uVRPFflyJpo8Cx872olmlGTWla.jpg",
-      "releaseDate": "2026-09-19",
-      "rating": "7.6",
-      "votes": 757,
-      "url": "https://www.themoviedb.org/movie/1263337"
-    },
-    {
-      "id": 1423191,
-      "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.5",
-      "votes": 2147,
-      "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 1792170,
-      "mediaType": "movie",
-      "title": "Model Citizen",
-      "overview": "With his memories gone and his past a blur, ex-cop Steven Bay seeks treatment for his amnesia while working on an isolated farm. Instead, he's met with rising hostility, strange surveillance, and instincts he can’t fully control. When the pressure becomes unbearable, Bay begins a desperate hunt for the truth behind his fractured reality.",
-      "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mC5Y5jmodmTp7T7eyQ8tTBnQRg5.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "6.2",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/movie/1792170"
     },
     {
       "id": 1003596,
@@ -76,6 +28,54 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
+      "id": 1400837,
+      "mediaType": "movie",
+      "title": "Other Mommy",
+      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
+      "poster": "https://image.tmdb.org/t/p/w500/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "6.3",
+      "votes": 393,
+      "url": "https://www.themoviedb.org/movie/1400837"
+    },
+    {
+      "id": 1263337,
+      "mediaType": "movie",
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yE766yhgg98tKwTKd8CyNvAtmn6.jpg",
+      "releaseDate": "2026-09-19",
+      "rating": "7.5",
+      "votes": 783,
+      "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "7.5",
+      "votes": 2168,
+      "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1185344,
+      "mediaType": "movie",
+      "title": "The Beast",
+      "overview": "When a militia of unidentified hostiles coordinates a coup against the United States, the president must fight back by utilizing the highly classified offensive capabilities of his armored limousine, nicknamed The Beast.",
+      "poster": "https://image.tmdb.org/t/p/w500/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v5Wb9NoE0s1mGmC5wVeQR1OK22V.jpg",
+      "releaseDate": "2026-10-08",
+      "rating": "5.9",
+      "votes": 14,
+      "url": "https://www.themoviedb.org/movie/1185344"
+    },
+    {
       "id": 1381071,
       "mediaType": "movie",
       "title": "Godzilla Minus Zero",
@@ -84,20 +84,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-03",
       "rating": "7.8",
-      "votes": 190,
+      "votes": 198,
       "url": "https://www.themoviedb.org/movie/1381071"
-    },
-    {
-      "id": 1185344,
-      "mediaType": "movie",
-      "title": "The Beast",
-      "overview": "When a militia of unidentified hostiles coordinates a coup against the United States, the president must fight back by utilizing the highly classified offensive capabilities of his armored limousine, nicknamed The Beast.",
-      "poster": "https://image.tmdb.org/t/p/w500/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/tv4GxpgGF4n8bhBYgJg0ZyAUylF.jpg",
-      "releaseDate": "2026-10-08",
-      "rating": "5.6",
-      "votes": 6,
-      "url": "https://www.themoviedb.org/movie/1185344"
     },
     {
       "id": 1567605,
@@ -107,36 +95,36 @@
       "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fdOVxyNNL95SuI8BGaN6vudEuYX.jpg",
       "releaseDate": "2026-11-11",
-      "rating": "7.9",
-      "votes": 48,
+      "rating": "7.8",
+      "votes": 58,
       "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
-      "id": 1300968,
+      "id": 1792170,
       "mediaType": "movie",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "9.0",
-      "votes": 3,
-      "url": "https://www.themoviedb.org/movie/1300968"
+      "title": "Model Citizen",
+      "overview": "With his memories gone and his past a blur, ex-cop Steven Bay seeks treatment for his amnesia while working on an isolated farm. Instead, he's met with rising hostility, strange surveillance, and instincts he can’t fully control. When the pressure becomes unbearable, Bay begins a desperate hunt for the truth behind his fractured reality.",
+      "poster": "https://image.tmdb.org/t/p/w500/7SE0LBwgqiqZzkm9gKVbBAbcNQL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mC5Y5jmodmTp7T7eyQ8tTBnQRg5.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "6.2",
+      "votes": 31,
+      "url": "https://www.themoviedb.org/movie/1792170"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/4tjxYg2AbOzzG9G1YuiT2NzYhlH.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "8.5",
+      "votes": 6830,
+      "url": "https://www.themoviedb.org/movie/969681"
     }
   ],
   "trendingTv": [
-    {
-      "id": 84773,
-      "mediaType": "tv",
-      "title": "The Lord of the Rings: The Rings of Power",
-      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
-      "poster": "https://image.tmdb.org/t/p/w500/bMXWXKM9ydUmMTNvDnYo9QtCBRt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/i1phX1JpaqSnHBBGta6LBFYVCZq.jpg",
-      "releaseDate": "2022-09-01",
-      "rating": "7.2",
-      "votes": 4064,
-      "url": "https://www.themoviedb.org/tv/84773"
-    },
     {
       "id": 213375,
       "mediaType": "tv",
@@ -146,8 +134,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/31o1Ufd7bStD5dGEcpzapOjwaqx.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.3",
-      "votes": 462,
+      "votes": 478,
       "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 84773,
+      "mediaType": "tv",
+      "title": "The Lord of the Rings: The Rings of Power",
+      "overview": "Beginning in a time of relative peace, we follow an ensemble cast of characters as they confront the re-emergence of evil to Middle-earth. From the darkest depths of the Misty Mountains, to the majestic forests of Lindon, to the breathtaking island kingdom of Númenor, to the furthest reaches of the map, these kingdoms and characters will carve out legacies that live on long after they are gone.",
+      "poster": "https://image.tmdb.org/t/p/w500/bMXWXKM9ydUmMTNvDnYo9QtCBRt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i1phX1JpaqSnHBBGta6LBFYVCZq.jpg",
+      "releaseDate": "2022-09-01",
+      "rating": "7.2",
+      "votes": 4070,
+      "url": "https://www.themoviedb.org/tv/84773"
     },
     {
       "id": 254630,
@@ -157,33 +157,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tjy25xpiFeo2gahl7N0hoxbRtG7.jpg",
       "releaseDate": "2026-11-12",
-      "rating": "4.6",
-      "votes": 17,
+      "rating": "4.8",
+      "votes": 20,
       "url": "https://www.themoviedb.org/tv/254630"
-    },
-    {
-      "id": 1489,
-      "mediaType": "tv",
-      "title": "Jimmy Kimmel Live!",
-      "overview": "Jimmy Kimmel Live! is an American late-night talk show, created and hosted by Jimmy Kimmel and broadcast on ABC.",
-      "poster": "https://image.tmdb.org/t/p/w500/bGB6bEbG4qL22C1SFupkdAxYC9i.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/taqVKvEmMlI2hs2g364fXWzv0ia.jpg",
-      "releaseDate": "2003-01-26",
-      "rating": "5.3",
-      "votes": 226,
-      "url": "https://www.themoviedb.org/tv/1489"
-    },
-    {
-      "id": 291507,
-      "mediaType": "tv",
-      "title": "The Body",
-      "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
-      "poster": "https://image.tmdb.org/t/p/w500/zleCYDRbW5mKwgZwVK4SNIrKXWx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
-      "releaseDate": "2026-11-11",
-      "rating": "7.1",
-      "votes": 31,
-      "url": "https://www.themoviedb.org/tv/291507"
     },
     {
       "id": 247718,
@@ -194,8 +170,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.7",
-      "votes": 1239,
+      "votes": 1243,
       "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "id": 291507,
+      "mediaType": "tv",
+      "title": "The Body",
+      "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
+      "poster": "https://image.tmdb.org/t/p/w500/u2iDoQmXu86tMhMZSN1EPp0PHKQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
+      "releaseDate": "2026-11-11",
+      "rating": "7.4",
+      "votes": 39,
+      "url": "https://www.themoviedb.org/tv/291507"
     },
     {
       "id": 259909,
@@ -210,28 +198,16 @@
       "url": "https://www.themoviedb.org/tv/259909"
     },
     {
-      "id": 279246,
+      "id": 1489,
       "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "8.4",
-      "votes": 85,
-      "url": "https://www.themoviedb.org/tv/279246"
-    },
-    {
-      "id": 131488,
-      "mediaType": "tv",
-      "title": "The Empress",
-      "overview": "When rebellious Elisabeth falls for Emperor Franz and becomes his unlikely bride, she enters a world of tension and intrigue at the Viennese court.",
-      "poster": "https://image.tmdb.org/t/p/w500/9AWkNkZHwNLuM6H5u6dToioHMAI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lnPf1rCmSgcowbhMPH4M1avSApm.jpg",
-      "releaseDate": "2022-09-29",
-      "rating": "7.7",
-      "votes": 191,
-      "url": "https://www.themoviedb.org/tv/131488"
+      "title": "Jimmy Kimmel Live!",
+      "overview": "Jimmy Kimmel Live! is an American late-night talk show, created and hosted by Jimmy Kimmel and broadcast on ABC.",
+      "poster": "https://image.tmdb.org/t/p/w500/bGB6bEbG4qL22C1SFupkdAxYC9i.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/taqVKvEmMlI2hs2g364fXWzv0ia.jpg",
+      "releaseDate": "2003-01-26",
+      "rating": "5.3",
+      "votes": 226,
+      "url": "https://www.themoviedb.org/tv/1489"
     },
     {
       "id": 307853,
@@ -242,8 +218,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/9LtN1ac91JAqXMke8CAJ6BiBSLS.jpg",
       "releaseDate": "2026-11-06",
       "rating": "10.0",
-      "votes": 6,
+      "votes": 7,
       "url": "https://www.themoviedb.org/tv/307853"
+    },
+    {
+      "id": 73223,
+      "mediaType": "tv",
+      "title": "Black Clover",
+      "overview": "Asta and Yuno are two orphans who want the same thing: to become the Wizard King. Locked in a friendly rivalry, they work hard towards their goal. While Yuno excels at magic, Asta has a problem uncommon in this world: he has no powers! But, on the day they receive their grimoires, they surprise everyone. To reach their goal, they’ll each find their own path to greatness—with or without magic.",
+      "poster": "https://image.tmdb.org/t/p/w500/uZUtoVChBGhNj9OfrM2LYpwBm8E.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qu9epTZh29fGUkY7ZYc9PVsv0Ig.jpg",
+      "releaseDate": "2017-10-03",
+      "rating": "8.5",
+      "votes": 2316,
+      "url": "https://www.themoviedb.org/tv/73223"
+    },
+    {
+      "id": 279246,
+      "mediaType": "tv",
+      "title": "The Remarried Empress",
+      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.5",
+      "votes": 89,
+      "url": "https://www.themoviedb.org/tv/279246"
     }
   ],
   "upcomingMovies": [
@@ -255,8 +255,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "8.7",
-      "votes": 11,
+      "rating": "8.8",
+      "votes": 12,
       "url": "https://www.themoviedb.org/movie/1562642"
     },
     {
@@ -276,7 +276,7 @@
       "mediaType": "movie",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "9.0",
@@ -291,8 +291,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/9y9o686DsQg0KzPtERzcW7Cf8IE.jpg",
       "releaseDate": "2026-12-04",
-      "rating": "7.0",
-      "votes": 24,
+      "rating": "6.9",
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1117898"
     },
     {
@@ -304,7 +304,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.9",
-      "votes": 114,
+      "votes": 115,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -315,8 +315,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/45Mbs6dmn2W0hvuyxXPDkKREHpP.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "6.7",
-      "votes": 69,
+      "rating": "6.6",
+      "votes": 70,
       "url": "https://www.themoviedb.org/movie/1437396"
     },
     {
@@ -328,7 +328,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/mfpjOQ6hsvMUIFyzWglwerbpgFS.jpg",
       "releaseDate": "2026-11-20",
       "rating": "6.8",
-      "votes": 8,
+      "votes": 9,
       "url": "https://www.themoviedb.org/movie/1084409"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ncm7djsVTHQQMX2HEbEVxMUFchG.jpg",
       "releaseDate": "2026-10-09",
       "rating": "6.3",
-      "votes": 377,
+      "votes": 392,
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
       "rating": "7.8",
-      "votes": 190,
+      "votes": 197,
       "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
@@ -401,8 +401,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.6",
-      "votes": 44,
+      "rating": "7.5",
+      "votes": 46,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "8.0",
-      "votes": 218,
+      "votes": 219,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -426,8 +426,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fdOVxyNNL95SuI8BGaN6vudEuYX.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.9",
-      "votes": 47,
+      "votes": 56,
       "url": "https://www.themoviedb.org/movie/1567605"
+    },
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3BBjkQmdGacKYZtpmK2vIfuDmON.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.3",
+      "votes": 238,
+      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 791523,
@@ -450,20 +462,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/xSDoxv4pHvs4xZjvTb0Iqg1A6ro.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 437,
+      "votes": 440,
       "url": "https://www.themoviedb.org/movie/1400940"
-    },
-    {
-      "id": 1153576,
-      "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3BBjkQmdGacKYZtpmK2vIfuDmON.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.3",
-      "votes": 237,
-      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 1465063,
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
       "releaseDate": "2026-10-04",
       "rating": "8.0",
-      "votes": 252,
+      "votes": 253,
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
@@ -485,8 +485,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/3uLA0ujne91bkzFStZICCYeqhnt.jpg",
       "releaseDate": "2026-11-04",
-      "rating": "8.1",
-      "votes": 175,
+      "rating": "8.0",
+      "votes": 187,
       "url": "https://www.themoviedb.org/movie/891621"
     }
   ],
