@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T17:22:00.326353+00:00",
+  "updated": "2026-11-17T02:34:52.362667+00:00",
   "source": "CheapShark",
   "currency": "GBP",
   "originalCurrency": "USD",
@@ -156,21 +156,6 @@
       "dealID": "rTme3ZJbGqR1TCxwJa4LZ90psV2cDUIt%2BjZ7XgIA2ng%3D"
     },
     {
-      "title": "Metamorphosis",
-      "store": "Gamesplanet",
-      "salePrice": "£17.04",
-      "normalPrice": "£18.93",
-      "salePriceUsd": "$22.49",
-      "normalPriceUsd": "$24.99",
-      "saving": "10%",
-      "dealRating": "0.0",
-      "steamRating": "Very Positive",
-      "steamRatingPercent": "83",
-      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1025410/c5ac6e42c3f1f904fa5c2a57097125070e222f86/capsule_231x87.jpg?t=1790876677",
-      "url": "https://www.cheapshark.com/redirect?dealID=Fntv%2FlJuZSdXjLAPyYDCiVd%2FF9j6AuQxsnMO5eRhkIg%3D",
-      "dealID": "Fntv%2FlJuZSdXjLAPyYDCiVd%2FF9j6AuQxsnMO5eRhkIg%3D"
-    },
-    {
       "title": "nail'd",
       "store": "Fanatical",
       "salePrice": "£3.59",
@@ -180,10 +165,25 @@
       "saving": "5%",
       "dealRating": "0.0",
       "steamRating": "Very Positive",
-      "steamRatingPercent": "80",
+      "steamRatingPercent": "81",
       "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/40380/capsule_231x87.jpg?t=1570019041",
       "url": "https://www.cheapshark.com/redirect?dealID=3XDsag5tJG4RhKkz9k8dTR670qrEsDxEuL7iKMhlZLI%3D",
       "dealID": "3XDsag5tJG4RhKkz9k8dTR670qrEsDxEuL7iKMhlZLI%3D"
+    },
+    {
+      "title": "The Wraith of the Galaxy",
+      "store": "GamersGate",
+      "salePrice": "£3.03",
+      "normalPrice": "£30.30",
+      "salePriceUsd": "$4.00",
+      "normalPriceUsd": "$39.99",
+      "saving": "90%",
+      "dealRating": "0.0",
+      "steamRating": "Mostly Positive",
+      "steamRatingPercent": "79",
+      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2057430/53b4c66f638ce5b2c1f1887176b44bc442ded3e9/capsule_231x87.jpg?t=1727877368",
+      "url": "https://www.cheapshark.com/redirect?dealID=tXUdKBQwCKYz13AV1RRdZHz6qBked75JqMF1wZaN1Y8%3D",
+      "dealID": "tXUdKBQwCKYz13AV1RRdZHz6qBked75JqMF1wZaN1Y8%3D"
     }
   ],
   "watchlist": [
@@ -252,19 +252,19 @@
       "searchTitle": "Grand Theft Auto V"
     },
     {
-      "title": "Red Dead Redemption 2",
+      "title": "Red Dead Redemption 2: Ultimate Edition",
       "store": "GameBillet",
-      "salePrice": "£11.33",
-      "normalPrice": "£45.45",
-      "salePriceUsd": "$14.96",
-      "normalPriceUsd": "$59.99",
-      "saving": "75%",
-      "dealRating": "8.5",
-      "steamRating": "Very Positive",
-      "steamRatingPercent": "92",
-      "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_231x87.jpg?t=1759502961",
-      "url": "https://www.cheapshark.com/redirect?dealID=HSOeP5tBDY0pqLD5iNdyKrR0pjko1oLC3oihJ%2FaJ438%3D",
-      "dealID": "HSOeP5tBDY0pqLD5iNdyKrR0pjko1oLC3oihJ%2FaJ438%3D",
+      "salePrice": "£15.12",
+      "normalPrice": "£75.76",
+      "salePriceUsd": "$19.96",
+      "normalPriceUsd": "$99.99",
+      "saving": "80%",
+      "dealRating": "9.5",
+      "steamRating": null,
+      "steamRatingPercent": "0",
+      "thumb": "https://sttc.gamersgate.com/images/product/red-dead-redemption-2-ultimate-edition/cover-180-c4aaeb.jpg",
+      "url": "https://www.cheapshark.com/redirect?dealID=U1E62vgJgEXgDvlQJh2vr8N20TZNIxsfCbXMmM8zdjM%3D",
+      "dealID": "U1E62vgJgEXgDvlQJh2vr8N20TZNIxsfCbXMmM8zdjM%3D",
       "searchTitle": "Red Dead Redemption 2"
     },
     {
