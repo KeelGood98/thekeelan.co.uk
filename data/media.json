@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17T17:52:31.000173+00:00",
+  "updated": "2026-11-18T02:35:04.650828+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -9,23 +9,11 @@
       "title": "The Odyssey",
       "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
       "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sdkZMG32J5aG0us2zoLbnD7Kd26.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c7btGYblBnfAaw713WvFM0Kimc7.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 5010,
+      "votes": 5028,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1300968,
-      "mediaType": "movie",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/ffJaYMtB6v1TrvkyhCOqwqCKm0o.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "8.8",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
       "id": 1003596,
@@ -40,16 +28,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1185344,
+      "id": 1300968,
       "mediaType": "movie",
-      "title": "The Beast",
-      "overview": "When a militia of unidentified hostiles coordinates a coup against the United States, the president must fight back by utilizing the highly classified offensive capabilities of his armored limousine, nicknamed The Beast.",
-      "poster": "https://image.tmdb.org/t/p/w500/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/v5Wb9NoE0s1mGmC5wVeQR1OK22V.jpg",
-      "releaseDate": "2026-10-08",
-      "rating": "5.3",
-      "votes": 38,
-      "url": "https://www.themoviedb.org/movie/1185344"
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "8.6",
+      "votes": 18,
+      "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
       "id": 1400837,
@@ -60,8 +48,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/smZ8BT4Vzw4iCEppTLCnN8jNYtn.jpg",
       "releaseDate": "2026-10-07",
       "rating": "6.4",
-      "votes": 472,
+      "votes": 485,
       "url": "https://www.themoviedb.org/movie/1400837"
+    },
+    {
+      "id": 1185344,
+      "mediaType": "movie",
+      "title": "The Beast",
+      "overview": "When a militia of unidentified hostiles coordinates a coup against the United States, the president must fight back by utilizing the highly classified offensive capabilities of his armored limousine, nicknamed The Beast.",
+      "poster": "https://image.tmdb.org/t/p/w500/ocg5JfJP19fodcv5uQUApkmZMdI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v5Wb9NoE0s1mGmC5wVeQR1OK22V.jpg",
+      "releaseDate": "2026-10-08",
+      "rating": "5.3",
+      "votes": 39,
+      "url": "https://www.themoviedb.org/movie/1185344"
     },
     {
       "id": 1567605,
@@ -71,33 +71,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fdOVxyNNL95SuI8BGaN6vudEuYX.jpg",
       "releaseDate": "2026-11-11",
-      "rating": "7.7",
-      "votes": 88,
+      "rating": "7.6",
+      "votes": 104,
       "url": "https://www.themoviedb.org/movie/1567605"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "8.5",
-      "votes": 6928,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "7.7",
-      "votes": 242,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1423191,
@@ -108,8 +84,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/8R79AZjX1Bt4219Ub3CrRMsPQsW.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.5",
-      "votes": 2298,
+      "votes": 2317,
       "url": "https://www.themoviedb.org/movie/1423191"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "7.7",
+      "votes": 250,
+      "url": "https://www.themoviedb.org/movie/1381071"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "8.5",
+      "votes": 6938,
+      "url": "https://www.themoviedb.org/movie/969681"
     },
     {
       "id": 1263337,
@@ -120,7 +120,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yE766yhgg98tKwTKd8CyNvAtmn6.jpg",
       "releaseDate": "2026-09-19",
       "rating": "7.7",
-      "votes": 945,
+      "votes": 963,
       "url": "https://www.themoviedb.org/movie/1263337"
     }
   ],
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uVOcz7JBOuZxsx9IYpx6Ah174LX.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4091,
+      "votes": 4099,
       "url": "https://www.themoviedb.org/tv/84773"
     },
     {
@@ -146,7 +146,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.3",
-      "votes": 518,
+      "votes": 527,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -158,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
       "releaseDate": "2026-11-11",
       "rating": "7.8",
-      "votes": 72,
+      "votes": 76,
       "url": "https://www.themoviedb.org/tv/291507"
     },
     {
@@ -169,8 +169,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/tjy25xpiFeo2gahl7N0hoxbRtG7.jpg",
       "releaseDate": "2026-11-12",
-      "rating": "6.3",
-      "votes": 30,
+      "rating": "6.4",
+      "votes": 32,
       "url": "https://www.themoviedb.org/tv/254630"
     },
     {
@@ -182,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/taqVKvEmMlI2hs2g364fXWzv0ia.jpg",
       "releaseDate": "2003-01-26",
       "rating": "5.3",
-      "votes": 227,
+      "votes": 228,
       "url": "https://www.themoviedb.org/tv/1489"
     },
     {
@@ -194,7 +194,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.7",
-      "votes": 1260,
+      "votes": 1265,
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
@@ -206,8 +206,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
       "releaseDate": "2025-07-13",
       "rating": "8.5",
-      "votes": 763,
+      "votes": 765,
       "url": "https://www.themoviedb.org/tv/259909"
+    },
+    {
+      "id": 293610,
+      "mediaType": "tv",
+      "title": "Doctor X: Mafia in White",
+      "overview": "In a hospital dominated by ego and corruption, an enigmatic but brilliant surgeon arrives — taking on seemingly impossible cases amid fierce opposition.",
+      "poster": "https://image.tmdb.org/t/p/w500/nDDVzQfv95PGwj9nV2fJvUrkcvU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/mDYIV71RL3mkaW8IfSGNthuVB7l.jpg",
+      "releaseDate": "2026-10-09",
+      "rating": "8.6",
+      "votes": 65,
+      "url": "https://www.themoviedb.org/tv/293610"
     },
     {
       "id": 249565,
@@ -218,20 +230,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/nDU6mUk4wVU1EkDkDvcLvT2UWdy.jpg",
       "releaseDate": "2026-11-12",
       "rating": "7.9",
-      "votes": 20,
+      "votes": 21,
       "url": "https://www.themoviedb.org/tv/249565"
-    },
-    {
-      "id": 307853,
-      "mediaType": "tv",
-      "title": "Sunshine through the Rain",
-      "overview": "Two struggling biology students, initially rivals for a scholarship, find mutual support and solace, transforming their relationship from competition to companionship.",
-      "poster": "https://image.tmdb.org/t/p/w500/pG00jI2UCm0Q6U9SDonIlvy3M3i.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/9LtN1ac91JAqXMke8CAJ6BiBSLS.jpg",
-      "releaseDate": "2026-11-06",
-      "rating": "9.6",
-      "votes": 10,
-      "url": "https://www.themoviedb.org/tv/307853"
     },
     {
       "id": 279246,
@@ -241,12 +241,24 @@
       "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
       "releaseDate": "2026-11-03",
-      "rating": "8.6",
-      "votes": 96,
+      "rating": "8.7",
+      "votes": 102,
       "url": "https://www.themoviedb.org/tv/279246"
     }
   ],
   "upcomingMovies": [
+    {
+      "id": 1003596,
+      "mediaType": "movie",
+      "title": "Avengers: Doomsday",
+      "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "poster": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
+      "releaseDate": "2026-12-16",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1003596"
+    },
     {
       "id": 1562642,
       "mediaType": "movie",
@@ -256,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
       "rating": "9.0",
-      "votes": 24,
+      "votes": 25,
       "url": "https://www.themoviedb.org/movie/1562642"
     },
     {
@@ -268,32 +280,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
       "rating": "6.8",
-      "votes": 285,
+      "votes": 287,
       "url": "https://www.themoviedb.org/movie/1514026"
-    },
-    {
-      "id": 1300968,
-      "mediaType": "movie",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/ffJaYMtB6v1TrvkyhCOqwqCKm0o.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "8.8",
-      "votes": 16,
-      "url": "https://www.themoviedb.org/movie/1300968"
-    },
-    {
-      "id": 1765072,
-      "mediaType": "movie",
-      "title": "You Can See Everything",
-      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-      "poster": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nhIL3O4W9h5V5JbNQm7yjoDk3So.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "8.8",
-      "votes": 125,
-      "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
       "id": 1117898,
@@ -308,28 +296,16 @@
       "url": "https://www.themoviedb.org/movie/1117898"
     },
     {
-      "id": 1437396,
+      "id": 1284046,
       "mediaType": "movie",
-      "title": "Your Mother Your Mother Your Mother",
-      "overview": "Latif, a devoutly religious hitman, struggles to balance work, faith and fatherhood. When his wife dies, he embarks on a desperate journey across Houston to protect his children, confronting the forces closing in around him – and the beliefs threatening to unravel within.",
-      "poster": "https://image.tmdb.org/t/p/w500/4KaPZSKnInnArErTTgy9Oy14leR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/45Mbs6dmn2W0hvuyxXPDkKREHpP.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "6.6",
-      "votes": 77,
-      "url": "https://www.themoviedb.org/movie/1437396"
-    },
-    {
-      "id": 1084409,
-      "mediaType": "movie",
-      "title": "A Talent for Murder",
-      "overview": "A young man travels from New York to Switzerland to try to persuade acclaimed thriller writer Patricia Highsmith to write one final installment of her Tom Ripley series, with his efforts gradually turning more sinister.",
-      "poster": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/mfpjOQ6hsvMUIFyzWglwerbpgFS.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.0",
-      "votes": 12,
-      "url": "https://www.themoviedb.org/movie/1084409"
+      "title": "Onslaught",
+      "overview": "When a rogue squad of genetically engineered super soldiers break loose in the desert, a badass Army sniper must unleash hell to protect her young daughter.",
+      "poster": "https://image.tmdb.org/t/p/w500/eAs7G3yFaULpfwfVdGvPo5HmFJS.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/pmPXXniQlb4EdYY0gVZO90rf54F.jpg",
+      "releaseDate": "2026-12-11",
+      "rating": "5.6",
+      "votes": 151,
+      "url": "https://www.themoviedb.org/movie/1284046"
     },
     {
       "id": 1538497,
@@ -350,7 +326,7 @@
       "overview": "Henry, son of Greg and Pam Focker, aims to marry Olivia, a strong-willed former hostage negotiator who appears to be his complete mismatch. To Greg's shock, stepdad Jack Byrnes takes a liking to Olivia, and her unprecedented rise into his Circle of Trust sparks chaos in the family before Jack's 80th birthday party.",
       "poster": "https://image.tmdb.org/t/p/w500/iHJhSfqFpDMOyeMc6h6BOeHxse2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/6IfsmHoVWwgJwzxA9DLim2XZbSn.jpg",
-      "releaseDate": "2026-11-22",
+      "releaseDate": "2026-11-25",
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1400336"
@@ -360,12 +336,36 @@
       "mediaType": "movie",
       "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
       "overview": "Eight years after the events of Once Upon a Time in... Hollywood, Cliff Booth returns to a changing Los Angeles. Now working as a fixer in the shadows of the Hollywood studio system, Cliff finds himself entangled in a dangerous web of secrets, crimes and betrayals that will test everything he knows about loyalty and survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/yQggulnRAvssNRGpxOMf8CfVim6.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/5jO6rhfethzH7xdWl6KCOxCNCzQ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/qqPspJFy0XrEoVTKZdp0Em7kej6.jpg",
       "releaseDate": "2026-11-25",
       "rating": "0.0",
       "votes": 0,
       "url": "https://www.themoviedb.org/movie/1457866"
+    },
+    {
+      "id": 1437981,
+      "mediaType": "movie",
+      "title": "Coward",
+      "overview": "Surrounded by brutality but bound by a tender intimacy, two World War I soldiers find a fragile sanctuary of love and art amid the shadows of the Belgian trenches.",
+      "poster": "https://image.tmdb.org/t/p/w500/l05jDisMYVVpyAH3zgx1bUqPocZ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/AmnN2nLZaY9GPHNko5H7M5mqsMG.jpg",
+      "releaseDate": "2026-12-09",
+      "rating": "7.5",
+      "votes": 17,
+      "url": "https://www.themoviedb.org/movie/1437981"
+    },
+    {
+      "id": 1078446,
+      "mediaType": "movie",
+      "title": "Violent Night 2",
+      "overview": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
+      "poster": "https://image.tmdb.org/t/p/w500/7HPvgItDw9NgW3iy4tFRRuGNbuN.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/78dChJs7doULSEhIiOvGUcXQRGU.jpg",
+      "releaseDate": "2026-12-04",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1078446"
     }
   ],
   "nowPlayingMovies": [
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/smZ8BT4Vzw4iCEppTLCnN8jNYtn.jpg",
       "releaseDate": "2026-10-09",
       "rating": "6.4",
-      "votes": 472,
+      "votes": 481,
       "url": "https://www.themoviedb.org/movie/1400837"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
       "rating": "7.7",
-      "votes": 242,
+      "votes": 249,
       "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
@@ -401,8 +401,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/fdOVxyNNL95SuI8BGaN6vudEuYX.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.7",
-      "votes": 88,
+      "rating": "7.6",
+      "votes": 101,
       "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
@@ -434,11 +434,11 @@
       "mediaType": "movie",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/ffJaYMtB6v1TrvkyhCOqwqCKm0o.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
-      "rating": "8.8",
-      "votes": 16,
+      "rating": "8.7",
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -446,11 +446,11 @@
       "mediaType": "movie",
       "title": "Street Fighter",
       "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/8nP4lF51Ea861YfHEEqhZBLYv3e.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/3BBjkQmdGacKYZtpmK2vIfuDmON.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/9vNW8ysMKIbefbEQOFEZIKpMqwZ.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.3",
-      "votes": 246,
+      "votes": 247,
       "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
@@ -473,8 +473,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
       "releaseDate": "2026-10-04",
-      "rating": "8.0",
-      "votes": 265,
+      "rating": "8.1",
+      "votes": 267,
       "url": "https://www.themoviedb.org/movie/1465063"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u38hNQbxvIicUdfrHpqa9puBnA9.jpg",
       "releaseDate": "2026-11-13",
       "rating": "6.1",
-      "votes": 35,
+      "votes": 37,
       "url": "https://www.themoviedb.org/movie/1437511"
     }
   ],
