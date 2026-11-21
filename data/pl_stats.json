@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T14:43:47.460335+00:00",
+  "updated": "2026-11-21T23:24:41.962935+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -48,6 +48,17 @@
       "penalties": 0
     },
     {
+      "name": "Evanilson",
+      "firstName": "",
+      "lastName": "Evanilson",
+      "nationality": "Brazil",
+      "team": "Bournemouth",
+      "teamBadge": "https://crests.football-data.org/bournemouth.png",
+      "goals": 6,
+      "assists": 4,
+      "penalties": 0
+    },
+    {
       "name": "Marcus Tavernier",
       "firstName": "Marcus",
       "lastName": "Tavernier",
@@ -55,7 +66,7 @@
       "team": "Bournemouth",
       "teamBadge": "https://crests.football-data.org/bournemouth.png",
       "goals": 5,
-      "assists": 0,
+      "assists": 1,
       "penalties": 0
     },
     {
@@ -77,7 +88,7 @@
       "team": "Chelsea",
       "teamBadge": "https://crests.football-data.org/61.png",
       "goals": 5,
-      "assists": 1,
+      "assists": 2,
       "penalties": 0
     },
     {
@@ -89,17 +100,6 @@
       "teamBadge": "https://crests.football-data.org/65.png",
       "goals": 5,
       "assists": 2,
-      "penalties": 0
-    },
-    {
-      "name": "Evanilson",
-      "firstName": "",
-      "lastName": "Evanilson",
-      "nationality": "Brazil",
-      "team": "Bournemouth",
-      "teamBadge": "https://crests.football-data.org/bournemouth.png",
-      "goals": 5,
-      "assists": 4,
       "penalties": 0
     },
     {
@@ -130,28 +130,28 @@
     {
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
-      "goalsFor": 19,
-      "played": 10
+      "goalsFor": 20,
+      "played": 11
     },
     {
       "name": "Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
-      "goalsFor": 16,
-      "played": 10
+      "goalsFor": 18,
+      "played": 11
     },
     {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalsFor": 16,
-      "played": 10
+      "name": "Arsenal",
+      "badge": "https://crests.football-data.org/57.png",
+      "goalsFor": 17,
+      "played": 11
     }
   ],
   "bestDefences": [
     {
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
-      "goalsAgainst": 5,
-      "played": 10
+      "goalsAgainst": 7,
+      "played": 11
     },
     {
       "name": "Brighton",
@@ -162,8 +162,8 @@
     {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
-      "goalsAgainst": 8,
-      "played": 10
+      "goalsAgainst": 9,
+      "played": 11
     },
     {
       "name": "Liverpool",
@@ -189,7 +189,7 @@
       "name": "Arsenal",
       "badge": "https://crests.football-data.org/57.png",
       "goalDifference": 10,
-      "played": 10
+      "played": 11
     },
     {
       "name": "Manchester City",
@@ -198,20 +198,20 @@
       "played": 11
     },
     {
+      "name": "Leeds United",
+      "badge": "https://crests.football-data.org/341.png",
+      "goalDifference": 5,
+      "played": 11
+    },
+    {
       "name": "Brentford",
       "badge": "https://crests.football-data.org/402.png",
       "goalDifference": 5,
       "played": 10
-    },
-    {
-      "name": "Liverpool",
-      "badge": "https://crests.football-data.org/64.png",
-      "goalDifference": 4,
-      "played": 10
     }
   ],
   "manUnitedSummary": {
-    "position": 18,
+    "position": 19,
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
