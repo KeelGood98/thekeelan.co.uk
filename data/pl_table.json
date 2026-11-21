@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T23:59:56.159177+00:00",
+  "updated": "2026-11-21T14:43:43.680423+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -35,14 +35,14 @@
       "name": "Manchester City",
       "fullName": "Manchester City FC",
       "badge": "https://crests.football-data.org/65.png",
-      "played": 10,
+      "played": 11,
       "won": 7,
-      "drawn": 0,
+      "drawn": 1,
       "lost": 3,
-      "goalsFor": 21,
-      "goalsAgainst": 13,
+      "goalsFor": 22,
+      "goalsAgainst": 14,
       "goalDifference": 8,
-      "points": 21
+      "points": 22
     },
     {
       "position": 4,
@@ -186,6 +186,20 @@
     },
     {
       "position": 14,
+      "name": "Fulham",
+      "fullName": "Fulham FC",
+      "badge": "https://crests.football-data.org/63.png",
+      "played": 11,
+      "won": 2,
+      "drawn": 5,
+      "lost": 4,
+      "goalsFor": 11,
+      "goalsAgainst": 13,
+      "goalDifference": -2,
+      "points": 11
+    },
+    {
+      "position": 15,
       "name": "Ipswich Town",
       "fullName": "Ipswich Town FC",
       "badge": "https://crests.football-data.org/349.png",
@@ -197,20 +211,6 @@
       "goalsAgainst": 20,
       "goalDifference": -5,
       "points": 11
-    },
-    {
-      "position": 15,
-      "name": "Fulham",
-      "fullName": "Fulham FC",
-      "badge": "https://crests.football-data.org/63.png",
-      "played": 10,
-      "won": 2,
-      "drawn": 4,
-      "lost": 4,
-      "goalsFor": 10,
-      "goalsAgainst": 12,
-      "goalDifference": -2,
-      "points": 10
     },
     {
       "position": 16,
