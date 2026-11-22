@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T14:39:44.716522+00:00",
+  "updated": "2026-11-22T23:38:16.421663+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -23,12 +23,12 @@
       "badge": "https://crests.football-data.org/397.png",
       "played": 11,
       "won": 7,
-      "drawn": 2,
-      "lost": 2,
+      "drawn": 1,
+      "lost": 3,
       "goalsFor": 26,
-      "goalsAgainst": 7,
-      "goalDifference": 19,
-      "points": 23
+      "goalsAgainst": 9,
+      "goalDifference": 17,
+      "points": 22
     },
     {
       "position": 3,
@@ -46,6 +46,20 @@
     },
     {
       "position": 4,
+      "name": "Liverpool",
+      "fullName": "Liverpool FC",
+      "badge": "https://crests.football-data.org/64.png",
+      "played": 11,
+      "won": 6,
+      "drawn": 3,
+      "lost": 2,
+      "goalsFor": 18,
+      "goalsAgainst": 10,
+      "goalDifference": 8,
+      "points": 21
+    },
+    {
+      "position": 5,
       "name": "Bournemouth",
       "fullName": "AFC Bournemouth",
       "badge": "https://crests.football-data.org/bournemouth.png",
@@ -55,20 +69,6 @@
       "lost": 3,
       "goalsFor": 18,
       "goalsAgainst": 14,
-      "goalDifference": 4,
-      "points": 18
-    },
-    {
-      "position": 5,
-      "name": "Liverpool",
-      "fullName": "Liverpool FC",
-      "badge": "https://crests.football-data.org/64.png",
-      "played": 10,
-      "won": 5,
-      "drawn": 3,
-      "lost": 2,
-      "goalsFor": 14,
-      "goalsAgainst": 10,
       "goalDifference": 4,
       "points": 18
     },
@@ -144,6 +144,20 @@
     },
     {
       "position": 11,
+      "name": "Hull City",
+      "fullName": "Hull City AFC",
+      "badge": "https://crests.football-data.org/322.png",
+      "played": 11,
+      "won": 3,
+      "drawn": 5,
+      "lost": 3,
+      "goalsFor": 13,
+      "goalsAgainst": 11,
+      "goalDifference": 2,
+      "points": 14
+    },
+    {
+      "position": 12,
       "name": "Aston Villa",
       "fullName": "Aston Villa FC",
       "badge": "https://crests.football-data.org/58.png",
@@ -157,7 +171,7 @@
       "points": 14
     },
     {
-      "position": 12,
+      "position": 13,
       "name": "Newcastle",
       "fullName": "Newcastle United FC",
       "badge": "https://crests.football-data.org/67.png",
@@ -169,20 +183,6 @@
       "goalsAgainst": 18,
       "goalDifference": -3,
       "points": 13
-    },
-    {
-      "position": 13,
-      "name": "Hull City",
-      "fullName": "Hull City AFC",
-      "badge": "https://crests.football-data.org/322.png",
-      "played": 11,
-      "won": 2,
-      "drawn": 6,
-      "lost": 3,
-      "goalsFor": 11,
-      "goalsAgainst": 11,
-      "goalDifference": 0,
-      "points": 12
     },
     {
       "position": 14,
@@ -259,13 +259,13 @@
       "name": "Manchester United",
       "fullName": "Manchester United FC",
       "badge": "https://crests.football-data.org/66.png",
-      "played": 10,
+      "played": 11,
       "won": 1,
       "drawn": 5,
-      "lost": 4,
+      "lost": 5,
       "goalsFor": 14,
-      "goalsAgainst": 19,
-      "goalDifference": -5,
+      "goalsAgainst": 23,
+      "goalDifference": -9,
       "points": 8
     },
     {

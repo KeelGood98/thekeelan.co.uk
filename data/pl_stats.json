@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T14:39:47.384524+00:00",
+  "updated": "2026-11-22T23:38:18.425532+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -134,15 +134,15 @@
       "played": 11
     },
     {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
       "goalsFor": 18,
       "played": 11
     },
     {
-      "name": "Arsenal",
-      "badge": "https://crests.football-data.org/57.png",
-      "goalsFor": 17,
+      "name": "Bournemouth",
+      "badge": "https://crests.football-data.org/bournemouth.png",
+      "goalsFor": 18,
       "played": 11
     }
   ],
@@ -156,7 +156,7 @@
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalsAgainst": 7,
+      "goalsAgainst": 9,
       "played": 11
     },
     {
@@ -169,7 +169,7 @@
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
       "goalsAgainst": 10,
-      "played": 10
+      "played": 11
     },
     {
       "name": "Everton",
@@ -182,7 +182,7 @@
     {
       "name": "Brighton",
       "badge": "https://crests.football-data.org/397.png",
-      "goalDifference": 19,
+      "goalDifference": 17,
       "played": 11
     },
     {
@@ -198,16 +198,16 @@
       "played": 11
     },
     {
+      "name": "Liverpool",
+      "badge": "https://crests.football-data.org/64.png",
+      "goalDifference": 8,
+      "played": 11
+    },
+    {
       "name": "Leeds United",
       "badge": "https://crests.football-data.org/341.png",
       "goalDifference": 5,
       "played": 11
-    },
-    {
-      "name": "Brentford",
-      "badge": "https://crests.football-data.org/402.png",
-      "goalDifference": 5,
-      "played": 10
     }
   ],
   "manUnitedSummary": {
@@ -215,13 +215,13 @@
     "name": "Manchester United",
     "fullName": "Manchester United FC",
     "badge": "https://crests.football-data.org/66.png",
-    "played": 10,
+    "played": 11,
     "won": 1,
     "drawn": 5,
-    "lost": 4,
+    "lost": 5,
     "goalsFor": 14,
-    "goalsAgainst": 19,
-    "goalDifference": -5,
+    "goalsAgainst": 23,
+    "goalDifference": -9,
     "points": 8
   }
 }
