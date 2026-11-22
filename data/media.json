@@ -1,20 +1,8 @@
 {
-  "updated": "2026-11-22T00:39:40.695487+00:00",
+  "updated": "2026-11-22T16:37:25.225215+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1300968,
-      "mediaType": "movie",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "overview": "Return to the world of Panem 24 years before Katniss Everdeen volunteers in her sister's place, commencing on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "7.6",
-      "votes": 168,
-      "url": "https://www.themoviedb.org/movie/1300968"
-    },
     {
       "id": 1368337,
       "mediaType": "movie",
@@ -24,15 +12,27 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dZI4Ek4qc2Fib2G1zFkGhKKuc6j.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 5282,
+      "votes": 5320,
       "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "id": 1300968,
+      "mediaType": "movie",
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "overview": "Return to the world of Panem 24 years before Katniss Everdeen volunteers in her sister's place, commencing on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+      "poster": "https://image.tmdb.org/t/p/w500/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "7.7",
+      "votes": 208,
+      "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
       "id": 1003596,
       "mediaType": "movie",
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
@@ -40,16 +40,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1595124,
+      "id": 1551025,
       "mediaType": "movie",
-      "title": "Steps",
-      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
-      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "6.3",
-      "votes": 33,
-      "url": "https://www.themoviedb.org/movie/1595124"
+      "title": "Guarding Stars",
+      "overview": "When a no-nonsense bodyguard is assigned to protect a charming action star over the holidays, sparks fly, secrets unravel, and Christmas gets a whole lot more complicated.",
+      "poster": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qHvap0vpfTBIbv7cnR0OyBRqQHG.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "7.0",
+      "votes": 81,
+      "url": "https://www.themoviedb.org/movie/1551025"
     },
     {
       "id": 1185344,
@@ -60,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r5RYEmZzm1Z6imS7XfiKPnMlyc7.jpg",
       "releaseDate": "2026-10-08",
       "rating": "4.9",
-      "votes": 53,
+      "votes": 59,
       "url": "https://www.themoviedb.org/movie/1185344"
     },
     {
@@ -71,21 +71,45 @@
       "poster": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/lRsapglJZIyMfGl8oQyNASlZqDC.jpg",
       "releaseDate": "2026-11-18",
-      "rating": "7.0",
-      "votes": 38,
+      "rating": "6.9",
+      "votes": 43,
       "url": "https://www.themoviedb.org/movie/1131943"
     },
     {
-      "id": 1551025,
+      "id": 969681,
       "mediaType": "movie",
-      "title": "Guarding Stars",
-      "overview": "When a no-nonsense bodyguard is assigned to protect a charming action star over the holidays, sparks fly, secrets unravel, and Christmas gets a whole lot more complicated.",
-      "poster": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qHvap0vpfTBIbv7cnR0OyBRqQHG.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "6.9",
-      "votes": 69,
-      "url": "https://www.themoviedb.org/movie/1551025"
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/subj7knTn4DeS6KS7qI66EQKe9i.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "8.5",
+      "votes": 7043,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1595124,
+      "mediaType": "movie",
+      "title": "Steps",
+      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
+      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "6.8",
+      "votes": 45,
+      "url": "https://www.themoviedb.org/movie/1595124"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "7.7",
+      "votes": 283,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1423191,
@@ -96,47 +120,11 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
       "releaseDate": "2026-09-16",
       "rating": "7.5",
-      "votes": 2450,
+      "votes": 2468,
       "url": "https://www.themoviedb.org/movie/1423191"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "8.5",
-      "votes": 7031,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1568060,
-      "mediaType": "movie",
-      "title": "Perfect Liars",
-      "overview": "Jude Derry arrives at the exclusive Tagus university with a hidden mission: to infiltrate the circle of the Cash brothers and uncover the truth about her brother's death. What begins as revenge turns into a dangerous triangle of seduction, forbidden attraction and lies, drawing her toward a truth she may not be ready to face.",
-      "poster": "https://image.tmdb.org/t/p/w500/kej8EipJOvfHUHFg5wtT7gQ6bNb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/OiXyM1w9NxdV450GpV92B0YPMj.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.1",
-      "votes": 17,
-      "url": "https://www.themoviedb.org/movie/1568060"
     }
   ],
   "trendingTv": [
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.7",
-      "votes": 1287,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
     {
       "id": 84773,
       "mediaType": "tv",
@@ -146,19 +134,43 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/i1phX1JpaqSnHBBGta6LBFYVCZq.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4126,
+      "votes": 4129,
       "url": "https://www.themoviedb.org/tv/84773"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.7",
+      "votes": 1289,
+      "url": "https://www.themoviedb.org/tv/247718"
+    },
+    {
+      "id": 300523,
+      "mediaType": "tv",
+      "title": "The Blue Road",
+      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
+      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "7.5",
+      "votes": 10,
+      "url": "https://www.themoviedb.org/tv/300523"
     },
     {
       "id": 291507,
       "mediaType": "tv",
-      "title": "The Body",
-      "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
+      "title": "Ticket+1-888-805-5591 or US +1-888-805-5591",
+      "overview": "Guide to Name Update Rules, Ticket+1-888-805-5591 or US +1-888-805-5591 Modification Procedures, and Spelling+1-888-805-5591 or US +1-888-805-5591 Error Corrections In accordance with United Airlines name change policy(US), you can call +1-888-805-5591 or US +18-888-055-591 [UK] (US) or +1-888-805-5591 or +18-888-055-591 [UK] (USA) (NoWait) with your booking number available. United Airlines",
       "poster": "https://image.tmdb.org/t/p/w500/195kCuy2RqGaEAZDDpGTx7gBUBZ.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
       "releaseDate": "2026-11-11",
       "rating": "8.0",
-      "votes": 112,
+      "votes": 118,
       "url": "https://www.themoviedb.org/tv/291507"
     },
     {
@@ -170,7 +182,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.2",
-      "votes": 559,
+      "votes": 561,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -182,20 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
       "releaseDate": "2025-07-13",
       "rating": "8.5",
-      "votes": 774,
+      "votes": 775,
       "url": "https://www.themoviedb.org/tv/259909"
     },
     {
-      "id": 300523,
+      "id": 103540,
       "mediaType": "tv",
-      "title": "The Blue Road",
-      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
-      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "6.7",
-      "votes": 7,
-      "url": "https://www.themoviedb.org/tv/300523"
+      "title": "Percy Jackson and the Olympians",
+      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
+      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
+      "releaseDate": "2023-12-19",
+      "rating": "7.3",
+      "votes": 883,
+      "url": "https://www.themoviedb.org/tv/103540"
     },
     {
       "id": 254630,
@@ -210,18 +222,6 @@
       "url": "https://www.themoviedb.org/tv/254630"
     },
     {
-      "id": 103540,
-      "mediaType": "tv",
-      "title": "Percy Jackson and the Olympians",
-      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
-      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
-      "releaseDate": "2023-12-19",
-      "rating": "7.3",
-      "votes": 881,
-      "url": "https://www.themoviedb.org/tv/103540"
-    },
-    {
       "id": 117488,
       "mediaType": "tv",
       "title": "Yellowjackets",
@@ -230,20 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
       "releaseDate": "2021-11-14",
       "rating": "7.4",
-      "votes": 1083,
+      "votes": 1085,
       "url": "https://www.themoviedb.org/tv/117488"
     },
     {
-      "id": 308007,
+      "id": 85077,
       "mediaType": "tv",
-      "title": "The Altruists",
-      "overview": "The story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye - before they were accused of stealing $8 billion and became Gen Z's own Bonnie & Clyde.",
-      "poster": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/m8JTMj7jDMJFZAPP1ASmSi4gMWi.jpg",
-      "releaseDate": "2026-11-19",
-      "rating": "6.6",
-      "votes": 10,
-      "url": "https://www.themoviedb.org/tv/308007"
+      "title": "The Chosen",
+      "overview": "The life of Christ through the eyes of those who encountered him.",
+      "poster": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2YQFwn9aF7huTFHxn9lFTAn14F.jpg",
+      "releaseDate": "2019-04-21",
+      "rating": "8.9",
+      "votes": 1081,
+      "url": "https://www.themoviedb.org/tv/85077"
     }
   ],
   "upcomingMovies": [
@@ -252,7 +252,7 @@
       "mediaType": "movie",
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
@@ -268,7 +268,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
       "rating": "9.0",
-      "votes": 34,
+      "votes": 35,
       "url": "https://www.themoviedb.org/movie/1562642"
     },
     {
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
       "rating": "6.8",
-      "votes": 297,
+      "votes": 299,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
@@ -291,8 +291,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/56Bepb58k71UUTVwKN1SxHmfzPK.jpg",
       "releaseDate": "2026-12-04",
-      "rating": "6.8",
-      "votes": 30,
+      "rating": "6.9",
+      "votes": 32,
       "url": "https://www.themoviedb.org/movie/1117898"
     },
     {
@@ -311,9 +311,9 @@
       "id": 1400336,
       "mediaType": "movie",
       "title": "Focker In-Law",
-      "overview": "Henry, son of Greg and Pam Focker, aims to marry Olivia, a strong-willed former hostage negotiator who appears to be his complete mismatch. To Greg's shock, stepdad Jack Byrnes takes a liking to Olivia, and her unprecedented rise into his Circle of Trust sparks chaos in the family before Jack's 80th birthday party.",
+      "overview": "Henry, son of Greg and Pam Focker, aims to marry Olivia, a strong-willed former hostage negotiator who appears to be his complete mismatch. To Greg's shock, father-in-law Jack Byrnes takes a liking to Olivia, and her unprecedented rise into his Circle of Trust sparks chaos in the family before Jack's 80th birthday party.",
       "poster": "https://image.tmdb.org/t/p/w500/iHJhSfqFpDMOyeMc6h6BOeHxse2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/1zcCFBcqEQtAtXDh6EoBPy16RLR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
       "releaseDate": "2026-11-25",
       "rating": "7.0",
       "votes": 2,
@@ -349,7 +349,7 @@
       "title": "Coward",
       "overview": "Surrounded by brutality but bound by a tender intimacy, two World War I soldiers find a fragile sanctuary of love and art amid the shadows of the Belgian trenches.",
       "poster": "https://image.tmdb.org/t/p/w500/l05jDisMYVVpyAH3zgx1bUqPocZ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/AmnN2nLZaY9GPHNko5H7M5mqsMG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zrgjYP1YEZUJshVzsIhT63GAoMJ.jpg",
       "releaseDate": "2026-12-09",
       "rating": "7.3",
       "votes": 23,
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.6",
-      "votes": 149,
+      "votes": 190,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.4",
-      "votes": 64,
+      "votes": 70,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -402,20 +402,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
       "rating": "7.7",
-      "votes": 276,
+      "votes": 283,
       "url": "https://www.themoviedb.org/movie/1381071"
-    },
-    {
-      "id": 1567605,
-      "mediaType": "movie",
-      "title": "Ebenezer",
-      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
-      "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
-      "releaseDate": "2026-11-13",
-      "rating": "7.5",
-      "votes": 141,
-      "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
       "id": 1422041,
@@ -426,20 +414,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "7.9",
-      "votes": 247,
+      "votes": 250,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
-      "id": 791523,
+      "id": 1567605,
       "mediaType": "movie",
-      "title": "Wildwood",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "8.4",
-      "votes": 308,
-      "url": "https://www.themoviedb.org/movie/791523"
+      "title": "Ebenezer",
+      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+      "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
+      "releaseDate": "2026-11-13",
+      "rating": "7.5",
+      "votes": 151,
+      "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
       "id": 1153576,
@@ -450,8 +438,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
       "releaseDate": "2026-10-16",
       "rating": "6.2",
-      "votes": 256,
+      "votes": 258,
       "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
+      "id": 791523,
+      "mediaType": "movie",
+      "title": "Wildwood",
+      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
+      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
+      "releaseDate": "2026-10-23",
+      "rating": "8.5",
+      "votes": 313,
+      "url": "https://www.themoviedb.org/movie/791523"
     },
     {
       "id": 1765072,
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.8",
-      "votes": 144,
+      "votes": 147,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -474,20 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/f1TVhqJJdxMvUsUDuKHS0ekgYkk.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 466,
+      "votes": 468,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
-      "id": 1437511,
+      "id": 1465063,
       "mediaType": "movie",
-      "title": "How to Rob a Bank",
-      "overview": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
-      "poster": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/u38hNQbxvIicUdfrHpqa9puBnA9.jpg",
-      "releaseDate": "2026-11-13",
-      "rating": "6.2",
-      "votes": 49,
-      "url": "https://www.themoviedb.org/movie/1437511"
+      "title": "Forgotten Island",
+      "overview": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa must race to find a way to leave the island before they forget each other forever.",
+      "poster": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/2o9FzuBzCqrDTdlHRuEVnGD2d5h.jpg",
+      "releaseDate": "2026-10-04",
+      "rating": "8.1",
+      "votes": 284,
+      "url": "https://www.themoviedb.org/movie/1465063"
     }
   ],
   "links": [
