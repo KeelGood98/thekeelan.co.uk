@@ -1,20 +1,8 @@
 {
-  "updated": "2026-11-21T16:22:06.355162+00:00",
+  "updated": "2026-11-22T00:39:40.695487+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
-    {
-      "id": 1368337,
-      "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dZI4Ek4qc2Fib2G1zFkGhKKuc6j.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 5248,
-      "url": "https://www.themoviedb.org/movie/1368337"
-    },
     {
       "id": 1300968,
       "mediaType": "movie",
@@ -24,15 +12,27 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.6",
-      "votes": 141,
+      "votes": 168,
       "url": "https://www.themoviedb.org/movie/1300968"
+    },
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dZI4Ek4qc2Fib2G1zFkGhKKuc6j.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 5282,
+      "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
       "id": 1003596,
       "mediaType": "movie",
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/zHTxblqPcqRpA93ex2Hj0RdpVBs.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
@@ -47,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "6.4",
-      "votes": 23,
+      "rating": "6.3",
+      "votes": 33,
       "url": "https://www.themoviedb.org/movie/1595124"
     },
     {
@@ -60,8 +60,44 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r5RYEmZzm1Z6imS7XfiKPnMlyc7.jpg",
       "releaseDate": "2026-10-08",
       "rating": "4.9",
-      "votes": 52,
+      "votes": 53,
       "url": "https://www.themoviedb.org/movie/1185344"
+    },
+    {
+      "id": 1131943,
+      "mediaType": "movie",
+      "title": "Madden",
+      "overview": "Chronicles John Madden's incredible journey alongside best friend and true original Al Davis—from a Super Bowl-winning partnership with the Raiders, to becoming football's most recognizable voice, to building the worldwide Madden NFL video game.",
+      "poster": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/lRsapglJZIyMfGl8oQyNASlZqDC.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "7.0",
+      "votes": 38,
+      "url": "https://www.themoviedb.org/movie/1131943"
+    },
+    {
+      "id": 1551025,
+      "mediaType": "movie",
+      "title": "Guarding Stars",
+      "overview": "When a no-nonsense bodyguard is assigned to protect a charming action star over the holidays, sparks fly, secrets unravel, and Christmas gets a whole lot more complicated.",
+      "poster": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qHvap0vpfTBIbv7cnR0OyBRqQHG.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "6.9",
+      "votes": 69,
+      "url": "https://www.themoviedb.org/movie/1551025"
+    },
+    {
+      "id": 1423191,
+      "mediaType": "movie",
+      "title": "Resident Evil",
+      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3icyRAqgakNcQn6aDVz9libFmBA.jpg",
+      "releaseDate": "2026-09-16",
+      "rating": "7.5",
+      "votes": 2450,
+      "url": "https://www.themoviedb.org/movie/1423191"
     },
     {
       "id": 969681,
@@ -72,44 +108,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 7017,
+      "votes": 7031,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1551025,
-      "mediaType": "movie",
-      "title": "Guarding Stars",
-      "overview": "When a no-nonsense bodyguard is assigned to protect a charming action star over the holidays, sparks fly, secrets unravel, and Christmas gets a whole lot more complicated.",
-      "poster": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qHvap0vpfTBIbv7cnR0OyBRqQHG.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "7.0",
-      "votes": 57,
-      "url": "https://www.themoviedb.org/movie/1551025"
-    },
-    {
-      "id": 1131943,
-      "mediaType": "movie",
-      "title": "Madden",
-      "overview": "Chronicles John Madden's incredible journey alongside best friend and true original Al Davis—from a Super Bowl-winning partnership with the Raiders, to becoming football's most recognizable voice, to building the worldwide Madden NFL video game.",
-      "poster": "https://image.tmdb.org/t/p/w500/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/lRsapglJZIyMfGl8oQyNASlZqDC.jpg",
-      "releaseDate": "2026-11-18",
-      "rating": "7.2",
-      "votes": 33,
-      "url": "https://www.themoviedb.org/movie/1131943"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "7.7",
-      "votes": 276,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1568060,
@@ -119,23 +119,23 @@
       "poster": "https://image.tmdb.org/t/p/w500/kej8EipJOvfHUHFg5wtT7gQ6bNb.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/OiXyM1w9NxdV450GpV92B0YPMj.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.3",
-      "votes": 13,
+      "rating": "7.1",
+      "votes": 17,
       "url": "https://www.themoviedb.org/movie/1568060"
     }
   ],
   "trendingTv": [
     {
-      "id": 300523,
+      "id": 247718,
       "mediaType": "tv",
-      "title": "The Blue Road",
-      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
-      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.8",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/tv/300523"
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
+      "rating": "8.7",
+      "votes": 1287,
+      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 84773,
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/i1phX1JpaqSnHBBGta6LBFYVCZq.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4120,
+      "votes": 4126,
       "url": "https://www.themoviedb.org/tv/84773"
-    },
-    {
-      "id": 247718,
-      "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
-      "rating": "8.7",
-      "votes": 1284,
-      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
       "id": 291507,
@@ -170,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
       "releaseDate": "2026-11-11",
       "rating": "8.0",
-      "votes": 105,
+      "votes": 112,
       "url": "https://www.themoviedb.org/tv/291507"
     },
     {
@@ -182,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.2",
-      "votes": 558,
+      "votes": 559,
       "url": "https://www.themoviedb.org/tv/213375"
     },
     {
@@ -194,20 +182,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
       "releaseDate": "2025-07-13",
       "rating": "8.5",
-      "votes": 773,
+      "votes": 774,
       "url": "https://www.themoviedb.org/tv/259909"
     },
     {
-      "id": 103540,
+      "id": 300523,
       "mediaType": "tv",
-      "title": "Percy Jackson and the Olympians",
-      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
-      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
-      "releaseDate": "2023-12-19",
-      "rating": "7.3",
-      "votes": 881,
-      "url": "https://www.themoviedb.org/tv/103540"
+      "title": "The Blue Road",
+      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
+      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "6.7",
+      "votes": 7,
+      "url": "https://www.themoviedb.org/tv/300523"
     },
     {
       "id": 254630,
@@ -222,6 +210,18 @@
       "url": "https://www.themoviedb.org/tv/254630"
     },
     {
+      "id": 103540,
+      "mediaType": "tv",
+      "title": "Percy Jackson and the Olympians",
+      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
+      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
+      "releaseDate": "2023-12-19",
+      "rating": "7.3",
+      "votes": 881,
+      "url": "https://www.themoviedb.org/tv/103540"
+    },
+    {
       "id": 117488,
       "mediaType": "tv",
       "title": "Yellowjackets",
@@ -234,16 +234,16 @@
       "url": "https://www.themoviedb.org/tv/117488"
     },
     {
-      "id": 279246,
+      "id": 308007,
       "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
-      "releaseDate": "2026-11-03",
-      "rating": "8.8",
-      "votes": 127,
-      "url": "https://www.themoviedb.org/tv/279246"
+      "title": "The Altruists",
+      "overview": "The story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye - before they were accused of stealing $8 billion and became Gen Z's own Bonnie & Clyde.",
+      "poster": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/m8JTMj7jDMJFZAPP1ASmSi4gMWi.jpg",
+      "releaseDate": "2026-11-19",
+      "rating": "6.6",
+      "votes": 10,
+      "url": "https://www.themoviedb.org/tv/308007"
     }
   ],
   "upcomingMovies": [
@@ -252,8 +252,8 @@
       "mediaType": "movie",
       "title": "Avengers: Doomsday",
       "overview": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-      "poster": "https://image.tmdb.org/t/p/w500/zHTxblqPcqRpA93ex2Hj0RdpVBs.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g3gpP5YDbA85DsA0bt5mgGQIe5q.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rObL4of4eFA8yWaN9pRFo9aOVNi.jpg",
       "releaseDate": "2026-12-16",
       "rating": "0.0",
       "votes": 0,
@@ -267,8 +267,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "8.9",
-      "votes": 33,
+      "rating": "9.0",
+      "votes": 34,
       "url": "https://www.themoviedb.org/movie/1562642"
     },
     {
@@ -352,7 +352,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/AmnN2nLZaY9GPHNko5H7M5mqsMG.jpg",
       "releaseDate": "2026-12-09",
       "rating": "7.3",
-      "votes": 22,
+      "votes": 23,
       "url": "https://www.themoviedb.org/movie/1437981"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.6",
-      "votes": 128,
+      "votes": 149,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/yHVZncPRZr63mezRX20IyKLrSkv.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.4",
-      "votes": 62,
+      "votes": 64,
       "url": "https://www.themoviedb.org/movie/656908"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.5",
-      "votes": 138,
+      "votes": 141,
       "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
@@ -425,21 +425,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/7HwFQTMghL6HOvzEnXYUvyuZXeh.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
-      "rating": "8.0",
-      "votes": 243,
+      "rating": "7.9",
+      "votes": 247,
       "url": "https://www.themoviedb.org/movie/1422041"
-    },
-    {
-      "id": 1153576,
-      "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "6.2",
-      "votes": 256,
-      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 791523,
@@ -454,6 +442,18 @@
       "url": "https://www.themoviedb.org/movie/791523"
     },
     {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/ccxdepKqORLwccbzvO4eAGkN0IC.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "6.2",
+      "votes": 256,
+      "url": "https://www.themoviedb.org/movie/1153576"
+    },
+    {
       "id": 1765072,
       "mediaType": "movie",
       "title": "You Can See Everything",
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.8",
-      "votes": 143,
+      "votes": 144,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/f1TVhqJJdxMvUsUDuKHS0ekgYkk.jpg",
       "releaseDate": "2026-10-19",
       "rating": "7.4",
-      "votes": 465,
+      "votes": 466,
       "url": "https://www.themoviedb.org/movie/1400940"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/u38hNQbxvIicUdfrHpqa9puBnA9.jpg",
       "releaseDate": "2026-11-13",
       "rating": "6.2",
-      "votes": 48,
+      "votes": 49,
       "url": "https://www.themoviedb.org/movie/1437511"
     }
   ],
