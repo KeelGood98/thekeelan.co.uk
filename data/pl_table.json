@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T23:24:38.541305+00:00",
+  "updated": "2026-11-22T14:39:44.716522+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -21,14 +21,14 @@
       "name": "Brighton",
       "fullName": "Brighton & Hove Albion FC",
       "badge": "https://crests.football-data.org/397.png",
-      "played": 10,
+      "played": 11,
       "won": 7,
-      "drawn": 1,
+      "drawn": 2,
       "lost": 2,
       "goalsFor": 26,
       "goalsAgainst": 7,
       "goalDifference": 19,
-      "points": 22
+      "points": 23
     },
     {
       "position": 3,
@@ -172,6 +172,20 @@
     },
     {
       "position": 13,
+      "name": "Hull City",
+      "fullName": "Hull City AFC",
+      "badge": "https://crests.football-data.org/322.png",
+      "played": 11,
+      "won": 2,
+      "drawn": 6,
+      "lost": 3,
+      "goalsFor": 11,
+      "goalsAgainst": 11,
+      "goalDifference": 0,
+      "points": 12
+    },
+    {
+      "position": 14,
       "name": "Coventry City",
       "fullName": "Coventry City FC",
       "badge": "https://crests.football-data.org/1076.png",
@@ -183,20 +197,6 @@
       "goalsAgainst": 21,
       "goalDifference": -8,
       "points": 12
-    },
-    {
-      "position": 14,
-      "name": "Hull City",
-      "fullName": "Hull City AFC",
-      "badge": "https://crests.football-data.org/322.png",
-      "played": 10,
-      "won": 2,
-      "drawn": 5,
-      "lost": 3,
-      "goalsFor": 11,
-      "goalsAgainst": 11,
-      "goalDifference": 0,
-      "points": 11
     },
     {
       "position": 15,
