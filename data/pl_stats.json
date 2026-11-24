@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23T18:19:31.823406+00:00",
+  "updated": "2026-11-24T06:05:45.807854+00:00",
   "source": "football-data.org",
   "competition": "Premier League",
   "topScorers": [
@@ -103,15 +103,15 @@
       "penalties": 0
     },
     {
-      "name": "Pascal Groß",
-      "firstName": "Pascal",
-      "lastName": "Groß",
-      "nationality": "Germany",
-      "team": "Brighton",
-      "teamBadge": "https://crests.football-data.org/397.png",
+      "name": "Keane Lewis-Potter",
+      "firstName": "Keane",
+      "lastName": "Lewis-Potter",
+      "nationality": "England",
+      "team": "Brentford",
+      "teamBadge": "https://crests.football-data.org/402.png",
       "goals": 4,
-      "assists": 4,
-      "penalties": 2
+      "assists": 1,
+      "penalties": 0
     }
   ],
   "bestAttacks": [
@@ -128,6 +128,12 @@
       "played": 11
     },
     {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalsFor": 20,
+      "played": 11
+    },
+    {
       "name": "Chelsea",
       "badge": "https://crests.football-data.org/61.png",
       "goalsFor": 20,
@@ -136,12 +142,6 @@
     {
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
-      "goalsFor": 18,
-      "played": 11
-    },
-    {
-      "name": "Bournemouth",
-      "badge": "https://crests.football-data.org/bournemouth.png",
       "goalsFor": 18,
       "played": 11
     }
@@ -172,10 +172,10 @@
       "played": 11
     },
     {
-      "name": "Everton",
-      "badge": "https://crests.football-data.org/62.png",
-      "goalsAgainst": 10,
-      "played": 10
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalsAgainst": 11,
+      "played": 11
     }
   ],
   "goalDifferenceLeaders": [
@@ -192,6 +192,12 @@
       "played": 11
     },
     {
+      "name": "Brentford",
+      "badge": "https://crests.football-data.org/402.png",
+      "goalDifference": 9,
+      "played": 11
+    },
+    {
       "name": "Manchester City",
       "badge": "https://crests.football-data.org/65.png",
       "goalDifference": 8,
@@ -201,12 +207,6 @@
       "name": "Liverpool",
       "badge": "https://crests.football-data.org/64.png",
       "goalDifference": 8,
-      "played": 11
-    },
-    {
-      "name": "Leeds United",
-      "badge": "https://crests.football-data.org/341.png",
-      "goalDifference": 5,
       "played": 11
     }
   ],
