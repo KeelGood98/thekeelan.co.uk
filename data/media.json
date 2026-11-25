@@ -1,18 +1,30 @@
 {
-  "updated": "2026-11-25T03:43:41.565433+00:00",
+  "updated": "2026-11-25T18:49:36.417593+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1368337,
+      "mediaType": "movie",
+      "title": "The Odyssey",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/c7btGYblBnfAaw713WvFM0Kimc7.jpg",
+      "releaseDate": "2026-07-15",
+      "rating": "8.0",
+      "votes": 5475,
+      "url": "https://www.themoviedb.org/movie/1368337"
+    },
     {
       "id": 1300968,
       "mediaType": "movie",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "overview": "Return to the world of Panem 24 years before Katniss Everdeen volunteers in her sister's place, commencing on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/bfj5ImMlV9BvISWfLu7sHbdDXS.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 333,
+      "votes": 343,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -28,88 +40,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1368337,
+      "id": 1551025,
       "mediaType": "movie",
-      "title": "The Odyssey",
-      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
-      "poster": "https://image.tmdb.org/t/p/w500/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/c7btGYblBnfAaw713WvFM0Kimc7.jpg",
-      "releaseDate": "2026-07-15",
-      "rating": "8.0",
-      "votes": 5451,
-      "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 969681,
-      "mediaType": "movie",
-      "title": "Spider-Man: Brand New Day",
-      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
-      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
-      "releaseDate": "2026-07-29",
-      "rating": "8.5",
-      "votes": 7098,
-      "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1765072,
-      "mediaType": "movie",
-      "title": "You Can See Everything",
-      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-      "poster": "https://image.tmdb.org/t/p/w500/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "8.7",
-      "votes": 177,
-      "url": "https://www.themoviedb.org/movie/1765072"
-    },
-    {
-      "id": 1595124,
-      "mediaType": "movie",
-      "title": "Steps",
-      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
-      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.2",
-      "votes": 91,
-      "url": "https://www.themoviedb.org/movie/1595124"
-    },
-    {
-      "id": 1538497,
-      "mediaType": "movie",
-      "title": "Hexed",
-      "overview": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-      "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/eMcrgrIyeAgMHS5R9LltDnuxB5R.jpg",
-      "releaseDate": "2026-11-25",
-      "rating": "7.6",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1538497"
-    },
-    {
-      "id": 1281331,
-      "mediaType": "movie",
-      "title": "The Social Reckoning",
-      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/vWbEuI3LuFOGYZIxESLAmwFwtvr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "7.0",
-      "votes": 165,
-      "url": "https://www.themoviedb.org/movie/1281331"
-    },
-    {
-      "id": 1195803,
-      "mediaType": "movie",
-      "title": "Wicker",
-      "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
-      "releaseDate": "2026-10-21",
-      "rating": "7.5",
-      "votes": 63,
-      "url": "https://www.themoviedb.org/movie/1195803"
+      "title": "Guarding Stars",
+      "overview": "When a no-nonsense bodyguard is assigned to protect a charming action star over the holidays, sparks fly, secrets unravel, and Christmas gets a whole lot more complicated.",
+      "poster": "https://image.tmdb.org/t/p/w500/5bsXFYXOlbzHBpl9mPaxmOPIQJ9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/qHvap0vpfTBIbv7cnR0OyBRqQHG.jpg",
+      "releaseDate": "2026-11-18",
+      "rating": "6.9",
+      "votes": 124,
+      "url": "https://www.themoviedb.org/movie/1551025"
     },
     {
       "id": 1131943,
@@ -120,11 +60,83 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/lRsapglJZIyMfGl8oQyNASlZqDC.jpg",
       "releaseDate": "2026-11-18",
       "rating": "6.5",
-      "votes": 61,
+      "votes": 66,
       "url": "https://www.themoviedb.org/movie/1131943"
+    },
+    {
+      "id": 1595124,
+      "mediaType": "movie",
+      "title": "Steps",
+      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
+      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "7.2",
+      "votes": 94,
+      "url": "https://www.themoviedb.org/movie/1595124"
+    },
+    {
+      "id": 969681,
+      "mediaType": "movie",
+      "title": "Spider-Man: Brand New Day",
+      "overview": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+      "poster": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
+      "releaseDate": "2026-07-29",
+      "rating": "8.5",
+      "votes": 7111,
+      "url": "https://www.themoviedb.org/movie/969681"
+    },
+    {
+      "id": 1281331,
+      "mediaType": "movie",
+      "title": "The Social Reckoning",
+      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+      "poster": "https://image.tmdb.org/t/p/w500/vWbEuI3LuFOGYZIxESLAmwFwtvr.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
+      "releaseDate": "2026-10-07",
+      "rating": "7.0",
+      "votes": 173,
+      "url": "https://www.themoviedb.org/movie/1281331"
+    },
+    {
+      "id": 1263337,
+      "mediaType": "movie",
+      "title": "Heart of the Beast",
+      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
+      "poster": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/yE766yhgg98tKwTKd8CyNvAtmn6.jpg",
+      "releaseDate": "2026-09-23",
+      "rating": "7.9",
+      "votes": 1224,
+      "url": "https://www.themoviedb.org/movie/1263337"
+    },
+    {
+      "id": 1538497,
+      "mediaType": "movie",
+      "title": "Hexed",
+      "overview": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+      "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
+      "releaseDate": "2026-11-25",
+      "rating": "6.3",
+      "votes": 13,
+      "url": "https://www.themoviedb.org/movie/1538497"
     }
   ],
   "trendingTv": [
+    {
+      "id": 171802,
+      "mediaType": "tv",
+      "title": "Blade Runner 2099",
+      "overview": "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
+      "poster": "https://image.tmdb.org/t/p/w500/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rACaCUxa8WAxkqdpZl0vGqBmIJg.jpg",
+      "releaseDate": "2026-11-24",
+      "rating": "4.5",
+      "votes": 15,
+      "url": "https://www.themoviedb.org/tv/171802"
+    },
     {
       "id": 84773,
       "mediaType": "tv",
@@ -134,8 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/i1phX1JpaqSnHBBGta6LBFYVCZq.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4140,
+      "votes": 4143,
       "url": "https://www.themoviedb.org/tv/84773"
+    },
+    {
+      "id": 279246,
+      "mediaType": "tv",
+      "title": "The Remarried Empress",
+      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
+      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
+      "releaseDate": "2026-11-03",
+      "rating": "8.7",
+      "votes": 155,
+      "url": "https://www.themoviedb.org/tv/279246"
+    },
+    {
+      "id": 310209,
+      "mediaType": "tv",
+      "title": "Nine to Six",
+      "overview": "Falsely blamed for a car fire, Chronic Motors Senior Manager Kang Yi-ji faces demotion. Can she find love and happiness amid office politics?",
+      "poster": "https://image.tmdb.org/t/p/w500/1iVlL2Prt9Q5BWMfeZQ6d1ZAZBy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vRuayyRqPoxFCq2xwAc2hsJqonm.jpg",
+      "releaseDate": "2026-11-25",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/tv/310209"
     },
     {
       "id": 247718,
@@ -150,6 +186,18 @@
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
+      "id": 300523,
+      "mediaType": "tv",
+      "title": "The Blue Road",
+      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
+      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "7.9",
+      "votes": 21,
+      "url": "https://www.themoviedb.org/tv/300523"
+    },
+    {
       "id": 291507,
       "mediaType": "tv",
       "title": "The Body",
@@ -158,56 +206,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
       "releaseDate": "2026-11-11",
       "rating": "8.0",
-      "votes": 136,
+      "votes": 139,
       "url": "https://www.themoviedb.org/tv/291507"
     },
     {
-      "id": 300523,
+      "id": 254630,
       "mediaType": "tv",
-      "title": "The Blue Road",
-      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
-      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.8",
-      "votes": 20,
-      "url": "https://www.themoviedb.org/tv/300523"
+      "title": "12 12 12",
+      "overview": "A heist takes 12 months to plan, 12 hours to execute—and a thief not caught within 12 days won't be caught at all. Across three pulse-pounding timelines, an FBI agent and a career criminal face off in a deadly game of cat and mouse through Europe.",
+      "poster": "https://image.tmdb.org/t/p/w500/8q6BvFQuKM1Rud4E9NQDaMGy9EL.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/tjy25xpiFeo2gahl7N0hoxbRtG7.jpg",
+      "releaseDate": "2026-11-12",
+      "rating": "6.3",
+      "votes": 42,
+      "url": "https://www.themoviedb.org/tv/254630"
     },
     {
-      "id": 171802,
+      "id": 303745,
       "mediaType": "tv",
-      "title": "Blade Runner 2099",
-      "overview": "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
-      "poster": "https://image.tmdb.org/t/p/w500/qAcXaAoJiYry9nGEyxTirnJ82Jj.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/2V99576WPQ8uCOmNa5m7hug7Ub4.jpg",
-      "releaseDate": "2026-11-24",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/171802"
-    },
-    {
-      "id": 103540,
-      "mediaType": "tv",
-      "title": "Percy Jackson and the Olympians",
-      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
-      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
-      "releaseDate": "2023-12-19",
-      "rating": "7.3",
-      "votes": 887,
-      "url": "https://www.themoviedb.org/tv/103540"
-    },
-    {
-      "id": 259909,
-      "mediaType": "tv",
-      "title": "Dexter: Resurrection",
-      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
-      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
-      "releaseDate": "2025-07-13",
-      "rating": "8.5",
-      "votes": 779,
-      "url": "https://www.themoviedb.org/tv/259909"
+      "title": "Love in Disguise",
+      "overview": "Taekang Group's successor, Yoon Yi-jun, is the prime suspect of a shocking murder. To uncover the truth, Kang Jae-hee goes undercover as a male secretary to keep an eye on Yi-jun. The closer they get to what really happened, the closer Yi-jun and Jae-hee become. Will Jae-hee, who is hiding her identity, and Yi-jun, who is hiding a secret, be able to let their true feelings be known to one another?",
+      "poster": "https://image.tmdb.org/t/p/w500/c9DEtqCDZBPL9i06WmbDrcndrBy.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ob7m6JqZ7jSOocR3VL73VxRC6Is.jpg",
+      "releaseDate": "2026-10-19",
+      "rating": "8.9",
+      "votes": 106,
+      "url": "https://www.themoviedb.org/tv/303745"
     },
     {
       "id": 213375,
@@ -218,32 +242,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.2",
-      "votes": 580,
+      "votes": 585,
       "url": "https://www.themoviedb.org/tv/213375"
-    },
-    {
-      "id": 117488,
-      "mediaType": "tv",
-      "title": "Yellowjackets",
-      "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
-      "poster": "https://image.tmdb.org/t/p/w500/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
-      "releaseDate": "2021-11-14",
-      "rating": "7.4",
-      "votes": 1087,
-      "url": "https://www.themoviedb.org/tv/117488"
-    },
-    {
-      "id": 290826,
-      "mediaType": "tv",
-      "title": "DIG",
-      "overview": "Follow four women who work at an archeological dig in Greece. When the team uncovers a long-buried secret with the potential to rewrite history, they find themselves at the center of a high-stakes international conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/apHJDHRa0LMtZlcMvKK74InRMfc.jpg",
-      "releaseDate": "2026-11-23",
-      "rating": "5.8",
-      "votes": 14,
-      "url": "https://www.themoviedb.org/tv/290826"
     }
   ],
   "upcomingMovies": [
@@ -260,52 +260,16 @@
       "url": "https://www.themoviedb.org/movie/1003596"
     },
     {
-      "id": 1562642,
+      "id": 1170608,
       "mediaType": "movie",
-      "title": "Ghost Soldier",
-      "overview": "Henry “Fitz” Fitzgerald has spent years living quietly off the grid, hiding from a past few people know anything about. But when a powerful foreign corporation moves into his hometown to seize his neighbors’ land for a massive payday, Fitz is forced to reveal who he really is: a former Special Forces soldier and advanced weapons developer. Armed with experimental technology, lethal combat skills, and an unwavering code of justice, Fitz wages a one-man war against an enemy that never saw him coming.",
-      "poster": "https://image.tmdb.org/t/p/w500/8Y4oJ5iUs3hgPcDB3SIEmsNYjZk.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
-      "releaseDate": "2026-11-27",
-      "rating": "9.0",
-      "votes": 35,
-      "url": "https://www.themoviedb.org/movie/1562642"
-    },
-    {
-      "id": 1514026,
-      "mediaType": "movie",
-      "title": "Buddy",
-      "overview": "Inside the colorful world of \"It's Buddy!\", a group of children spend their days singing, dancing, and helping Buddy - bright orange unicorn - spread happiness. But when one child refuses to play along, Buddy is not pleased and cracks begin to appear in this seemingly perfect world.",
-      "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
-      "releaseDate": "2026-11-27",
-      "rating": "6.8",
-      "votes": 300,
-      "url": "https://www.themoviedb.org/movie/1514026"
-    },
-    {
-      "id": 1538497,
-      "mediaType": "movie",
-      "title": "Hexed",
-      "overview": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-      "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/eMcrgrIyeAgMHS5R9LltDnuxB5R.jpg",
-      "releaseDate": "2026-11-27",
-      "rating": "7.6",
-      "votes": 8,
-      "url": "https://www.themoviedb.org/movie/1538497"
-    },
-    {
-      "id": 1400336,
-      "mediaType": "movie",
-      "title": "Focker In-Law",
-      "overview": "Henry, son of Greg and Pam Focker, aims to marry Olivia, a strong-willed former hostage negotiator who appears to be his complete mismatch. To Greg's shock, father-in-law Jack Byrnes takes a liking to Olivia, and her unprecedented rise into his Circle of Trust sparks chaos in the family before Jack's 80th birthday party.",
-      "poster": "https://image.tmdb.org/t/p/w500/iHJhSfqFpDMOyeMc6h6BOeHxse2.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/nubnNXuMArUhiDW1nUevGsG65x9.jpg",
-      "releaseDate": "2026-11-25",
-      "rating": "7.6",
-      "votes": 5,
-      "url": "https://www.themoviedb.org/movie/1400336"
+      "title": "Dune: Part Three",
+      "overview": "Nearly two decades after he seized control of the Imperium, Paul Atreides is now a ruthless Emperor, and must face the consequences of his reign as old allies return, terrifying new threats emerge, and betrayal lurks in every shadow. Haunted by visions of Imperial collapse and the reappearance of his long-lost love, Paul is drawn into a sweeping conspiracy, with Chani at the heart of its unfolding mystery. As enemies close in, Paul must confront the true cost of power and the fate of those he loves the most.",
+      "poster": "https://image.tmdb.org/t/p/w500/d43fvHQsIMa4kpyhKXw0haEJIvI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/i5E9H7Ik0u61ylDDTbmUpTL3Yw.jpg",
+      "releaseDate": "2026-12-18",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1170608"
     },
     {
       "id": 1117898,
@@ -328,20 +292,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/pmPXXniQlb4EdYY0gVZO90rf54F.jpg",
       "releaseDate": "2026-12-11",
       "rating": "5.6",
-      "votes": 155,
+      "votes": 161,
       "url": "https://www.themoviedb.org/movie/1284046"
-    },
-    {
-      "id": 1457866,
-      "mediaType": "movie",
-      "title": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-      "overview": "Eight years after the events of Once Upon a Time in... Hollywood, Cliff Booth returns to a changing Los Angeles. Now working as a fixer in the shadows of the Hollywood studio system, Cliff finds himself entangled in a dangerous web of secrets, crimes and betrayals that will test everything he knows about loyalty and survival.",
-      "poster": "https://image.tmdb.org/t/p/w500/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qqPspJFy0XrEoVTKZdp0Em7kej6.jpg",
-      "releaseDate": "2026-11-25",
-      "rating": "0.0",
-      "votes": 0,
-      "url": "https://www.themoviedb.org/movie/1457866"
     },
     {
       "id": 1078446,
@@ -356,6 +308,18 @@
       "url": "https://www.themoviedb.org/movie/1078446"
     },
     {
+      "id": 1260649,
+      "mediaType": "movie",
+      "title": "Jumanji: Open World",
+      "overview": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us—as Jumanji breaks free of its console, unleashing its chaos into our world.",
+      "poster": "https://image.tmdb.org/t/p/w500/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vaYfhMuwFwsMqyMnu9amtS9hUHE.jpg",
+      "releaseDate": "2026-12-23",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1260649"
+    },
+    {
       "id": 1437981,
       "mediaType": "movie",
       "title": "Coward",
@@ -366,6 +330,42 @@
       "rating": "7.4",
       "votes": 25,
       "url": "https://www.themoviedb.org/movie/1437981"
+    },
+    {
+      "id": 1300926,
+      "mediaType": "movie",
+      "title": "The Angry Birds Movie 3",
+      "overview": "Red faces his greatest challenge yet—surviving fatherhood… while saving the world.",
+      "poster": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ieAytQ8YcWEZGQpbBy7vHVddwd.jpg",
+      "releaseDate": "2026-12-23",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1300926"
+    },
+    {
+      "id": 1452168,
+      "mediaType": "movie",
+      "title": "Behemoth!",
+      "overview": "Gifted cellist Alex Serian returns home to Los Angeles after 20 years on the road. Music, which has been the constant, all-consuming river of his life, begins to carry Alex on an adventure that will change him forever.",
+      "poster": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b3YTMlknqSqJVV7I45kIQNVzErs.jpg",
+      "releaseDate": "2026-12-04",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/1452168"
+    },
+    {
+      "id": 940009,
+      "mediaType": "movie",
+      "title": "Ray Gunn",
+      "overview": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
+      "poster": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hhBoWDKmq9u8V2qi0Rtm3XGiydn.jpg",
+      "releaseDate": "2026-12-04",
+      "rating": "0.0",
+      "votes": 0,
+      "url": "https://www.themoviedb.org/movie/940009"
     }
   ],
   "nowPlayingMovies": [
@@ -374,11 +374,11 @@
       "mediaType": "movie",
       "title": "The Hunger Games: Sunrise on the Reaping",
       "overview": "Return to the world of Panem 24 years before Katniss Everdeen volunteers in her sister's place, commencing on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "poster": "https://image.tmdb.org/t/p/w500/bfj5ImMlV9BvISWfLu7sHbdDXS.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 333,
+      "votes": 342,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
       "releaseDate": "2026-11-20",
       "rating": "7.2",
-      "votes": 87,
+      "votes": 92,
       "url": "https://www.themoviedb.org/movie/1595124"
     },
     {
@@ -413,21 +413,9 @@
       "poster": "https://image.tmdb.org/t/p/w500/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/prbMZ3DPf8taS6JYQd6igPnm2mA.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.4",
-      "votes": 73,
+      "rating": "7.5",
+      "votes": 74,
       "url": "https://www.themoviedb.org/movie/656908"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-05",
-      "rating": "7.7",
-      "votes": 303,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1765072,
@@ -438,8 +426,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.7",
-      "votes": 175,
+      "votes": 188,
       "url": "https://www.themoviedb.org/movie/1765072"
+    },
+    {
+      "id": 1381071,
+      "mediaType": "movie",
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-05",
+      "rating": "7.7",
+      "votes": 306,
+      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1422041,
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.5",
-      "votes": 189,
+      "votes": 192,
       "url": "https://www.themoviedb.org/movie/1567605"
     },
     {
@@ -474,20 +474,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
       "rating": "6.8",
-      "votes": 301,
+      "votes": 304,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
-      "id": 791523,
+      "id": 1195803,
       "mediaType": "movie",
-      "title": "Wildwood",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "poster": "https://image.tmdb.org/t/p/w500/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/sl5NJ1vtyhP9Vr88bB4blULsJYp.jpg",
-      "releaseDate": "2026-10-23",
-      "rating": "8.5",
-      "votes": 326,
-      "url": "https://www.themoviedb.org/movie/791523"
+      "title": "Wicker",
+      "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
+      "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
+      "releaseDate": "2026-10-30",
+      "rating": "7.5",
+      "votes": 65,
+      "url": "https://www.themoviedb.org/movie/1195803"
     }
   ],
   "links": [
