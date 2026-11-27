@@ -1,8 +1,20 @@
 {
-  "updated": "2026-11-27T03:15:23.458105+00:00",
+  "updated": "2026-11-27T18:26:30.596992+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/dJPT2Uf12X6aFg8i5N67NTpIZ9t.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/3BBjkQmdGacKYZtpmK2vIfuDmON.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "6.2",
+      "votes": 280,
+      "url": "https://www.themoviedb.org/movie/1153576"
+    },
     {
       "id": 1003596,
       "mediaType": "movie",
@@ -24,8 +36,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 378,
+      "votes": 387,
       "url": "https://www.themoviedb.org/movie/1300968"
+    },
+    {
+      "id": 1480665,
+      "mediaType": "movie",
+      "title": "The Hunchback, Soul of Paris",
+      "overview": "Paris, 1830. As cholera threatens to ravage the city, a hunchback hunted for medical experiments is caught between political turmoil and impossible love.",
+      "poster": "https://image.tmdb.org/t/p/w500/3dHSDFEyUsjwRldplaRGygC5zkJ.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fILFJb7okqkNdzAataH4CxywwZX.jpg",
+      "releaseDate": "2026-11-27",
+      "rating": "10.0",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/movie/1480665"
     },
     {
       "id": 1368337,
@@ -36,7 +60,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c7btGYblBnfAaw713WvFM0Kimc7.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 5517,
+      "votes": 5536,
       "url": "https://www.themoviedb.org/movie/1368337"
     },
     {
@@ -47,9 +71,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
       "releaseDate": "2026-11-25",
-      "rating": "5.8",
-      "votes": 23,
+      "rating": "5.7",
+      "votes": 27,
       "url": "https://www.themoviedb.org/movie/1538497"
+    },
+    {
+      "id": 1458300,
+      "mediaType": "movie",
+      "title": "The Mosquito Bowl",
+      "overview": "In the aftermath of Pearl Harbor, four college football stars enlist in the US Marines, discovering the strength of brotherhood and the cost of war.",
+      "poster": "https://image.tmdb.org/t/p/w500/uxYs0bNTF4XzM8LThJk2x3AJ0Iv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nfcXn5yvBejpbljQIBrTlOMQZoC.jpg",
+      "releaseDate": "2026-10-29",
+      "rating": "7.7",
+      "votes": 43,
+      "url": "https://www.themoviedb.org/movie/1458300"
     },
     {
       "id": 969681,
@@ -60,32 +96,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 7135,
+      "votes": 7147,
       "url": "https://www.themoviedb.org/movie/969681"
-    },
-    {
-      "id": 1595124,
-      "mediaType": "movie",
-      "title": "Steps",
-      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
-      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.1",
-      "votes": 110,
-      "url": "https://www.themoviedb.org/movie/1595124"
-    },
-    {
-      "id": 1458300,
-      "mediaType": "movie",
-      "title": "The Mosquito Bowl",
-      "overview": "In the aftermath of Pearl Harbor, four college football stars enlist in the US Marines, discovering the strength of brotherhood and the cost of war.",
-      "poster": "https://image.tmdb.org/t/p/w500/uxYs0bNTF4XzM8LThJk2x3AJ0Iv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rtrWdS4UrhqnH9wNEWOgrMBsmSa.jpg",
-      "releaseDate": "2026-10-29",
-      "rating": "7.4",
-      "votes": 32,
-      "url": "https://www.themoviedb.org/movie/1458300"
     },
     {
       "id": 1765072,
@@ -96,32 +108,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fnIcdPVaO4JAzfLhv8OVEqFK6a7.jpg",
       "releaseDate": "2026-10-16",
       "rating": "8.6",
-      "votes": 218,
+      "votes": 231,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
-      "id": 1153576,
+      "id": 1280115,
       "mediaType": "movie",
-      "title": "Street Fighter",
-      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-      "poster": "https://image.tmdb.org/t/p/w500/1r8IbJqmctfcAEw8KMmHhE63fA9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "6.2",
-      "votes": 273,
-      "url": "https://www.themoviedb.org/movie/1153576"
-    },
-    {
-      "id": 1281331,
-      "mediaType": "movie",
-      "title": "The Social Reckoning",
-      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/vWbEuI3LuFOGYZIxESLAmwFwtvr.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
-      "releaseDate": "2026-10-07",
-      "rating": "7.0",
-      "votes": 186,
-      "url": "https://www.themoviedb.org/movie/1281331"
+      "title": "Way of the Warrior Kid",
+      "overview": "Jake is an injured Navy SEAL who becomes a mentor for his shy, struggling nephew Marc. Using the principles of his military training, Jake teaches Marc how to be a Warrior Kid as he enters high school.",
+      "poster": "https://image.tmdb.org/t/p/w500/atI81xXKNVah7PJFBo3aXqQKtnG.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vOByLZRhCIIItlSlCT7bYbI9MYL.jpg",
+      "releaseDate": "2026-11-24",
+      "rating": "7.4",
+      "votes": 45,
+      "url": "https://www.themoviedb.org/movie/1280115"
     }
   ],
   "trendingTv": [
@@ -133,8 +133,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/rACaCUxa8WAxkqdpZl0vGqBmIJg.jpg",
       "releaseDate": "2026-11-24",
-      "rating": "5.3",
-      "votes": 52,
+      "rating": "5.2",
+      "votes": 59,
       "url": "https://www.themoviedb.org/tv/171802"
     },
     {
@@ -146,56 +146,32 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uVOcz7JBOuZxsx9IYpx6Ah174LX.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4153,
+      "votes": 4155,
       "url": "https://www.themoviedb.org/tv/84773"
     },
     {
-      "id": 244447,
+      "id": 259909,
       "mediaType": "tv",
-      "title": "The Hunting Wives",
-      "overview": "Sophie trades New England for East Texas and falls into a wealthy socialite's magnetic orbit — where a clique of housewives hide deadly secrets.",
-      "poster": "https://image.tmdb.org/t/p/w500/iKL02GmejLCGBJr7XHU82vvqA1C.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/6PerjrTmwTNiRcfn0SpjU8N9Nio.jpg",
-      "releaseDate": "2025-07-21",
-      "rating": "7.0",
-      "votes": 119,
-      "url": "https://www.themoviedb.org/tv/244447"
+      "title": "Dexter: Resurrection",
+      "overview": "Set 10 weeks after Dexter: New Blood, Dexter Morgan chases a missing Harrison to New York City, where Captain Angel Batista is hot on their trail from way down in Miami.",
+      "poster": "https://image.tmdb.org/t/p/w500/o2Oyi3boT100bY5kCP4MBiTeetO.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/vcpj6rRDS93ImHCLPY8bwBuFGjR.jpg",
+      "releaseDate": "2025-07-13",
+      "rating": "8.5",
+      "votes": 782,
+      "url": "https://www.themoviedb.org/tv/259909"
     },
     {
-      "id": 247718,
+      "id": 326247,
       "mediaType": "tv",
-      "title": "MobLand",
-      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
-      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
-      "releaseDate": "2025-03-30",
+      "title": "Fool Night",
+      "overview": "In a sunless future where humans become plants to make oxygen, a desperate young man begins the transformation — and unearths a deep-rooted conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/7kHLQwQZKbQOZJGx1mIDYIKeBYv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rumSTVTcuZj0khFXxXgwXouIMgg.jpg",
+      "releaseDate": "2026-11-26",
       "rating": "8.7",
-      "votes": 1318,
-      "url": "https://www.themoviedb.org/tv/247718"
-    },
-    {
-      "id": 300523,
-      "mediaType": "tv",
-      "title": "The Blue Road",
-      "overview": "Two detectives join forces when brutal murders and cryptic messages surface across borders — but the deadly truth lurks dangerously close.",
-      "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "8.0",
-      "votes": 23,
-      "url": "https://www.themoviedb.org/tv/300523"
-    },
-    {
-      "id": 291507,
-      "mediaType": "tv",
-      "title": "The Body",
-      "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
-      "poster": "https://image.tmdb.org/t/p/w500/zleCYDRbW5mKwgZwVK4SNIrKXWx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
-      "releaseDate": "2026-11-11",
-      "rating": "8.0",
-      "votes": 151,
-      "url": "https://www.themoviedb.org/tv/291507"
+      "votes": 3,
+      "url": "https://www.themoviedb.org/tv/326247"
     },
     {
       "id": 103540,
@@ -206,44 +182,68 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
       "releaseDate": "2023-12-19",
       "rating": "7.3",
-      "votes": 888,
+      "votes": 889,
       "url": "https://www.themoviedb.org/tv/103540"
     },
     {
-      "id": 279246,
+      "id": 291507,
       "mediaType": "tv",
-      "title": "The Remarried Empress",
-      "overview": "Beloved Empress Navier rules the Eastern Empire alongside Emperor Sovieshu. But when Sovieshu falls for a runaway slave and demands a divorce, Navier will agree on one condition: that she's given approval to remarry rival Prince Heinrey of the Western Kingdom.",
-      "poster": "https://image.tmdb.org/t/p/w500/zn3IXZzGavH3qle3o3g1r32eXDy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
-      "releaseDate": "2026-11-03",
+      "title": "The Body",
+      "overview": "On Halloween night, an all-girls dance squad tumbles into Catholic guilt, unholy desires and ghostly visions when an initiation goes to hell.",
+      "poster": "https://image.tmdb.org/t/p/w500/zleCYDRbW5mKwgZwVK4SNIrKXWx.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
+      "releaseDate": "2026-11-11",
+      "rating": "8.0",
+      "votes": 152,
+      "url": "https://www.themoviedb.org/tv/291507"
+    },
+    {
+      "id": 244447,
+      "mediaType": "tv",
+      "title": "The Hunting Wives",
+      "overview": "Sophie trades New England for East Texas and falls into a wealthy socialite's magnetic orbit — where a clique of housewives hide deadly secrets.",
+      "poster": "https://image.tmdb.org/t/p/w500/iKL02GmejLCGBJr7XHU82vvqA1C.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/6PerjrTmwTNiRcfn0SpjU8N9Nio.jpg",
+      "releaseDate": "2025-07-21",
+      "rating": "7.0",
+      "votes": 121,
+      "url": "https://www.themoviedb.org/tv/244447"
+    },
+    {
+      "id": 117488,
+      "mediaType": "tv",
+      "title": "Yellowjackets",
+      "overview": "This equal parts survival epic, psychological horror story and coming-of-age drama tells the saga of a team of wildly talented high school girls soccer players who become the (un)lucky survivors of a plane crash deep in the remote northern wilderness. The series chronicles their descent from a complicated but thriving team to savage clans, while also tracking the lives they’ve attempted to piece back together nearly 25 years later.",
+      "poster": "https://image.tmdb.org/t/p/w500/xRnGrn7Z7SC0KIBodocoU1QgDZF.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/ibFWJDWS8cTO6s2vZVd2uKDm8p.jpg",
+      "releaseDate": "2021-11-14",
+      "rating": "7.4",
+      "votes": 1088,
+      "url": "https://www.themoviedb.org/tv/117488"
+    },
+    {
+      "id": 247718,
+      "mediaType": "tv",
+      "title": "MobLand",
+      "overview": "Two mob families clash in a war that threatens to topple empires and lives.",
+      "poster": "https://image.tmdb.org/t/p/w500/5Xc7WpWsgflfgEMoBlf9TmWhfbH.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
+      "releaseDate": "2025-03-30",
       "rating": "8.7",
-      "votes": 170,
-      "url": "https://www.themoviedb.org/tv/279246"
+      "votes": 1319,
+      "url": "https://www.themoviedb.org/tv/247718"
     },
     {
-      "id": 213375,
+      "id": 153312,
       "mediaType": "tv",
-      "title": "VisionQuest",
-      "overview": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
-      "poster": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
-      "releaseDate": "2026-10-13",
-      "rating": "8.2",
-      "votes": 592,
-      "url": "https://www.themoviedb.org/tv/213375"
-    },
-    {
-      "id": 326247,
-      "mediaType": "tv",
-      "title": "Fool Night",
-      "overview": "In a sunless future where humans become plants to make oxygen, a desperate young man begins the transformation — and unearths a deep-rooted conspiracy.",
-      "poster": "https://image.tmdb.org/t/p/w500/7kHLQwQZKbQOZJGx1mIDYIKeBYv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rumSTVTcuZj0khFXxXgwXouIMgg.jpg",
-      "releaseDate": "2026-11-26",
-      "rating": "9.0",
-      "votes": 2,
-      "url": "https://www.themoviedb.org/tv/326247"
+      "title": "Tulsa King",
+      "overview": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
+      "poster": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/v1d3baYqMfyQKxBHXu5Pmu6vTZ3.jpg",
+      "releaseDate": "2022-11-13",
+      "rating": "8.3",
+      "votes": 2981,
+      "url": "https://www.themoviedb.org/tv/153312"
     }
   ],
   "upcomingMovies": [
@@ -280,7 +280,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/56Bepb58k71UUTVwKN1SxHmfzPK.jpg",
       "releaseDate": "2026-12-04",
       "rating": "7.3",
-      "votes": 35,
+      "votes": 36,
       "url": "https://www.themoviedb.org/movie/1117898"
     },
     {
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 375,
+      "votes": 386,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -389,8 +389,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.1",
-      "votes": 109,
+      "rating": "7.0",
+      "votes": 116,
       "url": "https://www.themoviedb.org/movie/1595124"
     },
     {
@@ -399,11 +399,23 @@
       "title": "You Can See Everything",
       "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
       "poster": "https://image.tmdb.org/t/p/w500/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fnIcdPVaO4JAzfLhv8OVEqFK6a7.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.6",
-      "votes": 218,
+      "votes": 230,
       "url": "https://www.themoviedb.org/movie/1765072"
+    },
+    {
+      "id": 1458300,
+      "mediaType": "movie",
+      "title": "The Mosquito Bowl",
+      "overview": "In the aftermath of Pearl Harbor, four college football stars enlist in the US Marines, discovering the strength of brotherhood and the cost of war.",
+      "poster": "https://image.tmdb.org/t/p/w500/uxYs0bNTF4XzM8LThJk2x3AJ0Iv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/nfcXn5yvBejpbljQIBrTlOMQZoC.jpg",
+      "releaseDate": "2026-11-13",
+      "rating": "7.7",
+      "votes": 43,
+      "url": "https://www.themoviedb.org/movie/1458300"
     },
     {
       "id": 1562642,
@@ -425,33 +437,33 @@
       "poster": "https://image.tmdb.org/t/p/w500/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/prbMZ3DPf8taS6JYQd6igPnm2mA.jpg",
       "releaseDate": "2026-11-13",
-      "rating": "7.5",
-      "votes": 76,
+      "rating": "7.4",
+      "votes": 78,
       "url": "https://www.themoviedb.org/movie/656908"
-    },
-    {
-      "id": 1381071,
-      "mediaType": "movie",
-      "title": "Godzilla Minus Zero",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
-      "releaseDate": "2026-11-05",
-      "rating": "7.7",
-      "votes": 310,
-      "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
       "id": 1195803,
       "mediaType": "movie",
       "title": "Wicker",
       "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/5sVi66aTT9X2uMldmIwu9JW3hZ2.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
       "releaseDate": "2026-10-30",
       "rating": "7.6",
-      "votes": 76,
+      "votes": 78,
       "url": "https://www.themoviedb.org/movie/1195803"
+    },
+    {
+      "id": 1538497,
+      "mediaType": "movie",
+      "title": "Hexed",
+      "overview": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+      "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
+      "releaseDate": "2026-11-27",
+      "rating": "5.7",
+      "votes": 27,
+      "url": "https://www.themoviedb.org/movie/1538497"
     },
     {
       "id": 1514026,
@@ -461,33 +473,21 @@
       "poster": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
-      "rating": "6.8",
-      "votes": 310,
+      "rating": "6.7",
+      "votes": 312,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
-      "id": 1422041,
+      "id": 1381071,
       "mediaType": "movie",
-      "title": "LA BOLA NEGRA",
-      "overview": "The intertwined lives of three men in three different eras, three lives intimately linked by sexuality and desire, pain, and legacy.",
-      "poster": "https://image.tmdb.org/t/p/w500/7HwFQTMghL6HOvzEnXYUvyuZXeh.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
-      "releaseDate": "2026-11-06",
-      "rating": "7.9",
-      "votes": 266,
-      "url": "https://www.themoviedb.org/movie/1422041"
-    },
-    {
-      "id": 1567605,
-      "mediaType": "movie",
-      "title": "Ebenezer",
-      "overview": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
-      "poster": "https://image.tmdb.org/t/p/w500/6H2N59jJW1hZEzn2ZdrMvJw5vNI.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
-      "releaseDate": "2026-11-13",
-      "rating": "7.5",
-      "votes": 202,
-      "url": "https://www.themoviedb.org/movie/1567605"
+      "title": "Godzilla Minus Zero",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "poster": "https://image.tmdb.org/t/p/w500/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+      "releaseDate": "2026-11-05",
+      "rating": "7.6",
+      "votes": 314,
+      "url": "https://www.themoviedb.org/movie/1381071"
     }
   ],
   "links": [
