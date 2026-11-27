@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T18:37:49.423427+00:00",
+  "updated": "2026-11-27T03:15:23.458105+00:00",
   "source": "TMDB",
   "region": "GB",
   "trendingMovies": [
@@ -24,7 +24,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 369,
+      "votes": 378,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -36,20 +36,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/c7btGYblBnfAaw713WvFM0Kimc7.jpg",
       "releaseDate": "2026-07-15",
       "rating": "8.0",
-      "votes": 5507,
+      "votes": 5517,
       "url": "https://www.themoviedb.org/movie/1368337"
-    },
-    {
-      "id": 1595124,
-      "mediaType": "movie",
-      "title": "Steps",
-      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
-      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.1",
-      "votes": 107,
-      "url": "https://www.themoviedb.org/movie/1595124"
     },
     {
       "id": 1538497,
@@ -59,8 +47,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/yykeYKbDBM9eUMJUucaaDo2mi1p.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/wdjW11Tp4w9EfDBxbjyBJvDVHDA.jpg",
       "releaseDate": "2026-11-25",
-      "rating": "5.9",
-      "votes": 20,
+      "rating": "5.8",
+      "votes": 23,
       "url": "https://www.themoviedb.org/movie/1538497"
     },
     {
@@ -72,20 +60,56 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg",
       "releaseDate": "2026-07-29",
       "rating": "8.5",
-      "votes": 7128,
+      "votes": 7135,
       "url": "https://www.themoviedb.org/movie/969681"
     },
     {
-      "id": 1423191,
+      "id": 1595124,
       "mediaType": "movie",
-      "title": "Resident Evil",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/gAgWJhUSQWCgtKR8170nMkYlBda.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/vqNSvCFknXObgqn7nOFrJVEeGht.jpg",
-      "releaseDate": "2026-09-16",
-      "rating": "7.5",
-      "votes": 2576,
-      "url": "https://www.themoviedb.org/movie/1423191"
+      "title": "Steps",
+      "overview": "After being blamed for disrupting the Royal Ball with a stolen magic wand, a misunderstood stepsister accidentally turns her sister into a frog and must team up with Cinderella and an unlikely ally to save the kingdom and rewrite their fairytale ending.",
+      "poster": "https://image.tmdb.org/t/p/w500/jtfCcWZ3ZyKdgi0u7JVOxEOSSJP.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
+      "releaseDate": "2026-11-20",
+      "rating": "7.1",
+      "votes": 110,
+      "url": "https://www.themoviedb.org/movie/1595124"
+    },
+    {
+      "id": 1458300,
+      "mediaType": "movie",
+      "title": "The Mosquito Bowl",
+      "overview": "In the aftermath of Pearl Harbor, four college football stars enlist in the US Marines, discovering the strength of brotherhood and the cost of war.",
+      "poster": "https://image.tmdb.org/t/p/w500/uxYs0bNTF4XzM8LThJk2x3AJ0Iv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rtrWdS4UrhqnH9wNEWOgrMBsmSa.jpg",
+      "releaseDate": "2026-10-29",
+      "rating": "7.4",
+      "votes": 32,
+      "url": "https://www.themoviedb.org/movie/1458300"
+    },
+    {
+      "id": 1765072,
+      "mediaType": "movie",
+      "title": "You Can See Everything",
+      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+      "poster": "https://image.tmdb.org/t/p/w500/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/fnIcdPVaO4JAzfLhv8OVEqFK6a7.jpg",
+      "releaseDate": "2026-10-16",
+      "rating": "8.6",
+      "votes": 218,
+      "url": "https://www.themoviedb.org/movie/1765072"
+    },
+    {
+      "id": 1153576,
+      "mediaType": "movie",
+      "title": "Street Fighter",
+      "overview": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+      "poster": "https://image.tmdb.org/t/p/w500/1r8IbJqmctfcAEw8KMmHhE63fA9.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/zDE9hd1SG9695YncbZGjSf7Z9Jk.jpg",
+      "releaseDate": "2026-10-13",
+      "rating": "6.2",
+      "votes": 273,
+      "url": "https://www.themoviedb.org/movie/1153576"
     },
     {
       "id": 1281331,
@@ -96,32 +120,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/wXTaGcqX3jvdXSKCJAkl5jZyrKp.jpg",
       "releaseDate": "2026-10-07",
       "rating": "7.0",
-      "votes": 181,
+      "votes": 186,
       "url": "https://www.themoviedb.org/movie/1281331"
-    },
-    {
-      "id": 1765072,
-      "mediaType": "movie",
-      "title": "You Can See Everything",
-      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
-      "poster": "https://image.tmdb.org/t/p/w500/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
-      "releaseDate": "2026-10-16",
-      "rating": "8.6",
-      "votes": 213,
-      "url": "https://www.themoviedb.org/movie/1765072"
-    },
-    {
-      "id": 1568060,
-      "mediaType": "movie",
-      "title": "Perfect Liars",
-      "overview": "Jude Derry arrives at the exclusive Tagus university with a hidden mission: to infiltrate the circle of the Cash brothers and uncover the truth about her brother's death. What begins as revenge turns into a dangerous triangle of seduction, forbidden attraction and lies, drawing her toward a truth she may not be ready to face.",
-      "poster": "https://image.tmdb.org/t/p/w500/kej8EipJOvfHUHFg5wtT7gQ6bNb.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/qKFLZz7rnZAJuyZ9HVEhwIINftz.jpg",
-      "releaseDate": "2026-11-20",
-      "rating": "7.2",
-      "votes": 44,
-      "url": "https://www.themoviedb.org/movie/1568060"
     }
   ],
   "trendingTv": [
@@ -134,7 +134,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rACaCUxa8WAxkqdpZl0vGqBmIJg.jpg",
       "releaseDate": "2026-11-24",
       "rating": "5.3",
-      "votes": 45,
+      "votes": 52,
       "url": "https://www.themoviedb.org/tv/171802"
     },
     {
@@ -146,20 +146,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uVOcz7JBOuZxsx9IYpx6Ah174LX.jpg",
       "releaseDate": "2022-09-01",
       "rating": "7.2",
-      "votes": 4149,
+      "votes": 4153,
       "url": "https://www.themoviedb.org/tv/84773"
-    },
-    {
-      "id": 326247,
-      "mediaType": "tv",
-      "title": "Fool Night",
-      "overview": "In a dark world full of despair, he chooses the path of transforming into a Spirit Flower — a plant into which humans transform. Should he continue living as a person, or discard his pain and start a new life as a plant? Which path would you choose in his situation?",
-      "poster": "https://image.tmdb.org/t/p/w500/7kHLQwQZKbQOZJGx1mIDYIKeBYv.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/rumSTVTcuZj0khFXxXgwXouIMgg.jpg",
-      "releaseDate": "2026-11-26",
-      "rating": "10.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/326247"
     },
     {
       "id": 244447,
@@ -170,7 +158,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/6PerjrTmwTNiRcfn0SpjU8N9Nio.jpg",
       "releaseDate": "2025-07-21",
       "rating": "7.0",
-      "votes": 118,
+      "votes": 119,
       "url": "https://www.themoviedb.org/tv/244447"
     },
     {
@@ -182,7 +170,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/h0OC7ouop8YLwbAVfS3UUE2Lw4T.jpg",
       "releaseDate": "2025-03-30",
       "rating": "8.7",
-      "votes": 1317,
+      "votes": 1318,
       "url": "https://www.themoviedb.org/tv/247718"
     },
     {
@@ -193,8 +181,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/cVbilrgtgKi7gN74KK4voyV7iDR.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/7ojpD6ARKYhRxnsjzMIrorOfj4T.jpg",
       "releaseDate": "2026-11-20",
-      "rating": "7.9",
-      "votes": 22,
+      "rating": "8.0",
+      "votes": 23,
       "url": "https://www.themoviedb.org/tv/300523"
     },
     {
@@ -206,8 +194,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/hYJqUoXRZnodGxgVZTM8uwr5kbC.jpg",
       "releaseDate": "2026-11-11",
       "rating": "8.0",
-      "votes": 147,
+      "votes": 151,
       "url": "https://www.themoviedb.org/tv/291507"
+    },
+    {
+      "id": 103540,
+      "mediaType": "tv",
+      "title": "Percy Jackson and the Olympians",
+      "overview": "Percy Jackson is on a dangerous quest. Outrunning monsters and outwitting gods, he must journey across America to return Zeus's master bolt and stop an all-out war. With the help of his friends Annabeth and Grover, Percy's journey will lead him closer to the answers he seeks: how to fit into a world where he feels out of place, and who he's destined to be.",
+      "poster": "https://image.tmdb.org/t/p/w500/zofPiEpwCRYaezOncTlQwXebHFU.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/dLIKNqBi9L1cVbwuniXkaNOsIXg.jpg",
+      "releaseDate": "2023-12-19",
+      "rating": "7.3",
+      "votes": 888,
+      "url": "https://www.themoviedb.org/tv/103540"
     },
     {
       "id": 279246,
@@ -218,20 +218,8 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/fNcpHmuZLKoyhNMBEzdqzX8iIvg.jpg",
       "releaseDate": "2026-11-03",
       "rating": "8.7",
-      "votes": 167,
+      "votes": 170,
       "url": "https://www.themoviedb.org/tv/279246"
-    },
-    {
-      "id": 310209,
-      "mediaType": "tv",
-      "title": "Nine to Six",
-      "overview": "Falsely blamed for a car fire, Chronic Motors Senior Manager Kang Yi-ji faces demotion. Can she find love and happiness amid office politics?",
-      "poster": "https://image.tmdb.org/t/p/w500/1iVlL2Prt9Q5BWMfeZQ6d1ZAZBy.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/y6vS0tG9uQPOU9y2YhuZ0Uga99c.jpg",
-      "releaseDate": "2026-11-25",
-      "rating": "5.0",
-      "votes": 1,
-      "url": "https://www.themoviedb.org/tv/310209"
     },
     {
       "id": 213375,
@@ -242,8 +230,20 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/uoXXbN2PrOxH6UKyP7kYwmGpAAP.jpg",
       "releaseDate": "2026-10-13",
       "rating": "8.2",
-      "votes": 589,
+      "votes": 592,
       "url": "https://www.themoviedb.org/tv/213375"
+    },
+    {
+      "id": 326247,
+      "mediaType": "tv",
+      "title": "Fool Night",
+      "overview": "In a sunless future where humans become plants to make oxygen, a desperate young man begins the transformation — and unearths a deep-rooted conspiracy.",
+      "poster": "https://image.tmdb.org/t/p/w500/7kHLQwQZKbQOZJGx1mIDYIKeBYv.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/rumSTVTcuZj0khFXxXgwXouIMgg.jpg",
+      "releaseDate": "2026-11-26",
+      "rating": "9.0",
+      "votes": 2,
+      "url": "https://www.themoviedb.org/tv/326247"
     }
   ],
   "upcomingMovies": [
@@ -349,7 +349,7 @@
       "title": "Behemoth!",
       "overview": "Gifted cellist Alex Serian returns home to Los Angeles after 20 years on the road. Music, which has been the constant, all-consuming river of his life, begins to carry Alex on an adventure that will change him forever.",
       "poster": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w500/VdVjxOpyQiHy62I271g6Acnotw.jpg",
+      "backdrop": "https://image.tmdb.org/t/p/w500/b3YTMlknqSqJVV7I45kIQNVzErs.jpg",
       "releaseDate": "2026-12-04",
       "rating": "0.0",
       "votes": 0,
@@ -363,8 +363,8 @@
       "poster": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/hhBoWDKmq9u8V2qi0Rtm3XGiydn.jpg",
       "releaseDate": "2026-12-04",
-      "rating": "0.0",
-      "votes": 0,
+      "rating": "9.0",
+      "votes": 1,
       "url": "https://www.themoviedb.org/movie/940009"
     }
   ],
@@ -378,7 +378,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
       "releaseDate": "2026-11-18",
       "rating": "7.8",
-      "votes": 369,
+      "votes": 375,
       "url": "https://www.themoviedb.org/movie/1300968"
     },
     {
@@ -390,7 +390,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/g1bEboMx1a8JCg1jXeDCh24RtgW.jpg",
       "releaseDate": "2026-11-20",
       "rating": "7.1",
-      "votes": 105,
+      "votes": 109,
       "url": "https://www.themoviedb.org/movie/1595124"
     },
     {
@@ -402,7 +402,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/rrbbzCyS45yooXpUGJatfptlHYI.jpg",
       "releaseDate": "2026-11-20",
       "rating": "8.6",
-      "votes": 211,
+      "votes": 218,
       "url": "https://www.themoviedb.org/movie/1765072"
     },
     {
@@ -414,7 +414,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/ggqvhSdAASrseKuMlzk51sbvbE8.jpg",
       "releaseDate": "2026-11-27",
       "rating": "8.9",
-      "votes": 36,
+      "votes": 35,
       "url": "https://www.themoviedb.org/movie/1562642"
     },
     {
@@ -438,7 +438,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
       "releaseDate": "2026-11-05",
       "rating": "7.7",
-      "votes": 309,
+      "votes": 310,
       "url": "https://www.themoviedb.org/movie/1381071"
     },
     {
@@ -446,11 +446,11 @@
       "mediaType": "movie",
       "title": "Wicker",
       "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
-      "poster": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+      "poster": "https://image.tmdb.org/t/p/w500/5sVi66aTT9X2uMldmIwu9JW3hZ2.jpg",
       "backdrop": "https://image.tmdb.org/t/p/w500/r4DTGm1f1r23cyjRJ5kFMh7qYlj.jpg",
       "releaseDate": "2026-10-30",
       "rating": "7.6",
-      "votes": 71,
+      "votes": 76,
       "url": "https://www.themoviedb.org/movie/1195803"
     },
     {
@@ -462,7 +462,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/sMmG82PtjK8A9rVc34gwKQtCm3A.jpg",
       "releaseDate": "2026-11-27",
       "rating": "6.8",
-      "votes": 309,
+      "votes": 310,
       "url": "https://www.themoviedb.org/movie/1514026"
     },
     {
@@ -474,7 +474,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/bDsmYvrzto7xrEwqDpLC3SPhn9A.jpg",
       "releaseDate": "2026-11-06",
       "rating": "7.9",
-      "votes": 265,
+      "votes": 266,
       "url": "https://www.themoviedb.org/movie/1422041"
     },
     {
@@ -486,7 +486,7 @@
       "backdrop": "https://image.tmdb.org/t/p/w500/274ahmbkJSzdmcWrWSTu9DFv5rp.jpg",
       "releaseDate": "2026-11-13",
       "rating": "7.5",
-      "votes": 200,
+      "votes": 202,
       "url": "https://www.themoviedb.org/movie/1567605"
     }
   ],
