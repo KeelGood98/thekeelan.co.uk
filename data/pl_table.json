@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T16:44:47.882046+00:00",
+  "updated": "2026-11-28T01:28:53.500474+00:00",
   "source": "football-data.org",
   "teams": [
     {
@@ -105,13 +105,13 @@
       "name": "Chelsea",
       "fullName": "Chelsea FC",
       "badge": "https://crests.football-data.org/61.png",
-      "played": 11,
+      "played": 12,
       "won": 5,
       "drawn": 1,
-      "lost": 5,
-      "goalsFor": 20,
-      "goalsAgainst": 20,
-      "goalDifference": 0,
+      "lost": 6,
+      "goalsFor": 22,
+      "goalsAgainst": 23,
+      "goalDifference": -1,
       "points": 16
     },
     {
@@ -186,6 +186,20 @@
     },
     {
       "position": 14,
+      "name": "Nott'm Forest",
+      "fullName": "Nottingham Forest FC",
+      "badge": "https://crests.football-data.org/351.png",
+      "played": 12,
+      "won": 3,
+      "drawn": 3,
+      "lost": 6,
+      "goalsFor": 12,
+      "goalsAgainst": 17,
+      "goalDifference": -5,
+      "points": 12
+    },
+    {
+      "position": 15,
       "name": "Coventry City",
       "fullName": "Coventry City FC",
       "badge": "https://crests.football-data.org/1076.png",
@@ -199,7 +213,7 @@
       "points": 12
     },
     {
-      "position": 15,
+      "position": 16,
       "name": "Fulham",
       "fullName": "Fulham FC",
       "badge": "https://crests.football-data.org/63.png",
@@ -213,7 +227,7 @@
       "points": 11
     },
     {
-      "position": 16,
+      "position": 17,
       "name": "Ipswich Town",
       "fullName": "Ipswich Town FC",
       "badge": "https://crests.football-data.org/349.png",
@@ -225,20 +239,6 @@
       "goalsAgainst": 22,
       "goalDifference": -7,
       "points": 11
-    },
-    {
-      "position": 17,
-      "name": "Nott'm Forest",
-      "fullName": "Nottingham Forest FC",
-      "badge": "https://crests.football-data.org/351.png",
-      "played": 11,
-      "won": 2,
-      "drawn": 3,
-      "lost": 6,
-      "goalsFor": 9,
-      "goalsAgainst": 15,
-      "goalDifference": -6,
-      "points": 9
     },
     {
       "position": 18,
